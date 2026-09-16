@@ -1,0 +1,22 @@
+{
+  "schema_version": 2,
+  "retrieved_at": "2026-09-16T14:57:05.111657+00:00",
+  "source": "Registr smluv",
+  "source_url": "https://smlouvy.gov.cz/vyhledavani",
+  "publisher_ico": "00275905",
+  "records": [],
+  "pages": [
+    {
+      "page": 0,
+      "offset": 0,
+      "url": "https://smlouvy.gov.cz/vyhledavani?subject_idnum=00275905&do=searchResultList-setOffset&searchResultList-offset=0&search_type=0",
+      "status": "ok",
+      "sha256": "c19e54f9aa2d71d7d15c18abb74f5524a51220d8cd238b16abf322710195022a",
+      "bytes": 17031,
+      "records": 0,
+      "total": null,
+      "file": "data/registr_smluv/raw/page_0000.html"
+    }
+  ],
+  "status": "ok"
+}

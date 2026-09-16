@@ -1,0 +1,86 @@
+{
+  "retrieved_at": "2026-09-16T14:57:00.872616+00:00",
+  "profile_url": "https://www.vhodne-uverejneni.cz/profil/mesto-lomnice-nad-popelkou",
+  "windows": [
+    {
+      "from": "2014-01-01",
+      "to": "2015-01-01",
+      "url": "https://www.vhodne-uverejneni.cz/profil/mesto-lomnice-nad-popelkou/XMLdataVZ?od=01012014&do=01012015",
+      "status": "unavailable"
+    },
+    {
+      "from": "2015-01-02",
+      "to": "2016-01-02",
+      "url": "https://www.vhodne-uverejneni.cz/profil/mesto-lomnice-nad-popelkou/XMLdataVZ?od=02012015&do=02012016",
+      "status": "unavailable"
+    },
+    {
+      "from": "2016-01-03",
+      "to": "2017-01-02",
+      "url": "https://www.vhodne-uverejneni.cz/profil/mesto-lomnice-nad-popelkou/XMLdataVZ?od=03012016&do=02012017",
+      "status": "unavailable"
+    },
+    {
+      "from": "2017-01-03",
+      "to": "2018-01-03",
+      "url": "https://www.vhodne-uverejneni.cz/profil/mesto-lomnice-nad-popelkou/XMLdataVZ?od=03012017&do=03012018",
+      "status": "unavailable"
+    },
+    {
+      "from": "2018-01-04",
+      "to": "2019-01-04",
+      "url": "https://www.vhodne-uverejneni.cz/profil/mesto-lomnice-nad-popelkou/XMLdataVZ?od=04012018&do=04012019",
+      "status": "unavailable"
+    },
+    {
+      "from": "2019-01-05",
+      "to": "2020-01-05",
+      "url": "https://www.vhodne-uverejneni.cz/profil/mesto-lomnice-nad-popelkou/XMLdataVZ?od=05012019&do=05012020",
+      "status": "unavailable"
+    },
+    {
+      "from": "2020-01-06",
+      "to": "2021-01-05",
+      "url": "https://www.vhodne-uverejneni.cz/profil/mesto-lomnice-nad-popelkou/XMLdataVZ?od=06012020&do=05012021",
+      "status": "unavailable"
+    },
+    {
+      "from": "2021-01-06",
+      "to": "2022-01-06",
+      "url": "https://www.vhodne-uverejneni.cz/profil/mesto-lomnice-nad-popelkou/XMLdataVZ?od=06012021&do=06012022",
+      "status": "unavailable"
+    },
+    {
+      "from": "2022-01-07",
+      "to": "2023-01-07",
+      "url": "https://www.vhodne-uverejneni.cz/profil/mesto-lomnice-nad-popelkou/XMLdataVZ?od=07012022&do=07012023",
+      "status": "unavailable"
+    },
+    {
+      "from": "2023-01-08",
+      "to": "2024-01-08",
+      "url": "https://www.vhodne-uverejneni.cz/profil/mesto-lomnice-nad-popelkou/XMLdataVZ?od=08012023&do=08012024",
+      "status": "unavailable"
+    },
+    {
+      "from": "2024-01-09",
+      "to": "2025-01-08",
+      "url": "https://www.vhodne-uverejneni.cz/profil/mesto-lomnice-nad-popelkou/XMLdataVZ?od=09012024&do=08012025",
+      "status": "unavailable"
+    },
+    {
+      "from": "2025-01-09",
+      "to": "2026-01-09",
+      "url": "https://www.vhodne-uverejneni.cz/profil/mesto-lomnice-nad-popelkou/XMLdataVZ?od=09012025&do=09012026",
+      "status": "unavailable"
+    },
+    {
+      "from": "2026-01-10",
+      "to": "2026-09-16",
+      "url": "https://www.vhodne-uverejneni.cz/profil/mesto-lomnice-nad-popelkou/XMLdataVZ?od=10012026&do=16092026",
+      "status": "unavailable"
+    }
+  ],
+  "successful_windows": 0,
+  "note": "PVU access from GitHub Actions is best-effort. Unavailable windows do not fail the workflow."
+}
