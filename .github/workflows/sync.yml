@@ -15,7 +15,7 @@ permissions:
 jobs:
   fetch-vu:
     runs-on: ubuntu-latest
-    timeout-minutes: 8
+    timeout-minutes: 12
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -41,7 +41,7 @@ jobs:
 
   fetch-registr:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 90
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -60,6 +60,21 @@ jobs:
       - name: Fetch Contract Register
         run: python scripts/import_registr_smluv.py
 
+      - name: Validate Contract Register output
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p = Path("data/registr_smluv/contracts.json")
+          if not p.exists():
+              raise SystemExit("Chybí data/registr_smluv/contracts.json")
+          obj = json.loads(p.read_text(encoding="utf-8"))
+          rows = obj.get("records", [])
+          if not isinstance(rows, list) or not rows:
+              raise SystemExit("Registr smluv vrátil 0 záznamů; build se zastavuje, aby nepřepsal platná data.")
+          print(f"Validní Registr smluv: {len(rows)} záznamů")
+          PY
+
       - name: Upload Registr smluv data
         if: always()
         uses: actions/upload-artifact@v4
@@ -74,7 +89,7 @@ jobs:
     needs: [fetch-vu, fetch-registr]
     if: always()
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -87,11 +102,24 @@ jobs:
           path: data/xml/
 
       - name: Download Registr smluv data
-        continue-on-error: true
+        continue-on-error: false
         uses: actions/download-artifact@v4
         with:
           name: source-registr
           path: .
+
+      - name: Validate downloaded source artifact
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p = Path("data/registr_smluv/contracts.json")
+          obj = json.loads(p.read_text(encoding="utf-8"))
+          rows = obj.get("records", [])
+          if not isinstance(rows, list) or not rows:
+              raise SystemExit("Stažený artefakt Registru smluv neobsahuje žádné záznamy.")
+          print(f"Artefakt obsahuje {len(rows)} záznamů Registru smluv")
+          PY
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -107,6 +135,19 @@ jobs:
       - name: Normalize source records
         run: python scripts/normalize_sources.py
 
+      - name: Validate normalized records
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p = Path("data/sources/manifest.json")
+          obj = json.loads(p.read_text(encoding="utf-8"))
+          n = int(obj.get("registr_smluv_records", 0))
+          if n <= 0:
+              raise SystemExit("Normalizace vytvořila 0 záznamů; build se zastavuje.")
+          print(f"Normalizováno {n} záznamů Registru smluv")
+          PY
+
       - name: Resolve cross-source records
         run: python scripts/resolve_projects.py
 
@@ -120,10 +161,12 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch origin main
+          git rebase origin/main
           git add data/
           if git diff --cached --quiet; then
             echo "No data changes."
           else
             git commit -m "Automaticky aktualizovat data zakazek"
-            git push
+            git push origin HEAD:main
           fi
