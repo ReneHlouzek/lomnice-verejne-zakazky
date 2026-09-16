@@ -1,9 +1,4 @@
-"""Resolve procurement records from official sources into unified projects.
-
-The resolver is deliberately conservative: title-only matches are never merged.
-It also derives a small canonical summary without overwriting the underlying
-source records, so every displayed fact can be traced back to an official source.
-"""
+"""Resolve procurement records from official sources into unified projects."""
 from __future__ import annotations
 
 import json, re, unicodedata
@@ -42,7 +37,8 @@ def date_value(v):
     for fmt in ("%d.%m.%Y", "%d.%m.%Y %H:%M", "%Y-%m-%d", "%Y-%m-%dT%H:%M:%S"):
         try: return datetime.strptime(s, fmt).date().isoformat()
         except ValueError: pass
-    return None
+    m = re.match(r"^(\d{4})-(\d{2})-(\d{2})", s)
+    return m.group(0) if m else None
 
 
 def records():
@@ -82,18 +78,34 @@ def score(a,b):
     return 0,"none",[]
 
 
+def classify(r):
+    text=norm(" ".join(str(r.get(k) or "") for k in ("title","name","type","event","status")))
+    if any(x in text for x in ("dodatek", "dodatek c", "zmenovy list", "change order")): return "addendum"
+    if any(x in text for x in ("smlouva", "contract")): return "contract"
+    if any(x in text for x in ("vysledek", "vyber", "award", "oznameni o vyberu")): return "award"
+    if any(x in text for x in ("zakazka", "verejna zakazka", "tender")): return "tender"
+    return "source_record"
+
+
 def canonical(g):
     titles=[r.get("title") or r.get("nazev") or r.get("name") for r in g if r.get("title") or r.get("nazev") or r.get("name")]
     suppliers=[r.get("supplier_ico") or r.get("ico_dodavatele") for r in g if r.get("supplier_ico") or r.get("ico_dodavatele")]
-    dates=[date_value(r.get("date") or r.get("published") or r.get("datum")) for r in g]
-    prices=[price(r.get("price") or r.get("contract_price")) for r in g]
+    events=[]
+    for r in g:
+        d=date_value(r.get("date") or r.get("published") or r.get("datum") or r.get("signed_date") or r.get("award_date"))
+        if d:
+            events.append({"date":d,"type":classify(r),"source":r.get("source"),"source_id":r.get("source_id"),"title":r.get("title") or r.get("nazev"),"price":price(r.get("price") or r.get("contract_price") or r.get("value"))})
+    events.sort(key=lambda x:x["date"])
     ids=sorted(set().union(*(key_ids(r) for r in g)))
+    contract_events=[e for e in events if e["type"] in ("contract","addendum") and e["price"] is not None]
+    observed_prices=[e["price"] for e in contract_events]
     return {
-        "title": max(titles, key=len) if titles else None,
-        "supplier_ico": next((ico(x) for x in suppliers if ico(x)), None),
+        "title": max(titles,key=len) if titles else None,
+        "supplier_ico": next((ico(x) for x in suppliers if ico(x)),None),
         "identifiers": ids,
-        "dates": {"first_observed": min((d for d in dates if d), default=None), "last_observed": max((d for d in dates if d), default=None)},
-        "financial": {"observed_prices": sorted(set(x for x in prices if x is not None))},
+        "lifecycle": {"events": events, "event_count": len(events)},
+        "dates": {"first_observed": events[0]["date"] if events else None, "last_observed": events[-1]["date"] if events else None},
+        "financial": {"observed_prices": sorted(set(observed_prices)), "initial_contract_price": observed_prices[0] if observed_prices else None, "latest_observed_price": observed_prices[-1] if observed_prices else None},
         "source_count": len(g),
     }
 
@@ -113,8 +125,7 @@ def main():
         base=g[0]; title=base.get("title") or base.get("nazev") or base.get("name") or f"Projekt {i}"
         pid="p-"+re.sub(r"[^a-z0-9]+","-",norm(title))[:70].strip("-")+f"-{i:04d}"
         sources=[{"source_file":r.get("_source_file"),"source_id":r.get("source_id") or r.get("vvz_id") or r.get("contract_id"),"record":r} for r in g]
-        c=canonical(g)
-        project={"id":pid,"title":title,"buyer_ico":BUYER_ICO,"status":"unclassified","canonical":c,"sources":sources}
+        project={"id":pid,"title":title,"buyer_ico":BUYER_ICO,"status":"unclassified","canonical":canonical(g),"sources":sources}
         (OUT/f"{pid}.json").write_text(json.dumps(project,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     for i,a in enumerate(rows):
         for b in rows[i+1:]:
