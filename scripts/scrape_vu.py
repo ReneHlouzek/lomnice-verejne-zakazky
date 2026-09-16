@@ -1,9 +1,9 @@
-"""Collector for the official XMLdataVZ profile export.
+"""Best-effort collector for the official PVU XMLdataVZ export.
 
-The public procurement profile is required to expose structured XML data at
-/profile-address/XMLdataVZ?od=DDMMYYYY&do=DDMMYYYY. The interval is limited
-to 366 days, so the collector downloads year-sized windows and stores raw XML
-snapshots for later parsing.
+The GitHub Actions runner may not be able to reach vhodne-uverejneni.cz.
+Therefore acquisition failure is recorded as metadata and does not fail the
+pipeline. Future XML snapshots can be placed in data/inbox/ and processed by
+the import/build stages without changing this collector.
 """
 
 from __future__ import annotations
@@ -21,8 +21,7 @@ import requests
 
 ROOT = Path(__file__).resolve().parents[1]
 CONFIG = json.loads((ROOT / "config.json").read_text(encoding="utf-8"))
-SOURCE = CONFIG["source"]
-PROFILE = SOURCE["profile_url"].rstrip("/")
+PROFILE = CONFIG["source"]["profile_url"].rstrip("/")
 TIMEOUT = max(int(CONFIG["crawler"].get("timeout_seconds", 30)), 60)
 RETRIES = max(int(CONFIG["crawler"].get("max_retries", 3)), 3)
 
@@ -53,7 +52,7 @@ def fetch_curl(url: str) -> bytes | None:
         cmd = [
             "curl", "--fail", "--silent", "--show-error", "--location",
             "--ipv4", "--max-time", str(TIMEOUT), "--connect-timeout", "15",
-            "-A", "Mozilla/5.0 (compatible; Lomnice-Verejne-Zakazky/0.5)",
+            "-A", "Mozilla/5.0 (compatible; Lomnice-Verejne-Zakazky/0.6)",
             "-o", output, url,
         ]
         proc = subprocess.run(cmd, capture_output=True, text=True, timeout=TIMEOUT + 20)
@@ -69,7 +68,7 @@ def fetch_curl(url: str) -> bytes | None:
 
 def fetch_requests(session: requests.Session, url: str) -> bytes | None:
     headers = {
-        "User-Agent": "Mozilla/5.0 (compatible; Lomnice-Verejne-Zakazky/0.5; +public-data-archive)",
+        "User-Agent": "Mozilla/5.0 (compatible; Lomnice-Verejne-Zakazky/0.6; +public-data-archive)",
         "Accept": "application/xml,text/xml,*/*;q=0.8",
     }
     for attempt in range(RETRIES):
@@ -85,8 +84,6 @@ def fetch_requests(session: requests.Session, url: str) -> bytes | None:
 
 def main() -> None:
     today = date.today()
-    # Historical backfill: 2014 is the practical start of the current profile
-    # XML era; older records, if any, can be added later from archived sources.
     start = date(2014, 1, 1)
     out_root = ROOT / "data" / "xml"
     out_root.mkdir(parents=True, exist_ok=True)
@@ -106,9 +103,9 @@ def main() -> None:
                     "from": start_date.isoformat(),
                     "to": end_date.isoformat(),
                     "url": url,
-                    "status": "failed",
+                    "status": "unavailable",
                 })
-                print("  FAILED")
+                print("  unavailable (pipeline continues)")
                 continue
 
             name = f"{start_date:%Y%m%d}_{end_date:%Y%m%d}.xml"
@@ -130,13 +127,12 @@ def main() -> None:
         "retrieved_at": datetime.now(timezone.utc).isoformat(),
         "profile_url": PROFILE,
         "windows": results,
+        "successful_windows": sum(item["status"] == "ok" for item in results),
+        "note": "PVU access from GitHub Actions is best-effort. Unavailable windows do not fail the workflow.",
     }
     (out_root / "manifest.json").write_text(
-        json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8"
+        json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
-
-    if not any(item["status"] == "ok" for item in results):
-        raise RuntimeError("Nepodařilo se získat žádné XMLdataVZ okno.")
 
 
 if __name__ == "__main__":
