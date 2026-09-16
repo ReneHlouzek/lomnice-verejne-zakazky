@@ -1,0 +1,20 @@
+{
+  "source": {
+    "profile_url": "https://www.vhodne-uverejneni.cz/profil/mesto-lomnice-nad-popelkou",
+    "organization_name": "Město Lomnice nad Popelkou",
+    "ico": "00275905"
+  },
+  "statuses": {
+    "aktualni-uverejneni": "Aktuální uveřejnění",
+    "plneni-smlouvy": "Plnění smlouvy",
+    "ukonceno-plneni": "Ukončeno plnění",
+    "zruseno": "Zrušeno"
+  },
+  "crawler": {
+    "timeout_seconds": 30,
+    "delay_seconds": 1.0,
+    "max_retries": 3,
+    "download_documents": true,
+    "max_file_mb": 95
+  }
+}
