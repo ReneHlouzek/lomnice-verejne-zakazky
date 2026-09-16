@@ -74,6 +74,8 @@ def analyze(project):
     timeline = []
     suppliers = set()
     docs = []
+    deadlines = []
+    scopes = []
 
     for r in rows:
         p = num(field(r, "price", "contract_price", "winning_bid", "value"))
@@ -83,6 +85,12 @@ def analyze(project):
             suppliers.add(str(s))
         if isinstance(r.get("documents"), list):
             docs.extend(r["documents"])
+        deadline = field(r, "deadline", "completion_deadline", "term", "end_date", "deadline_date")
+        if deadline:
+            deadlines.append({"date": date_value(deadline), "raw": str(deadline), "source_id": r.get("source_id")})
+        scope = field(r, "scope", "subject_description", "description", "scope_change")
+        if scope:
+            scopes.append({"value": str(scope), "source_id": r.get("source_id")})
         timeline.append({
             "date": d.isoformat() if d else None,
             "event": event_type(r),
@@ -90,6 +98,7 @@ def analyze(project):
             "source_id": r.get("source_id"),
             "title": r.get("title") or r.get("subject"),
             "price": p,
+            "deadline": date_value(deadline).isoformat() if date_value(deadline) else None,
         })
 
     timeline.sort(key=lambda x: (x["date"] is None, x["date"] or "", x["event"]))
@@ -99,8 +108,6 @@ def analyze(project):
         if x["price"] not in unique_prices:
             unique_prices.append(x["price"])
 
-    # Prefer the first contract/award price as the baseline and the latest
-    # later price as the current observation. Fall back to chronological prices.
     baseline = next((x["price"] for x in priced if x["event"] in ("contract", "award")), None)
     if baseline is None and priced:
         baseline = priced[0]["price"]
@@ -114,19 +121,11 @@ def analyze(project):
     price_change_pct = None
     if baseline is not None and current is not None and baseline != 0 and len(unique_prices) >= 2:
         price_change_pct = (current - baseline) / baseline * 100
-        add(
-            "price_change",
-            "review" if abs(price_change_pct) >= 10 else "watch",
+        add("price_change", "review" if abs(price_change_pct) >= 10 else "watch",
             f"Mezi výchozí a poslední evidovanou cenou je rozdíl {price_change_pct:+.1f} %.",
-            [{
-                "type": "price_change",
-                "baseline": baseline,
-                "current": current,
-                "delta": current - baseline,
-                "percent": price_change_pct,
-                "calculation": "(current-baseline)/baseline*100",
-            }],
-        )
+            [{"type": "price_change", "baseline": baseline, "current": current,
+              "delta": current - baseline, "percent": price_change_pct,
+              "calculation": "(current-baseline)/baseline*100"}])
 
     addenda = [x for x in timeline if x["event"] == "addendum"]
     if addenda:
@@ -138,19 +137,29 @@ def analyze(project):
             "Mezi zdroji se objevilo více různých IČO dodavatele; záznam vyžaduje kontrolu propojení.",
             [{"type": "supplier_icos", "values": sorted(suppliers)}])
 
-    dated = [date_value(x["date"]) for x in timeline if x["date"]]
-    if len(dated) >= 2:
-        gaps = [(b - a).days for a, b in zip(dated, dated[1:])]
-        if any(g < 0 for g in gaps):
-            add("date_order_anomaly", "review", "Datumy po načtení zdrojových záznamů nejsou chronologické.",
-                [{"type": "dates", "values": [d.isoformat() for d in dated]}])
-        for i, gap in enumerate(gaps):
-            if gap < 0:
-                continue
-            if timeline[i]["event"] == "contract" and timeline[i + 1]["event"] == "addendum" and gap <= 7:
-                add("addendum_timing", "watch",
-                    "Dodatek byl podle dostupných dat zaznamenán do 7 dnů od smlouvy; ověřit dokumentaci a data podpisu/zveřejnění.",
-                    [{"type": "days_after_contract", "value": gap, "contract_source_id": timeline[i]["source_id"], "addendum_source_id": timeline[i + 1]["source_id"]}])
+    dated_events = [x for x in timeline if x["date"]]
+    for left, right in zip(dated_events, dated_events[1:]):
+        a, b = date_value(left["date"]), date_value(right["date"])
+        gap = (b - a).days
+        if left["event"] == "contract" and right["event"] == "addendum" and 0 <= gap <= 7:
+            add("addendum_timing", "watch",
+                "Dodatek byl podle dostupných dat zaznamenán do 7 dnů od smlouvy; ověřit dokumentaci a data podpisu/zveřejnění.",
+                [{"type": "days_after_contract", "value": gap,
+                  "contract_source_id": left["source_id"], "addendum_source_id": right["source_id"]}])
+
+    known_deadlines = [x for x in deadlines if x["date"]]
+    if len({x["date"] for x in known_deadlines}) > 1:
+        vals = [x["date"].isoformat() for x in known_deadlines]
+        add("deadline_change", "watch",
+            "Ve zdrojových datech byly nalezeny různé termíny dokončení/plnění; ověřit, zda jde o změnu smluvního termínu.",
+            [{"type": "deadline_values", "values": vals}])
+
+    if len(scopes) > 1:
+        normalized = {re.sub(r"\s+", " ", x["value"].strip().lower()) for x in scopes}
+        if len(normalized) > 1:
+            add("scope_difference", "watch",
+                "Mezi zdrojovými záznamy se liší popis předmětu/rozsahu; může jít o rozdílné zdrojové verze a vyžaduje kontrolu.",
+                [{"type": "scope_values", "values": scopes}])
 
     if not rows:
         add("missing_source_record", "review", "Projekt nemá dostupný zdrojový záznam.")
@@ -158,27 +167,20 @@ def analyze(project):
         add("single_source", "info", "Projekt je zatím doložen pouze jedním zdrojovým záznamem.")
 
     return {
-        "schema_version": 3,
+        "schema_version": 4,
         "project_id": project.get("id"),
         "signal_count": len(signals),
         "signals": signals,
         "timeline": timeline,
-        "financial": {
-            "baseline_price": baseline,
-            "current_observed_price": current,
-            "absolute_change": (current - baseline) if baseline is not None and current is not None else None,
-            "percent_change": price_change_pct,
-            "observed_prices": unique_prices,
-            "addendum_count": len(addenda),
-        },
-        "metrics": {
-            "source_count": len(rows),
-            "supplier_count": len(suppliers),
-            "price_values": unique_prices,
-            "date_values": sorted({x["date"] for x in timeline if x["date"]}),
-            "document_count": len(docs),
-        },
-        "methodology": "Signals are descriptive checks only; they do not establish wrongdoing or causality. Price baseline prefers a contract/award observation; all calculations retain source provenance.",
+        "financial": {"baseline_price": baseline, "current_observed_price": current,
+                      "absolute_change": (current - baseline) if baseline is not None and current is not None else None,
+                      "percent_change": price_change_pct, "observed_prices": unique_prices,
+                      "addendum_count": len(addenda)},
+        "metrics": {"source_count": len(rows), "supplier_count": len(suppliers),
+                     "price_values": unique_prices,
+                     "date_values": sorted({x["date"] for x in timeline if x["date"]}),
+                     "document_count": len(docs), "deadline_observations": len(known_deadlines)},
+        "methodology": "Signals are descriptive checks only; they do not establish wrongdoing or causality. They identify differences worth checking and retain source provenance.",
     }
 
 
