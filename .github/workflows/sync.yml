@@ -29,6 +29,9 @@ jobs:
       - name: Fetch Contract Register
         run: python scripts/import_registr_smluv.py
 
+      - name: Normalize source records
+        run: python scripts/normalize_sources.py
+
       - name: Resolve cross-source records
         run: python scripts/resolve_projects.py
 
