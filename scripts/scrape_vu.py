@@ -1,8 +1,9 @@
-"""Crawler for the Lomnice public procurement profile.
+"""Collector for the official XMLdataVZ profile export.
 
-Some cloud runners cannot connect to PVU with Python requests. Before giving up,
-we try the system curl client with IPv4 forced. This distinguishes a possible
-IPv6/routing issue from a genuine upstream block.
+The public procurement profile is required to expose structured XML data at
+/profile-address/XMLdataVZ?od=DDMMYYYY&do=DDMMYYYY. The interval is limited
+to 366 days, so the collector downloads year-sized windows and stores raw XML
+snapshots for later parsing.
 """
 
 from __future__ import annotations
@@ -12,19 +13,16 @@ import json
 import subprocess
 import tempfile
 import time
-from datetime import datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
-from urllib.parse import urljoin
+from urllib.parse import urlencode
 
 import requests
-from bs4 import BeautifulSoup
 
 ROOT = Path(__file__).resolve().parents[1]
 CONFIG = json.loads((ROOT / "config.json").read_text(encoding="utf-8"))
 SOURCE = CONFIG["source"]
-PROFILE = SOURCE["profile_url"]
-SLUG = PROFILE.rstrip("/").split("/profil/", 1)[-1]
-ICO = SOURCE["ico"]
+PROFILE = SOURCE["profile_url"].rstrip("/")
 TIMEOUT = max(int(CONFIG["crawler"].get("timeout_seconds", 30)), 60)
 RETRIES = max(int(CONFIG["crawler"].get("max_retries", 3)), 3)
 
@@ -33,111 +31,112 @@ def sha256_bytes(data: bytes) -> str:
     return hashlib.sha256(data).hexdigest()
 
 
-def candidate_urls() -> list[str]:
-    urls = [
-        PROFILE,
-        f"https://www.vhodne-uverejneni.cz/profil/{ICO}",
-        f"https://vhodne-uverejneni.cz/profil/{SLUG}",
-        f"https://vhodne-uverejneni.cz/profil/{ICO}",
-        f"http://www.vhodne-uverejneni.cz/profil/{SLUG}",
-        f"http://www.vhodne-uverejneni.cz/profil/{ICO}",
-        f"http://vhodne-uverejneni.cz/profil/{SLUG}",
-        f"http://vhodne-uverejneni.cz/profil/{ICO}",
-    ]
-    return list(dict.fromkeys(urls))
+def xml_url(start: date, end: date) -> str:
+    params = urlencode({"od": start.strftime("%d%m%Y"), "do": end.strftime("%d%m%Y")})
+    return f"{PROFILE}/XMLdataVZ?{params}"
 
 
-def fetch_with_curl(url: str) -> tuple[bytes, str] | None:
-    with tempfile.NamedTemporaryFile(prefix="pvu-", suffix=".html", delete=False) as tmp:
+def windows(start: date, end: date) -> list[tuple[date, date]]:
+    result = []
+    cursor = start
+    while cursor <= end:
+        window_end = min(cursor + timedelta(days=365), end)
+        result.append((cursor, window_end))
+        cursor = window_end + timedelta(days=1)
+    return result
+
+
+def fetch_curl(url: str) -> bytes | None:
+    with tempfile.NamedTemporaryFile(prefix="pvu-xml-", suffix=".xml", delete=False) as tmp:
         output = tmp.name
     try:
         cmd = [
             "curl", "--fail", "--silent", "--show-error", "--location",
             "--ipv4", "--max-time", str(TIMEOUT), "--connect-timeout", "15",
-            "-A", "Mozilla/5.0 (compatible; Lomnice-Verejne-Zakazky/0.4)",
-            "-o", output, "-w", "%{url_effective}", url,
+            "-A", "Mozilla/5.0 (compatible; Lomnice-Verejne-Zakazky/0.5)",
+            "-o", output, url,
         ]
         proc = subprocess.run(cmd, capture_output=True, text=True, timeout=TIMEOUT + 20)
         if proc.returncode != 0:
             return None
         data = Path(output).read_bytes()
-        return (data, proc.stdout.strip() or url) if data else None
+        return data or None
     except (OSError, subprocess.SubprocessError):
         return None
     finally:
         Path(output).unlink(missing_ok=True)
 
 
-def fetch(session: requests.Session, urls: list[str]) -> tuple[bytes, str, str]:
-    errors: list[str] = []
-    for url in urls:
-        result = fetch_with_curl(url)
-        if result:
-            data, final_url = result
-            return data, final_url, "curl-ipv4"
-        errors.append(f"curl-ipv4 {url}: failed")
-
+def fetch_requests(session: requests.Session, url: str) -> bytes | None:
     headers = {
-        "User-Agent": "Mozilla/5.0 (compatible; Lomnice-Verejne-Zakazky/0.4; +public-data-archive)",
-        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-        "Accept-Language": "cs-CZ,cs;q=0.9,en;q=0.7",
+        "User-Agent": "Mozilla/5.0 (compatible; Lomnice-Verejne-Zakazky/0.5; +public-data-archive)",
+        "Accept": "application/xml,text/xml,*/*;q=0.8",
     }
-    for url in urls:
-        for attempt in range(RETRIES):
-            try:
-                response = session.get(url, timeout=(10, TIMEOUT), headers=headers, allow_redirects=True)
-                response.raise_for_status()
-                return response.content, response.url, "requests"
-            except requests.RequestException as exc:
-                errors.append(f"requests {url}: {type(exc).__name__}: {exc}")
-                if attempt + 1 < RETRIES:
-                    time.sleep(min(2 ** attempt, 8))
-    raise RuntimeError("Nepodařilo se načíst žádnou variantu profilu. " + " | ".join(errors[-12:]))
-
-
-def collect_links(html: str, base_url: str) -> list[dict[str, str]]:
-    soup = BeautifulSoup(html, "html.parser")
-    result: list[dict[str, str]] = []
-    seen: set[str] = set()
-    for a in soup.find_all("a", href=True):
-        href = urljoin(base_url, a["href"])
-        if href in seen:
-            continue
-        seen.add(href)
-        result.append({"text": " ".join(a.stripped_strings), "url": href})
-    return result
+    for attempt in range(RETRIES):
+        try:
+            response = session.get(url, timeout=(15, TIMEOUT), headers=headers, allow_redirects=True)
+            response.raise_for_status()
+            return response.content
+        except requests.RequestException:
+            if attempt + 1 < RETRIES:
+                time.sleep(min(2 ** attempt, 8))
+    return None
 
 
 def main() -> None:
-    retrieved_at = datetime.now(timezone.utc).isoformat()
-    out = ROOT / "data" / "snapshots" / retrieved_at.replace(":", "-")
-    out.mkdir(parents=True, exist_ok=True)
-    candidates = candidate_urls()
-    print("Testované varianty profilu:")
-    for url in candidates:
-        print(f" - {url}")
-    print("Nejprve zkouším curl s vynuceným IPv4...")
+    today = date.today()
+    # Historical backfill: 2014 is the practical start of the current profile
+    # XML era; older records, if any, can be added later from archived sources.
+    start = date(2014, 1, 1)
+    out_root = ROOT / "data" / "xml"
+    out_root.mkdir(parents=True, exist_ok=True)
 
+    results = []
     with requests.Session() as session:
-        raw, successful_url, method = fetch(session, candidates)
+        for start_date, end_date in windows(start, today):
+            url = xml_url(start_date, end_date)
+            print(f"XML: {url}")
+            data = fetch_curl(url)
+            method = "curl-ipv4"
+            if data is None:
+                data = fetch_requests(session, url)
+                method = "requests"
+            if data is None:
+                results.append({
+                    "from": start_date.isoformat(),
+                    "to": end_date.isoformat(),
+                    "url": url,
+                    "status": "failed",
+                })
+                print("  FAILED")
+                continue
 
-    (out / "profile.html").write_bytes(raw)
-    html = raw.decode("utf-8", errors="replace")
-    links = collect_links(html, successful_url)
-    (out / "links.json").write_text(
-        json.dumps({
-            "source_url": successful_url,
-            "configured_profile_url": PROFILE,
-            "retrieved_at": retrieved_at,
-            "sha256": sha256_bytes(raw),
-            "method": method,
-            "links": links,
-        }, ensure_ascii=False, indent=2), encoding="utf-8",
+            name = f"{start_date:%Y%m%d}_{end_date:%Y%m%d}.xml"
+            path = out_root / name
+            path.write_bytes(data)
+            results.append({
+                "from": start_date.isoformat(),
+                "to": end_date.isoformat(),
+                "url": url,
+                "status": "ok",
+                "method": method,
+                "sha256": sha256_bytes(data),
+                "bytes": len(data),
+                "file": str(path.relative_to(ROOT)),
+            })
+            print(f"  OK {len(data)} bytes via {method}")
+
+    manifest = {
+        "retrieved_at": datetime.now(timezone.utc).isoformat(),
+        "profile_url": PROFILE,
+        "windows": results,
+    }
+    (out_root / "manifest.json").write_text(
+        json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8"
     )
-    print(f"Snapshot uložen: {out}")
-    print(f"Použitý profil: {successful_url}")
-    print(f"Metoda: {method}")
-    print(f"Nalezeno odkazů: {len(links)}")
+
+    if not any(item["status"] == "ok" for item in results):
+        raise RuntimeError("Nepodařilo se získat žádné XMLdataVZ okno.")
 
 
 if __name__ == "__main__":
