@@ -1,15 +1,16 @@
-"""Resilient crawler for the Lomnice public procurement profile.
+"""Crawler for the Lomnice public procurement profile.
 
-The PVU host can be unreachable from some cloud runners. We therefore try
-multiple canonical host/scheme variants before failing. The crawler keeps the
-raw response and a link manifest so later parsing can be improved without
-re-downloading the source.
+Some cloud runners cannot connect to PVU with Python requests. Before giving up,
+we try the system curl client with IPv4 forced. This distinguishes a possible
+IPv6/routing issue from a genuine upstream block.
 """
 
 from __future__ import annotations
 
 import hashlib
 import json
+import subprocess
+import tempfile
 import time
 from datetime import datetime, timezone
 from pathlib import Path
@@ -33,7 +34,6 @@ def sha256_bytes(data: bytes) -> str:
 
 
 def candidate_urls() -> list[str]:
-    """Return canonical variants, de-duplicated and ordered by preference."""
     urls = [
         PROFILE,
         f"https://www.vhodne-uverejneni.cz/profil/{ICO}",
@@ -47,33 +47,52 @@ def candidate_urls() -> list[str]:
     return list(dict.fromkeys(urls))
 
 
-def fetch(session: requests.Session, urls: list[str]) -> tuple[requests.Response, str]:
-    last_errors: list[str] = []
+def fetch_with_curl(url: str) -> tuple[bytes, str] | None:
+    with tempfile.NamedTemporaryFile(prefix="pvu-", suffix=".html", delete=False) as tmp:
+        output = tmp.name
+    try:
+        cmd = [
+            "curl", "--fail", "--silent", "--show-error", "--location",
+            "--ipv4", "--max-time", str(TIMEOUT), "--connect-timeout", "15",
+            "-A", "Mozilla/5.0 (compatible; Lomnice-Verejne-Zakazky/0.4)",
+            "-o", output, "-w", "%{url_effective}", url,
+        ]
+        proc = subprocess.run(cmd, capture_output=True, text=True, timeout=TIMEOUT + 20)
+        if proc.returncode != 0:
+            return None
+        data = Path(output).read_bytes()
+        return (data, proc.stdout.strip() or url) if data else None
+    except (OSError, subprocess.SubprocessError):
+        return None
+    finally:
+        Path(output).unlink(missing_ok=True)
+
+
+def fetch(session: requests.Session, urls: list[str]) -> tuple[bytes, str, str]:
+    errors: list[str] = []
+    for url in urls:
+        result = fetch_with_curl(url)
+        if result:
+            data, final_url = result
+            return data, final_url, "curl-ipv4"
+        errors.append(f"curl-ipv4 {url}: failed")
+
     headers = {
-        "User-Agent": "Mozilla/5.0 (compatible; Lomnice-Verejne-Zakazky/0.3; +public-data-archive)",
+        "User-Agent": "Mozilla/5.0 (compatible; Lomnice-Verejne-Zakazky/0.4; +public-data-archive)",
         "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
         "Accept-Language": "cs-CZ,cs;q=0.9,en;q=0.7",
-        "Connection": "keep-alive",
     }
-
     for url in urls:
         for attempt in range(RETRIES):
             try:
-                response = session.get(
-                    url,
-                    timeout=(10, TIMEOUT),
-                    headers=headers,
-                    allow_redirects=True,
-                )
+                response = session.get(url, timeout=(10, TIMEOUT), headers=headers, allow_redirects=True)
                 response.raise_for_status()
-                return response, url
+                return response.content, response.url, "requests"
             except requests.RequestException as exc:
-                last_errors.append(f"{url}: {type(exc).__name__}: {exc}")
+                errors.append(f"requests {url}: {type(exc).__name__}: {exc}")
                 if attempt + 1 < RETRIES:
                     time.sleep(min(2 ** attempt, 8))
-
-    details = " | ".join(last_errors[-10:])
-    raise RuntimeError(f"Nepodařilo se načíst žádnou variantu profilu. {details}")
+    raise RuntimeError("Nepodařilo se načíst žádnou variantu profilu. " + " | ".join(errors[-12:]))
 
 
 def collect_links(html: str, base_url: str) -> list[dict[str, str]]:
@@ -85,8 +104,7 @@ def collect_links(html: str, base_url: str) -> list[dict[str, str]]:
         if href in seen:
             continue
         seen.add(href)
-        text = " ".join(a.stripped_strings)
-        result.append({"text": text, "url": href})
+        result.append({"text": " ".join(a.stripped_strings), "url": href})
     return result
 
 
@@ -94,34 +112,31 @@ def main() -> None:
     retrieved_at = datetime.now(timezone.utc).isoformat()
     out = ROOT / "data" / "snapshots" / retrieved_at.replace(":", "-")
     out.mkdir(parents=True, exist_ok=True)
-
     candidates = candidate_urls()
     print("Testované varianty profilu:")
     for url in candidates:
         print(f" - {url}")
+    print("Nejprve zkouším curl s vynuceným IPv4...")
 
     with requests.Session() as session:
-        response, successful_url = fetch(session, candidates)
+        raw, successful_url, method = fetch(session, candidates)
 
-    raw = response.content
     (out / "profile.html").write_bytes(raw)
-    links = collect_links(response.text, successful_url)
+    html = raw.decode("utf-8", errors="replace")
+    links = collect_links(html, successful_url)
     (out / "links.json").write_text(
-        json.dumps(
-            {
-                "source_url": successful_url,
-                "configured_profile_url": PROFILE,
-                "retrieved_at": retrieved_at,
-                "sha256": sha256_bytes(raw),
-                "links": links,
-            },
-            ensure_ascii=False,
-            indent=2,
-        ),
-        encoding="utf-8",
+        json.dumps({
+            "source_url": successful_url,
+            "configured_profile_url": PROFILE,
+            "retrieved_at": retrieved_at,
+            "sha256": sha256_bytes(raw),
+            "method": method,
+            "links": links,
+        }, ensure_ascii=False, indent=2), encoding="utf-8",
     )
     print(f"Snapshot uložen: {out}")
     print(f"Použitý profil: {successful_url}")
+    print(f"Metoda: {method}")
     print(f"Nalezeno odkazů: {len(links)}")
 
 
