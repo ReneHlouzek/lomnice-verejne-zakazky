@@ -39,7 +39,40 @@ def detail_url(href: str) -> str:
 
 
 def build_url(offset: int) -> str:
-    params = {"subject_idnum": ICO, "do": "searchResultList-setOffset", "searchResultList-offset": str(offset), "search_type": "0"}
+    # The register's search endpoint expects the complete GET form state.
+    # Supplying only the populated field can return the search form instead
+    # of the result table on some requests.
+    params = {
+        "contr_num": "",
+        "contract_descr": "",
+        "contract_id": "",
+        "contract_reference_number": "",
+        "do": "searchResultList-setOffset",
+        "file_text": "",
+        "foreign_currency": "",
+        "party_address": "",
+        "party_box": "",
+        "party_idnum": "",
+        "party_name": "",
+        "publication_date[from]": "",
+        "publication_date[to]": "",
+        "searchResultList-offset": str(offset),
+        "search_type": "0",
+        "sign_date[from]": "",
+        "sign_date[to]": "",
+        "sign_person_name": "",
+        "subject_address": "",
+        "subject_box": "",
+        "subject_idnum": ICO,
+        "subject_name": "",
+        "value_foreign[from]": "",
+        "value_foreign[to]": "",
+        "value_no_vat[from]": "",
+        "value_no_vat[to]": "",
+        "value_vat[from]": "",
+        "value_vat[to]": "",
+        "version_id": "",
+    }
     return f"{BASE}?{urlencode(params)}"
 
 
@@ -49,7 +82,6 @@ def parse_ico(text: str | None) -> str | None:
     m = re.search(r"(?:IČO|ICO)\s*[:.]?\s*(\d{8})", text, re.I)
     if m:
         return m.group(1)
-    # Some register table versions expose the counterparty IČO without a label.
     candidates = re.findall(r"(?<!\d)(\d{8})(?!\d)", text)
     return candidates[-1] if candidates else None
 
@@ -60,7 +92,6 @@ def parse_price(text: str | None) -> float | None:
     s = clean(text)
     if not s:
         return None
-    # Handle Czech formats such as 2 015 798,00; 2.015.798,00 and 2,015,798.00.
     s = re.sub(r"[^0-9,.-]", "", s.replace("\xa0", "").replace(" ", ""))
     if not s:
         return None
@@ -72,7 +103,6 @@ def parse_price(text: str | None) -> float | None:
                 s = s.replace(",", "")
         elif "," in s:
             parts = s.split(",")
-            # A comma followed by exactly three digits is normally a thousands separator.
             s = "".join(parts) if len(parts) > 2 or (len(parts) == 2 and len(parts[1]) == 3) else ".".join(parts)
         elif "." in s:
             parts = s.split(".")
@@ -121,6 +151,14 @@ def parse_page(html: bytes) -> tuple[list[dict], int | None]:
     return records, total
 
 
+def looks_like_search_form(html: bytes, records: list[dict], total: int | None) -> bool:
+    """Detect HTTP 200 responses that are only the search form, not results."""
+    if records or total is not None:
+        return False
+    text = BeautifulSoup(html, "html.parser").get_text(" ", strip=True).lower()
+    return "podrobné vyhledávání" in text and "vyhledané smlouvy" not in text
+
+
 def main() -> None:
     OUT.mkdir(parents=True, exist_ok=True)
     RAW.mkdir(parents=True, exist_ok=True)
@@ -150,6 +188,11 @@ def main() -> None:
         raw_name = f"page_{page_no:04d}.html"
         (RAW / raw_name).write_bytes(data)
         records, total = parse_page(data)
+        if looks_like_search_form(data, records, total):
+            print("  FAILED: server returned the search form instead of a result table")
+            pages.append({"page": page_no, "offset": offset, "url": url, "status": "unavailable", "reason": "search_form_returned", "sha256": sha256(data), "bytes": len(data), "records": 0, "total": None, "file": str((RAW / raw_name).relative_to(ROOT))})
+            failed = True
+            break
         pages.append({"page": page_no, "offset": offset, "url": url, "status": "ok", "sha256": sha256(data), "bytes": len(data), "records": len(records), "total": total, "file": str((RAW / raw_name).relative_to(ROOT))})
         print(f"  OK: {len(records)} records; total={total}")
         for record in records:
@@ -169,7 +212,6 @@ def main() -> None:
     (OUT / "contracts.json").write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     (OUT / "manifest.json").write_text(json.dumps({"retrieved_at": payload["retrieved_at"], "publisher_ico": ICO, "record_count": len(all_records), "pages": pages, "status": payload["status"]}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
-    # Feed the same normalized records directly into the cross-source resolver.
     for old in SOURCE_OUT.glob("*.json"):
         old.unlink()
     for i, record in enumerate(all_records.values(), 1):
