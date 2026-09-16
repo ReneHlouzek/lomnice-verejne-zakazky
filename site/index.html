@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Veřejné zakázky – Lomnice nad Popelkou</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <p class="eyebrow">VEŘEJNÁ DATA · LOMNICE NAD POPELKOU</p>
+      <h1>Veřejné zakázky města</h1>
+      <p class="lead">Přehled zakázek, smluv, dodatků a dostupných zdrojových dokumentů na jednom místě.</p>
+    </div>
+  </header>
+  <main class="wrap">
+    <section class="stats" id="stats"></section>
+    <section class="toolbar">
+      <input id="search" type="search" placeholder="Hledat zakázku, dodavatele nebo číslo…" autocomplete="off">
+      <select id="status"><option value="">Všechny stavy</option></select>
+    </section>
+    <section>
+      <div class="section-head"><h2>Zakázky</h2><span id="result-count"></span></div>
+      <div id="projects" class="grid"></div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
