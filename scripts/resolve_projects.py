@@ -22,27 +22,21 @@ def ico(v):
 
 
 def price(v):
-    """Parse Czech and common international monetary formats safely."""
     if v in (None, ""):
         return None
     s = str(v).strip().replace("\xa0", "")
     s = re.sub(r"(?:Kč|CZK|Kc)", "", s, flags=re.I).strip()
-    if not s:
-        return None
-    # Keep only digits and separators. Parentheses/other currency text are ignored.
     s = re.sub(r"[^0-9,.-]", "", s)
     if not s or s in {"-", ".", ","}:
         return None
     try:
         if "," in s and "." in s:
-            # Last separator is decimal separator; earlier separators are thousands separators.
             if s.rfind(",") > s.rfind("."):
                 s = s.replace(".", "").replace(",", ".")
             else:
                 s = s.replace(",", "")
         elif "," in s:
             parts = s.split(",")
-            # 2 015 798,00 -> decimal comma; 2,015,798 -> thousands commas.
             if len(parts) > 2:
                 s = "".join(parts)
             elif len(parts) == 2 and len(parts[1]) == 3 and len(parts[0]) <= 3:
@@ -51,7 +45,6 @@ def price(v):
                 s = ".".join(parts)
         elif "." in s:
             parts = s.split(".")
-            # 2.015.798 -> thousands dots; 2015798.00 -> decimal dot.
             if len(parts) > 2 or (len(parts) == 2 and len(parts[1]) == 3 and len(parts[0]) <= 3):
                 s = "".join(parts)
         return float(s)
@@ -68,8 +61,8 @@ def date_value(v):
             return datetime.strptime(s, fmt).date().isoformat()
         except ValueError:
             pass
-    m = re.match(r"^(\d{4})-(\d{2})-(\d{2})", s)
-    return m.group(0) if m else None
+    m = re.match(r"^(\d{4}-\d{2}-\d{2})", s)
+    return m.group(1) if m else None
 
 
 def records():
@@ -160,7 +153,6 @@ def canonical(g):
 
 
 def group_score(record, group):
-    """Compare a record with every member of a group and retain the strongest evidence."""
     best = (0, "none", [])
     for member in group:
         current = score(record, member)
@@ -189,7 +181,9 @@ def main():
         old.unlink()
     for i, g in enumerate(groups, 1):
         base = g[0]
-        title = base.get("title") or base.get("nazev") or base.get("name") or f"Projekt {i}"
+        title = base.get("title") or base.get("nazev") or base.get("name")
+        if not title:
+            continue
         pid = "p-" + re.sub(r"[^a-z0-9]+", "-", norm(title))[:70].strip("-") + f"-{i:04d}"
         sources = [{"source_file": r.get("_source_file"), "source_id": r.get("source_id") or r.get("vvz_id") or r.get("contract_id"), "record": r} for r in g]
         project = {"id": pid, "title": title, "buyer_ico": BUYER_ICO, "status": "unclassified", "canonical": canonical(g), "sources": sources}
@@ -206,5 +200,4 @@ def main():
     print(f"Resolved {len(rows)} source records into {len(groups)} projects; {len(candidates)} candidates for review.")
 
 
-if __name__ == "__main__":
-    main()
+if __name__ == "__main__": main()
