@@ -66,28 +66,37 @@ def date_value(v):
 
 
 def records():
+    """Read only actual normalized source records; metadata manifests are not records."""
     if not SOURCES.exists():
         return []
     out = []
     for p in SOURCES.rglob("*.json"):
+        if p.name == "manifest.json":
+            continue
         try:
             obj = json.loads(p.read_text(encoding="utf-8"))
         except Exception:
             continue
         rows = obj if isinstance(obj, list) else obj.get("records", [obj])
         for r in rows:
-            if isinstance(r, dict):
-                r = dict(r)
-                r["_source_file"] = str(p.relative_to(ROOT))
-                out.append(r)
+            if not isinstance(r, dict):
+                continue
+            # Ignore source metadata even if a future importer stores it next to records.
+            if not (r.get("title") or r.get("subject") or r.get("nazev") or r.get("name")):
+                continue
+            r = dict(r)
+            r["_source_file"] = str(p.relative_to(ROOT))
+            out.append(r)
     for p in SOURCES.rglob("*.jsonl"):
         for line in p.read_text(encoding="utf-8").splitlines():
             try:
                 r = json.loads(line)
-                r["_source_file"] = str(p.relative_to(ROOT))
-                out.append(r)
             except Exception:
-                pass
+                continue
+            if not isinstance(r, dict) or not (r.get("title") or r.get("subject") or r.get("nazev") or r.get("name")):
+                continue
+            r["_source_file"] = str(p.relative_to(ROOT))
+            out.append(r)
     return [r for r in out if ico(r.get("buyer_ico") or r.get("ico_zadavatele")) in ("", BUYER_ICO)]
 
 
