@@ -35,6 +35,9 @@ jobs:
       - name: Resolve cross-source records
         run: python scripts/resolve_projects.py
 
+      - name: Analyze projects
+        run: python scripts/analyze_projects.py
+
       - name: Build provisional index
         run: python scripts/build_index.py
 
