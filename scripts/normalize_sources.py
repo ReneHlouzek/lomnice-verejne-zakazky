@@ -1,10 +1,5 @@
 #!/usr/bin/env python3
-"""Normalize acquired official-source records into data/sources/.
-
-The normalizer is intentionally lossless: source-specific raw data stays in its
-original archive while this layer creates a small common record used for
-cross-source reconciliation. Records are never linked or merged here.
-"""
+"""Normalize acquired official-source records into data/sources/."""
 from __future__ import annotations
 
 import json
@@ -34,7 +29,6 @@ def price(v):
     if v in (None, ""):
         return None
     s = str(v).replace("Kč", "").replace("CZK", "").replace(" ", "")
-    # Czech thousands separators and decimal commas are common in the register.
     if "," in s and "." in s:
         if s.rfind(",") > s.rfind("."):
             s = s.replace(".", "").replace(",", ".")
@@ -50,7 +44,6 @@ def date_value(v):
     s = clean(v)
     if not s:
         return None
-    # Preserve the original text if it is not unambiguously parseable.
     for fmt in ("%d.%m.%Y", "%d. %m. %Y", "%Y-%m-%d", "%Y-%m-%dT%H:%M:%S"):
         try:
             return datetime.strptime(s, fmt).date().isoformat()
@@ -71,17 +64,21 @@ def normalize_rs():
 
     count = 0
     for i, r in enumerate(rows, 1):
-        detail = clean(r.get("detail_url"))
+        detail = clean(r.get("detail_url") or r.get("source_url"))
         record = {
             "source": "registr-smluv",
-            "source_id": detail or f"rs-{i:06d}",
+            "source_id": clean(r.get("source_id")) or detail or f"rs-{i:06d}",
+            "version_id": clean(r.get("version_id")),
             "source_url": detail,
-            "title": clean(r.get("subject")),
+            "title": clean(r.get("title") or r.get("subject")),
             "buyer_ico": BUYER_ICO,
-            "supplier_ico": ico(r.get("counterparty")),
+            "supplier_ico": ico(r.get("supplier_ico")),
+            "supplier_name": clean(r.get("counterparty")),
             "contract_number": clean(r.get("contract_number")),
-            "date": date_value(r.get("published")),
-            "price": price(r.get("value")),
+            "date": date_value(r.get("signed_date") or r.get("published") or r.get("date")),
+            "signed_date": date_value(r.get("signed_date")),
+            "published": date_value(r.get("published")),
+            "price": price(r.get("price") or r.get("value")),
             "status": clean(r.get("status")),
             "raw": r,
         }
