@@ -1,14 +1,13 @@
-"""Resolve procurement records from multiple official sources into unified projects.
-
-Input: JSON/JSONL records in data/sources/<source>/. Each record should contain
-at least a title plus any available identifiers, buyer/supplier IČO, dates and price.
-Output: data/projects/*.json and data/link_candidates.json.
+"""Resolve procurement records from official sources into unified projects.
 
 The resolver is deliberately conservative: title-only matches are never merged.
+It also derives a small canonical summary without overwriting the underlying
+source records, so every displayed fact can be traced back to an official source.
 """
 from __future__ import annotations
 
 import json, re, unicodedata
+from datetime import datetime
 from difflib import SequenceMatcher
 from pathlib import Path
 
@@ -29,15 +28,27 @@ def ico(v):
 
 def price(v):
     if v in (None, ""): return None
-    try: return float(str(v).replace(" ", "").replace("Kc", "").replace("CZK", "").replace(",", "."))
-    except ValueError: return None
+    try:
+        s = str(v).replace("\xa0", "").replace(" ", "").replace("CZK", "").replace("Kc", "")
+        if "," in s and "." in s: s = s.replace(".", "").replace(",", ".")
+        elif "," in s: s = s.replace(",", ".")
+        return float(s)
+    except (ValueError, TypeError): return None
+
+
+def date_value(v):
+    if not v: return None
+    s = str(v).strip()
+    for fmt in ("%d.%m.%Y", "%d.%m.%Y %H:%M", "%Y-%m-%d", "%Y-%m-%dT%H:%M:%S"):
+        try: return datetime.strptime(s, fmt).date().isoformat()
+        except ValueError: pass
+    return None
 
 
 def records():
     if not SOURCES.exists(): return []
     out=[]
     for p in SOURCES.rglob("*.json"):
-        if p.name == "README.json": continue
         try: obj=json.loads(p.read_text(encoding="utf-8"))
         except Exception: continue
         rows=obj if isinstance(obj,list) else obj.get("records", [obj])
@@ -64,11 +75,27 @@ def score(a,b):
     sim=SequenceMatcher(None,at,bt).ratio() if at and bt else 0
     ap,bp=price(a.get("price") or a.get("contract_price")),price(b.get("price") or b.get("contract_price"))
     same_supplier=bool(ai and bi and ai==bi)
-    near_price=bool(ap and bp and (abs(ap-bp)/max(ap,bp) <= .03))
-    if same_supplier and sim >= .72 and (near_price or not ap or not bp): return .9,"supplier_title",[ai]
+    near_price=bool(ap is not None and bp is not None and (abs(ap-bp)/max(ap,bp) <= .03))
+    if same_supplier and sim >= .72 and (near_price or ap is None or bp is None): return .9,"supplier_title",[ai]
     if sim >= .86 and near_price: return .82,"title_price",[]
     if same_supplier and sim >= .60: return .65,"candidate_supplier_title",[ai]
     return 0,"none",[]
+
+
+def canonical(g):
+    titles=[r.get("title") or r.get("nazev") or r.get("name") for r in g if r.get("title") or r.get("nazev") or r.get("name")]
+    suppliers=[r.get("supplier_ico") or r.get("ico_dodavatele") for r in g if r.get("supplier_ico") or r.get("ico_dodavatele")]
+    dates=[date_value(r.get("date") or r.get("published") or r.get("datum")) for r in g]
+    prices=[price(r.get("price") or r.get("contract_price")) for r in g]
+    ids=sorted(set().union(*(key_ids(r) for r in g)))
+    return {
+        "title": max(titles, key=len) if titles else None,
+        "supplier_ico": next((ico(x) for x in suppliers if ico(x)), None),
+        "identifiers": ids,
+        "dates": {"first_observed": min((d for d in dates if d), default=None), "last_observed": max((d for d in dates if d), default=None)},
+        "financial": {"observed_prices": sorted(set(x for x in prices if x is not None))},
+        "source_count": len(g),
+    }
 
 
 def main():
@@ -78,25 +105,22 @@ def main():
         for i,g in enumerate(groups):
             s,reason,evidence=score(r,g[0])
             if s and (best is None or s>best[0]): best=(s,reason,evidence,i)
-        if best and best[0] >= .82:
-            groups[best[3]].append(r)
+        if best and best[0] >= .82: groups[best[3]].append(r)
         else: groups.append([r])
     OUT.mkdir(parents=True,exist_ok=True)
     for old in OUT.glob("*.json"): old.unlink()
     for i,g in enumerate(groups,1):
         base=g[0]; title=base.get("title") or base.get("nazev") or base.get("name") or f"Projekt {i}"
         pid="p-"+re.sub(r"[^a-z0-9]+","-",norm(title))[:70].strip("-")+f"-{i:04d}"
-        sources=[]
-        for r in g:
-            sources.append({"source_file":r.get("_source_file"),"source_id":r.get("source_id") or r.get("vvz_id") or r.get("contract_id"),"record":r})
-        (OUT/f"{pid}.json").write_text(json.dumps({"id":pid,"title":title,"buyer_ico":BUYER_ICO,"sources":sources},ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
-    # Cross-source pairs not automatically merged are retained for review.
+        sources=[{"source_file":r.get("_source_file"),"source_id":r.get("source_id") or r.get("vvz_id") or r.get("contract_id"),"record":r} for r in g]
+        c=canonical(g)
+        project={"id":pid,"title":title,"buyer_ico":BUYER_ICO,"status":"unclassified","canonical":c,"sources":sources}
+        (OUT/f"{pid}.json").write_text(json.dumps(project,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     for i,a in enumerate(rows):
         for b in rows[i+1:]:
             if a.get("_source_file")==b.get("_source_file"): continue
             s,reason,evidence=score(a,b)
-            if .60 <= s < .82:
-                candidates.append({"score":s,"reason":reason,"evidence":evidence,"a":a,"b":b})
+            if .60 <= s < .82: candidates.append({"score":s,"reason":reason,"evidence":evidence,"a":a,"b":b})
     (ROOT/"data"/"link_candidates.json").write_text(json.dumps(candidates,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     print(f"Resolved {len(rows)} source records into {len(groups)} projects; {len(candidates)} candidates for review.")
 
