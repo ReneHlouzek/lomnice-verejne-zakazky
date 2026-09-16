@@ -26,6 +26,9 @@ jobs:
       - name: Fetch official XMLdataVZ export
         run: python scripts/scrape_vu.py
 
+      - name: Resolve cross-source records
+        run: python scripts/resolve_projects.py
+
       - name: Build provisional index
         run: python scripts/build_index.py
 
@@ -37,6 +40,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "No data changes."
           else
-            git commit -m "Automaticky aktualizovat XMLdataVZ"
+            git commit -m "Automaticky aktualizovat data zakazek"
             git push
           fi
