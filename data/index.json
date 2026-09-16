@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "parser_state": "resolved",
-  "generated_at": "2026-09-16T19:09:08.126092+00:00",
+  "parser_state": "awaiting-source-data",
+  "generated_at": "2026-09-16T19:30:00+00:00",
   "source": {
     "profile_url": "https://www.vhodne-uverejneni.cz/profil/mesto-lomnice-nad-popelkou",
     "organization_name": "Město Lomnice nad Popelkou",
@@ -13,35 +13,17 @@
     "ukonceno-plneni": 0,
     "zruseno": 0
   },
-  "total_projects": 1,
+  "total_projects": 0,
   "statuses": {
-    "aktualni-uverejneni": {
-      "label": "Aktuální uveřejnění",
-      "projects": []
-    },
-    "plneni-smlouvy": {
-      "label": "Plnění smlouvy",
-      "projects": []
-    },
-    "ukonceno-plneni": {
-      "label": "Ukončeno plnění",
-      "projects": []
-    },
-    "zruseno": {
-      "label": "Zrušeno",
-      "projects": []
-    }
+    "aktualni-uverejneni": {"label": "Aktuální uveřejnění", "projects": []},
+    "plneni-smlouvy": {"label": "Plnění smlouvy", "projects": []},
+    "ukonceno-plneni": {"label": "Ukončeno plnění", "projects": []},
+    "zruseno": {"label": "Zrušeno", "projects": []}
   },
-  "projects": [
-    {
-      "id": "p-projekt-1-0001",
-      "title": "Projekt 1",
-      "status": "unclassified",
-      "source_count": 1
-    }
-  ],
+  "projects": [],
   "notes": [
     "Projects are created by the conservative cross-source resolver.",
+    "No project is fabricated when source data is unavailable or empty.",
     "Records without a reliable status remain unclassified rather than being guessed."
   ]
 }
