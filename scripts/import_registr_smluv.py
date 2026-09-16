@@ -1,15 +1,13 @@
 #!/usr/bin/env python3
 """Import contracts for the city from the official Contract Register monthly dumps.
 
-The register publishes one dump per month. The current month is incremental and
-is regenerated daily; historical months are closed in the index. We therefore
-keep a local manifest keyed by dump hash and only download/process dumps whose
-hash changed or which have not been processed yet.
+Processes each monthly dump immediately after download. This keeps the working
+set small and, importantly, preserves already extracted records when a later
+large dump is interrupted.
 """
 from __future__ import annotations
 
 import json
-import os
 import re
 import subprocess
 import tempfile
@@ -25,7 +23,6 @@ RAW_DIR = OUT_DIR / "raw_xml"
 SOURCE_DIR = ROOT / "data" / "sources" / "registr-smluv"
 CONTRACTS = OUT_DIR / "contracts.json"
 MANIFEST = OUT_DIR / "manifest.json"
-
 NS_RE = re.compile(r"\{[^}]+\}")
 
 
@@ -48,8 +45,7 @@ def children_map(el: ET.Element) -> dict[str, list[ET.Element]]:
 
 def first_value(m: dict[str, list[ET.Element]], *names: str) -> str:
     for name in names:
-        vals = m.get(name, [])
-        for el in vals:
+        for el in m.get(name, []):
             value = text(el)
             if value:
                 return value
@@ -62,7 +58,9 @@ def normalize_ico(value: str) -> str:
 
 def curl_download(url: str, target: Path, timeout: int) -> None:
     target.parent.mkdir(parents=True, exist_ok=True)
-    tmp = Path(tempfile.mkstemp(prefix="dump_", suffix=".part", dir=target.parent)[1])
+    fd, name = tempfile.mkstemp(prefix="dump_", suffix=".part", dir=target.parent)
+    Path(name).unlink(missing_ok=True)
+    tmp = Path(name)
     try:
         cmd = [
             "curl", "--fail", "--location", "--http1.1",
@@ -73,8 +71,12 @@ def curl_download(url: str, target: Path, timeout: int) -> None:
         subprocess.run(cmd, check=True, stdout=subprocess.DEVNULL, stderr=subprocess.PIPE, text=True)
         tmp.replace(target)
     finally:
-        if tmp.exists():
-            tmp.unlink()
+        tmp.unlink(missing_ok=True)
+        try:
+            import os
+            os.close(fd)
+        except OSError:
+            pass
 
 
 def load_config() -> dict:
@@ -95,17 +97,7 @@ def parse_dumps(root: ET.Element) -> list[dict]:
         url = text(el)
         if "dump_" not in url or not url.lower().endswith(".xml"):
             continue
-        parent = el
-        values = {}
-        for child in parent:
-            values[local(child.tag)] = text(child)
-        # Most index versions put metadata beside the URL in the same element;
-        # fall back to searching its parent when needed.
-        if not values.get("rok") or not values.get("mesic"):
-            p = next((x for x in root.iter() if el in list(x)), None)
-            if p is not None:
-                for child in p:
-                    values.setdefault(local(child.tag), text(child))
+        values = {local(child.tag): text(child) for child in el}
         m = re.search(r"dump_(\d{4})_(\d{2})\.xml", url)
         if not m:
             continue
@@ -118,13 +110,12 @@ def parse_dumps(root: ET.Element) -> list[dict]:
             "generated": values.get("casGenerovani", ""),
             "completed": values.get("dokoncenyMesic", ""),
         })
-    # Deduplicate URLs while preserving the newest index entry.
     unique = {d["url"]: d for d in dumps}
     return sorted(unique.values(), key=lambda d: (d["year"], d["month"]))
 
 
 def extract_records(path: Path, ico: str) -> Iterable[dict]:
-    for event, elem in ET.iterparse(path, events=("end",)):
+    for _, elem in ET.iterparse(path, events=("end",)):
         if local(elem.tag) != "zaznam":
             continue
         m = children_map(elem)
@@ -179,12 +170,33 @@ def extract_records(path: Path, ico: str) -> Iterable[dict]:
         elem.clear()
 
 
+def save_outputs(records_by_id: dict[str, dict], processed: dict[str, str], cfg: dict, dumps_count: int, downloaded: int) -> None:
+    records = list(records_by_id.values())
+    records.sort(key=lambda x: (x.get("published") or x.get("date") or "", x.get("source_id") or ""))
+    CONTRACTS.write_text(json.dumps({"records": records, "total": len(records)}, ensure_ascii=False, indent=2), encoding="utf-8")
+    for old in SOURCE_DIR.glob("contract_*.json"):
+        old.unlink()
+    for n, record in enumerate(records, 1):
+        (SOURCE_DIR / f"contract_{n:06d}.json").write_text(json.dumps(record, ensure_ascii=False, indent=2), encoding="utf-8")
+    settings = cfg.get("registr_smluv", {})
+    MANIFEST.write_text(json.dumps({
+        "updated_at": datetime.utcnow().isoformat() + "Z",
+        "publisher_ico": normalize_ico(settings.get("publisher_ico", "00275905")),
+        "history_from": settings.get("history_from", "2016-07"),
+        "recent_months": int(settings.get("recent_months", 2)),
+        "dump_count_considered": dumps_count,
+        "downloaded_this_run": downloaded,
+        "records_total": len(records),
+        "processed_dumps": processed,
+    }, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
 def main() -> None:
     cfg = load_config()
     settings = cfg.get("registr_smluv", {})
     ico = normalize_ico(settings.get("publisher_ico", "00275905"))
     timeout = int(cfg.get("crawler", {}).get("timeout_seconds", 30))
-    max_pages = int(settings.get("max_pages", 20))
+    max_dumps = int(settings.get("max_dumps", settings.get("max_pages", 0)))
     history_from = settings.get("history_from", "2016-07")
     recent_months = int(settings.get("recent_months", 2))
 
@@ -199,9 +211,8 @@ def main() -> None:
 
     min_year, min_month = map(int, history_from.split("-"))
     dumps = [d for d in dumps if (d["year"], d["month"]) >= (min_year, min_month)]
-    if max_pages > 0:
-        # max_pages is retained as a safety cap for a manually configured first run.
-        dumps = dumps[-max_pages:]
+    if max_dumps > 0:
+        dumps = dumps[-max_dumps:]
 
     old_manifest = json.loads(MANIFEST.read_text(encoding="utf-8")) if MANIFEST.exists() else {}
     processed = old_manifest.get("processed_dumps", {})
@@ -212,57 +223,37 @@ def main() -> None:
         if key:
             records_by_id[key] = r
 
-    # Always refresh the newest N dumps (current month is incremental; the previous
-    # month can receive late messages). Older closed dumps are skipped when hash is unchanged.
     refresh_urls = {d["url"] for d in dumps[-recent_months:]}
-    processed_now = {}
+    processed_now = dict(processed)
     downloaded = 0
-    scanned = 0
     matched = 0
 
     for i, d in enumerate(dumps, 1):
         key = d["url"]
         unchanged = processed.get(key) == d["hash"] and d["hash"]
         if unchanged and key not in refresh_urls:
-            processed_now[key] = d["hash"]
+            print(f"[{i}/{len(dumps)}] {d['year']}-{d['month']:02d}: beze změny", flush=True)
             continue
 
         target = RAW_DIR / f"dump_{d['year']:04d}_{d['month']:02d}.xml"
-        # Re-download only when the indexed hash differs from the stored processed hash.
-        if not target.exists() or processed.get(key) != d["hash"] or key in refresh_urls:
+        try:
             curl_download(key, target, 900)
             downloaded += 1
+            found_this_dump = 0
+            for record in extract_records(target, ico):
+                rid = str(record.get("source_id") or record.get("version_id") or "")
+                if rid:
+                    records_by_id[rid] = record
+                    found_this_dump += 1
+            matched += found_this_dump
+            processed_now[key] = d["hash"]
+            save_outputs(records_by_id, processed_now, cfg, len(dumps), downloaded)
+            print(f"[{i}/{len(dumps)}] {d['year']}-{d['month']:02d}: nalezeno={found_this_dump}, celkem={len(records_by_id)}", flush=True)
+        finally:
+            target.unlink(missing_ok=True)
 
-        for record in extract_records(target, ico):
-            scanned += 1
-            rid = str(record.get("source_id") or record.get("version_id") or "")
-            if rid:
-                records_by_id[rid] = record
-                matched += 1
-        processed_now[key] = d["hash"]
-        print(f"[{i}/{len(dumps)}] {d['year']}-{d['month']:02d}: staženo={downloaded}, nalezeno={matched}", flush=True)
-
-    records = list(records_by_id.values())
-    records.sort(key=lambda x: (x.get("published") or x.get("date") or "", x.get("source_id") or ""))
-    CONTRACTS.write_text(json.dumps({"records": records, "total": len(records)}, ensure_ascii=False, indent=2), encoding="utf-8")
-
-    for old in SOURCE_DIR.glob("contract_*.json"):
-        old.unlink()
-    for n, record in enumerate(records, 1):
-        (SOURCE_DIR / f"contract_{n:06d}.json").write_text(json.dumps(record, ensure_ascii=False, indent=2), encoding="utf-8")
-
-    MANIFEST.write_text(json.dumps({
-        "updated_at": datetime.utcnow().isoformat() + "Z",
-        "publisher_ico": ico,
-        "history_from": history_from,
-        "recent_months": recent_months,
-        "dump_count_considered": len(dumps),
-        "downloaded_this_run": downloaded,
-        "records_total": len(records),
-        "processed_dumps": processed_now,
-    }, ensure_ascii=False, indent=2), encoding="utf-8")
-
-    print(f"Registr smluv hotov: {len(records)} záznamů, {downloaded} dumpů staženo.")
+    save_outputs(records_by_id, processed_now, cfg, len(dumps), downloaded)
+    print(f"Registr smluv hotov: {len(records_by_id)} záznamů, {downloaded} dumpů staženo.")
 
 
 if __name__ == "__main__":
