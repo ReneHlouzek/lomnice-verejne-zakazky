@@ -22,17 +22,38 @@ def ico(v):
 
 
 def price(v):
+    """Parse Czech and common international monetary formats safely."""
     if v in (None, ""):
         return None
+    s = str(v).strip().replace("\xa0", "")
+    s = re.sub(r"(?:Kč|CZK|Kc)", "", s, flags=re.I).strip()
+    if not s:
+        return None
+    # Keep only digits and separators. Parentheses/other currency text are ignored.
+    s = re.sub(r"[^0-9,.-]", "", s)
+    if not s or s in {"-", ".", ","}:
+        return None
     try:
-        s = str(v).replace("\xa0", "").replace(" ", "").replace("CZK", "").replace("Kc", "")
         if "," in s and "." in s:
+            # Last separator is decimal separator; earlier separators are thousands separators.
             if s.rfind(",") > s.rfind("."):
                 s = s.replace(".", "").replace(",", ".")
             else:
                 s = s.replace(",", "")
         elif "," in s:
-            s = s.replace(",", ".")
+            parts = s.split(",")
+            # 2 015 798,00 -> decimal comma; 2,015,798 -> thousands commas.
+            if len(parts) > 2:
+                s = "".join(parts)
+            elif len(parts) == 2 and len(parts[1]) == 3 and len(parts[0]) <= 3:
+                s = "".join(parts)
+            else:
+                s = ".".join(parts)
+        elif "." in s:
+            parts = s.split(".")
+            # 2.015.798 -> thousands dots; 2015798.00 -> decimal dot.
+            if len(parts) > 2 or (len(parts) == 2 and len(parts[1]) == 3 and len(parts[0]) <= 3):
+                s = "".join(parts)
         return float(s)
     except (ValueError, TypeError):
         return None
@@ -125,13 +146,12 @@ def canonical(g):
         if d:
             events.append({"date": d, "type": classify(r), "source": r.get("source"), "source_id": r.get("source_id"), "title": r.get("title") or r.get("nazev"), "price": price(r.get("price") or r.get("contract_price") or r.get("value"))})
     events.sort(key=lambda x: x["date"])
-    ids = sorted(set().union(*(key_ids(r) for r in g)))
     contract_events = [e for e in events if e["type"] in ("contract", "addendum") and e["price"] is not None]
     observed_prices = [e["price"] for e in contract_events]
     return {
         "title": max(titles, key=len) if titles else None,
         "supplier_ico": next((ico(x) for x in suppliers if ico(x)), None),
-        "identifiers": ids,
+        "identifiers": sorted(set().union(*(key_ids(r) for r in g))),
         "lifecycle": {"events": events, "event_count": len(events)},
         "dates": {"first_observed": events[0]["date"] if events else None, "last_observed": events[-1]["date"] if events else None},
         "financial": {"observed_prices": sorted(set(observed_prices)), "initial_contract_price": observed_prices[0] if observed_prices else None, "latest_observed_price": observed_prices[-1] if observed_prices else None},
