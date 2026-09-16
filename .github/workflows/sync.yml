@@ -13,8 +13,35 @@ permissions:
   contents: write
 
 jobs:
-  sync:
+  fetch-vu:
     runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: python -m pip install --upgrade pip requests beautifulsoup4 pytest
+
+      - name: Fetch official XMLdataVZ export
+        run: python scripts/scrape_vu.py
+
+      - name: Upload VU data
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: source-vu
+          path: data/xml/
+          if-no-files-found: ignore
+
+  fetch-registr:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -30,11 +57,52 @@ jobs:
       - name: Run regression tests
         run: pytest -q tests
 
-      - name: Fetch official XMLdataVZ export
-        run: python scripts/scrape_vu.py
-
       - name: Fetch Contract Register
         run: python scripts/import_registr_smluv.py
+
+      - name: Upload Registr smluv data
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: source-registr
+          path: |
+            data/registr_smluv/
+            data/sources/registr-smluv/
+          if-no-files-found: ignore
+
+  build:
+    needs: [fetch-vu, fetch-registr]
+    if: always()
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Download VU data
+        continue-on-error: true
+        uses: actions/download-artifact@v4
+        with:
+          name: source-vu
+          path: data/xml/
+
+      - name: Download Registr smluv data
+        continue-on-error: true
+        uses: actions/download-artifact@v4
+        with:
+          name: source-registr
+          path: .
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: python -m pip install --upgrade pip requests beautifulsoup4 pytest
+
+      - name: Run regression tests
+        run: pytest -q tests
 
       - name: Normalize source records
         run: python scripts/normalize_sources.py
