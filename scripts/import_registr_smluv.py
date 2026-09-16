@@ -47,17 +47,38 @@ def parse_ico(text: str | None) -> str | None:
     if not text:
         return None
     m = re.search(r"(?:IČO|ICO)\s*[:.]?\s*(\d{8})", text, re.I)
-    return m.group(1) if m else None
+    if m:
+        return m.group(1)
+    # Some register table versions expose the counterparty IČO without a label.
+    candidates = re.findall(r"(?<!\d)(\d{8})(?!\d)", text)
+    return candidates[-1] if candidates else None
 
 
 def parse_price(text: str | None) -> float | None:
     if not text:
         return None
-    cleaned = re.sub(r"[^0-9,.-]", "", text.replace("\xa0", ""))
-    if not cleaned:
+    s = clean(text)
+    if not s:
+        return None
+    # Handle Czech formats such as 2 015 798,00; 2.015.798,00 and 2,015,798.00.
+    s = re.sub(r"[^0-9,.-]", "", s.replace("\xa0", "").replace(" ", ""))
+    if not s:
         return None
     try:
-        return float(cleaned.replace(".", "").replace(",", "."))
+        if "," in s and "." in s:
+            if s.rfind(",") > s.rfind("."):
+                s = s.replace(".", "").replace(",", ".")
+            else:
+                s = s.replace(",", "")
+        elif "," in s:
+            parts = s.split(",")
+            # A comma followed by exactly three digits is normally a thousands separator.
+            s = "".join(parts) if len(parts) > 2 or (len(parts) == 2 and len(parts[1]) == 3) else ".".join(parts)
+        elif "." in s:
+            parts = s.split(".")
+            if len(parts) > 2 or (len(parts) == 2 and len(parts[1]) == 3):
+                s = "".join(parts)
+        return float(s)
     except ValueError:
         return None
 
