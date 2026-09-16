@@ -28,14 +28,24 @@ def ico(v):
 def price(v):
     if v in (None, ""):
         return None
-    s = str(v).replace("Kč", "").replace("CZK", "").replace(" ", "")
+    s = str(v).replace("\xa0", "").replace("Kč", "").replace("CZK", "").replace(" ", "")
     if "," in s and "." in s:
         if s.rfind(",") > s.rfind("."):
             s = s.replace(".", "").replace(",", ".")
         else:
             s = s.replace(",", "")
-    else:
-        s = s.replace(",", ".")
+    elif "," in s:
+        parts = s.split(",")
+        if len(parts) > 2:
+            s = "".join(parts)
+        elif len(parts) == 2 and len(parts[1]) == 3 and len(parts[0]) <= 3:
+            s = "".join(parts)
+        else:
+            s = ".".join(parts)
+    elif "." in s:
+        parts = s.split(".")
+        if len(parts) > 2 or (len(parts) == 2 and len(parts[1]) == 3 and len(parts[0]) <= 3):
+            s = "".join(parts)
     m = re.search(r"-?\d+(?:\.\d+)?", s)
     return float(m.group(0)) if m else None
 
@@ -57,6 +67,8 @@ def normalize_rs():
         return 0
     payload = json.loads(RS.read_text(encoding="utf-8"))
     rows = payload.get("records", [])
+    if not isinstance(rows, list):
+        rows = []
     target = OUT / "registr-smluv"
     target.mkdir(parents=True, exist_ok=True)
     for old in target.glob("*.json"):
@@ -64,6 +76,11 @@ def normalize_rs():
 
     count = 0
     for i, r in enumerate(rows, 1):
+        if not isinstance(r, dict):
+            continue
+        # Never turn an importer manifest or other metadata object into a source record.
+        if r.get("source") not in (None, "registr-smluv") and not r.get("title"):
+            continue
         detail = clean(r.get("detail_url") or r.get("source_url"))
         record = {
             "source": "registr-smluv",
@@ -73,7 +90,7 @@ def normalize_rs():
             "title": clean(r.get("title") or r.get("subject")),
             "buyer_ico": BUYER_ICO,
             "supplier_ico": ico(r.get("supplier_ico")),
-            "supplier_name": clean(r.get("counterparty")),
+            "supplier_name": clean(r.get("counterparty") or r.get("supplier_name")),
             "contract_number": clean(r.get("contract_number")),
             "date": date_value(r.get("signed_date") or r.get("published") or r.get("date")),
             "signed_date": date_value(r.get("signed_date")),
@@ -82,7 +99,7 @@ def normalize_rs():
             "status": clean(r.get("status")),
             "raw": r,
         }
-        fn = target / f"rs-{i:06d}.json"
+        fn = target / f"rs-{count + 1:06d}.json"
         fn.write_text(json.dumps(record, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         count += 1
     return count
