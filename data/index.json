@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "parser_state": "not-run",
+  "generated_at": null,
+  "source": {
+    "profile_url": "https://www.vhodne-uverejneni.cz/profil/mesto-lomnice-nad-popelkou",
+    "organization_name": "Město Lomnice nad Popelkou",
+    "ico": "00275905"
+  },
+  "latest_snapshot": null,
+  "counts": {
+    "aktualni-uverejneni": 0,
+    "plneni-smlouvy": 0,
+    "ukonceno-plneni": 0,
+    "zruseno": 0
+  },
+  "statuses": {
+    "aktualni-uverejneni": {"label": "Aktuální uveřejnění", "projects": []},
+    "plneni-smlouvy": {"label": "Plnění smlouvy", "projects": []},
+    "ukonceno-plneni": {"label": "Ukončeno plnění", "projects": []},
+    "zruseno": {"label": "Zrušeno", "projects": []}
+  },
+  "unclassified_links": [],
+  "notes": []
+}
