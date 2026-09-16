@@ -1,0 +1,1772 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<profil xmlns="urn:cz:isvz:mmr:schemas:vz-z-profilu-zadavatele:v100" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<profil_kod>352638</profil_kod>
+<zadavatel>
+<nazev_zadavatele>Město Lomnice nad Popelkou</nazev_zadavatele>
+<ico_zadavatele>00275905</ico_zadavatele>
+</zadavatel>                <zakazka>
+<id_objektu>P26V00001118</id_objektu>
+<nazev_vz>Sanace vlhkého zdiva sklepních prostor čp. 886, Lomnice nad Popelkou</nazev_vz>
+<druh_vz>stavební práce</druh_vz>
+<rezim_vz>Veřejné zakázky malého rozsahu</rezim_vz>
+<predmet_vz>Sanace vlhkého zdiva sklepních prostor čp. 886 v Lomnice nad Popelkou. Součástí realizace je izolace zdiva, injektáž, drenáž, kanalizace, dlažba.</predmet_vz>
+<hlavni_cpv>45000000</hlavni_cpv>
+<delena_na_casti>0</delena_na_casti>
+<zadavaci_postupy>
+<zadavaci_postup>
+<id_objektu>ZP-P26V00001118</id_objektu>
+</zadavaci_postup>
+</zadavaci_postupy>
+<casti_vz>
+<cast_zakazky>
+<id_objektu>P26V00001118</id_objektu>
+<id_zadavaciho_postupu_vz>ZP-P26V00001118</id_zadavaciho_postupu_vz>
+<nazev_casti_vz>Sanace vlhkého zdiva sklepních prostor čp. 886, Lomnice nad Popelkou</nazev_casti_vz>
+<druh_casti_vz>stavební práce</druh_casti_vz>
+<rezim_casti_vz>Veřejné zakázky malého rozsahu</rezim_casti_vz>
+<predmet_casti_vz>Sanace vlhkého zdiva sklepních prostor čp. 886 v Lomnice nad Popelkou. Součástí realizace je izolace zdiva, injektáž, drenáž, kanalizace, dlažba.</predmet_casti_vz>
+<hlavni_cpv_casti_vz>45000000</hlavni_cpv_casti_vz>
+<zadavaci_postup_casti>
+<id_objektu>ZP-P26V00001118</id_objektu>
+<lhuty_zadavaciho_postupu>
+<lhuta>
+<druh_lhuty>lhůta podání žádosti</druh_lhuty>
+<datum_konce_lhuty>2026-02-25T07:48:00+01:00</datum_konce_lhuty>
+</lhuta>
+<lhuta>
+<druh_lhuty>lhůta podání nabídky</druh_lhuty>
+<datum_konce_lhuty>2026-02-25T07:48:00+01:00</datum_konce_lhuty>
+</lhuta>
+</lhuty_zadavaciho_postupu>
+<stav_zadavaciho_postupu>dokončen</stav_zadavaciho_postupu>
+<druh_zadavaciho_postupu>přímé zadání</druh_zadavaciho_postupu>
+<ramcova_dohoda>0</ramcova_dohoda>
+<zavedeni_dns>0</zavedeni_dns>
+<dokumenty>
+<dokument>
+<url>https://www.vhodne-uverejneni.cz/index.php?m=xenorders&amp;h=orderdocument&amp;a=detail&amp;document=3768270</url>
+<typ_dokumentu>smlouva</typ_dokumentu>
+<jiny_dokument_nazev>Smlouva, její změny a dodatky</jiny_dokument_nazev>
+<cas_vlozeni_na_profil>2026-02-25T07:48:03+01:00</cas_vlozeni_na_profil>
+<metadata_smlouvy_nebo_rd>
+<smluvni_strany>
+<smluvni_strana>
+<subjekt>
+<ico>00578894</ico>
+<nazev_subjektu>J. Pišta a spol., společnost s r.o.</nazev_subjektu>
+<misto_podnikani>CZ</misto_podnikani>
+</subjekt>
+</smluvni_strana>
+</smluvni_strany>
+<predmet_smlouvy>Sanace vlhkého zdiva sklepních prostor čp. 886 v Lomnice nad Popelkou. Součástí realizace je izolace zdiva, injektáž, drenáž, kanalizace, dlažba.</predmet_smlouvy>
+<smluvni_cena_s_dph>2876767.31</smluvni_cena_s_dph>
+<smluvni_cena_bez_dph>2568542.24</smluvni_cena_bez_dph>
+</metadata_smlouvy_nebo_rd>
+</dokument>
+</dokumenty>
+<datum_uverejneni>2026-02-25T07:48:02+01:00</datum_uverejneni>
+<ucastnici>
+<ucastnik>
+<subjekt>
+<ico>00578894</ico>
+<nazev_subjektu>J. Pišta a spol., společnost s r.o.</nazev_subjektu>
+<misto_podnikani>CZ</misto_podnikani>
+</subjekt>
+<nabidkova_cena_bez_dph>2568542.24</nabidkova_cena_bez_dph>
+<nabidkova_cena_s_dph>2876767.31</nabidkova_cena_s_dph>
+<role_ucastnika>dodavatel bez společné účasti</role_ucastnika>
+<ucastnik_vyloucen>0</ucastnik_vyloucen>
+<ucastnik_odstoupil>0</ucastnik_odstoupil>
+</ucastnik>              <ucastnik>
+<subjekt>
+<ico>25937499</ico>
+<nazev_subjektu>REDOMO a.s.</nazev_subjektu>
+<misto_podnikani>CZ</misto_podnikani>
+</subjekt>
+<nabidkova_cena_bez_dph>2971715.30</nabidkova_cena_bez_dph>
+<nabidkova_cena_s_dph>3328321.14</nabidkova_cena_s_dph>
+<role_ucastnika>dodavatel bez společné účasti</role_ucastnika>
+<ucastnik_vyloucen>0</ucastnik_vyloucen>
+<ucastnik_odstoupil>0</ucastnik_odstoupil>
+</ucastnik>              <ucastnik>
+<subjekt>
+<ico>28751558</ico>
+<nazev_subjektu>Complet San s.r.o.</nazev_subjektu>
+<misto_podnikani>CZ</misto_podnikani>
+</subjekt>
+<nabidkova_cena_bez_dph>3584633.30</nabidkova_cena_bez_dph>
+<nabidkova_cena_s_dph>4014789.30</nabidkova_cena_s_dph>
+<role_ucastnika>dodavatel bez společné účasti</role_ucastnika>
+<ucastnik_vyloucen>0</ucastnik_vyloucen>
+<ucastnik_odstoupil>0</ucastnik_odstoupil>
+</ucastnik>              <ucastnik>
+<subjekt>
+<ico>11931582</ico>
+<nazev_subjektu>Jiří Maťátko</nazev_subjektu>
+<misto_podnikani>CZ</misto_podnikani>
+</subjekt>
+<nabidkova_cena_bez_dph>3683275.43</nabidkova_cena_bez_dph>
+<nabidkova_cena_s_dph>4125268.48</nabidkova_cena_s_dph>
+<role_ucastnika>dodavatel bez společné účasti</role_ucastnika>
+<ucastnik_vyloucen>0</ucastnik_vyloucen>
+<ucastnik_odstoupil>0</ucastnik_odstoupil>
+</ucastnik>          </ucastnici>
+<vybrani_dodavatele>
+<vybrany_dodavatel>
+<subjekt>
+<ico>00578894</ico>
+<nazev_subjektu>J. Pišta a spol., společnost s r.o.</nazev_subjektu>
+<misto_podnikani>CZ</misto_podnikani>
+</subjekt>
+<uzavrena_smlouva_nebo_rd>1</uzavrena_smlouva_nebo_rd>
+<smluvni_cena_s_DPH>2876767.31</smluvni_cena_s_DPH>
+<smluvni_cena_bez_DPH>2568542.24</smluvni_cena_bez_DPH>
+<role_dodavatele>dodavatel bez společné účasti</role_dodavatele>
+</vybrany_dodavatel>          </vybrani_dodavatele>
+<zjisten_stret_zajmu>0</zjisten_stret_zajmu>
+</zadavaci_postup_casti>
+</cast_zakazky>      </casti_vz>
+</zakazka>                    <zakazka>
+<id_objektu>P26V00002405</id_objektu>
+<nazev_vz>Rozšíření polikliniky Lomnice nad Popelkou - dokumentace stavebního záměru</nazev_vz>
+<druh_vz>služby</druh_vz>
+<rezim_vz>Veřejné zakázky malého rozsahu</rezim_vz>
+<predmet_vz>vypracování dokumentace povolení záměru Projektu k vydání správních rozhodnutí potřebných k realizaci Projektu a získání potřebných správních rozhodnutí k Projektu</predmet_vz>
+<hlavni_cpv>71300000</hlavni_cpv>
+<delena_na_casti>0</delena_na_casti>
+<zadavaci_postupy>
+<zadavaci_postup>
+<id_objektu>ZP-P26V00002405</id_objektu>
+</zadavaci_postup>
+</zadavaci_postupy>
+<casti_vz>
+<cast_zakazky>
+<id_objektu>P26V00002405</id_objektu>
+<id_zadavaciho_postupu_vz>ZP-P26V00002405</id_zadavaciho_postupu_vz>
+<nazev_casti_vz>Rozšíření polikliniky Lomnice nad Popelkou - dokumentace stavebního záměru</nazev_casti_vz>
+<druh_casti_vz>služby</druh_casti_vz>
+<rezim_casti_vz>Veřejné zakázky malého rozsahu</rezim_casti_vz>
+<predmet_casti_vz>vypracování dokumentace povolení záměru Projektu k vydání správních rozhodnutí potřebných k realizaci Projektu a získání potřebných správních rozhodnutí k Projektu</predmet_casti_vz>
+<hlavni_cpv_casti_vz>71300000</hlavni_cpv_casti_vz>
+<zadavaci_postup_casti>
+<id_objektu>ZP-P26V00002405</id_objektu>
+<lhuty_zadavaciho_postupu>
+<lhuta>
+<druh_lhuty>lhůta podání žádosti</druh_lhuty>
+<datum_konce_lhuty>2026-04-15T13:29:00+02:00</datum_konce_lhuty>
+</lhuta>
+<lhuta>
+<druh_lhuty>lhůta podání nabídky</druh_lhuty>
+<datum_konce_lhuty>2026-04-15T13:29:00+02:00</datum_konce_lhuty>
+</lhuta>
+</lhuty_zadavaciho_postupu>
+<stav_zadavaciho_postupu>dokončen</stav_zadavaciho_postupu>
+<druh_zadavaciho_postupu>přímé zadání</druh_zadavaciho_postupu>
+<ramcova_dohoda>0</ramcova_dohoda>
+<zavedeni_dns>0</zavedeni_dns>
+<dokumenty>
+<dokument>
+<url>https://www.vhodne-uverejneni.cz/index.php?m=xenorders&amp;h=orderdocument&amp;a=detail&amp;document=3811452</url>
+<typ_dokumentu>smlouva</typ_dokumentu>
+<jiny_dokument_nazev>Smlouva, její změny a dodatky</jiny_dokument_nazev>
+<cas_vlozeni_na_profil>2026-04-15T13:29:03+02:00</cas_vlozeni_na_profil>
+<metadata_smlouvy_nebo_rd>
+<smluvni_strany>
+<smluvni_strana>
+<subjekt>
+<ico>23064579</ico>
+<nazev_subjektu>hůla+hájek architekti s.r.o.</nazev_subjektu>
+<misto_podnikani>CZ</misto_podnikani>
+</subjekt>
+</smluvni_strana>
+</smluvni_strany>
+<predmet_smlouvy>vypracování dokumentace povolení záměru Projektu k vydání správních rozhodnutí potřebných k realizaci Projektu a získání potřebných správních rozhodnutí k Projektu</predmet_smlouvy>
+<smluvni_cena_s_dph>1228150</smluvni_cena_s_dph>
+<smluvni_cena_bez_dph>1015000</smluvni_cena_bez_dph>
+</metadata_smlouvy_nebo_rd>
+</dokument>
+<dokument>
+<url>https://www.vhodne-uverejneni.cz/index.php?m=xenorders&amp;h=orderdocument&amp;a=detail&amp;document=3811453</url>
+<typ_dokumentu>smlouva</typ_dokumentu>
+<jiny_dokument_nazev>Smlouva, její změny a dodatky</jiny_dokument_nazev>
+<cas_vlozeni_na_profil>2026-04-15T13:29:03+02:00</cas_vlozeni_na_profil>
+<metadata_smlouvy_nebo_rd>
+<smluvni_strany>
+<smluvni_strana>
+<subjekt>
+<ico>23064579</ico>
+<nazev_subjektu>hůla+hájek architekti s.r.o.</nazev_subjektu>
+<misto_podnikani>CZ</misto_podnikani>
+</subjekt>
+</smluvni_strana>
+</smluvni_strany>
+<predmet_smlouvy>vypracování dokumentace povolení záměru Projektu k vydání správních rozhodnutí potřebných k realizaci Projektu a získání potřebných správních rozhodnutí k Projektu</predmet_smlouvy>
+<smluvni_cena_s_dph>1228150</smluvni_cena_s_dph>
+<smluvni_cena_bez_dph>1015000</smluvni_cena_bez_dph>
+</metadata_smlouvy_nebo_rd>
+</dokument>
+</dokumenty>
+<datum_uverejneni>2026-04-15T13:29:03+02:00</datum_uverejneni>
+<ucastnici>
+<ucastnik>
+<subjekt>
+<ico>23064579</ico>
+<nazev_subjektu>hůla+hájek architekti s.r.o.</nazev_subjektu>
+<misto_podnikani>CZ</misto_podnikani>
+</subjekt>
+<nabidkova_cena_bez_dph>1015000.00</nabidkova_cena_bez_dph>
+<nabidkova_cena_s_dph>1228150.00</nabidkova_cena_s_dph>
+<role_ucastnika>dodavatel bez společné účasti</role_ucastnika>
+<ucastnik_vyloucen>0</ucastnik_vyloucen>
+<ucastnik_odstoupil>0</ucastnik_odstoupil>
+</ucastnik>          </ucastnici>
+<vybrani_dodavatele>
+<vybrany_dodavatel>
+<subjekt>
+<ico>23064579</ico>
+<nazev_subjektu>hůla+hájek architekti s.r.o.</nazev_subjektu>
+<misto_podnikani>CZ</misto_podnikani>
+</subjekt>
+<uzavrena_smlouva_nebo_rd>1</uzavrena_smlouva_nebo_rd>
+<smluvni_cena_s_DPH>1228150.00</smluvni_cena_s_DPH>
+<smluvni_cena_bez_DPH>1015000.00</smluvni_cena_bez_DPH>
+<role_dodavatele>dodavatel bez společné účasti</role_dodavatele>
+</vybrany_dodavatel>          </vybrani_dodavatele>
+<zjisten_stret_zajmu>0</zjisten_stret_zajmu>
+</zadavaci_postup_casti>
+</cast_zakazky>      </casti_vz>
+</zakazka>                    <zakazka>
+<id_objektu>P26V00002929</id_objektu>
+<nazev_vz>Nemocnice následné péče Lomnice nad Popelkou – investice a opravy</nazev_vz>
+<druh_vz>stavební práce</druh_vz>
+<rezim_vz>Podlimitní</rezim_vz>
+<predmet_vz>Předmět veřejné zakázky s názvem Nemocnice následné péče Lomnice nad Popelkou – investice a opravy se skládá ze 3 částí:
+o	Část 1 - Přístavba spojovací chodby, demoliční práce a stavební úpravy souvisejících stavebních objektů,  
+o	Část 2 – Exteriér před spojovací chodbou (úprava zahrady),
+o	Část 3 - Stavební úprava terasy budovy č.p. 440.
+Prohlídka místa plnění se uskuteční dne 11. května 2026 ve 10,30 hodin se schůzkou zúčastněných před budovou čp. 440, ul. Komenského, Lomnice nad Popelkou.</predmet_vz>
+<hlavni_cpv>45000000</hlavni_cpv>
+<delena_na_casti>0</delena_na_casti>
+<zadavaci_postupy>
+<zadavaci_postup>
+<id_objektu>ZP-P26V00002929</id_objektu>
+</zadavaci_postup>
+</zadavaci_postupy>
+<casti_vz>
+<cast_zakazky>
+<id_objektu>P26V00002929</id_objektu>
+<id_zadavaciho_postupu_vz>ZP-P26V00002929</id_zadavaciho_postupu_vz>
+<nazev_casti_vz>Nemocnice následné péče Lomnice nad Popelkou – investice a opravy</nazev_casti_vz>
+<druh_casti_vz>stavební práce</druh_casti_vz>
+<rezim_casti_vz>Podlimitní</rezim_casti_vz>
+<predmet_casti_vz>Předmět veřejné zakázky s názvem Nemocnice následné péče Lomnice nad Popelkou – investice a opravy se skládá ze 3 částí:
+o	Část 1 - Přístavba spojovací chodby, demoliční práce a stavební úpravy souvisejících stavebních objektů,  
+o	Část 2 – Exteriér před spojovací chodbou (úprava zahrady),
+o	Část 3 - Stavební úprava terasy budovy č.p. 440.
+Prohlídka místa plnění se uskuteční dne 11. května 2026 ve 10,30 hodin se schůzkou zúčastněných před budovou čp. 440, ul. Komenského, Lomnice nad Popelkou.</predmet_casti_vz>
+<hlavni_cpv_casti_vz>45000000</hlavni_cpv_casti_vz>
+<zadavaci_postup_casti>
+<id_objektu>ZP-P26V00002929</id_objektu>
+<lhuty_zadavaciho_postupu>
+<lhuta>
+<druh_lhuty>lhůta podání nabídky</druh_lhuty>
+<datum_konce_lhuty>2026-05-25T09:00:00+02:00</datum_konce_lhuty>
+</lhuta>
+</lhuty_zadavaciho_postupu>
+<stav_zadavaciho_postupu>zrušen</stav_zadavaciho_postupu>
+<druh_zadavaciho_postupu>zjednodušené podlimitní řízení</druh_zadavaciho_postupu>
+<ramcova_dohoda>0</ramcova_dohoda>
+<zavedeni_dns>0</zavedeni_dns>
+<dokumenty>
+<dokument>
+<url>https://www.vhodne-uverejneni.cz/index.php?m=xenorders&amp;h=orderdocument&amp;a=detail&amp;document=3852455</url>
+<typ_dokumentu>písemná zpráva zadavatele</typ_dokumentu>
+<jiny_dokument_nazev>Písemná zpráva zadavatele</jiny_dokument_nazev>
+<cas_vlozeni_na_profil>2026-06-12T18:30:54+02:00</cas_vlozeni_na_profil>
+</dokument>
+<dokument>
+<url>https://www.vhodne-uverejneni.cz/index.php?m=xenorders&amp;h=orderdocument&amp;a=detail&amp;document=3852456</url>
+<typ_dokumentu>jiný dokument</typ_dokumentu>
+<jiny_dokument_nazev>Ostatní</jiny_dokument_nazev>
+<cas_vlozeni_na_profil>2026-05-25T13:22:05+02:00</cas_vlozeni_na_profil>
+</dokument>
+<dokument>
+<url>https://www.vhodne-uverejneni.cz/index.php?m=xenorders&amp;h=orderdocument&amp;a=detail&amp;document=3852457</url>
+<typ_dokumentu>výzva k podání nabídek</typ_dokumentu>
+<jiny_dokument_nazev>Výzva</jiny_dokument_nazev>
+<cas_vlozeni_na_profil>2026-05-04T15:40:02+02:00</cas_vlozeni_na_profil>
+</dokument>
+<dokument>
+<url>https://www.vhodne-uverejneni.cz/index.php?m=xenorders&amp;h=orderdocument&amp;a=detail&amp;document=3852458</url>
+<typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+<jiny_dokument_nazev>Zadávací a kvalifikační dokumentace, prohlídka místa plnění</jiny_dokument_nazev>
+<cas_vlozeni_na_profil>2026-05-04T15:40:02+02:00</cas_vlozeni_na_profil>
+</dokument>
+<dokument>
+<url>https://www.vhodne-uverejneni.cz/index.php?m=xenorders&amp;h=orderdocument&amp;a=detail&amp;document=3852459</url>
+<typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+<jiny_dokument_nazev>Zadávací a kvalifikační dokumentace, prohlídka místa plnění</jiny_dokument_nazev>
+<cas_vlozeni_na_profil>2026-05-04T15:40:02+02:00</cas_vlozeni_na_profil>
+</dokument>
+<dokument>
+<url>https://www.vhodne-uverejneni.cz/index.php?m=xenorders&amp;h=orderdocument&amp;a=detail&amp;document=3852460</url>
+<typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+<jiny_dokument_nazev>Zadávací a kvalifikační dokumentace, prohlídka místa plnění</jiny_dokument_nazev>
+<cas_vlozeni_na_profil>2026-05-04T15:40:02+02:00</cas_vlozeni_na_profil>
+</dokument>
+<dokument>
+<url>https://www.vhodne-uverejneni.cz/index.php?m=xenorders&amp;h=orderdocument&amp;a=detail&amp;document=3852461</url>
+<typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+<jiny_dokument_nazev>Zadávací a kvalifikační dokumentace, prohlídka místa plnění</jiny_dokument_nazev>
+<cas_vlozeni_na_profil>2026-05-04T15:40:02+02:00</cas_vlozeni_na_profil>
+</dokument>
+<dokument>
+<url>https://www.vhodne-uverejneni.cz/index.php?m=xenorders&amp;h=orderdocument&amp;a=detail&amp;document=3852462</url>
+<typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+<jiny_dokument_nazev>Zadávací a kvalifikační dokumentace, prohlídka místa plnění</jiny_dokument_nazev>
+<cas_vlozeni_na_profil>2026-05-04T15:40:02+02:00</cas_vlozeni_na_profil>
+</dokument>
+<dokument>
+<url>https://www.vhodne-uverejneni.cz/index.php?m=xenorders&amp;h=orderdocument&amp;a=detail&amp;document=3852463</url>
+<typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+<jiny_dokument_nazev>Zadávací a kvalifikační dokumentace, prohlídka místa plnění</jiny_dokument_nazev>
+<cas_vlozeni_na_profil>2026-05-04T15:40:02+02:00</cas_vlozeni_na_profil>
+</dokument>
+</dokumenty>
+<datum_uverejneni>2026-05-04T15:40:02+02:00</datum_uverejneni>
+<zjisten_stret_zajmu>0</zjisten_stret_zajmu>
+<datum_zruseni_rizeni>2026-05-25T00:00:00+02:00</datum_zruseni_rizeni>
+</zadavaci_postup_casti>
+</cast_zakazky>      </casti_vz>
+</zakazka>                    <zakazka>
+<id_objektu>P26V00004399</id_objektu>
+<nazev_vz>Rekonstrukce topného systému včetně zdroje tepla v objektu K Urnovému háji čp. 118, Lomnice nad Popelkou</nazev_vz>
+<druh_vz>stavební práce</druh_vz>
+<rezim_vz>Veřejné zakázky malého rozsahu</rezim_vz>
+<predmet_vz>Rekonstrukce topného systému včetně zdroje tepla</predmet_vz>
+<hlavni_cpv>39715210</hlavni_cpv>
+<delena_na_casti>0</delena_na_casti>
+<zadavaci_postupy>
+<zadavaci_postup>
+<id_objektu>ZP-P26V00004399</id_objektu>
+</zadavaci_postup>
+</zadavaci_postupy>
+<casti_vz>
+<cast_zakazky>
+<id_objektu>P26V00004399</id_objektu>
+<id_zadavaciho_postupu_vz>ZP-P26V00004399</id_zadavaciho_postupu_vz>
+<nazev_casti_vz>Rekonstrukce topného systému včetně zdroje tepla v objektu K Urnovému háji čp. 118, Lomnice nad Popelkou</nazev_casti_vz>
+<druh_casti_vz>stavební práce</druh_casti_vz>
+<rezim_casti_vz>Veřejné zakázky malého rozsahu</rezim_casti_vz>
+<predmet_casti_vz>Rekonstrukce topného systému včetně zdroje tepla</predmet_casti_vz>
+<hlavni_cpv_casti_vz>39715210</hlavni_cpv_casti_vz>
+<zadavaci_postup_casti>
+<id_objektu>ZP-P26V00004399</id_objektu>
+<lhuty_zadavaciho_postupu>
+<lhuta>
+<druh_lhuty>lhůta podání žádosti</druh_lhuty>
+<datum_konce_lhuty>2026-07-02T12:38:00+02:00</datum_konce_lhuty>
+</lhuta>
+<lhuta>
+<druh_lhuty>lhůta podání nabídky</druh_lhuty>
+<datum_konce_lhuty>2026-07-02T12:38:00+02:00</datum_konce_lhuty>
+</lhuta>
+</lhuty_zadavaciho_postupu>
+<stav_zadavaciho_postupu>dokončen</stav_zadavaciho_postupu>
+<druh_zadavaciho_postupu>přímé zadání</druh_zadavaciho_postupu>
+<ramcova_dohoda>0</ramcova_dohoda>
+<zavedeni_dns>0</zavedeni_dns>
+<dokumenty>
+<dokument>
+<url>https://www.vhodne-uverejneni.cz/index.php?m=xenorders&amp;h=orderdocument&amp;a=detail&amp;document=3865358</url>
+<typ_dokumentu>smlouva</typ_dokumentu>
+<jiny_dokument_nazev>Smlouva, její změny a dodatky</jiny_dokument_nazev>
+<cas_vlozeni_na_profil>2026-07-02T12:38:03+02:00</cas_vlozeni_na_profil>
+<metadata_smlouvy_nebo_rd>
+<smluvni_strany>
+<smluvni_strana>
+<subjekt>
+<ico>44564228</ico>
+<nazev_subjektu>RoBa spol. s r.o.</nazev_subjektu>
+<misto_podnikani>CZ</misto_podnikani>
+</subjekt>
+</smluvni_strana>
+</smluvni_strany>
+<predmet_smlouvy>Rekonstrukce topného systému včetně zdroje tepla</predmet_smlouvy>
+<smluvni_cena_s_dph>1953762.88</smluvni_cena_s_dph>
+<smluvni_cena_bez_dph>1744431.14</smluvni_cena_bez_dph>
+</metadata_smlouvy_nebo_rd>
+</dokument>
+</dokumenty>
+<datum_uverejneni>2026-07-02T12:38:03+02:00</datum_uverejneni>
+<ucastnici>
+<ucastnik>
+<subjekt>
+<ico>44564228</ico>
+<nazev_subjektu>RoBa spol. s r.o.</nazev_subjektu>
+<misto_podnikani>CZ</misto_podnikani>
+</subjekt>
+<nabidkova_cena_bez_dph>1744431.14</nabidkova_cena_bez_dph>
+<nabidkova_cena_s_dph>1953762.88</nabidkova_cena_s_dph>
+<role_ucastnika>dodavatel bez společné účasti</role_ucastnika>
+<ucastnik_vyloucen>0</ucastnik_vyloucen>
+<ucastnik_odstoupil>0</ucastnik_odstoupil>
+</ucastnik>              <ucastnik>
+<subjekt>
+<ico>22793631</ico>
+<nazev_subjektu>SEGAS-OIL s.r.o.</nazev_subjektu>
+<misto_podnikani>CZ</misto_podnikani>
+</subjekt>
+<nabidkova_cena_bez_dph>1914440.00</nabidkova_cena_bez_dph>
+<nabidkova_cena_s_dph>2144172.80</nabidkova_cena_s_dph>
+<role_ucastnika>dodavatel bez společné účasti</role_ucastnika>
+<ucastnik_vyloucen>0</ucastnik_vyloucen>
+<ucastnik_odstoupil>0</ucastnik_odstoupil>
+</ucastnik>          </ucastnici>
+<vybrani_dodavatele>
+<vybrany_dodavatel>
+<subjekt>
+<ico>44564228</ico>
+<nazev_subjektu>RoBa spol. s r.o.</nazev_subjektu>
+<misto_podnikani>CZ</misto_podnikani>
+</subjekt>
+<uzavrena_smlouva_nebo_rd>1</uzavrena_smlouva_nebo_rd>
+<smluvni_cena_s_DPH>1953762.88</smluvni_cena_s_DPH>
+<smluvni_cena_bez_DPH>1744431.14</smluvni_cena_bez_DPH>
+<role_dodavatele>dodavatel bez společné účasti</role_dodavatele>
+</vybrany_dodavatel>          </vybrani_dodavatele>
+<zjisten_stret_zajmu>0</zjisten_stret_zajmu>
+</zadavaci_postup_casti>
+</cast_zakazky>      </casti_vz>
+</zakazka>                    <zakazka>
+<id_objektu>P26V00002162</id_objektu>
+<nazev_vz>Veřejné osvětlení</nazev_vz>
+<druh_vz>stavební práce</druh_vz>
+<rezim_vz>Podlimitní</rezim_vz>
+<predmet_vz>Předmět veřejné zakázky  je zřízení nové osvětlovací soustavy v délce cca 2,0 km v průběhu tří let (3 samostatné etapy).
+Osvětlení chodníku  bude provedeno pomocí 50 stožárů o výšce 8,2 m a 4 stožárů o výšce 6 m. Na stožáry budou osazeny svítidla LED tř. I s barvou světla 2700 K dle výpočtu osvětlení. Celkem bude použito 54 svítidel uličního typu. Na nové stožáry bude ze stávajících přesunuto celkem 15 ks rozhlasových bateriových amplionů. Kromě osvětlovacích stožárů budou instalovány párové stožáry na opačnou stranu ulice za účelem zakotvení převěsu mezi osvětlovací a párový stožár. Po vybudování nové osvětlovací soustavy bude provedena demontáž stávajících stožárů a svítidel. Celkem bude zdemontováno 50 ks stožárů vč. rozbourání základu.
+Plnění je rozděleno na 3 etapy v průběhu tří let, a to:
+V roce 2026 bude realizována etapa č. 1 v rozsahu od začátku úseku po lampu č. 28.
+V roce 2027 bude realizována etapa č. 2 v rozsahu od konce úseku po lampu č. 13.
+V roce 2028 bude realizována etapa č. 3 v rozsahu mezi lampami č. 13 a 28.</predmet_vz>
+<hlavni_cpv>45316110</hlavni_cpv>
+<delena_na_casti>0</delena_na_casti>
+<zadavaci_postupy>
+<zadavaci_postup>
+<id_objektu>ZP-P26V00002162</id_objektu>
+</zadavaci_postup>
+</zadavaci_postupy>
+<casti_vz>
+<cast_zakazky>
+<id_objektu>P26V00002162</id_objektu>
+<id_zadavaciho_postupu_vz>ZP-P26V00002162</id_zadavaciho_postupu_vz>
+<nazev_casti_vz>Veřejné osvětlení</nazev_casti_vz>
+<druh_casti_vz>stavební práce</druh_casti_vz>
+<rezim_casti_vz>Podlimitní</rezim_casti_vz>
+<predmet_casti_vz>Předmět veřejné zakázky  je zřízení nové osvětlovací soustavy v délce cca 2,0 km v průběhu tří let (3 samostatné etapy).
+Osvětlení chodníku  bude provedeno pomocí 50 stožárů o výšce 8,2 m a 4 stožárů o výšce 6 m. Na stožáry budou osazeny svítidla LED tř. I s barvou světla 2700 K dle výpočtu osvětlení. Celkem bude použito 54 svítidel uličního typu. Na nové stožáry bude ze stávajících přesunuto celkem 15 ks rozhlasových bateriových amplionů. Kromě osvětlovacích stožárů budou instalovány párové stožáry na opačnou stranu ulice za účelem zakotvení převěsu mezi osvětlovací a párový stožár. Po vybudování nové osvětlovací soustavy bude provedena demontáž stávajících stožárů a svítidel. Celkem bude zdemontováno 50 ks stožárů vč. rozbourání základu.
+Plnění je rozděleno na 3 etapy v průběhu tří let, a to:
+V roce 2026 bude realizována etapa č. 1 v rozsahu od začátku úseku po lampu č. 28.
+V roce 2027 bude realizována etapa č. 2 v rozsahu od konce úseku po lampu č. 13.
+V roce 2028 bude realizována etapa č. 3 v rozsahu mezi lampami č. 13 a 28.</predmet_casti_vz>
+<hlavni_cpv_casti_vz>45316110</hlavni_cpv_casti_vz>
+<zadavaci_postup_casti>
+<id_objektu>ZP-P26V00002162</id_objektu>
+<lhuty_zadavaciho_postupu>
+<lhuta>
+<druh_lhuty>lhůta podání nabídky</druh_lhuty>
+<datum_konce_lhuty>2026-05-20T09:00:00+02:00</datum_konce_lhuty>
+</lhuta>
+</lhuty_zadavaciho_postupu>
+<stav_zadavaciho_postupu>dokončen</stav_zadavaciho_postupu>
+<druh_zadavaciho_postupu>zjednodušené podlimitní řízení</druh_zadavaciho_postupu>
+<ramcova_dohoda>0</ramcova_dohoda>
+<zavedeni_dns>0</zavedeni_dns>
+<dokumenty>
+<dokument>
+<url>https://www.vhodne-uverejneni.cz/index.php?m=xenorders&amp;h=orderdocument&amp;a=detail&amp;document=3868297</url>
+<typ_dokumentu>písemná zpráva zadavatele</typ_dokumentu>
+<jiny_dokument_nazev>Písemná zpráva zadavatele</jiny_dokument_nazev>
+<cas_vlozeni_na_profil>2026-07-08T16:42:20+02:00</cas_vlozeni_na_profil>
+</dokument>
+<dokument>
+<url>https://www.vhodne-uverejneni.cz/index.php?m=xenorders&amp;h=orderdocument&amp;a=detail&amp;document=3868298</url>
+<typ_dokumentu>smlouva</typ_dokumentu>
+<jiny_dokument_nazev>Smlouva, její změny a dodatky</jiny_dokument_nazev>
+<cas_vlozeni_na_profil>2026-07-08T16:42:20+02:00</cas_vlozeni_na_profil>
+<metadata_smlouvy_nebo_rd>
+<smluvni_strany>
+<smluvni_strana>
+<subjekt>
+<ico>15043487</ico>
+<nazev_subjektu>ELEKTROS, spol. s r.o.</nazev_subjektu>
+<misto_podnikani>CZ</misto_podnikani>
+</subjekt>
+</smluvni_strana>
+</smluvni_strany>
+<predmet_smlouvy>Předmět veřejné zakázky  je zřízení nové osvětlovací soustavy v délce cca 2,0 km v průběhu tří let (3 samostatné etapy).
+Osvětlení chodníku  bude provedeno pomocí 50 stožárů o výšce 8,2 m a 4 stožárů o výšce 6 m. Na stožáry budou osazeny svítidla LED tř. I s barvou světla 2700 K dle výpočtu osvětlení. Celkem bude použito 54 svítidel uličního typu. Na nové stožáry bude ze stávajících přesunuto celkem 15 ks rozhlasových bateriových amplionů. Kromě osvětlovacích stožárů budou instalovány párové stožáry na opačnou stranu ulice za účelem zakotvení převěsu mezi osvětlovací a párový stožár. Po vybudování nové osvětlovací soustavy bude provedena demontáž stávajících stožárů a svítidel. Celkem bude zdemontováno 50 ks stožárů vč. rozbourání základu.
+Plnění je rozděleno na 3 etapy v průběhu tří let, a to:
+V roce 2026 bude realizována etapa č. 1 v rozsahu od začátku úseku po lampu č. 28.
+V roce 2027 bude realizována etapa č. 2 v rozsahu od konce úseku po lampu č. 13.
+V roce 2028 bude realizována etapa č. 3 v rozsahu mezi lampami č. 13 a 28.</predmet_smlouvy>
+<smluvni_cena_s_dph>8549584.12</smluvni_cena_s_dph>
+<smluvni_cena_bez_dph>7065772</smluvni_cena_bez_dph>
+<datum_uzavreni_smlouvy>2026-07-08T00:00:00+02:00</datum_uzavreni_smlouvy>
+</metadata_smlouvy_nebo_rd>
+</dokument>
+<dokument>
+<url>https://www.vhodne-uverejneni.cz/index.php?m=xenorders&amp;h=orderdocument&amp;a=detail&amp;document=3868299</url>
+<typ_dokumentu>smlouva</typ_dokumentu>
+<jiny_dokument_nazev>Smlouva, její změny a dodatky</jiny_dokument_nazev>
+<cas_vlozeni_na_profil>2026-07-08T16:42:20+02:00</cas_vlozeni_na_profil>
+<metadata_smlouvy_nebo_rd>
+<smluvni_strany>
+<smluvni_strana>
+<subjekt>
+<ico>15043487</ico>
+<nazev_subjektu>ELEKTROS, spol. s r.o.</nazev_subjektu>
+<misto_podnikani>CZ</misto_podnikani>
+</subjekt>
+</smluvni_strana>
+</smluvni_strany>
+<predmet_smlouvy>Předmět veřejné zakázky  je zřízení nové osvětlovací soustavy v délce cca 2,0 km v průběhu tří let (3 samostatné etapy).
+Osvětlení chodníku  bude provedeno pomocí 50 stožárů o výšce 8,2 m a 4 stožárů o výšce 6 m. Na stožáry budou osazeny svítidla LED tř. I s barvou světla 2700 K dle výpočtu osvětlení. Celkem bude použito 54 svítidel uličního typu. Na nové stožáry bude ze stávajících přesunuto celkem 15 ks rozhlasových bateriových amplionů. Kromě osvětlovacích stožárů budou instalovány párové stožáry na opačnou stranu ulice za účelem zakotvení převěsu mezi osvětlovací a párový stožár. Po vybudování nové osvětlovací soustavy bude provedena demontáž stávajících stožárů a svítidel. Celkem bude zdemontováno 50 ks stožárů vč. rozbourání základu.
+Plnění je rozděleno na 3 etapy v průběhu tří let, a to:
+V roce 2026 bude realizována etapa č. 1 v rozsahu od začátku úseku po lampu č. 28.
+V roce 2027 bude realizována etapa č. 2 v rozsahu od konce úseku po lampu č. 13.
+V roce 2028 bude realizována etapa č. 3 v rozsahu mezi lampami č. 13 a 28.</predmet_smlouvy>
+<smluvni_cena_s_dph>8549584.12</smluvni_cena_s_dph>
+<smluvni_cena_bez_dph>7065772</smluvni_cena_bez_dph>
+<datum_uzavreni_smlouvy>2026-07-08T00:00:00+02:00</datum_uzavreni_smlouvy>
+</metadata_smlouvy_nebo_rd>
+</dokument>
+<dokument>
+<url>https://www.vhodne-uverejneni.cz/index.php?m=xenorders&amp;h=orderdocument&amp;a=detail&amp;document=3868300</url>
+<typ_dokumentu>výběr dodavatele</typ_dokumentu>
+<jiny_dokument_nazev>Oznámení o výběru nejvhodnější nabídky</jiny_dokument_nazev>
+<cas_vlozeni_na_profil>2026-06-08T21:36:31+02:00</cas_vlozeni_na_profil>
+</dokument>
+<dokument>
+<url>https://www.vhodne-uverejneni.cz/index.php?m=xenorders&amp;h=orderdocument&amp;a=detail&amp;document=3868301</url>
+<typ_dokumentu>výběr dodavatele</typ_dokumentu>
+<jiny_dokument_nazev>Oznámení o výběru nejvhodnější nabídky</jiny_dokument_nazev>
+<cas_vlozeni_na_profil>2026-06-08T21:36:31+02:00</cas_vlozeni_na_profil>
+</dokument>
+<dokument>
+<url>https://www.vhodne-uverejneni.cz/index.php?m=xenorders&amp;h=orderdocument&amp;a=detail&amp;document=3868302</url>
+<typ_dokumentu>vysvětlení zadávací dokumentace</typ_dokumentu>
+<jiny_dokument_nazev>Vysvětlení, doplnění, změna zadávací dokumentace</jiny_dokument_nazev>
+<cas_vlozeni_na_profil>2026-05-11T21:55:21+02:00</cas_vlozeni_na_profil>
+</dokument>
+<dokument>
+<url>https://www.vhodne-uverejneni.cz/index.php?m=xenorders&amp;h=orderdocument&amp;a=detail&amp;document=3868303</url>
+<typ_dokumentu>vysvětlení zadávací dokumentace</typ_dokumentu>
+<jiny_dokument_nazev>Vysvětlení, doplnění, změna zadávací dokumentace</jiny_dokument_nazev>
+<cas_vlozeni_na_profil>2026-05-07T15:22:32+02:00</cas_vlozeni_na_profil>
+</dokument>
+<dokument>
+<url>https://www.vhodne-uverejneni.cz/index.php?m=xenorders&amp;h=orderdocument&amp;a=detail&amp;document=3868304</url>
+<typ_dokumentu>vysvětlení zadávací dokumentace</typ_dokumentu>
+<jiny_dokument_nazev>Vysvětlení, doplnění, změna zadávací dokumentace</jiny_dokument_nazev>
+<cas_vlozeni_na_profil>2026-05-07T15:22:32+02:00</cas_vlozeni_na_profil>
+</dokument>
+<dokument>
+<url>https://www.vhodne-uverejneni.cz/index.php?m=xenorders&amp;h=orderdocument&amp;a=detail&amp;document=3868305</url>
+<typ_dokumentu>vysvětlení zadávací dokumentace</typ_dokumentu>
+<jiny_dokument_nazev>Vysvětlení, doplnění, změna zadávací dokumentace</jiny_dokument_nazev>
+<cas_vlozeni_na_profil>2026-05-07T15:22:32+02:00</cas_vlozeni_na_profil>
+</dokument>
+<dokument>
+<url>https://www.vhodne-uverejneni.cz/index.php?m=xenorders&amp;h=orderdocument&amp;a=detail&amp;document=3868306</url>
+<typ_dokumentu>vysvětlení zadávací dokumentace</typ_dokumentu>
+<jiny_dokument_nazev>Vysvětlení, doplnění, změna zadávací dokumentace</jiny_dokument_nazev>
+<cas_vlozeni_na_profil>2026-05-07T15:22:32+02:00</cas_vlozeni_na_profil>
+</dokument>
+<dokument>
+<url>https://www.vhodne-uverejneni.cz/index.php?m=xenorders&amp;h=orderdocument&amp;a=detail&amp;document=3868307</url>
+<typ_dokumentu>vysvětlení zadávací dokumentace</typ_dokumentu>
+<jiny_dokument_nazev>Vysvětlení, doplnění, změna zadávací dokumentace</jiny_dokument_nazev>
+<cas_vlozeni_na_profil>2026-05-07T15:22:32+02:00</cas_vlozeni_na_profil>
+</dokument>
+<dokument>
+<url>https://www.vhodne-uverejneni.cz/index.php?m=xenorders&amp;h=orderdocument&amp;a=detail&amp;document=3868308</url>
+<typ_dokumentu>vysvětlení zadávací dokumentace</typ_dokumentu>
+<jiny_dokument_nazev>Vysvětlení, doplnění, změna zadávací dokumentace</jiny_dokument_nazev>
+<cas_vlozeni_na_profil>2026-04-23T14:08:25+02:00</cas_vlozeni_na_profil>
+</dokument>
+<dokument>
+<url>https://www.vhodne-uverejneni.cz/index.php?m=xenorders&amp;h=orderdocument&amp;a=detail&amp;document=3868309</url>
+<typ_dokumentu>vysvětlení zadávací dokumentace</typ_dokumentu>
+<jiny_dokument_nazev>Vysvětlení, doplnění, změna zadávací dokumentace</jiny_dokument_nazev>
+<cas_vlozeni_na_profil>2026-04-23T13:37:39+02:00</cas_vlozeni_na_profil>
+</dokument>
+<dokument>
+<url>https://www.vhodne-uverejneni.cz/index.php?m=xenorders&amp;h=orderdocument&amp;a=detail&amp;document=3868310</url>
+<typ_dokumentu>vysvětlení zadávací dokumentace</typ_dokumentu>
+<jiny_dokument_nazev>Vysvětlení, doplnění, změna zadávací dokumentace</jiny_dokument_nazev>
+<cas_vlozeni_na_profil>2026-04-23T13:37:39+02:00</cas_vlozeni_na_profil>
+</dokument>
+<dokument>
+<url>https://www.vhodne-uverejneni.cz/index.php?m=xenorders&amp;h=orderdocument&amp;a=detail&amp;document=3868311</url>
+<typ_dokumentu>vysvětlení zadávací dokumentace</typ_dokumentu>
+<jiny_dokument_nazev>Vysvětlení, doplnění, změna zadávací dokumentace</jiny_dokument_nazev>
+<cas_vlozeni_na_profil>2026-04-23T13:37:39+02:00</cas_vlozeni_na_profil>
+</dokument>
+<dokument>
+<url>https://www.vhodne-uverejneni.cz/index.php?m=xenorders&amp;h=orderdocument&amp;a=detail&amp;document=3868312</url>
+<typ_dokumentu>výzva k podání nabídek</typ_dokumentu>
+<jiny_dokument_nazev>Výzva</jiny_dokument_nazev>
+<cas_vlozeni_na_profil>2026-04-17T07:15:01+02:00</cas_vlozeni_na_profil>
+</dokument>
+<dokument>
+<url>https://www.vhodne-uverejneni.cz/index.php?m=xenorders&amp;h=orderdocument&amp;a=detail&amp;document=3868313</url>
+<typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+<jiny_dokument_nazev>Zadávací a kvalifikační dokumentace, prohlídka místa plnění</jiny_dokument_nazev>
+<cas_vlozeni_na_profil>2026-04-17T07:15:01+02:00</cas_vlozeni_na_profil>
+</dokument>
+<dokument>
+<url>https://www.vhodne-uverejneni.cz/index.php?m=xenorders&amp;h=orderdocument&amp;a=detail&amp;document=3868314</url>
+<typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+<jiny_dokument_nazev>Zadávací a kvalifikační dokumentace, prohlídka místa plnění</jiny_dokument_nazev>
+<cas_vlozeni_na_profil>2026-04-17T07:15:01+02:00</cas_vlozeni_na_profil>
+</dokument>
+<dokument>
+<url>https://www.vhodne-uverejneni.cz/index.php?m=xenorders&amp;h=orderdocument&amp;a=detail&amp;document=3868315</url>
+<typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+<jiny_dokument_nazev>Zadávací a kvalifikační dokumentace, prohlídka místa plnění</jiny_dokument_nazev>
+<cas_vlozeni_na_profil>2026-04-17T07:15:01+02:00</cas_vlozeni_na_profil>
+</dokument>
+<dokument>
+<url>https://www.vhodne-uverejneni.cz/index.php?m=xenorders&amp;h=orderdocument&amp;a=detail&amp;document=3868316</url>
+<typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+<jiny_dokument_nazev>Zadávací a kvalifikační dokumentace, prohlídka místa plnění</jiny_dokument_nazev>
+<cas_vlozeni_na_profil>2026-04-17T07:15:01+02:00</cas_vlozeni_na_profil>
+</dokument>
+<dokument>
+<url>https://www.vhodne-uverejneni.cz/index.php?m=xenorders&amp;h=orderdocument&amp;a=detail&amp;document=3868317</url>
+<typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+<jiny_dokument_nazev>Zadávací a kvalifikační dokumentace, prohlídka místa plnění</jiny_dokument_nazev>
+<cas_vlozeni_na_profil>2026-04-17T07:15:01+02:00</cas_vlozeni_na_profil>
+</dokument>
+<dokument>
+<url>https://www.vhodne-uverejneni.cz/index.php?m=xenorders&amp;h=orderdocument&amp;a=detail&amp;document=3868318</url>
+<typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+<jiny_dokument_nazev>Zadávací a kvalifikační dokumentace, prohlídka místa plnění</jiny_dokument_nazev>
+<cas_vlozeni_na_profil>2026-04-17T07:15:01+02:00</cas_vlozeni_na_profil>
+</dokument>
+<dokument>
+<url>https://www.vhodne-uverejneni.cz/index.php?m=xenorders&amp;h=orderdocument&amp;a=detail&amp;document=3868319</url>
+<typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+<jiny_dokument_nazev>Zadávací a kvalifikační dokumentace, prohlídka místa plnění</jiny_dokument_nazev>
+<cas_vlozeni_na_profil>2026-04-17T07:15:01+02:00</cas_vlozeni_na_profil>
+</dokument>
+</dokumenty>
+<datum_uverejneni>2026-04-17T07:15:01+02:00</datum_uverejneni>
+<ucastnici>
+<ucastnik>
+<subjekt>
+<ico>25298194</ico>
+<nazev_subjektu>RYDVAL - ELEKTRO s.r.o.</nazev_subjektu>
+<misto_podnikani>CZ</misto_podnikani>
+</subjekt>
+<nabidkova_cena_bez_dph>12677111.04</nabidkova_cena_bez_dph>
+<role_ucastnika>dodavatel bez společné účasti</role_ucastnika>
+<ucastnik_vyloucen>0</ucastnik_vyloucen>
+<ucastnik_odstoupil>0</ucastnik_odstoupil>
+</ucastnik>              <ucastnik>
+<subjekt>
+<ico>15043487</ico>
+<nazev_subjektu>ELEKTROS, spol. s r.o.</nazev_subjektu>
+<misto_podnikani>CZ</misto_podnikani>
+</subjekt>
+<nabidkova_cena_bez_dph>7065772.00</nabidkova_cena_bez_dph>
+<nabidkova_cena_s_dph>8549584.12</nabidkova_cena_s_dph>
+<role_ucastnika>dodavatel bez společné účasti</role_ucastnika>
+<ucastnik_vyloucen>0</ucastnik_vyloucen>
+<ucastnik_odstoupil>0</ucastnik_odstoupil>
+</ucastnik>              <ucastnik>
+<subjekt>
+<ico>47544929</ico>
+<nazev_subjektu>Elmoz Czech, s.r.o.</nazev_subjektu>
+<misto_podnikani>CZ</misto_podnikani>
+</subjekt>
+<nabidkova_cena_bez_dph>15150916.00</nabidkova_cena_bez_dph>
+<role_ucastnika>dodavatel bez společné účasti</role_ucastnika>
+<ucastnik_vyloucen>0</ucastnik_vyloucen>
+<ucastnik_odstoupil>0</ucastnik_odstoupil>
+</ucastnik>              <ucastnik>
+<subjekt>
+<ico>25751018</ico>
+<nazev_subjektu>ELTODO OSVĚTLENÍ, s.r.o.</nazev_subjektu>
+<misto_podnikani>CZ</misto_podnikani>
+</subjekt>
+<nabidkova_cena_bez_dph>8597500.00</nabidkova_cena_bez_dph>
+<role_ucastnika>dodavatel bez společné účasti</role_ucastnika>
+<ucastnik_vyloucen>0</ucastnik_vyloucen>
+<ucastnik_odstoupil>0</ucastnik_odstoupil>
+</ucastnik>          </ucastnici>
+<vybrani_dodavatele>
+<vybrany_dodavatel>
+<subjekt>
+<ico>15043487</ico>
+<nazev_subjektu>ELEKTROS, spol. s r.o.</nazev_subjektu>
+<misto_podnikani>CZ</misto_podnikani>
+</subjekt>
+<uzavrena_smlouva_nebo_rd>1</uzavrena_smlouva_nebo_rd>
+<smluvni_cena_s_DPH>8549584.12</smluvni_cena_s_DPH>
+<smluvni_cena_bez_DPH>7065772.00</smluvni_cena_bez_DPH>
+<role_dodavatele>dodavatel bez společné účasti</role_dodavatele>
+</vybrany_dodavatel>          </vybrani_dodavatele>
+<zjisten_stret_zajmu>0</zjisten_stret_zajmu>
+<datum_uzavreni_smlouvy>2026-07-08T00:00:00+02:00</datum_uzavreni_smlouvy>
+</zadavaci_postup_casti>
+</cast_zakazky>      </casti_vz>
+</zakazka>                    <zakazka>
+<id_objektu>P26V00004533</id_objektu>
+<nazev_vz>Rekonstrukce SK, DT a VSS v budově ZUŠ, Lomnice nad Popelkou</nazev_vz>
+<druh_vz>stavební práce</druh_vz>
+<rezim_vz>Veřejné zakázky malého rozsahu</rezim_vz>
+<predmet_vz>Modernizace datové infrastruktury objektu ZUŠ Lomnice nad Popelkou</predmet_vz>
+<hlavni_cpv>32581000</hlavni_cpv>
+<delena_na_casti>0</delena_na_casti>
+<zadavaci_postupy>
+<zadavaci_postup>
+<id_objektu>ZP-P26V00004533</id_objektu>
+</zadavaci_postup>
+</zadavaci_postupy>
+<casti_vz>
+<cast_zakazky>
+<id_objektu>P26V00004533</id_objektu>
+<id_zadavaciho_postupu_vz>ZP-P26V00004533</id_zadavaciho_postupu_vz>
+<nazev_casti_vz>Rekonstrukce SK, DT a VSS v budově ZUŠ, Lomnice nad Popelkou</nazev_casti_vz>
+<druh_casti_vz>stavební práce</druh_casti_vz>
+<rezim_casti_vz>Veřejné zakázky malého rozsahu</rezim_casti_vz>
+<predmet_casti_vz>Modernizace datové infrastruktury objektu ZUŠ Lomnice nad Popelkou</predmet_casti_vz>
+<hlavni_cpv_casti_vz>32581000</hlavni_cpv_casti_vz>
+<zadavaci_postup_casti>
+<id_objektu>ZP-P26V00004533</id_objektu>
+<lhuty_zadavaciho_postupu>
+<lhuta>
+<druh_lhuty>lhůta podání žádosti</druh_lhuty>
+<datum_konce_lhuty>2026-07-09T13:51:00+02:00</datum_konce_lhuty>
+</lhuta>
+<lhuta>
+<druh_lhuty>lhůta podání nabídky</druh_lhuty>
+<datum_konce_lhuty>2026-07-09T13:51:00+02:00</datum_konce_lhuty>
+</lhuta>
+</lhuty_zadavaciho_postupu>
+<stav_zadavaciho_postupu>dokončen</stav_zadavaciho_postupu>
+<druh_zadavaciho_postupu>přímé zadání</druh_zadavaciho_postupu>
+<ramcova_dohoda>0</ramcova_dohoda>
+<zavedeni_dns>0</zavedeni_dns>
+<dokumenty>
+<dokument>
+<url>https://www.vhodne-uverejneni.cz/index.php?m=xenorders&amp;h=orderdocument&amp;a=detail&amp;document=3869219</url>
+<typ_dokumentu>smlouva</typ_dokumentu>
+<jiny_dokument_nazev>Smlouva, její změny a dodatky</jiny_dokument_nazev>
+<cas_vlozeni_na_profil>2026-07-09T13:51:03+02:00</cas_vlozeni_na_profil>
+<metadata_smlouvy_nebo_rd>
+<smluvni_strany>
+<smluvni_strana>
+<subjekt>
+<ico>07586272</ico>
+<nazev_subjektu>Crystal Smart Voltage s.r.o.</nazev_subjektu>
+<misto_podnikani>CZ</misto_podnikani>
+</subjekt>
+</smluvni_strana>
+</smluvni_strany>
+<predmet_smlouvy>Modernizace datové infrastruktury objektu ZUŠ Lomnice nad Popelkou</predmet_smlouvy>
+<smluvni_cena_s_dph>1579478.99</smluvni_cena_s_dph>
+<smluvni_cena_bez_dph>1305354.54</smluvni_cena_bez_dph>
+</metadata_smlouvy_nebo_rd>
+</dokument>
+<dokument>
+<url>https://www.vhodne-uverejneni.cz/index.php?m=xenorders&amp;h=orderdocument&amp;a=detail&amp;document=3869220</url>
+<typ_dokumentu>smlouva</typ_dokumentu>
+<jiny_dokument_nazev>Smlouva, její změny a dodatky</jiny_dokument_nazev>
+<cas_vlozeni_na_profil>2026-07-09T13:51:03+02:00</cas_vlozeni_na_profil>
+<metadata_smlouvy_nebo_rd>
+<smluvni_strany>
+<smluvni_strana>
+<subjekt>
+<ico>07586272</ico>
+<nazev_subjektu>Crystal Smart Voltage s.r.o.</nazev_subjektu>
+<misto_podnikani>CZ</misto_podnikani>
+</subjekt>
+</smluvni_strana>
+</smluvni_strany>
+<predmet_smlouvy>Modernizace datové infrastruktury objektu ZUŠ Lomnice nad Popelkou</predmet_smlouvy>
+<smluvni_cena_s_dph>1579478.99</smluvni_cena_s_dph>
+<smluvni_cena_bez_dph>1305354.54</smluvni_cena_bez_dph>
+</metadata_smlouvy_nebo_rd>
+</dokument>
+</dokumenty>
+<datum_uverejneni>2026-07-09T13:51:02+02:00</datum_uverejneni>
+<ucastnici>
+<ucastnik>
+<subjekt>
+<ico>07586272</ico>
+<nazev_subjektu>Crystal Smart Voltage s.r.o.</nazev_subjektu>
+<misto_podnikani>CZ</misto_podnikani>
+</subjekt>
+<nabidkova_cena_bez_dph>1305354.54</nabidkova_cena_bez_dph>
+<nabidkova_cena_s_dph>1579478.99</nabidkova_cena_s_dph>
+<role_ucastnika>dodavatel bez společné účasti</role_ucastnika>
+<ucastnik_vyloucen>0</ucastnik_vyloucen>
+<ucastnik_odstoupil>0</ucastnik_odstoupil>
+</ucastnik>              <ucastnik>
+<subjekt>
+<ico>25576119</ico>
+<nazev_subjektu>ELMONT GROUP, a.s.</nazev_subjektu>
+<misto_podnikani>CZ</misto_podnikani>
+</subjekt>
+<nabidkova_cena_bez_dph>1392306.50</nabidkova_cena_bez_dph>
+<nabidkova_cena_s_dph>1684690.87</nabidkova_cena_s_dph>
+<role_ucastnika>dodavatel bez společné účasti</role_ucastnika>
+<ucastnik_vyloucen>0</ucastnik_vyloucen>
+<ucastnik_odstoupil>0</ucastnik_odstoupil>
+</ucastnik>          </ucastnici>
+<vybrani_dodavatele>
+<vybrany_dodavatel>
+<subjekt>
+<ico>07586272</ico>
+<nazev_subjektu>Crystal Smart Voltage s.r.o.</nazev_subjektu>
+<misto_podnikani>CZ</misto_podnikani>
+</subjekt>
+<uzavrena_smlouva_nebo_rd>1</uzavrena_smlouva_nebo_rd>
+<smluvni_cena_s_DPH>1579478.99</smluvni_cena_s_DPH>
+<smluvni_cena_bez_DPH>1305354.54</smluvni_cena_bez_DPH>
+<role_dodavatele>dodavatel bez společné účasti</role_dodavatele>
+</vybrany_dodavatel>          </vybrani_dodavatele>
+<zjisten_stret_zajmu>0</zjisten_stret_zajmu>
+</zadavaci_postup_casti>
+</cast_zakazky>      </casti_vz>
+</zakazka>                    <zakazka>
+<id_objektu>P26V00004559</id_objektu>
+<nazev_vz>Lesní cesta „Stránsko“</nazev_vz>
+<druh_vz>stavební práce</druh_vz>
+<rezim_vz>Veřejné zakázky malého rozsahu</rezim_vz>
+<predmet_vz>Předmětem  veřejné zakázky Lesní cesta „Stránsko“ je rekonstrukce lesní cesty Stránsko v délce 796 metrů s úpravou parametrů lesní cesty na 2L 4,0/20.
+Předmět realizace se nachází mezi obcemi Stružinec, Želechy a velkolomem Koštálov. Začátek lesní cesty dle PD (km 0,000) se nachází na východním okraji obce Stružinec, odbočením z cesty spojující Stružinec s obcí Želechy. Trasa směruje přibližně severním směrem. Prochází lesními porosty v přímých úsecích, pouze se dvěma směrovými oblouky menších poloměrů v km 0,045 a 0,300. Končí výjezdem na polní cestu vedoucí po okraji lesního porostu v lokalitě Stránsko (km 0,796).
+V trase jsou řešeny sjezdy, 2 výhybny, svodnice a čištění propustu. Podkladní vrstvy budou z hrubé štěrkodrti a tříděného kameniva. Krycí vrstva je navržena z drobné štěrkodrti zavibrované do podkladního kameniva a s doplňujícím podrcením drobným kamenivem se zavibrováním. Podkladní a krycí vrstvy vozovky budou z kameniva drceného bez živičného pojiva. V km 0,285-0,310 vpravo a km 0,670-0,695 vpravo budou zpevněny výhybny.</predmet_vz>
+<hlavni_cpv>45233223</hlavni_cpv>
+<delena_na_casti>0</delena_na_casti>
+<zadavaci_postupy>
+<zadavaci_postup>
+<id_objektu>ZP-P26V00004559</id_objektu>
+</zadavaci_postup>
+</zadavaci_postupy>
+<casti_vz>
+<cast_zakazky>
+<id_objektu>P26V00004559</id_objektu>
+<id_zadavaciho_postupu_vz>ZP-P26V00004559</id_zadavaciho_postupu_vz>
+<nazev_casti_vz>Lesní cesta „Stránsko“</nazev_casti_vz>
+<druh_casti_vz>stavební práce</druh_casti_vz>
+<rezim_casti_vz>Veřejné zakázky malého rozsahu</rezim_casti_vz>
+<predmet_casti_vz>Předmětem  veřejné zakázky Lesní cesta „Stránsko“ je rekonstrukce lesní cesty Stránsko v délce 796 metrů s úpravou parametrů lesní cesty na 2L 4,0/20.
+Předmět realizace se nachází mezi obcemi Stružinec, Želechy a velkolomem Koštálov. Začátek lesní cesty dle PD (km 0,000) se nachází na východním okraji obce Stružinec, odbočením z cesty spojující Stružinec s obcí Želechy. Trasa směruje přibližně severním směrem. Prochází lesními porosty v přímých úsecích, pouze se dvěma směrovými oblouky menších poloměrů v km 0,045 a 0,300. Končí výjezdem na polní cestu vedoucí po okraji lesního porostu v lokalitě Stránsko (km 0,796).
+V trase jsou řešeny sjezdy, 2 výhybny, svodnice a čištění propustu. Podkladní vrstvy budou z hrubé štěrkodrti a tříděného kameniva. Krycí vrstva je navržena z drobné štěrkodrti zavibrované do podkladního kameniva a s doplňujícím podrcením drobným kamenivem se zavibrováním. Podkladní a krycí vrstvy vozovky budou z kameniva drceného bez živičného pojiva. V km 0,285-0,310 vpravo a km 0,670-0,695 vpravo budou zpevněny výhybny.</predmet_casti_vz>
+<hlavni_cpv_casti_vz>45233223</hlavni_cpv_casti_vz>
+<zadavaci_postup_casti>
+<id_objektu>ZP-P26V00004559</id_objektu>
+<lhuty_zadavaciho_postupu>
+<lhuta>
+<druh_lhuty>lhůta podání žádosti</druh_lhuty>
+<datum_konce_lhuty>2026-07-20T11:14:00+02:00</datum_konce_lhuty>
+</lhuta>
+<lhuta>
+<druh_lhuty>lhůta podání nabídky</druh_lhuty>
+<datum_konce_lhuty>2026-07-20T11:14:00+02:00</datum_konce_lhuty>
+</lhuta>
+</lhuty_zadavaciho_postupu>
+<stav_zadavaciho_postupu>dokončen</stav_zadavaciho_postupu>
+<druh_zadavaciho_postupu>přímé zadání</druh_zadavaciho_postupu>
+<ramcova_dohoda>0</ramcova_dohoda>
+<zavedeni_dns>0</zavedeni_dns>
+<dokumenty>
+<dokument>
+<url>https://www.vhodne-uverejneni.cz/index.php?m=xenorders&amp;h=orderdocument&amp;a=detail&amp;document=3870133</url>
+<typ_dokumentu>smlouva</typ_dokumentu>
+<jiny_dokument_nazev>Smlouva, její změny a dodatky</jiny_dokument_nazev>
+<cas_vlozeni_na_profil>2026-07-20T11:14:03+02:00</cas_vlozeni_na_profil>
+<metadata_smlouvy_nebo_rd>
+<smluvni_strany>
+<smluvni_strana>
+<subjekt>
+<ico>28762070</ico>
+<nazev_subjektu>MIZERA - STAVBY, a.s.</nazev_subjektu>
+<misto_podnikani>CZ</misto_podnikani>
+</subjekt>
+</smluvni_strana>
+</smluvni_strany>
+<predmet_smlouvy>Předmětem  veřejné zakázky Lesní cesta „Stránsko“ je rekonstrukce lesní cesty Stránsko v délce 796 metrů s úpravou parametrů lesní cesty na 2L 4,0/20.
+Předmět realizace se nachází mezi obcemi Stružinec, Želechy a velkolomem Koštálov. Začátek lesní cesty dle PD (km 0,000) se nachází na východním okraji obce Stružinec, odbočením z cesty spojující Stružinec s obcí Želechy. Trasa směruje přibližně severním směrem. Prochází lesními porosty v přímých úsecích, pouze se dvěma směrovými oblouky menších poloměrů v km 0,045 a 0,300. Končí výjezdem na polní cestu vedoucí po okraji lesního porostu v lokalitě Stránsko (km 0,796).
+V trase jsou řešeny sjezdy, 2 výhybny, svodnice a čištění propustu. Podkladní vrstvy budou z hrubé štěrkodrti a tříděného kameniva. Krycí vrstva je navržena z drobné štěrkodrti zavibrované do podkladního kameniva a s doplňujícím podrcením drobným kamenivem se zavibrováním. Podkladní a krycí vrstvy vozovky budou z kameniva drceného bez živičného pojiva. V km 0,285-0,310 vpravo a km 0,670-0,695 vpravo budou zpevněny výhybny.</predmet_smlouvy>
+<smluvni_cena_s_dph>2745470.75</smluvni_cena_s_dph>
+<smluvni_cena_bez_dph>2268984.09</smluvni_cena_bez_dph>
+</metadata_smlouvy_nebo_rd>
+</dokument>
+</dokumenty>
+<datum_uverejneni>2026-07-20T11:14:03+02:00</datum_uverejneni>
+<ucastnici>
+<ucastnik>
+<subjekt>
+<ico>28762070</ico>
+<nazev_subjektu>MIZERA - STAVBY, a.s.</nazev_subjektu>
+<misto_podnikani>CZ</misto_podnikani>
+</subjekt>
+<nabidkova_cena_bez_dph>2268984.09</nabidkova_cena_bez_dph>
+<nabidkova_cena_s_dph>2745470.75</nabidkova_cena_s_dph>
+<role_ucastnika>dodavatel bez společné účasti</role_ucastnika>
+<ucastnik_vyloucen>0</ucastnik_vyloucen>
+<ucastnik_odstoupil>0</ucastnik_odstoupil>
+</ucastnik>          </ucastnici>
+<vybrani_dodavatele>
+<vybrany_dodavatel>
+<subjekt>
+<ico>28762070</ico>
+<nazev_subjektu>MIZERA - STAVBY, a.s.</nazev_subjektu>
+<misto_podnikani>CZ</misto_podnikani>
+</subjekt>
+<uzavrena_smlouva_nebo_rd>1</uzavrena_smlouva_nebo_rd>
+<smluvni_cena_s_DPH>2745470.75</smluvni_cena_s_DPH>
+<smluvni_cena_bez_DPH>2268984.09</smluvni_cena_bez_DPH>
+<role_dodavatele>dodavatel bez společné účasti</role_dodavatele>
+</vybrany_dodavatel>          </vybrani_dodavatele>
+<zjisten_stret_zajmu>0</zjisten_stret_zajmu>
+<id_dotacniho_projektu>Program rozvoje venkova, intervence 36.73 Investice do lesnické infrastruktury, záměr a) Investice do lesních cest.</id_dotacniho_projektu>
+</zadavaci_postup_casti>
+</cast_zakazky>      </casti_vz>
+</zakazka>                    <zakazka>
+<id_objektu>P26V00003724</id_objektu>
+<nazev_vz>Výměna oken ZUŠ Lomnice nad Popelkou - dodávka a montáž</nazev_vz>
+<druh_vz>stavební práce</druh_vz>
+<rezim_vz>Veřejné zakázky malého rozsahu</rezim_vz>
+<predmet_vz>Výměna oken ZUŠ Lomnice nad Popelkou - dodávka a montáž</predmet_vz>
+<hlavni_cpv>45000000</hlavni_cpv>
+<delena_na_casti>0</delena_na_casti>
+<zadavaci_postupy>
+<zadavaci_postup>
+<id_objektu>ZP-P26V00003724</id_objektu>
+</zadavaci_postup>
+</zadavaci_postupy>
+<casti_vz>
+<cast_zakazky>
+<id_objektu>P26V00003724</id_objektu>
+<id_zadavaciho_postupu_vz>ZP-P26V00003724</id_zadavaciho_postupu_vz>
+<nazev_casti_vz>Výměna oken ZUŠ Lomnice nad Popelkou - dodávka a montáž</nazev_casti_vz>
+<druh_casti_vz>stavební práce</druh_casti_vz>
+<rezim_casti_vz>Veřejné zakázky malého rozsahu</rezim_casti_vz>
+<predmet_casti_vz>Výměna oken ZUŠ Lomnice nad Popelkou - dodávka a montáž</predmet_casti_vz>
+<hlavni_cpv_casti_vz>45000000</hlavni_cpv_casti_vz>
+<zadavaci_postup_casti>
+<id_objektu>ZP-P26V00003724</id_objektu>
+<lhuty_zadavaciho_postupu>
+<lhuta>
+<druh_lhuty>lhůta podání žádosti</druh_lhuty>
+<datum_konce_lhuty>2026-06-05T10:45:00+02:00</datum_konce_lhuty>
+</lhuta>
+<lhuta>
+<druh_lhuty>lhůta podání nabídky</druh_lhuty>
+<datum_konce_lhuty>2026-06-05T10:45:00+02:00</datum_konce_lhuty>
+</lhuta>
+</lhuty_zadavaciho_postupu>
+<stav_zadavaciho_postupu>ukončeno plnění</stav_zadavaciho_postupu>
+<druh_zadavaciho_postupu>přímé zadání</druh_zadavaciho_postupu>
+<ramcova_dohoda>0</ramcova_dohoda>
+<zavedeni_dns>0</zavedeni_dns>
+<dokumenty>
+<dokument>
+<url>https://www.vhodne-uverejneni.cz/index.php?m=xenorders&amp;h=orderdocument&amp;a=detail&amp;document=3884804</url>
+<typ_dokumentu>jiný dokument</typ_dokumentu>
+<jiny_dokument_nazev>Výše skutečně uhrazené ceny za plnění VZ</jiny_dokument_nazev>
+<cas_vlozeni_na_profil>2026-08-04T13:38:16+02:00</cas_vlozeni_na_profil>
+</dokument>
+<dokument>
+<url>https://www.vhodne-uverejneni.cz/index.php?m=xenorders&amp;h=orderdocument&amp;a=detail&amp;document=3884805</url>
+<typ_dokumentu>smlouva</typ_dokumentu>
+<jiny_dokument_nazev>Smlouva, její změny a dodatky</jiny_dokument_nazev>
+<cas_vlozeni_na_profil>2026-08-03T08:00:16+02:00</cas_vlozeni_na_profil>
+<metadata_smlouvy_nebo_rd>
+<smluvni_strany>
+<smluvni_strana>
+<subjekt>
+<ico>25915185</ico>
+<nazev_subjektu>KEST s.r.o.</nazev_subjektu>
+<misto_podnikani>CZ</misto_podnikani>
+</subjekt>
+</smluvni_strana>
+</smluvni_strany>
+<predmet_smlouvy>Výměna oken ZUŠ Lomnice nad Popelkou - dodávka a montáž</predmet_smlouvy>
+<smluvni_cena_s_dph>3643026.4</smluvni_cena_s_dph>
+<smluvni_cena_bez_dph>3010765.6</smluvni_cena_bez_dph>
+<datum_uzavreni_smlouvy>2026-05-18T00:00:00+02:00</datum_uzavreni_smlouvy>
+</metadata_smlouvy_nebo_rd>
+</dokument>
+<dokument>
+<url>https://www.vhodne-uverejneni.cz/index.php?m=xenorders&amp;h=orderdocument&amp;a=detail&amp;document=3884806</url>
+<typ_dokumentu>výzva k podání nabídek</typ_dokumentu>
+<jiny_dokument_nazev>Výzva</jiny_dokument_nazev>
+<cas_vlozeni_na_profil>2026-06-05T10:45:03+02:00</cas_vlozeni_na_profil>
+</dokument>
+</dokumenty>
+<datum_uverejneni>2026-06-05T10:45:02+02:00</datum_uverejneni>
+<ucastnici>
+<ucastnik>
+<subjekt>
+<ico>25915185</ico>
+<nazev_subjektu>KEST s.r.o.</nazev_subjektu>
+<misto_podnikani>CZ</misto_podnikani>
+</subjekt>
+<nabidkova_cena_bez_dph>3010765.60</nabidkova_cena_bez_dph>
+<nabidkova_cena_s_dph>3643026.40</nabidkova_cena_s_dph>
+<role_ucastnika>dodavatel bez společné účasti</role_ucastnika>
+<ucastnik_vyloucen>0</ucastnik_vyloucen>
+<ucastnik_odstoupil>0</ucastnik_odstoupil>
+</ucastnik>          </ucastnici>
+<vybrani_dodavatele>
+<vybrany_dodavatel>
+<subjekt>
+<ico>25915185</ico>
+<nazev_subjektu>KEST s.r.o.</nazev_subjektu>
+<misto_podnikani>CZ</misto_podnikani>
+</subjekt>
+<uzavrena_smlouva_nebo_rd>1</uzavrena_smlouva_nebo_rd>
+<smluvni_cena_s_DPH>3643026.40</smluvni_cena_s_DPH>
+<smluvni_cena_bez_DPH>3010765.60</smluvni_cena_bez_DPH>
+<role_dodavatele>dodavatel bez společné účasti</role_dodavatele>
+<plneni_dodavateli>
+<plneni>
+<rok_smlouvy>2026</rok_smlouvy>
+<cena_za_rok_bez_dph>3006524.45</cena_za_rok_bez_dph>
+<cena_za_rok_s_dph>3637894.58</cena_za_rok_s_dph>
+</plneni>
+</plneni_dodavateli>
+</vybrany_dodavatel>          </vybrani_dodavatele>
+<zjisten_stret_zajmu>0</zjisten_stret_zajmu>
+<datum_uzavreni_smlouvy>2026-05-18T00:00:00+02:00</datum_uzavreni_smlouvy>
+</zadavaci_postup_casti>
+</cast_zakazky>      </casti_vz>
+</zakazka>                    <zakazka>
+<id_objektu>P26V00001385</id_objektu>
+<nazev_vz>Modernizace UČEBEN ZUŠ - dodávky</nazev_vz>
+<druh_vz>dodávky</druh_vz>
+<rezim_vz>Veřejné zakázky malého rozsahu</rezim_vz>
+<predmet_vz>Předmětem veřejné zakázky Modernizace UČEBEN ZUŠ – dodávky je  dodávka  vnitřního vybavení v rozsahu nábytek, koncové prvky, IT vybavení, výukové pomůcky a schodolez včetně případné instalace, montáže či zaškolení (pokud dané vybavení montáž, instalaci či zaškolení vyžaduje).
+Zadavatel preferuje dodávku nábytku, při jehož výrobě byly využity materiály šetrné k životnímu prostředí.</predmet_vz>
+<hlavni_cpv>30213300</hlavni_cpv>
+<delena_na_casti>1</delena_na_casti>
+<zadavaci_postupy>
+<zadavaci_postup>
+<id_objektu>ZP-P26V00001385</id_objektu>
+</zadavaci_postup>
+</zadavaci_postupy>
+<casti_vz>
+<cast_zakazky>
+<id_objektu>P26V00001385-90613</id_objektu>
+<id_zadavaciho_postupu_vz>ZP-P26V00001385</id_zadavaciho_postupu_vz>
+<nazev_casti_vz>Část 1</nazev_casti_vz>
+<druh_casti_vz>dodávky</druh_casti_vz>
+<rezim_casti_vz>Veřejné zakázky malého rozsahu</rezim_casti_vz>
+<predmet_casti_vz>nábytek a vybavení</predmet_casti_vz>
+<hlavni_cpv_casti_vz>30213300</hlavni_cpv_casti_vz>
+<zadavaci_postup_casti>
+<id_objektu>ZP-P26V00001385</id_objektu>
+<lhuty_zadavaciho_postupu>
+<lhuta>
+<druh_lhuty>lhůta podání žádosti</druh_lhuty>
+<datum_konce_lhuty>2026-03-04T21:30:00+01:00</datum_konce_lhuty>
+</lhuta>
+<lhuta>
+<druh_lhuty>lhůta podání nabídky</druh_lhuty>
+<datum_konce_lhuty>2026-03-04T21:30:00+01:00</datum_konce_lhuty>
+</lhuta>
+</lhuty_zadavaciho_postupu>
+<stav_zadavaciho_postupu>dokončen</stav_zadavaciho_postupu>
+<druh_zadavaciho_postupu>přímé zadání</druh_zadavaciho_postupu>
+<ramcova_dohoda>0</ramcova_dohoda>
+<zavedeni_dns>0</zavedeni_dns>
+<dokumenty>
+<dokument>
+<url>https://www.vhodne-uverejneni.cz/index.php?m=xenorders&amp;h=orderdocument&amp;a=detail&amp;document=3895761</url>
+<typ_dokumentu>smlouva</typ_dokumentu>
+<jiny_dokument_nazev>Smlouva, její změny a dodatky</jiny_dokument_nazev>
+<cas_vlozeni_na_profil>2026-08-24T08:29:43+02:00</cas_vlozeni_na_profil>
+<metadata_smlouvy_nebo_rd>
+<smluvni_strany>
+<smluvni_strana>
+<subjekt>
+<ico>48108375</ico>
+<nazev_subjektu>AV MEDIA SYSTEMS, a.s.</nazev_subjektu>
+<misto_podnikani>CZ</misto_podnikani>
+</subjekt>
+</smluvni_strana>
+<smluvni_strana>
+<subjekt>
+<ico>48108375</ico>
+<nazev_subjektu>AV MEDIA SYSTEMS, a.s.</nazev_subjektu>
+<misto_podnikani>CZ</misto_podnikani>
+</subjekt>
+</smluvni_strana>
+</smluvni_strany>
+<predmet_smlouvy>nábytek a vybavení</predmet_smlouvy>
+<smluvni_cena_s_dph>3324866.92</smluvni_cena_s_dph>
+<smluvni_cena_bez_dph>2747823.9</smluvni_cena_bez_dph>
+<datum_uzavreni_smlouvy>2026-03-04T00:00:00+01:00</datum_uzavreni_smlouvy>
+</metadata_smlouvy_nebo_rd>
+</dokument>
+<dokument>
+<url>https://www.vhodne-uverejneni.cz/index.php?m=xenorders&amp;h=orderdocument&amp;a=detail&amp;document=3895762</url>
+<typ_dokumentu>smlouva</typ_dokumentu>
+<jiny_dokument_nazev>Smlouva, její změny a dodatky</jiny_dokument_nazev>
+<cas_vlozeni_na_profil>2026-08-24T08:29:43+02:00</cas_vlozeni_na_profil>
+<metadata_smlouvy_nebo_rd>
+<smluvni_strany>
+<smluvni_strana>
+<subjekt>
+<ico>48108375</ico>
+<nazev_subjektu>AV MEDIA SYSTEMS, a.s.</nazev_subjektu>
+<misto_podnikani>CZ</misto_podnikani>
+</subjekt>
+</smluvni_strana>
+<smluvni_strana>
+<subjekt>
+<ico>48108375</ico>
+<nazev_subjektu>AV MEDIA SYSTEMS, a.s.</nazev_subjektu>
+<misto_podnikani>CZ</misto_podnikani>
+</subjekt>
+</smluvni_strana>
+</smluvni_strany>
+<predmet_smlouvy>nábytek a vybavení</predmet_smlouvy>
+<smluvni_cena_s_dph>3324866.92</smluvni_cena_s_dph>
+<smluvni_cena_bez_dph>2747823.9</smluvni_cena_bez_dph>
+<datum_uzavreni_smlouvy>2026-03-04T00:00:00+01:00</datum_uzavreni_smlouvy>
+</metadata_smlouvy_nebo_rd>
+</dokument>
+<dokument>
+<url>https://www.vhodne-uverejneni.cz/index.php?m=xenorders&amp;h=orderdocument&amp;a=detail&amp;document=3895763</url>
+<typ_dokumentu>smlouva</typ_dokumentu>
+<jiny_dokument_nazev>Smlouva, její změny a dodatky</jiny_dokument_nazev>
+<cas_vlozeni_na_profil>2026-03-05T13:33:26+01:00</cas_vlozeni_na_profil>
+<metadata_smlouvy_nebo_rd>
+<smluvni_strany>
+<smluvni_strana>
+<subjekt>
+<ico>48108375</ico>
+<nazev_subjektu>AV MEDIA SYSTEMS, a.s.</nazev_subjektu>
+<misto_podnikani>CZ</misto_podnikani>
+</subjekt>
+</smluvni_strana>
+<smluvni_strana>
+<subjekt>
+<ico>48108375</ico>
+<nazev_subjektu>AV MEDIA SYSTEMS, a.s.</nazev_subjektu>
+<misto_podnikani>CZ</misto_podnikani>
+</subjekt>
+</smluvni_strana>
+</smluvni_strany>
+<predmet_smlouvy>nábytek a vybavení</predmet_smlouvy>
+<smluvni_cena_s_dph>3324866.92</smluvni_cena_s_dph>
+<smluvni_cena_bez_dph>2747823.9</smluvni_cena_bez_dph>
+<datum_uzavreni_smlouvy>2026-03-04T00:00:00+01:00</datum_uzavreni_smlouvy>
+</metadata_smlouvy_nebo_rd>
+</dokument>
+<dokument>
+<url>https://www.vhodne-uverejneni.cz/index.php?m=xenorders&amp;h=orderdocument&amp;a=detail&amp;document=3895764</url>
+<typ_dokumentu>smlouva</typ_dokumentu>
+<jiny_dokument_nazev>Smlouva, její změny a dodatky</jiny_dokument_nazev>
+<cas_vlozeni_na_profil>2026-03-05T13:33:26+01:00</cas_vlozeni_na_profil>
+<metadata_smlouvy_nebo_rd>
+<smluvni_strany>
+<smluvni_strana>
+<subjekt>
+<ico>48108375</ico>
+<nazev_subjektu>AV MEDIA SYSTEMS, a.s.</nazev_subjektu>
+<misto_podnikani>CZ</misto_podnikani>
+</subjekt>
+</smluvni_strana>
+<smluvni_strana>
+<subjekt>
+<ico>48108375</ico>
+<nazev_subjektu>AV MEDIA SYSTEMS, a.s.</nazev_subjektu>
+<misto_podnikani>CZ</misto_podnikani>
+</subjekt>
+</smluvni_strana>
+</smluvni_strany>
+<predmet_smlouvy>nábytek a vybavení</predmet_smlouvy>
+<smluvni_cena_s_dph>3324866.92</smluvni_cena_s_dph>
+<smluvni_cena_bez_dph>2747823.9</smluvni_cena_bez_dph>
+<datum_uzavreni_smlouvy>2026-03-04T00:00:00+01:00</datum_uzavreni_smlouvy>
+</metadata_smlouvy_nebo_rd>
+</dokument>
+<dokument>
+<url>https://www.vhodne-uverejneni.cz/index.php?m=xenorders&amp;h=orderdocument&amp;a=detail&amp;document=3895765</url>
+<typ_dokumentu>smlouva</typ_dokumentu>
+<jiny_dokument_nazev>Smlouva, její změny a dodatky</jiny_dokument_nazev>
+<cas_vlozeni_na_profil>2026-03-05T13:33:26+01:00</cas_vlozeni_na_profil>
+<metadata_smlouvy_nebo_rd>
+<smluvni_strany>
+<smluvni_strana>
+<subjekt>
+<ico>48108375</ico>
+<nazev_subjektu>AV MEDIA SYSTEMS, a.s.</nazev_subjektu>
+<misto_podnikani>CZ</misto_podnikani>
+</subjekt>
+</smluvni_strana>
+<smluvni_strana>
+<subjekt>
+<ico>48108375</ico>
+<nazev_subjektu>AV MEDIA SYSTEMS, a.s.</nazev_subjektu>
+<misto_podnikani>CZ</misto_podnikani>
+</subjekt>
+</smluvni_strana>
+</smluvni_strany>
+<predmet_smlouvy>nábytek a vybavení</predmet_smlouvy>
+<smluvni_cena_s_dph>3324866.92</smluvni_cena_s_dph>
+<smluvni_cena_bez_dph>2747823.9</smluvni_cena_bez_dph>
+<datum_uzavreni_smlouvy>2026-03-04T00:00:00+01:00</datum_uzavreni_smlouvy>
+</metadata_smlouvy_nebo_rd>
+</dokument>
+<dokument>
+<url>https://www.vhodne-uverejneni.cz/index.php?m=xenorders&amp;h=orderdocument&amp;a=detail&amp;document=3895766</url>
+<typ_dokumentu>smlouva</typ_dokumentu>
+<jiny_dokument_nazev>Smlouva, její změny a dodatky</jiny_dokument_nazev>
+<cas_vlozeni_na_profil>2026-03-04T21:30:03+01:00</cas_vlozeni_na_profil>
+<metadata_smlouvy_nebo_rd>
+<smluvni_strany>
+<smluvni_strana>
+<subjekt>
+<ico>48108375</ico>
+<nazev_subjektu>AV MEDIA SYSTEMS, a.s.</nazev_subjektu>
+<misto_podnikani>CZ</misto_podnikani>
+</subjekt>
+</smluvni_strana>
+<smluvni_strana>
+<subjekt>
+<ico>48108375</ico>
+<nazev_subjektu>AV MEDIA SYSTEMS, a.s.</nazev_subjektu>
+<misto_podnikani>CZ</misto_podnikani>
+</subjekt>
+</smluvni_strana>
+</smluvni_strany>
+<predmet_smlouvy>nábytek a vybavení</predmet_smlouvy>
+<smluvni_cena_s_dph>3324866.92</smluvni_cena_s_dph>
+<smluvni_cena_bez_dph>2747823.9</smluvni_cena_bez_dph>
+<datum_uzavreni_smlouvy>2026-03-04T00:00:00+01:00</datum_uzavreni_smlouvy>
+</metadata_smlouvy_nebo_rd>
+</dokument>
+<dokument>
+<url>https://www.vhodne-uverejneni.cz/index.php?m=xenorders&amp;h=orderdocument&amp;a=detail&amp;document=3895767</url>
+<typ_dokumentu>smlouva</typ_dokumentu>
+<jiny_dokument_nazev>Smlouva, její změny a dodatky</jiny_dokument_nazev>
+<cas_vlozeni_na_profil>2026-03-04T21:30:04+01:00</cas_vlozeni_na_profil>
+<metadata_smlouvy_nebo_rd>
+<smluvni_strany>
+<smluvni_strana>
+<subjekt>
+<ico>48108375</ico>
+<nazev_subjektu>AV MEDIA SYSTEMS, a.s.</nazev_subjektu>
+<misto_podnikani>CZ</misto_podnikani>
+</subjekt>
+</smluvni_strana>
+<smluvni_strana>
+<subjekt>
+<ico>48108375</ico>
+<nazev_subjektu>AV MEDIA SYSTEMS, a.s.</nazev_subjektu>
+<misto_podnikani>CZ</misto_podnikani>
+</subjekt>
+</smluvni_strana>
+</smluvni_strany>
+<predmet_smlouvy>nábytek a vybavení</predmet_smlouvy>
+<smluvni_cena_s_dph>3324866.92</smluvni_cena_s_dph>
+<smluvni_cena_bez_dph>2747823.9</smluvni_cena_bez_dph>
+<datum_uzavreni_smlouvy>2026-03-04T00:00:00+01:00</datum_uzavreni_smlouvy>
+</metadata_smlouvy_nebo_rd>
+</dokument>
+</dokumenty>
+<datum_uverejneni>2026-03-04T21:30:03+01:00</datum_uverejneni>
+<ucastnici>
+<ucastnik>
+<subjekt>
+<ico>48108375</ico>
+<nazev_subjektu>AV MEDIA SYSTEMS, a.s.</nazev_subjektu>
+<misto_podnikani>CZ</misto_podnikani>
+</subjekt>
+<nabidkova_cena_bez_dph>2664323.90</nabidkova_cena_bez_dph>
+<nabidkova_cena_s_dph>3223831.92</nabidkova_cena_s_dph>
+<role_ucastnika>dodavatel bez společné účasti</role_ucastnika>
+<ucastnik_vyloucen>0</ucastnik_vyloucen>
+<ucastnik_odstoupil>0</ucastnik_odstoupil>
+</ucastnik>          </ucastnici>
+<vybrani_dodavatele>
+<vybrany_dodavatel>
+<subjekt>
+<ico>48108375</ico>
+<nazev_subjektu>AV MEDIA SYSTEMS, a.s.</nazev_subjektu>
+<misto_podnikani>CZ</misto_podnikani>
+</subjekt>
+<uzavrena_smlouva_nebo_rd>1</uzavrena_smlouva_nebo_rd>
+<smluvni_cena_s_DPH>3223831.92</smluvni_cena_s_DPH>
+<smluvni_cena_bez_DPH>2664323.90</smluvni_cena_bez_DPH>
+<role_dodavatele>dodavatel bez společné účasti</role_dodavatele>
+</vybrany_dodavatel>          </vybrani_dodavatele>
+<zjisten_stret_zajmu>0</zjisten_stret_zajmu>
+<datum_uzavreni_smlouvy>2026-03-04T00:00:00+01:00</datum_uzavreni_smlouvy>
+<id_dotacniho_projektu>CZ.06.04.01/00/23_087/0004757</id_dotacniho_projektu>
+</zadavaci_postup_casti>
+</cast_zakazky>
+<cast_zakazky>
+<id_objektu>P26V00001385-90614</id_objektu>
+<id_zadavaciho_postupu_vz>ZP-P26V00001385</id_zadavaciho_postupu_vz>
+<nazev_casti_vz>Část 2</nazev_casti_vz>
+<druh_casti_vz>dodávky</druh_casti_vz>
+<rezim_casti_vz>Veřejné zakázky malého rozsahu</rezim_casti_vz>
+<predmet_casti_vz>pásový schodolez</predmet_casti_vz>
+<hlavni_cpv_casti_vz>44115600</hlavni_cpv_casti_vz>
+<zadavaci_postup_casti>
+<id_objektu>ZP-P26V00001385</id_objektu>
+<lhuty_zadavaciho_postupu>
+<lhuta>
+<druh_lhuty>lhůta podání žádosti</druh_lhuty>
+<datum_konce_lhuty>2026-03-04T21:30:00+01:00</datum_konce_lhuty>
+</lhuta>
+<lhuta>
+<druh_lhuty>lhůta podání nabídky</druh_lhuty>
+<datum_konce_lhuty>2026-03-04T21:30:00+01:00</datum_konce_lhuty>
+</lhuta>
+</lhuty_zadavaciho_postupu>
+<stav_zadavaciho_postupu>dokončen</stav_zadavaciho_postupu>
+<druh_zadavaciho_postupu>přímé zadání</druh_zadavaciho_postupu>
+<ramcova_dohoda>0</ramcova_dohoda>
+<zavedeni_dns>0</zavedeni_dns>
+<dokumenty>
+<dokument>
+<url>https://www.vhodne-uverejneni.cz/index.php?m=xenorders&amp;h=orderdocument&amp;a=detail&amp;document=3895761</url>
+<typ_dokumentu>smlouva</typ_dokumentu>
+<jiny_dokument_nazev>Smlouva, její změny a dodatky</jiny_dokument_nazev>
+<cas_vlozeni_na_profil>2026-08-24T08:29:43+02:00</cas_vlozeni_na_profil>
+<metadata_smlouvy_nebo_rd>
+<smluvni_strany>
+<smluvni_strana>
+<subjekt>
+<ico>48108375</ico>
+<nazev_subjektu>AV MEDIA SYSTEMS, a.s.</nazev_subjektu>
+<misto_podnikani>CZ</misto_podnikani>
+</subjekt>
+</smluvni_strana>
+<smluvni_strana>
+<subjekt>
+<ico>48108375</ico>
+<nazev_subjektu>AV MEDIA SYSTEMS, a.s.</nazev_subjektu>
+<misto_podnikani>CZ</misto_podnikani>
+</subjekt>
+</smluvni_strana>
+</smluvni_strany>
+<predmet_smlouvy>pásový schodolez</predmet_smlouvy>
+<smluvni_cena_s_dph>3324866.92</smluvni_cena_s_dph>
+<smluvni_cena_bez_dph>2747823.9</smluvni_cena_bez_dph>
+<datum_uzavreni_smlouvy>2026-03-04T00:00:00+01:00</datum_uzavreni_smlouvy>
+</metadata_smlouvy_nebo_rd>
+</dokument>
+<dokument>
+<url>https://www.vhodne-uverejneni.cz/index.php?m=xenorders&amp;h=orderdocument&amp;a=detail&amp;document=3895762</url>
+<typ_dokumentu>smlouva</typ_dokumentu>
+<jiny_dokument_nazev>Smlouva, její změny a dodatky</jiny_dokument_nazev>
+<cas_vlozeni_na_profil>2026-08-24T08:29:43+02:00</cas_vlozeni_na_profil>
+<metadata_smlouvy_nebo_rd>
+<smluvni_strany>
+<smluvni_strana>
+<subjekt>
+<ico>48108375</ico>
+<nazev_subjektu>AV MEDIA SYSTEMS, a.s.</nazev_subjektu>
+<misto_podnikani>CZ</misto_podnikani>
+</subjekt>
+</smluvni_strana>
+<smluvni_strana>
+<subjekt>
+<ico>48108375</ico>
+<nazev_subjektu>AV MEDIA SYSTEMS, a.s.</nazev_subjektu>
+<misto_podnikani>CZ</misto_podnikani>
+</subjekt>
+</smluvni_strana>
+</smluvni_strany>
+<predmet_smlouvy>pásový schodolez</predmet_smlouvy>
+<smluvni_cena_s_dph>3324866.92</smluvni_cena_s_dph>
+<smluvni_cena_bez_dph>2747823.9</smluvni_cena_bez_dph>
+<datum_uzavreni_smlouvy>2026-03-04T00:00:00+01:00</datum_uzavreni_smlouvy>
+</metadata_smlouvy_nebo_rd>
+</dokument>
+<dokument>
+<url>https://www.vhodne-uverejneni.cz/index.php?m=xenorders&amp;h=orderdocument&amp;a=detail&amp;document=3895763</url>
+<typ_dokumentu>smlouva</typ_dokumentu>
+<jiny_dokument_nazev>Smlouva, její změny a dodatky</jiny_dokument_nazev>
+<cas_vlozeni_na_profil>2026-03-05T13:33:26+01:00</cas_vlozeni_na_profil>
+<metadata_smlouvy_nebo_rd>
+<smluvni_strany>
+<smluvni_strana>
+<subjekt>
+<ico>48108375</ico>
+<nazev_subjektu>AV MEDIA SYSTEMS, a.s.</nazev_subjektu>
+<misto_podnikani>CZ</misto_podnikani>
+</subjekt>
+</smluvni_strana>
+<smluvni_strana>
+<subjekt>
+<ico>48108375</ico>
+<nazev_subjektu>AV MEDIA SYSTEMS, a.s.</nazev_subjektu>
+<misto_podnikani>CZ</misto_podnikani>
+</subjekt>
+</smluvni_strana>
+</smluvni_strany>
+<predmet_smlouvy>pásový schodolez</predmet_smlouvy>
+<smluvni_cena_s_dph>3324866.92</smluvni_cena_s_dph>
+<smluvni_cena_bez_dph>2747823.9</smluvni_cena_bez_dph>
+<datum_uzavreni_smlouvy>2026-03-04T00:00:00+01:00</datum_uzavreni_smlouvy>
+</metadata_smlouvy_nebo_rd>
+</dokument>
+<dokument>
+<url>https://www.vhodne-uverejneni.cz/index.php?m=xenorders&amp;h=orderdocument&amp;a=detail&amp;document=3895764</url>
+<typ_dokumentu>smlouva</typ_dokumentu>
+<jiny_dokument_nazev>Smlouva, její změny a dodatky</jiny_dokument_nazev>
+<cas_vlozeni_na_profil>2026-03-05T13:33:26+01:00</cas_vlozeni_na_profil>
+<metadata_smlouvy_nebo_rd>
+<smluvni_strany>
+<smluvni_strana>
+<subjekt>
+<ico>48108375</ico>
+<nazev_subjektu>AV MEDIA SYSTEMS, a.s.</nazev_subjektu>
+<misto_podnikani>CZ</misto_podnikani>
+</subjekt>
+</smluvni_strana>
+<smluvni_strana>
+<subjekt>
+<ico>48108375</ico>
+<nazev_subjektu>AV MEDIA SYSTEMS, a.s.</nazev_subjektu>
+<misto_podnikani>CZ</misto_podnikani>
+</subjekt>
+</smluvni_strana>
+</smluvni_strany>
+<predmet_smlouvy>pásový schodolez</predmet_smlouvy>
+<smluvni_cena_s_dph>3324866.92</smluvni_cena_s_dph>
+<smluvni_cena_bez_dph>2747823.9</smluvni_cena_bez_dph>
+<datum_uzavreni_smlouvy>2026-03-04T00:00:00+01:00</datum_uzavreni_smlouvy>
+</metadata_smlouvy_nebo_rd>
+</dokument>
+<dokument>
+<url>https://www.vhodne-uverejneni.cz/index.php?m=xenorders&amp;h=orderdocument&amp;a=detail&amp;document=3895765</url>
+<typ_dokumentu>smlouva</typ_dokumentu>
+<jiny_dokument_nazev>Smlouva, její změny a dodatky</jiny_dokument_nazev>
+<cas_vlozeni_na_profil>2026-03-05T13:33:26+01:00</cas_vlozeni_na_profil>
+<metadata_smlouvy_nebo_rd>
+<smluvni_strany>
+<smluvni_strana>
+<subjekt>
+<ico>48108375</ico>
+<nazev_subjektu>AV MEDIA SYSTEMS, a.s.</nazev_subjektu>
+<misto_podnikani>CZ</misto_podnikani>
+</subjekt>
+</smluvni_strana>
+<smluvni_strana>
+<subjekt>
+<ico>48108375</ico>
+<nazev_subjektu>AV MEDIA SYSTEMS, a.s.</nazev_subjektu>
+<misto_podnikani>CZ</misto_podnikani>
+</subjekt>
+</smluvni_strana>
+</smluvni_strany>
+<predmet_smlouvy>pásový schodolez</predmet_smlouvy>
+<smluvni_cena_s_dph>3324866.92</smluvni_cena_s_dph>
+<smluvni_cena_bez_dph>2747823.9</smluvni_cena_bez_dph>
+<datum_uzavreni_smlouvy>2026-03-04T00:00:00+01:00</datum_uzavreni_smlouvy>
+</metadata_smlouvy_nebo_rd>
+</dokument>
+<dokument>
+<url>https://www.vhodne-uverejneni.cz/index.php?m=xenorders&amp;h=orderdocument&amp;a=detail&amp;document=3895766</url>
+<typ_dokumentu>smlouva</typ_dokumentu>
+<jiny_dokument_nazev>Smlouva, její změny a dodatky</jiny_dokument_nazev>
+<cas_vlozeni_na_profil>2026-03-04T21:30:03+01:00</cas_vlozeni_na_profil>
+<metadata_smlouvy_nebo_rd>
+<smluvni_strany>
+<smluvni_strana>
+<subjekt>
+<ico>48108375</ico>
+<nazev_subjektu>AV MEDIA SYSTEMS, a.s.</nazev_subjektu>
+<misto_podnikani>CZ</misto_podnikani>
+</subjekt>
+</smluvni_strana>
+<smluvni_strana>
+<subjekt>
+<ico>48108375</ico>
+<nazev_subjektu>AV MEDIA SYSTEMS, a.s.</nazev_subjektu>
+<misto_podnikani>CZ</misto_podnikani>
+</subjekt>
+</smluvni_strana>
+</smluvni_strany>
+<predmet_smlouvy>pásový schodolez</predmet_smlouvy>
+<smluvni_cena_s_dph>3324866.92</smluvni_cena_s_dph>
+<smluvni_cena_bez_dph>2747823.9</smluvni_cena_bez_dph>
+<datum_uzavreni_smlouvy>2026-03-04T00:00:00+01:00</datum_uzavreni_smlouvy>
+</metadata_smlouvy_nebo_rd>
+</dokument>
+<dokument>
+<url>https://www.vhodne-uverejneni.cz/index.php?m=xenorders&amp;h=orderdocument&amp;a=detail&amp;document=3895767</url>
+<typ_dokumentu>smlouva</typ_dokumentu>
+<jiny_dokument_nazev>Smlouva, její změny a dodatky</jiny_dokument_nazev>
+<cas_vlozeni_na_profil>2026-03-04T21:30:04+01:00</cas_vlozeni_na_profil>
+<metadata_smlouvy_nebo_rd>
+<smluvni_strany>
+<smluvni_strana>
+<subjekt>
+<ico>48108375</ico>
+<nazev_subjektu>AV MEDIA SYSTEMS, a.s.</nazev_subjektu>
+<misto_podnikani>CZ</misto_podnikani>
+</subjekt>
+</smluvni_strana>
+<smluvni_strana>
+<subjekt>
+<ico>48108375</ico>
+<nazev_subjektu>AV MEDIA SYSTEMS, a.s.</nazev_subjektu>
+<misto_podnikani>CZ</misto_podnikani>
+</subjekt>
+</smluvni_strana>
+</smluvni_strany>
+<predmet_smlouvy>pásový schodolez</predmet_smlouvy>
+<smluvni_cena_s_dph>3324866.92</smluvni_cena_s_dph>
+<smluvni_cena_bez_dph>2747823.9</smluvni_cena_bez_dph>
+<datum_uzavreni_smlouvy>2026-03-04T00:00:00+01:00</datum_uzavreni_smlouvy>
+</metadata_smlouvy_nebo_rd>
+</dokument>
+</dokumenty>
+<datum_uverejneni>2026-03-04T21:30:03+01:00</datum_uverejneni>
+<ucastnici>
+<ucastnik>
+<subjekt>
+<ico>48108375</ico>
+<nazev_subjektu>AV MEDIA SYSTEMS, a.s.</nazev_subjektu>
+<misto_podnikani>CZ</misto_podnikani>
+</subjekt>
+<nabidkova_cena_bez_dph>83500.00</nabidkova_cena_bez_dph>
+<nabidkova_cena_s_dph>101035.00</nabidkova_cena_s_dph>
+<role_ucastnika>dodavatel bez společné účasti</role_ucastnika>
+<ucastnik_vyloucen>0</ucastnik_vyloucen>
+<ucastnik_odstoupil>0</ucastnik_odstoupil>
+</ucastnik>          </ucastnici>
+<vybrani_dodavatele>
+<vybrany_dodavatel>
+<subjekt>
+<ico>48108375</ico>
+<nazev_subjektu>AV MEDIA SYSTEMS, a.s.</nazev_subjektu>
+<misto_podnikani>CZ</misto_podnikani>
+</subjekt>
+<uzavrena_smlouva_nebo_rd>1</uzavrena_smlouva_nebo_rd>
+<smluvni_cena_s_DPH>101035.00</smluvni_cena_s_DPH>
+<smluvni_cena_bez_DPH>83500.00</smluvni_cena_bez_DPH>
+<role_dodavatele>dodavatel bez společné účasti</role_dodavatele>
+</vybrany_dodavatel>          </vybrani_dodavatele>
+<zjisten_stret_zajmu>0</zjisten_stret_zajmu>
+<datum_uzavreni_smlouvy>2026-03-04T00:00:00+01:00</datum_uzavreni_smlouvy>
+<id_dotacniho_projektu>CZ.06.04.01/00/23_087/0004757</id_dotacniho_projektu>
+</zadavaci_postup_casti>
+</cast_zakazky>
+</casti_vz>
+</zakazka>                    <zakazka>
+<id_objektu>P26V00003497</id_objektu>
+<nazev_vz>Stavební práce při výměně oken a úpravy 3. NP čp. 61, Lomnice nad Popelkou</nazev_vz>
+<druh_vz>stavební práce</druh_vz>
+<rezim_vz>Veřejné zakázky malého rozsahu</rezim_vz>
+<predmet_vz>Stavební úpravy spojené s výměnou oken v 1. a 2. NP, opravy omítek a elektroinstalace ve 3. NP a související práce</predmet_vz>
+<hlavni_cpv>45000000</hlavni_cpv>
+<delena_na_casti>0</delena_na_casti>
+<zadavaci_postupy>
+<zadavaci_postup>
+<id_objektu>ZP-P26V00003497</id_objektu>
+</zadavaci_postup>
+</zadavaci_postupy>
+<casti_vz>
+<cast_zakazky>
+<id_objektu>P26V00003497</id_objektu>
+<id_zadavaciho_postupu_vz>ZP-P26V00003497</id_zadavaciho_postupu_vz>
+<nazev_casti_vz>Stavební práce při výměně oken a úpravy 3. NP čp. 61, Lomnice nad Popelkou</nazev_casti_vz>
+<druh_casti_vz>stavební práce</druh_casti_vz>
+<rezim_casti_vz>Veřejné zakázky malého rozsahu</rezim_casti_vz>
+<predmet_casti_vz>Stavební úpravy spojené s výměnou oken v 1. a 2. NP, opravy omítek a elektroinstalace ve 3. NP a související práce</predmet_casti_vz>
+<hlavni_cpv_casti_vz>45000000</hlavni_cpv_casti_vz>
+<zadavaci_postup_casti>
+<id_objektu>ZP-P26V00003497</id_objektu>
+<lhuty_zadavaciho_postupu>
+<lhuta>
+<druh_lhuty>lhůta podání žádosti</druh_lhuty>
+<datum_konce_lhuty>2026-05-27T12:49:00+02:00</datum_konce_lhuty>
+</lhuta>
+<lhuta>
+<druh_lhuty>lhůta podání nabídky</druh_lhuty>
+<datum_konce_lhuty>2026-05-27T12:49:00+02:00</datum_konce_lhuty>
+</lhuta>
+</lhuty_zadavaciho_postupu>
+<stav_zadavaciho_postupu>dokončen</stav_zadavaciho_postupu>
+<druh_zadavaciho_postupu>přímé zadání</druh_zadavaciho_postupu>
+<ramcova_dohoda>0</ramcova_dohoda>
+<zavedeni_dns>0</zavedeni_dns>
+<dokumenty>
+<dokument>
+<url>https://www.vhodne-uverejneni.cz/index.php?m=xenorders&amp;h=orderdocument&amp;a=detail&amp;document=3906771</url>
+<typ_dokumentu>výzva k podání nabídek</typ_dokumentu>
+<jiny_dokument_nazev>Výzva</jiny_dokument_nazev>
+<cas_vlozeni_na_profil>2026-09-10T09:55:39+02:00</cas_vlozeni_na_profil>
+</dokument>
+<dokument>
+<url>https://www.vhodne-uverejneni.cz/index.php?m=xenorders&amp;h=orderdocument&amp;a=detail&amp;document=3906772</url>
+<typ_dokumentu>smlouva</typ_dokumentu>
+<jiny_dokument_nazev>Smlouva, její změny a dodatky</jiny_dokument_nazev>
+<cas_vlozeni_na_profil>2026-05-27T12:49:03+02:00</cas_vlozeni_na_profil>
+<metadata_smlouvy_nebo_rd>
+<smluvni_strany>
+<smluvni_strana>
+<subjekt>
+<ico>25937499</ico>
+<nazev_subjektu>REDOMO a.s.</nazev_subjektu>
+<misto_podnikani>CZ</misto_podnikani>
+</subjekt>
+</smluvni_strana>
+</smluvni_strany>
+<predmet_smlouvy>Stavební úpravy spojené s výměnou oken v 1. a 2. NP, opravy omítek a elektroinstalace ve 3. NP a související práce</predmet_smlouvy>
+<smluvni_cena_s_dph>7348225.94</smluvni_cena_s_dph>
+<smluvni_cena_bez_dph>6072914</smluvni_cena_bez_dph>
+</metadata_smlouvy_nebo_rd>
+</dokument>
+</dokumenty>
+<datum_uverejneni>2026-05-27T12:49:03+02:00</datum_uverejneni>
+<ucastnici>
+<ucastnik>
+<subjekt>
+<ico>25937499</ico>
+<nazev_subjektu>REDOMO a.s.</nazev_subjektu>
+<misto_podnikani>CZ</misto_podnikani>
+</subjekt>
+<nabidkova_cena_bez_dph>6072914.00</nabidkova_cena_bez_dph>
+<nabidkova_cena_s_dph>7348225.94</nabidkova_cena_s_dph>
+<role_ucastnika>dodavatel bez společné účasti</role_ucastnika>
+<ucastnik_vyloucen>0</ucastnik_vyloucen>
+<ucastnik_odstoupil>0</ucastnik_odstoupil>
+</ucastnik>          </ucastnici>
+<vybrani_dodavatele>
+<vybrany_dodavatel>
+<subjekt>
+<ico>25937499</ico>
+<nazev_subjektu>REDOMO a.s.</nazev_subjektu>
+<misto_podnikani>CZ</misto_podnikani>
+</subjekt>
+<uzavrena_smlouva_nebo_rd>1</uzavrena_smlouva_nebo_rd>
+<smluvni_cena_s_DPH>7348225.94</smluvni_cena_s_DPH>
+<smluvni_cena_bez_DPH>6072914.00</smluvni_cena_bez_DPH>
+<role_dodavatele>dodavatel bez společné účasti</role_dodavatele>
+</vybrany_dodavatel>          </vybrani_dodavatele>
+<zjisten_stret_zajmu>0</zjisten_stret_zajmu>
+</zadavaci_postup_casti>
+</cast_zakazky>      </casti_vz>
+</zakazka>                    <zakazka>
+<id_objektu>P26V00004395</id_objektu>
+<nazev_vz>Oprava povrchu komunikace Rváčov - II. etapa, Lomnice nad Popelkou</nazev_vz>
+<druh_vz>stavební práce</druh_vz>
+<rezim_vz>Veřejné zakázky malého rozsahu</rezim_vz>
+<predmet_vz>Oprava místní komunikace v místní části Rváčov, Lomnice nad Popelkou</predmet_vz>
+<hlavni_cpv>45233142</hlavni_cpv>
+<delena_na_casti>0</delena_na_casti>
+<zadavaci_postupy>
+<zadavaci_postup>
+<id_objektu>ZP-P26V00004395</id_objektu>
+</zadavaci_postup>
+</zadavaci_postupy>
+<casti_vz>
+<cast_zakazky>
+<id_objektu>P26V00004395</id_objektu>
+<id_zadavaciho_postupu_vz>ZP-P26V00004395</id_zadavaciho_postupu_vz>
+<nazev_casti_vz>Oprava povrchu komunikace Rváčov - II. etapa, Lomnice nad Popelkou</nazev_casti_vz>
+<druh_casti_vz>stavební práce</druh_casti_vz>
+<rezim_casti_vz>Veřejné zakázky malého rozsahu</rezim_casti_vz>
+<predmet_casti_vz>Oprava místní komunikace v místní části Rváčov, Lomnice nad Popelkou</predmet_casti_vz>
+<hlavni_cpv_casti_vz>45233142</hlavni_cpv_casti_vz>
+<zadavaci_postup_casti>
+<id_objektu>ZP-P26V00004395</id_objektu>
+<lhuty_zadavaciho_postupu>
+<lhuta>
+<druh_lhuty>lhůta podání žádosti</druh_lhuty>
+<datum_konce_lhuty>2026-07-02T11:13:00+02:00</datum_konce_lhuty>
+</lhuta>
+<lhuta>
+<druh_lhuty>lhůta podání nabídky</druh_lhuty>
+<datum_konce_lhuty>2026-07-02T11:13:00+02:00</datum_konce_lhuty>
+</lhuta>
+</lhuty_zadavaciho_postupu>
+<stav_zadavaciho_postupu>ukončeno plnění</stav_zadavaciho_postupu>
+<druh_zadavaciho_postupu>přímé zadání</druh_zadavaciho_postupu>
+<ramcova_dohoda>0</ramcova_dohoda>
+<zavedeni_dns>0</zavedeni_dns>
+<dokumenty>
+<dokument>
+<url>https://www.vhodne-uverejneni.cz/index.php?m=xenorders&amp;h=orderdocument&amp;a=detail&amp;document=3907700</url>
+<typ_dokumentu>jiný dokument</typ_dokumentu>
+<jiny_dokument_nazev>Výše skutečně uhrazené ceny za plnění VZ</jiny_dokument_nazev>
+<cas_vlozeni_na_profil>2026-09-11T12:33:47+02:00</cas_vlozeni_na_profil>
+</dokument>
+<dokument>
+<url>https://www.vhodne-uverejneni.cz/index.php?m=xenorders&amp;h=orderdocument&amp;a=detail&amp;document=3907712</url>
+<typ_dokumentu>smlouva</typ_dokumentu>
+<jiny_dokument_nazev>Smlouva, její změny a dodatky</jiny_dokument_nazev>
+<cas_vlozeni_na_profil>2026-07-02T11:13:03+02:00</cas_vlozeni_na_profil>
+<metadata_smlouvy_nebo_rd>
+<smluvni_strany>
+<smluvni_strana>
+<subjekt>
+<ico>27679438</ico>
+<nazev_subjektu>REACOM s.r.o.</nazev_subjektu>
+<misto_podnikani>CZ</misto_podnikani>
+</subjekt>
+</smluvni_strana>
+</smluvni_strany>
+<predmet_smlouvy>Oprava místní komunikace v místní části Rváčov, Lomnice nad Popelkou</predmet_smlouvy>
+<smluvni_cena_s_dph>1265418</smluvni_cena_s_dph>
+<smluvni_cena_bez_dph>1045800</smluvni_cena_bez_dph>
+<datum_uzavreni_smlouvy>2026-06-22T00:00:00+02:00</datum_uzavreni_smlouvy>
+</metadata_smlouvy_nebo_rd>
+</dokument>
+</dokumenty>
+<datum_uverejneni>2026-07-02T11:13:03+02:00</datum_uverejneni>
+<ucastnici>
+<ucastnik>
+<subjekt>
+<ico>27679438</ico>
+<nazev_subjektu>REACOM s.r.o.</nazev_subjektu>
+<misto_podnikani>CZ</misto_podnikani>
+</subjekt>
+<nabidkova_cena_bez_dph>1045800.00</nabidkova_cena_bez_dph>
+<nabidkova_cena_s_dph>1265418.00</nabidkova_cena_s_dph>
+<role_ucastnika>dodavatel bez společné účasti</role_ucastnika>
+<ucastnik_vyloucen>0</ucastnik_vyloucen>
+<ucastnik_odstoupil>0</ucastnik_odstoupil>
+</ucastnik>          </ucastnici>
+<vybrani_dodavatele>
+<vybrany_dodavatel>
+<subjekt>
+<ico>27679438</ico>
+<nazev_subjektu>REACOM s.r.o.</nazev_subjektu>
+<misto_podnikani>CZ</misto_podnikani>
+</subjekt>
+<uzavrena_smlouva_nebo_rd>1</uzavrena_smlouva_nebo_rd>
+<smluvni_cena_s_DPH>1265418.00</smluvni_cena_s_DPH>
+<smluvni_cena_bez_DPH>1045800.00</smluvni_cena_bez_DPH>
+<role_dodavatele>dodavatel bez společné účasti</role_dodavatele>
+<plneni_dodavateli>
+<plneni>
+<rok_smlouvy>2026</rok_smlouvy>
+<cena_za_rok_bez_dph>1045800.00</cena_za_rok_bez_dph>
+<cena_za_rok_s_dph>1265418.00</cena_za_rok_s_dph>
+</plneni>
+</plneni_dodavateli>
+</vybrany_dodavatel>          </vybrani_dodavatele>
+<zjisten_stret_zajmu>0</zjisten_stret_zajmu>
+<datum_uzavreni_smlouvy>2026-06-22T00:00:00+02:00</datum_uzavreni_smlouvy>
+</zadavaci_postup_casti>
+</cast_zakazky>      </casti_vz>
+</zakazka>      </profil>

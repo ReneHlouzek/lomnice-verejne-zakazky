@@ -1,5 +1,5 @@
 {
-  "retrieved_at": "2026-09-16T14:57:00.872616+00:00",
+  "retrieved_at": "2026-09-16T15:14:33.143815+00:00",
   "profile_url": "https://www.vhodne-uverejneni.cz/profil/mesto-lomnice-nad-popelkou",
   "windows": [
     {
@@ -78,9 +78,13 @@
       "from": "2026-01-10",
       "to": "2026-09-16",
       "url": "https://www.vhodne-uverejneni.cz/profil/mesto-lomnice-nad-popelkou/XMLdataVZ?od=10012026&do=16092026",
-      "status": "unavailable"
+      "status": "ok",
+      "method": "curl-ipv4",
+      "sha256": "2847c597b6f6a6d226f4af37695c8e85b5ae3e47a0ff7d7dce33194c7c491ff6",
+      "bytes": 81785,
+      "file": "data/xml/20260110_20260916.xml"
     }
   ],
-  "successful_windows": 0,
+  "successful_windows": 1,
   "note": "PVU access from GitHub Actions is best-effort. Unavailable windows do not fail the workflow."
 }
