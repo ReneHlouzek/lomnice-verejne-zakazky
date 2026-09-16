@@ -1,8 +1,9 @@
 """Resilient crawler for the Lomnice public procurement profile.
 
-The portal has a documented profile URL format based either on a profile slug
-or on the organization's IČO. The crawler tries both forms so a timeout on one
-public endpoint does not immediately stop collection.
+The PVU host can be unreachable from some cloud runners. We therefore try
+multiple canonical host/scheme variants before failing. The crawler keeps the
+raw response and a link manifest so later parsing can be improved without
+re-downloading the source.
 """
 
 from __future__ import annotations
@@ -21,7 +22,8 @@ ROOT = Path(__file__).resolve().parents[1]
 CONFIG = json.loads((ROOT / "config.json").read_text(encoding="utf-8"))
 SOURCE = CONFIG["source"]
 PROFILE = SOURCE["profile_url"]
-PROFILE_BY_ICO = f"https://www.vhodne-uverejneni.cz/profil/{SOURCE['ico']}"
+SLUG = PROFILE.rstrip("/").split("/profil/", 1)[-1]
+ICO = SOURCE["ico"]
 TIMEOUT = max(int(CONFIG["crawler"].get("timeout_seconds", 30)), 60)
 RETRIES = max(int(CONFIG["crawler"].get("max_retries", 3)), 3)
 
@@ -30,10 +32,25 @@ def sha256_bytes(data: bytes) -> str:
     return hashlib.sha256(data).hexdigest()
 
 
+def candidate_urls() -> list[str]:
+    """Return canonical variants, de-duplicated and ordered by preference."""
+    urls = [
+        PROFILE,
+        f"https://www.vhodne-uverejneni.cz/profil/{ICO}",
+        f"https://vhodne-uverejneni.cz/profil/{SLUG}",
+        f"https://vhodne-uverejneni.cz/profil/{ICO}",
+        f"http://www.vhodne-uverejneni.cz/profil/{SLUG}",
+        f"http://www.vhodne-uverejneni.cz/profil/{ICO}",
+        f"http://vhodne-uverejneni.cz/profil/{SLUG}",
+        f"http://vhodne-uverejneni.cz/profil/{ICO}",
+    ]
+    return list(dict.fromkeys(urls))
+
+
 def fetch(session: requests.Session, urls: list[str]) -> tuple[requests.Response, str]:
     last_errors: list[str] = []
     headers = {
-        "User-Agent": "Mozilla/5.0 (compatible; Lomnice-Verejne-Zakazky/0.2; +public-data-archive)",
+        "User-Agent": "Mozilla/5.0 (compatible; Lomnice-Verejne-Zakazky/0.3; +public-data-archive)",
         "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
         "Accept-Language": "cs-CZ,cs;q=0.9,en;q=0.7",
         "Connection": "keep-alive",
@@ -42,7 +59,12 @@ def fetch(session: requests.Session, urls: list[str]) -> tuple[requests.Response
     for url in urls:
         for attempt in range(RETRIES):
             try:
-                response = session.get(url, timeout=(15, TIMEOUT), headers=headers, allow_redirects=True)
+                response = session.get(
+                    url,
+                    timeout=(10, TIMEOUT),
+                    headers=headers,
+                    allow_redirects=True,
+                )
                 response.raise_for_status()
                 return response, url
             except requests.RequestException as exc:
@@ -50,7 +72,7 @@ def fetch(session: requests.Session, urls: list[str]) -> tuple[requests.Response
                 if attempt + 1 < RETRIES:
                     time.sleep(min(2 ** attempt, 8))
 
-    details = " | ".join(last_errors[-6:])
+    details = " | ".join(last_errors[-10:])
     raise RuntimeError(f"Nepodařilo se načíst žádnou variantu profilu. {details}")
 
 
@@ -73,9 +95,10 @@ def main() -> None:
     out = ROOT / "data" / "snapshots" / retrieved_at.replace(":", "-")
     out.mkdir(parents=True, exist_ok=True)
 
-    candidates = [PROFILE]
-    if PROFILE_BY_ICO not in candidates:
-        candidates.append(PROFILE_BY_ICO)
+    candidates = candidate_urls()
+    print("Testované varianty profilu:")
+    for url in candidates:
+        print(f" - {url}")
 
     with requests.Session() as session:
         response, successful_url = fetch(session, candidates)
