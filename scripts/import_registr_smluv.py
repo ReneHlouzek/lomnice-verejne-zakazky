@@ -1,12 +1,5 @@
 #!/usr/bin/env python3
-"""Import public contract metadata for Lomnice from the official Contract Register.
-
-The register exposes an official machine-readable monthly open-data archive, but
-this importer starts with the public search endpoint because it lets us restrict
-the acquisition to the city's IČO and avoid downloading the complete national dump.
-It stores raw search pages and a normalized JSON dataset for later reconciliation
-with VVZ and Vhodné uveřejnění.
-"""
+"""Import public contract metadata for Lomnice from the official Contract Register."""
 from __future__ import annotations
 
 import hashlib
@@ -15,7 +8,7 @@ import re
 import time
 from datetime import datetime, timezone
 from pathlib import Path
-from urllib.parse import parse_qs, urlencode, urljoin, urlparse
+from urllib.parse import urlencode, urljoin
 
 import requests
 from bs4 import BeautifulSoup
@@ -27,6 +20,7 @@ BASE = RS["search_url"]
 ICO = RS["publisher_ico"]
 OUT = ROOT / "data" / "registr_smluv"
 RAW = OUT / "raw"
+SOURCE_OUT = ROOT / "data" / "sources" / "registr-smluv"
 
 
 def sha256(data: bytes) -> str:
@@ -45,21 +39,32 @@ def detail_url(href: str) -> str:
 
 
 def build_url(offset: int) -> str:
-    params = {
-        "subject_idnum": ICO,
-        "do": "searchResultList-setOffset",
-        "searchResultList-offset": str(offset),
-        "search_type": "0",
-    }
+    params = {"subject_idnum": ICO, "do": "searchResultList-setOffset", "searchResultList-offset": str(offset), "search_type": "0"}
     return f"{BASE}?{urlencode(params)}"
+
+
+def parse_ico(text: str | None) -> str | None:
+    if not text:
+        return None
+    m = re.search(r"(?:IČO|ICO)\s*[:.]?\s*(\d{8})", text, re.I)
+    return m.group(1) if m else None
+
+
+def parse_price(text: str | None) -> float | None:
+    if not text:
+        return None
+    cleaned = re.sub(r"[^0-9,.-]", "", text.replace("\xa0", ""))
+    if not cleaned:
+        return None
+    try:
+        return float(cleaned.replace(".", "").replace(",", "."))
+    except ValueError:
+        return None
 
 
 def parse_page(html: bytes) -> tuple[list[dict], int | None]:
     soup = BeautifulSoup(html, "html.parser")
     records: list[dict] = []
-
-    # The result table has a Detail link for each contract.  We deliberately
-    # preserve the visible columns instead of depending on internal CSS classes.
     for row in soup.find_all("tr"):
         cells = row.find_all(["td", "th"])
         if len(cells) < 5:
@@ -69,16 +74,24 @@ def parse_page(html: bytes) -> tuple[list[dict], int | None]:
         detail = next((detail_url(h) for h in links if "detail" in h.lower() or "smlouva" in h.lower()), None)
         if not detail:
             continue
+        counterparty = texts[5] if len(texts) > 5 else None
         records.append({
+            "source_id": detail,
+            "source_url": detail,
+            "title": texts[1],
+            "buyer_ico": ICO,
+            "supplier_ico": parse_ico(counterparty),
+            "contract_number": None,
+            "date": texts[3] if len(texts) > 3 else None,
+            "price": parse_price(texts[4] if len(texts) > 4 else None),
             "publisher": texts[0],
             "subject": texts[1],
             "last_version": texts[2] if len(texts) > 2 else None,
             "published": texts[3] if len(texts) > 3 else None,
             "value": texts[4] if len(texts) > 4 else None,
-            "counterparty": texts[5] if len(texts) > 5 else None,
+            "counterparty": counterparty,
             "detail_url": detail,
         })
-
     total = None
     text = soup.get_text(" ", strip=True)
     match = re.search(r"Počet nalezn[ýy]ch záznamů\s+(\d+)", text, re.I)
@@ -90,17 +103,15 @@ def parse_page(html: bytes) -> tuple[list[dict], int | None]:
 def main() -> None:
     OUT.mkdir(parents=True, exist_ok=True)
     RAW.mkdir(parents=True, exist_ok=True)
-
+    SOURCE_OUT.mkdir(parents=True, exist_ok=True)
     session = requests.Session()
-    session.headers.update({
-        "User-Agent": "Mozilla/5.0 (compatible; Lomnice-Verejne-Zakazky/0.6; +public-data-archive)",
-        "Accept": "text/html,application/xhtml+xml",
-    })
+    session.headers.update({"User-Agent": "Mozilla/5.0 (compatible; Lomnice-Verejne-Zakazky/0.7; +public-data-archive)", "Accept": "text/html,application/xhtml+xml"})
 
     all_records: dict[str, dict] = {}
     pages: list[dict] = []
     page_size = int(RS.get("page_size", 100))
     max_pages = int(RS.get("max_pages", 20))
+    failed = False
 
     for page_no in range(max_pages):
         offset = page_no * page_size
@@ -111,56 +122,39 @@ def main() -> None:
             response.raise_for_status()
         except requests.RequestException as exc:
             print(f"  FAILED: {exc}")
+            pages.append({"page": page_no, "offset": offset, "url": url, "status": "unavailable", "error": str(exc)})
+            failed = True
             break
-
         data = response.content
         raw_name = f"page_{page_no:04d}.html"
         (RAW / raw_name).write_bytes(data)
         records, total = parse_page(data)
-        pages.append({
-            "page": page_no,
-            "offset": offset,
-            "url": url,
-            "status": "ok",
-            "sha256": sha256(data),
-            "bytes": len(data),
-            "records": len(records),
-            "total": total,
-            "file": str((RAW / raw_name).relative_to(ROOT)),
-        })
+        pages.append({"page": page_no, "offset": offset, "url": url, "status": "ok", "sha256": sha256(data), "bytes": len(data), "records": len(records), "total": total, "file": str((RAW / raw_name).relative_to(ROOT))})
         print(f"  OK: {len(records)} records; total={total}")
-
         for record in records:
-            key = record["detail_url"]
-            all_records[key] = record
-
+            all_records[record["detail_url"]] = record
         if total is not None and offset + page_size >= total:
             break
         if not records:
             break
         time.sleep(float(CONFIG["crawler"].get("delay_seconds", 1.0)))
 
-    payload = {
-        "schema_version": 1,
-        "retrieved_at": datetime.now(timezone.utc).isoformat(),
-        "source": "Registr smluv",
-        "source_url": BASE,
-        "publisher_ico": ICO,
-        "records": list(all_records.values()),
-        "pages": pages,
-    }
-    (OUT / "contracts.json").write_text(
-        json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
-    )
-    (OUT / "manifest.json").write_text(
-        json.dumps({
-            "retrieved_at": payload["retrieved_at"],
-            "publisher_ico": ICO,
-            "record_count": len(all_records),
-            "pages": pages,
-        }, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
-    )
-    print(f"Wrote {len(all_records)} unique contract records.")
+    # Never replace a previously successful dataset with an empty partial run.
+    if failed and not all_records and (OUT / "contracts.json").exists():
+        print("Keeping previous successful contracts.json after unavailable source.")
+        return
+
+    payload = {"schema_version": 2, "retrieved_at": datetime.now(timezone.utc).isoformat(), "source": "Registr smluv", "source_url": BASE, "publisher_ico": ICO, "records": list(all_records.values()), "pages": pages, "status": "partial" if failed else "ok"}
+    (OUT / "contracts.json").write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    (OUT / "manifest.json").write_text(json.dumps({"retrieved_at": payload["retrieved_at"], "publisher_ico": ICO, "record_count": len(all_records), "pages": pages, "status": payload["status"]}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+    # Feed the same normalized records directly into the cross-source resolver.
+    for old in SOURCE_OUT.glob("*.json"):
+        old.unlink()
+    for i, record in enumerate(all_records.values(), 1):
+        path = SOURCE_OUT / f"contract_{i:06d}.json"
+        path.write_text(json.dumps(record, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print(f"Wrote {len(all_records)} unique contract records and normalized source records.")
 
 
 if __name__ == "__main__":
