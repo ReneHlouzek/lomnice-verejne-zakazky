@@ -4,6 +4,13 @@
     "organization_name": "Město Lomnice nad Popelkou",
     "ico": "00275905"
   },
+  "registr_smluv": {
+    "search_url": "https://smlouvy.gov.cz/vyhledavani",
+    "publisher_ico": "00275905",
+    "enabled": true,
+    "max_pages": 20,
+    "page_size": 100
+  },
   "statuses": {
     "aktualni-uverejneni": "Aktuální uveřejnění",
     "plneni-smlouvy": "Plnění smlouvy",
