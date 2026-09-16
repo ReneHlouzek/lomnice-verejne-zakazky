@@ -12,21 +12,36 @@ PROJECTS = ROOT / "data" / "projects"
 
 
 def num(v):
+    """Parse Czech and common international numeric/currency formats."""
     if v in (None, ""):
         return None
     if isinstance(v, (int, float)):
         return float(v)
-    s = str(v).replace("\xa0", "").replace("Kč", "").replace("CZK", "").strip()
+    s = str(v).strip().replace("\xa0", "")
+    s = re.sub(r"(?:Kč|CZK|Kc)", "", s, flags=re.I).strip()
+    s = re.sub(r"[^0-9,.-]", "", s)
+    if not s or s in {"-", ".", ","}:
+        return None
     try:
         if "," in s and "." in s:
             if s.rfind(",") > s.rfind("."):
                 s = s.replace(".", "").replace(",", ".")
             else:
                 s = s.replace(",", "")
-        else:
-            s = s.replace(",", ".")
-        return float(re.search(r"-?\d+(?:\.\d+)?", s).group(0))
-    except (AttributeError, ValueError):
+        elif "," in s:
+            parts = s.split(",")
+            if len(parts) > 2:
+                s = "".join(parts)
+            elif len(parts) == 2 and len(parts[1]) == 3 and len(parts[0]) <= 3:
+                s = "".join(parts)
+            else:
+                s = ".".join(parts)
+        elif "." in s:
+            parts = s.split(".")
+            if len(parts) > 2 or (len(parts) == 2 and len(parts[1]) == 3 and len(parts[0]) <= 3):
+                s = "".join(parts)
+        return float(s)
+    except (AttributeError, ValueError, TypeError):
         return None
 
 
