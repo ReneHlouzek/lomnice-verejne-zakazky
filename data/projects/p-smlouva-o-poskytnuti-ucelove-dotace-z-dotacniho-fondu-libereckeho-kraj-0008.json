@@ -1,79 +1,85 @@
 {
   "id": "p-smlouva-o-poskytnuti-ucelove-dotace-z-dotacniho-fondu-libereckeho-kraj-0008",
-  "title": "Smlouva o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje na nákup věcných prostředků k provádění speciálních činností",
+  "title": "Smlouva o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje, programu 8.5 Podpora předcházení vzniku odpadů, jejich opětovného použití a podpora sběru a využití bioodpadu",
   "buyer_ico": "00275905",
   "status": "unclassified",
+  "project_type": "contract",
   "canonical": {
-    "title": "Smlouva o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje na nákup věcných prostředků k provádění speciálních činností",
+    "title": "Smlouva o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje, programu 8.5 Podpora předcházení vzniku odpadů, jejich opětovného použití a podpora sběru a využití bioodpadu",
     "supplier_ico": "70891508",
     "identifiers": [
-      "01-OLP/2363/2021"
+      "OLP/4830/2018"
     ],
     "lifecycle": {
       "events": [
         {
-          "date": "2021-07-19",
+          "date": "2018-10-03",
           "type": "contract",
           "source": "registr-smluv",
-          "source_id": "16025759",
-          "title": "Smlouva o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje na nákup věcných prostředků k provádění speciálních činností",
-          "price": 53404.4
+          "source_id": "6375151",
+          "title": "Smlouva o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje, programu 8.5 Podpora předcházení vzniku odpadů, jejich opětovného použití a podpora sběru a využití bioodpadu",
+          "price": 120000.0
         }
       ],
-      "event_count": 1
+      "event_count": 1,
+      "type_counts": {
+        "contract": 1
+      },
+      "dominant_type": "contract"
     },
+    "project_type": "contract",
     "dates": {
-      "first_observed": "2021-07-19",
-      "last_observed": "2021-07-19"
+      "first_observed": "2018-10-03",
+      "last_observed": "2018-10-03"
     },
     "financial": {
       "observed_prices": [
-        53404.4
+        120000.0
       ],
-      "initial_contract_price": 53404.4,
-      "latest_observed_price": 53404.4
+      "initial_contract_price": 120000.0,
+      "latest_observed_price": 120000.0
     },
     "source_count": 1
   },
   "sources": [
     {
-      "source_file": "data/sources/registr-smluv/rs-000056.json",
-      "source_id": "16025759",
+      "source_file": "data/sources/registr-smluv/rs-000034.json",
+      "source_id": "6375151",
       "record": {
         "source": "registr-smluv",
-        "source_id": "16025759",
-        "version_id": "17245191",
-        "source_url": "https://smlouvy.gov.cz/smlouva/16025759",
-        "title": "Smlouva o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje na nákup věcných prostředků k provádění speciálních činností",
+        "source_id": "6375151",
+        "version_id": "6880303",
+        "source_url": "https://smlouvy.gov.cz/smlouva/6375151",
+        "title": "Smlouva o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje, programu 8.5 Podpora předcházení vzniku odpadů, jejich opětovného použití a podpora sběru a využití bioodpadu",
         "buyer_ico": "00275905",
         "supplier_ico": "70891508",
         "supplier_name": "Liberecký kraj",
-        "contract_number": "01-OLP/2363/2021",
-        "date": "2021-07-19",
-        "signed_date": "2021-07-19",
+        "contract_number": "OLP/4830/2018",
+        "date": "2018-10-03",
+        "signed_date": "2018-10-03",
         "published": null,
-        "price": 53404.4,
+        "price": 120000.0,
         "status": null,
         "raw": {
           "source": "registr-smluv",
-          "source_id": "16025759",
-          "version_id": "17245191",
-          "source_url": "https://smlouvy.gov.cz/smlouva/16025759",
-          "title": "Smlouva o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje na nákup věcných prostředků k provádění speciálních činností",
+          "source_id": "6375151",
+          "version_id": "6880303",
+          "source_url": "https://smlouvy.gov.cz/smlouva/6375151",
+          "title": "Smlouva o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje, programu 8.5 Podpora předcházení vzniku odpadů, jejich opětovného použití a podpora sběru a využití bioodpadu",
           "buyer_ico": "00275905",
           "supplier_ico": "70891508",
-          "contract_number": "01-OLP/2363/2021",
-          "date": "2021-07-19",
-          "signed_date": "2021-07-19",
+          "contract_number": "OLP/4830/2018",
+          "date": "2018-10-03",
+          "signed_date": "2018-10-03",
           "published": "",
-          "price": "53404.4",
-          "value": "53404.4",
+          "price": "120000",
+          "value": "120000",
           "publisher": "",
-          "subject": "Smlouva o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje na nákup věcných prostředků k provádění speciálních činností",
+          "subject": "Smlouva o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje, programu 8.5 Podpora předcházení vzniku odpadů, jejich opětovného použití a podpora sběru a využití bioodpadu",
           "counterparty": "Liberecký kraj",
-          "detail_url": "https://smlouvy.gov.cz/smlouva/16025759"
+          "detail_url": "https://smlouvy.gov.cz/smlouva/6375151"
         },
-        "_source_file": "data/sources/registr-smluv/rs-000056.json"
+        "_source_file": "data/sources/registr-smluv/rs-000034.json"
       }
     }
   ],
@@ -91,22 +97,22 @@
     ],
     "timeline": [
       {
-        "date": "2021-07-19",
+        "date": "2018-10-03",
         "event": "contract",
         "source": "registr-smluv",
-        "source_id": "16025759",
-        "title": "Smlouva o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje na nákup věcných prostředků k provádění speciálních činností",
-        "price": 53404.4,
+        "source_id": "6375151",
+        "title": "Smlouva o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje, programu 8.5 Podpora předcházení vzniku odpadů, jejich opětovného použití a podpora sběru a využití bioodpadu",
+        "price": 120000.0,
         "deadline": null
       }
     ],
     "financial": {
-      "baseline_price": 53404.4,
-      "current_observed_price": 53404.4,
+      "baseline_price": 120000.0,
+      "current_observed_price": 120000.0,
       "absolute_change": 0.0,
       "percent_change": null,
       "observed_prices": [
-        53404.4
+        120000.0
       ],
       "addendum_count": 0
     },
@@ -114,10 +120,10 @@
       "source_count": 1,
       "supplier_count": 1,
       "price_values": [
-        53404.4
+        120000.0
       ],
       "date_values": [
-        "2021-07-19"
+        "2018-10-03"
       ],
       "document_count": 0,
       "deadline_observations": 0

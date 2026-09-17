@@ -1,0 +1,133 @@
+{
+  "id": "p-smlouva-o-bezuplatnem-prevodu-privatizovaneho-majetku-do-vlastnictvi-o-0069",
+  "title": "Smlouva o bezúplatném převodu privatizovaného majetku do vlastnictví obce - Města Lomnice nad Popelkou - nemovitost v k.ú. Rváčov (účetní hodnota převáděného majetku činí 3000,-Kč) (AVISme 2017000988)",
+  "buyer_ico": "00275905",
+  "status": "unclassified",
+  "project_type": "contract",
+  "canonical": {
+    "title": "Smlouva o bezúplatném převodu privatizovaného majetku do vlastnictví obce - Města Lomnice nad Popelkou - nemovitost v k.ú. Rváčov (účetní hodnota převáděného majetku činí 3000,-Kč) (AVISme 2017000988)",
+    "supplier_ico": "00006947",
+    "identifiers": [
+      "SML:17/045/0275"
+    ],
+    "lifecycle": {
+      "events": [
+        {
+          "date": "2017-10-06",
+          "type": "contract",
+          "source": "registr-smluv",
+          "source_id": "3124922",
+          "title": "Smlouva o bezúplatném převodu privatizovaného majetku do vlastnictví obce - Města Lomnice nad Popelkou - nemovitost v k.ú. Rváčov (účetní hodnota převáděného majetku činí 3000,-Kč) (AVISme 2017000988)",
+          "price": 3000.0
+        }
+      ],
+      "event_count": 1,
+      "type_counts": {
+        "contract": 1
+      },
+      "dominant_type": "contract"
+    },
+    "project_type": "contract",
+    "dates": {
+      "first_observed": "2017-10-06",
+      "last_observed": "2017-10-06"
+    },
+    "financial": {
+      "observed_prices": [
+        3000.0
+      ],
+      "initial_contract_price": 3000.0,
+      "latest_observed_price": 3000.0
+    },
+    "source_count": 1
+  },
+  "sources": [
+    {
+      "source_file": "data/sources/registr-smluv/rs-000024.json",
+      "source_id": "3124922",
+      "record": {
+        "source": "registr-smluv",
+        "source_id": "3124922",
+        "version_id": "3367966",
+        "source_url": "https://smlouvy.gov.cz/smlouva/3124922",
+        "title": "Smlouva o bezúplatném převodu privatizovaného majetku do vlastnictví obce - Města Lomnice nad Popelkou - nemovitost v k.ú. Rváčov (účetní hodnota převáděného majetku činí 3000,-Kč) (AVISme 2017000988)",
+        "buyer_ico": "00275905",
+        "supplier_ico": "00006947",
+        "supplier_name": "Ministerstvo financí",
+        "contract_number": "SML:17/045/0275",
+        "date": "2017-10-06",
+        "signed_date": "2017-10-06",
+        "published": null,
+        "price": 3000.0,
+        "status": null,
+        "raw": {
+          "source": "registr-smluv",
+          "source_id": "3124922",
+          "version_id": "3367966",
+          "source_url": "https://smlouvy.gov.cz/smlouva/3124922",
+          "title": "Smlouva o bezúplatném převodu privatizovaného majetku do vlastnictví obce - Města Lomnice nad Popelkou - nemovitost v k.ú. Rváčov (účetní hodnota převáděného majetku činí 3000,-Kč) (AVISme 2017000988)",
+          "buyer_ico": "00275905",
+          "supplier_ico": "00006947",
+          "contract_number": "SML:17/045/0275",
+          "date": "2017-10-06",
+          "signed_date": "2017-10-06",
+          "published": "",
+          "price": "3000",
+          "value": "3000",
+          "publisher": "",
+          "subject": "Smlouva o bezúplatném převodu privatizovaného majetku do vlastnictví obce - Města Lomnice nad Popelkou - nemovitost v k.ú. Rváčov (účetní hodnota převáděného majetku činí 3000,-Kč) (AVISme 2017000988)",
+          "counterparty": "Ministerstvo financí",
+          "detail_url": "https://smlouvy.gov.cz/smlouva/3124922"
+        },
+        "_source_file": "data/sources/registr-smluv/rs-000024.json"
+      }
+    }
+  ],
+  "analysis": {
+    "schema_version": 4,
+    "project_id": "p-smlouva-o-bezuplatnem-prevodu-privatizovaneho-majetku-do-vlastnictvi-o-0069",
+    "signal_count": 1,
+    "signals": [
+      {
+        "code": "single_source",
+        "level": "info",
+        "message": "Projekt je zatím doložen pouze jedním zdrojovým záznamem.",
+        "evidence": []
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2017-10-06",
+        "event": "contract",
+        "source": "registr-smluv",
+        "source_id": "3124922",
+        "title": "Smlouva o bezúplatném převodu privatizovaného majetku do vlastnictví obce - Města Lomnice nad Popelkou - nemovitost v k.ú. Rváčov (účetní hodnota převáděného majetku činí 3000,-Kč) (AVISme 2017000988)",
+        "price": 3000.0,
+        "deadline": null
+      }
+    ],
+    "financial": {
+      "baseline_price": 3000.0,
+      "current_observed_price": 3000.0,
+      "absolute_change": 0.0,
+      "percent_change": null,
+      "observed_prices": [
+        3000.0
+      ],
+      "addendum_count": 0
+    },
+    "metrics": {
+      "source_count": 1,
+      "supplier_count": 1,
+      "price_values": [
+        3000.0
+      ],
+      "date_values": [
+        "2017-10-06"
+      ],
+      "document_count": 0,
+      "deadline_observations": 0
+    },
+    "methodology": "Signals are descriptive checks only; they do not establish wrongdoing or causality. They identify differences worth checking and retain source provenance."
+  }
+}

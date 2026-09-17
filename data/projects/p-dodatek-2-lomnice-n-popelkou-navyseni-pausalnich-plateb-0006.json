@@ -1,0 +1,255 @@
+{
+  "id": "p-dodatek-2-lomnice-n-popelkou-navyseni-pausalnich-plateb-0006",
+  "title": "Dodatek 2 Lomnice n. Popelkou - navýšení paušálních plateb",
+  "buyer_ico": "00275905",
+  "status": "unclassified",
+  "project_type": "procurement_with_changes",
+  "canonical": {
+    "title": "Dodatek 2 Lomnice n. Popelkou - navýšení paušálních plateb",
+    "supplier_ico": "72050501",
+    "identifiers": [
+      "924004797.00.000 / KRPL-68860-8/ČJ-2016-1800SU-5",
+      "924004797.00.001 / KRPL-68860-12/ČJ-2016-1800SU-5",
+      "924004797.00.002 / KRPL-68860-32/ČJ-2016-1800SU"
+    ],
+    "lifecycle": {
+      "events": [
+        {
+          "date": "2016-11-29",
+          "type": "source_record",
+          "source": "registr-smluv",
+          "source_id": "774449",
+          "title": "Lomnice nad Popelkou - nájem NP pro OOP",
+          "price": 17715.0
+        },
+        {
+          "date": "2017-06-29",
+          "type": "addendum",
+          "source": "registr-smluv",
+          "source_id": "2316654",
+          "title": "Dodatek 1 Lomnice n.Popelkou - nájem NP",
+          "price": null
+        },
+        {
+          "date": "2022-05-24",
+          "type": "addendum",
+          "source": "registr-smluv",
+          "source_id": "19084011",
+          "title": "Dodatek 2 Lomnice n. Popelkou - navýšení paušálních plateb",
+          "price": null
+        }
+      ],
+      "event_count": 3,
+      "type_counts": {
+        "source_record": 1,
+        "addendum": 2
+      },
+      "dominant_type": "addendum"
+    },
+    "project_type": "procurement_with_changes",
+    "dates": {
+      "first_observed": "2016-11-29",
+      "last_observed": "2022-05-24"
+    },
+    "financial": {
+      "observed_prices": [],
+      "initial_contract_price": null,
+      "latest_observed_price": null
+    },
+    "source_count": 3
+  },
+  "sources": [
+    {
+      "source_file": "data/sources/registr-smluv/rs-000058.json",
+      "source_id": "19084011",
+      "record": {
+        "source": "registr-smluv",
+        "source_id": "19084011",
+        "version_id": "20500379",
+        "source_url": "https://smlouvy.gov.cz/smlouva/19084011",
+        "title": "Dodatek 2 Lomnice n. Popelkou - navýšení paušálních plateb",
+        "buyer_ico": "00275905",
+        "supplier_ico": "72050501",
+        "supplier_name": "Krajské ředitelství policie Libereckého kraje",
+        "contract_number": "924004797.00.002 / KRPL-68860-32/ČJ-2016-1800SU",
+        "date": "2022-05-24",
+        "signed_date": "2022-05-24",
+        "published": null,
+        "price": null,
+        "status": null,
+        "raw": {
+          "source": "registr-smluv",
+          "source_id": "19084011",
+          "version_id": "20500379",
+          "source_url": "https://smlouvy.gov.cz/smlouva/19084011",
+          "title": "Dodatek 2 Lomnice n. Popelkou - navýšení paušálních plateb",
+          "buyer_ico": "00275905",
+          "supplier_ico": "72050501",
+          "contract_number": "924004797.00.002 / KRPL-68860-32/ČJ-2016-1800SU",
+          "date": "2022-05-24",
+          "signed_date": "2022-05-24",
+          "published": "",
+          "price": "",
+          "value": "",
+          "publisher": "",
+          "subject": "Dodatek 2 Lomnice n. Popelkou - navýšení paušálních plateb",
+          "counterparty": "Krajské ředitelství policie Libereckého kraje",
+          "detail_url": "https://smlouvy.gov.cz/smlouva/19084011"
+        },
+        "_source_file": "data/sources/registr-smluv/rs-000058.json"
+      }
+    },
+    {
+      "source_file": "data/sources/registr-smluv/rs-000020.json",
+      "source_id": "2316654",
+      "record": {
+        "source": "registr-smluv",
+        "source_id": "2316654",
+        "version_id": "2497810",
+        "source_url": "https://smlouvy.gov.cz/smlouva/2316654",
+        "title": "Dodatek 1 Lomnice n.Popelkou - nájem NP",
+        "buyer_ico": "00275905",
+        "supplier_ico": "72050501",
+        "supplier_name": "Krajské ředitelství policie Libereckého kraje",
+        "contract_number": "924004797.00.001 / KRPL-68860-12/ČJ-2016-1800SU-5",
+        "date": "2017-06-29",
+        "signed_date": "2017-06-29",
+        "published": null,
+        "price": null,
+        "status": null,
+        "raw": {
+          "source": "registr-smluv",
+          "source_id": "2316654",
+          "version_id": "2497810",
+          "source_url": "https://smlouvy.gov.cz/smlouva/2316654",
+          "title": "Dodatek 1 Lomnice n.Popelkou - nájem NP",
+          "buyer_ico": "00275905",
+          "supplier_ico": "72050501",
+          "contract_number": "924004797.00.001 / KRPL-68860-12/ČJ-2016-1800SU-5",
+          "date": "2017-06-29",
+          "signed_date": "2017-06-29",
+          "published": "",
+          "price": "",
+          "value": "",
+          "publisher": "",
+          "subject": "Dodatek 1 Lomnice n.Popelkou - nájem NP",
+          "counterparty": "Krajské ředitelství policie Libereckého kraje",
+          "detail_url": "https://smlouvy.gov.cz/smlouva/2316654"
+        },
+        "_source_file": "data/sources/registr-smluv/rs-000020.json"
+      }
+    },
+    {
+      "source_file": "data/sources/registr-smluv/rs-000012.json",
+      "source_id": "774449",
+      "record": {
+        "source": "registr-smluv",
+        "source_id": "774449",
+        "version_id": "823945",
+        "source_url": "https://smlouvy.gov.cz/smlouva/774449",
+        "title": "Lomnice nad Popelkou - nájem NP pro OOP",
+        "buyer_ico": "00275905",
+        "supplier_ico": "72050501",
+        "supplier_name": "Krajské ředitelství policie Libereckého kraje",
+        "contract_number": "924004797.00.000 / KRPL-68860-8/ČJ-2016-1800SU-5",
+        "date": "2016-11-29",
+        "signed_date": "2016-11-29",
+        "published": null,
+        "price": 17715.0,
+        "status": null,
+        "raw": {
+          "source": "registr-smluv",
+          "source_id": "774449",
+          "version_id": "823945",
+          "source_url": "https://smlouvy.gov.cz/smlouva/774449",
+          "title": "Lomnice nad Popelkou - nájem NP pro OOP",
+          "buyer_ico": "00275905",
+          "supplier_ico": "72050501",
+          "contract_number": "924004797.00.000 / KRPL-68860-8/ČJ-2016-1800SU-5",
+          "date": "2016-11-29",
+          "signed_date": "2016-11-29",
+          "published": "",
+          "price": "17715",
+          "value": "17715",
+          "publisher": "",
+          "subject": "Lomnice nad Popelkou - nájem NP pro OOP",
+          "counterparty": "Krajské ředitelství policie Libereckého kraje",
+          "detail_url": "https://smlouvy.gov.cz/smlouva/774449"
+        },
+        "_source_file": "data/sources/registr-smluv/rs-000012.json"
+      }
+    }
+  ],
+  "analysis": {
+    "schema_version": 4,
+    "project_id": "p-dodatek-2-lomnice-n-popelkou-navyseni-pausalnich-plateb-0006",
+    "signal_count": 1,
+    "signals": [
+      {
+        "code": "addendum_count",
+        "level": "info",
+        "message": "Ve zdrojových záznamech bylo rozpoznáno 2 dodatků / změnových záznamů.",
+        "evidence": [
+          {
+            "type": "count",
+            "value": 2
+          }
+        ]
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2016-11-29",
+        "event": "source_record",
+        "source": "registr-smluv",
+        "source_id": "774449",
+        "title": "Lomnice nad Popelkou - nájem NP pro OOP",
+        "price": 17715.0,
+        "deadline": null
+      },
+      {
+        "date": "2017-06-29",
+        "event": "addendum",
+        "source": "registr-smluv",
+        "source_id": "2316654",
+        "title": "Dodatek 1 Lomnice n.Popelkou - nájem NP",
+        "price": null,
+        "deadline": null
+      },
+      {
+        "date": "2022-05-24",
+        "event": "addendum",
+        "source": "registr-smluv",
+        "source_id": "19084011",
+        "title": "Dodatek 2 Lomnice n. Popelkou - navýšení paušálních plateb",
+        "price": null,
+        "deadline": null
+      }
+    ],
+    "financial": {
+      "baseline_price": 17715.0,
+      "current_observed_price": 17715.0,
+      "absolute_change": 0.0,
+      "percent_change": null,
+      "observed_prices": [
+        17715.0
+      ],
+      "addendum_count": 2
+    },
+    "metrics": {
+      "source_count": 3,
+      "supplier_count": 1,
+      "price_values": [
+        17715.0
+      ],
+      "date_values": [
+        "2016-11-29",
+        "2017-06-29",
+        "2022-05-24"
+      ],
+      "document_count": 0,
+      "deadline_observations": 0
+    },
+    "methodology": "Signals are descriptive checks only; they do not establish wrongdoing or causality. They identify differences worth checking and retain source provenance."
+  }
+}

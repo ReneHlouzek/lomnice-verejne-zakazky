@@ -3,6 +3,7 @@
   "title": "darovací smlouva - darování pozemků včetně vyřazeného tělesa komunikace ev.č. III/2847 na pozemcích v k.ú. Lomnice nad Popelkou",
   "buyer_ico": "00275905",
   "status": "unclassified",
+  "project_type": "contract",
   "canonical": {
     "title": "darovací smlouva - darování pozemků včetně vyřazeného tělesa komunikace ev.č. III/2847 na pozemcích v k.ú. Lomnice nad Popelkou",
     "supplier_ico": "70891508",
@@ -20,8 +21,13 @@
           "price": 1602997.22
         }
       ],
-      "event_count": 1
+      "event_count": 1,
+      "type_counts": {
+        "contract": 1
+      },
+      "dominant_type": "contract"
     },
+    "project_type": "contract",
     "dates": {
       "first_observed": "2021-01-19",
       "last_observed": "2021-01-19"
