@@ -9,6 +9,7 @@
     "publisher_ico": "00275905",
     "enabled": true,
     "max_pages": 0,
+    "batch_size": 12,
     "page_size": 100,
     "history_from": "2016-07",
     "recent_months": 2
