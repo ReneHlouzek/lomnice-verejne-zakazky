@@ -81,7 +81,6 @@ def records():
         for r in rows:
             if not isinstance(r, dict):
                 continue
-            # Ignore source metadata even if a future importer stores it next to records.
             if not (r.get("title") or r.get("subject") or r.get("nazev") or r.get("name")):
                 continue
             r = dict(r)
@@ -150,11 +149,24 @@ def canonical(g):
     events.sort(key=lambda x: x["date"])
     contract_events = [e for e in events if e["type"] in ("contract", "addendum") and e["price"] is not None]
     observed_prices = [e["price"] for e in contract_events]
+    type_counts = {}
+    for e in events:
+        type_counts[e["type"]] = type_counts.get(e["type"], 0) + 1
+    dominant_type = max(type_counts, key=type_counts.get) if type_counts else "source_record"
+    if type_counts.get("addendum"):
+        project_type = "procurement_with_changes"
+    elif type_counts.get("tender") or type_counts.get("award"):
+        project_type = "procurement"
+    elif type_counts.get("contract"):
+        project_type = "contract"
+    else:
+        project_type = "other"
     return {
         "title": max(titles, key=len) if titles else None,
         "supplier_ico": next((ico(x) for x in suppliers if ico(x)), None),
         "identifiers": sorted(set().union(*(key_ids(r) for r in g))),
-        "lifecycle": {"events": events, "event_count": len(events)},
+        "lifecycle": {"events": events, "event_count": len(events), "type_counts": type_counts, "dominant_type": dominant_type},
+        "project_type": project_type,
         "dates": {"first_observed": events[0]["date"] if events else None, "last_observed": events[-1]["date"] if events else None},
         "financial": {"observed_prices": sorted(set(observed_prices)), "initial_contract_price": observed_prices[0] if observed_prices else None, "latest_observed_price": observed_prices[-1] if observed_prices else None},
         "source_count": len(g),
@@ -195,7 +207,8 @@ def main():
             continue
         pid = "p-" + re.sub(r"[^a-z0-9]+", "-", norm(title))[:70].strip("-") + f"-{i:04d}"
         sources = [{"source_file": r.get("_source_file"), "source_id": r.get("source_id") or r.get("vvz_id") or r.get("contract_id"), "record": r} for r in g]
-        project = {"id": pid, "title": title, "buyer_ico": BUYER_ICO, "status": "unclassified", "canonical": canonical(g), "sources": sources}
+        can = canonical(g)
+        project = {"id": pid, "title": title, "buyer_ico": BUYER_ICO, "status": "unclassified", "project_type": can["project_type"], "canonical": can, "sources": sources}
         (OUT / f"{pid}.json").write_text(json.dumps(project, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
     for i, a in enumerate(rows):
