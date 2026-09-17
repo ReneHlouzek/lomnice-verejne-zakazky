@@ -65,6 +65,10 @@ def date_value(v):
     return m.group(1) if m else None
 
 
+def title(r):
+    return str(r.get("title") or r.get("nazev") or r.get("name") or r.get("subject") or "").strip()
+
+
 def records():
     """Read only actual normalized source records; metadata manifests are not records."""
     if not SOURCES.exists():
@@ -79,9 +83,7 @@ def records():
             continue
         rows = obj if isinstance(obj, list) else obj.get("records", [obj])
         for r in rows:
-            if not isinstance(r, dict):
-                continue
-            if not (r.get("title") or r.get("subject") or r.get("nazev") or r.get("name")):
+            if not isinstance(r, dict) or not title(r):
                 continue
             r = dict(r)
             r["_source_file"] = str(p.relative_to(ROOT))
@@ -92,7 +94,7 @@ def records():
                 r = json.loads(line)
             except Exception:
                 continue
-            if not isinstance(r, dict) or not (r.get("title") or r.get("subject") or r.get("nazev") or r.get("name")):
+            if not isinstance(r, dict) or not title(r):
                 continue
             r["_source_file"] = str(p.relative_to(ROOT))
             out.append(r)
@@ -100,26 +102,59 @@ def records():
 
 
 def key_ids(r):
-    return {str(r.get(k)).strip() for k in ("vvz_id", "vvz_identifier", "profile_id", "procurement_id", "contract_id", "contract_number") if r.get(k)}
+    return {str(r.get(k)).strip() for k in ("vvz_id", "vvz_identifier", "profile_id", "procurement_id", "contract_id") if r.get(k)}
+
+
+def contract_number(r):
+    return str(r.get("contract_number") or r.get("cislo_smlouvy") or "").strip()
+
+
+def is_addendum(r):
+    return bool(re.search(r"\b(dodatek|dodatek c|zmenovy list|change order)\b", norm(title(r))))
+
+
+def core_title(r):
+    t = norm(title(r))
+    t = re.sub(r"\bdodatek(?: c)?\s*\d*\b", " ", t)
+    t = re.sub(r"\bzmenovy list(?: c)?\s*\d*\b", " ", t)
+    t = re.sub(r"\bke smlouve\b", " smlouva ", t)
+    t = re.sub(r"\bke smlouve o dilo\b", " smlouva o dilo ", t)
+    return re.sub(r"\s+", " ", t).strip()
 
 
 def score(a, b):
     common = key_ids(a) & key_ids(b)
     if common:
         return 1.0, "exact_identifier", sorted(common)
+
+    an = contract_number(a)
+    bn = contract_number(b)
+    if an and bn and an != bn:
+        # Different explicit contract numbers are strong evidence against merging.
+        return 0, "different_contract_number", [an, bn]
+
     ai = ico(a.get("supplier_ico") or a.get("ico_dodavatele"))
     bi = ico(b.get("supplier_ico") or b.get("ico_dodavatele"))
-    at = norm(a.get("title") or a.get("nazev") or a.get("name"))
-    bt = norm(b.get("title") or b.get("nazev") or b.get("name"))
+    at = norm(title(a))
+    bt = norm(title(b))
+    act = core_title(a)
+    bct = core_title(b)
     sim = SequenceMatcher(None, at, bt).ratio() if at and bt else 0
+    core_sim = SequenceMatcher(None, act, bct).ratio() if act and bct else 0
     ap = price(a.get("price") or a.get("contract_price") or a.get("value"))
     bp = price(b.get("price") or b.get("contract_price") or b.get("value"))
     same_supplier = bool(ai and bi and ai == bi)
     near_price = bool(ap is not None and bp is not None and (abs(ap - bp) / max(ap, bp) <= .03))
-    if same_supplier and sim >= .72 and (near_price or ap is None or bp is None):
+    addendum_pair = is_addendum(a) != is_addendum(b)
+
+    if addendum_pair and same_supplier and core_sim >= .68:
+        return .96, "addendum_core_title", [ai]
+    if same_supplier and sim >= .82 and (near_price or ap is None or bp is None):
         return .9, "supplier_title", [ai]
-    if sim >= .86 and near_price:
+    if sim >= .9 and near_price:
         return .82, "title_price", []
+    if same_supplier and sim >= .66 and near_price:
+        return .74, "candidate_supplier_title_price", [ai]
     if same_supplier and sim >= .60:
         return .65, "candidate_supplier_title", [ai]
     return 0, "none", []
@@ -131,7 +166,7 @@ def classify(r):
         return "addendum"
     if any(x in text for x in ("vysledek", "vyber", "award", "oznameni o vyberu")):
         return "award"
-    if any(x in text for x in ("zakazka", "verejna zakazka", "tender")):
+    if any(x in text for x in ("verejna zakazka", "zakazka", "tender")):
         return "tender"
     if any(x in text for x in ("smlouva", "contract")):
         return "contract"
@@ -139,13 +174,13 @@ def classify(r):
 
 
 def canonical(g):
-    titles = [r.get("title") or r.get("nazev") or r.get("name") for r in g if r.get("title") or r.get("nazev") or r.get("name")]
+    titles = [title(r) for r in g if title(r)]
     suppliers = [r.get("supplier_ico") or r.get("ico_dodavatele") for r in g if r.get("supplier_ico") or r.get("ico_dodavatele")]
     events = []
     for r in g:
         d = date_value(r.get("date") or r.get("published") or r.get("datum") or r.get("signed_date") or r.get("award_date"))
         if d:
-            events.append({"date": d, "type": classify(r), "source": r.get("source"), "source_id": r.get("source_id"), "title": r.get("title") or r.get("nazev"), "price": price(r.get("price") or r.get("contract_price") or r.get("value"))})
+            events.append({"date": d, "type": classify(r), "source": r.get("source"), "source_id": r.get("source_id"), "title": title(r), "price": price(r.get("price") or r.get("contract_price") or r.get("value"))})
     events.sort(key=lambda x: x["date"])
     contract_events = [e for e in events if e["type"] in ("contract", "addendum") and e["price"] is not None]
     observed_prices = [e["price"] for e in contract_events]
@@ -160,7 +195,6 @@ def canonical(g):
     elif has_procurement_event:
         project_type = "procurement"
     elif has_addendum:
-        # An addendum alone proves a contractual change, not that a public tender was run.
         project_type = "contract_with_changes"
     elif type_counts.get("contract"):
         project_type = "contract"
@@ -205,16 +239,19 @@ def main():
     OUT.mkdir(parents=True, exist_ok=True)
     for old in OUT.glob("*.json"):
         old.unlink()
+    audit = {"source_records": len(rows), "projects": len(groups), "project_sizes": {}, "classifications": {}, "candidate_count": 0}
     for i, g in enumerate(groups, 1):
         base = g[0]
-        title = base.get("title") or base.get("nazev") or base.get("name")
-        if not title:
+        t = title(base)
+        if not t:
             continue
-        pid = "p-" + re.sub(r"[^a-z0-9]+", "-", norm(title))[:70].strip("-") + f"-{i:04d}"
+        pid = "p-" + re.sub(r"[^a-z0-9]+", "-", norm(t))[:70].strip("-") + f"-{i:04d}"
         sources = [{"source_file": r.get("_source_file"), "source_id": r.get("source_id") or r.get("vvz_id") or r.get("contract_id"), "record": r} for r in g]
         can = canonical(g)
-        project = {"id": pid, "title": title, "buyer_ico": BUYER_ICO, "status": "unclassified", "project_type": can["project_type"], "canonical": can, "sources": sources}
+        project = {"id": pid, "title": t, "buyer_ico": BUYER_ICO, "status": "unclassified", "project_type": can["project_type"], "canonical": can, "sources": sources}
         (OUT / f"{pid}.json").write_text(json.dumps(project, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        audit["project_sizes"][pid] = len(g)
+        audit["classifications"][can["project_type"]] = audit["classifications"].get(can["project_type"], 0) + 1
 
     for i, a in enumerate(rows):
         for b in rows[i + 1:]:
@@ -223,8 +260,11 @@ def main():
             s, reason, evidence = score(a, b)
             if .60 <= s < .82:
                 candidates.append({"score": s, "reason": reason, "evidence": evidence, "a": a, "b": b})
+    audit["candidate_count"] = len(candidates)
     (ROOT / "data" / "link_candidates.json").write_text(json.dumps(candidates, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    (ROOT / "data" / "resolution_audit.json").write_text(json.dumps(audit, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"Resolved {len(rows)} source records into {len(groups)} projects; {len(candidates)} candidates for review.")
+    print("Classification:", json.dumps(audit["classifications"], ensure_ascii=False, sort_keys=True))
 
 
 if __name__ == "__main__": main()
