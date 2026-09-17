@@ -129,12 +129,12 @@ def classify(r):
     text = norm(" ".join(str(r.get(k) or "") for k in ("title", "name", "type", "event", "status")))
     if any(x in text for x in ("dodatek", "zmenovy list", "change order")):
         return "addendum"
-    if any(x in text for x in ("smlouva", "contract")):
-        return "contract"
     if any(x in text for x in ("vysledek", "vyber", "award", "oznameni o vyberu")):
         return "award"
     if any(x in text for x in ("zakazka", "verejna zakazka", "tender")):
         return "tender"
+    if any(x in text for x in ("smlouva", "contract")):
+        return "contract"
     return "source_record"
 
 
@@ -153,10 +153,15 @@ def canonical(g):
     for e in events:
         type_counts[e["type"]] = type_counts.get(e["type"], 0) + 1
     dominant_type = max(type_counts, key=type_counts.get) if type_counts else "source_record"
-    if type_counts.get("addendum"):
+    has_procurement_event = bool(type_counts.get("tender") or type_counts.get("award"))
+    has_addendum = bool(type_counts.get("addendum"))
+    if has_procurement_event and has_addendum:
         project_type = "procurement_with_changes"
-    elif type_counts.get("tender") or type_counts.get("award"):
+    elif has_procurement_event:
         project_type = "procurement"
+    elif has_addendum:
+        # An addendum alone proves a contractual change, not that a public tender was run.
+        project_type = "contract_with_changes"
     elif type_counts.get("contract"):
         project_type = "contract"
     else:
