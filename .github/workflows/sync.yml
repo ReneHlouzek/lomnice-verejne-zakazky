@@ -12,8 +12,6 @@ on:
 permissions:
   contents: write
 
-# Synchronizace zapisuje data zpět do main. Běhy proto musí být sériové,
-# jinak může pozdější build narazit na změny, které mezitím zapsal jiný běh.
 concurrency:
   group: sync-verejne-zakazky
   cancel-in-progress: false
@@ -146,12 +144,15 @@ jobs:
           set -e
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch origin main
+          # Nejprve srovnáme pracovní strom s aktuálním main a teprve potom
+          # vytvoříme datový commit. Tím se vyhneme konfliktům v generovaných
+          # JSON manifestech při současné změně zdrojového kódu.
+          git reset --mixed origin/main
           git add data/
           if git diff --cached --quiet; then
             echo "No data changes."
             exit 0
           fi
           git commit -m "Automaticky aktualizovat data zakazek"
-          git fetch origin main
-          git rebase origin/main
           git push origin HEAD:main
