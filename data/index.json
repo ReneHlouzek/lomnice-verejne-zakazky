@@ -1,7 +1,7 @@
 {
   "schema_version": 3,
   "parser_state": "resolved",
-  "generated_at": "2026-09-17T19:00:51.701987+00:00",
+  "generated_at": "2026-09-17T19:32:47.886295+00:00",
   "source": {
     "profile_url": "https://www.vhodne-uverejneni.cz/profil/mesto-lomnice-nad-popelkou",
     "organization_name": "Město Lomnice nad Popelkou",
@@ -16,10 +16,10 @@
   "project_type_counts": {
     "procurement": 0,
     "procurement_with_changes": 0,
+    "contract_with_changes": 10,
     "contract": 52,
     "other": 17,
-    "unclassified": 0,
-    "contract_with_changes": 10
+    "unclassified": 0
   },
   "total_projects": 79,
   "statuses": {
@@ -48,6 +48,21 @@
     "procurement_with_changes": {
       "label": "Zakázka se změnami / dodatky",
       "projects": []
+    },
+    "contract_with_changes": {
+      "label": "Smlouva se změnami / dodatky",
+      "projects": [
+        "p-dodatek-2-lomnice-n-popelkou-navyseni-pausalnich-plateb-0006",
+        "p-dodatek-c-1-k-verejnopravni-smlouve-o-poskynuti-neinvesticni-dotace-0068",
+        "p-dodatek-c-1-k-verejnopravni-smlouve-o-poskytnuti-dotace-z-rozpctu-mest-0033",
+        "p-dodatek-c-1-k-verejnopravni-smlouve-o-poskytnuti-investicni-dotace-z-r-0054",
+        "p-dodatek-c-1-ke-smlouve-o-poskytnuti-dotace-na-poskytovani-sluzeb-v-obe-0051",
+        "p-dodatek-c-1-olp-3394-2023-smlouva-dflk-8-6-mesto-lomnice-nad-popelkou-0032",
+        "p-dodatek-c-1-verejnopravni-smlouvy-o-poskytnuti-investicni-dotace-z-roz-0024",
+        "p-dodatek-c-1-verejnopravni-smlouvy-o-poskytnuti-neinvesticni-dotace-z-r-0017",
+        "p-dodatek-c-2-ke-smlouve-o-poskytnuti-ucelove-dotace-libereckemu-kraji-z-0030",
+        "p-poskytnuti-ucelove-dotace-z-rozpoctu-libereckeho-kraje-na-projekt-kara-0004"
+      ]
     },
     "contract": {
       "label": "Smlouva bez rozpoznané zakázky",
@@ -1169,6 +1184,7 @@
   ],
   "notes": [
     "Projects are created by the conservative cross-source resolver.",
+    "A contractual addendum alone is not treated as evidence that a public tender was conducted.",
     "Project type is derived from documented source record types; it is separate from contractual status.",
     "Records without a reliable contractual status remain unclassified rather than being guessed."
   ]
