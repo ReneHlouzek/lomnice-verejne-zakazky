@@ -159,14 +159,15 @@ jobs:
 
       - name: Commit collected data
         run: |
+          set -e
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git fetch origin main
-          git rebase origin/main
           git add data/
           if git diff --cached --quiet; then
             echo "No data changes."
-          else
-            git commit -m "Automaticky aktualizovat data zakazek"
-            git push origin HEAD:main
+            exit 0
           fi
+          git commit -m "Automaticky aktualizovat data zakazek"
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
