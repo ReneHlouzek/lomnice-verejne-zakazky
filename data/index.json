@@ -1,7 +1,7 @@
 {
   "schema_version": 3,
   "parser_state": "resolved",
-  "generated_at": "2026-09-17T14:50:51.475154+00:00",
+  "generated_at": "2026-09-17T19:00:51.701987+00:00",
   "source": {
     "profile_url": "https://www.vhodne-uverejneni.cz/profil/mesto-lomnice-nad-popelkou",
     "organization_name": "Město Lomnice nad Popelkou",
@@ -15,10 +15,11 @@
   },
   "project_type_counts": {
     "procurement": 0,
-    "procurement_with_changes": 10,
+    "procurement_with_changes": 0,
     "contract": 52,
     "other": 17,
-    "unclassified": 0
+    "unclassified": 0,
+    "contract_with_changes": 10
   },
   "total_projects": 79,
   "statuses": {
@@ -46,18 +47,7 @@
     },
     "procurement_with_changes": {
       "label": "Zakázka se změnami / dodatky",
-      "projects": [
-        "p-dodatek-2-lomnice-n-popelkou-navyseni-pausalnich-plateb-0006",
-        "p-dodatek-c-1-k-verejnopravni-smlouve-o-poskynuti-neinvesticni-dotace-0068",
-        "p-dodatek-c-1-k-verejnopravni-smlouve-o-poskytnuti-dotace-z-rozpctu-mest-0033",
-        "p-dodatek-c-1-k-verejnopravni-smlouve-o-poskytnuti-investicni-dotace-z-r-0054",
-        "p-dodatek-c-1-ke-smlouve-o-poskytnuti-dotace-na-poskytovani-sluzeb-v-obe-0051",
-        "p-dodatek-c-1-olp-3394-2023-smlouva-dflk-8-6-mesto-lomnice-nad-popelkou-0032",
-        "p-dodatek-c-1-verejnopravni-smlouvy-o-poskytnuti-investicni-dotace-z-roz-0024",
-        "p-dodatek-c-1-verejnopravni-smlouvy-o-poskytnuti-neinvesticni-dotace-z-r-0017",
-        "p-dodatek-c-2-ke-smlouve-o-poskytnuti-ucelove-dotace-libereckemu-kraji-z-0030",
-        "p-poskytnuti-ucelove-dotace-z-rozpoctu-libereckeho-kraje-na-projekt-kara-0004"
-      ]
+      "projects": []
     },
     "contract": {
       "label": "Smlouva bez rozpoznané zakázky",
@@ -278,7 +268,7 @@
       "id": "p-dodatek-2-lomnice-n-popelkou-navyseni-pausalnich-plateb-0006",
       "title": "Dodatek 2 Lomnice n. Popelkou - navýšení paušálních plateb",
       "status": "unclassified",
-      "project_type": "procurement_with_changes",
+      "project_type": "contract_with_changes",
       "record_types": {
         "source_record": 1,
         "addendum": 2
@@ -292,7 +282,7 @@
       "id": "p-dodatek-c-1-k-verejnopravni-smlouve-o-poskynuti-neinvesticni-dotace-0068",
       "title": "Dodatek č. 1 k veřejnoprávní smlouvě o poskynutí neinvestiční dotace",
       "status": "unclassified",
-      "project_type": "procurement_with_changes",
+      "project_type": "contract_with_changes",
       "record_types": {
         "addendum": 1
       },
@@ -305,7 +295,7 @@
       "id": "p-dodatek-c-1-k-verejnopravni-smlouve-o-poskytnuti-dotace-z-rozpctu-mest-0033",
       "title": "Dodatek č. 1 k veřejnoprávní smlouvě o poskytnutí dotace z rozpčtu města Lomnice nad Popelkou",
       "status": "unclassified",
-      "project_type": "procurement_with_changes",
+      "project_type": "contract_with_changes",
       "record_types": {
         "addendum": 1
       },
@@ -318,7 +308,7 @@
       "id": "p-dodatek-c-1-k-verejnopravni-smlouve-o-poskytnuti-investicni-dotace-z-r-0054",
       "title": "Dodatek č. 1 k veřejnoprávní smlouvě o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou",
       "status": "unclassified",
-      "project_type": "procurement_with_changes",
+      "project_type": "contract_with_changes",
       "record_types": {
         "addendum": 1
       },
@@ -331,7 +321,7 @@
       "id": "p-dodatek-c-1-ke-smlouve-o-poskytnuti-dotace-na-poskytovani-sluzeb-v-obe-0051",
       "title": "Dodatek č. 1 ke smlouvě o poskytnutí dotace na poskytování služeb v obecném hospodářském zájmu z rozpočtu Libereckého kraje z finančních prostředků Ministerstva práce a sociálních věcí, č. OLP/588/2016",
       "status": "unclassified",
-      "project_type": "procurement_with_changes",
+      "project_type": "contract_with_changes",
       "record_types": {
         "addendum": 1
       },
@@ -344,7 +334,7 @@
       "id": "p-dodatek-c-1-olp-3394-2023-smlouva-dflk-8-6-mesto-lomnice-nad-popelkou-0032",
       "title": "Dodatek č. 1 OLP/3394/2023 - Smlouva DFLK 8.6 - Město Lomnice nad Popelkou",
       "status": "unclassified",
-      "project_type": "procurement_with_changes",
+      "project_type": "contract_with_changes",
       "record_types": {
         "addendum": 1
       },
@@ -357,7 +347,7 @@
       "id": "p-dodatek-c-1-verejnopravni-smlouvy-o-poskytnuti-investicni-dotace-z-roz-0024",
       "title": "Dodatek č. 1 veřejnoprávní smlouvy o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou",
       "status": "unclassified",
-      "project_type": "procurement_with_changes",
+      "project_type": "contract_with_changes",
       "record_types": {
         "addendum": 1
       },
@@ -370,7 +360,7 @@
       "id": "p-dodatek-c-1-verejnopravni-smlouvy-o-poskytnuti-neinvesticni-dotace-z-r-0017",
       "title": "Dodatek č. 1 veřejnoprávní smlouvy o poskytnutí neinvestiční dotace z rozpočtu města Lomnice nad Popelkou na akci Lomnice nad Popelkou - KOšov , obnova vodovodu",
       "status": "unclassified",
-      "project_type": "procurement_with_changes",
+      "project_type": "contract_with_changes",
       "record_types": {
         "addendum": 1
       },
@@ -383,7 +373,7 @@
       "id": "p-dodatek-c-2-ke-smlouve-o-poskytnuti-ucelove-dotace-libereckemu-kraji-z-0030",
       "title": "Dodatek č.2 ke Smlouvě o poskytnutí účelové dotace Libereckému kraji z rozpočtu Města Lomnice nad Popelkou na stavební akci „II/286 x II/284 Lomnice nad Popelkou - havárie zdi - nezpůsobilé výdaje“",
       "status": "unclassified",
-      "project_type": "procurement_with_changes",
+      "project_type": "contract_with_changes",
       "record_types": {
         "contract": 2,
         "addendum": 1
@@ -540,7 +530,7 @@
       "id": "p-poskytnuti-ucelove-dotace-z-rozpoctu-libereckeho-kraje-na-projekt-kara-0004",
       "title": "Poskytnutí účelové dotace z rozpočtu Libereckého kraje na projekt Karavanové stání Koupaliště, Lomnice nad Popelkou",
       "status": "unclassified",
-      "project_type": "procurement_with_changes",
+      "project_type": "contract_with_changes",
       "record_types": {
         "addendum": 4,
         "source_record": 2,

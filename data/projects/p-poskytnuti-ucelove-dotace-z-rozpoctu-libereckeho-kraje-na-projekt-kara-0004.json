@@ -3,7 +3,7 @@
   "title": "Poskytnutí účelové dotace z rozpočtu Libereckého kraje na projekt Karavanové stání Koupaliště, Lomnice nad Popelkou",
   "buyer_ico": "00275905",
   "status": "unclassified",
-  "project_type": "procurement_with_changes",
+  "project_type": "contract_with_changes",
   "canonical": {
     "title": "Dodatek č. 1 ke smlouvě o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje na projekt karavanová stání v Lomnici nad Popelkou",
     "supplier_ico": "70891508",
@@ -82,7 +82,7 @@
       },
       "dominant_type": "addendum"
     },
-    "project_type": "procurement_with_changes",
+    "project_type": "contract_with_changes",
     "dates": {
       "first_observed": "2016-12-22",
       "last_observed": "2025-06-18"

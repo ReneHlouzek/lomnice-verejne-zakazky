@@ -3,7 +3,7 @@
   "title": "Dodatek 2 Lomnice n. Popelkou - navýšení paušálních plateb",
   "buyer_ico": "00275905",
   "status": "unclassified",
-  "project_type": "procurement_with_changes",
+  "project_type": "contract_with_changes",
   "canonical": {
     "title": "Dodatek 2 Lomnice n. Popelkou - navýšení paušálních plateb",
     "supplier_ico": "72050501",
@@ -46,7 +46,7 @@
       },
       "dominant_type": "addendum"
     },
-    "project_type": "procurement_with_changes",
+    "project_type": "contract_with_changes",
     "dates": {
       "first_observed": "2016-11-29",
       "last_observed": "2022-05-24"

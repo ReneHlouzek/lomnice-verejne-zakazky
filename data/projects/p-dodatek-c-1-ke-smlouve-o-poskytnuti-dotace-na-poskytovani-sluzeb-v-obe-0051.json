@@ -3,7 +3,7 @@
   "title": "Dodatek č. 1 ke smlouvě o poskytnutí dotace na poskytování služeb v obecném hospodářském zájmu z rozpočtu Libereckého kraje z finančních prostředků Ministerstva práce a sociálních věcí, č. OLP/588/2016",
   "buyer_ico": "00275905",
   "status": "unclassified",
-  "project_type": "procurement_with_changes",
+  "project_type": "contract_with_changes",
   "canonical": {
     "title": "Dodatek č. 1 ke smlouvě o poskytnutí dotace na poskytování služeb v obecném hospodářském zájmu z rozpočtu Libereckého kraje z finančních prostředků Ministerstva práce a sociálních věcí, č. OLP/588/2016",
     "supplier_ico": "70891508",
@@ -27,7 +27,7 @@
       },
       "dominant_type": "addendum"
     },
-    "project_type": "procurement_with_changes",
+    "project_type": "contract_with_changes",
     "dates": {
       "first_observed": "2016-10-21",
       "last_observed": "2016-10-21"

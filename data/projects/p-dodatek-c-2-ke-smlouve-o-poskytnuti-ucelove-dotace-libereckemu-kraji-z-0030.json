@@ -3,7 +3,7 @@
   "title": "Dodatek č.2 ke Smlouvě o poskytnutí účelové dotace Libereckému kraji z rozpočtu Města Lomnice nad Popelkou na stavební akci „II/286 x II/284 Lomnice nad Popelkou - havárie zdi - nezpůsobilé výdaje“",
   "buyer_ico": "00275905",
   "status": "unclassified",
-  "project_type": "procurement_with_changes",
+  "project_type": "contract_with_changes",
   "canonical": {
     "title": "Dodatek č.2 ke Smlouvě o poskytnutí účelové dotace Libereckému kraji z rozpočtu Města Lomnice nad Popelkou na stavební akci „II/286 x II/284 Lomnice nad Popelkou - havárie zdi - nezpůsobilé výdaje“",
     "supplier_ico": "70891508",
@@ -45,7 +45,7 @@
       },
       "dominant_type": "contract"
     },
-    "project_type": "procurement_with_changes",
+    "project_type": "contract_with_changes",
     "dates": {
       "first_observed": "2016-07-07",
       "last_observed": "2026-07-07"

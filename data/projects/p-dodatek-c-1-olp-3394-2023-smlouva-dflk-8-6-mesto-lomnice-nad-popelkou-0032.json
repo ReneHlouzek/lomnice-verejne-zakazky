@@ -3,7 +3,7 @@
   "title": "Dodatek č. 1 OLP/3394/2023 - Smlouva DFLK 8.6 - Město Lomnice nad Popelkou",
   "buyer_ico": "00275905",
   "status": "unclassified",
-  "project_type": "procurement_with_changes",
+  "project_type": "contract_with_changes",
   "canonical": {
     "title": "Dodatek č. 1 OLP/3394/2023 - Smlouva DFLK 8.6 - Město Lomnice nad Popelkou",
     "supplier_ico": "70891508",
@@ -27,7 +27,7 @@
       },
       "dominant_type": "addendum"
     },
-    "project_type": "procurement_with_changes",
+    "project_type": "contract_with_changes",
     "dates": {
       "first_observed": "2026-02-09",
       "last_observed": "2026-02-09"

@@ -3,7 +3,7 @@
   "title": "Dodatek č. 1 veřejnoprávní smlouvy o poskytnutí neinvestiční dotace z rozpočtu města Lomnice nad Popelkou na akci Lomnice nad Popelkou - KOšov , obnova vodovodu",
   "buyer_ico": "00275905",
   "status": "unclassified",
-  "project_type": "procurement_with_changes",
+  "project_type": "contract_with_changes",
   "canonical": {
     "title": "Dodatek č. 1 veřejnoprávní smlouvy o poskytnutí neinvestiční dotace z rozpočtu města Lomnice nad Popelkou na akci Lomnice nad Popelkou - KOšov , obnova vodovodu",
     "supplier_ico": "49295934",
@@ -25,7 +25,7 @@
       },
       "dominant_type": "addendum"
     },
-    "project_type": "procurement_with_changes",
+    "project_type": "contract_with_changes",
     "dates": {
       "first_observed": "2025-09-22",
       "last_observed": "2025-09-22"
