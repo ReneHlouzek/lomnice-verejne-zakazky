@@ -12,25 +12,27 @@ on:
 permissions:
   contents: write
 
+# Synchronizace zapisuje data zpět do main. Běhy proto musí být sériové,
+# jinak může pozdější build narazit na změny, které mezitím zapsal jiný běh.
+concurrency:
+  group: sync-verejne-zakazky
+  cancel-in-progress: false
+
 jobs:
   fetch-vu:
     runs-on: ubuntu-latest
-    timeout-minutes: 12
+    timeout-minutes: 15
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-
       - name: Install dependencies
         run: python -m pip install --upgrade pip requests beautifulsoup4 pytest
-
       - name: Fetch official XMLdataVZ export
         run: python scripts/scrape_vu.py
-
       - name: Upload VU data
         if: always()
         uses: actions/upload-artifact@v4
@@ -45,21 +47,16 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-
       - name: Install dependencies
         run: python -m pip install --upgrade pip requests beautifulsoup4 pytest
-
       - name: Run regression tests
         run: pytest -q tests
-
       - name: Fetch Contract Register
         run: python scripts/import_registr_smluv.py
-
       - name: Validate Contract Register output
         run: |
           python - <<'PY'
@@ -74,7 +71,6 @@ jobs:
               raise SystemExit("Registr smluv vrátil 0 záznamů; build se zastavuje, aby nepřepsal platná data.")
           print(f"Validní Registr smluv: {len(rows)} záznamů")
           PY
-
       - name: Upload Registr smluv data
         if: always()
         uses: actions/upload-artifact@v4
@@ -93,21 +89,18 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
       - name: Download VU data
         continue-on-error: true
         uses: actions/download-artifact@v4
         with:
           name: source-vu
           path: data/xml/
-
       - name: Download Registr smluv data
         continue-on-error: false
         uses: actions/download-artifact@v4
         with:
           name: source-registr
           path: data/
-
       - name: Validate downloaded source artifact
         run: |
           python - <<'PY'
@@ -120,21 +113,16 @@ jobs:
               raise SystemExit("Stažený artefakt Registru smluv neobsahuje žádné záznamy.")
           print(f"Artefakt obsahuje {len(rows)} záznamů Registru smluv")
           PY
-
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-
       - name: Install dependencies
         run: python -m pip install --upgrade pip requests beautifulsoup4 pytest
-
       - name: Run regression tests
         run: pytest -q tests
-
       - name: Normalize source records
         run: python scripts/normalize_sources.py
-
       - name: Validate normalized records
         run: |
           python - <<'PY'
@@ -147,16 +135,12 @@ jobs:
               raise SystemExit("Normalizace vytvořila 0 záznamů; build se zastavuje.")
           print(f"Normalizováno {n} záznamů Registru smluv")
           PY
-
       - name: Resolve cross-source records
         run: python scripts/resolve_projects.py
-
       - name: Analyze projects
         run: python scripts/analyze_projects.py
-
       - name: Build provisional index
         run: python scripts/build_index.py
-
       - name: Commit collected data
         run: |
           set -e
