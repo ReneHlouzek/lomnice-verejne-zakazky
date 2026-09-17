@@ -17,19 +17,42 @@ def main():
             except Exception: continue
     statuses=CONFIG["statuses"]
     buckets={k:[] for k in statuses}
+    types={"procurement":[],"procurement_with_changes":[],"contract":[],"other":[],"unclassified":[]}
     for p in projects:
         status=p.get("status") or "unclassified"
         if status in buckets: buckets[status].append(p["id"])
+        typ=p.get("project_type") or p.get("canonical",{}).get("project_type") or "other"
+        types.setdefault(typ,[]).append(p["id"])
     index={
-      "schema_version":2,
+      "schema_version":3,
       "parser_state":"resolved" if projects else "awaiting-source-data",
       "generated_at":datetime.now(timezone.utc).isoformat(),
       "source":CONFIG["source"],
       "counts":{k:len(v) for k,v in buckets.items()},
+      "project_type_counts":{k:len(v) for k,v in types.items()},
       "total_projects":len(projects),
       "statuses":{k:{"label":v,"projects":buckets[k]} for k,v in statuses.items()},
-      "projects":[{"id":p["id"],"title":p.get("title"),"status":p.get("status","unclassified"),"source_count":len(p.get("sources",[]))} for p in projects],
-      "notes":["Projects are created by the conservative cross-source resolver.","Records without a reliable status remain unclassified rather than being guessed."]
+      "project_types":{
+        "procurement":{"label":"Veřejná zakázka / výběr / smlouva","projects":types.get("procurement",[])},
+        "procurement_with_changes":{"label":"Zakázka se změnami / dodatky","projects":types.get("procurement_with_changes",[])},
+        "contract":{"label":"Smlouva bez rozpoznané zakázky","projects":types.get("contract",[])},
+        "other":{"label":"Ostatní záznamy","projects":types.get("other",[])},
+        "unclassified":{"label":"Bez klasifikace","projects":types.get("unclassified",[])}
+      },
+      "projects":[{
+          "id":p["id"],"title":p.get("title"),"status":p.get("status","unclassified"),
+          "project_type":p.get("project_type") or p.get("canonical",{}).get("project_type","other"),
+          "record_types":p.get("canonical",{}).get("lifecycle",{}).get("type_counts",{}),
+          "source_count":len(p.get("sources",[])),
+          "first_observed":p.get("canonical",{}).get("dates",{}).get("first_observed"),
+          "last_observed":p.get("canonical",{}).get("dates",{}).get("last_observed"),
+          "supplier_ico":p.get("canonical",{}).get("supplier_ico")
+      } for p in projects],
+      "notes":[
+        "Projects are created by the conservative cross-source resolver.",
+        "Project type is derived from documented source record types; it is separate from contractual status.",
+        "Records without a reliable contractual status remain unclassified rather than being guessed."
+      ]
     }
     INDEX.parent.mkdir(parents=True,exist_ok=True)
     INDEX.write_text(json.dumps(index,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
