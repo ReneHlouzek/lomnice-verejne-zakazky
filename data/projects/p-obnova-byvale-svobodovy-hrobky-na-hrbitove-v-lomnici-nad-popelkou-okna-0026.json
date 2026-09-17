@@ -1,0 +1,125 @@
+{
+  "id": "p-obnova-byvale-svobodovy-hrobky-na-hrbitove-v-lomnici-nad-popelkou-okna-0026",
+  "title": "Obnova bývalé Svobodovy hrobky na hřbitově v Lomnici nad Popelkou - okna a vstupní dveře",
+  "buyer_ico": "00275905",
+  "status": "unclassified",
+  "canonical": {
+    "title": "Obnova bývalé Svobodovy hrobky na hřbitově v Lomnici nad Popelkou - okna a vstupní dveře",
+    "supplier_ico": "70891508",
+    "identifiers": [
+      "07-OLP/1552/2019"
+    ],
+    "lifecycle": {
+      "events": [
+        {
+          "date": "2019-05-16",
+          "type": "source_record",
+          "source": "registr-smluv",
+          "source_id": "8497295",
+          "title": "Obnova bývalé Svobodovy hrobky na hřbitově v Lomnici nad Popelkou - okna a vstupní dveře",
+          "price": 134666.0
+        }
+      ],
+      "event_count": 1
+    },
+    "dates": {
+      "first_observed": "2019-05-16",
+      "last_observed": "2019-05-16"
+    },
+    "financial": {
+      "observed_prices": [],
+      "initial_contract_price": null,
+      "latest_observed_price": null
+    },
+    "source_count": 1
+  },
+  "sources": [
+    {
+      "source_file": "data/sources/registr-smluv/rs-000038.json",
+      "source_id": "8497295",
+      "record": {
+        "source": "registr-smluv",
+        "source_id": "8497295",
+        "version_id": "9164787",
+        "source_url": "https://smlouvy.gov.cz/smlouva/8497295",
+        "title": "Obnova bývalé Svobodovy hrobky na hřbitově v Lomnici nad Popelkou - okna a vstupní dveře",
+        "buyer_ico": "00275905",
+        "supplier_ico": "70891508",
+        "supplier_name": "Liberecký kraj",
+        "contract_number": "07-OLP/1552/2019",
+        "date": "2019-05-16",
+        "signed_date": "2019-05-16",
+        "published": null,
+        "price": 134666.0,
+        "status": null,
+        "raw": {
+          "source": "registr-smluv",
+          "source_id": "8497295",
+          "version_id": "9164787",
+          "source_url": "https://smlouvy.gov.cz/smlouva/8497295",
+          "title": "Obnova bývalé Svobodovy hrobky na hřbitově v Lomnici nad Popelkou - okna a vstupní dveře",
+          "buyer_ico": "00275905",
+          "supplier_ico": "70891508",
+          "contract_number": "07-OLP/1552/2019",
+          "date": "2019-05-16",
+          "signed_date": "2019-05-16",
+          "published": "",
+          "price": "134666",
+          "value": "134666",
+          "publisher": "",
+          "subject": "Obnova bývalé Svobodovy hrobky na hřbitově v Lomnici nad Popelkou - okna a vstupní dveře",
+          "counterparty": "Liberecký kraj",
+          "detail_url": "https://smlouvy.gov.cz/smlouva/8497295"
+        },
+        "_source_file": "data/sources/registr-smluv/rs-000038.json"
+      }
+    }
+  ],
+  "analysis": {
+    "schema_version": 4,
+    "project_id": "p-obnova-byvale-svobodovy-hrobky-na-hrbitove-v-lomnici-nad-popelkou-okna-0026",
+    "signal_count": 1,
+    "signals": [
+      {
+        "code": "single_source",
+        "level": "info",
+        "message": "Projekt je zatím doložen pouze jedním zdrojovým záznamem.",
+        "evidence": []
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2019-05-16",
+        "event": "source_record",
+        "source": "registr-smluv",
+        "source_id": "8497295",
+        "title": "Obnova bývalé Svobodovy hrobky na hřbitově v Lomnici nad Popelkou - okna a vstupní dveře",
+        "price": 134666.0,
+        "deadline": null
+      }
+    ],
+    "financial": {
+      "baseline_price": 134666.0,
+      "current_observed_price": 134666.0,
+      "absolute_change": 0.0,
+      "percent_change": null,
+      "observed_prices": [
+        134666.0
+      ],
+      "addendum_count": 0
+    },
+    "metrics": {
+      "source_count": 1,
+      "supplier_count": 1,
+      "price_values": [
+        134666.0
+      ],
+      "date_values": [
+        "2019-05-16"
+      ],
+      "document_count": 0,
+      "deadline_observations": 0
+    },
+    "methodology": "Signals are descriptive checks only; they do not establish wrongdoing or causality. They identify differences worth checking and retain source provenance."
+  }
+}

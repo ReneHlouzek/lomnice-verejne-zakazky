@@ -1,0 +1,125 @@
+{
+  "id": "p-darovaci-smlouva-zabezpeceni-materskych-skol-0017",
+  "title": "Darovací smlouva - zabezpečení mateřských škol",
+  "buyer_ico": "00275905",
+  "status": "unclassified",
+  "canonical": {
+    "title": "Darovací smlouva - zabezpečení mateřských škol",
+    "supplier_ico": "70801304",
+    "identifiers": [],
+    "lifecycle": {
+      "events": [
+        {
+          "date": "2016-11-22",
+          "type": "contract",
+          "source": "registr-smluv",
+          "source_id": "1078317",
+          "title": "Darovací smlouva - zabezpečení mateřských škol",
+          "price": 229216.0
+        }
+      ],
+      "event_count": 1
+    },
+    "dates": {
+      "first_observed": "2016-11-22",
+      "last_observed": "2016-11-22"
+    },
+    "financial": {
+      "observed_prices": [
+        229216.0
+      ],
+      "initial_contract_price": 229216.0,
+      "latest_observed_price": 229216.0
+    },
+    "source_count": 1
+  },
+  "sources": [
+    {
+      "source_file": "data/sources/registr-smluv/rs-000009.json",
+      "source_id": "1078317",
+      "record": {
+        "source": "registr-smluv",
+        "source_id": "1078317",
+        "version_id": "1147897",
+        "source_url": "https://smlouvy.gov.cz/smlouva/1078317",
+        "title": "Darovací smlouva - zabezpečení mateřských škol",
+        "buyer_ico": "00275905",
+        "supplier_ico": "70801304",
+        "supplier_name": "\"MIKROREGION TÁBOR\"",
+        "contract_number": null,
+        "date": "2016-11-22",
+        "signed_date": "2016-11-22",
+        "published": null,
+        "price": 229216.0,
+        "status": null,
+        "raw": {
+          "source": "registr-smluv",
+          "source_id": "1078317",
+          "version_id": "1147897",
+          "source_url": "https://smlouvy.gov.cz/smlouva/1078317",
+          "title": "Darovací smlouva - zabezpečení mateřských škol",
+          "buyer_ico": "00275905",
+          "supplier_ico": "70801304",
+          "contract_number": "",
+          "date": "2016-11-22",
+          "signed_date": "2016-11-22",
+          "published": "",
+          "price": "229216",
+          "value": "229216",
+          "publisher": "",
+          "subject": "Darovací smlouva - zabezpečení mateřských škol",
+          "counterparty": "\"MIKROREGION TÁBOR\"",
+          "detail_url": "https://smlouvy.gov.cz/smlouva/1078317"
+        },
+        "_source_file": "data/sources/registr-smluv/rs-000009.json"
+      }
+    }
+  ],
+  "analysis": {
+    "schema_version": 4,
+    "project_id": "p-darovaci-smlouva-zabezpeceni-materskych-skol-0017",
+    "signal_count": 1,
+    "signals": [
+      {
+        "code": "single_source",
+        "level": "info",
+        "message": "Projekt je zatím doložen pouze jedním zdrojovým záznamem.",
+        "evidence": []
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2016-11-22",
+        "event": "contract",
+        "source": "registr-smluv",
+        "source_id": "1078317",
+        "title": "Darovací smlouva - zabezpečení mateřských škol",
+        "price": 229216.0,
+        "deadline": null
+      }
+    ],
+    "financial": {
+      "baseline_price": 229216.0,
+      "current_observed_price": 229216.0,
+      "absolute_change": 0.0,
+      "percent_change": null,
+      "observed_prices": [
+        229216.0
+      ],
+      "addendum_count": 0
+    },
+    "metrics": {
+      "source_count": 1,
+      "supplier_count": 1,
+      "price_values": [
+        229216.0
+      ],
+      "date_values": [
+        "2016-11-22"
+      ],
+      "document_count": 0,
+      "deadline_observations": 0
+    },
+    "methodology": "Signals are descriptive checks only; they do not establish wrongdoing or causality. They identify differences worth checking and retain source provenance."
+  }
+}

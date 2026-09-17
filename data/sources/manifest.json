@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-17T05:15:40.607189+00:00",
+  "generated_at": "2026-09-17T06:26:10.048552+00:00",
   "buyer_ico": "00275905",
-  "registr_smluv_records": 20,
+  "registr_smluv_records": 41,
   "sources": [
     "registr-smluv"
   ]
