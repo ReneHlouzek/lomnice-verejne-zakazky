@@ -17,7 +17,7 @@ def main():
             except Exception: continue
     statuses=CONFIG["statuses"]
     buckets={k:[] for k in statuses}
-    types={"procurement":[],"procurement_with_changes":[],"contract":[],"other":[],"unclassified":[]}
+    types={"procurement":[],"procurement_with_changes":[],"contract_with_changes":[],"contract":[],"other":[],"unclassified":[]}
     for p in projects:
         status=p.get("status") or "unclassified"
         if status in buckets: buckets[status].append(p["id"])
@@ -35,6 +35,7 @@ def main():
       "project_types":{
         "procurement":{"label":"Veřejná zakázka / výběr / smlouva","projects":types.get("procurement",[])},
         "procurement_with_changes":{"label":"Zakázka se změnami / dodatky","projects":types.get("procurement_with_changes",[])},
+        "contract_with_changes":{"label":"Smlouva se změnami / dodatky","projects":types.get("contract_with_changes",[])},
         "contract":{"label":"Smlouva bez rozpoznané zakázky","projects":types.get("contract",[])},
         "other":{"label":"Ostatní záznamy","projects":types.get("other",[])},
         "unclassified":{"label":"Bez klasifikace","projects":types.get("unclassified",[])}
@@ -50,6 +51,7 @@ def main():
       } for p in projects],
       "notes":[
         "Projects are created by the conservative cross-source resolver.",
+        "A contractual addendum alone is not treated as evidence that a public tender was conducted.",
         "Project type is derived from documented source record types; it is separate from contractual status.",
         "Records without a reliable contractual status remain unclassified rather than being guessed."
       ]
