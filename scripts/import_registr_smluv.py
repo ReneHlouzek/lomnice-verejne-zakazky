@@ -256,8 +256,20 @@ def main() -> None:
         if key:
             records_by_id[key] = r
 
+    # The official index may omit per-dump hashes. In that case the presence of
+    # the URL in processed_dumps is the durable completion marker. Otherwise,
+    # compare the stored hash with the current one.
+    def needs_processing(d: dict) -> bool:
+        stored = processed.get(d["url"])
+        current = d.get("hash", "")
+        if stored is None:
+            return True
+        if current:
+            return stored != current
+        return False
+
     # Take the oldest historical dumps that are not yet processed, at most one batch.
-    pending = [d for d in historical if processed.get(d["url"]) != d["hash"] or not d["hash"]]
+    pending = [d for d in historical if needs_processing(d)]
     selected_historical = pending[:batch_size]
     selected_map = {d["url"]: d for d in selected_historical}
     for d in recent:
@@ -274,11 +286,11 @@ def main() -> None:
         flush=True,
     )
 
+    recent_urls = {x["url"] for x in recent}
     for d in selected:
         key = d["url"]
-        is_recent = d["url"] in {x["url"] for x in recent}
-        unchanged = processed.get(key) == d["hash"] and d["hash"]
-        if unchanged and not is_recent:
+        is_recent = key in recent_urls
+        if not needs_processing(d) and not is_recent:
             continue
 
         target = RAW_DIR / f"dump_{d['year']:04d}_{d['month']:02d}.xml"
@@ -291,11 +303,10 @@ def main() -> None:
                 if rid:
                     records_by_id[rid] = record
                     found_this_dump += 1
-            processed_now[key] = d["hash"]
-            # Persist after every completed month. A future run can resume from the next month.
-            history_complete_now = not [
-                x for x in historical if processed_now.get(x["url"]) != x["hash"] or not x["hash"]
-            ]
+            # Store a durable completion marker even when the official index has
+            # no hash. If a hash is present, retain it for future change detection.
+            processed_now[key] = d.get("hash", "") or processed_now.get(key, "")
+            history_complete_now = not [x for x in historical if needs_processing(x) and x["url"] not in processed_now]
             save_outputs(
                 records_by_id,
                 processed_now,
@@ -312,9 +323,7 @@ def main() -> None:
         finally:
             target.unlink(missing_ok=True)
 
-    history_complete = not [
-        x for x in historical if processed_now.get(x["url"]) != x["hash"] or not x["hash"]
-    ]
+    history_complete = not [x for x in historical if needs_processing(x) and x["url"] not in processed_now]
     save_outputs(
         records_by_id,
         processed_now,
