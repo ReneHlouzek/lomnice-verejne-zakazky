@@ -1,0 +1,138 @@
+{
+  "id": "p-dodatek-c-1-ke-smlouve-o-poskytnuti-dotace-na-poskytovani-sluzeb-v-obe-0010",
+  "title": "Dodatek č. 1 ke smlouvě o poskytnutí dotace na poskytování služeb v obecném hospodářském zájmu z rozpočtu Libereckého kraje z finančních prostředků Ministerstva práce a sociálních věcí, č. OLP/588/2016",
+  "buyer_ico": "00275905",
+  "status": "unclassified",
+  "canonical": {
+    "title": "Dodatek č. 1 ke smlouvě o poskytnutí dotace na poskytování služeb v obecném hospodářském zájmu z rozpočtu Libereckého kraje z finančních prostředků Ministerstva práce a sociálních věcí, č. OLP/588/2016",
+    "supplier_ico": "70891508",
+    "identifiers": [
+      "05-OLP/588/2016"
+    ],
+    "lifecycle": {
+      "events": [
+        {
+          "date": "2016-10-21",
+          "type": "addendum",
+          "source": "registr-smluv",
+          "source_id": "426037",
+          "title": "Dodatek č. 1 ke smlouvě o poskytnutí dotace na poskytování služeb v obecném hospodářském zájmu z rozpočtu Libereckého kraje z finančních prostředků Ministerstva práce a sociálních věcí, č. OLP/588/2016",
+          "price": 886000.0
+        }
+      ],
+      "event_count": 1
+    },
+    "dates": {
+      "first_observed": "2016-10-21",
+      "last_observed": "2016-10-21"
+    },
+    "financial": {
+      "observed_prices": [
+        886000.0
+      ],
+      "initial_contract_price": 886000.0,
+      "latest_observed_price": 886000.0
+    },
+    "source_count": 1
+  },
+  "sources": [
+    {
+      "source_file": "data/sources/registr-smluv/rs-000008.json",
+      "source_id": "426037",
+      "record": {
+        "source": "registr-smluv",
+        "source_id": "426037",
+        "version_id": "453713",
+        "source_url": "https://smlouvy.gov.cz/smlouva/426037",
+        "title": "Dodatek č. 1 ke smlouvě o poskytnutí dotace na poskytování služeb v obecném hospodářském zájmu z rozpočtu Libereckého kraje z finančních prostředků Ministerstva práce a sociálních věcí, č. OLP/588/2016",
+        "buyer_ico": "00275905",
+        "supplier_ico": "70891508",
+        "supplier_name": "Liberecký kraj",
+        "contract_number": "05-OLP/588/2016",
+        "date": "2016-10-21",
+        "signed_date": "2016-10-21",
+        "published": null,
+        "price": 886000.0,
+        "status": null,
+        "raw": {
+          "source": "registr-smluv",
+          "source_id": "426037",
+          "version_id": "453713",
+          "source_url": "https://smlouvy.gov.cz/smlouva/426037",
+          "title": "Dodatek č. 1 ke smlouvě o poskytnutí dotace na poskytování služeb v obecném hospodářském zájmu z rozpočtu Libereckého kraje z finančních prostředků Ministerstva práce a sociálních věcí, č. OLP/588/2016",
+          "buyer_ico": "00275905",
+          "supplier_ico": "70891508",
+          "contract_number": "05-OLP/588/2016",
+          "date": "2016-10-21",
+          "signed_date": "2016-10-21",
+          "published": "",
+          "price": "886000",
+          "value": "886000",
+          "publisher": "",
+          "subject": "Dodatek č. 1 ke smlouvě o poskytnutí dotace na poskytování služeb v obecném hospodářském zájmu z rozpočtu Libereckého kraje z finančních prostředků Ministerstva práce a sociálních věcí, č. OLP/588/2016",
+          "counterparty": "Liberecký kraj",
+          "detail_url": "https://smlouvy.gov.cz/smlouva/426037"
+        },
+        "_source_file": "data/sources/registr-smluv/rs-000008.json"
+      }
+    }
+  ],
+  "analysis": {
+    "schema_version": 4,
+    "project_id": "p-dodatek-c-1-ke-smlouve-o-poskytnuti-dotace-na-poskytovani-sluzeb-v-obe-0010",
+    "signal_count": 2,
+    "signals": [
+      {
+        "code": "addendum_count",
+        "level": "info",
+        "message": "Ve zdrojových záznamech bylo rozpoznáno 1 dodatků / změnových záznamů.",
+        "evidence": [
+          {
+            "type": "count",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "code": "single_source",
+        "level": "info",
+        "message": "Projekt je zatím doložen pouze jedním zdrojovým záznamem.",
+        "evidence": []
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2016-10-21",
+        "event": "addendum",
+        "source": "registr-smluv",
+        "source_id": "426037",
+        "title": "Dodatek č. 1 ke smlouvě o poskytnutí dotace na poskytování služeb v obecném hospodářském zájmu z rozpočtu Libereckého kraje z finančních prostředků Ministerstva práce a sociálních věcí, č. OLP/588/2016",
+        "price": 886000.0,
+        "deadline": null
+      }
+    ],
+    "financial": {
+      "baseline_price": 886000.0,
+      "current_observed_price": 886000.0,
+      "absolute_change": 0.0,
+      "percent_change": null,
+      "observed_prices": [
+        886000.0
+      ],
+      "addendum_count": 1
+    },
+    "metrics": {
+      "source_count": 1,
+      "supplier_count": 1,
+      "price_values": [
+        886000.0
+      ],
+      "date_values": [
+        "2016-10-21"
+      ],
+      "document_count": 0,
+      "deadline_observations": 0
+    },
+    "methodology": "Signals are descriptive checks only; they do not establish wrongdoing or causality. They identify differences worth checking and retain source provenance."
+  }
+}

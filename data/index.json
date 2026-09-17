@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "parser_state": "awaiting-source-data",
-  "generated_at": "2026-09-16T19:30:00+00:00",
+  "parser_state": "resolved",
+  "generated_at": "2026-09-17T05:15:40.869366+00:00",
   "source": {
     "profile_url": "https://www.vhodne-uverejneni.cz/profil/mesto-lomnice-nad-popelkou",
     "organization_name": "Město Lomnice nad Popelkou",
@@ -13,17 +13,137 @@
     "ukonceno-plneni": 0,
     "zruseno": 0
   },
-  "total_projects": 0,
+  "total_projects": 18,
   "statuses": {
-    "aktualni-uverejneni": {"label": "Aktuální uveřejnění", "projects": []},
-    "plneni-smlouvy": {"label": "Plnění smlouvy", "projects": []},
-    "ukonceno-plneni": {"label": "Ukončeno plnění", "projects": []},
-    "zruseno": {"label": "Zrušeno", "projects": []}
+    "aktualni-uverejneni": {
+      "label": "Aktuální uveřejnění",
+      "projects": []
+    },
+    "plneni-smlouvy": {
+      "label": "Plnění smlouvy",
+      "projects": []
+    },
+    "ukonceno-plneni": {
+      "label": "Ukončeno plnění",
+      "projects": []
+    },
+    "zruseno": {
+      "label": "Zrušeno",
+      "projects": []
+    }
   },
-  "projects": [],
+  "projects": [
+    {
+      "id": "p-darovaci-smlouva-zabezpeceni-materskych-skol-0009",
+      "title": "Darovací smlouva - zabezpečení mateřských škol",
+      "status": "unclassified",
+      "source_count": 1
+    },
+    {
+      "id": "p-dodatek-c-1-ke-smlouve-o-poskytnuti-dotace-na-poskytovani-sluzeb-v-obe-0010",
+      "title": "Dodatek č. 1 ke smlouvě o poskytnutí dotace na poskytování služeb v obecném hospodářském zájmu z rozpočtu Libereckého kraje z finančních prostředků Ministerstva práce a sociálních věcí, č. OLP/588/2016",
+      "status": "unclassified",
+      "source_count": 1
+    },
+    {
+      "id": "p-dodatek-c-2-ke-smlouve-o-poskytnuti-ucelove-dotace-libereckemu-kraji-z-0002",
+      "title": "Dodatek č.2 ke Smlouvě o poskytnutí účelové dotace Libereckému kraji z rozpočtu Města Lomnice nad Popelkou na stavební akci „II/286 x II/284 Lomnice nad Popelkou - havárie zdi - nezpůsobilé výdaje“",
+      "status": "unclassified",
+      "source_count": 3
+    },
+    {
+      "id": "p-financovani-registrovanych-socialnich-sluzeb-dle-zakona-c-108-2006-sb-0018",
+      "title": "Financování registrovaných sociálních služeb dle zákona č. 108/2006 Sb., o sociálních službách, ve znění pozdějších předpisů.",
+      "status": "unclassified",
+      "source_count": 1
+    },
+    {
+      "id": "p-lomnice-nad-popelkou-najem-np-pro-oop-0003",
+      "title": "Lomnice nad Popelkou - nájem NP pro OOP",
+      "status": "unclassified",
+      "source_count": 1
+    },
+    {
+      "id": "p-poskytnuti-ucelove-neinvesticni-dotace-na-vypracovani-planu-ochrany-pr-0007",
+      "title": "poskytnutí účelové neinvestiční dotace na vypracování plánu ochrany pro památkovou zónu města Lomnice nad Popelkou - 2. a 3. etapa",
+      "status": "unclassified",
+      "source_count": 1
+    },
+    {
+      "id": "p-smlouva-o-poskytnuti-dotace-na-poskytovani-sluzeb-v-obecnem-hospodarsk-0014",
+      "title": "Smlouva o poskytnutí dotace na poskytování služeb v obecném hospodářském zájmu z rozpočtu Libereckého kraje č. OLP/4637/2016",
+      "status": "unclassified",
+      "source_count": 1
+    },
+    {
+      "id": "p-smlouva-o-poskytnuti-dotace-na-shp-rohanskeho-zamecku-v-lomnici-nad-po-0004",
+      "title": "Smlouva o poskytnutí dotace na SHP Rohanského zámečku v Lomnici nad Popelkou",
+      "status": "unclassified",
+      "source_count": 1
+    },
+    {
+      "id": "p-smlouva-o-poskytnuti-dotace-z-dotacniho-fondu-lk-podpora-jednotek-poza-0008",
+      "title": "Smlouva o poskytnutí dotace z Dotačního fondu LK - Podpora jednotek požární ochrany obcí LK",
+      "status": "unclassified",
+      "source_count": 1
+    },
+    {
+      "id": "p-smlouva-o-poskytnuti-dotace-z-dotacniho-fondu-lk-podpora-jednotek-poza-0011",
+      "title": "Smlouva o poskytnutí dotace z Dotačního fondu LK - Podpora jednotek požární ochrany obcí LK",
+      "status": "unclassified",
+      "source_count": 1
+    },
+    {
+      "id": "p-smlouva-o-poskytnuti-dotace-z-dotacniho-fondu-lk-v-oblasti-podpory-poz-0006",
+      "title": "Smlouva o poskytnutí dotace z dotačního fondu LK v oblasti podpory Požární ochrany na ochranné prostředky",
+      "status": "unclassified",
+      "source_count": 1
+    },
+    {
+      "id": "p-smlouva-o-poskytnuti-individualni-dotace-mesto-lomnice-nad-popelkou-ul-0001",
+      "title": "Smlouva o poskytnutí individuální dotace Město Lomnice nad Popelkou, ul 5. května",
+      "status": "unclassified",
+      "source_count": 1
+    },
+    {
+      "id": "p-smlouva-o-poskytnuti-rozmnozeniny-dila-lomnice-nad-popelkou-0005",
+      "title": "Smlouva o poskytnutí rozmnoženiny díla - Lomnice nad Popelkou",
+      "status": "unclassified",
+      "source_count": 1
+    },
+    {
+      "id": "p-smlouva-o-poskytnuti-ucelove-dotace-z-dotacniho-fondu-libereckeho-kraj-0016",
+      "title": "Smlouva o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje, Tělovýchova a sport - Sportovní akce",
+      "status": "unclassified",
+      "source_count": 1
+    },
+    {
+      "id": "p-smlouva-o-spolupraci-pri-zajisteni-dopravni-obsluznosti-libereckeho-kr-0017",
+      "title": "Smlouva o spolupráci při zajištění dopravní obslužnosti Libereckého kraje na období od roku 2017 do roku 2019",
+      "status": "unclassified",
+      "source_count": 1
+    },
+    {
+      "id": "p-verejnopravni-smlouva-o-poskytnuti-investicni-dotace-lomnice-nad-popel-0013",
+      "title": "Veřejnoprávní smlouva o poskytnutí investiční dotace - Lomnice nad Popelkou - bytová zóna BM3 a BK2",
+      "status": "unclassified",
+      "source_count": 1
+    },
+    {
+      "id": "p-verejnopravni-smlouva-o-poskytnuti-investicni-dotace-z-rozpoctu-mesta-0012",
+      "title": "Veřejnoprávní smlouva o poskytnutí investiční dotace z rozpočtu města Lomnice n. P.",
+      "status": "unclassified",
+      "source_count": 1
+    },
+    {
+      "id": "p-verejnopravni-smlouva-o-poskytnuti-neinvesticni-dotace-z-rozpoctu-mest-0015",
+      "title": "Veřejnoprávní smlouva o poskytnutí neinvestiční dotace z rozpočtu města Lomnice nad Popelkou",
+      "status": "unclassified",
+      "source_count": 1
+    }
+  ],
   "notes": [
     "Projects are created by the conservative cross-source resolver.",
-    "No project is fabricated when source data is unavailable or empty.",
     "Records without a reliable status remain unclassified rather than being guessed."
   ]
 }

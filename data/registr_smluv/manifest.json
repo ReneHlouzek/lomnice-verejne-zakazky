@@ -1,19 +1,43 @@
 {
-  "retrieved_at": "2026-09-16T15:32:04.784797+00:00",
+  "updated_at": "2026-09-17T05:15:24.523978+00:00",
   "publisher_ico": "00275905",
-  "record_count": 0,
-  "pages": [
-    {
-      "page": 0,
-      "offset": 0,
-      "url": "https://smlouvy.gov.cz/vyhledavani?publication_date%5Bfrom%5D=&publication_date%5Bto%5D=&subject_name=&subject_box=&subject_idnum=00275905&subject_address=&value_foreign%5Bfrom%5D=&value_foreign%5Bto%5D=&foreign_currency=&contract_id=&party_name=&party_box=&party_idnum=&party_address=&value_no_vat%5Bfrom%5D=&value_no_vat%5Bto%5D=&file_text=&version_id=&contr_num=&sign_date%5Bfrom%5D=&sign_date%5Bto%5D=&contract_descr=&sign_person_name=&value_vat%5Bfrom%5D=&value_vat%5Bto%5D=&all_versions=0&do=detailedSearchForm-submit&search=Vyhledat&searchResultList-offset=0&search_type=0",
-      "status": "ok",
-      "sha256": "3b4ffc9b8a1137ec54e5257c74c3bd648395fc1ee65374640b78d07179708508",
-      "bytes": 17031,
-      "records": 0,
-      "total": null,
-      "file": "data/registr_smluv/raw/page_0000.html"
-    }
+  "history_from": "2016-07",
+  "recent_months": 2,
+  "batch_size": 12,
+  "dump_count_considered": 123,
+  "downloaded_this_run": 14,
+  "records_total": 20,
+  "history_complete": false,
+  "selected_this_run": [
+    "2016-07",
+    "2016-08",
+    "2016-09",
+    "2016-10",
+    "2016-11",
+    "2016-12",
+    "2017-01",
+    "2017-02",
+    "2017-03",
+    "2017-04",
+    "2017-05",
+    "2017-06",
+    "2026-08",
+    "2026-09"
   ],
-  "status": "ok"
+  "processed_dumps": {
+    "https://data.smlouvy.gov.cz/dump_2016_07.xml": "",
+    "https://data.smlouvy.gov.cz/dump_2016_08.xml": "",
+    "https://data.smlouvy.gov.cz/dump_2016_09.xml": "",
+    "https://data.smlouvy.gov.cz/dump_2016_10.xml": "",
+    "https://data.smlouvy.gov.cz/dump_2016_11.xml": "",
+    "https://data.smlouvy.gov.cz/dump_2016_12.xml": "",
+    "https://data.smlouvy.gov.cz/dump_2017_01.xml": "",
+    "https://data.smlouvy.gov.cz/dump_2017_02.xml": "",
+    "https://data.smlouvy.gov.cz/dump_2017_03.xml": "",
+    "https://data.smlouvy.gov.cz/dump_2017_04.xml": "",
+    "https://data.smlouvy.gov.cz/dump_2017_05.xml": "",
+    "https://data.smlouvy.gov.cz/dump_2017_06.xml": "",
+    "https://data.smlouvy.gov.cz/dump_2026_08.xml": "",
+    "https://data.smlouvy.gov.cz/dump_2026_09.xml": ""
+  }
 }
