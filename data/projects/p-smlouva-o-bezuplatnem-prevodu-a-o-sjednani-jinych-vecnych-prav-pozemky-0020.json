@@ -1,0 +1,133 @@
+{
+  "id": "p-smlouva-o-bezuplatnem-prevodu-a-o-sjednani-jinych-vecnych-prav-pozemky-0020",
+  "title": "Smlouva o bezúplatném převodu a o sjednání jiných věcných práv, pozemky p.č.2340/15 a p.č.2340/19 vzniklé dle GP č.2112-1453/2021 v k.ú.Lomnice nad Popelkou, včetně jejich součástí a příslušenství",
+  "buyer_ico": "00275905",
+  "status": "unclassified",
+  "project_type": "contract",
+  "canonical": {
+    "title": "Smlouva o bezúplatném převodu a o sjednání jiných věcných práv, pozemky p.č.2340/15 a p.č.2340/19 vzniklé dle GP č.2112-1453/2021 v k.ú.Lomnice nad Popelkou, včetně jejich součástí a příslušenství",
+    "supplier_ico": "70994234",
+    "identifiers": [
+      "S040262/2018-O31"
+    ],
+    "lifecycle": {
+      "events": [
+        {
+          "date": "2023-09-26",
+          "type": "contract",
+          "source": "registr-smluv",
+          "source_id": "24200939",
+          "title": "Smlouva o bezúplatném převodu a o sjednání jiných věcných práv, pozemky p.č.2340/15 a p.č.2340/19 vzniklé dle GP č.2112-1453/2021 v k.ú.Lomnice nad Popelkou, včetně jejich součástí a příslušenství",
+          "price": 38.0
+        }
+      ],
+      "event_count": 1,
+      "type_counts": {
+        "contract": 1
+      },
+      "dominant_type": "contract"
+    },
+    "project_type": "contract",
+    "dates": {
+      "first_observed": "2023-09-26",
+      "last_observed": "2023-09-26"
+    },
+    "financial": {
+      "observed_prices": [
+        38.0
+      ],
+      "initial_contract_price": 38.0,
+      "latest_observed_price": 38.0
+    },
+    "source_count": 1
+  },
+  "sources": [
+    {
+      "source_file": "data/sources/registr-smluv/rs-000068.json",
+      "source_id": "24200939",
+      "record": {
+        "source": "registr-smluv",
+        "source_id": "24200939",
+        "version_id": "25915639",
+        "source_url": "https://smlouvy.gov.cz/smlouva/24200939",
+        "title": "Smlouva o bezúplatném převodu a o sjednání jiných věcných práv, pozemky p.č.2340/15 a p.č.2340/19 vzniklé dle GP č.2112-1453/2021 v k.ú.Lomnice nad Popelkou, včetně jejich součástí a příslušenství",
+        "buyer_ico": "00275905",
+        "supplier_ico": "70994234",
+        "supplier_name": "Správa železnic, státní organizace",
+        "contract_number": "S040262/2018-O31",
+        "date": "2023-09-26",
+        "signed_date": "2023-09-26",
+        "published": null,
+        "price": 38.0,
+        "status": null,
+        "raw": {
+          "source": "registr-smluv",
+          "source_id": "24200939",
+          "version_id": "25915639",
+          "source_url": "https://smlouvy.gov.cz/smlouva/24200939",
+          "title": "Smlouva o bezúplatném převodu a o sjednání jiných věcných práv, pozemky p.č.2340/15 a p.č.2340/19 vzniklé dle GP č.2112-1453/2021 v k.ú.Lomnice nad Popelkou, včetně jejich součástí a příslušenství",
+          "buyer_ico": "00275905",
+          "supplier_ico": "70994234",
+          "contract_number": "S040262/2018-O31",
+          "date": "2023-09-26",
+          "signed_date": "2023-09-26",
+          "published": "",
+          "price": "38",
+          "value": "38",
+          "publisher": "",
+          "subject": "Smlouva o bezúplatném převodu a o sjednání jiných věcných práv, pozemky p.č.2340/15 a p.č.2340/19 vzniklé dle GP č.2112-1453/2021 v k.ú.Lomnice nad Popelkou, včetně jejich součástí a příslušenství",
+          "counterparty": "Správa železnic, státní organizace",
+          "detail_url": "https://smlouvy.gov.cz/smlouva/24200939"
+        },
+        "_source_file": "data/sources/registr-smluv/rs-000068.json"
+      }
+    }
+  ],
+  "analysis": {
+    "schema_version": 4,
+    "project_id": "p-smlouva-o-bezuplatnem-prevodu-a-o-sjednani-jinych-vecnych-prav-pozemky-0020",
+    "signal_count": 1,
+    "signals": [
+      {
+        "code": "single_source",
+        "level": "info",
+        "message": "Projekt je zatím doložen pouze jedním zdrojovým záznamem.",
+        "evidence": []
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2023-09-26",
+        "event": "contract",
+        "source": "registr-smluv",
+        "source_id": "24200939",
+        "title": "Smlouva o bezúplatném převodu a o sjednání jiných věcných práv, pozemky p.č.2340/15 a p.č.2340/19 vzniklé dle GP č.2112-1453/2021 v k.ú.Lomnice nad Popelkou, včetně jejich součástí a příslušenství",
+        "price": 38.0,
+        "deadline": null
+      }
+    ],
+    "financial": {
+      "baseline_price": 38.0,
+      "current_observed_price": 38.0,
+      "absolute_change": 0.0,
+      "percent_change": null,
+      "observed_prices": [
+        38.0
+      ],
+      "addendum_count": 0
+    },
+    "metrics": {
+      "source_count": 1,
+      "supplier_count": 1,
+      "price_values": [
+        38.0
+      ],
+      "date_values": [
+        "2023-09-26"
+      ],
+      "document_count": 0,
+      "deadline_observations": 0
+    },
+    "methodology": "Signals are descriptive checks only; they do not establish wrongdoing or causality. They identify differences worth checking and retain source provenance."
+  }
+}

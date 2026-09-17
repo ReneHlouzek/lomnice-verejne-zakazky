@@ -1,7 +1,7 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "parser_state": "resolved",
-  "generated_at": "2026-09-17T12:17:59.793795+00:00",
+  "generated_at": "2026-09-17T14:50:51.475154+00:00",
   "source": {
     "profile_url": "https://www.vhodne-uverejneni.cz/profil/mesto-lomnice-nad-popelkou",
     "organization_name": "Město Lomnice nad Popelkou",
@@ -13,7 +13,14 @@
     "ukonceno-plneni": 0,
     "zruseno": 0
   },
-  "total_projects": 72,
+  "project_type_counts": {
+    "procurement": 0,
+    "procurement_with_changes": 10,
+    "contract": 52,
+    "other": 17,
+    "unclassified": 0
+  },
+  "total_projects": 79,
   "statuses": {
     "aktualni-uverejneni": {
       "label": "Aktuální uveřejnění",
@@ -32,442 +39,1147 @@
       "projects": []
     }
   },
+  "project_types": {
+    "procurement": {
+      "label": "Veřejná zakázka / výběr / smlouva",
+      "projects": []
+    },
+    "procurement_with_changes": {
+      "label": "Zakázka se změnami / dodatky",
+      "projects": [
+        "p-dodatek-2-lomnice-n-popelkou-navyseni-pausalnich-plateb-0006",
+        "p-dodatek-c-1-k-verejnopravni-smlouve-o-poskynuti-neinvesticni-dotace-0068",
+        "p-dodatek-c-1-k-verejnopravni-smlouve-o-poskytnuti-dotace-z-rozpctu-mest-0033",
+        "p-dodatek-c-1-k-verejnopravni-smlouve-o-poskytnuti-investicni-dotace-z-r-0054",
+        "p-dodatek-c-1-ke-smlouve-o-poskytnuti-dotace-na-poskytovani-sluzeb-v-obe-0051",
+        "p-dodatek-c-1-olp-3394-2023-smlouva-dflk-8-6-mesto-lomnice-nad-popelkou-0032",
+        "p-dodatek-c-1-verejnopravni-smlouvy-o-poskytnuti-investicni-dotace-z-roz-0024",
+        "p-dodatek-c-1-verejnopravni-smlouvy-o-poskytnuti-neinvesticni-dotace-z-r-0017",
+        "p-dodatek-c-2-ke-smlouve-o-poskytnuti-ucelove-dotace-libereckemu-kraji-z-0030",
+        "p-poskytnuti-ucelove-dotace-z-rozpoctu-libereckeho-kraje-na-projekt-kara-0004"
+      ]
+    },
+    "contract": {
+      "label": "Smlouva bez rozpoznané zakázky",
+      "projects": [
+        "p-07-smlouva-o-dotaci-mesto-lomnice-nad-popelkou-obnova-soklu-a-schodist-0031",
+        "p-07-smlouva-o-poskytnuti-dotace-na-oprava-stresniho-plaste-domu-c-p-886-0018",
+        "p-07-smlouva-o-poskytnuti-dotace-z-programu-7-2-0001",
+        "p-07-smlouva-o-poskytnuti-financniho-daru-mestu-lomnice-nad-popelkou-pro-0079",
+        "p-budouci-darovaci-smlouva-budouci-darovani-pozemku-o-celkove-vymere-833-0022",
+        "p-darovaci-smlouva-c-j-olp-3650-2019-darovani-pozemku-v-k-u-zelechy-0078",
+        "p-darovaci-smlouva-darovani-pozemku-vcetne-vyrazeneho-telesa-komunikace-0002",
+        "p-darovaci-smlouva-rds-lomnice-n-popel-0053",
+        "p-darovaci-smlouva-zabezpeceni-materskych-skol-0077",
+        "p-kupni-smlouva-c-j-olp-101-2024-prodej-pozemku-v-k-u-plouznice-pod-tabo-0069",
+        "p-smlouva-lomnice-nad-popelkou-a-nowogrodziec-spolecna-cesta-casem-0057",
+        "p-smlouva-o-bezuplatnem-prevodu-a-o-sjednani-jinych-vecnych-prav-pozemky-0020",
+        "p-smlouva-o-bezuplatnem-prevodu-privatizovaneho-majetku-do-vlastnictvi-o-0076",
+        "p-smlouva-o-bezuplatnem-prevodu-vlastnickeho-prava-se-sjednanim-jinych-v-0011",
+        "p-smlouva-o-dilo-oprava-useku-mistni-komunikace-podebradova-v-lomnici-na-0044",
+        "p-smlouva-o-organizovani-verejne-sluzby-0050",
+        "p-smlouva-o-poskytnuti-dotace-dle-nv-c-2-2023-sb-0065",
+        "p-smlouva-o-poskytnuti-dotace-na-poskytovani-sluzeb-v-obecnem-hospodarsk-0060",
+        "p-smlouva-o-poskytnuti-dotace-na-shp-rohanskeho-zamecku-v-lomnici-nad-po-0014",
+        "p-smlouva-o-poskytnuti-dotace-z-dflk-program-1-1-podpora-jednotek-pozarn-0012",
+        "p-smlouva-o-poskytnuti-dotace-z-dotacniho-fondu-lk-na-ctyrkolky-pro-jsdh-0070",
+        "p-smlouva-o-poskytnuti-dotace-z-dotacniho-fondu-lk-na-osobni-ochranne-pr-0027",
+        "p-smlouva-o-poskytnuti-dotace-z-dotacniho-fondu-lk-na-repasi-hasicskeho-0061",
+        "p-smlouva-o-poskytnuti-dotace-z-dotacniho-fondu-lk-v-oblasti-podpory-poz-0028",
+        "p-smlouva-o-poskytnuti-individualni-dotace-mesto-lomnice-nad-popelkou-ul-0066",
+        "p-smlouva-o-poskytnuti-rozmnozeniny-dila-lomnice-nad-popelkou-0074",
+        "p-smlouva-o-poskytnuti-ucelove-dotace-na-stavebnie-historicky-pruzkum-kr-0047",
+        "p-smlouva-o-poskytnuti-ucelove-dotace-z-dotacniho-fondu-libereckeho-kraj-0008",
+        "p-smlouva-o-poskytnuti-ucelove-dotace-z-dotacniho-fondu-libereckeho-kraj-0010",
+        "p-smlouva-o-poskytnuti-ucelove-dotace-z-dotacniho-fondu-libereckeho-kraj-0038",
+        "p-smlouva-o-poskytnuti-ucelove-dotace-z-dotacniho-fondu-libereckeho-kraj-0040",
+        "p-smlouva-o-poskytnuti-ucelove-dotace-z-dotacniho-fondu-libereckeho-kraj-0041",
+        "p-smlouva-o-poskytnuti-ucelove-dotace-z-dotacniho-fondu-lk-programu-c-1-0043",
+        "p-smlouva-o-poskytnuti-ucelove-dotace-z-rozpoctu-libereckeho-kraje-lomni-0075",
+        "p-smlouva-o-smlouve-budouci-o-zrizeni-sluzebnosti-c-j-olp-2194-2022-reko-0049",
+        "p-smlouva-o-spolupraci-pri-realizaci-stavebni-akce-snizeni-energeticke-n-0039",
+        "p-smlouva-o-spolupraci-pri-zajisteni-dopravni-obsluznosti-libereckeho-kr-0013",
+        "p-smlouva-o-vybudovani-skiagrafickeho-pracoviste-a-zajisteni-jeho-provoz-0042",
+        "p-statni-fond-podpory-investic-smlouva-c-3908110142-o-poskytnuti-dotace-0056",
+        "p-verejnopravni-smlouva-o-poskytnuti-investicni-dotace-lomnice-nad-popel-0052",
+        "p-verejnopravni-smlouva-o-poskytnuti-investicni-dotace-z-rozpoctu-mesta-0007",
+        "p-verejnopravni-smlouva-o-poskytnuti-investicni-dotace-z-rozpoctu-mesta-0016",
+        "p-verejnopravni-smlouva-o-poskytnuti-investicni-dotace-z-rozpoctu-mesta-0023",
+        "p-verejnopravni-smlouva-o-poskytnuti-investicni-dotace-z-rozpoctu-mesta-0025",
+        "p-verejnopravni-smlouva-o-poskytnuti-investicni-dotace-z-rozpoctu-mesta-0034",
+        "p-verejnopravni-smlouva-o-poskytnuti-investicni-dotace-z-rozpoctu-mesta-0046",
+        "p-verejnopravni-smlouva-o-poskytnuti-investicni-dotace-z-rozpoctu-mesta-0064",
+        "p-verejnopravni-smlouva-o-poskytnuti-neinvesticni-dotace-z-rozpoctu-mest-0003",
+        "p-verejnopravni-smlouva-o-poskytnuti-neinvesticni-dotace-z-rozpoctu-mest-0005",
+        "p-verejnopravni-smlouva-o-poskytnuti-neinvesticni-dotace-z-rozpoctu-mest-0035",
+        "p-verejnopravni-smlouva-o-poskytnuti-neinvesticni-dotace-z-rozpoctu-mest-0037",
+        "p-verejnopravnmi-smlouva-o-poskytnuti-investicni-dotace-z-rozpoctu-mesta-0059"
+      ]
+    },
+    "other": {
+      "label": "Ostatní záznamy",
+      "projects": [
+        "p-86-olp-2721-2023-8-2-mesto-lomnice-nad-popelkou-0048",
+        "p-dohoda-o-poskytnuti-dotace-na-projekt-rozvoje-venkova-cr-25-003-52776-0015",
+        "p-dohoda-o-pouzivani-vyplatniho-stroje-k-uhrade-cen-za-postovni-sluzby-0021",
+        "p-dohoda-o-zmene-podminek-poskytnuti-dotace-na-zaklade-smlouvy-c-9270370-0055",
+        "p-financovani-registrovanych-socialnich-sluzeb-dle-zakona-c-108-2006-sb-0073",
+        "p-kamerovy-system-lomnice-nad-popelkou-0063",
+        "p-memorandum-o-vzajemne-spolupraci-v-ramci-akce-rekonstrukce-silnice-ii-0026",
+        "p-o-prevodu-z-majetku-cr-s-pravem-hospodarit-pro-lcr-0067",
+        "p-obnova-byvale-svobodovy-hrobky-na-hrbitove-v-lomnici-nad-popelkou-okna-0036",
+        "p-obnova-rybnika-matous-v-lomnici-nad-popelkou-0058",
+        "p-podskytnuti-dotace-na-poskytovani-sluzeb-v-obecnem-hospodarskem-zajmu-0062",
+        "p-poskytnuti-ucelove-neinvesticni-dotace-na-vypracovani-planu-ochrany-pr-0072",
+        "p-ucelova-dotace-na-projekt-porizeni-domacich-komposteru-0071",
+        "p-ucelova-dotace-z-rozpoctu-libereckeho-kraje-dotacniho-programu-podpora-0029",
+        "p-ucelova-dotace-z-rozpoctu-libereckeho-kraje-na-projekt-rekonstrukce-mu-0045",
+        "p-zmena-vyse-celkove-neinvesticni-alokace-kterou-lze-pouzit-vyhradne-na-0009",
+        "p-zmena-vyse-celkove-neinvesticni-alokace-vyhradne-na-pouziti-na-provoz-0019"
+      ]
+    },
+    "unclassified": {
+      "label": "Bez klasifikace",
+      "projects": []
+    }
+  },
   "projects": [
     {
-      "id": "p-07-smlouva-o-dotaci-mesto-lomnice-nad-popelkou-obnova-soklu-a-schodist-0024",
+      "id": "p-07-smlouva-o-dotaci-mesto-lomnice-nad-popelkou-obnova-soklu-a-schodist-0031",
       "title": "07 Smlouva o dotaci, Město Lomnice nad Popelkou, obnova soklu a schodiště budovy muzea",
       "status": "unclassified",
-      "source_count": 1
+      "project_type": "contract",
+      "record_types": {
+        "contract": 1
+      },
+      "source_count": 1,
+      "first_observed": "2022-06-20",
+      "last_observed": "2022-06-20",
+      "supplier_ico": "70891508"
     },
     {
-      "id": "p-07-smlouva-o-poskytnuti-dotace-na-oprava-stresniho-plaste-domu-c-p-886-0013",
+      "id": "p-07-smlouva-o-poskytnuti-dotace-na-oprava-stresniho-plaste-domu-c-p-886-0018",
       "title": "07 Smlouva o poskytnutí dotace na Oprava střešního pláště domu č.p. 886",
       "status": "unclassified",
-      "source_count": 1
+      "project_type": "contract",
+      "record_types": {
+        "contract": 1
+      },
+      "source_count": 1,
+      "first_observed": "2023-06-07",
+      "last_observed": "2023-06-07",
+      "supplier_ico": "70891508"
     },
     {
-      "id": "p-07-smlouva-o-poskytnuti-financniho-daru-mestu-lomnice-nad-popelkou-pro-0072",
+      "id": "p-07-smlouva-o-poskytnuti-dotace-z-programu-7-2-0001",
+      "title": "07 Smlouva o poskytnutí dotace z programu 7.2",
+      "status": "unclassified",
+      "project_type": "contract",
+      "record_types": {
+        "contract": 6
+      },
+      "source_count": 6,
+      "first_observed": "2018-07-26",
+      "last_observed": "2026-06-26",
+      "supplier_ico": "70891508"
+    },
+    {
+      "id": "p-07-smlouva-o-poskytnuti-financniho-daru-mestu-lomnice-nad-popelkou-pro-0079",
       "title": "07 Smlouva o poskytnutí finančního daru Městu Lomnice nad Popelkou Program regenerace 2021",
       "status": "unclassified",
-      "source_count": 1
+      "project_type": "contract",
+      "record_types": {
+        "contract": 1
+      },
+      "source_count": 1,
+      "first_observed": "2022-03-23",
+      "last_observed": "2022-03-23",
+      "supplier_ico": "70891508"
     },
     {
-      "id": "p-86-olp-2721-2023-8-2-mesto-lomnice-nad-popelkou-0040",
+      "id": "p-86-olp-2721-2023-8-2-mesto-lomnice-nad-popelkou-0048",
       "title": "86_OLP/2721/2023_8.2 Město Lomnice nad Popelkou",
       "status": "unclassified",
-      "source_count": 1
+      "project_type": "other",
+      "record_types": {
+        "source_record": 1
+      },
+      "source_count": 1,
+      "first_observed": "2023-10-31",
+      "last_observed": "2023-10-31",
+      "supplier_ico": "70891508"
     },
     {
-      "id": "p-budouci-darovaci-smlouva-budouci-darovani-pozemku-o-celkove-vymere-833-0017",
+      "id": "p-budouci-darovaci-smlouva-budouci-darovani-pozemku-o-celkove-vymere-833-0022",
       "title": "budoucí darovací smlouva - budoucí darování pozemků o celkové výměře 8333 m2 v k.ú. Lomnice nad Popelkou a k.ú. želechy v četně vyřazovaného tělesa komunikace ev.č. III/28613 na pozemcích",
       "status": "unclassified",
-      "source_count": 1
+      "project_type": "contract",
+      "record_types": {
+        "contract": 1
+      },
+      "source_count": 1,
+      "first_observed": "2021-07-14",
+      "last_observed": "2021-07-14",
+      "supplier_ico": "70891508"
     },
     {
-      "id": "p-darovaci-smlouva-c-j-olp-3650-2019-darovani-pozemku-v-k-u-zelechy-0071",
+      "id": "p-darovaci-smlouva-c-j-olp-3650-2019-darovani-pozemku-v-k-u-zelechy-0078",
       "title": "Darovací smlouva č.j. OLP/3650/2019 - darování pozemku v k.ú. Želechy",
       "status": "unclassified",
-      "source_count": 1
+      "project_type": "contract",
+      "record_types": {
+        "contract": 1
+      },
+      "source_count": 1,
+      "first_observed": "2019-11-27",
+      "last_observed": "2019-11-27",
+      "supplier_ico": "70891508"
     },
     {
-      "id": "p-darovaci-smlouva-darovani-pozemku-vcetne-vyrazeneho-telesa-komunikace-0001",
+      "id": "p-darovaci-smlouva-darovani-pozemku-vcetne-vyrazeneho-telesa-komunikace-0002",
       "title": "darovací smlouva - darování pozemků včetně vyřazeného tělesa komunikace ev.č. III/2847 na pozemcích v k.ú. Lomnice nad Popelkou",
       "status": "unclassified",
-      "source_count": 1
+      "project_type": "contract",
+      "record_types": {
+        "contract": 1
+      },
+      "source_count": 1,
+      "first_observed": "2021-01-19",
+      "last_observed": "2021-01-19",
+      "supplier_ico": "70891508"
     },
     {
-      "id": "p-darovaci-smlouva-rds-lomnice-n-popel-0045",
+      "id": "p-darovaci-smlouva-rds-lomnice-n-popel-0053",
       "title": "Darovací smlouva - RDS Lomnice n. Popel.",
       "status": "unclassified",
-      "source_count": 1
+      "project_type": "contract",
+      "record_types": {
+        "contract": 1
+      },
+      "source_count": 1,
+      "first_observed": "2017-10-12",
+      "last_observed": "2017-10-12",
+      "supplier_ico": "70888744"
     },
     {
-      "id": "p-darovaci-smlouva-zabezpeceni-materskych-skol-0070",
+      "id": "p-darovaci-smlouva-zabezpeceni-materskych-skol-0077",
       "title": "Darovací smlouva - zabezpečení mateřských škol",
       "status": "unclassified",
-      "source_count": 1
+      "project_type": "contract",
+      "record_types": {
+        "contract": 1
+      },
+      "source_count": 1,
+      "first_observed": "2016-11-22",
+      "last_observed": "2016-11-22",
+      "supplier_ico": "70801304"
     },
     {
       "id": "p-dodatek-2-lomnice-n-popelkou-navyseni-pausalnich-plateb-0006",
       "title": "Dodatek 2 Lomnice n. Popelkou - navýšení paušálních plateb",
       "status": "unclassified",
-      "source_count": 3
+      "project_type": "procurement_with_changes",
+      "record_types": {
+        "source_record": 1,
+        "addendum": 2
+      },
+      "source_count": 3,
+      "first_observed": "2016-11-29",
+      "last_observed": "2022-05-24",
+      "supplier_ico": "72050501"
     },
     {
-      "id": "p-dodatek-c-1-k-verejnopravni-smlouve-o-poskynuti-neinvesticni-dotace-0061",
+      "id": "p-dodatek-c-1-k-verejnopravni-smlouve-o-poskynuti-neinvesticni-dotace-0068",
       "title": "Dodatek č. 1 k veřejnoprávní smlouvě o poskynutí neinvestiční dotace",
       "status": "unclassified",
-      "source_count": 1
+      "project_type": "procurement_with_changes",
+      "record_types": {
+        "addendum": 1
+      },
+      "source_count": 1,
+      "first_observed": "2017-12-12",
+      "last_observed": "2017-12-12",
+      "supplier_ico": "49295934"
     },
     {
-      "id": "p-dodatek-c-1-k-verejnopravni-smlouve-o-poskytnuti-investicni-dotace-z-r-0046",
+      "id": "p-dodatek-c-1-k-verejnopravni-smlouve-o-poskytnuti-dotace-z-rozpctu-mest-0033",
+      "title": "Dodatek č. 1 k veřejnoprávní smlouvě o poskytnutí dotace z rozpčtu města Lomnice nad Popelkou",
+      "status": "unclassified",
+      "project_type": "procurement_with_changes",
+      "record_types": {
+        "addendum": 1
+      },
+      "source_count": 1,
+      "first_observed": "2025-12-15",
+      "last_observed": "2025-12-15",
+      "supplier_ico": "49295934"
+    },
+    {
+      "id": "p-dodatek-c-1-k-verejnopravni-smlouve-o-poskytnuti-investicni-dotace-z-r-0054",
       "title": "Dodatek č. 1 k veřejnoprávní smlouvě o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou",
       "status": "unclassified",
-      "source_count": 1
+      "project_type": "procurement_with_changes",
+      "record_types": {
+        "addendum": 1
+      },
+      "source_count": 1,
+      "first_observed": "2024-10-14",
+      "last_observed": "2024-10-14",
+      "supplier_ico": "49295934"
     },
     {
-      "id": "p-dodatek-c-1-ke-smlouve-o-poskytnuti-dotace-na-poskytovani-sluzeb-v-obe-0043",
+      "id": "p-dodatek-c-1-ke-smlouve-o-poskytnuti-dotace-na-poskytovani-sluzeb-v-obe-0051",
       "title": "Dodatek č. 1 ke smlouvě o poskytnutí dotace na poskytování služeb v obecném hospodářském zájmu z rozpočtu Libereckého kraje z finančních prostředků Ministerstva práce a sociálních věcí, č. OLP/588/2016",
       "status": "unclassified",
-      "source_count": 1
+      "project_type": "procurement_with_changes",
+      "record_types": {
+        "addendum": 1
+      },
+      "source_count": 1,
+      "first_observed": "2016-10-21",
+      "last_observed": "2016-10-21",
+      "supplier_ico": "70891508"
     },
     {
-      "id": "p-dodatek-c-1-verejnopravni-smlouvy-o-poskytnuti-investicni-dotace-z-roz-0018",
+      "id": "p-dodatek-c-1-olp-3394-2023-smlouva-dflk-8-6-mesto-lomnice-nad-popelkou-0032",
+      "title": "Dodatek č. 1 OLP/3394/2023 - Smlouva DFLK 8.6 - Město Lomnice nad Popelkou",
+      "status": "unclassified",
+      "project_type": "procurement_with_changes",
+      "record_types": {
+        "addendum": 1
+      },
+      "source_count": 1,
+      "first_observed": "2026-02-09",
+      "last_observed": "2026-02-09",
+      "supplier_ico": "70891508"
+    },
+    {
+      "id": "p-dodatek-c-1-verejnopravni-smlouvy-o-poskytnuti-investicni-dotace-z-roz-0024",
       "title": "Dodatek č. 1 veřejnoprávní smlouvy o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou",
       "status": "unclassified",
-      "source_count": 1
+      "project_type": "procurement_with_changes",
+      "record_types": {
+        "addendum": 1
+      },
+      "source_count": 1,
+      "first_observed": "2023-12-12",
+      "last_observed": "2023-12-12",
+      "supplier_ico": "49295934"
     },
     {
-      "id": "p-dodatek-c-2-ke-smlouve-o-poskytnuti-ucelove-dotace-libereckemu-kraji-z-0023",
+      "id": "p-dodatek-c-1-verejnopravni-smlouvy-o-poskytnuti-neinvesticni-dotace-z-r-0017",
+      "title": "Dodatek č. 1 veřejnoprávní smlouvy o poskytnutí neinvestiční dotace z rozpočtu města Lomnice nad Popelkou na akci Lomnice nad Popelkou - KOšov , obnova vodovodu",
+      "status": "unclassified",
+      "project_type": "procurement_with_changes",
+      "record_types": {
+        "addendum": 1
+      },
+      "source_count": 1,
+      "first_observed": "2025-09-22",
+      "last_observed": "2025-09-22",
+      "supplier_ico": "49295934"
+    },
+    {
+      "id": "p-dodatek-c-2-ke-smlouve-o-poskytnuti-ucelove-dotace-libereckemu-kraji-z-0030",
       "title": "Dodatek č.2 ke Smlouvě o poskytnutí účelové dotace Libereckému kraji z rozpočtu Města Lomnice nad Popelkou na stavební akci „II/286 x II/284 Lomnice nad Popelkou - havárie zdi - nezpůsobilé výdaje“",
       "status": "unclassified",
-      "source_count": 2
+      "project_type": "procurement_with_changes",
+      "record_types": {
+        "contract": 2,
+        "addendum": 1
+      },
+      "source_count": 3,
+      "first_observed": "2016-07-07",
+      "last_observed": "2026-07-07",
+      "supplier_ico": "70891508"
     },
     {
-      "id": "p-dohoda-o-poskytnuti-dotace-z-programu-rozvoje-venkova-cr-20-007-19210-0030",
-      "title": "Dohoda o poskytnutí dotace z Programu rozvoje venkova ČR - 20/007/19210/451/173/001124",
+      "id": "p-dohoda-o-poskytnuti-dotace-na-projekt-rozvoje-venkova-cr-25-003-52776-0015",
+      "title": "Dohoda o poskytnutí dotace na projekt rozvoje venkova ČR - 25/003/52776/433/005885",
       "status": "unclassified",
-      "source_count": 3
+      "project_type": "other",
+      "record_types": {
+        "source_record": 5
+      },
+      "source_count": 5,
+      "first_observed": "2019-02-20",
+      "last_observed": "2026-02-03",
+      "supplier_ico": "48133981"
     },
     {
-      "id": "p-dohoda-o-pouzivani-vyplatniho-stroje-k-uhrade-cen-za-postovni-sluzby-0016",
+      "id": "p-dohoda-o-pouzivani-vyplatniho-stroje-k-uhrade-cen-za-postovni-sluzby-0021",
       "title": "Dohoda o používání výplatního stroje k úhradě cen za poštovní služby",
       "status": "unclassified",
-      "source_count": 1
+      "project_type": "other",
+      "record_types": {
+        "source_record": 1
+      },
+      "source_count": 1,
+      "first_observed": "2015-12-07",
+      "last_observed": "2015-12-07",
+      "supplier_ico": "47114983"
     },
     {
-      "id": "p-dohoda-o-zmene-podminek-poskytnuti-dotace-na-zaklade-smlouvy-c-9270370-0047",
+      "id": "p-dohoda-o-zmene-podminek-poskytnuti-dotace-na-zaklade-smlouvy-c-9270370-0055",
       "title": "Dohoda o změně podmínek poskytnutí dotace na základě Smlouvy č. 9270370988,dle NV č. 146/2003 Sb.",
       "status": "unclassified",
-      "source_count": 1
+      "project_type": "other",
+      "record_types": {
+        "source_record": 1
+      },
+      "source_count": 1,
+      "first_observed": "2018-10-08",
+      "last_observed": "2018-10-08",
+      "supplier_ico": "70856788"
     },
     {
-      "id": "p-financovani-registrovanych-socialnich-sluzeb-dle-zakona-c-108-2006-sb-0066",
+      "id": "p-financovani-registrovanych-socialnich-sluzeb-dle-zakona-c-108-2006-sb-0073",
       "title": "Financování registrovaných sociálních služeb dle zákona č. 108/2006 Sb., o sociálních službách, ve znění pozdějších předpisů.",
       "status": "unclassified",
-      "source_count": 1
+      "project_type": "other",
+      "record_types": {
+        "source_record": 1
+      },
+      "source_count": 1,
+      "first_observed": "2017-02-27",
+      "last_observed": "2017-02-27",
+      "supplier_ico": "70891508"
     },
     {
-      "id": "p-kamerovy-system-lomnice-nad-popelkou-0057",
+      "id": "p-kamerovy-system-lomnice-nad-popelkou-0063",
       "title": "Kamerový systém Lomnice nad Popelkou",
       "status": "unclassified",
-      "source_count": 1
+      "project_type": "other",
+      "record_types": {
+        "source_record": 1
+      },
+      "source_count": 1,
+      "first_observed": "2018-01-19",
+      "last_observed": "2018-01-19",
+      "supplier_ico": "72050501"
     },
     {
-      "id": "p-kupni-smlouva-c-j-olp-101-2024-prodej-pozemku-v-k-u-plouznice-pod-tabo-0062",
+      "id": "p-kupni-smlouva-c-j-olp-101-2024-prodej-pozemku-v-k-u-plouznice-pod-tabo-0069",
       "title": "Kupní smlouva č.j.OLP/101/2024, prodej pozemku v k.ú. Ploužnice pod Táborem",
       "status": "unclassified",
-      "source_count": 1
+      "project_type": "contract",
+      "record_types": {
+        "contract": 1
+      },
+      "source_count": 1,
+      "first_observed": "2024-05-15",
+      "last_observed": "2024-05-15",
+      "supplier_ico": "70891508"
     },
     {
-      "id": "p-o-prevodu-z-majetku-cr-s-pravem-hospodarit-pro-lcr-0060",
+      "id": "p-memorandum-o-vzajemne-spolupraci-v-ramci-akce-rekonstrukce-silnice-ii-0026",
+      "title": "Memorandum o vzájemné spolupráci v rámci akce „Rekonstrukce silnice II/284, Lomnice nad Popelkou“",
+      "status": "unclassified",
+      "project_type": "other",
+      "record_types": {
+        "source_record": 1
+      },
+      "source_count": 1,
+      "first_observed": "2026-02-06",
+      "last_observed": "2026-02-06",
+      "supplier_ico": "49295934"
+    },
+    {
+      "id": "p-o-prevodu-z-majetku-cr-s-pravem-hospodarit-pro-lcr-0067",
       "title": "o převodu z majetku ČR s právem hospodařit pro LČR",
       "status": "unclassified",
-      "source_count": 1
+      "project_type": "other",
+      "record_types": {
+        "source_record": 1
+      },
+      "source_count": 1,
+      "first_observed": "2017-12-18",
+      "last_observed": "2017-12-18",
+      "supplier_ico": "42196451"
     },
     {
-      "id": "p-obnova-byvale-svobodovy-hrobky-na-hrbitove-v-lomnici-nad-popelkou-okna-0027",
+      "id": "p-obnova-byvale-svobodovy-hrobky-na-hrbitove-v-lomnici-nad-popelkou-okna-0036",
       "title": "Obnova bývalé Svobodovy hrobky na hřbitově v Lomnici nad Popelkou - okna a vstupní dveře",
       "status": "unclassified",
-      "source_count": 1
+      "project_type": "other",
+      "record_types": {
+        "source_record": 1
+      },
+      "source_count": 1,
+      "first_observed": "2019-09-11",
+      "last_observed": "2019-09-11",
+      "supplier_ico": "70891508"
     },
     {
-      "id": "p-obnova-rybnika-matous-v-lomnici-nad-popelkou-0051",
+      "id": "p-obnova-rybnika-matous-v-lomnici-nad-popelkou-0058",
       "title": "Obnova rybníka Matouš v Lomnici nad Popelkou",
       "status": "unclassified",
-      "source_count": 1
+      "project_type": "other",
+      "record_types": {
+        "source_record": 1
+      },
+      "source_count": 1,
+      "first_observed": "2024-04-23",
+      "last_observed": "2024-04-23",
+      "supplier_ico": "70891508"
     },
     {
-      "id": "p-podskytnuti-dotace-na-poskytovani-sluzeb-v-obecnem-hospodarskem-zajmu-0056",
+      "id": "p-podskytnuti-dotace-na-poskytovani-sluzeb-v-obecnem-hospodarskem-zajmu-0062",
       "title": "Podskytnutí dotace na poskytování služeb v obecném hospodářském zájmu z rozpočtu LK z finančních prostředků MPSV.",
       "status": "unclassified",
-      "source_count": 1
+      "project_type": "other",
+      "record_types": {
+        "source_record": 1
+      },
+      "source_count": 1,
+      "first_observed": "2019-04-04",
+      "last_observed": "2019-04-04",
+      "supplier_ico": "70891508"
     },
     {
-      "id": "p-poskytnuti-dotace-z-dotacniho-fondu-libereckeho-kraje-program-c-1-1-po-0028",
-      "title": "Poskytnutí dotace z Dotačního fondu Libereckého kraje program č.1.1 Podpora jednotek požární ochrany obcí Libereckého kraje",
-      "status": "unclassified",
-      "source_count": 1
-    },
-    {
-      "id": "p-poskytnuti-ucelove-dotace-z-rozpoctu-libereckeho-kraje-na-projekt-kara-0003",
+      "id": "p-poskytnuti-ucelove-dotace-z-rozpoctu-libereckeho-kraje-na-projekt-kara-0004",
       "title": "Poskytnutí účelové dotace z rozpočtu Libereckého kraje na projekt Karavanové stání Koupaliště, Lomnice nad Popelkou",
       "status": "unclassified",
-      "source_count": 6
+      "project_type": "procurement_with_changes",
+      "record_types": {
+        "addendum": 4,
+        "source_record": 2,
+        "contract": 1
+      },
+      "source_count": 7,
+      "first_observed": "2016-12-22",
+      "last_observed": "2025-06-18",
+      "supplier_ico": "70891508"
     },
     {
-      "id": "p-poskytnuti-ucelove-neinvesticni-dotace-na-vypracovani-planu-ochrany-pr-0065",
+      "id": "p-poskytnuti-ucelove-neinvesticni-dotace-na-vypracovani-planu-ochrany-pr-0072",
       "title": "poskytnutí účelové neinvestiční dotace na vypracování plánu ochrany pro památkovou zónu města Lomnice nad Popelkou - 2. a 3. etapa",
       "status": "unclassified",
-      "source_count": 1
+      "project_type": "other",
+      "record_types": {
+        "source_record": 1
+      },
+      "source_count": 1,
+      "first_observed": "2016-09-21",
+      "last_observed": "2016-09-21",
+      "supplier_ico": "70891508"
     },
     {
-      "id": "p-smlouva-lomnice-nad-popelkou-a-nowogrodziec-spolecna-cesta-casem-0050",
+      "id": "p-smlouva-lomnice-nad-popelkou-a-nowogrodziec-spolecna-cesta-casem-0057",
       "title": "Smlouva : \" Lomnice nad Popelkou a Nowogrodziec-společná cesta časem \"",
       "status": "unclassified",
-      "source_count": 1
+      "project_type": "contract",
+      "record_types": {
+        "contract": 1
+      },
+      "source_count": 1,
+      "first_observed": "2017-08-16",
+      "last_observed": "2017-08-16",
+      "supplier_ico": "00832227"
     },
     {
-      "id": "p-smlouva-o-bezuplatnem-prevodu-a-o-sjednani-jinych-vecnych-prav-pozemky-0015",
+      "id": "p-smlouva-o-bezuplatnem-prevodu-a-o-sjednani-jinych-vecnych-prav-pozemky-0020",
       "title": "Smlouva o bezúplatném převodu a o sjednání jiných věcných práv, pozemky p.č.2340/15 a p.č.2340/19 vzniklé dle GP č.2112-1453/2021 v k.ú.Lomnice nad Popelkou, včetně jejich součástí a příslušenství",
       "status": "unclassified",
-      "source_count": 1
+      "project_type": "contract",
+      "record_types": {
+        "contract": 1
+      },
+      "source_count": 1,
+      "first_observed": "2023-09-26",
+      "last_observed": "2023-09-26",
+      "supplier_ico": "70994234"
     },
     {
-      "id": "p-smlouva-o-bezuplatnem-prevodu-privatizovaneho-majetku-do-vlastnictvi-o-0069",
+      "id": "p-smlouva-o-bezuplatnem-prevodu-privatizovaneho-majetku-do-vlastnictvi-o-0076",
       "title": "Smlouva o bezúplatném převodu privatizovaného majetku do vlastnictví obce - Města Lomnice nad Popelkou - nemovitost v k.ú. Rváčov (účetní hodnota převáděného majetku činí 3000,-Kč) (AVISme 2017000988)",
       "status": "unclassified",
-      "source_count": 1
+      "project_type": "contract",
+      "record_types": {
+        "contract": 1
+      },
+      "source_count": 1,
+      "first_observed": "2017-10-06",
+      "last_observed": "2017-10-06",
+      "supplier_ico": "00006947"
     },
     {
-      "id": "p-smlouva-o-organizovani-verejne-sluzby-0042",
+      "id": "p-smlouva-o-bezuplatnem-prevodu-vlastnickeho-prava-se-sjednanim-jinych-v-0011",
+      "title": "Smlouva o bezúplatném převodu vlastnického práva se sjednáním jiných věcných práv - k. ú. Lomnice nad Popelkou, p. p. č. 2402/4",
+      "status": "unclassified",
+      "project_type": "contract",
+      "record_types": {
+        "contract": 1
+      },
+      "source_count": 1,
+      "first_observed": "2026-02-10",
+      "last_observed": "2026-02-10",
+      "supplier_ico": "70994234"
+    },
+    {
+      "id": "p-smlouva-o-dilo-oprava-useku-mistni-komunikace-podebradova-v-lomnici-na-0044",
+      "title": "Smlouva o dílo - Oprava úseku místní komunikace Poděbradova v Lomnici nad Popelkou",
+      "status": "unclassified",
+      "project_type": "contract",
+      "record_types": {
+        "contract": 1
+      },
+      "source_count": 1,
+      "first_observed": "2026-04-10",
+      "last_observed": "2026-04-10",
+      "supplier_ico": "28746503"
+    },
+    {
+      "id": "p-smlouva-o-organizovani-verejne-sluzby-0050",
       "title": "Smlouva o organizování veřejné služby",
       "status": "unclassified",
-      "source_count": 1
+      "project_type": "contract",
+      "record_types": {
+        "contract": 1
+      },
+      "source_count": 1,
+      "first_observed": "2017-08-10",
+      "last_observed": "2017-08-10",
+      "supplier_ico": "72496991"
     },
     {
-      "id": "p-smlouva-o-poskytnuti-dotace-dle-nv-c-2-2023-sb-0058",
+      "id": "p-smlouva-o-poskytnuti-dotace-dle-nv-c-2-2023-sb-0065",
       "title": "Smlouva o poskytnutí dotace dle NV č. 2/2023 Sb.",
       "status": "unclassified",
-      "source_count": 1
+      "project_type": "contract",
+      "record_types": {
+        "contract": 1
+      },
+      "source_count": 1,
+      "first_observed": "2023-12-12",
+      "last_observed": "2023-12-12",
+      "supplier_ico": "70856788"
     },
     {
-      "id": "p-smlouva-o-poskytnuti-dotace-na-poskytovani-sluzeb-v-obecnem-hospodarsk-0054",
+      "id": "p-smlouva-o-poskytnuti-dotace-na-poskytovani-sluzeb-v-obecnem-hospodarsk-0060",
       "title": "Smlouva o poskytnutí dotace na poskytování služeb v obecném hospodářském zájmu z rozpočtu Libereckého kraje č. OLP/4637/2016",
       "status": "unclassified",
-      "source_count": 1
+      "project_type": "contract",
+      "record_types": {
+        "contract": 1
+      },
+      "source_count": 1,
+      "first_observed": "2016-09-23",
+      "last_observed": "2016-09-23",
+      "supplier_ico": "70891508"
     },
     {
-      "id": "p-smlouva-o-poskytnuti-dotace-na-shp-rohanskeho-zamecku-v-lomnici-nad-po-0012",
+      "id": "p-smlouva-o-poskytnuti-dotace-na-shp-rohanskeho-zamecku-v-lomnici-nad-po-0014",
       "title": "Smlouva o poskytnutí dotace na SHP Rohanského zámečku v Lomnici nad Popelkou",
       "status": "unclassified",
-      "source_count": 1
+      "project_type": "contract",
+      "record_types": {
+        "contract": 1
+      },
+      "source_count": 1,
+      "first_observed": "2017-06-27",
+      "last_observed": "2017-06-27",
+      "supplier_ico": "70891508"
     },
     {
-      "id": "p-smlouva-o-poskytnuti-dotace-z-df-lk-nakup-ochrannych-prostredku-po-202-0049",
-      "title": "Smlouva o poskytnutí dotace z DF LK - Nákup ochranných prostředků PO 2024",
+      "id": "p-smlouva-o-poskytnuti-dotace-z-dflk-program-1-1-podpora-jednotek-pozarn-0012",
+      "title": "Smlouva o poskytnutí dotace z DFLK program 1.1 – Podpora jednotek požární ochrany obcí Libereckého kraje",
       "status": "unclassified",
-      "source_count": 1
+      "project_type": "contract",
+      "record_types": {
+        "contract": 4,
+        "source_record": 1
+      },
+      "source_count": 5,
+      "first_observed": "2016-07-13",
+      "last_observed": "2025-10-17",
+      "supplier_ico": "70891508"
     },
     {
-      "id": "p-smlouva-o-poskytnuti-dotace-z-dotacniho-fondu-lk-na-ctyrkolky-pro-jsdh-0063",
+      "id": "p-smlouva-o-poskytnuti-dotace-z-dotacniho-fondu-lk-na-ctyrkolky-pro-jsdh-0070",
       "title": "Smlouva o poskytnutí dotace z Dotačního fondu LK na čtyřkolky pro JSDHO",
       "status": "unclassified",
-      "source_count": 1
+      "project_type": "contract",
+      "record_types": {
+        "contract": 1
+      },
+      "source_count": 1,
+      "first_observed": "2023-08-30",
+      "last_observed": "2023-08-30",
+      "supplier_ico": "70891508"
     },
     {
-      "id": "p-smlouva-o-poskytnuti-dotace-z-dotacniho-fondu-lk-na-osobni-ochranne-pr-0020",
+      "id": "p-smlouva-o-poskytnuti-dotace-z-dotacniho-fondu-lk-na-osobni-ochranne-pr-0027",
       "title": "Smlouva o poskytnutí dotace z Dotačního fondu LK na osobní ochranné prostředky PO",
       "status": "unclassified",
-      "source_count": 3
+      "project_type": "contract",
+      "record_types": {
+        "contract": 3
+      },
+      "source_count": 3,
+      "first_observed": "2019-06-25",
+      "last_observed": "2023-08-30",
+      "supplier_ico": "70891508"
     },
     {
-      "id": "p-smlouva-o-poskytnuti-dotace-z-dotacniho-fondu-lk-na-repasi-hasicskeho-0055",
+      "id": "p-smlouva-o-poskytnuti-dotace-z-dotacniho-fondu-lk-na-repasi-hasicskeho-0061",
       "title": "Smlouva o poskytnutí dotace z Dotačního fondu LK na repasi hasičského vozíku",
       "status": "unclassified",
-      "source_count": 1
+      "project_type": "contract",
+      "record_types": {
+        "contract": 1
+      },
+      "source_count": 1,
+      "first_observed": "2022-08-12",
+      "last_observed": "2022-08-12",
+      "supplier_ico": "70891508"
     },
     {
-      "id": "p-smlouva-o-poskytnuti-dotace-z-dotacniho-fondu-lk-podpora-jednotek-poza-0053",
-      "title": "Smlouva o poskytnutí dotace z Dotačního fondu LK - Podpora jednotek požární ochrany obcí LK",
-      "status": "unclassified",
-      "source_count": 1
-    },
-    {
-      "id": "p-smlouva-o-poskytnuti-dotace-z-dotacniho-fondu-lk-podpora-jednotek-poza-0068",
-      "title": "Smlouva o poskytnutí dotace z Dotačního fondu LK - Podpora jednotek požární ochrany obcí LK",
-      "status": "unclassified",
-      "source_count": 1
-    },
-    {
-      "id": "p-smlouva-o-poskytnuti-dotace-z-dotacniho-fondu-lk-v-oblasti-podpory-poz-0021",
+      "id": "p-smlouva-o-poskytnuti-dotace-z-dotacniho-fondu-lk-v-oblasti-podpory-poz-0028",
       "title": "Smlouva o poskytnutí dotace z dotačního fondu LK v oblasti podpory Požární ochrany na ochranné prostředky",
       "status": "unclassified",
-      "source_count": 1
+      "project_type": "contract",
+      "record_types": {
+        "contract": 1
+      },
+      "source_count": 1,
+      "first_observed": "2017-06-20",
+      "last_observed": "2017-06-20",
+      "supplier_ico": "70891508"
     },
     {
-      "id": "p-smlouva-o-poskytnuti-individualni-dotace-mesto-lomnice-nad-popelkou-ul-0059",
+      "id": "p-smlouva-o-poskytnuti-individualni-dotace-mesto-lomnice-nad-popelkou-ul-0066",
       "title": "Smlouva o poskytnutí individuální dotace Město Lomnice nad Popelkou, ul 5. května",
       "status": "unclassified",
-      "source_count": 1
+      "project_type": "contract",
+      "record_types": {
+        "contract": 1
+      },
+      "source_count": 1,
+      "first_observed": "2026-08-31",
+      "last_observed": "2026-08-31",
+      "supplier_ico": "70891508"
     },
     {
-      "id": "p-smlouva-o-poskytnuti-rozmnozeniny-dila-lomnice-nad-popelkou-0052",
+      "id": "p-smlouva-o-poskytnuti-rozmnozeniny-dila-lomnice-nad-popelkou-0074",
       "title": "Smlouva o poskytnutí rozmnoženiny díla - Lomnice nad Popelkou",
       "status": "unclassified",
-      "source_count": 1
+      "project_type": "contract",
+      "record_types": {
+        "contract": 1
+      },
+      "source_count": 1,
+      "first_observed": "2026-07-27",
+      "last_observed": "2026-07-27",
+      "supplier_ico": "00023221"
     },
     {
-      "id": "p-smlouva-o-poskytnuti-ucelove-dotace-na-stavebnie-historicky-pruzkum-kr-0039",
+      "id": "p-smlouva-o-poskytnuti-ucelove-dotace-na-stavebnie-historicky-pruzkum-kr-0047",
       "title": "Smlouva o poskytnutí účelové dotace na stavebníě historický průzkum Křížovy vily v Lomnici nad Popelkou",
       "status": "unclassified",
-      "source_count": 1
-    },
-    {
-      "id": "p-smlouva-o-poskytnuti-ucelove-dotace-program-1-1-0005",
-      "title": "Smlouva o poskytnutí účelové dotace - program 1.1.",
-      "status": "unclassified",
-      "source_count": 1
+      "project_type": "contract",
+      "record_types": {
+        "contract": 1
+      },
+      "source_count": 1,
+      "first_observed": "2018-05-17",
+      "last_observed": "2018-05-17",
+      "supplier_ico": "70891508"
     },
     {
       "id": "p-smlouva-o-poskytnuti-ucelove-dotace-z-dotacniho-fondu-libereckeho-kraj-0008",
       "title": "Smlouva o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje, programu 8.5 Podpora předcházení vzniku odpadů, jejich opětovného použití a podpora sběru a využití bioodpadu",
       "status": "unclassified",
-      "source_count": 1
+      "project_type": "contract",
+      "record_types": {
+        "contract": 1
+      },
+      "source_count": 1,
+      "first_observed": "2018-10-03",
+      "last_observed": "2018-10-03",
+      "supplier_ico": "70891508"
     },
     {
       "id": "p-smlouva-o-poskytnuti-ucelove-dotace-z-dotacniho-fondu-libereckeho-kraj-0010",
       "title": "Smlouva o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje na nákup věcných prostředků k provádění speciálních činností",
       "status": "unclassified",
-      "source_count": 1
+      "project_type": "contract",
+      "record_types": {
+        "contract": 1
+      },
+      "source_count": 1,
+      "first_observed": "2021-07-19",
+      "last_observed": "2021-07-19",
+      "supplier_ico": "70891508"
     },
     {
-      "id": "p-smlouva-o-poskytnuti-ucelove-dotace-z-dotacniho-fondu-libereckeho-kraj-0031",
+      "id": "p-smlouva-o-poskytnuti-ucelove-dotace-z-dotacniho-fondu-libereckeho-kraj-0038",
       "title": "Smlouva o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje, Tělovýchova a sport - Sportovní akce",
       "status": "unclassified",
-      "source_count": 1
+      "project_type": "contract",
+      "record_types": {
+        "contract": 1
+      },
+      "source_count": 1,
+      "first_observed": "2016-07-27",
+      "last_observed": "2016-07-27",
+      "supplier_ico": "70891508"
     },
     {
-      "id": "p-smlouva-o-poskytnuti-ucelove-dotace-z-dotacniho-fondu-libereckeho-kraj-0033",
+      "id": "p-smlouva-o-poskytnuti-ucelove-dotace-z-dotacniho-fondu-libereckeho-kraj-0040",
       "title": "Smlouva o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje - oblast podpory DOPRAVA program 6.1 - Podpora výstavby komunikací pro cyklisty",
       "status": "unclassified",
-      "source_count": 1
+      "project_type": "contract",
+      "record_types": {
+        "contract": 1
+      },
+      "source_count": 1,
+      "first_observed": "2024-07-02",
+      "last_observed": "2024-07-02",
+      "supplier_ico": "70891508"
     },
     {
-      "id": "p-smlouva-o-poskytnuti-ucelove-dotace-z-dotacniho-fondu-libereckeho-kraj-0034",
+      "id": "p-smlouva-o-poskytnuti-ucelove-dotace-z-dotacniho-fondu-libereckeho-kraj-0041",
       "title": "Smlouva o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje na nákup ochranných prostředků požární ochrany",
       "status": "unclassified",
-      "source_count": 1
+      "project_type": "contract",
+      "record_types": {
+        "contract": 1
+      },
+      "source_count": 1,
+      "first_observed": "2021-07-19",
+      "last_observed": "2021-07-19",
+      "supplier_ico": "70891508"
     },
     {
-      "id": "p-smlouva-o-poskytnuti-ucelove-dotace-z-dotacniho-fondu-lk-programu-c-1-0036",
+      "id": "p-smlouva-o-poskytnuti-ucelove-dotace-z-dotacniho-fondu-lk-programu-c-1-0043",
       "title": "Smlouva o poskytnutí účelové dotace z Dotačního fondu LK, programu č. 1.1, na nákup ochranných prostředků",
       "status": "unclassified",
-      "source_count": 1
+      "project_type": "contract",
+      "record_types": {
+        "contract": 1
+      },
+      "source_count": 1,
+      "first_observed": "2020-07-31",
+      "last_observed": "2020-07-31",
+      "supplier_ico": "70891508"
     },
     {
-      "id": "p-smlouva-o-poskytnuti-ucelove-dotace-z-rozpoctu-libereckeho-kraje-lomni-0067",
+      "id": "p-smlouva-o-poskytnuti-ucelove-dotace-z-rozpoctu-libereckeho-kraje-lomni-0075",
       "title": "Smlouva o poskytnutí účelové dotace z rozpočtu Libereckého kraje - Lomnice nad Popelkou - Rekonstrukce požární zbrojnice",
       "status": "unclassified",
-      "source_count": 1
+      "project_type": "contract",
+      "record_types": {
+        "contract": 1
+      },
+      "source_count": 1,
+      "first_observed": "2020-08-05",
+      "last_observed": "2020-08-05",
+      "supplier_ico": "70891508"
     },
     {
-      "id": "p-smlouva-o-smlouve-budouci-o-zrizeni-sluzebnosti-c-j-olp-2194-2022-reko-0041",
+      "id": "p-smlouva-o-smlouve-budouci-o-zrizeni-sluzebnosti-c-j-olp-2194-2022-reko-0049",
       "title": "Smlouva o smlouvě budoucí o zřízení služebnosti č.j. OLP/2194/2022 \"Rekonstrukce veřejného osvětlení - ulice Jičínská, Nádražní a Na Větrově, k.ú. Lomnice nad Popelkou\"",
       "status": "unclassified",
-      "source_count": 2
+      "project_type": "contract",
+      "record_types": {
+        "contract": 2
+      },
+      "source_count": 2,
+      "first_observed": "2022-06-21",
+      "last_observed": "2023-11-10",
+      "supplier_ico": "70891508"
     },
     {
-      "id": "p-smlouva-o-spolupraci-pri-realizaci-stavebni-akce-snizeni-energeticke-n-0032",
+      "id": "p-smlouva-o-spolupraci-pri-realizaci-stavebni-akce-snizeni-energeticke-n-0039",
       "title": "Smlouva o spolupráci při realizaci stavební akce \"Snížení energetické náročnosti budovy v ulici Pivovarská 80 - Střední škola, Lomnice nad Popelkou, Antala Staška 213, p. o.\"",
       "status": "unclassified",
-      "source_count": 1
+      "project_type": "contract",
+      "record_types": {
+        "contract": 1
+      },
+      "source_count": 1,
+      "first_observed": "2020-08-05",
+      "last_observed": "2020-08-05",
+      "supplier_ico": "70891508"
     },
     {
-      "id": "p-smlouva-o-spolupraci-pri-zajisteni-dopravni-obsluznosti-libereckeho-kr-0011",
+      "id": "p-smlouva-o-spolupraci-pri-zajisteni-dopravni-obsluznosti-libereckeho-kr-0013",
       "title": "Smlouva o spolupráci při zajištění dopravní obslužnosti Libereckého kraje na období od roku 2024 do roku 2028",
       "status": "unclassified",
-      "source_count": 3
+      "project_type": "contract",
+      "record_types": {
+        "contract": 3
+      },
+      "source_count": 3,
+      "first_observed": "2016-11-28",
+      "last_observed": "2023-11-27",
+      "supplier_ico": "70891508"
     },
     {
-      "id": "p-smlouva-o-vybudovani-skiagrafickeho-pracoviste-a-zajisteni-jeho-provoz-0035",
+      "id": "p-smlouva-o-vybudovani-skiagrafickeho-pracoviste-a-zajisteni-jeho-provoz-0042",
       "title": "Smlouva o vybudování skiagrafického pracoviště a zajištění jeho provozu + příloha č.1 a příloha č.2",
       "status": "unclassified",
-      "source_count": 1
+      "project_type": "contract",
+      "record_types": {
+        "contract": 1
+      },
+      "source_count": 1,
+      "first_observed": "2024-01-22",
+      "last_observed": "2024-01-22",
+      "supplier_ico": "00854875"
     },
     {
-      "id": "p-statni-fond-podpory-investic-smlouva-c-3908110142-o-poskytnuti-dotace-0048",
+      "id": "p-statni-fond-podpory-investic-smlouva-c-3908110142-o-poskytnuti-dotace-0056",
       "title": "Státní fond podpory investic - Smlouva č. 3908110142 o poskytnutí dotace na úhradu nákladů na regeneraci veřejného prostranství na sídlišti dle NV č.390/2017 Sb.",
       "status": "unclassified",
-      "source_count": 1
+      "project_type": "contract",
+      "record_types": {
+        "contract": 1
+      },
+      "source_count": 1,
+      "first_observed": "2020-10-29",
+      "last_observed": "2020-10-29",
+      "supplier_ico": "70856788"
     },
     {
-      "id": "p-ucelova-dotace-na-projekt-porizeni-domacich-komposteru-0064",
+      "id": "p-ucelova-dotace-na-projekt-porizeni-domacich-komposteru-0071",
       "title": "Účelová dotace na projekt \"Pořízení domácích kompostérů\"",
       "status": "unclassified",
-      "source_count": 1
+      "project_type": "other",
+      "record_types": {
+        "source_record": 1
+      },
+      "source_count": 1,
+      "first_observed": "2024-08-27",
+      "last_observed": "2024-08-27",
+      "supplier_ico": "70891508"
     },
     {
-      "id": "p-ucelova-dotace-z-rozpoctu-libereckeho-kraje-dotacniho-programu-podpora-0022",
+      "id": "p-ucelova-dotace-z-rozpoctu-libereckeho-kraje-dotacniho-programu-podpora-0029",
       "title": "účelová dotace z rozpočtu Libereckého kraje, dotačního programu Podpora sportovní infrastruktury v Libereckém kraji na projekt \"Osvětlení sportovní haly u ZŠ v Lomnici nad Popelkou\"",
       "status": "unclassified",
-      "source_count": 1
+      "project_type": "other",
+      "record_types": {
+        "source_record": 1
+      },
+      "source_count": 1,
+      "first_observed": "2023-11-28",
+      "last_observed": "2023-11-28",
+      "supplier_ico": "70891508"
     },
     {
-      "id": "p-ucelova-dotace-z-rozpoctu-libereckeho-kraje-na-projekt-rekonstrukce-mu-0037",
+      "id": "p-ucelova-dotace-z-rozpoctu-libereckeho-kraje-na-projekt-rekonstrukce-mu-0045",
       "title": "účelová dotace z rozpočtu Libereckého kraje na projekt \"Rekonstrukce multifunkčního hřiště při ZŠ T.G.Masaryka v Lomnici nad Popelkou\"",
       "status": "unclassified",
-      "source_count": 1
+      "project_type": "other",
+      "record_types": {
+        "source_record": 1
+      },
+      "source_count": 1,
+      "first_observed": "2020-01-14",
+      "last_observed": "2020-01-14",
+      "supplier_ico": "70891508"
     },
     {
-      "id": "p-verejnopravni-smlouva-o-poskytnuti-investicni-dotace-lomnice-nad-popel-0044",
+      "id": "p-verejnopravni-smlouva-o-poskytnuti-investicni-dotace-lomnice-nad-popel-0052",
       "title": "Veřejnoprávní smlouva o poskytnutí investiční dotace - Lomnice nad Popelkou - bytová zóna BM3 a BK2",
       "status": "unclassified",
-      "source_count": 1
+      "project_type": "contract",
+      "record_types": {
+        "contract": 1
+      },
+      "source_count": 1,
+      "first_observed": "2016-10-19",
+      "last_observed": "2016-10-19",
+      "supplier_ico": "49295934"
     },
     {
       "id": "p-verejnopravni-smlouva-o-poskytnuti-investicni-dotace-z-rozpoctu-mesta-0007",
       "title": "Veřejnoprávní smlouva o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou - Lomnice nad popekou - obnva vodovdou a kanalizace Jilemnická ulice",
       "status": "unclassified",
-      "source_count": 2
+      "project_type": "contract",
+      "record_types": {
+        "contract": 2
+      },
+      "source_count": 2,
+      "first_observed": "2022-09-22",
+      "last_observed": "2023-11-06",
+      "supplier_ico": "49295934"
     },
     {
-      "id": "p-verejnopravni-smlouva-o-poskytnuti-investicni-dotace-z-rozpoctu-mesta-0019",
-      "title": "Veřejnoprávní smlouva o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou na akci Lomnice n. P. - Obnova VH sítí v ulici Sportovců",
+      "id": "p-verejnopravni-smlouva-o-poskytnuti-investicni-dotace-z-rozpoctu-mesta-0016",
+      "title": "Veřejnoprávní smlouva o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou - obnova vodovodu v Želechách",
       "status": "unclassified",
-      "source_count": 1
+      "project_type": "contract",
+      "record_types": {
+        "contract": 1
+      },
+      "source_count": 1,
+      "first_observed": "2026-06-25",
+      "last_observed": "2026-06-25",
+      "supplier_ico": "49295934"
+    },
+    {
+      "id": "p-verejnopravni-smlouva-o-poskytnuti-investicni-dotace-z-rozpoctu-mesta-0023",
+      "title": "Veřejnoprávní smlouva o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou",
+      "status": "unclassified",
+      "project_type": "contract",
+      "record_types": {
+        "contract": 1
+      },
+      "source_count": 1,
+      "first_observed": "2025-12-15",
+      "last_observed": "2025-12-15",
+      "supplier_ico": "49295934"
     },
     {
       "id": "p-verejnopravni-smlouva-o-poskytnuti-investicni-dotace-z-rozpoctu-mesta-0025",
+      "title": "Veřejnoprávní smlouva o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou na akci Lomnice n. P. - Obnova VH sítí v ulici Sportovců",
+      "status": "unclassified",
+      "project_type": "contract",
+      "record_types": {
+        "contract": 1
+      },
+      "source_count": 1,
+      "first_observed": "2020-05-21",
+      "last_observed": "2020-05-21",
+      "supplier_ico": "49295934"
+    },
+    {
+      "id": "p-verejnopravni-smlouva-o-poskytnuti-investicni-dotace-z-rozpoctu-mesta-0034",
       "title": "Veřejnoprávní smlouva o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou",
       "status": "unclassified",
-      "source_count": 1
+      "project_type": "contract",
+      "record_types": {
+        "contract": 1
+      },
+      "source_count": 1,
+      "first_observed": "2020-11-30",
+      "last_observed": "2020-11-30",
+      "supplier_ico": "49295934"
     },
     {
-      "id": "p-verejnopravni-smlouva-o-poskytnuti-investicni-dotace-z-rozpoctu-mesta-0038",
+      "id": "p-verejnopravni-smlouva-o-poskytnuti-investicni-dotace-z-rozpoctu-mesta-0046",
       "title": "Veřejnoprávní smlouva o poskytnutí investiční dotace z rozpočtu města Lomnice n. P.",
       "status": "unclassified",
-      "source_count": 1
+      "project_type": "contract",
+      "record_types": {
+        "contract": 1
+      },
+      "source_count": 1,
+      "first_observed": "2016-12-05",
+      "last_observed": "2016-12-05",
+      "supplier_ico": "49295934"
     },
     {
-      "id": "p-verejnopravni-smlouva-o-poskytnuti-neinvesticni-dotace-z-rozpoctu-mest-0002",
+      "id": "p-verejnopravni-smlouva-o-poskytnuti-investicni-dotace-z-rozpoctu-mesta-0064",
+      "title": "Veřejnoprávní smlouva o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou - rekonstrukce vodohospodářských sítí a následná obnova ulice 5. května",
+      "status": "unclassified",
+      "project_type": "contract",
+      "record_types": {
+        "contract": 1
+      },
+      "source_count": 1,
+      "first_observed": "2026-06-25",
+      "last_observed": "2026-06-25",
+      "supplier_ico": "49295934"
+    },
+    {
+      "id": "p-verejnopravni-smlouva-o-poskytnuti-neinvesticni-dotace-z-rozpoctu-mest-0003",
       "title": "Veřejnoprávní smlouva o poskytnutí neinvestiční dotace z rozpočtu města Lomnice nad Popelkou - Lomnice nad Popelkou - Košov - obnova vodovodu",
       "status": "unclassified",
-      "source_count": 1
+      "project_type": "contract",
+      "record_types": {
+        "contract": 1
+      },
+      "source_count": 1,
+      "first_observed": "2024-12-11",
+      "last_observed": "2024-12-11",
+      "supplier_ico": "49295934"
     },
     {
-      "id": "p-verejnopravni-smlouva-o-poskytnuti-neinvesticni-dotace-z-rozpoctu-mest-0004",
+      "id": "p-verejnopravni-smlouva-o-poskytnuti-neinvesticni-dotace-z-rozpoctu-mest-0005",
       "title": "Veřejnoprávní smlouva o poskytnutí neinvestiční dotace z rozpočtu města Lomnice nad Popelkou na akci Lomnice n. P. - oprava vodovodu Hrádka",
       "status": "unclassified",
-      "source_count": 1
+      "project_type": "contract",
+      "record_types": {
+        "contract": 1
+      },
+      "source_count": 1,
+      "first_observed": "2020-05-21",
+      "last_observed": "2020-05-21",
+      "supplier_ico": "49295934"
     },
     {
-      "id": "p-verejnopravni-smlouva-o-poskytnuti-neinvesticni-dotace-z-rozpoctu-mest-0026",
+      "id": "p-verejnopravni-smlouva-o-poskytnuti-neinvesticni-dotace-z-rozpoctu-mest-0035",
       "title": "Veřejnoprávní smlouva o poskytnutí neinvestiční dotace z rozpočtu města Lomnice nad Popelkou",
       "status": "unclassified",
-      "source_count": 1
+      "project_type": "contract",
+      "record_types": {
+        "contract": 1
+      },
+      "source_count": 1,
+      "first_observed": "2017-03-23",
+      "last_observed": "2017-03-23",
+      "supplier_ico": "49295934"
     },
     {
-      "id": "p-verejnopravni-smlouva-o-poskytnuti-neinvesticni-dotace-z-rozpoctu-mest-0029",
+      "id": "p-verejnopravni-smlouva-o-poskytnuti-neinvesticni-dotace-z-rozpoctu-mest-0037",
       "title": "Veřejnoprávní smlouva o poskytnutí neinvestiční dotace z rozpočtu města Lomnice nad Popelkou na realizaci oprav Lomnice nad Popelkou - oprava VH sítí v ul. Za školou a Lomnice nad Popelkou - rekonstrukce VH sítí v ul. Karla Čapka",
       "status": "unclassified",
-      "source_count": 1
+      "project_type": "contract",
+      "record_types": {
+        "contract": 1
+      },
+      "source_count": 1,
+      "first_observed": "2018-05-14",
+      "last_observed": "2018-05-14",
+      "supplier_ico": "49295934"
+    },
+    {
+      "id": "p-verejnopravnmi-smlouva-o-poskytnuti-investicni-dotace-z-rozpoctu-mesta-0059",
+      "title": "Veřejnoprávnmí smlouva o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou - Prodloužení sítí technické infrastruktury pro budoucí rozvojovou lokalitu BM8",
+      "status": "unclassified",
+      "project_type": "contract",
+      "record_types": {
+        "contract": 1
+      },
+      "source_count": 1,
+      "first_observed": "2025-05-05",
+      "last_observed": "2025-05-05",
+      "supplier_ico": "49295934"
     },
     {
       "id": "p-zmena-vyse-celkove-neinvesticni-alokace-kterou-lze-pouzit-vyhradne-na-0009",
       "title": "Změna výše celkové neinvestiční alokace, kterou lze použít výhradně na provoz základních činností organizace, tj. na úhradu nákladů souvisejících s poskytováním základních činností veřejné služby.",
       "status": "unclassified",
-      "source_count": 2
+      "project_type": "other",
+      "record_types": {
+        "source_record": 2
+      },
+      "source_count": 2,
+      "first_observed": "2018-03-30",
+      "last_observed": "2018-10-05",
+      "supplier_ico": "70891508"
     },
     {
-      "id": "p-zmena-vyse-celkove-neinvesticni-alokace-vyhradne-na-pouziti-na-provoz-0014",
+      "id": "p-zmena-vyse-celkove-neinvesticni-alokace-vyhradne-na-pouziti-na-provoz-0019",
       "title": "Změna výše celkové neinvestiční alokace výhradně na použití na provoz základních činností organizace, tj. na úhradu nákladů souvisejících s poskytováním základních činností veřejné služby.",
       "status": "unclassified",
-      "source_count": 1
+      "project_type": "other",
+      "record_types": {
+        "source_record": 1
+      },
+      "source_count": 1,
+      "first_observed": "2017-09-26",
+      "last_observed": "2017-09-26",
+      "supplier_ico": "70891508"
     }
   ],
   "notes": [
     "Projects are created by the conservative cross-source resolver.",
-    "Records without a reliable status remain unclassified rather than being guessed."
+    "Project type is derived from documented source record types; it is separate from contractual status.",
+    "Records without a reliable contractual status remain unclassified rather than being guessed."
   ]
 }
