@@ -1,0 +1,382 @@
+{
+  "id": "p-smlouva-o-poskytnuti-dotace-z-dflk-program-1-1-podpora-jednotek-pozarn-0012",
+  "title": "Smlouva o poskytnutí dotace z DFLK program 1.1 – Podpora jednotek požární ochrany obcí Libereckého kraje",
+  "buyer_ico": "00275905",
+  "status": "unclassified",
+  "project_type": "contract",
+  "canonical": {
+    "title": "Poskytnutí dotace z Dotačního fondu Libereckého kraje program č.1.1 Podpora jednotek požární ochrany obcí Libereckého kraje",
+    "supplier_ico": "70891508",
+    "identifiers": [
+      "01-OLP/1171/2016",
+      "01-OLP/1175/2016",
+      "01-OLP/3177/2018",
+      "OLP/01915/2025",
+      "OLP/01916/2025"
+    ],
+    "lifecycle": {
+      "events": [
+        {
+          "date": "2016-07-13",
+          "type": "contract",
+          "source": "registr-smluv",
+          "source_id": "7189",
+          "title": "Smlouva o poskytnutí dotace z Dotačního fondu LK - Podpora jednotek požární ochrany obcí LK",
+          "price": 100000.0
+        },
+        {
+          "date": "2016-07-13",
+          "type": "contract",
+          "source": "registr-smluv",
+          "source_id": "8513",
+          "title": "Smlouva o poskytnutí dotace z Dotačního fondu LK - Podpora jednotek požární ochrany obcí LK",
+          "price": 85000.0
+        },
+        {
+          "date": "2018-07-26",
+          "type": "source_record",
+          "source": "registr-smluv",
+          "source_id": "5857111",
+          "title": "Poskytnutí dotace z Dotačního fondu Libereckého kraje program č.1.1 Podpora jednotek požární ochrany obcí Libereckého kraje",
+          "price": 142965.25
+        },
+        {
+          "date": "2025-10-17",
+          "type": "contract",
+          "source": "registr-smluv",
+          "source_id": "33251089",
+          "title": "Smlouva o poskytnutí dotace z DFLK program 1.1 – Podpora jednotek požární ochrany obcí Libereckého kraje",
+          "price": null
+        },
+        {
+          "date": "2025-10-17",
+          "type": "contract",
+          "source": "registr-smluv",
+          "source_id": "33251081",
+          "title": "Smlouva o poskytnutí dotace z DFLK program 1.1 – Podpora jednotek požární ochrany obcí Libereckého kraje",
+          "price": null
+        }
+      ],
+      "event_count": 5,
+      "type_counts": {
+        "contract": 4,
+        "source_record": 1
+      },
+      "dominant_type": "contract"
+    },
+    "project_type": "contract",
+    "dates": {
+      "first_observed": "2016-07-13",
+      "last_observed": "2025-10-17"
+    },
+    "financial": {
+      "observed_prices": [
+        85000.0,
+        100000.0
+      ],
+      "initial_contract_price": 100000.0,
+      "latest_observed_price": 85000.0
+    },
+    "source_count": 5
+  },
+  "sources": [
+    {
+      "source_file": "data/sources/registr-smluv/rs-000094.json",
+      "source_id": "33251089",
+      "record": {
+        "source": "registr-smluv",
+        "source_id": "33251089",
+        "version_id": "35447545",
+        "source_url": "https://smlouvy.gov.cz/smlouva/33251089",
+        "title": "Smlouva o poskytnutí dotace z DFLK program 1.1 – Podpora jednotek požární ochrany obcí Libereckého kraje",
+        "buyer_ico": "00275905",
+        "supplier_ico": "70891508",
+        "supplier_name": "Liberecký kraj",
+        "contract_number": "OLP/01916/2025",
+        "date": "2025-10-17",
+        "signed_date": "2025-10-17",
+        "published": null,
+        "price": null,
+        "status": null,
+        "raw": {
+          "source": "registr-smluv",
+          "source_id": "33251089",
+          "version_id": "35447545",
+          "source_url": "https://smlouvy.gov.cz/smlouva/33251089",
+          "title": "Smlouva o poskytnutí dotace z DFLK program 1.1 – Podpora jednotek požární ochrany obcí Libereckého kraje",
+          "buyer_ico": "00275905",
+          "supplier_ico": "70891508",
+          "contract_number": "OLP/01916/2025",
+          "date": "2025-10-17",
+          "signed_date": "2025-10-17",
+          "published": "",
+          "price": "",
+          "value": "",
+          "publisher": "",
+          "subject": "Smlouva o poskytnutí dotace z DFLK program 1.1 – Podpora jednotek požární ochrany obcí Libereckého kraje",
+          "counterparty": "Liberecký kraj",
+          "detail_url": "https://smlouvy.gov.cz/smlouva/33251089"
+        },
+        "_source_file": "data/sources/registr-smluv/rs-000094.json"
+      }
+    },
+    {
+      "source_file": "data/sources/registr-smluv/rs-000033.json",
+      "source_id": "5857111",
+      "record": {
+        "source": "registr-smluv",
+        "source_id": "5857111",
+        "version_id": "6310991",
+        "source_url": "https://smlouvy.gov.cz/smlouva/5857111",
+        "title": "Poskytnutí dotace z Dotačního fondu Libereckého kraje program č.1.1 Podpora jednotek požární ochrany obcí Libereckého kraje",
+        "buyer_ico": "00275905",
+        "supplier_ico": "70891508",
+        "supplier_name": "Liberecký kraj",
+        "contract_number": "01-OLP/3177/2018",
+        "date": "2018-07-26",
+        "signed_date": "2018-07-26",
+        "published": null,
+        "price": 142965.25,
+        "status": null,
+        "raw": {
+          "source": "registr-smluv",
+          "source_id": "5857111",
+          "version_id": "6310991",
+          "source_url": "https://smlouvy.gov.cz/smlouva/5857111",
+          "title": "Poskytnutí dotace z Dotačního fondu Libereckého kraje program č.1.1 Podpora jednotek požární ochrany obcí Libereckého kraje",
+          "buyer_ico": "00275905",
+          "supplier_ico": "70891508",
+          "contract_number": "01-OLP/3177/2018",
+          "date": "2018-07-26",
+          "signed_date": "2018-07-26",
+          "published": "",
+          "price": "142965.25",
+          "value": "142965.25",
+          "publisher": "",
+          "subject": "Poskytnutí dotace z Dotačního fondu Libereckého kraje program č.1.1 Podpora jednotek požární ochrany obcí Libereckého kraje",
+          "counterparty": "Liberecký kraj",
+          "detail_url": "https://smlouvy.gov.cz/smlouva/5857111"
+        },
+        "_source_file": "data/sources/registr-smluv/rs-000033.json"
+      }
+    },
+    {
+      "source_file": "data/sources/registr-smluv/rs-000093.json",
+      "source_id": "33251081",
+      "record": {
+        "source": "registr-smluv",
+        "source_id": "33251081",
+        "version_id": "35447537",
+        "source_url": "https://smlouvy.gov.cz/smlouva/33251081",
+        "title": "Smlouva o poskytnutí dotace z DFLK program 1.1 – Podpora jednotek požární ochrany obcí Libereckého kraje",
+        "buyer_ico": "00275905",
+        "supplier_ico": "70891508",
+        "supplier_name": "Liberecký kraj",
+        "contract_number": "OLP/01915/2025",
+        "date": "2025-10-17",
+        "signed_date": "2025-10-17",
+        "published": null,
+        "price": null,
+        "status": null,
+        "raw": {
+          "source": "registr-smluv",
+          "source_id": "33251081",
+          "version_id": "35447537",
+          "source_url": "https://smlouvy.gov.cz/smlouva/33251081",
+          "title": "Smlouva o poskytnutí dotace z DFLK program 1.1 – Podpora jednotek požární ochrany obcí Libereckého kraje",
+          "buyer_ico": "00275905",
+          "supplier_ico": "70891508",
+          "contract_number": "OLP/01915/2025",
+          "date": "2025-10-17",
+          "signed_date": "2025-10-17",
+          "published": "",
+          "price": "",
+          "value": "",
+          "publisher": "",
+          "subject": "Smlouva o poskytnutí dotace z DFLK program 1.1 – Podpora jednotek požární ochrany obcí Libereckého kraje",
+          "counterparty": "Liberecký kraj",
+          "detail_url": "https://smlouvy.gov.cz/smlouva/33251081"
+        },
+        "_source_file": "data/sources/registr-smluv/rs-000093.json"
+      }
+    },
+    {
+      "source_file": "data/sources/registr-smluv/rs-000003.json",
+      "source_id": "7189",
+      "record": {
+        "source": "registr-smluv",
+        "source_id": "7189",
+        "version_id": "7381",
+        "source_url": "https://smlouvy.gov.cz/smlouva/7189",
+        "title": "Smlouva o poskytnutí dotace z Dotačního fondu LK - Podpora jednotek požární ochrany obcí LK",
+        "buyer_ico": "00275905",
+        "supplier_ico": "70891508",
+        "supplier_name": "Liberecký kraj",
+        "contract_number": "01-OLP/1175/2016",
+        "date": "2016-07-13",
+        "signed_date": "2016-07-13",
+        "published": null,
+        "price": 100000.0,
+        "status": null,
+        "raw": {
+          "source": "registr-smluv",
+          "source_id": "7189",
+          "version_id": "7381",
+          "source_url": "https://smlouvy.gov.cz/smlouva/7189",
+          "title": "Smlouva o poskytnutí dotace z Dotačního fondu LK - Podpora jednotek požární ochrany obcí LK",
+          "buyer_ico": "00275905",
+          "supplier_ico": "70891508",
+          "contract_number": "01-OLP/1175/2016",
+          "date": "2016-07-13",
+          "signed_date": "2016-07-13",
+          "published": "",
+          "price": "100000",
+          "value": "100000",
+          "publisher": "",
+          "subject": "Smlouva o poskytnutí dotace z Dotačního fondu LK - Podpora jednotek požární ochrany obcí LK",
+          "counterparty": "Liberecký kraj",
+          "detail_url": "https://smlouvy.gov.cz/smlouva/7189"
+        },
+        "_source_file": "data/sources/registr-smluv/rs-000003.json"
+      }
+    },
+    {
+      "source_file": "data/sources/registr-smluv/rs-000004.json",
+      "source_id": "8513",
+      "record": {
+        "source": "registr-smluv",
+        "source_id": "8513",
+        "version_id": "8741",
+        "source_url": "https://smlouvy.gov.cz/smlouva/8513",
+        "title": "Smlouva o poskytnutí dotace z Dotačního fondu LK - Podpora jednotek požární ochrany obcí LK",
+        "buyer_ico": "00275905",
+        "supplier_ico": "70891508",
+        "supplier_name": "Liberecký kraj",
+        "contract_number": "01-OLP/1171/2016",
+        "date": "2016-07-13",
+        "signed_date": "2016-07-13",
+        "published": null,
+        "price": 85000.0,
+        "status": null,
+        "raw": {
+          "source": "registr-smluv",
+          "source_id": "8513",
+          "version_id": "8741",
+          "source_url": "https://smlouvy.gov.cz/smlouva/8513",
+          "title": "Smlouva o poskytnutí dotace z Dotačního fondu LK - Podpora jednotek požární ochrany obcí LK",
+          "buyer_ico": "00275905",
+          "supplier_ico": "70891508",
+          "contract_number": "01-OLP/1171/2016",
+          "date": "2016-07-13",
+          "signed_date": "2016-07-13",
+          "published": "",
+          "price": "85000",
+          "value": "85000",
+          "publisher": "",
+          "subject": "Smlouva o poskytnutí dotace z Dotačního fondu LK - Podpora jednotek požární ochrany obcí LK",
+          "counterparty": "Liberecký kraj",
+          "detail_url": "https://smlouvy.gov.cz/smlouva/8513"
+        },
+        "_source_file": "data/sources/registr-smluv/rs-000004.json"
+      }
+    }
+  ],
+  "analysis": {
+    "schema_version": 4,
+    "project_id": "p-smlouva-o-poskytnuti-dotace-z-dflk-program-1-1-podpora-jednotek-pozarn-0012",
+    "signal_count": 1,
+    "signals": [
+      {
+        "code": "price_change",
+        "level": "review",
+        "message": "Mezi výchozí a poslední evidovanou cenou je rozdíl +43.0 %.",
+        "evidence": [
+          {
+            "type": "price_change",
+            "baseline": 100000.0,
+            "current": 142965.25,
+            "delta": 42965.25,
+            "percent": 42.96525,
+            "calculation": "(current-baseline)/baseline*100"
+          }
+        ]
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2016-07-13",
+        "event": "contract",
+        "source": "registr-smluv",
+        "source_id": "7189",
+        "title": "Smlouva o poskytnutí dotace z Dotačního fondu LK - Podpora jednotek požární ochrany obcí LK",
+        "price": 100000.0,
+        "deadline": null
+      },
+      {
+        "date": "2016-07-13",
+        "event": "contract",
+        "source": "registr-smluv",
+        "source_id": "8513",
+        "title": "Smlouva o poskytnutí dotace z Dotačního fondu LK - Podpora jednotek požární ochrany obcí LK",
+        "price": 85000.0,
+        "deadline": null
+      },
+      {
+        "date": "2018-07-26",
+        "event": "source_record",
+        "source": "registr-smluv",
+        "source_id": "5857111",
+        "title": "Poskytnutí dotace z Dotačního fondu Libereckého kraje program č.1.1 Podpora jednotek požární ochrany obcí Libereckého kraje",
+        "price": 142965.25,
+        "deadline": null
+      },
+      {
+        "date": "2025-10-17",
+        "event": "contract",
+        "source": "registr-smluv",
+        "source_id": "33251089",
+        "title": "Smlouva o poskytnutí dotace z DFLK program 1.1 – Podpora jednotek požární ochrany obcí Libereckého kraje",
+        "price": null,
+        "deadline": null
+      },
+      {
+        "date": "2025-10-17",
+        "event": "contract",
+        "source": "registr-smluv",
+        "source_id": "33251081",
+        "title": "Smlouva o poskytnutí dotace z DFLK program 1.1 – Podpora jednotek požární ochrany obcí Libereckého kraje",
+        "price": null,
+        "deadline": null
+      }
+    ],
+    "financial": {
+      "baseline_price": 100000.0,
+      "current_observed_price": 142965.25,
+      "absolute_change": 42965.25,
+      "percent_change": 42.96525,
+      "observed_prices": [
+        100000.0,
+        85000.0,
+        142965.25
+      ],
+      "addendum_count": 0
+    },
+    "metrics": {
+      "source_count": 5,
+      "supplier_count": 1,
+      "price_values": [
+        100000.0,
+        85000.0,
+        142965.25
+      ],
+      "date_values": [
+        "2016-07-13",
+        "2018-07-26",
+        "2025-10-17"
+      ],
+      "document_count": 0,
+      "deadline_observations": 0
+    },
+    "methodology": "Signals are descriptive checks only; they do not establish wrongdoing or causality. They identify differences worth checking and retain source provenance."
+  }
+}

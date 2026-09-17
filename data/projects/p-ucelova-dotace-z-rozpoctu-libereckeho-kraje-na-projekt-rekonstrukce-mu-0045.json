@@ -1,0 +1,127 @@
+{
+  "id": "p-ucelova-dotace-z-rozpoctu-libereckeho-kraje-na-projekt-rekonstrukce-mu-0045",
+  "title": "účelová dotace z rozpočtu Libereckého kraje na projekt \"Rekonstrukce multifunkčního hřiště při ZŠ T.G.Masaryka v Lomnici nad Popelkou\"",
+  "buyer_ico": "00275905",
+  "status": "unclassified",
+  "project_type": "other",
+  "canonical": {
+    "title": "účelová dotace z rozpočtu Libereckého kraje na projekt \"Rekonstrukce multifunkčního hřiště při ZŠ T.G.Masaryka v Lomnici nad Popelkou\"",
+    "supplier_ico": "70891508",
+    "identifiers": [
+      "04708_OLP_5696_2019"
+    ],
+    "lifecycle": {
+      "events": [
+        {
+          "date": "2020-01-14",
+          "type": "source_record",
+          "source": "registr-smluv",
+          "source_id": "10601144",
+          "title": "účelová dotace z rozpočtu Libereckého kraje na projekt \"Rekonstrukce multifunkčního hřiště při ZŠ T.G.Masaryka v Lomnici nad Popelkou\"",
+          "price": null
+        }
+      ],
+      "event_count": 1,
+      "type_counts": {
+        "source_record": 1
+      },
+      "dominant_type": "source_record"
+    },
+    "project_type": "other",
+    "dates": {
+      "first_observed": "2020-01-14",
+      "last_observed": "2020-01-14"
+    },
+    "financial": {
+      "observed_prices": [],
+      "initial_contract_price": null,
+      "latest_observed_price": null
+    },
+    "source_count": 1
+  },
+  "sources": [
+    {
+      "source_file": "data/sources/registr-smluv/rs-000043.json",
+      "source_id": "10601144",
+      "record": {
+        "source": "registr-smluv",
+        "source_id": "10601144",
+        "version_id": "11409652",
+        "source_url": "https://smlouvy.gov.cz/smlouva/10601144",
+        "title": "účelová dotace z rozpočtu Libereckého kraje na projekt \"Rekonstrukce multifunkčního hřiště při ZŠ T.G.Masaryka v Lomnici nad Popelkou\"",
+        "buyer_ico": "00275905",
+        "supplier_ico": "70891508",
+        "supplier_name": "Liberecký kraj",
+        "contract_number": "04708_OLP_5696_2019",
+        "date": "2020-01-14",
+        "signed_date": "2020-01-14",
+        "published": null,
+        "price": null,
+        "status": null,
+        "raw": {
+          "source": "registr-smluv",
+          "source_id": "10601144",
+          "version_id": "11409652",
+          "source_url": "https://smlouvy.gov.cz/smlouva/10601144",
+          "title": "účelová dotace z rozpočtu Libereckého kraje na projekt \"Rekonstrukce multifunkčního hřiště při ZŠ T.G.Masaryka v Lomnici nad Popelkou\"",
+          "buyer_ico": "00275905",
+          "supplier_ico": "70891508",
+          "contract_number": "04708_OLP_5696_2019",
+          "date": "2020-01-14",
+          "signed_date": "2020-01-14",
+          "published": "",
+          "price": "",
+          "value": "",
+          "publisher": "",
+          "subject": "účelová dotace z rozpočtu Libereckého kraje na projekt \"Rekonstrukce multifunkčního hřiště při ZŠ T.G.Masaryka v Lomnici nad Popelkou\"",
+          "counterparty": "Liberecký kraj",
+          "detail_url": "https://smlouvy.gov.cz/smlouva/10601144"
+        },
+        "_source_file": "data/sources/registr-smluv/rs-000043.json"
+      }
+    }
+  ],
+  "analysis": {
+    "schema_version": 4,
+    "project_id": "p-ucelova-dotace-z-rozpoctu-libereckeho-kraje-na-projekt-rekonstrukce-mu-0045",
+    "signal_count": 1,
+    "signals": [
+      {
+        "code": "single_source",
+        "level": "info",
+        "message": "Projekt je zatím doložen pouze jedním zdrojovým záznamem.",
+        "evidence": []
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2020-01-14",
+        "event": "source_record",
+        "source": "registr-smluv",
+        "source_id": "10601144",
+        "title": "účelová dotace z rozpočtu Libereckého kraje na projekt \"Rekonstrukce multifunkčního hřiště při ZŠ T.G.Masaryka v Lomnici nad Popelkou\"",
+        "price": null,
+        "deadline": null
+      }
+    ],
+    "financial": {
+      "baseline_price": null,
+      "current_observed_price": null,
+      "absolute_change": null,
+      "percent_change": null,
+      "observed_prices": [],
+      "addendum_count": 0
+    },
+    "metrics": {
+      "source_count": 1,
+      "supplier_count": 1,
+      "price_values": [],
+      "date_values": [
+        "2020-01-14"
+      ],
+      "document_count": 0,
+      "deadline_observations": 0
+    },
+    "methodology": "Signals are descriptive checks only; they do not establish wrongdoing or causality. They identify differences worth checking and retain source provenance."
+  }
+}
