@@ -54,7 +54,7 @@ def main():
         "Projects are created by the conservative cross-source resolver.",
         "A contractual addendum alone is not treated as evidence that a public tender was conducted.",
         "Project type is derived from documented source record types; it is separate from contractual status.",
-        "Procurement signal is evidence-weighted metadata; explicit means the source text mentions procurement, likely means the contract appears procurement-related but does not prove the selection procedure."
+        "Procurement signal is evidence-weighted metadata; explicit means the source text mentions procurement, likely means the contract appears procurement-related but does not prove the selection procedure.",
         "Records without a reliable contractual status remain unclassified rather than being guessed."
       ]
     }
