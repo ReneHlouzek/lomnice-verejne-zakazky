@@ -40,6 +40,15 @@ def test_group_score_checks_all_members():
     assert reason == "addendum_core_title"
 
 
+def test_procurement_signal_does_not_overclaim():
+    explicit = {"title": "Smlouva o dílo - veřejná zakázka Revitalizace rybníka"}
+    likely = {"title": "Smlouva o dílo - Oprava místní komunikace"}
+    plain = {"title": "Darovací smlouva"}
+    assert resolver.procurement_signal(explicit)["level"] == "explicit"
+    assert resolver.procurement_signal(likely)["level"] == "likely"
+    assert resolver.procurement_signal(plain)["level"] == "none"
+
+
 def test_generic_same_supplier_contracts_are_not_auto_merged():
     a = {"title": "Veřejnoprávní smlouva o poskytnutí neinvestiční dotace z rozpočtu města", "supplier_ico": "49295934", "price": 500000}
     b = {"title": "Veřejnoprávní smlouva o poskytnutí neinvestiční dotace z rozpočtu města - obnova vodovodu", "supplier_ico": "49295934", "price": 2880000}
