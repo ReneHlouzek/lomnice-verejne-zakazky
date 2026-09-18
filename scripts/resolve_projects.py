@@ -178,6 +178,30 @@ def classify(r):
     return "source_record"
 
 
+
+def procurement_signal(r):
+    """Classify contractual text as evidence of a procurement relationship.
+
+    This is deliberately weaker than a procurement classification: a contract
+    may be related to an investment without proving how the supplier was chosen.
+    """
+    text = norm(" ".join(str(r.get(k) or "") for k in ("title", "name", "type", "event", "status", "subject")))
+    explicit = (
+        "verejna zakazka" in text or "zakazka" in text or
+        "vyberove rizeni" in text or "zjednodusene podlimitni" in text or
+        "vybrana nabidka" in text or "nejvhodnejsi nabidka" in text
+    )
+    works = any(x in text for x in (
+        "smlouva o dilo", "oprava", "rekonstrukce", "sanace", "modernizace",
+        "obnova", "revitalizace", "stavebni", "komunikace", "rybnik",
+        "kamerovy system", "pojisteni", "dodavka"
+    ))
+    if explicit:
+        return {"level": "explicit", "label": "Výslovná vazba na veřejnou zakázku", "reason": "Zdrojový text obsahuje přímou zmínku o veřejné zakázce, výběru nebo zadávacím řízení."}
+    if works:
+        return {"level": "likely", "label": "Pravděpodobně souvisí se zakázkou", "reason": "Název/předmět odpovídá investiční dodávce, stavebním pracím nebo jiné běžné zadavatelské dodávce; způsob výběru dodavatele z tohoto záznamu sám o sobě neplyne."}
+    return {"level": "none", "label": "Bez rozpoznané vazby na zakázku", "reason": "V dostupném textu nebyl nalezen dostatečný signál."}
+
 def canonical(g):
     titles = [title(r) for r in g if title(r)]
     suppliers = [r.get("supplier_ico") or r.get("ico_dodavatele") for r in g if r.get("supplier_ico") or r.get("ico_dodavatele")]
@@ -211,6 +235,7 @@ def canonical(g):
         "identifiers": sorted(set().union(*(key_ids(r) for r in g))),
         "lifecycle": {"events": events, "event_count": len(events), "type_counts": type_counts, "dominant_type": dominant_type},
         "project_type": project_type,
+        "procurement_signal": max((procurement_signal(r) for r in g), key=lambda x: {"none":0,"likely":1,"explicit":2}[x["level"]]),
         "dates": {"first_observed": events[0]["date"] if events else None, "last_observed": events[-1]["date"] if events else None},
         "financial": {"observed_prices": sorted(set(observed_prices)), "initial_contract_price": observed_prices[0] if observed_prices else None, "latest_observed_price": observed_prices[-1] if observed_prices else None},
         "source_count": len(g),
