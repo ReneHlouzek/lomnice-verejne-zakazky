@@ -37,7 +37,7 @@ def test_group_score_checks_all_members():
     new = {"title": "Modernizace učeben ZUS stavební práce dodatek", "supplier_ico": "12345678"}
     score, reason, _ = resolver.group_score(new, group)
     assert score >= 0.72
-    assert reason == "supplier_title"
+    assert reason == "addendum_core_title"
 
 
 def test_lifecycle_classification():
@@ -69,3 +69,4 @@ def test_analysis_is_neutral_and_provenance_preserving():
     result = analyzer.analyze(project)
     assert result["timeline"][0]["source_id"] == "X"
     assert "wrongdoing" in result["methodology"]
+}
