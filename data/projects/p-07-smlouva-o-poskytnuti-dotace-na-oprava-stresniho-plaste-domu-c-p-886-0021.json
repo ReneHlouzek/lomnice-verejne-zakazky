@@ -1,0 +1,131 @@
+{
+  "id": "p-07-smlouva-o-poskytnuti-dotace-na-oprava-stresniho-plaste-domu-c-p-886-0021",
+  "title": "07 Smlouva o poskytnutí dotace na Oprava střešního pláště domu č.p. 886",
+  "buyer_ico": "00275905",
+  "status": "unclassified",
+  "project_type": "contract",
+  "canonical": {
+    "title": "07 Smlouva o poskytnutí dotace na Oprava střešního pláště domu č.p. 886",
+    "supplier_ico": "70891508",
+    "identifiers": [],
+    "lifecycle": {
+      "events": [
+        {
+          "date": "2023-06-07",
+          "type": "contract",
+          "source": "registr-smluv",
+          "source_id": "23137771",
+          "title": "07 Smlouva o poskytnutí dotace na Oprava střešního pláště domu č.p. 886",
+          "price": 350000.0
+        }
+      ],
+      "event_count": 1,
+      "type_counts": {
+        "contract": 1
+      },
+      "dominant_type": "contract"
+    },
+    "project_type": "contract",
+    "dates": {
+      "first_observed": "2023-06-07",
+      "last_observed": "2023-06-07"
+    },
+    "financial": {
+      "observed_prices": [
+        350000.0
+      ],
+      "initial_contract_price": 350000.0,
+      "latest_observed_price": 350000.0
+    },
+    "source_count": 1
+  },
+  "sources": [
+    {
+      "source_file": "data/sources/registr-smluv/rs-000065.json",
+      "source_id": "23137771",
+      "record": {
+        "source": "registr-smluv",
+        "source_id": "23137771",
+        "version_id": "24796819",
+        "source_url": "https://smlouvy.gov.cz/smlouva/23137771",
+        "title": "07 Smlouva o poskytnutí dotace na Oprava střešního pláště domu č.p. 886",
+        "buyer_ico": "00275905",
+        "supplier_ico": "70891508",
+        "supplier_name": "Liberecký kraj",
+        "contract_number": "07-OLP/1167/2023",
+        "date": "2023-06-07",
+        "signed_date": "2023-06-07",
+        "published": null,
+        "price": 350000.0,
+        "status": null,
+        "raw": {
+          "source": "registr-smluv",
+          "source_id": "23137771",
+          "version_id": "24796819",
+          "source_url": "https://smlouvy.gov.cz/smlouva/23137771",
+          "title": "07 Smlouva o poskytnutí dotace na Oprava střešního pláště domu č.p. 886",
+          "buyer_ico": "00275905",
+          "supplier_ico": "70891508",
+          "contract_number": "07-OLP/1167/2023",
+          "date": "2023-06-07",
+          "signed_date": "2023-06-07",
+          "published": "",
+          "price": "350000",
+          "value": "350000",
+          "publisher": "",
+          "subject": "07 Smlouva o poskytnutí dotace na Oprava střešního pláště domu č.p. 886",
+          "counterparty": "Liberecký kraj",
+          "detail_url": "https://smlouvy.gov.cz/smlouva/23137771"
+        },
+        "_source_file": "data/sources/registr-smluv/rs-000065.json"
+      }
+    }
+  ],
+  "analysis": {
+    "schema_version": 4,
+    "project_id": "p-07-smlouva-o-poskytnuti-dotace-na-oprava-stresniho-plaste-domu-c-p-886-0021",
+    "signal_count": 1,
+    "signals": [
+      {
+        "code": "single_source",
+        "level": "info",
+        "message": "Projekt je zatím doložen pouze jedním zdrojovým záznamem.",
+        "evidence": []
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2023-06-07",
+        "event": "contract",
+        "source": "registr-smluv",
+        "source_id": "23137771",
+        "title": "07 Smlouva o poskytnutí dotace na Oprava střešního pláště domu č.p. 886",
+        "price": 350000.0,
+        "deadline": null
+      }
+    ],
+    "financial": {
+      "baseline_price": 350000.0,
+      "current_observed_price": 350000.0,
+      "absolute_change": 0.0,
+      "percent_change": null,
+      "observed_prices": [
+        350000.0
+      ],
+      "addendum_count": 0
+    },
+    "metrics": {
+      "source_count": 1,
+      "supplier_count": 1,
+      "price_values": [
+        350000.0
+      ],
+      "date_values": [
+        "2023-06-07"
+      ],
+      "document_count": 0,
+      "deadline_observations": 0
+    },
+    "methodology": "Signals are descriptive checks only; they do not establish wrongdoing or causality. They identify differences worth checking and retain source provenance."
+  }
+}

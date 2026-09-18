@@ -1,0 +1,131 @@
+{
+  "id": "p-verejnopravni-smlouva-o-poskytnuti-investicni-dotace-lomnice-nad-popel-0062",
+  "title": "Veřejnoprávní smlouva o poskytnutí investiční dotace - Lomnice nad Popelkou - bytová zóna BM3 a BK2",
+  "buyer_ico": "00275905",
+  "status": "unclassified",
+  "project_type": "contract",
+  "canonical": {
+    "title": "Veřejnoprávní smlouva o poskytnutí investiční dotace - Lomnice nad Popelkou - bytová zóna BM3 a BK2",
+    "supplier_ico": "49295934",
+    "identifiers": [],
+    "lifecycle": {
+      "events": [
+        {
+          "date": "2016-10-19",
+          "type": "contract",
+          "source": "registr-smluv",
+          "source_id": "496285",
+          "title": "Veřejnoprávní smlouva o poskytnutí investiční dotace - Lomnice nad Popelkou - bytová zóna BM3 a BK2",
+          "price": 636500.0
+        }
+      ],
+      "event_count": 1,
+      "type_counts": {
+        "contract": 1
+      },
+      "dominant_type": "contract"
+    },
+    "project_type": "contract",
+    "dates": {
+      "first_observed": "2016-10-19",
+      "last_observed": "2016-10-19"
+    },
+    "financial": {
+      "observed_prices": [
+        636500.0
+      ],
+      "initial_contract_price": 636500.0,
+      "latest_observed_price": 636500.0
+    },
+    "source_count": 1
+  },
+  "sources": [
+    {
+      "source_file": "data/sources/registr-smluv/rs-000008.json",
+      "source_id": "496285",
+      "record": {
+        "source": "registr-smluv",
+        "source_id": "496285",
+        "version_id": "528433",
+        "source_url": "https://smlouvy.gov.cz/smlouva/496285",
+        "title": "Veřejnoprávní smlouva o poskytnutí investiční dotace - Lomnice nad Popelkou - bytová zóna BM3 a BK2",
+        "buyer_ico": "00275905",
+        "supplier_ico": "49295934",
+        "supplier_name": "Vodohospodářské sdružení Turnov",
+        "contract_number": null,
+        "date": "2016-10-19",
+        "signed_date": "2016-10-19",
+        "published": null,
+        "price": 636500.0,
+        "status": null,
+        "raw": {
+          "source": "registr-smluv",
+          "source_id": "496285",
+          "version_id": "528433",
+          "source_url": "https://smlouvy.gov.cz/smlouva/496285",
+          "title": "Veřejnoprávní smlouva o poskytnutí investiční dotace - Lomnice nad Popelkou - bytová zóna BM3 a BK2",
+          "buyer_ico": "00275905",
+          "supplier_ico": "49295934",
+          "contract_number": "",
+          "date": "2016-10-19",
+          "signed_date": "2016-10-19",
+          "published": "",
+          "price": "636500",
+          "value": "636500",
+          "publisher": "",
+          "subject": "Veřejnoprávní smlouva o poskytnutí investiční dotace - Lomnice nad Popelkou - bytová zóna BM3 a BK2",
+          "counterparty": "Vodohospodářské sdružení Turnov",
+          "detail_url": "https://smlouvy.gov.cz/smlouva/496285"
+        },
+        "_source_file": "data/sources/registr-smluv/rs-000008.json"
+      }
+    }
+  ],
+  "analysis": {
+    "schema_version": 4,
+    "project_id": "p-verejnopravni-smlouva-o-poskytnuti-investicni-dotace-lomnice-nad-popel-0062",
+    "signal_count": 1,
+    "signals": [
+      {
+        "code": "single_source",
+        "level": "info",
+        "message": "Projekt je zatím doložen pouze jedním zdrojovým záznamem.",
+        "evidence": []
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2016-10-19",
+        "event": "contract",
+        "source": "registr-smluv",
+        "source_id": "496285",
+        "title": "Veřejnoprávní smlouva o poskytnutí investiční dotace - Lomnice nad Popelkou - bytová zóna BM3 a BK2",
+        "price": 636500.0,
+        "deadline": null
+      }
+    ],
+    "financial": {
+      "baseline_price": 636500.0,
+      "current_observed_price": 636500.0,
+      "absolute_change": 0.0,
+      "percent_change": null,
+      "observed_prices": [
+        636500.0
+      ],
+      "addendum_count": 0
+    },
+    "metrics": {
+      "source_count": 1,
+      "supplier_count": 1,
+      "price_values": [
+        636500.0
+      ],
+      "date_values": [
+        "2016-10-19"
+      ],
+      "document_count": 0,
+      "deadline_observations": 0
+    },
+    "methodology": "Signals are descriptive checks only; they do not establish wrongdoing or causality. They identify differences worth checking and retain source provenance."
+  }
+}

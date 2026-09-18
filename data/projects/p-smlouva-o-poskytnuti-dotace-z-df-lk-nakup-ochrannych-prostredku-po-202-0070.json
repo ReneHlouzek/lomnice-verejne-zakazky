@@ -1,0 +1,131 @@
+{
+  "id": "p-smlouva-o-poskytnuti-dotace-z-df-lk-nakup-ochrannych-prostredku-po-202-0070",
+  "title": "Smlouva o poskytnutí dotace z DF LK - Nákup ochranných prostředků PO 2024",
+  "buyer_ico": "00275905",
+  "status": "unclassified",
+  "project_type": "contract",
+  "canonical": {
+    "title": "Smlouva o poskytnutí dotace z DF LK - Nákup ochranných prostředků PO 2024",
+    "supplier_ico": "70891508",
+    "identifiers": [],
+    "lifecycle": {
+      "events": [
+        {
+          "date": "2024-07-29",
+          "type": "contract",
+          "source": "registr-smluv",
+          "source_id": "27785608",
+          "title": "Smlouva o poskytnutí dotace z DF LK - Nákup ochranných prostředků PO 2024",
+          "price": 138378.0
+        }
+      ],
+      "event_count": 1,
+      "type_counts": {
+        "contract": 1
+      },
+      "dominant_type": "contract"
+    },
+    "project_type": "contract",
+    "dates": {
+      "first_observed": "2024-07-29",
+      "last_observed": "2024-07-29"
+    },
+    "financial": {
+      "observed_prices": [
+        138378.0
+      ],
+      "initial_contract_price": 138378.0,
+      "latest_observed_price": 138378.0
+    },
+    "source_count": 1
+  },
+  "sources": [
+    {
+      "source_file": "data/sources/registr-smluv/rs-000082.json",
+      "source_id": "27785608",
+      "record": {
+        "source": "registr-smluv",
+        "source_id": "27785608",
+        "version_id": "29700208",
+        "source_url": "https://smlouvy.gov.cz/smlouva/27785608",
+        "title": "Smlouva o poskytnutí dotace z DF LK - Nákup ochranných prostředků PO 2024",
+        "buyer_ico": "00275905",
+        "supplier_ico": "70891508",
+        "supplier_name": "Liberecký kraj",
+        "contract_number": "01 - OLP/1919/2024",
+        "date": "2024-07-29",
+        "signed_date": "2024-07-29",
+        "published": null,
+        "price": 138378.0,
+        "status": null,
+        "raw": {
+          "source": "registr-smluv",
+          "source_id": "27785608",
+          "version_id": "29700208",
+          "source_url": "https://smlouvy.gov.cz/smlouva/27785608",
+          "title": "Smlouva o poskytnutí dotace z DF LK - Nákup ochranných prostředků PO 2024",
+          "buyer_ico": "00275905",
+          "supplier_ico": "70891508",
+          "contract_number": "01 - OLP/1919/2024",
+          "date": "2024-07-29",
+          "signed_date": "2024-07-29",
+          "published": "",
+          "price": "138378",
+          "value": "138378",
+          "publisher": "",
+          "subject": "Smlouva o poskytnutí dotace z DF LK - Nákup ochranných prostředků PO 2024",
+          "counterparty": "Liberecký kraj",
+          "detail_url": "https://smlouvy.gov.cz/smlouva/27785608"
+        },
+        "_source_file": "data/sources/registr-smluv/rs-000082.json"
+      }
+    }
+  ],
+  "analysis": {
+    "schema_version": 4,
+    "project_id": "p-smlouva-o-poskytnuti-dotace-z-df-lk-nakup-ochrannych-prostredku-po-202-0070",
+    "signal_count": 1,
+    "signals": [
+      {
+        "code": "single_source",
+        "level": "info",
+        "message": "Projekt je zatím doložen pouze jedním zdrojovým záznamem.",
+        "evidence": []
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2024-07-29",
+        "event": "contract",
+        "source": "registr-smluv",
+        "source_id": "27785608",
+        "title": "Smlouva o poskytnutí dotace z DF LK - Nákup ochranných prostředků PO 2024",
+        "price": 138378.0,
+        "deadline": null
+      }
+    ],
+    "financial": {
+      "baseline_price": 138378.0,
+      "current_observed_price": 138378.0,
+      "absolute_change": 0.0,
+      "percent_change": null,
+      "observed_prices": [
+        138378.0
+      ],
+      "addendum_count": 0
+    },
+    "metrics": {
+      "source_count": 1,
+      "supplier_count": 1,
+      "price_values": [
+        138378.0
+      ],
+      "date_values": [
+        "2024-07-29"
+      ],
+      "document_count": 0,
+      "deadline_observations": 0
+    },
+    "methodology": "Signals are descriptive checks only; they do not establish wrongdoing or causality. They identify differences worth checking and retain source provenance."
+  }
+}

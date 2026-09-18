@@ -1,0 +1,131 @@
+{
+  "id": "p-kupni-smlouva-c-j-olp-101-2024-prodej-pozemku-v-k-u-plouznice-pod-tabo-0091",
+  "title": "Kupní smlouva č.j.OLP/101/2024, prodej pozemku v k.ú. Ploužnice pod Táborem",
+  "buyer_ico": "00275905",
+  "status": "unclassified",
+  "project_type": "contract",
+  "canonical": {
+    "title": "Kupní smlouva č.j.OLP/101/2024, prodej pozemku v k.ú. Ploužnice pod Táborem",
+    "supplier_ico": "70891508",
+    "identifiers": [],
+    "lifecycle": {
+      "events": [
+        {
+          "date": "2024-05-15",
+          "type": "contract",
+          "source": "registr-smluv",
+          "source_id": "26892268",
+          "title": "Kupní smlouva č.j.OLP/101/2024, prodej pozemku v k.ú. Ploužnice pod Táborem",
+          "price": 76200.0
+        }
+      ],
+      "event_count": 1,
+      "type_counts": {
+        "contract": 1
+      },
+      "dominant_type": "contract"
+    },
+    "project_type": "contract",
+    "dates": {
+      "first_observed": "2024-05-15",
+      "last_observed": "2024-05-15"
+    },
+    "financial": {
+      "observed_prices": [
+        76200.0
+      ],
+      "initial_contract_price": 76200.0,
+      "latest_observed_price": 76200.0
+    },
+    "source_count": 1
+  },
+  "sources": [
+    {
+      "source_file": "data/sources/registr-smluv/rs-000079.json",
+      "source_id": "26892268",
+      "record": {
+        "source": "registr-smluv",
+        "source_id": "26892268",
+        "version_id": "28766984",
+        "source_url": "https://smlouvy.gov.cz/smlouva/26892268",
+        "title": "Kupní smlouva č.j.OLP/101/2024, prodej pozemku v k.ú. Ploužnice pod Táborem",
+        "buyer_ico": "00275905",
+        "supplier_ico": "70891508",
+        "supplier_name": "Liberecký kraj",
+        "contract_number": "14-OLP/101/2024",
+        "date": "2024-05-15",
+        "signed_date": "2024-05-15",
+        "published": null,
+        "price": 76200.0,
+        "status": null,
+        "raw": {
+          "source": "registr-smluv",
+          "source_id": "26892268",
+          "version_id": "28766984",
+          "source_url": "https://smlouvy.gov.cz/smlouva/26892268",
+          "title": "Kupní smlouva č.j.OLP/101/2024, prodej pozemku v k.ú. Ploužnice pod Táborem",
+          "buyer_ico": "00275905",
+          "supplier_ico": "70891508",
+          "contract_number": "14-OLP/101/2024",
+          "date": "2024-05-15",
+          "signed_date": "2024-05-15",
+          "published": "",
+          "price": "76200",
+          "value": "76200",
+          "publisher": "",
+          "subject": "Kupní smlouva č.j.OLP/101/2024, prodej pozemku v k.ú. Ploužnice pod Táborem",
+          "counterparty": "Liberecký kraj",
+          "detail_url": "https://smlouvy.gov.cz/smlouva/26892268"
+        },
+        "_source_file": "data/sources/registr-smluv/rs-000079.json"
+      }
+    }
+  ],
+  "analysis": {
+    "schema_version": 4,
+    "project_id": "p-kupni-smlouva-c-j-olp-101-2024-prodej-pozemku-v-k-u-plouznice-pod-tabo-0091",
+    "signal_count": 1,
+    "signals": [
+      {
+        "code": "single_source",
+        "level": "info",
+        "message": "Projekt je zatím doložen pouze jedním zdrojovým záznamem.",
+        "evidence": []
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2024-05-15",
+        "event": "contract",
+        "source": "registr-smluv",
+        "source_id": "26892268",
+        "title": "Kupní smlouva č.j.OLP/101/2024, prodej pozemku v k.ú. Ploužnice pod Táborem",
+        "price": 76200.0,
+        "deadline": null
+      }
+    ],
+    "financial": {
+      "baseline_price": 76200.0,
+      "current_observed_price": 76200.0,
+      "absolute_change": 0.0,
+      "percent_change": null,
+      "observed_prices": [
+        76200.0
+      ],
+      "addendum_count": 0
+    },
+    "metrics": {
+      "source_count": 1,
+      "supplier_count": 1,
+      "price_values": [
+        76200.0
+      ],
+      "date_values": [
+        "2024-05-15"
+      ],
+      "document_count": 0,
+      "deadline_observations": 0
+    },
+    "methodology": "Signals are descriptive checks only; they do not establish wrongdoing or causality. They identify differences worth checking and retain source provenance."
+  }
+}
