@@ -1,0 +1,131 @@
+{
+  "id": "p-smlouva-lomnice-nad-popelkou-a-nowogrodziec-spolecna-cesta-casem-0059",
+  "title": "Smlouva : \" Lomnice nad Popelkou a Nowogrodziec-společná cesta časem \"",
+  "buyer_ico": "00275905",
+  "status": "unclassified",
+  "project_type": "contract",
+  "canonical": {
+    "title": "Smlouva : \" Lomnice nad Popelkou a Nowogrodziec-společná cesta časem \"",
+    "supplier_ico": "00832227",
+    "identifiers": [],
+    "lifecycle": {
+      "events": [
+        {
+          "date": "2017-08-16",
+          "type": "contract",
+          "source": "registr-smluv",
+          "source_id": "2704422",
+          "title": "Smlouva : \" Lomnice nad Popelkou a Nowogrodziec-společná cesta časem \"",
+          "price": 54046.33
+        }
+      ],
+      "event_count": 1,
+      "type_counts": {
+        "contract": 1
+      },
+      "dominant_type": "contract"
+    },
+    "project_type": "contract",
+    "dates": {
+      "first_observed": "2017-08-16",
+      "last_observed": "2017-08-16"
+    },
+    "financial": {
+      "observed_prices": [
+        54046.33
+      ],
+      "initial_contract_price": 54046.33,
+      "latest_observed_price": 54046.33
+    },
+    "source_count": 1
+  },
+  "sources": [
+    {
+      "source_file": "data/sources/registr-smluv/rs-000022.json",
+      "source_id": "2704422",
+      "record": {
+        "source": "registr-smluv",
+        "source_id": "2704422",
+        "version_id": "2910678",
+        "source_url": "https://smlouvy.gov.cz/smlouva/2704422",
+        "title": "Smlouva : \" Lomnice nad Popelkou a Nowogrodziec-společná cesta časem \"",
+        "buyer_ico": "00275905",
+        "supplier_ico": "00832227",
+        "supplier_name": "Euroregion Nisa",
+        "contract_number": "P/2017/05/10",
+        "date": "2017-08-16",
+        "signed_date": "2017-08-16",
+        "published": null,
+        "price": 54046.33,
+        "status": null,
+        "raw": {
+          "source": "registr-smluv",
+          "source_id": "2704422",
+          "version_id": "2910678",
+          "source_url": "https://smlouvy.gov.cz/smlouva/2704422",
+          "title": "Smlouva : \" Lomnice nad Popelkou a Nowogrodziec-společná cesta časem \"",
+          "buyer_ico": "00275905",
+          "supplier_ico": "00832227",
+          "contract_number": "P/2017/05/10",
+          "date": "2017-08-16",
+          "signed_date": "2017-08-16",
+          "published": "",
+          "price": "54046.33",
+          "value": "54046.33",
+          "publisher": "",
+          "subject": "Smlouva : \" Lomnice nad Popelkou a Nowogrodziec-společná cesta časem \"",
+          "counterparty": "Euroregion Nisa",
+          "detail_url": "https://smlouvy.gov.cz/smlouva/2704422"
+        },
+        "_source_file": "data/sources/registr-smluv/rs-000022.json"
+      }
+    }
+  ],
+  "analysis": {
+    "schema_version": 4,
+    "project_id": "p-smlouva-lomnice-nad-popelkou-a-nowogrodziec-spolecna-cesta-casem-0059",
+    "signal_count": 1,
+    "signals": [
+      {
+        "code": "single_source",
+        "level": "info",
+        "message": "Projekt je zatím doložen pouze jedním zdrojovým záznamem.",
+        "evidence": []
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2017-08-16",
+        "event": "contract",
+        "source": "registr-smluv",
+        "source_id": "2704422",
+        "title": "Smlouva : \" Lomnice nad Popelkou a Nowogrodziec-společná cesta časem \"",
+        "price": 54046.33,
+        "deadline": null
+      }
+    ],
+    "financial": {
+      "baseline_price": 54046.33,
+      "current_observed_price": 54046.33,
+      "absolute_change": 0.0,
+      "percent_change": null,
+      "observed_prices": [
+        54046.33
+      ],
+      "addendum_count": 0
+    },
+    "metrics": {
+      "source_count": 1,
+      "supplier_count": 1,
+      "price_values": [
+        54046.33
+      ],
+      "date_values": [
+        "2017-08-16"
+      ],
+      "document_count": 0,
+      "deadline_observations": 0
+    },
+    "methodology": "Signals are descriptive checks only; they do not establish wrongdoing or causality. They identify differences worth checking and retain source provenance."
+  }
+}

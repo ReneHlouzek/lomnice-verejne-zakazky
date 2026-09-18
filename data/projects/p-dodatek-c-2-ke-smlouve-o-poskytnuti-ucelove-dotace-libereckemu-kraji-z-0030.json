@@ -7,10 +7,7 @@
   "canonical": {
     "title": "Dodatek č.2 ke Smlouvě o poskytnutí účelové dotace Libereckému kraji z rozpočtu Města Lomnice nad Popelkou na stavební akci „II/286 x II/284 Lomnice nad Popelkou - havárie zdi - nezpůsobilé výdaje“",
     "supplier_ico": "70891508",
-    "identifiers": [
-      "06-OLP/2674/2016",
-      "OLP/01653/2026"
-    ],
+    "identifiers": [],
     "lifecycle": {
       "events": [
         {
@@ -28,19 +25,11 @@
           "source_id": "2264882",
           "title": "Dodatek č.2 ke Smlouvě o poskytnutí účelové dotace Libereckému kraji z rozpočtu Města Lomnice nad Popelkou na stavební akci „II/286 x II/284 Lomnice nad Popelkou - havárie zdi - nezpůsobilé výdaje“",
           "price": null
-        },
-        {
-          "date": "2026-07-07",
-          "type": "contract",
-          "source": "registr-smluv",
-          "source_id": "36342832",
-          "title": "Smlouva o poskytnutí účelové dotace z programu 7.2 Záchranná obnova památek, MĚSTO LOMNICE NAD POPELKOU",
-          "price": null
         }
       ],
-      "event_count": 3,
+      "event_count": 2,
       "type_counts": {
-        "contract": 2,
+        "contract": 1,
         "addendum": 1
       },
       "dominant_type": "contract"
@@ -48,14 +37,14 @@
     "project_type": "contract_with_changes",
     "dates": {
       "first_observed": "2016-07-07",
-      "last_observed": "2026-07-07"
+      "last_observed": "2017-06-29"
     },
     "financial": {
       "observed_prices": [],
       "initial_contract_price": null,
       "latest_observed_price": null
     },
-    "source_count": 3
+    "source_count": 2
   },
   "sources": [
     {
@@ -137,46 +126,6 @@
         },
         "_source_file": "data/sources/registr-smluv/rs-000002.json"
       }
-    },
-    {
-      "source_file": "data/sources/registr-smluv/rs-000107.json",
-      "source_id": "36342832",
-      "record": {
-        "source": "registr-smluv",
-        "source_id": "36342832",
-        "version_id": "38674480",
-        "source_url": "https://smlouvy.gov.cz/smlouva/36342832",
-        "title": "Smlouva o poskytnutí účelové dotace z programu 7.2 Záchranná obnova památek, MĚSTO LOMNICE NAD POPELKOU",
-        "buyer_ico": "00275905",
-        "supplier_ico": "70891508",
-        "supplier_name": "Liberecký kraj",
-        "contract_number": "OLP/01653/2026",
-        "date": "2026-07-07",
-        "signed_date": "2026-07-07",
-        "published": null,
-        "price": null,
-        "status": null,
-        "raw": {
-          "source": "registr-smluv",
-          "source_id": "36342832",
-          "version_id": "38674480",
-          "source_url": "https://smlouvy.gov.cz/smlouva/36342832",
-          "title": "Smlouva o poskytnutí účelové dotace z programu 7.2 Záchranná obnova památek, MĚSTO LOMNICE NAD POPELKOU",
-          "buyer_ico": "00275905",
-          "supplier_ico": "70891508",
-          "contract_number": "OLP/01653/2026",
-          "date": "2026-07-07",
-          "signed_date": "2026-07-07",
-          "published": "",
-          "price": "",
-          "value": "",
-          "publisher": "",
-          "subject": "Smlouva o poskytnutí účelové dotace z programu 7.2 Záchranná obnova památek, MĚSTO LOMNICE NAD POPELKOU",
-          "counterparty": "Liberecký kraj",
-          "detail_url": "https://smlouvy.gov.cz/smlouva/36342832"
-        },
-        "_source_file": "data/sources/registr-smluv/rs-000107.json"
-      }
     }
   ],
   "analysis": {
@@ -214,15 +163,6 @@
         "title": "Dodatek č.2 ke Smlouvě o poskytnutí účelové dotace Libereckému kraji z rozpočtu Města Lomnice nad Popelkou na stavební akci „II/286 x II/284 Lomnice nad Popelkou - havárie zdi - nezpůsobilé výdaje“",
         "price": null,
         "deadline": null
-      },
-      {
-        "date": "2026-07-07",
-        "event": "contract",
-        "source": "registr-smluv",
-        "source_id": "36342832",
-        "title": "Smlouva o poskytnutí účelové dotace z programu 7.2 Záchranná obnova památek, MĚSTO LOMNICE NAD POPELKOU",
-        "price": null,
-        "deadline": null
       }
     ],
     "financial": {
@@ -234,13 +174,12 @@
       "addendum_count": 1
     },
     "metrics": {
-      "source_count": 3,
+      "source_count": 2,
       "supplier_count": 1,
       "price_values": [],
       "date_values": [
         "2016-07-07",
-        "2017-06-29",
-        "2026-07-07"
+        "2017-06-29"
       ],
       "document_count": 0,
       "deadline_observations": 0
