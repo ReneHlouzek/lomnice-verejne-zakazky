@@ -79,7 +79,6 @@ def normalize_rs():
     for i, r in enumerate(rows, 1):
         if not isinstance(r, dict):
             continue
-        # Never turn an importer manifest or other metadata object into a source record.
         if r.get("source") not in (None, "registr-smluv") and not r.get("title"):
             continue
         detail = clean(r.get("detail_url") or r.get("source_url"))
@@ -104,7 +103,6 @@ def normalize_rs():
         fn.write_text(json.dumps(record, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         count += 1
     return count
-
 
 
 def normalize_vu_seed():
@@ -146,6 +144,10 @@ def normalize_vu_seed():
 def main():
     count = normalize_rs()
     vu_count = normalize_vu_seed()
+    if RS.exists() and count == 0:
+        raise SystemExit("Registr smluv normalization produced zero records.")
+    if VU_SEED.exists() and vu_count == 0:
+        raise SystemExit("VU seed exists but normalization produced zero records.")
     manifest = {
         "schema_version": 1,
         "generated_at": datetime.now(timezone.utc).isoformat(),
@@ -161,5 +163,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-# VU seed importer enabled.
