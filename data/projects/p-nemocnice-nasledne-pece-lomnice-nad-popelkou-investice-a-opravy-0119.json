@@ -1,23 +1,23 @@
 {
-  "id": "p-pojisteni-majetku-mesta-jeho-prispevkovych-organizaci-a-jejich-pojiste-0112",
-  "title": "Pojištění majetku města, jeho příspěvkových organizací a jejich pojištění odpovědnosti za újmu",
+  "id": "p-nemocnice-nasledne-pece-lomnice-nad-popelkou-investice-a-opravy-0119",
+  "title": "Nemocnice následné péče Lomnice nad Popelkou – investice a opravy",
   "buyer_ico": "00275905",
   "status": "plneni-smlouvy",
   "project_type": "procurement",
   "canonical": {
-    "title": "Pojištění majetku města, jeho příspěvkových organizací a jejich pojištění odpovědnosti za újmu",
-    "supplier_ico": "45534306",
+    "title": "Nemocnice následné péče Lomnice nad Popelkou – investice a opravy",
+    "supplier_ico": null,
     "identifiers": [
-      "P25V00005529"
+      "P26V00002929"
     ],
     "lifecycle": {
       "events": [
         {
-          "date": "2025-06-11",
+          "date": "2026-05-04",
           "type": "tender",
           "source": "vhodne-uverejneni",
-          "source_id": "P25V00005529",
-          "title": "Pojištění majetku města, jeho příspěvkových organizací a jejich pojištění odpovědnosti za újmu",
+          "source_id": "P26V00002929",
+          "title": "Nemocnice následné péče Lomnice nad Popelkou – investice a opravy",
           "price": null
         }
       ],
@@ -34,8 +34,8 @@
       "reason": "Zdrojový text obsahuje přímou zmínku o veřejné zakázce, výběru nebo zadávacím řízení."
     },
     "dates": {
-      "first_observed": "2025-06-11",
-      "last_observed": "2025-06-11"
+      "first_observed": "2026-05-04",
+      "last_observed": "2026-05-04"
     },
     "financial": {
       "observed_prices": [],
@@ -46,42 +46,42 @@
   },
   "sources": [
     {
-      "source_file": "data/sources/vhodne-uverejneni/vu-000004.json",
-      "source_id": "P25V00005529",
+      "source_file": "data/sources/vhodne-uverejneni/vu-000008.json",
+      "source_id": "P26V00002929",
       "record": {
         "source": "vhodne-uverejneni",
-        "source_id": "P25V00005529",
-        "procurement_id": "P25V00005529",
-        "source_url": "https://www.vhodne-uverejneni.cz/zakazka/pojisteni-majetku-mesta-jeho-prispevkovych-organizaci-a-jejich-pojisteni-odpovednosti-za-ujmu",
-        "title": "Pojištění majetku města, jeho příspěvkových organizací a jejich pojištění odpovědnosti za újmu",
+        "source_id": "P26V00002929",
+        "procurement_id": "P26V00002929",
+        "source_url": "https://www.vhodne-uverejneni.cz/zakazka/nemocnice-nasledne-pece-lomnice-nad-popelkou-investice-a-opravy",
+        "title": "Nemocnice následné péče Lomnice nad Popelkou – investice a opravy",
         "buyer_ico": "00275905",
-        "supplier_ico": "45534306",
-        "supplier_name": "ČSOB Pojišťovna, a. s., člen holdingu ČSOB",
-        "date": "2025-06-11",
+        "supplier_ico": null,
+        "supplier_name": null,
+        "date": "2026-05-04",
         "price": null,
         "status": "zakázka byla zadána (Plnění smlouvy)",
         "type": "tender",
         "raw": {
           "source": "vhodne-uverejneni",
-          "source_id": "P25V00005529",
-          "procurement_id": "P25V00005529",
-          "source_url": "https://www.vhodne-uverejneni.cz/zakazka/pojisteni-majetku-mesta-jeho-prispevkovych-organizaci-a-jejich-pojisteni-odpovednosti-za-ujmu",
-          "title": "Pojištění majetku města, jeho příspěvkových organizací a jejich pojištění odpovědnosti za újmu",
+          "source_id": "P26V00002929",
+          "procurement_id": "P26V00002929",
+          "source_url": "https://www.vhodne-uverejneni.cz/zakazka/nemocnice-nasledne-pece-lomnice-nad-popelkou-investice-a-opravy",
+          "title": "Nemocnice následné péče Lomnice nad Popelkou – investice a opravy",
           "buyer_ico": "00275905",
-          "supplier_ico": "45534306",
-          "supplier_name": "ČSOB Pojišťovna, a. s., člen holdingu ČSOB",
-          "date": "2025-06-11",
+          "supplier_ico": null,
+          "supplier_name": null,
+          "date": "2026-05-04",
           "price": null,
           "status": "zakázka byla zadána (Plnění smlouvy)",
           "type": "tender"
         },
-        "_source_file": "data/sources/vhodne-uverejneni/vu-000004.json"
+        "_source_file": "data/sources/vhodne-uverejneni/vu-000008.json"
       }
     }
   ],
   "analysis": {
     "schema_version": 4,
-    "project_id": "p-pojisteni-majetku-mesta-jeho-prispevkovych-organizaci-a-jejich-pojiste-0112",
+    "project_id": "p-nemocnice-nasledne-pece-lomnice-nad-popelkou-investice-a-opravy-0119",
     "signal_count": 1,
     "signals": [
       {
@@ -93,11 +93,11 @@
     ],
     "timeline": [
       {
-        "date": "2025-06-11",
+        "date": "2026-05-04",
         "event": "tender",
         "source": "vhodne-uverejneni",
-        "source_id": "P25V00005529",
-        "title": "Pojištění majetku města, jeho příspěvkových organizací a jejich pojištění odpovědnosti za újmu",
+        "source_id": "P26V00002929",
+        "title": "Nemocnice následné péče Lomnice nad Popelkou – investice a opravy",
         "price": null,
         "deadline": null
       }
@@ -112,10 +112,10 @@
     },
     "metrics": {
       "source_count": 1,
-      "supplier_count": 1,
+      "supplier_count": 0,
       "price_values": [],
       "date_values": [
-        "2025-06-11"
+        "2026-05-04"
       ],
       "document_count": 0,
       "deadline_observations": 0

@@ -1,22 +1,22 @@
 {
-  "id": "p-stavebni-prace-pri-vymene-oken-a-upravy-3-np-cp-61-lomnice-nad-popelko-0113",
-  "title": "Stavební práce při výměně oken a úpravy 3. NP čp. 61, Lomnice nad Popelkou",
+  "id": "p-sanace-budovy-cp-61-lomnice-nad-popelkou-od-zemni-vlhkosti-0112",
+  "title": "Sanace budovy čp. 61, Lomnice nad Popelkou, od zemní vlhkosti",
   "buyer_ico": "00275905",
   "status": "plneni-smlouvy",
   "project_type": "contract",
   "canonical": {
-    "title": "Stavební práce při výměně oken a úpravy 3. NP čp. 61, Lomnice nad Popelkou",
+    "title": "Sanace budovy čp. 61, Lomnice nad Popelkou, od zemní vlhkosti",
     "supplier_ico": "25937499",
     "identifiers": [],
     "lifecycle": {
       "events": [
         {
-          "date": "2026-05-27",
+          "date": "2025-12-19",
           "type": "contract",
           "source": "vhodne-uverejneni",
-          "source_id": "P26-REG-105575",
-          "title": "Stavební práce při výměně oken a úpravy 3. NP čp. 61, Lomnice nad Popelkou",
-          "price": 6072914.0
+          "source_id": "P26-REG-102333",
+          "title": "Sanace budovy čp. 61, Lomnice nad Popelkou, od zemní vlhkosti",
+          "price": 2015798.0
         }
       ],
       "event_count": 1,
@@ -32,56 +32,56 @@
       "reason": "Název/předmět odpovídá investiční dodávce, stavebním pracím nebo jiné běžné zadavatelské dodávce; způsob výběru dodavatele z tohoto záznamu sám o sobě neplyne."
     },
     "dates": {
-      "first_observed": "2026-05-27",
-      "last_observed": "2026-05-27"
+      "first_observed": "2025-12-19",
+      "last_observed": "2025-12-19"
     },
     "financial": {
       "observed_prices": [
-        6072914.0
+        2015798.0
       ],
-      "initial_contract_price": 6072914.0,
-      "latest_observed_price": 6072914.0
+      "initial_contract_price": 2015798.0,
+      "latest_observed_price": 2015798.0
     },
     "source_count": 1
   },
   "sources": [
     {
-      "source_file": "data/sources/vhodne-uverejneni/vu-000010.json",
-      "source_id": "P26-REG-105575",
+      "source_file": "data/sources/vhodne-uverejneni/vu-000011.json",
+      "source_id": "P26-REG-102333",
       "record": {
         "source": "vhodne-uverejneni",
-        "source_id": "P26-REG-105575",
+        "source_id": "P26-REG-102333",
         "procurement_id": null,
-        "source_url": "https://www.vhodne-uverejneni.cz/zakazka/stavebni-prace-pri-vymene-oken-a-upravy-3-np-cp-61-lomnice-nad-popelkou",
-        "title": "Stavební práce při výměně oken a úpravy 3. NP čp. 61, Lomnice nad Popelkou",
+        "source_url": "https://www.vhodne-uverejneni.cz/zakazka/sanace-budovy-cp-61-lomnice-nad-popelkou-od-zemni-vlhkosti",
+        "title": "Sanace budovy čp. 61, Lomnice nad Popelkou, od zemní vlhkosti",
         "buyer_ico": "00275905",
         "supplier_ico": "25937499",
         "supplier_name": "REDOMO a.s.",
-        "date": "2026-05-27",
-        "price": 6072914.0,
+        "date": "2025-12-19",
+        "price": 2015798.0,
         "status": "smlouva zveřejněna",
         "type": "contract",
         "raw": {
           "source": "vhodne-uverejneni",
-          "source_id": "P26-REG-105575",
+          "source_id": "P26-REG-102333",
           "procurement_id": null,
-          "source_url": "https://www.vhodne-uverejneni.cz/zakazka/stavebni-prace-pri-vymene-oken-a-upravy-3-np-cp-61-lomnice-nad-popelkou",
-          "title": "Stavební práce při výměně oken a úpravy 3. NP čp. 61, Lomnice nad Popelkou",
+          "source_url": "https://www.vhodne-uverejneni.cz/zakazka/sanace-budovy-cp-61-lomnice-nad-popelkou-od-zemni-vlhkosti",
+          "title": "Sanace budovy čp. 61, Lomnice nad Popelkou, od zemní vlhkosti",
           "buyer_ico": "00275905",
           "supplier_ico": "25937499",
           "supplier_name": "REDOMO a.s.",
-          "date": "2026-05-27",
-          "price": 6072914,
+          "date": "2025-12-19",
+          "price": 2015798,
           "status": "smlouva zveřejněna",
           "type": "contract"
         },
-        "_source_file": "data/sources/vhodne-uverejneni/vu-000010.json"
+        "_source_file": "data/sources/vhodne-uverejneni/vu-000011.json"
       }
     }
   ],
   "analysis": {
     "schema_version": 4,
-    "project_id": "p-stavebni-prace-pri-vymene-oken-a-upravy-3-np-cp-61-lomnice-nad-popelko-0113",
+    "project_id": "p-sanace-budovy-cp-61-lomnice-nad-popelkou-od-zemni-vlhkosti-0112",
     "signal_count": 1,
     "signals": [
       {
@@ -93,22 +93,22 @@
     ],
     "timeline": [
       {
-        "date": "2026-05-27",
+        "date": "2025-12-19",
         "event": "contract",
         "source": "vhodne-uverejneni",
-        "source_id": "P26-REG-105575",
-        "title": "Stavební práce při výměně oken a úpravy 3. NP čp. 61, Lomnice nad Popelkou",
-        "price": 6072914.0,
+        "source_id": "P26-REG-102333",
+        "title": "Sanace budovy čp. 61, Lomnice nad Popelkou, od zemní vlhkosti",
+        "price": 2015798.0,
         "deadline": null
       }
     ],
     "financial": {
-      "baseline_price": 6072914.0,
-      "current_observed_price": 6072914.0,
+      "baseline_price": 2015798.0,
+      "current_observed_price": 2015798.0,
       "absolute_change": 0.0,
       "percent_change": null,
       "observed_prices": [
-        6072914.0
+        2015798.0
       ],
       "addendum_count": 0
     },
@@ -116,10 +116,10 @@
       "source_count": 1,
       "supplier_count": 1,
       "price_values": [
-        6072914.0
+        2015798.0
       ],
       "date_values": [
-        "2026-05-27"
+        "2025-12-19"
       ],
       "document_count": 0,
       "deadline_observations": 0

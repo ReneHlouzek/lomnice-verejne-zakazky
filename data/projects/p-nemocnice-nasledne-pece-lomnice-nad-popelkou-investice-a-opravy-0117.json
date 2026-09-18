@@ -2,21 +2,21 @@
   "id": "p-nemocnice-nasledne-pece-lomnice-nad-popelkou-investice-a-opravy-0117",
   "title": "Nemocnice následné péče Lomnice nad Popelkou – investice a opravy",
   "buyer_ico": "00275905",
-  "status": "plneni-smlouvy",
+  "status": "zruseno",
   "project_type": "procurement",
   "canonical": {
     "title": "Nemocnice následné péče Lomnice nad Popelkou – investice a opravy",
     "supplier_ico": null,
     "identifiers": [
-      "P26V00002929"
+      "P25V00006718"
     ],
     "lifecycle": {
       "events": [
         {
-          "date": "2026-05-04",
+          "date": "2025-07-22",
           "type": "tender",
           "source": "vhodne-uverejneni",
-          "source_id": "P26V00002929",
+          "source_id": "P25V00006718",
           "title": "Nemocnice následné péče Lomnice nad Popelkou – investice a opravy",
           "price": null
         }
@@ -34,8 +34,8 @@
       "reason": "Zdrojový text obsahuje přímou zmínku o veřejné zakázce, výběru nebo zadávacím řízení."
     },
     "dates": {
-      "first_observed": "2026-05-04",
-      "last_observed": "2026-05-04"
+      "first_observed": "2025-07-22",
+      "last_observed": "2025-07-22"
     },
     "financial": {
       "observed_prices": [],
@@ -46,36 +46,36 @@
   },
   "sources": [
     {
-      "source_file": "data/sources/vhodne-uverejneni/vu-000008.json",
-      "source_id": "P26V00002929",
+      "source_file": "data/sources/vhodne-uverejneni/vu-000009.json",
+      "source_id": "P25V00006718",
       "record": {
         "source": "vhodne-uverejneni",
-        "source_id": "P26V00002929",
-        "procurement_id": "P26V00002929",
+        "source_id": "P25V00006718",
+        "procurement_id": "P25V00006718",
         "source_url": "https://www.vhodne-uverejneni.cz/zakazka/nemocnice-nasledne-pece-lomnice-nad-popelkou-investice-a-opravy",
         "title": "Nemocnice následné péče Lomnice nad Popelkou – investice a opravy",
         "buyer_ico": "00275905",
         "supplier_ico": null,
         "supplier_name": null,
-        "date": "2026-05-04",
+        "date": "2025-07-22",
         "price": null,
-        "status": "zakázka byla zadána (Plnění smlouvy)",
+        "status": "zakázka byla zrušena (Vyhodnocování)",
         "type": "tender",
         "raw": {
           "source": "vhodne-uverejneni",
-          "source_id": "P26V00002929",
-          "procurement_id": "P26V00002929",
+          "source_id": "P25V00006718",
+          "procurement_id": "P25V00006718",
           "source_url": "https://www.vhodne-uverejneni.cz/zakazka/nemocnice-nasledne-pece-lomnice-nad-popelkou-investice-a-opravy",
           "title": "Nemocnice následné péče Lomnice nad Popelkou – investice a opravy",
           "buyer_ico": "00275905",
           "supplier_ico": null,
           "supplier_name": null,
-          "date": "2026-05-04",
+          "date": "2025-07-22",
           "price": null,
-          "status": "zakázka byla zadána (Plnění smlouvy)",
+          "status": "zakázka byla zrušena (Vyhodnocování)",
           "type": "tender"
         },
-        "_source_file": "data/sources/vhodne-uverejneni/vu-000008.json"
+        "_source_file": "data/sources/vhodne-uverejneni/vu-000009.json"
       }
     }
   ],
@@ -93,10 +93,10 @@
     ],
     "timeline": [
       {
-        "date": "2026-05-04",
+        "date": "2025-07-22",
         "event": "tender",
         "source": "vhodne-uverejneni",
-        "source_id": "P26V00002929",
+        "source_id": "P25V00006718",
         "title": "Nemocnice následné péče Lomnice nad Popelkou – investice a opravy",
         "price": null,
         "deadline": null
@@ -115,7 +115,7 @@
       "supplier_count": 0,
       "price_values": [],
       "date_values": [
-        "2026-05-04"
+        "2025-07-22"
       ],
       "document_count": 0,
       "deadline_observations": 0

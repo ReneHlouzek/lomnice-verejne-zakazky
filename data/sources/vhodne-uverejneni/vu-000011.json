@@ -1,0 +1,28 @@
+{
+  "source": "vhodne-uverejneni",
+  "source_id": "P26-REG-102333",
+  "procurement_id": null,
+  "source_url": "https://www.vhodne-uverejneni.cz/zakazka/sanace-budovy-cp-61-lomnice-nad-popelkou-od-zemni-vlhkosti",
+  "title": "Sanace budovy čp. 61, Lomnice nad Popelkou, od zemní vlhkosti",
+  "buyer_ico": "00275905",
+  "supplier_ico": "25937499",
+  "supplier_name": "REDOMO a.s.",
+  "date": "2025-12-19",
+  "price": 2015798.0,
+  "status": "smlouva zveřejněna",
+  "type": "contract",
+  "raw": {
+    "source": "vhodne-uverejneni",
+    "source_id": "P26-REG-102333",
+    "procurement_id": null,
+    "source_url": "https://www.vhodne-uverejneni.cz/zakazka/sanace-budovy-cp-61-lomnice-nad-popelkou-od-zemni-vlhkosti",
+    "title": "Sanace budovy čp. 61, Lomnice nad Popelkou, od zemní vlhkosti",
+    "buyer_ico": "00275905",
+    "supplier_ico": "25937499",
+    "supplier_name": "REDOMO a.s.",
+    "date": "2025-12-19",
+    "price": 2015798,
+    "status": "smlouva zveřejněna",
+    "type": "contract"
+  }
+}
