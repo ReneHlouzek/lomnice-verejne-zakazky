@@ -69,4 +69,3 @@ def test_analysis_is_neutral_and_provenance_preserving():
     result = analyzer.analyze(project)
     assert result["timeline"][0]["source_id"] == "X"
     assert "wrongdoing" in result["methodology"]
-}
