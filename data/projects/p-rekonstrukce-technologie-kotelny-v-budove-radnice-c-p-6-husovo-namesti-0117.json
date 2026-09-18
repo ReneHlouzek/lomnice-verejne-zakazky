@@ -1,23 +1,23 @@
 {
-  "id": "p-nemocnice-nasledne-pece-lomnice-nad-popelkou-investice-a-opravy-0132",
-  "title": "Nemocnice následné péče Lomnice nad Popelkou – investice a opravy",
+  "id": "p-rekonstrukce-technologie-kotelny-v-budove-radnice-c-p-6-husovo-namesti-0117",
+  "title": "Rekonstrukce technologie kotelny v budově radnice č.p. 6, Husovo náměstí v Lomnici nad Popelkou",
   "buyer_ico": "00275905",
-  "status": "zruseno",
+  "status": "ukonceno-plneni",
   "project_type": "procurement",
   "canonical": {
-    "title": "Nemocnice následné péče Lomnice nad Popelkou – investice a opravy",
+    "title": "Rekonstrukce technologie kotelny v budově radnice č.p. 6, Husovo náměstí v Lomnici nad Popelkou",
     "supplier_ico": null,
     "identifiers": [
-      "P25V00006718"
+      "P25V000?"
     ],
     "lifecycle": {
       "events": [
         {
-          "date": "2025-07-22",
+          "date": "2025-08-27",
           "type": "tender",
           "source": "vhodne-uverejneni",
-          "source_id": "P25V00006718",
-          "title": "Nemocnice následné péče Lomnice nad Popelkou – investice a opravy",
+          "source_id": "P25V000?",
+          "title": "Rekonstrukce technologie kotelny v budově radnice č.p. 6, Husovo náměstí v Lomnici nad Popelkou",
           "price": null
         }
       ],
@@ -29,13 +29,13 @@
     },
     "project_type": "procurement",
     "procurement_signal": {
-      "level": "explicit",
-      "label": "Výslovná vazba na veřejnou zakázku",
-      "reason": "Zdrojový text obsahuje přímou zmínku o veřejné zakázce, výběru nebo zadávacím řízení."
+      "level": "likely",
+      "label": "Pravděpodobně souvisí se zakázkou",
+      "reason": "Název/předmět odpovídá investiční dodávce, stavebním pracím nebo jiné běžné zadavatelské dodávce; způsob výběru dodavatele z tohoto záznamu sám o sobě neplyne."
     },
     "dates": {
-      "first_observed": "2025-07-22",
-      "last_observed": "2025-07-22"
+      "first_observed": "2025-08-27",
+      "last_observed": "2025-08-27"
     },
     "financial": {
       "observed_prices": [],
@@ -46,42 +46,42 @@
   },
   "sources": [
     {
-      "source_file": "data/sources/vhodne-uverejneni/vu-000009.json",
-      "source_id": "P25V00006718",
+      "source_file": "data/sources/vhodne-uverejneni/vu-000034.json",
+      "source_id": "P25V000?",
       "record": {
         "source": "vhodne-uverejneni",
-        "source_id": "P25V00006718",
-        "procurement_id": "P25V00006718",
-        "source_url": "https://www.vhodne-uverejneni.cz/zakazka/nemocnice-nasledne-pece-lomnice-nad-popelkou-investice-a-opravy",
-        "title": "Nemocnice následné péče Lomnice nad Popelkou – investice a opravy",
+        "source_id": "P25V000?",
+        "procurement_id": "P25V000?",
+        "source_url": null,
+        "title": "Rekonstrukce technologie kotelny v budově radnice č.p. 6, Husovo náměstí v Lomnici nad Popelkou",
         "buyer_ico": "00275905",
         "supplier_ico": null,
         "supplier_name": null,
-        "date": "2025-07-22",
+        "date": "2025-08-27",
         "price": null,
-        "status": "zakázka byla zrušena (Vyhodnocování)",
+        "status": "ukončeno plnění smlouvy",
         "type": "tender",
         "raw": {
           "source": "vhodne-uverejneni",
-          "source_id": "P25V00006718",
-          "procurement_id": "P25V00006718",
-          "source_url": "https://www.vhodne-uverejneni.cz/zakazka/nemocnice-nasledne-pece-lomnice-nad-popelkou-investice-a-opravy",
-          "title": "Nemocnice následné péče Lomnice nad Popelkou – investice a opravy",
+          "source_id": "P25V000?",
+          "procurement_id": "P25V000?",
+          "source_url": null,
+          "title": "Rekonstrukce technologie kotelny v budově radnice č.p. 6, Husovo náměstí v Lomnici nad Popelkou",
           "buyer_ico": "00275905",
           "supplier_ico": null,
           "supplier_name": null,
-          "date": "2025-07-22",
+          "date": "2025-08-27",
           "price": null,
-          "status": "zakázka byla zrušena (Vyhodnocování)",
+          "status": "ukončeno plnění smlouvy",
           "type": "tender"
         },
-        "_source_file": "data/sources/vhodne-uverejneni/vu-000009.json"
+        "_source_file": "data/sources/vhodne-uverejneni/vu-000034.json"
       }
     }
   ],
   "analysis": {
     "schema_version": 4,
-    "project_id": "p-nemocnice-nasledne-pece-lomnice-nad-popelkou-investice-a-opravy-0132",
+    "project_id": "p-rekonstrukce-technologie-kotelny-v-budove-radnice-c-p-6-husovo-namesti-0117",
     "signal_count": 1,
     "signals": [
       {
@@ -93,11 +93,11 @@
     ],
     "timeline": [
       {
-        "date": "2025-07-22",
+        "date": "2025-08-27",
         "event": "tender",
         "source": "vhodne-uverejneni",
-        "source_id": "P25V00006718",
-        "title": "Nemocnice následné péče Lomnice nad Popelkou – investice a opravy",
+        "source_id": "P25V000?",
+        "title": "Rekonstrukce technologie kotelny v budově radnice č.p. 6, Husovo náměstí v Lomnici nad Popelkou",
         "price": null,
         "deadline": null
       }
@@ -115,7 +115,7 @@
       "supplier_count": 0,
       "price_values": [],
       "date_values": [
-        "2025-07-22"
+        "2025-08-27"
       ],
       "document_count": 0,
       "deadline_observations": 0

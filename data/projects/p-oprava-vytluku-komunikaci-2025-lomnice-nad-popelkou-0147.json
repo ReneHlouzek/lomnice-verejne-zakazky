@@ -1,21 +1,21 @@
 {
-  "id": "p-lomnice-n-p-ul-5-kvetna-destova-kanalizace-0127",
-  "title": "Lomnice n. P., ul. 5. května - dešťová kanalizace",
+  "id": "p-oprava-vytluku-komunikaci-2025-lomnice-nad-popelkou-0147",
+  "title": "Oprava výtluků komunikací 2025, Lomnice nad Popelkou",
   "buyer_ico": "00275905",
   "status": "plneni-smlouvy",
   "project_type": "procurement",
   "canonical": {
-    "title": "Lomnice n. P., ul. 5. května - dešťová kanalizace",
+    "title": "Oprava výtluků komunikací 2025, Lomnice nad Popelkou",
     "supplier_ico": null,
     "identifiers": [],
     "lifecycle": {
       "events": [
         {
-          "date": "2025-01-16",
+          "date": "2025-08-12",
           "type": "tender",
           "source": "vhodne-uverejneni",
           "source_id": null,
-          "title": "Lomnice n. P., ul. 5. května - dešťová kanalizace",
+          "title": "Oprava výtluků komunikací 2025, Lomnice nad Popelkou",
           "price": null
         }
       ],
@@ -27,13 +27,13 @@
     },
     "project_type": "procurement",
     "procurement_signal": {
-      "level": "none",
-      "label": "Bez rozpoznané vazby na zakázku",
-      "reason": "V dostupném textu nebyl nalezen dostatečný signál."
+      "level": "likely",
+      "label": "Pravděpodobně souvisí se zakázkou",
+      "reason": "Název/předmět odpovídá investiční dodávce, stavebním pracím nebo jiné běžné zadavatelské dodávce; způsob výběru dodavatele z tohoto záznamu sám o sobě neplyne."
     },
     "dates": {
-      "first_observed": "2025-01-16",
-      "last_observed": "2025-01-16"
+      "first_observed": "2025-08-12",
+      "last_observed": "2025-08-12"
     },
     "financial": {
       "observed_prices": [],
@@ -44,18 +44,18 @@
   },
   "sources": [
     {
-      "source_file": "data/sources/vhodne-uverejneni/vu-000028.json",
+      "source_file": "data/sources/vhodne-uverejneni/vu-000024.json",
       "source_id": null,
       "record": {
         "source": "vhodne-uverejneni",
         "source_id": null,
         "procurement_id": null,
-        "source_url": "https://www.vhodne-uverejneni.cz/zakazka/lomnice-n-p-ul-5-kvetna-destova-kanalizace",
-        "title": "Lomnice n. P., ul. 5. května - dešťová kanalizace",
+        "source_url": "https://www.vhodne-uverejneni.cz/zakazka/oprava-vytluku-komunikaci-2025-lomnice-nad-popelkou",
+        "title": "Oprava výtluků komunikací 2025, Lomnice nad Popelkou",
         "buyer_ico": "00275905",
         "supplier_ico": null,
         "supplier_name": null,
-        "date": "2025-01-16",
+        "date": "2025-08-12",
         "price": null,
         "status": "plnění smlouvy",
         "type": "tender",
@@ -63,23 +63,23 @@
           "source": "vhodne-uverejneni",
           "source_id": null,
           "procurement_id": null,
-          "source_url": "https://www.vhodne-uverejneni.cz/zakazka/lomnice-n-p-ul-5-kvetna-destova-kanalizace",
-          "title": "Lomnice n. P., ul. 5. května - dešťová kanalizace",
+          "source_url": "https://www.vhodne-uverejneni.cz/zakazka/oprava-vytluku-komunikaci-2025-lomnice-nad-popelkou",
+          "title": "Oprava výtluků komunikací 2025, Lomnice nad Popelkou",
           "buyer_ico": "00275905",
           "supplier_ico": null,
           "supplier_name": null,
-          "date": "2025-01-16",
+          "date": "2025-08-12",
           "price": null,
           "status": "plnění smlouvy",
           "type": "tender"
         },
-        "_source_file": "data/sources/vhodne-uverejneni/vu-000028.json"
+        "_source_file": "data/sources/vhodne-uverejneni/vu-000024.json"
       }
     }
   ],
   "analysis": {
     "schema_version": 4,
-    "project_id": "p-lomnice-n-p-ul-5-kvetna-destova-kanalizace-0127",
+    "project_id": "p-oprava-vytluku-komunikaci-2025-lomnice-nad-popelkou-0147",
     "signal_count": 1,
     "signals": [
       {
@@ -91,11 +91,11 @@
     ],
     "timeline": [
       {
-        "date": "2025-01-16",
+        "date": "2025-08-12",
         "event": "tender",
         "source": "vhodne-uverejneni",
         "source_id": null,
-        "title": "Lomnice n. P., ul. 5. května - dešťová kanalizace",
+        "title": "Oprava výtluků komunikací 2025, Lomnice nad Popelkou",
         "price": null,
         "deadline": null
       }
@@ -113,7 +113,7 @@
       "supplier_count": 0,
       "price_values": [],
       "date_values": [
-        "2025-01-16"
+        "2025-08-12"
       ],
       "document_count": 0,
       "deadline_observations": 0

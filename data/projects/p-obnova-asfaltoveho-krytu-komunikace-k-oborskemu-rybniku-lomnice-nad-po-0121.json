@@ -1,21 +1,21 @@
 {
-  "id": "p-rekonstrukce-topneho-systemu-vcetne-zdroje-tepla-v-objektu-k-urnovemu-0137",
-  "title": "Rekonstrukce topného systému včetně zdroje tepla v objektu K Urnovému háji čp. 118, Lomnice nad Popelkou",
+  "id": "p-obnova-asfaltoveho-krytu-komunikace-k-oborskemu-rybniku-lomnice-nad-po-0121",
+  "title": "Obnova asfaltového krytu komunikace k Oborskému rybníku, Lomnice nad Popelkou",
   "buyer_ico": "00275905",
   "status": "plneni-smlouvy",
   "project_type": "procurement",
   "canonical": {
-    "title": "Rekonstrukce topného systému včetně zdroje tepla v objektu K Urnovému háji čp. 118, Lomnice nad Popelkou",
+    "title": "Obnova asfaltového krytu komunikace k Oborskému rybníku, Lomnice nad Popelkou",
     "supplier_ico": null,
     "identifiers": [],
     "lifecycle": {
       "events": [
         {
-          "date": "2026-07-02",
+          "date": "2024-06-27",
           "type": "tender",
           "source": "vhodne-uverejneni",
           "source_id": null,
-          "title": "Rekonstrukce topného systému včetně zdroje tepla v objektu K Urnovému háji čp. 118, Lomnice nad Popelkou",
+          "title": "Obnova asfaltového krytu komunikace k Oborskému rybníku, Lomnice nad Popelkou",
           "price": null
         }
       ],
@@ -32,8 +32,8 @@
       "reason": "Název/předmět odpovídá investiční dodávce, stavebním pracím nebo jiné běžné zadavatelské dodávce; způsob výběru dodavatele z tohoto záznamu sám o sobě neplyne."
     },
     "dates": {
-      "first_observed": "2026-07-02",
-      "last_observed": "2026-07-02"
+      "first_observed": "2024-06-27",
+      "last_observed": "2024-06-27"
     },
     "financial": {
       "observed_prices": [],
@@ -44,18 +44,18 @@
   },
   "sources": [
     {
-      "source_file": "data/sources/vhodne-uverejneni/vu-000014.json",
+      "source_file": "data/sources/vhodne-uverejneni/vu-000033.json",
       "source_id": null,
       "record": {
         "source": "vhodne-uverejneni",
         "source_id": null,
         "procurement_id": null,
-        "source_url": "https://www.vhodne-uverejneni.cz/zakazka/rekonstrukce-topneho-systemu-vcetne-zdroje-tepla-v-objektu-k-urnovemu-haji-cp-118-lomnice-nad-popelkou",
-        "title": "Rekonstrukce topného systému včetně zdroje tepla v objektu K Urnovému háji čp. 118, Lomnice nad Popelkou",
+        "source_url": "https://www.vhodne-uverejneni.cz/zakazka/obnova-asfaltoveho-krytu-komunikace-k-oborskemu-rybniku-lomnice-nad-popelkou",
+        "title": "Obnova asfaltového krytu komunikace k Oborskému rybníku, Lomnice nad Popelkou",
         "buyer_ico": "00275905",
         "supplier_ico": null,
         "supplier_name": null,
-        "date": "2026-07-02",
+        "date": "2024-06-27",
         "price": null,
         "status": "plnění smlouvy",
         "type": "tender",
@@ -63,23 +63,23 @@
           "source": "vhodne-uverejneni",
           "source_id": null,
           "procurement_id": null,
-          "source_url": "https://www.vhodne-uverejneni.cz/zakazka/rekonstrukce-topneho-systemu-vcetne-zdroje-tepla-v-objektu-k-urnovemu-haji-cp-118-lomnice-nad-popelkou",
-          "title": "Rekonstrukce topného systému včetně zdroje tepla v objektu K Urnovému háji čp. 118, Lomnice nad Popelkou",
+          "source_url": "https://www.vhodne-uverejneni.cz/zakazka/obnova-asfaltoveho-krytu-komunikace-k-oborskemu-rybniku-lomnice-nad-popelkou",
+          "title": "Obnova asfaltového krytu komunikace k Oborskému rybníku, Lomnice nad Popelkou",
           "buyer_ico": "00275905",
           "supplier_ico": null,
           "supplier_name": null,
-          "date": "2026-07-02",
+          "date": "2024-06-27",
           "price": null,
           "status": "plnění smlouvy",
           "type": "tender"
         },
-        "_source_file": "data/sources/vhodne-uverejneni/vu-000014.json"
+        "_source_file": "data/sources/vhodne-uverejneni/vu-000033.json"
       }
     }
   ],
   "analysis": {
     "schema_version": 4,
-    "project_id": "p-rekonstrukce-topneho-systemu-vcetne-zdroje-tepla-v-objektu-k-urnovemu-0137",
+    "project_id": "p-obnova-asfaltoveho-krytu-komunikace-k-oborskemu-rybniku-lomnice-nad-po-0121",
     "signal_count": 1,
     "signals": [
       {
@@ -91,11 +91,11 @@
     ],
     "timeline": [
       {
-        "date": "2026-07-02",
+        "date": "2024-06-27",
         "event": "tender",
         "source": "vhodne-uverejneni",
         "source_id": null,
-        "title": "Rekonstrukce topného systému včetně zdroje tepla v objektu K Urnovému háji čp. 118, Lomnice nad Popelkou",
+        "title": "Obnova asfaltového krytu komunikace k Oborskému rybníku, Lomnice nad Popelkou",
         "price": null,
         "deadline": null
       }
@@ -113,7 +113,7 @@
       "supplier_count": 0,
       "price_values": [],
       "date_values": [
-        "2026-07-02"
+        "2024-06-27"
       ],
       "document_count": 0,
       "deadline_observations": 0

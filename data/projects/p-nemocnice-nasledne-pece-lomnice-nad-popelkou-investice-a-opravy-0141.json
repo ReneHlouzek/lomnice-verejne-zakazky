@@ -1,21 +1,23 @@
 {
-  "id": "p-koupe-pozemku-p-p-c-453-v-k-u-lomnice-nad-popelkou-0124",
-  "title": "Koupě pozemku p. p. č. 453 v k. ú. Lomnice nad Popelkou",
+  "id": "p-nemocnice-nasledne-pece-lomnice-nad-popelkou-investice-a-opravy-0141",
+  "title": "Nemocnice následné péče Lomnice nad Popelkou – investice a opravy",
   "buyer_ico": "00275905",
   "status": "plneni-smlouvy",
   "project_type": "procurement",
   "canonical": {
-    "title": "Koupě pozemku p. p. č. 453 v k. ú. Lomnice nad Popelkou",
+    "title": "Nemocnice následné péče Lomnice nad Popelkou – investice a opravy",
     "supplier_ico": null,
-    "identifiers": [],
+    "identifiers": [
+      "P26V00002929"
+    ],
     "lifecycle": {
       "events": [
         {
-          "date": "2024-07-22",
+          "date": "2026-05-04",
           "type": "tender",
           "source": "vhodne-uverejneni",
-          "source_id": null,
-          "title": "Koupě pozemku p. p. č. 453 v k. ú. Lomnice nad Popelkou",
+          "source_id": "P26V00002929",
+          "title": "Nemocnice následné péče Lomnice nad Popelkou – investice a opravy",
           "price": null
         }
       ],
@@ -27,13 +29,13 @@
     },
     "project_type": "procurement",
     "procurement_signal": {
-      "level": "none",
-      "label": "Bez rozpoznané vazby na zakázku",
-      "reason": "V dostupném textu nebyl nalezen dostatečný signál."
+      "level": "explicit",
+      "label": "Výslovná vazba na veřejnou zakázku",
+      "reason": "Zdrojový text obsahuje přímou zmínku o veřejné zakázce, výběru nebo zadávacím řízení."
     },
     "dates": {
-      "first_observed": "2024-07-22",
-      "last_observed": "2024-07-22"
+      "first_observed": "2026-05-04",
+      "last_observed": "2026-05-04"
     },
     "financial": {
       "observed_prices": [],
@@ -44,42 +46,42 @@
   },
   "sources": [
     {
-      "source_file": "data/sources/vhodne-uverejneni/vu-000032.json",
-      "source_id": null,
+      "source_file": "data/sources/vhodne-uverejneni/vu-000008.json",
+      "source_id": "P26V00002929",
       "record": {
         "source": "vhodne-uverejneni",
-        "source_id": null,
-        "procurement_id": null,
-        "source_url": "https://www.vhodne-uverejneni.cz/zakazka/koupe-pozemku-p-p-c-453-v-k-u-lomnice-nad-popelkou",
-        "title": "Koupě pozemku p. p. č. 453 v k. ú. Lomnice nad Popelkou",
+        "source_id": "P26V00002929",
+        "procurement_id": "P26V00002929",
+        "source_url": "https://www.vhodne-uverejneni.cz/zakazka/nemocnice-nasledne-pece-lomnice-nad-popelkou-investice-a-opravy",
+        "title": "Nemocnice následné péče Lomnice nad Popelkou – investice a opravy",
         "buyer_ico": "00275905",
         "supplier_ico": null,
         "supplier_name": null,
-        "date": "2024-07-22",
+        "date": "2026-05-04",
         "price": null,
-        "status": "plnění smlouvy",
+        "status": "zakázka byla zadána (Plnění smlouvy)",
         "type": "tender",
         "raw": {
           "source": "vhodne-uverejneni",
-          "source_id": null,
-          "procurement_id": null,
-          "source_url": "https://www.vhodne-uverejneni.cz/zakazka/koupe-pozemku-p-p-c-453-v-k-u-lomnice-nad-popelkou",
-          "title": "Koupě pozemku p. p. č. 453 v k. ú. Lomnice nad Popelkou",
+          "source_id": "P26V00002929",
+          "procurement_id": "P26V00002929",
+          "source_url": "https://www.vhodne-uverejneni.cz/zakazka/nemocnice-nasledne-pece-lomnice-nad-popelkou-investice-a-opravy",
+          "title": "Nemocnice následné péče Lomnice nad Popelkou – investice a opravy",
           "buyer_ico": "00275905",
           "supplier_ico": null,
           "supplier_name": null,
-          "date": "2024-07-22",
+          "date": "2026-05-04",
           "price": null,
-          "status": "plnění smlouvy",
+          "status": "zakázka byla zadána (Plnění smlouvy)",
           "type": "tender"
         },
-        "_source_file": "data/sources/vhodne-uverejneni/vu-000032.json"
+        "_source_file": "data/sources/vhodne-uverejneni/vu-000008.json"
       }
     }
   ],
   "analysis": {
     "schema_version": 4,
-    "project_id": "p-koupe-pozemku-p-p-c-453-v-k-u-lomnice-nad-popelkou-0124",
+    "project_id": "p-nemocnice-nasledne-pece-lomnice-nad-popelkou-investice-a-opravy-0141",
     "signal_count": 1,
     "signals": [
       {
@@ -91,11 +93,11 @@
     ],
     "timeline": [
       {
-        "date": "2024-07-22",
+        "date": "2026-05-04",
         "event": "tender",
         "source": "vhodne-uverejneni",
-        "source_id": null,
-        "title": "Koupě pozemku p. p. č. 453 v k. ú. Lomnice nad Popelkou",
+        "source_id": "P26V00002929",
+        "title": "Nemocnice následné péče Lomnice nad Popelkou – investice a opravy",
         "price": null,
         "deadline": null
       }
@@ -113,7 +115,7 @@
       "supplier_count": 0,
       "price_values": [],
       "date_values": [
-        "2024-07-22"
+        "2026-05-04"
       ],
       "document_count": 0,
       "deadline_observations": 0

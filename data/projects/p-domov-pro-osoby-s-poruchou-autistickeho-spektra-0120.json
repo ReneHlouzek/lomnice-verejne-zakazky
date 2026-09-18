@@ -1,21 +1,21 @@
 {
-  "id": "p-koupe-spoluvlastnickeho-podilu-id-1-2-na-krizove-vile-0120",
-  "title": "Koupě spoluvlastnického podílu id. 1/2 na Křížově vile",
+  "id": "p-domov-pro-osoby-s-poruchou-autistickeho-spektra-0120",
+  "title": "Domov pro osoby s poruchou autistického spektra",
   "buyer_ico": "00275905",
-  "status": "plneni-smlouvy",
+  "status": "ukonceno-plneni",
   "project_type": "procurement",
   "canonical": {
-    "title": "Koupě spoluvlastnického podílu id. 1/2 na Křížově vile",
+    "title": "Domov pro osoby s poruchou autistického spektra",
     "supplier_ico": null,
     "identifiers": [],
     "lifecycle": {
       "events": [
         {
-          "date": "2025-12-11",
+          "date": "2020-06-30",
           "type": "tender",
           "source": "vhodne-uverejneni",
           "source_id": null,
-          "title": "Koupě spoluvlastnického podílu id. 1/2 na Křížově vile",
+          "title": "Domov pro osoby s poruchou autistického spektra",
           "price": null
         }
       ],
@@ -32,8 +32,8 @@
       "reason": "V dostupném textu nebyl nalezen dostatečný signál."
     },
     "dates": {
-      "first_observed": "2025-12-11",
-      "last_observed": "2025-12-11"
+      "first_observed": "2020-06-30",
+      "last_observed": "2020-06-30"
     },
     "financial": {
       "observed_prices": [],
@@ -44,42 +44,42 @@
   },
   "sources": [
     {
-      "source_file": "data/sources/vhodne-uverejneni/vu-000022.json",
+      "source_file": "data/sources/vhodne-uverejneni/vu-000038.json",
       "source_id": null,
       "record": {
         "source": "vhodne-uverejneni",
         "source_id": null,
         "procurement_id": null,
-        "source_url": "https://www.vhodne-uverejneni.cz/zakazka/koupe-spoluvlastnickeho-podilu-id-1-2-na-krizove-vile",
-        "title": "Koupě spoluvlastnického podílu id. 1/2 na Křížově vile",
+        "source_url": null,
+        "title": "Domov pro osoby s poruchou autistického spektra",
         "buyer_ico": "00275905",
         "supplier_ico": null,
         "supplier_name": null,
-        "date": "2025-12-11",
+        "date": "2020-06-30",
         "price": null,
-        "status": "plnění smlouvy",
+        "status": "ukončeno plnění smlouvy",
         "type": "tender",
         "raw": {
           "source": "vhodne-uverejneni",
           "source_id": null,
           "procurement_id": null,
-          "source_url": "https://www.vhodne-uverejneni.cz/zakazka/koupe-spoluvlastnickeho-podilu-id-1-2-na-krizove-vile",
-          "title": "Koupě spoluvlastnického podílu id. 1/2 na Křížově vile",
+          "source_url": null,
+          "title": "Domov pro osoby s poruchou autistického spektra",
           "buyer_ico": "00275905",
           "supplier_ico": null,
           "supplier_name": null,
-          "date": "2025-12-11",
+          "date": "2020-06-30",
           "price": null,
-          "status": "plnění smlouvy",
+          "status": "ukončeno plnění smlouvy",
           "type": "tender"
         },
-        "_source_file": "data/sources/vhodne-uverejneni/vu-000022.json"
+        "_source_file": "data/sources/vhodne-uverejneni/vu-000038.json"
       }
     }
   ],
   "analysis": {
     "schema_version": 4,
-    "project_id": "p-koupe-spoluvlastnickeho-podilu-id-1-2-na-krizove-vile-0120",
+    "project_id": "p-domov-pro-osoby-s-poruchou-autistickeho-spektra-0120",
     "signal_count": 1,
     "signals": [
       {
@@ -91,11 +91,11 @@
     ],
     "timeline": [
       {
-        "date": "2025-12-11",
+        "date": "2020-06-30",
         "event": "tender",
         "source": "vhodne-uverejneni",
         "source_id": null,
-        "title": "Koupě spoluvlastnického podílu id. 1/2 na Křížově vile",
+        "title": "Domov pro osoby s poruchou autistického spektra",
         "price": null,
         "deadline": null
       }
@@ -113,7 +113,7 @@
       "supplier_count": 0,
       "price_values": [],
       "date_values": [
-        "2025-12-11"
+        "2020-06-30"
       ],
       "document_count": 0,
       "deadline_observations": 0

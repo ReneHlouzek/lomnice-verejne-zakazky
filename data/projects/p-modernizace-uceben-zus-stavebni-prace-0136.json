@@ -1,24 +1,24 @@
 {
-  "id": "p-vo-kosov-podzemni-cast-0141",
-  "title": "VO Košov - podzemní část",
+  "id": "p-modernizace-uceben-zus-stavebni-prace-0136",
+  "title": "Modernizace UČEBEN ZUŠ - stavební práce",
   "buyer_ico": "00275905",
   "status": "plneni-smlouvy",
   "project_type": "procurement",
   "canonical": {
-    "title": "VO Košov - podzemní část",
-    "supplier_ico": "25298194",
+    "title": "Modernizace UČEBEN ZUŠ - stavební práce",
+    "supplier_ico": "25937499",
     "identifiers": [
-      "P25V00005123"
+      "P25V00000799"
     ],
     "lifecycle": {
       "events": [
         {
-          "date": "2025-05-28",
+          "date": "2025-01-28",
           "type": "tender",
           "source": "vhodne-uverejneni",
-          "source_id": "P25V00005123",
-          "title": "VO Košov - podzemní část",
-          "price": 1047745.0
+          "source_id": "P25V00000799",
+          "title": "Modernizace UČEBEN ZUŠ - stavební práce",
+          "price": 15485071.64
         }
       ],
       "event_count": 1,
@@ -34,8 +34,8 @@
       "reason": "Zdrojový text obsahuje přímou zmínku o veřejné zakázce, výběru nebo zadávacím řízení."
     },
     "dates": {
-      "first_observed": "2025-05-28",
-      "last_observed": "2025-05-28"
+      "first_observed": "2025-01-28",
+      "last_observed": "2025-01-28"
     },
     "financial": {
       "observed_prices": [],
@@ -46,42 +46,42 @@
   },
   "sources": [
     {
-      "source_file": "data/sources/vhodne-uverejneni/vu-000003.json",
-      "source_id": "P25V00005123",
+      "source_file": "data/sources/vhodne-uverejneni/vu-000001.json",
+      "source_id": "P25V00000799",
       "record": {
         "source": "vhodne-uverejneni",
-        "source_id": "P25V00005123",
-        "procurement_id": "P25V00005123",
-        "source_url": "https://www.vhodne-uverejneni.cz/zakazka/vo-kosov-podzemni-cast",
-        "title": "VO Košov - podzemní část",
+        "source_id": "P25V00000799",
+        "procurement_id": "P25V00000799",
+        "source_url": "https://www.vhodne-uverejneni.cz/zakazka/modernizace-uceben-zus-stavebni-prace",
+        "title": "Modernizace UČEBEN ZUŠ - stavební práce",
         "buyer_ico": "00275905",
-        "supplier_ico": "25298194",
-        "supplier_name": "RYDVAL - ELEKTRO s.r.o.",
-        "date": "2025-05-28",
-        "price": 1047745.0,
+        "supplier_ico": "25937499",
+        "supplier_name": "REDOMO a.s.",
+        "date": "2025-01-28",
+        "price": 15485071.64,
         "status": "zakázka byla zadána (Plnění smlouvy)",
         "type": "tender",
         "raw": {
           "source": "vhodne-uverejneni",
-          "source_id": "P25V00005123",
-          "procurement_id": "P25V00005123",
-          "source_url": "https://www.vhodne-uverejneni.cz/zakazka/vo-kosov-podzemni-cast",
-          "title": "VO Košov - podzemní část",
+          "source_id": "P25V00000799",
+          "procurement_id": "P25V00000799",
+          "source_url": "https://www.vhodne-uverejneni.cz/zakazka/modernizace-uceben-zus-stavebni-prace",
+          "title": "Modernizace UČEBEN ZUŠ - stavební práce",
           "buyer_ico": "00275905",
-          "supplier_ico": "25298194",
-          "supplier_name": "RYDVAL - ELEKTRO s.r.o.",
-          "date": "2025-05-28",
-          "price": 1047745,
+          "supplier_ico": "25937499",
+          "supplier_name": "REDOMO a.s.",
+          "date": "2025-01-28",
+          "price": 15485071.64,
           "status": "zakázka byla zadána (Plnění smlouvy)",
           "type": "tender"
         },
-        "_source_file": "data/sources/vhodne-uverejneni/vu-000003.json"
+        "_source_file": "data/sources/vhodne-uverejneni/vu-000001.json"
       }
     }
   ],
   "analysis": {
     "schema_version": 4,
-    "project_id": "p-vo-kosov-podzemni-cast-0141",
+    "project_id": "p-modernizace-uceben-zus-stavebni-prace-0136",
     "signal_count": 1,
     "signals": [
       {
@@ -93,22 +93,22 @@
     ],
     "timeline": [
       {
-        "date": "2025-05-28",
+        "date": "2025-01-28",
         "event": "tender",
         "source": "vhodne-uverejneni",
-        "source_id": "P25V00005123",
-        "title": "VO Košov - podzemní část",
-        "price": 1047745.0,
+        "source_id": "P25V00000799",
+        "title": "Modernizace UČEBEN ZUŠ - stavební práce",
+        "price": 15485071.64,
         "deadline": null
       }
     ],
     "financial": {
-      "baseline_price": 1047745.0,
-      "current_observed_price": 1047745.0,
+      "baseline_price": 15485071.64,
+      "current_observed_price": 15485071.64,
       "absolute_change": 0.0,
       "percent_change": null,
       "observed_prices": [
-        1047745.0
+        15485071.64
       ],
       "addendum_count": 0
     },
@@ -116,10 +116,10 @@
       "source_count": 1,
       "supplier_count": 1,
       "price_values": [
-        1047745.0
+        15485071.64
       ],
       "date_values": [
-        "2025-05-28"
+        "2025-01-28"
       ],
       "document_count": 0,
       "deadline_observations": 0

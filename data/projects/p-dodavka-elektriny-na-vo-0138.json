@@ -1,21 +1,21 @@
 {
-  "id": "p-rekonstrukce-sk-dt-a-vss-v-budove-zus-lomnice-nad-popelkou-0139",
-  "title": "Rekonstrukce SK, DT a VSS v budově ZUŠ, Lomnice nad Popelkou",
+  "id": "p-dodavka-elektriny-na-vo-0138",
+  "title": "Dodávka elektřiny na VO",
   "buyer_ico": "00275905",
   "status": "plneni-smlouvy",
   "project_type": "procurement",
   "canonical": {
-    "title": "Rekonstrukce SK, DT a VSS v budově ZUŠ, Lomnice nad Popelkou",
+    "title": "Dodávka elektřiny na VO",
     "supplier_ico": null,
     "identifiers": [],
     "lifecycle": {
       "events": [
         {
-          "date": "2026-07-09",
+          "date": "2025-12-19",
           "type": "tender",
           "source": "vhodne-uverejneni",
           "source_id": null,
-          "title": "Rekonstrukce SK, DT a VSS v budově ZUŠ, Lomnice nad Popelkou",
+          "title": "Dodávka elektřiny na VO",
           "price": null
         }
       ],
@@ -32,8 +32,8 @@
       "reason": "Název/předmět odpovídá investiční dodávce, stavebním pracím nebo jiné běžné zadavatelské dodávce; způsob výběru dodavatele z tohoto záznamu sám o sobě neplyne."
     },
     "dates": {
-      "first_observed": "2026-07-09",
-      "last_observed": "2026-07-09"
+      "first_observed": "2025-12-19",
+      "last_observed": "2025-12-19"
     },
     "financial": {
       "observed_prices": [],
@@ -44,18 +44,18 @@
   },
   "sources": [
     {
-      "source_file": "data/sources/vhodne-uverejneni/vu-000013.json",
+      "source_file": "data/sources/vhodne-uverejneni/vu-000021.json",
       "source_id": null,
       "record": {
         "source": "vhodne-uverejneni",
         "source_id": null,
         "procurement_id": null,
-        "source_url": "https://www.vhodne-uverejneni.cz/zakazka/rekonstrukce-sk-dt-a-vss-v-budove-zus-lomnice-nad-popelkou",
-        "title": "Rekonstrukce SK, DT a VSS v budově ZUŠ, Lomnice nad Popelkou",
+        "source_url": "https://www.vhodne-uverejneni.cz/zakazka/dodavka-elektriny-na-vo",
+        "title": "Dodávka elektřiny na VO",
         "buyer_ico": "00275905",
         "supplier_ico": null,
         "supplier_name": null,
-        "date": "2026-07-09",
+        "date": "2025-12-19",
         "price": null,
         "status": "plnění smlouvy",
         "type": "tender",
@@ -63,23 +63,23 @@
           "source": "vhodne-uverejneni",
           "source_id": null,
           "procurement_id": null,
-          "source_url": "https://www.vhodne-uverejneni.cz/zakazka/rekonstrukce-sk-dt-a-vss-v-budove-zus-lomnice-nad-popelkou",
-          "title": "Rekonstrukce SK, DT a VSS v budově ZUŠ, Lomnice nad Popelkou",
+          "source_url": "https://www.vhodne-uverejneni.cz/zakazka/dodavka-elektriny-na-vo",
+          "title": "Dodávka elektřiny na VO",
           "buyer_ico": "00275905",
           "supplier_ico": null,
           "supplier_name": null,
-          "date": "2026-07-09",
+          "date": "2025-12-19",
           "price": null,
           "status": "plnění smlouvy",
           "type": "tender"
         },
-        "_source_file": "data/sources/vhodne-uverejneni/vu-000013.json"
+        "_source_file": "data/sources/vhodne-uverejneni/vu-000021.json"
       }
     }
   ],
   "analysis": {
     "schema_version": 4,
-    "project_id": "p-rekonstrukce-sk-dt-a-vss-v-budove-zus-lomnice-nad-popelkou-0139",
+    "project_id": "p-dodavka-elektriny-na-vo-0138",
     "signal_count": 1,
     "signals": [
       {
@@ -91,11 +91,11 @@
     ],
     "timeline": [
       {
-        "date": "2026-07-09",
+        "date": "2025-12-19",
         "event": "tender",
         "source": "vhodne-uverejneni",
         "source_id": null,
-        "title": "Rekonstrukce SK, DT a VSS v budově ZUŠ, Lomnice nad Popelkou",
+        "title": "Dodávka elektřiny na VO",
         "price": null,
         "deadline": null
       }
@@ -113,7 +113,7 @@
       "supplier_count": 0,
       "price_values": [],
       "date_values": [
-        "2026-07-09"
+        "2025-12-19"
       ],
       "document_count": 0,
       "deadline_observations": 0

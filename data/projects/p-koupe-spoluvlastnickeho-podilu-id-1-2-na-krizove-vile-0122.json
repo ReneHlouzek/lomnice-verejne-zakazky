@@ -1,21 +1,21 @@
 {
-  "id": "p-vymena-oken-zus-lomnice-nad-popelkou-dodavka-a-montaz-0130",
-  "title": "Výměna oken ZUŠ Lomnice nad Popelkou - dodávka a montáž",
+  "id": "p-koupe-spoluvlastnickeho-podilu-id-1-2-na-krizove-vile-0122",
+  "title": "Koupě spoluvlastnického podílu id. 1/2 na Křížově vile",
   "buyer_ico": "00275905",
   "status": "plneni-smlouvy",
   "project_type": "procurement",
   "canonical": {
-    "title": "Výměna oken ZUŠ Lomnice nad Popelkou - dodávka a montáž",
+    "title": "Koupě spoluvlastnického podílu id. 1/2 na Křížově vile",
     "supplier_ico": null,
     "identifiers": [],
     "lifecycle": {
       "events": [
         {
-          "date": "2026-06-05",
+          "date": "2025-12-11",
           "type": "tender",
           "source": "vhodne-uverejneni",
           "source_id": null,
-          "title": "Výměna oken ZUŠ Lomnice nad Popelkou - dodávka a montáž",
+          "title": "Koupě spoluvlastnického podílu id. 1/2 na Křížově vile",
           "price": null
         }
       ],
@@ -27,13 +27,13 @@
     },
     "project_type": "procurement",
     "procurement_signal": {
-      "level": "likely",
-      "label": "Pravděpodobně souvisí se zakázkou",
-      "reason": "Název/předmět odpovídá investiční dodávce, stavebním pracím nebo jiné běžné zadavatelské dodávce; způsob výběru dodavatele z tohoto záznamu sám o sobě neplyne."
+      "level": "none",
+      "label": "Bez rozpoznané vazby na zakázku",
+      "reason": "V dostupném textu nebyl nalezen dostatečný signál."
     },
     "dates": {
-      "first_observed": "2026-06-05",
-      "last_observed": "2026-06-05"
+      "first_observed": "2025-12-11",
+      "last_observed": "2025-12-11"
     },
     "financial": {
       "observed_prices": [],
@@ -44,18 +44,18 @@
   },
   "sources": [
     {
-      "source_file": "data/sources/vhodne-uverejneni/vu-000016.json",
+      "source_file": "data/sources/vhodne-uverejneni/vu-000022.json",
       "source_id": null,
       "record": {
         "source": "vhodne-uverejneni",
         "source_id": null,
         "procurement_id": null,
-        "source_url": "https://www.vhodne-uverejneni.cz/zakazka/vymena-oken-zus-lomnice-nad-popelkou-dodavka-a-montaz",
-        "title": "Výměna oken ZUŠ Lomnice nad Popelkou - dodávka a montáž",
+        "source_url": "https://www.vhodne-uverejneni.cz/zakazka/koupe-spoluvlastnickeho-podilu-id-1-2-na-krizove-vile",
+        "title": "Koupě spoluvlastnického podílu id. 1/2 na Křížově vile",
         "buyer_ico": "00275905",
         "supplier_ico": null,
         "supplier_name": null,
-        "date": "2026-06-05",
+        "date": "2025-12-11",
         "price": null,
         "status": "plnění smlouvy",
         "type": "tender",
@@ -63,23 +63,23 @@
           "source": "vhodne-uverejneni",
           "source_id": null,
           "procurement_id": null,
-          "source_url": "https://www.vhodne-uverejneni.cz/zakazka/vymena-oken-zus-lomnice-nad-popelkou-dodavka-a-montaz",
-          "title": "Výměna oken ZUŠ Lomnice nad Popelkou - dodávka a montáž",
+          "source_url": "https://www.vhodne-uverejneni.cz/zakazka/koupe-spoluvlastnickeho-podilu-id-1-2-na-krizove-vile",
+          "title": "Koupě spoluvlastnického podílu id. 1/2 na Křížově vile",
           "buyer_ico": "00275905",
           "supplier_ico": null,
           "supplier_name": null,
-          "date": "2026-06-05",
+          "date": "2025-12-11",
           "price": null,
           "status": "plnění smlouvy",
           "type": "tender"
         },
-        "_source_file": "data/sources/vhodne-uverejneni/vu-000016.json"
+        "_source_file": "data/sources/vhodne-uverejneni/vu-000022.json"
       }
     }
   ],
   "analysis": {
     "schema_version": 4,
-    "project_id": "p-vymena-oken-zus-lomnice-nad-popelkou-dodavka-a-montaz-0130",
+    "project_id": "p-koupe-spoluvlastnickeho-podilu-id-1-2-na-krizove-vile-0122",
     "signal_count": 1,
     "signals": [
       {
@@ -91,11 +91,11 @@
     ],
     "timeline": [
       {
-        "date": "2026-06-05",
+        "date": "2025-12-11",
         "event": "tender",
         "source": "vhodne-uverejneni",
         "source_id": null,
-        "title": "Výměna oken ZUŠ Lomnice nad Popelkou - dodávka a montáž",
+        "title": "Koupě spoluvlastnického podílu id. 1/2 na Křížově vile",
         "price": null,
         "deadline": null
       }
@@ -113,7 +113,7 @@
       "supplier_count": 0,
       "price_values": [],
       "date_values": [
-        "2026-06-05"
+        "2025-12-11"
       ],
       "document_count": 0,
       "deadline_observations": 0
