@@ -40,6 +40,13 @@ def test_group_score_checks_all_members():
     assert reason == "addendum_core_title"
 
 
+def test_generic_same_supplier_contracts_are_not_auto_merged():
+    a = {"title": "Veřejnoprávní smlouva o poskytnutí neinvestiční dotace z rozpočtu města", "supplier_ico": "49295934", "price": 500000}
+    b = {"title": "Veřejnoprávní smlouva o poskytnutí neinvestiční dotace z rozpočtu města - obnova vodovodu", "supplier_ico": "49295934", "price": 2880000}
+    score, reason, _ = resolver.score(a, b)
+    assert score < 0.82
+
+
 def test_lifecycle_classification():
     assert resolver.classify({"title": "Dodatek č. 2 ke smlouvě"}) == "addendum"
     assert resolver.classify({"title": "Smlouva o dílo"}) == "contract"
