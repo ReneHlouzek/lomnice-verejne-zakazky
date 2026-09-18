@@ -1,23 +1,21 @@
 {
-  "id": "p-nemocnice-nasledne-pece-lomnice-nad-popelkou-investice-a-opravy-0117",
-  "title": "Nemocnice následné péče Lomnice nad Popelkou – investice a opravy",
+  "id": "p-oprava-strechy-domu-c-p-32-ul-antala-staska-v-lomnici-nad-popelkou-0114",
+  "title": "Oprava střechy domu č.p. 32, ul. Antala Staška v Lomnici nad Popelkou",
   "buyer_ico": "00275905",
-  "status": "zruseno",
+  "status": "plneni-smlouvy",
   "project_type": "procurement",
   "canonical": {
-    "title": "Nemocnice následné péče Lomnice nad Popelkou – investice a opravy",
+    "title": "Oprava střechy domu č.p. 32, ul. Antala Staška v Lomnici nad Popelkou",
     "supplier_ico": null,
-    "identifiers": [
-      "P25V00006718"
-    ],
+    "identifiers": [],
     "lifecycle": {
       "events": [
         {
-          "date": "2025-07-22",
+          "date": "2024-09-02",
           "type": "tender",
           "source": "vhodne-uverejneni",
-          "source_id": "P25V00006718",
-          "title": "Nemocnice následné péče Lomnice nad Popelkou – investice a opravy",
+          "source_id": null,
+          "title": "Oprava střechy domu č.p. 32, ul. Antala Staška v Lomnici nad Popelkou",
           "price": null
         }
       ],
@@ -29,13 +27,13 @@
     },
     "project_type": "procurement",
     "procurement_signal": {
-      "level": "explicit",
-      "label": "Výslovná vazba na veřejnou zakázku",
-      "reason": "Zdrojový text obsahuje přímou zmínku o veřejné zakázce, výběru nebo zadávacím řízení."
+      "level": "likely",
+      "label": "Pravděpodobně souvisí se zakázkou",
+      "reason": "Název/předmět odpovídá investiční dodávce, stavebním pracím nebo jiné běžné zadavatelské dodávce; způsob výběru dodavatele z tohoto záznamu sám o sobě neplyne."
     },
     "dates": {
-      "first_observed": "2025-07-22",
-      "last_observed": "2025-07-22"
+      "first_observed": "2024-09-02",
+      "last_observed": "2024-09-02"
     },
     "financial": {
       "observed_prices": [],
@@ -46,42 +44,42 @@
   },
   "sources": [
     {
-      "source_file": "data/sources/vhodne-uverejneni/vu-000009.json",
-      "source_id": "P25V00006718",
+      "source_file": "data/sources/vhodne-uverejneni/vu-000029.json",
+      "source_id": null,
       "record": {
         "source": "vhodne-uverejneni",
-        "source_id": "P25V00006718",
-        "procurement_id": "P25V00006718",
-        "source_url": "https://www.vhodne-uverejneni.cz/zakazka/nemocnice-nasledne-pece-lomnice-nad-popelkou-investice-a-opravy",
-        "title": "Nemocnice následné péče Lomnice nad Popelkou – investice a opravy",
+        "source_id": null,
+        "procurement_id": null,
+        "source_url": "https://www.vhodne-uverejneni.cz/zakazka/oprava-strechy-domu-c-p-32-ul-antala-staska-v-lomnici-nad-popelkou",
+        "title": "Oprava střechy domu č.p. 32, ul. Antala Staška v Lomnici nad Popelkou",
         "buyer_ico": "00275905",
         "supplier_ico": null,
         "supplier_name": null,
-        "date": "2025-07-22",
+        "date": "2024-09-02",
         "price": null,
-        "status": "zakázka byla zrušena (Vyhodnocování)",
+        "status": "plnění smlouvy",
         "type": "tender",
         "raw": {
           "source": "vhodne-uverejneni",
-          "source_id": "P25V00006718",
-          "procurement_id": "P25V00006718",
-          "source_url": "https://www.vhodne-uverejneni.cz/zakazka/nemocnice-nasledne-pece-lomnice-nad-popelkou-investice-a-opravy",
-          "title": "Nemocnice následné péče Lomnice nad Popelkou – investice a opravy",
+          "source_id": null,
+          "procurement_id": null,
+          "source_url": "https://www.vhodne-uverejneni.cz/zakazka/oprava-strechy-domu-c-p-32-ul-antala-staska-v-lomnici-nad-popelkou",
+          "title": "Oprava střechy domu č.p. 32, ul. Antala Staška v Lomnici nad Popelkou",
           "buyer_ico": "00275905",
           "supplier_ico": null,
           "supplier_name": null,
-          "date": "2025-07-22",
+          "date": "2024-09-02",
           "price": null,
-          "status": "zakázka byla zrušena (Vyhodnocování)",
+          "status": "plnění smlouvy",
           "type": "tender"
         },
-        "_source_file": "data/sources/vhodne-uverejneni/vu-000009.json"
+        "_source_file": "data/sources/vhodne-uverejneni/vu-000029.json"
       }
     }
   ],
   "analysis": {
     "schema_version": 4,
-    "project_id": "p-nemocnice-nasledne-pece-lomnice-nad-popelkou-investice-a-opravy-0117",
+    "project_id": "p-oprava-strechy-domu-c-p-32-ul-antala-staska-v-lomnici-nad-popelkou-0114",
     "signal_count": 1,
     "signals": [
       {
@@ -93,11 +91,11 @@
     ],
     "timeline": [
       {
-        "date": "2025-07-22",
+        "date": "2024-09-02",
         "event": "tender",
         "source": "vhodne-uverejneni",
-        "source_id": "P25V00006718",
-        "title": "Nemocnice následné péče Lomnice nad Popelkou – investice a opravy",
+        "source_id": null,
+        "title": "Oprava střechy domu č.p. 32, ul. Antala Staška v Lomnici nad Popelkou",
         "price": null,
         "deadline": null
       }
@@ -115,7 +113,7 @@
       "supplier_count": 0,
       "price_values": [],
       "date_values": [
-        "2025-07-22"
+        "2024-09-02"
       ],
       "document_count": 0,
       "deadline_observations": 0
