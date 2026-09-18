@@ -26,6 +26,11 @@
       "dominant_type": "contract"
     },
     "project_type": "contract",
+    "procurement_signal": {
+      "level": "none",
+      "label": "Bez rozpoznané vazby na zakázku",
+      "reason": "V dostupném textu nebyl nalezen dostatečný signál."
+    },
     "dates": {
       "first_observed": "2021-07-19",
       "last_observed": "2021-07-19"

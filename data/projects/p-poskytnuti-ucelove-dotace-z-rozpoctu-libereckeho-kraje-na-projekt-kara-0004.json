@@ -35,6 +35,11 @@
       "dominant_type": "source_record"
     },
     "project_type": "contract_with_changes",
+    "procurement_signal": {
+      "level": "none",
+      "label": "Bez rozpoznané vazby na zakázku",
+      "reason": "V dostupném textu nebyl nalezen dostatečný signál."
+    },
     "dates": {
       "first_observed": "2021-07-14",
       "last_observed": "2023-11-13"

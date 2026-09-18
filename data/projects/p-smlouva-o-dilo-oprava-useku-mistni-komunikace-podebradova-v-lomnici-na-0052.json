@@ -26,6 +26,11 @@
       "dominant_type": "contract"
     },
     "project_type": "contract",
+    "procurement_signal": {
+      "level": "likely",
+      "label": "Pravděpodobně souvisí se zakázkou",
+      "reason": "Název/předmět odpovídá investiční dodávce, stavebním pracím nebo jiné běžné zadavatelské dodávce; způsob výběru dodavatele z tohoto záznamu sám o sobě neplyne."
+    },
     "dates": {
       "first_observed": "2026-04-10",
       "last_observed": "2026-04-10"

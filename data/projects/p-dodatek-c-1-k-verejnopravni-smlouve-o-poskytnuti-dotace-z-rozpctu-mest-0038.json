@@ -26,6 +26,11 @@
       "dominant_type": "addendum"
     },
     "project_type": "contract_with_changes",
+    "procurement_signal": {
+      "level": "none",
+      "label": "Bez rozpoznané vazby na zakázku",
+      "reason": "V dostupném textu nebyl nalezen dostatečný signál."
+    },
     "dates": {
       "first_observed": "2025-12-15",
       "last_observed": "2025-12-15"

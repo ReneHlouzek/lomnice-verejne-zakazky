@@ -26,6 +26,11 @@
       "dominant_type": "source_record"
     },
     "project_type": "other",
+    "procurement_signal": {
+      "level": "likely",
+      "label": "Pravděpodobně souvisí se zakázkou",
+      "reason": "Název/předmět odpovídá investiční dodávce, stavebním pracím nebo jiné běžné zadavatelské dodávce; způsob výběru dodavatele z tohoto záznamu sám o sobě neplyne."
+    },
     "dates": {
       "first_observed": "2018-01-19",
       "last_observed": "2018-01-19"

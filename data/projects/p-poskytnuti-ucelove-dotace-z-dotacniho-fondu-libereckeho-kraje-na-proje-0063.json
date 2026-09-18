@@ -26,6 +26,11 @@
       "dominant_type": "source_record"
     },
     "project_type": "other",
+    "procurement_signal": {
+      "level": "none",
+      "label": "Bez rozpoznané vazby na zakázku",
+      "reason": "V dostupném textu nebyl nalezen dostatečný signál."
+    },
     "dates": {
       "first_observed": "2024-06-19",
       "last_observed": "2024-06-19"
