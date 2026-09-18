@@ -1,6 +1,6 @@
 {
-  "source_records": 109,
-  "projects": 108,
+  "source_records": 119,
+  "projects": 118,
   "project_sizes": {
     "p-07-smlouva-o-poskytnuti-dotace-z-programu-7-2-0001": 1,
     "p-darovaci-smlouva-darovani-pozemku-vcetne-vyrazeneho-telesa-komunikace-0002": 1,
@@ -109,12 +109,23 @@
     "p-smlouva-o-poskytnuti-dotace-z-dflk-program-1-1-2026-0105": 1,
     "p-darovaci-smlouva-c-j-olp-3650-2019-darovani-pozemku-v-k-u-zelechy-0106": 1,
     "p-07-smlouva-o-poskytnuti-financniho-daru-mestu-lomnice-nad-popelkou-pro-0107": 1,
-    "p-smlouva-o-smlouve-budouci-o-zrizeni-sluzebnosti-c-j-olp-3553-2023-reko-0108": 1
+    "p-smlouva-o-smlouve-budouci-o-zrizeni-sluzebnosti-c-j-olp-3553-2023-reko-0108": 1,
+    "p-soh-a-zazemi-ps-lomnice-nad-popelkou-0109": 1,
+    "p-nastupni-misto-kosov-a-rvacov-lomnice-nad-popelkou-0110": 1,
+    "p-revitalizace-rybnika-matous-a-jeho-okoli-v-lomnici-nad-popelkou-0111": 1,
+    "p-pojisteni-majetku-mesta-jeho-prispevkovych-organizaci-a-jejich-pojiste-0112": 1,
+    "p-stavebni-prace-pri-vymene-oken-a-upravy-3-np-cp-61-lomnice-nad-popelko-0113": 1,
+    "p-modernizace-uceben-zus-stavebni-prace-0114": 1,
+    "p-sanace-budovy-cp-61-lomnice-nad-popelkou-od-zemni-vlhkosti-0115": 1,
+    "p-oprava-fasady-sportovni-haly-cp-999-ul-za-skolou-v-lomnici-nad-popelko-0116": 1,
+    "p-nemocnice-nasledne-pece-lomnice-nad-popelkou-investice-a-opravy-0117": 1,
+    "p-vo-kosov-podzemni-cast-0118": 1
   },
   "classifications": {
-    "contract": 69,
+    "contract": 71,
     "contract_with_changes": 14,
-    "other": 25
+    "other": 25,
+    "procurement": 8
   },
   "candidate_count": 151
 }

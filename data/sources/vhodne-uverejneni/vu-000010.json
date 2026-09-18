@@ -1,0 +1,28 @@
+{
+  "source": "vhodne-uverejneni",
+  "source_id": "P26-REG-105575",
+  "procurement_id": null,
+  "source_url": "https://www.vhodne-uverejneni.cz/zakazka/stavebni-prace-pri-vymene-oken-a-upravy-3-np-cp-61-lomnice-nad-popelkou",
+  "title": "Stavební práce při výměně oken a úpravy 3. NP čp. 61, Lomnice nad Popelkou",
+  "buyer_ico": "00275905",
+  "supplier_ico": "25937499",
+  "supplier_name": "REDOMO a.s.",
+  "date": "2026-05-27",
+  "price": 6072914.0,
+  "status": "smlouva zveřejněna",
+  "type": "contract",
+  "raw": {
+    "source": "vhodne-uverejneni",
+    "source_id": "P26-REG-105575",
+    "procurement_id": null,
+    "source_url": "https://www.vhodne-uverejneni.cz/zakazka/stavebni-prace-pri-vymene-oken-a-upravy-3-np-cp-61-lomnice-nad-popelkou",
+    "title": "Stavební práce při výměně oken a úpravy 3. NP čp. 61, Lomnice nad Popelkou",
+    "buyer_ico": "00275905",
+    "supplier_ico": "25937499",
+    "supplier_name": "REDOMO a.s.",
+    "date": "2026-05-27",
+    "price": 6072914,
+    "status": "smlouva zveřejněna",
+    "type": "contract"
+  }
+}

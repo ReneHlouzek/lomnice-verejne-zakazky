@@ -1,7 +1,7 @@
 {
   "schema_version": 3,
   "parser_state": "resolved",
-  "generated_at": "2026-09-18T06:50:09.849186+00:00",
+  "generated_at": "2026-09-18T07:29:32.706244+00:00",
   "source": {
     "profile_url": "https://www.vhodne-uverejneni.cz/profil/mesto-lomnice-nad-popelkou",
     "organization_name": "Město Lomnice nad Popelkou",
@@ -14,14 +14,14 @@
     "zruseno": 0
   },
   "project_type_counts": {
-    "procurement": 0,
+    "procurement": 8,
     "procurement_with_changes": 0,
     "contract_with_changes": 14,
-    "contract": 69,
+    "contract": 71,
     "other": 25,
     "unclassified": 0
   },
-  "total_projects": 108,
+  "total_projects": 118,
   "statuses": {
     "aktualni-uverejneni": {
       "label": "Aktuální uveřejnění",
@@ -43,7 +43,16 @@
   "project_types": {
     "procurement": {
       "label": "Veřejná zakázka / výběr / smlouva",
-      "projects": []
+      "projects": [
+        "p-modernizace-uceben-zus-stavebni-prace-0114",
+        "p-nastupni-misto-kosov-a-rvacov-lomnice-nad-popelkou-0110",
+        "p-nemocnice-nasledne-pece-lomnice-nad-popelkou-investice-a-opravy-0117",
+        "p-oprava-fasady-sportovni-haly-cp-999-ul-za-skolou-v-lomnici-nad-popelko-0116",
+        "p-pojisteni-majetku-mesta-jeho-prispevkovych-organizaci-a-jejich-pojiste-0112",
+        "p-revitalizace-rybnika-matous-a-jeho-okoli-v-lomnici-nad-popelkou-0111",
+        "p-soh-a-zazemi-ps-lomnice-nad-popelkou-0109",
+        "p-vo-kosov-podzemni-cast-0118"
+      ]
     },
     "procurement_with_changes": {
       "label": "Zakázka se změnami / dodatky",
@@ -81,6 +90,7 @@
         "p-darovaci-smlouva-rds-lomnice-n-popel-0065",
         "p-darovaci-smlouva-zabezpeceni-materskych-skol-0103",
         "p-kupni-smlouva-c-j-olp-101-2024-prodej-pozemku-v-k-u-plouznice-pod-tabo-0091",
+        "p-sanace-budovy-cp-61-lomnice-nad-popelkou-od-zemni-vlhkosti-0115",
         "p-smlouva-lomnice-nad-popelkou-a-nowogrodziec-spolecna-cesta-casem-0072",
         "p-smlouva-o-bezuplatnem-prevodu-a-o-sjednani-jinych-vecnych-prav-pozemky-0023",
         "p-smlouva-o-bezuplatnem-prevodu-privatizovaneho-majetku-do-vlastnictvi-o-0101",
@@ -126,6 +136,7 @@
         "p-smlouva-o-spolupraci-pri-zajisteni-dopravni-obsluznosti-libereckeho-kr-0055",
         "p-smlouva-o-vybudovani-skiagrafickeho-pracoviste-a-zajisteni-jeho-provoz-0050",
         "p-statni-fond-podpory-investic-smlouva-c-3908110142-o-poskytnuti-dotace-0069",
+        "p-stavebni-prace-pri-vymene-oken-a-upravy-3-np-cp-61-lomnice-nad-popelko-0113",
         "p-verejnopravni-smlouva-o-poskytnuti-investicni-dotace-lomnice-nad-popel-0062",
         "p-verejnopravni-smlouva-o-poskytnuti-investicni-dotace-z-rozpoctu-mesta-0008",
         "p-verejnopravni-smlouva-o-poskytnuti-investicni-dotace-z-rozpoctu-mesta-0019",
@@ -809,6 +820,60 @@
       }
     },
     {
+      "id": "p-modernizace-uceben-zus-stavebni-prace-0114",
+      "title": "Modernizace UČEBEN ZUŠ - stavební práce",
+      "status": "unclassified",
+      "project_type": "procurement",
+      "record_types": {
+        "tender": 1
+      },
+      "source_count": 1,
+      "first_observed": "2025-01-28",
+      "last_observed": "2025-01-28",
+      "supplier_ico": "25937499",
+      "procurement_signal": {
+        "level": "explicit",
+        "label": "Výslovná vazba na veřejnou zakázku",
+        "reason": "Zdrojový text obsahuje přímou zmínku o veřejné zakázce, výběru nebo zadávacím řízení."
+      }
+    },
+    {
+      "id": "p-nastupni-misto-kosov-a-rvacov-lomnice-nad-popelkou-0110",
+      "title": "Nástupní místo Košov a Rváčov, Lomnice nad Popelkou",
+      "status": "unclassified",
+      "project_type": "procurement",
+      "record_types": {
+        "tender": 1
+      },
+      "source_count": 1,
+      "first_observed": "2025-10-20",
+      "last_observed": "2025-10-20",
+      "supplier_ico": "28762070",
+      "procurement_signal": {
+        "level": "explicit",
+        "label": "Výslovná vazba na veřejnou zakázku",
+        "reason": "Zdrojový text obsahuje přímou zmínku o veřejné zakázce, výběru nebo zadávacím řízení."
+      }
+    },
+    {
+      "id": "p-nemocnice-nasledne-pece-lomnice-nad-popelkou-investice-a-opravy-0117",
+      "title": "Nemocnice následné péče Lomnice nad Popelkou – investice a opravy",
+      "status": "unclassified",
+      "project_type": "procurement",
+      "record_types": {
+        "tender": 1
+      },
+      "source_count": 1,
+      "first_observed": "2026-05-04",
+      "last_observed": "2026-05-04",
+      "supplier_ico": null,
+      "procurement_signal": {
+        "level": "explicit",
+        "label": "Výslovná vazba na veřejnou zakázku",
+        "reason": "Zdrojový text obsahuje přímou zmínku o veřejné zakázce, výběru nebo zadávacím řízení."
+      }
+    },
+    {
       "id": "p-o-prevodu-z-majetku-cr-s-pravem-hospodarit-pro-lcr-0088",
       "title": "o převodu z majetku ČR s právem hospodařit pro LČR",
       "status": "unclassified",
@@ -863,6 +928,24 @@
       }
     },
     {
+      "id": "p-oprava-fasady-sportovni-haly-cp-999-ul-za-skolou-v-lomnici-nad-popelko-0116",
+      "title": "Oprava fasády sportovní haly čp. 999, ul. Za Školou v Lomnici nad Popelkou",
+      "status": "unclassified",
+      "project_type": "procurement",
+      "record_types": {
+        "tender": 1
+      },
+      "source_count": 1,
+      "first_observed": "2025-09-23",
+      "last_observed": "2025-09-23",
+      "supplier_ico": "25990764",
+      "procurement_signal": {
+        "level": "explicit",
+        "label": "Výslovná vazba na veřejnou zakázku",
+        "reason": "Zdrojový text obsahuje přímou zmínku o veřejné zakázce, výběru nebo zadávacím řízení."
+      }
+    },
+    {
       "id": "p-podskytnuti-dotace-na-poskytovani-sluzeb-v-obecnem-hospodarskem-zajmu-0080",
       "title": "Podskytnutí dotace na poskytování služeb v obecném hospodářském zájmu z rozpočtu LK z finančních prostředků MPSV.",
       "status": "unclassified",
@@ -878,6 +961,24 @@
         "level": "none",
         "label": "Bez rozpoznané vazby na zakázku",
         "reason": "V dostupném textu nebyl nalezen dostatečný signál."
+      }
+    },
+    {
+      "id": "p-pojisteni-majetku-mesta-jeho-prispevkovych-organizaci-a-jejich-pojiste-0112",
+      "title": "Pojištění majetku města, jeho příspěvkových organizací a jejich pojištění odpovědnosti za újmu",
+      "status": "unclassified",
+      "project_type": "procurement",
+      "record_types": {
+        "tender": 1
+      },
+      "source_count": 1,
+      "first_observed": "2025-06-11",
+      "last_observed": "2025-06-11",
+      "supplier_ico": "45534306",
+      "procurement_signal": {
+        "level": "explicit",
+        "label": "Výslovná vazba na veřejnou zakázku",
+        "reason": "Zdrojový text obsahuje přímou zmínku o veřejné zakázce, výběru nebo zadávacím řízení."
       }
     },
     {
@@ -969,6 +1070,42 @@
         "level": "none",
         "label": "Bez rozpoznané vazby na zakázku",
         "reason": "V dostupném textu nebyl nalezen dostatečný signál."
+      }
+    },
+    {
+      "id": "p-revitalizace-rybnika-matous-a-jeho-okoli-v-lomnici-nad-popelkou-0111",
+      "title": "Revitalizace rybníka Matouš a jeho okolí v Lomnici nad Popelkou",
+      "status": "unclassified",
+      "project_type": "procurement",
+      "record_types": {
+        "tender": 1
+      },
+      "source_count": 1,
+      "first_observed": "2025-02-04",
+      "last_observed": "2025-02-04",
+      "supplier_ico": "25344447",
+      "procurement_signal": {
+        "level": "explicit",
+        "label": "Výslovná vazba na veřejnou zakázku",
+        "reason": "Zdrojový text obsahuje přímou zmínku o veřejné zakázce, výběru nebo zadávacím řízení."
+      }
+    },
+    {
+      "id": "p-sanace-budovy-cp-61-lomnice-nad-popelkou-od-zemni-vlhkosti-0115",
+      "title": "Sanace budovy čp. 61, Lomnice nad Popelkou, od zemní vlhkosti",
+      "status": "unclassified",
+      "project_type": "contract",
+      "record_types": {
+        "contract": 1
+      },
+      "source_count": 1,
+      "first_observed": "2025-12-19",
+      "last_observed": "2025-12-19",
+      "supplier_ico": "25937499",
+      "procurement_signal": {
+        "level": "likely",
+        "label": "Pravděpodobně souvisí se zakázkou",
+        "reason": "Název/předmět odpovídá investiční dodávce, stavebním pracím nebo jiné běžné zadavatelské dodávce; způsob výběru dodavatele z tohoto záznamu sám o sobě neplyne."
       }
     },
     {
@@ -1764,6 +1901,24 @@
       }
     },
     {
+      "id": "p-soh-a-zazemi-ps-lomnice-nad-popelkou-0109",
+      "title": "SOH a zázemí PS Lomnice nad Popelkou",
+      "status": "unclassified",
+      "project_type": "procurement",
+      "record_types": {
+        "tender": 1
+      },
+      "source_count": 1,
+      "first_observed": "2025-11-05",
+      "last_observed": "2025-11-05",
+      "supplier_ico": "25937499",
+      "procurement_signal": {
+        "level": "explicit",
+        "label": "Výslovná vazba na veřejnou zakázku",
+        "reason": "Zdrojový text obsahuje přímou zmínku o veřejné zakázce, výběru nebo zadávacím řízení."
+      }
+    },
+    {
       "id": "p-statni-fond-podpory-investic-smlouva-c-3908110142-o-poskytnuti-dotace-0069",
       "title": "Státní fond podpory investic - Smlouva č. 3908110142 o poskytnutí dotace na úhradu nákladů na regeneraci veřejného prostranství na sídlišti dle NV č.390/2017 Sb.",
       "status": "unclassified",
@@ -1779,6 +1934,24 @@
         "level": "none",
         "label": "Bez rozpoznané vazby na zakázku",
         "reason": "V dostupném textu nebyl nalezen dostatečný signál."
+      }
+    },
+    {
+      "id": "p-stavebni-prace-pri-vymene-oken-a-upravy-3-np-cp-61-lomnice-nad-popelko-0113",
+      "title": "Stavební práce při výměně oken a úpravy 3. NP čp. 61, Lomnice nad Popelkou",
+      "status": "unclassified",
+      "project_type": "contract",
+      "record_types": {
+        "contract": 1
+      },
+      "source_count": 1,
+      "first_observed": "2026-05-27",
+      "last_observed": "2026-05-27",
+      "supplier_ico": "25937499",
+      "procurement_signal": {
+        "level": "likely",
+        "label": "Pravděpodobně souvisí se zakázkou",
+        "reason": "Název/předmět odpovídá investiční dodávce, stavebním pracím nebo jiné běžné zadavatelské dodávce; způsob výběru dodavatele z tohoto záznamu sám o sobě neplyne."
       }
     },
     {
@@ -2085,6 +2258,24 @@
         "level": "none",
         "label": "Bez rozpoznané vazby na zakázku",
         "reason": "V dostupném textu nebyl nalezen dostatečný signál."
+      }
+    },
+    {
+      "id": "p-vo-kosov-podzemni-cast-0118",
+      "title": "VO Košov - podzemní část",
+      "status": "unclassified",
+      "project_type": "procurement",
+      "record_types": {
+        "tender": 1
+      },
+      "source_count": 1,
+      "first_observed": "2025-05-28",
+      "last_observed": "2025-05-28",
+      "supplier_ico": "25298194",
+      "procurement_signal": {
+        "level": "explicit",
+        "label": "Výslovná vazba na veřejnou zakázku",
+        "reason": "Zdrojový text obsahuje přímou zmínku o veřejné zakázce, výběru nebo zadávacím řízení."
       }
     },
     {

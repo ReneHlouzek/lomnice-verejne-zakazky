@@ -1,0 +1,28 @@
+{
+  "source": "vhodne-uverejneni",
+  "source_id": "P25V00005123",
+  "procurement_id": "P25V00005123",
+  "source_url": "https://www.vhodne-uverejneni.cz/zakazka/vo-kosov-podzemni-cast",
+  "title": "VO Košov - podzemní část",
+  "buyer_ico": "00275905",
+  "supplier_ico": "25298194",
+  "supplier_name": "RYDVAL - ELEKTRO s.r.o.",
+  "date": "2025-05-28",
+  "price": 1047745.0,
+  "status": "zakázka byla zadána (Plnění smlouvy)",
+  "type": "tender",
+  "raw": {
+    "source": "vhodne-uverejneni",
+    "source_id": "P25V00005123",
+    "procurement_id": "P25V00005123",
+    "source_url": "https://www.vhodne-uverejneni.cz/zakazka/vo-kosov-podzemni-cast",
+    "title": "VO Košov - podzemní část",
+    "buyer_ico": "00275905",
+    "supplier_ico": "25298194",
+    "supplier_name": "RYDVAL - ELEKTRO s.r.o.",
+    "date": "2025-05-28",
+    "price": 1047745,
+    "status": "zakázka byla zadána (Plnění smlouvy)",
+    "type": "tender"
+  }
+}
