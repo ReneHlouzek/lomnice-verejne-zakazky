@@ -147,12 +147,17 @@ def score(a, b):
     near_price = bool(ap is not None and bp is not None and (abs(ap - bp) / max(ap, bp) <= .03))
     addendum_pair = is_addendum(a) != is_addendum(b)
 
-    if addendum_pair and same_supplier and core_sim >= .68:
+    # Auto-merge only when the evidence is sufficiently specific. A generic
+    # title + same supplier is not enough: one supplier can have many unrelated
+    # contracts with very similar legal wording.
+    if addendum_pair and same_supplier and core_sim >= .82 and (near_price or ap is None or bp is None):
         return .96, "addendum_core_title", [ai]
-    if same_supplier and sim >= .82 and (near_price or ap is None or bp is None):
-        return .9, "supplier_title", [ai]
+    if same_supplier and sim >= .82 and near_price:
+        return .9, "supplier_title_price", [ai]
     if sim >= .9 and near_price:
         return .82, "title_price", []
+    if addendum_pair and same_supplier and core_sim >= .68:
+        return .74, "candidate_addendum_core_title", [ai]
     if same_supplier and sim >= .66 and near_price:
         return .74, "candidate_supplier_title_price", [ai]
     if same_supplier and sim >= .60:
