@@ -11,6 +11,7 @@ ROOT = Path(__file__).resolve().parents[1]
 BUYER_ICO = "00275905"
 OUT = ROOT / "data" / "sources"
 RS = ROOT / "data" / "registr_smluv" / "contracts.json"
+VU_SEED = ROOT / "data" / "inbox" / "vu_seed.json"
 
 
 def clean(v):
@@ -105,18 +106,57 @@ def normalize_rs():
     return count
 
 
+
+def normalize_vu_seed():
+    if not VU_SEED.exists():
+        return 0
+    rows = json.loads(VU_SEED.read_text(encoding="utf-8"))
+    if not isinstance(rows, list):
+        return 0
+    target = OUT / "vhodne-uverejneni"
+    target.mkdir(parents=True, exist_ok=True)
+    for old in target.glob("*.json"):
+        old.unlink()
+    count = 0
+    for r in rows:
+        if not isinstance(r, dict) or not clean(r.get("title")):
+            continue
+        record = {
+            "source": "vhodne-uverejneni",
+            "source_id": clean(r.get("source_id") or r.get("procurement_id")),
+            "procurement_id": clean(r.get("procurement_id")),
+            "source_url": clean(r.get("source_url")),
+            "title": clean(r.get("title")),
+            "buyer_ico": BUYER_ICO,
+            "supplier_ico": ico(r.get("supplier_ico")),
+            "supplier_name": clean(r.get("supplier_name")),
+            "date": date_value(r.get("date")),
+            "price": price(r.get("price")),
+            "status": clean(r.get("status")),
+            "type": clean(r.get("type")),
+            "raw": r,
+        }
+        (target / f"vu-{count + 1:06d}.json").write_text(
+            json.dumps(record, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+        )
+        count += 1
+    return count
+
+
 def main():
     count = normalize_rs()
+    vu_count = normalize_vu_seed()
     manifest = {
         "schema_version": 1,
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "buyer_ico": BUYER_ICO,
         "registr_smluv_records": count,
-        "sources": ["registr-smluv"],
+        "vhodne_uverejneni_seed_records": vu_count,
+        "sources": ["registr-smluv", "vhodne-uverejneni-seed"],
     }
     OUT.mkdir(parents=True, exist_ok=True)
     (OUT / "manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(f"Normalized {count} Registr smluv records into {OUT / 'registr-smluv'}")
+    print(f"Normalized {count} Registr smluv records and {vu_count} seeded VU records.")
 
 
 if __name__ == "__main__":
