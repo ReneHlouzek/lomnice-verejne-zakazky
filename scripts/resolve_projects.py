@@ -202,6 +202,21 @@ def procurement_signal(r):
         return {"level": "likely", "label": "Pravděpodobně souvisí se zakázkou", "reason": "Název/předmět odpovídá investiční dodávce, stavebním pracím nebo jiné běžné zadavatelské dodávce; způsob výběru dodavatele z tohoto záznamu sám o sobě neplyne."}
     return {"level": "none", "label": "Bez rozpoznané vazby na zakázku", "reason": "V dostupném textu nebyl nalezen dostatečný signál."}
 
+def normalized_status(g):
+    """Map source status text to the public lifecycle buckets used by the index."""
+    texts = [norm(r.get("status") or r.get("event") or "") for r in g]
+    joined = " ".join(texts)
+    if any("zruseno" in t or "zrusena" in t for t in texts):
+        return "zruseno"
+    if any("ukonceno plneni" in t or "ukonceno" in t for t in texts):
+        return "ukonceno-plneni"
+    if any("plneni smlouvy" in t or "smlouva zverejnena" in t for t in texts):
+        return "plneni-smlouvy"
+    if any("aktualni uverejneni" in t for t in texts):
+        return "aktualni-uverejneni"
+    return "unclassified"
+
+
 def canonical(g):
     titles = [title(r) for r in g if title(r)]
     suppliers = [r.get("supplier_ico") or r.get("ico_dodavatele") for r in g if r.get("supplier_ico") or r.get("ico_dodavatele")]
@@ -278,7 +293,7 @@ def main():
         pid = "p-" + re.sub(r"[^a-z0-9]+", "-", norm(t))[:70].strip("-") + f"-{i:04d}"
         sources = [{"source_file": r.get("_source_file"), "source_id": r.get("source_id") or r.get("vvz_id") or r.get("contract_id"), "record": r} for r in g]
         can = canonical(g)
-        project = {"id": pid, "title": t, "buyer_ico": BUYER_ICO, "status": "unclassified", "project_type": can["project_type"], "canonical": can, "sources": sources}
+        project = {"id": pid, "title": t, "buyer_ico": BUYER_ICO, "status": normalized_status(g), "project_type": can["project_type"], "canonical": can, "sources": sources}
         (OUT / f"{pid}.json").write_text(json.dumps(project, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         audit["project_sizes"][pid] = len(g)
         audit["classifications"][can["project_type"]] = audit["classifications"].get(can["project_type"], 0) + 1
