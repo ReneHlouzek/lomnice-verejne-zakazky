@@ -11,7 +11,10 @@
     "date": "2025-01-28",
     "price": 15485071.64,
     "status": "zakázka byla zadána (Plnění smlouvy)",
-    "type": "tender"
+    "type": "tender",
+    "contract_signed_date": "2025-04-01",
+    "verification_level": "organization_contract_index",
+    "verification_source": "https://www.vhodne-uverejneni.cz/smlouvy-organizace/mesto-lomnice-nad-popelkou"
   },
   {
     "source": "vhodne-uverejneni",
@@ -25,7 +28,10 @@
     "date": "2025-02-04",
     "price": null,
     "status": "zakázka byla zadána (Plnění smlouvy)",
-    "type": "tender"
+    "type": "tender",
+    "contract_signed_date": "2025-03-24",
+    "verification_level": "organization_contract_index",
+    "verification_source": "https://www.vhodne-uverejneni.cz/smlouvy-organizace/mesto-lomnice-nad-popelkou"
   },
   {
     "source": "vhodne-uverejneni",
@@ -39,7 +45,10 @@
     "date": "2025-05-28",
     "price": 1047745,
     "status": "zakázka byla zadána (Plnění smlouvy)",
-    "type": "tender"
+    "type": "tender",
+    "contract_signed_date": "2025-05-06",
+    "verification_level": "organization_contract_index",
+    "verification_source": "https://www.vhodne-uverejneni.cz/smlouvy-organizace/mesto-lomnice-nad-popelkou"
   },
   {
     "source": "vhodne-uverejneni",
@@ -67,7 +76,10 @@
     "date": "2025-09-23",
     "price": 1139962,
     "status": "zakázka byla zadána (Plnění smlouvy)",
-    "type": "tender"
+    "type": "tender",
+    "contract_signed_date": "2025-08-13",
+    "verification_level": "organization_contract_index",
+    "verification_source": "https://www.vhodne-uverejneni.cz/smlouvy-organizace/mesto-lomnice-nad-popelkou"
   },
   {
     "source": "vhodne-uverejneni",
@@ -95,7 +107,10 @@
     "date": "2025-11-05",
     "price": 2643822.3,
     "status": "zakázka byla zadána (Plnění smlouvy)",
-    "type": "tender"
+    "type": "tender",
+    "contract_signed_date": "2025-11-04",
+    "verification_level": "organization_contract_index",
+    "verification_source": "https://www.vhodne-uverejneni.cz/smlouvy-organizace/mesto-lomnice-nad-popelkou"
   },
   {
     "source": "vhodne-uverejneni",
@@ -207,7 +222,10 @@
     "date": "2026-07-02",
     "price": null,
     "status": "plnění smlouvy",
-    "type": "tender"
+    "type": "tender",
+    "contract_signed_date": "2026-06-22",
+    "verification_level": "organization_contract_index",
+    "verification_source": "https://www.vhodne-uverejneni.cz/smlouvy-organizace/mesto-lomnice-nad-popelkou"
   },
   {
     "source": "vhodne-uverejneni",
@@ -221,7 +239,10 @@
     "date": "2026-06-05",
     "price": null,
     "status": "plnění smlouvy",
-    "type": "tender"
+    "type": "tender",
+    "contract_signed_date": "2026-05-18",
+    "verification_level": "organization_contract_index",
+    "verification_source": "https://www.vhodne-uverejneni.cz/smlouvy-organizace/mesto-lomnice-nad-popelkou"
   },
   {
     "source": "vhodne-uverejneni",
@@ -253,7 +274,8 @@
     "verification_level": "detail",
     "verified_web": true,
     "verified_at": "2026-09-21",
-    "verification_source": "https://www.vhodne-uverejneni.cz/zakazka/verejne-osvetleni-11"
+    "verification_source": "https://www.vhodne-uverejneni.cz/zakazka/verejne-osvetleni-11",
+    "contract_signed_date": "2026-07-08"
   },
   {
     "source": "vhodne-uverejneni",
@@ -364,7 +386,10 @@
     "date": "2025-10-20",
     "price": null,
     "status": "plnění smlouvy",
-    "type": "tender"
+    "type": "tender",
+    "contract_signed_date": "2025-05-02",
+    "verification_level": "organization_contract_index",
+    "verification_source": "https://www.vhodne-uverejneni.cz/smlouvy-organizace/mesto-lomnice-nad-popelkou"
   },
   {
     "source": "vhodne-uverejneni",
@@ -390,7 +415,8 @@
     "verification_level": "detail",
     "verified_web": true,
     "verified_at": "2026-09-21",
-    "verification_source": "https://www.vhodne-uverejneni.cz/zakazka/opravy-mistnich-komunikaci-ve-meste-lomnice-nad-popelkou"
+    "verification_source": "https://www.vhodne-uverejneni.cz/zakazka/opravy-mistnich-komunikaci-ve-meste-lomnice-nad-popelkou",
+    "contract_signed_date": "2025-05-28"
   },
   {
     "source": "vhodne-uverejneni",
@@ -404,7 +430,10 @@
     "date": "2025-03-10",
     "price": null,
     "status": "plnění smlouvy",
-    "type": "tender"
+    "type": "tender",
+    "contract_signed_date": "2025-03-06",
+    "verification_level": "organization_contract_index",
+    "verification_source": "https://www.vhodne-uverejneni.cz/smlouvy-organizace/mesto-lomnice-nad-popelkou"
   },
   {
     "source": "vhodne-uverejneni",
@@ -432,7 +461,8 @@
     "verification_level": "detail",
     "verified_web": true,
     "verified_at": "2026-09-21",
-    "verification_source": "https://www.vhodne-uverejneni.cz/zakazka/revitalizace-verejneho-prostranstvi-na-hrbitove-2-etapa-lomnice-nad-popelkou"
+    "verification_source": "https://www.vhodne-uverejneni.cz/zakazka/revitalizace-verejneho-prostranstvi-na-hrbitove-2-etapa-lomnice-nad-popelkou",
+    "contract_signed_date": "2025-02-11"
   },
   {
     "source": "vhodne-uverejneni",
@@ -446,7 +476,10 @@
     "date": "2025-02-14",
     "price": null,
     "status": "plnění smlouvy",
-    "type": "tender"
+    "type": "tender",
+    "contract_signed_date": "2025-02-14",
+    "verification_level": "organization_contract_index",
+    "verification_source": "https://www.vhodne-uverejneni.cz/smlouvy-organizace/mesto-lomnice-nad-popelkou"
   },
   {
     "source": "vhodne-uverejneni",
