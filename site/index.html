@@ -3,28 +3,75 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Veřejné zakázky – Lomnice nad Popelkou</title>
+  <meta name="description" content="Veřejný přehled zakázek, smluv, dodatků a zdrojových dokumentů města Lomnice nad Popelkou.">
+  <title>Zakázky Lomnice | veřejná data</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="hero">
-    <div class="wrap">
-      <p class="eyebrow">VEŘEJNÁ DATA · LOMNICE NAD POPELKOU</p>
-      <h1>Veřejné zakázky města</h1>
-      <p class="lead">Přehled zakázek, smluv, dodatků a dostupných zdrojových dokumentů na jednom místě.</p>
+    <div class="hero-glow"></div>
+    <div class="wrap hero-inner">
+      <div>
+        <p class="eyebrow">VEŘEJNÁ DATA · LOMNICE NAD POPELKOU</p>
+        <h1>Co město nakupuje,<br><span>kolik to stojí</span> a kde to ověřit.</h1>
+        <p class="lead">Přehled veřejných zakázek, smluv, dodatků a dostupných dokumentů. Data propojujeme z více veřejných zdrojů a u každého záznamu ukazujeme, odkud informace pochází.</p>
+      </div>
+      <div class="hero-note">
+        <strong>Bez komentářů. S důkazy.</strong>
+        <span>Každý údaj má mít dohledatelný zdroj.</span>
+      </div>
     </div>
   </header>
+
   <main class="wrap">
     <section class="stats" id="stats"></section>
-    <section class="toolbar">
-      <input id="search" type="search" placeholder="Hledat zakázku, dodavatele nebo číslo…" autocomplete="off">
-      <select id="status"><option value="">Všechny stavy</option></select>
+
+    <section class="quick-nav">
+      <button data-filter="">Vše</button>
+      <button data-filter="plneni-smlouvy">Probíhá</button>
+      <button data-filter="ukonceno-plneni">Ukončeno</button>
+      <button data-filter="zruseno">Zrušeno</button>
+      <button data-type="procurement">Veřejné zakázky</button>
+      <button data-type="contract_with_changes">Smlouvy a dodatky</button>
     </section>
-    <section>
-      <div class="section-head"><h2>Zakázky</h2><span id="result-count"></span></div>
-      <div id="projects" class="grid"></div>
+
+    <section class="toolbar card">
+      <div class="search-wrap">
+        <span>⌕</span>
+        <input id="search" type="search" placeholder="Hledat název, dodavatele, IČO nebo číslo…" autocomplete="off">
+      </div>
+      <select id="status"><option value="">Všechny stavy</option></select>
+      <select id="type"><option value="">Všechny typy</option></select>
+      <select id="sort">
+        <option value="date">Nejnovější</option>
+        <option value="title">Název A–Z</option>
+        <option value="sources">Nejvíce zdrojů</option>
+      </select>
+    </section>
+
+    <section class="section-head">
+      <div>
+        <p class="eyebrow dark">PROHLÍŽENÍ DAT</p>
+        <h2>Zakázky a smlouvy</h2>
+      </div>
+      <span id="result-count"></span>
+    </section>
+    <div id="projects" class="grid"></div>
+
+    <section class="method card">
+      <div>
+        <p class="eyebrow dark">METODIKA</p>
+        <h2>Jak číst tento přehled</h2>
+        <p>Projekt může spojovat více záznamů stejné věci napříč zdroji. Rozlišení „veřejná zakázka“, „smlouva“ a „pravděpodobná vazba“ je technická klasifikace, nikoli závěr o správnosti postupu města.</p>
+      </div>
+      <div class="method-points">
+        <div><b>01</b><span>Zdroj</span><small>odkaz na původní veřejný záznam</small></div>
+        <div><b>02</b><span>Časová osa</span><small>zadání → smlouva → dodatky</small></div>
+        <div><b>03</b><span>Finance</span><small>cena a pozorované změny</small></div>
+      </div>
     </section>
   </main>
+  <footer class="footer"><div class="wrap">Veřejný datový přehled · poslední zpracování se načítá z datového indexu.</div></footer>
   <script src="app.js"></script>
 </body>
 </html>
