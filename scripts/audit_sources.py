@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Audit source-record completeness without changing or guessing source data."""
+"""Audit source-record completeness without changing or guessing source data. Verified seed identifiers are preserved as source metadata."""
 from __future__ import annotations
 import json
 from collections import Counter
