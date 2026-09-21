@@ -17,7 +17,7 @@ function sourceRows(ss){
 async function run(){
   if(!id){root.innerHTML='<div class="empty">Chybí identifikátor zakázky.</div>';return}
   try{
-    const p=await fetch(`../data/projects/${encodeURIComponent(id)}.json`).then(r=>r.json());
+    const p=await fetch(`./data/projects/${encodeURIComponent(id)}.json`).then(r=>r.json());
     const c=p.canonical||{},f=c.financial||{},a=p.analysis||{},events=c.lifecycle?.events||[],ss=p.sources||[];
     const suppliers=[...new Map(ss.map(s=>{const r=s.record||s;const ico=r.supplier_ico||r.ico_dodavatele;return ico?[String(ico),r.supplier_name||ico]:null}).filter(Boolean)).values()];
     const addenda=events.filter(e=>e.type==='addendum').length;
