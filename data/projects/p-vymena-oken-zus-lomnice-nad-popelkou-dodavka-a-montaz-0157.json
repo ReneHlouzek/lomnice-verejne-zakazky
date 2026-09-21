@@ -16,7 +16,7 @@
           "source": "vhodne-uverejneni",
           "source_id": null,
           "title": "Výměna oken ZUŠ Lomnice nad Popelkou - dodávka a montáž",
-          "price": null
+          "price": 3010766.0
         }
       ],
       "event_count": 1,
@@ -37,8 +37,24 @@
     },
     "financial": {
       "observed_prices": [],
+      "observed_vat_included_prices": [],
+      "expected_values": [],
       "initial_contract_price": null,
-      "latest_observed_price": null
+      "latest_observed_price": null,
+      "expected_to_contract_ratio": null
+    },
+    "procurement": {
+      "procedures": [],
+      "regimes": [],
+      "funded": false,
+      "known_addenda_numbers": []
+    },
+    "verification": {
+      "levels": [
+        "external_tender_index"
+      ],
+      "project_registry_ids": [],
+      "detail_verified_sources": 0
     },
     "source_count": 1
   },
@@ -56,7 +72,7 @@
         "supplier_ico": null,
         "supplier_name": null,
         "date": "2026-06-05",
-        "price": null,
+        "price": 3010766.0,
         "expected_value": null,
         "price_vat_included": null,
         "status": "plnění smlouvy",
@@ -68,13 +84,16 @@
         "description": null,
         "cpv": [],
         "offer_deadline": null,
-        "contract_signed_date": null,
+        "contract_signed_date": "2026-05-18",
         "funded": null,
         "grant_id": null,
-        "verification_level": null,
+        "project_registry_id": null,
+        "known_addenda_numbers": [],
+        "document_count": null,
+        "verification_level": "external_tender_index",
         "verified_web": false,
         "verified_at": null,
-        "verification_source": null,
+        "verification_source": "https://www.hlidacstatu.cz/verejnezakazky/hledat?q=osobaid%3Ajiri-kliment-4",
         "raw": {
           "source": "vhodne-uverejneni",
           "source_id": null,
@@ -85,9 +104,12 @@
           "supplier_ico": null,
           "supplier_name": null,
           "date": "2026-06-05",
-          "price": null,
+          "price": 3010766,
           "status": "plnění smlouvy",
-          "type": "tender"
+          "type": "tender",
+          "contract_signed_date": "2026-05-18",
+          "verification_level": "external_tender_index",
+          "verification_source": "https://www.hlidacstatu.cz/verejnezakazky/hledat?q=osobaid%3Ajiri-kliment-4"
         },
         "_source_file": "data/sources/vhodne-uverejneni/vu-000016.json"
       }
@@ -112,22 +134,26 @@
         "source": "vhodne-uverejneni",
         "source_id": null,
         "title": "Výměna oken ZUŠ Lomnice nad Popelkou - dodávka a montáž",
-        "price": null,
+        "price": 3010766.0,
         "deadline": null
       }
     ],
     "financial": {
-      "baseline_price": null,
-      "current_observed_price": null,
-      "absolute_change": null,
+      "baseline_price": 3010766.0,
+      "current_observed_price": 3010766.0,
+      "absolute_change": 0.0,
       "percent_change": null,
-      "observed_prices": [],
+      "observed_prices": [
+        3010766.0
+      ],
       "addendum_count": 0
     },
     "metrics": {
       "source_count": 1,
       "supplier_count": 0,
-      "price_values": [],
+      "price_values": [
+        3010766.0
+      ],
       "date_values": [
         "2026-06-05"
       ],

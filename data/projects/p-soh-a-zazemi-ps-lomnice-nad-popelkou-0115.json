@@ -39,8 +39,24 @@
     },
     "financial": {
       "observed_prices": [],
+      "observed_vat_included_prices": [],
+      "expected_values": [],
       "initial_contract_price": null,
-      "latest_observed_price": null
+      "latest_observed_price": null,
+      "expected_to_contract_ratio": null
+    },
+    "procurement": {
+      "procedures": [],
+      "regimes": [],
+      "funded": false,
+      "known_addenda_numbers": []
+    },
+    "verification": {
+      "levels": [
+        "external_tender_index"
+      ],
+      "project_registry_ids": [],
+      "detail_verified_sources": 0
     },
     "source_count": 1
   },
@@ -70,13 +86,16 @@
         "description": null,
         "cpv": [],
         "offer_deadline": null,
-        "contract_signed_date": null,
+        "contract_signed_date": "2025-11-04",
         "funded": null,
         "grant_id": null,
-        "verification_level": null,
+        "project_registry_id": null,
+        "known_addenda_numbers": [],
+        "document_count": null,
+        "verification_level": "external_tender_index",
         "verified_web": false,
         "verified_at": null,
-        "verification_source": null,
+        "verification_source": "https://www.hlidacstatu.cz/verejnezakazky/hledat?q=osobaid%3Ajiri-kliment-4",
         "raw": {
           "source": "vhodne-uverejneni",
           "source_id": "P25V00009321",
@@ -89,7 +108,10 @@
           "date": "2025-11-05",
           "price": 2643822.3,
           "status": "zakázka byla zadána (Plnění smlouvy)",
-          "type": "tender"
+          "type": "tender",
+          "contract_signed_date": "2025-11-04",
+          "verification_level": "external_tender_index",
+          "verification_source": "https://www.hlidacstatu.cz/verejnezakazky/hledat?q=osobaid%3Ajiri-kliment-4"
         },
         "_source_file": "data/sources/vhodne-uverejneni/vu-000007.json"
       }

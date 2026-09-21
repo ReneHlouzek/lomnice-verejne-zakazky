@@ -8,7 +8,7 @@
   "supplier_ico": null,
   "supplier_name": null,
   "date": "2024-09-23",
-  "price": null,
+  "price": 619823.0,
   "expected_value": null,
   "price_vat_included": null,
   "status": "ukončeno plnění smlouvy",
@@ -23,10 +23,13 @@
   "contract_signed_date": null,
   "funded": null,
   "grant_id": null,
-  "verification_level": null,
+  "project_registry_id": null,
+  "known_addenda_numbers": [],
+  "document_count": null,
+  "verification_level": "external_tender_index",
   "verified_web": true,
   "verified_at": "2026-09-21",
-  "verification_source": "Official PVU search/profile page",
+  "verification_source": "https://www.hlidacstatu.cz/VerejneZakazky/Hledat?Q=osobaid%3Ajaroslav-demcak&order=",
   "raw": {
     "source": "vhodne-uverejneni",
     "source_id": null,
@@ -37,11 +40,12 @@
     "supplier_ico": null,
     "supplier_name": null,
     "date": "2024-09-23",
-    "price": null,
+    "price": 619823,
     "status": "ukončeno plnění smlouvy",
     "type": "tender",
     "verified_web": true,
     "verified_at": "2026-09-21",
-    "verification_source": "Official PVU search/profile page"
+    "verification_source": "https://www.hlidacstatu.cz/VerejneZakazky/Hledat?Q=osobaid%3Ajaroslav-demcak&order=",
+    "verification_level": "external_tender_index"
   }
 }

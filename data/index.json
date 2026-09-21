@@ -1,7 +1,7 @@
 {
   "schema_version": 3,
   "parser_state": "resolved",
-  "generated_at": "2026-09-21T20:18:08.433776+00:00",
+  "generated_at": "2026-09-21T20:32:48.277351+00:00",
   "source": {
     "profile_url": "https://www.vhodne-uverejneni.cz/profil/mesto-lomnice-nad-popelkou",
     "organization_name": "Město Lomnice nad Popelkou",
@@ -23,18 +23,19 @@
   },
   "total_projects": 186,
   "coverage": {
-    "vhodne_uverejneni_profile_total": 144,
+    "vhodne_uverejneni_profile_total": 145,
     "vhodne_uverejneni_status_breakdown": {
       "aktualni-uverejneni": 0,
       "plneni-smlouvy": 17,
-      "ukonceno-plneni": 119,
+      "ukonceno-plneni": 120,
       "zruseno": 8
     },
-    "registr_smluv_organization_contracts": 142,
-    "note": "Referenční počty převzaté z veřejného profilu zadavatele a stránky smluv organizace; slouží pouze jako orientační coverage benchmark, nikoli jako počet zakázek po deduplikaci.",
+    "registr_smluv_organization_contracts": 109,
+    "note": "Referenční počty se mohou průběžně měnit. 145 je aktuální součet stavů na profilu zadavatele PVU; 143 je počet smluv zobrazený na stránce smluv organizace PVU. 109 je počet záznamů aktuálně načtených z oficiálního otevřeného exportu Registru smluv pro Město Lomnice nad Popelkou. Tyto počty nejsou po deduplikaci a nesmí se zaměňovat mezi zdroji.",
     "source_url": "https://www.vhodne-uverejneni.cz/profil/mesto-lomnice-nad-popelkou",
+    "vhodne_uverejneni_organization_contracts": 143,
     "vhodne_uverejneni_seed_loaded": 78,
-    "vhodne_uverejneni_verified_web_loaded": 40,
+    "vhodne_uverejneni_verified_web_loaded": 46,
     "registr_smluv_loaded": 109
   },
   "statuses": {
@@ -1228,7 +1229,7 @@
       "source_count": 1,
       "first_observed": "2026-07-20",
       "last_observed": "2026-07-20",
-      "supplier_ico": null,
+      "supplier_ico": "28762070",
       "procurement_signal": {
         "level": "none",
         "label": "Bez rozpoznané vazby na zakázku",

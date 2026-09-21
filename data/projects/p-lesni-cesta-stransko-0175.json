@@ -6,7 +6,7 @@
   "project_type": "procurement",
   "canonical": {
     "title": "Lesní cesta „Stránsko“",
-    "supplier_ico": null,
+    "supplier_ico": "28762070",
     "identifiers": [],
     "lifecycle": {
       "events": [
@@ -16,7 +16,7 @@
           "source": "vhodne-uverejneni",
           "source_id": null,
           "title": "Lesní cesta „Stránsko“",
-          "price": null
+          "price": 2240507.0
         }
       ],
       "event_count": 1,
@@ -37,8 +37,26 @@
     },
     "financial": {
       "observed_prices": [],
+      "observed_vat_included_prices": [],
+      "expected_values": [
+        2268984.0
+      ],
       "initial_contract_price": null,
-      "latest_observed_price": null
+      "latest_observed_price": null,
+      "expected_to_contract_ratio": null
+    },
+    "procurement": {
+      "procedures": [],
+      "regimes": [],
+      "funded": false,
+      "known_addenda_numbers": []
+    },
+    "verification": {
+      "levels": [
+        "external_tender_index_plus_profile"
+      ],
+      "project_registry_ids": [],
+      "detail_verified_sources": 0
     },
     "source_count": 1
   },
@@ -53,11 +71,11 @@
         "source_url": null,
         "title": "Lesní cesta „Stránsko“",
         "buyer_ico": "00275905",
-        "supplier_ico": null,
-        "supplier_name": null,
+        "supplier_ico": "28762070",
+        "supplier_name": "MIZERA - STAVBY a.s.",
         "date": "2026-07-20",
-        "price": null,
-        "expected_value": null,
+        "price": 2240507.0,
+        "expected_value": 2268984.0,
         "price_vat_included": null,
         "status": "plnění smlouvy",
         "type": "tender",
@@ -65,16 +83,19 @@
         "procurement_procedure": null,
         "procurement_type": null,
         "outcome": null,
-        "description": null,
+        "description": "Rekonstrukce lesní cesty Stránsko v délce 796 metrů s úpravou parametrů lesní cesty na 2L 4,0/20.",
         "cpv": [],
         "offer_deadline": null,
         "contract_signed_date": null,
         "funded": null,
         "grant_id": null,
-        "verification_level": null,
+        "project_registry_id": null,
+        "known_addenda_numbers": [],
+        "document_count": null,
+        "verification_level": "external_tender_index_plus_profile",
         "verified_web": true,
         "verified_at": "2026-09-21",
-        "verification_source": "Official PVU search/profile page",
+        "verification_source": "https://www.hlidacstatu.cz/verejnezakazky/hledat?Q=osobaiddodavatel%3Amiloslav-mizera&oblast=&order=",
         "raw": {
           "source": "vhodne-uverejneni",
           "source_id": null,
@@ -82,15 +103,18 @@
           "source_url": null,
           "title": "Lesní cesta „Stránsko“",
           "buyer_ico": "00275905",
-          "supplier_ico": null,
-          "supplier_name": null,
+          "supplier_ico": "28762070",
+          "supplier_name": "MIZERA - STAVBY a.s.",
           "date": "2026-07-20",
-          "price": null,
+          "price": 2240507,
           "status": "plnění smlouvy",
           "type": "tender",
           "verified_web": true,
           "verified_at": "2026-09-21",
-          "verification_source": "Official PVU search/profile page"
+          "verification_source": "https://www.hlidacstatu.cz/verejnezakazky/hledat?Q=osobaiddodavatel%3Amiloslav-mizera&oblast=&order=",
+          "expected_value": 2268984,
+          "description": "Rekonstrukce lesní cesty Stránsko v délce 796 metrů s úpravou parametrů lesní cesty na 2L 4,0/20.",
+          "verification_level": "external_tender_index_plus_profile"
         },
         "_source_file": "data/sources/vhodne-uverejneni/vu-000042.json"
       }
@@ -115,22 +139,26 @@
         "source": "vhodne-uverejneni",
         "source_id": null,
         "title": "Lesní cesta „Stránsko“",
-        "price": null,
+        "price": 2240507.0,
         "deadline": null
       }
     ],
     "financial": {
-      "baseline_price": null,
-      "current_observed_price": null,
-      "absolute_change": null,
+      "baseline_price": 2240507.0,
+      "current_observed_price": 2240507.0,
+      "absolute_change": 0.0,
       "percent_change": null,
-      "observed_prices": [],
+      "observed_prices": [
+        2240507.0
+      ],
       "addendum_count": 0
     },
     "metrics": {
       "source_count": 1,
-      "supplier_count": 0,
-      "price_values": [],
+      "supplier_count": 1,
+      "price_values": [
+        2240507.0
+      ],
       "date_values": [
         "2026-07-20"
       ],

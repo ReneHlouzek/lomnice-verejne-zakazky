@@ -8,7 +8,7 @@
   "supplier_ico": null,
   "supplier_name": null,
   "date": "2026-06-05",
-  "price": null,
+  "price": 3010766.0,
   "expected_value": null,
   "price_vat_included": null,
   "status": "plnění smlouvy",
@@ -20,13 +20,16 @@
   "description": null,
   "cpv": [],
   "offer_deadline": null,
-  "contract_signed_date": null,
+  "contract_signed_date": "2026-05-18",
   "funded": null,
   "grant_id": null,
-  "verification_level": null,
+  "project_registry_id": null,
+  "known_addenda_numbers": [],
+  "document_count": null,
+  "verification_level": "external_tender_index",
   "verified_web": false,
   "verified_at": null,
-  "verification_source": null,
+  "verification_source": "https://www.hlidacstatu.cz/verejnezakazky/hledat?q=osobaid%3Ajiri-kliment-4",
   "raw": {
     "source": "vhodne-uverejneni",
     "source_id": null,
@@ -37,8 +40,11 @@
     "supplier_ico": null,
     "supplier_name": null,
     "date": "2026-06-05",
-    "price": null,
+    "price": 3010766,
     "status": "plnění smlouvy",
-    "type": "tender"
+    "type": "tender",
+    "contract_signed_date": "2026-05-18",
+    "verification_level": "external_tender_index",
+    "verification_source": "https://www.hlidacstatu.cz/verejnezakazky/hledat?q=osobaid%3Ajiri-kliment-4"
   }
 }

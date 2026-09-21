@@ -14,7 +14,7 @@
           "date": "2022-06-24",
           "type": "contract",
           "source": "vhodne-uverejneni",
-          "source_id": null,
+          "source_id": "P22-REG-69411",
           "title": "Modernizace infrastruktury SVČ Sluníčko Lomnice nad Popelkou , stavební práce",
           "price": 20387820.9
         }
@@ -39,18 +39,43 @@
       "observed_prices": [
         20387820.9
       ],
+      "observed_vat_included_prices": [
+        24669263.3
+      ],
+      "expected_values": [],
       "initial_contract_price": 20387820.9,
-      "latest_observed_price": 20387820.9
+      "latest_observed_price": 20387820.9,
+      "expected_to_contract_ratio": null
+    },
+    "procurement": {
+      "procedures": [],
+      "regimes": [],
+      "funded": true,
+      "known_addenda_numbers": [
+        1,
+        5,
+        6,
+        7
+      ]
+    },
+    "verification": {
+      "levels": [
+        "contract_detail"
+      ],
+      "project_registry_ids": [
+        "CZ.06.2.67/0.0/0.0/16_054/0004845"
+      ],
+      "detail_verified_sources": 1
     },
     "source_count": 1
   },
   "sources": [
     {
       "source_file": "data/sources/vhodne-uverejneni/vu-000066.json",
-      "source_id": null,
+      "source_id": "P22-REG-69411",
       "record": {
         "source": "vhodne-uverejneni",
-        "source_id": null,
+        "source_id": "P22-REG-69411",
         "procurement_id": null,
         "source_url": "https://www.vhodne-uverejneni.cz/smlouvy-organizace/mesto-lomnice-nad-popelkou",
         "title": "Modernizace infrastruktury SVČ Sluníčko Lomnice nad Popelkou , stavební práce",
@@ -60,7 +85,7 @@
         "date": "2022-06-24",
         "price": 20387820.9,
         "expected_value": null,
-        "price_vat_included": null,
+        "price_vat_included": 24669263.3,
         "status": "ukončeno plnění smlouvy",
         "type": "contract",
         "procurement_regime": null,
@@ -70,16 +95,24 @@
         "description": null,
         "cpv": [],
         "offer_deadline": null,
-        "contract_signed_date": null,
-        "funded": null,
-        "grant_id": null,
-        "verification_level": null,
+        "contract_signed_date": "2022-06-24",
+        "funded": true,
+        "grant_id": "CZ.06.2.67/0.0/0.0/16_054/0004845",
+        "project_registry_id": "CZ.06.2.67/0.0/0.0/16_054/0004845",
+        "known_addenda_numbers": [
+          1,
+          5,
+          6,
+          7
+        ],
+        "document_count": 14,
+        "verification_level": "contract_detail",
         "verified_web": true,
         "verified_at": "2026-09-21",
-        "verification_source": "Official PVU contract detail and project budget",
+        "verification_source": "https://www.vhodne-uverejneni.cz/index.php?a=detail&contract=69411&h=contractsregister&m=xenorders",
         "raw": {
           "source": "vhodne-uverejneni",
-          "source_id": null,
+          "source_id": "P22-REG-69411",
           "procurement_id": null,
           "source_url": "https://www.vhodne-uverejneni.cz/smlouvy-organizace/mesto-lomnice-nad-popelkou",
           "title": "Modernizace infrastruktury SVČ Sluníčko Lomnice nad Popelkou , stavební práce",
@@ -92,7 +125,20 @@
           "type": "contract",
           "verified_web": true,
           "verified_at": "2026-09-21",
-          "verification_source": "Official PVU contract detail and project budget"
+          "verification_source": "https://www.vhodne-uverejneni.cz/index.php?a=detail&contract=69411&h=contractsregister&m=xenorders",
+          "price_vat_included": 24669263.3,
+          "contract_signed_date": "2022-06-24",
+          "project_registry_id": "CZ.06.2.67/0.0/0.0/16_054/0004845",
+          "funded": true,
+          "grant_id": "CZ.06.2.67/0.0/0.0/16_054/0004845",
+          "known_addenda_numbers": [
+            1,
+            5,
+            6,
+            7
+          ],
+          "document_count": 14,
+          "verification_level": "contract_detail"
         },
         "_source_file": "data/sources/vhodne-uverejneni/vu-000066.json"
       }
@@ -115,7 +161,7 @@
         "date": "2022-06-24",
         "event": "contract",
         "source": "vhodne-uverejneni",
-        "source_id": null,
+        "source_id": "P22-REG-69411",
         "title": "Modernizace infrastruktury SVČ Sluníčko Lomnice nad Popelkou , stavební práce",
         "price": 20387820.9,
         "deadline": null

@@ -23,10 +23,13 @@
   "contract_signed_date": null,
   "funded": null,
   "grant_id": null,
-  "verification_level": null,
+  "project_registry_id": null,
+  "known_addenda_numbers": [],
+  "document_count": null,
+  "verification_level": "external_tender_index",
   "verified_web": false,
   "verified_at": null,
-  "verification_source": null,
+  "verification_source": "https://www.hlidacstatu.cz/verejnezakazky/hledat?q=osobaid%3Ajiri-kliment-4",
   "raw": {
     "source": "vhodne-uverejneni",
     "source_id": "P26-REG-102333",
@@ -39,6 +42,8 @@
     "date": "2025-12-19",
     "price": 2015798,
     "status": "smlouva zveřejněna",
-    "type": "contract"
+    "type": "contract",
+    "verification_level": "external_tender_index",
+    "verification_source": "https://www.hlidacstatu.cz/verejnezakazky/hledat?q=osobaid%3Ajiri-kliment-4"
   }
 }

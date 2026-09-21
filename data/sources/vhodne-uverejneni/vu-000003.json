@@ -20,13 +20,16 @@
   "description": null,
   "cpv": [],
   "offer_deadline": null,
-  "contract_signed_date": null,
+  "contract_signed_date": "2025-05-06",
   "funded": null,
   "grant_id": null,
-  "verification_level": null,
+  "project_registry_id": null,
+  "known_addenda_numbers": [],
+  "document_count": null,
+  "verification_level": "organization_contract_index",
   "verified_web": false,
   "verified_at": null,
-  "verification_source": null,
+  "verification_source": "https://www.vhodne-uverejneni.cz/smlouvy-organizace/mesto-lomnice-nad-popelkou",
   "raw": {
     "source": "vhodne-uverejneni",
     "source_id": "P25V00005123",
@@ -39,6 +42,9 @@
     "date": "2025-05-28",
     "price": 1047745,
     "status": "zakázka byla zadána (Plnění smlouvy)",
-    "type": "tender"
+    "type": "tender",
+    "contract_signed_date": "2025-05-06",
+    "verification_level": "organization_contract_index",
+    "verification_source": "https://www.vhodne-uverejneni.cz/smlouvy-organizace/mesto-lomnice-nad-popelkou"
   }
 }

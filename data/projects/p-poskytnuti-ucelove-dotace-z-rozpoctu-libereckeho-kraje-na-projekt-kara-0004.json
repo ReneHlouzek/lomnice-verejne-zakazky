@@ -46,8 +46,22 @@
     },
     "financial": {
       "observed_prices": [],
+      "observed_vat_included_prices": [],
+      "expected_values": [],
       "initial_contract_price": null,
-      "latest_observed_price": null
+      "latest_observed_price": null,
+      "expected_to_contract_ratio": null
+    },
+    "procurement": {
+      "procedures": [],
+      "regimes": [],
+      "funded": false,
+      "known_addenda_numbers": []
+    },
+    "verification": {
+      "levels": [],
+      "project_registry_ids": [],
+      "detail_verified_sources": 0
     },
     "source_count": 2
   },

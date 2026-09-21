@@ -39,8 +39,28 @@
     },
     "financial": {
       "observed_prices": [],
+      "observed_vat_included_prices": [],
+      "expected_values": [],
       "initial_contract_price": null,
-      "latest_observed_price": null
+      "latest_observed_price": null,
+      "expected_to_contract_ratio": null
+    },
+    "procurement": {
+      "procedures": [
+        "Zjednodušené podlimitní řízení"
+      ],
+      "regimes": [
+        "Podlimitní"
+      ],
+      "funded": false,
+      "known_addenda_numbers": []
+    },
+    "verification": {
+      "levels": [
+        "detail"
+      ],
+      "project_registry_ids": [],
+      "detail_verified_sources": 1
     },
     "source_count": 1
   },
@@ -63,20 +83,30 @@
         "price_vat_included": null,
         "status": "plnění smlouvy",
         "type": "tender",
-        "procurement_regime": null,
-        "procurement_procedure": null,
-        "procurement_type": null,
-        "outcome": null,
-        "description": null,
-        "cpv": [],
-        "offer_deadline": null,
-        "contract_signed_date": null,
+        "procurement_regime": "Podlimitní",
+        "procurement_procedure": "Zjednodušené podlimitní řízení",
+        "procurement_type": "Stavební práce",
+        "outcome": "Uzavření jednorázové smlouvy",
+        "description": "Zřízení nové osvětlovací soustavy v délce cca 2,0 km ve třech etapách v letech 2026–2028; 50 stožárů výšky 8,2 m, 4 stožáry výšky 6 m a celkem 54 LED svítidel.",
+        "cpv": [
+          "Elektrické zdroje světla a svítidla",
+          "Lampy a svítidla",
+          "Bodové reflektory",
+          "Venkovní svítidla",
+          "Zařízení pouličního osvětlení",
+          "Instalace a montáž zařízení pro osvětlení silnic"
+        ],
+        "offer_deadline": "2026-05-20T09:00:00",
+        "contract_signed_date": "2026-07-08",
         "funded": null,
         "grant_id": null,
-        "verification_level": null,
-        "verified_web": false,
-        "verified_at": null,
-        "verification_source": null,
+        "project_registry_id": null,
+        "known_addenda_numbers": [],
+        "document_count": null,
+        "verification_level": "detail",
+        "verified_web": true,
+        "verified_at": "2026-09-21",
+        "verification_source": "https://www.vhodne-uverejneni.cz/zakazka/verejne-osvetleni-11",
         "raw": {
           "source": "vhodne-uverejneni",
           "source_id": "P26V00002162",
@@ -89,7 +119,26 @@
           "date": "2026-04-17",
           "price": null,
           "status": "plnění smlouvy",
-          "type": "tender"
+          "type": "tender",
+          "procurement_type": "Stavební práce",
+          "procurement_regime": "Podlimitní",
+          "procurement_procedure": "Zjednodušené podlimitní řízení",
+          "outcome": "Uzavření jednorázové smlouvy",
+          "offer_deadline": "2026-05-20T09:00:00",
+          "description": "Zřízení nové osvětlovací soustavy v délce cca 2,0 km ve třech etapách v letech 2026–2028; 50 stožárů výšky 8,2 m, 4 stožáry výšky 6 m a celkem 54 LED svítidel.",
+          "cpv": [
+            "Elektrické zdroje světla a svítidla",
+            "Lampy a svítidla",
+            "Bodové reflektory",
+            "Venkovní svítidla",
+            "Zařízení pouličního osvětlení",
+            "Instalace a montáž zařízení pro osvětlení silnic"
+          ],
+          "verification_level": "detail",
+          "verified_web": true,
+          "verified_at": "2026-09-21",
+          "verification_source": "https://www.vhodne-uverejneni.cz/zakazka/verejne-osvetleni-11",
+          "contract_signed_date": "2026-07-08"
         },
         "_source_file": "data/sources/vhodne-uverejneni/vu-000017.json"
       }
