@@ -542,7 +542,7 @@
     "supplier_name": null,
     "date": "2020-02-28",
     "price": null,
-    "status": "ukončeno plnění smlouvy",
+    "status": "zakázka byla zrušena (Vyhodnocování)",
     "type": "tender"
   },
   {
