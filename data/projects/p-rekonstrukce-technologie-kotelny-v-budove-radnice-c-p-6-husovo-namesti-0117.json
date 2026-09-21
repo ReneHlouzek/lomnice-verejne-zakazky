@@ -61,6 +61,9 @@
         "price": 1237000.0,
         "status": "smlouva zveřejněna",
         "type": "contract",
+        "verified_web": false,
+        "verified_at": null,
+        "verification_source": null,
         "raw": {
           "source": "vhodne-uverejneni",
           "source_id": "P25-REG-99697",

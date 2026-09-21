@@ -11,6 +11,9 @@
   "price": null,
   "status": "plnění smlouvy",
   "type": "tender",
+  "verified_web": false,
+  "verified_at": null,
+  "verification_source": null,
   "raw": {
     "source": "vhodne-uverejneni",
     "source_id": "P26V00001118",

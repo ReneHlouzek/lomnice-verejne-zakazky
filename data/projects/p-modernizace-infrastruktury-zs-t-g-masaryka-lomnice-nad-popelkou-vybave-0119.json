@@ -61,6 +61,9 @@
         "price": 4953024.0,
         "status": "ukončeno plnění smlouvy na základě veřejné zakázky (Ukončeno plnění)",
         "type": "tender",
+        "verified_web": false,
+        "verified_at": null,
+        "verification_source": null,
         "raw": {
           "source": "vhodne-uverejneni",
           "source_id": "P22V00000161",

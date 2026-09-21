@@ -11,6 +11,9 @@
   "price": 4546000.0,
   "status": "zakázka byla zrušena (Aktuální zadávací řízení)",
   "type": "tender",
+  "verified_web": false,
+  "verified_at": null,
+  "verification_source": null,
   "raw": {
     "source": "vhodne-uverejneni",
     "source_id": "P15V00002212",

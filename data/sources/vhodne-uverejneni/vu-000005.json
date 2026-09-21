@@ -11,6 +11,9 @@
   "price": 1139962.0,
   "status": "zakázka byla zadána (Plnění smlouvy)",
   "type": "tender",
+  "verified_web": false,
+  "verified_at": null,
+  "verification_source": null,
   "raw": {
     "source": "vhodne-uverejneni",
     "source_id": "P25V00008303",
