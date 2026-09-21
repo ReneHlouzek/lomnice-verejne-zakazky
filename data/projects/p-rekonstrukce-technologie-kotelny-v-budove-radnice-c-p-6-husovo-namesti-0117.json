@@ -2,11 +2,11 @@
   "id": "p-rekonstrukce-technologie-kotelny-v-budove-radnice-c-p-6-husovo-namesti-0117",
   "title": "Rekonstrukce technologie kotelny v budově radnice č.p. 6, Husovo náměstí v Lomnici nad Popelkou",
   "buyer_ico": "00275905",
-  "status": "ukonceno-plneni",
-  "project_type": "procurement",
+  "status": "plneni-smlouvy",
+  "project_type": "contract",
   "canonical": {
     "title": "Rekonstrukce technologie kotelny v budově radnice č.p. 6, Husovo náměstí v Lomnici nad Popelkou",
-    "supplier_ico": null,
+    "supplier_ico": "43224679",
     "identifiers": [
       "P25V000?"
     ],
@@ -14,20 +14,20 @@
       "events": [
         {
           "date": "2025-08-27",
-          "type": "tender",
+          "type": "contract",
           "source": "vhodne-uverejneni",
-          "source_id": "P25V000?",
+          "source_id": "P25-REG-99697",
           "title": "Rekonstrukce technologie kotelny v budově radnice č.p. 6, Husovo náměstí v Lomnici nad Popelkou",
-          "price": null
+          "price": 1237000.0
         }
       ],
       "event_count": 1,
       "type_counts": {
-        "tender": 1
+        "contract": 1
       },
-      "dominant_type": "tender"
+      "dominant_type": "contract"
     },
-    "project_type": "procurement",
+    "project_type": "contract",
     "procurement_signal": {
       "level": "likely",
       "label": "Pravděpodobně souvisí se zakázkou",
@@ -38,42 +38,44 @@
       "last_observed": "2025-08-27"
     },
     "financial": {
-      "observed_prices": [],
-      "initial_contract_price": null,
-      "latest_observed_price": null
+      "observed_prices": [
+        1237000.0
+      ],
+      "initial_contract_price": 1237000.0,
+      "latest_observed_price": 1237000.0
     },
     "source_count": 1
   },
   "sources": [
     {
       "source_file": "data/sources/vhodne-uverejneni/vu-000034.json",
-      "source_id": "P25V000?",
+      "source_id": "P25-REG-99697",
       "record": {
         "source": "vhodne-uverejneni",
-        "source_id": "P25V000?",
+        "source_id": "P25-REG-99697",
         "procurement_id": "P25V000?",
-        "source_url": null,
+        "source_url": "https://www.vhodne-uverejneni.cz/index.php?a=detail&contract=99697&h=contractsregister&m=xenorders",
         "title": "Rekonstrukce technologie kotelny v budově radnice č.p. 6, Husovo náměstí v Lomnici nad Popelkou",
         "buyer_ico": "00275905",
-        "supplier_ico": null,
-        "supplier_name": null,
+        "supplier_ico": "43224679",
+        "supplier_name": "WARMNIS spol. s r.o.",
         "date": "2025-08-27",
-        "price": null,
-        "status": "ukončeno plnění smlouvy",
-        "type": "tender",
+        "price": 1237000.0,
+        "status": "smlouva zveřejněna",
+        "type": "contract",
         "raw": {
           "source": "vhodne-uverejneni",
-          "source_id": "P25V000?",
+          "source_id": "P25-REG-99697",
           "procurement_id": "P25V000?",
-          "source_url": null,
+          "source_url": "https://www.vhodne-uverejneni.cz/index.php?a=detail&contract=99697&h=contractsregister&m=xenorders",
           "title": "Rekonstrukce technologie kotelny v budově radnice č.p. 6, Husovo náměstí v Lomnici nad Popelkou",
           "buyer_ico": "00275905",
-          "supplier_ico": null,
-          "supplier_name": null,
+          "supplier_ico": "43224679",
+          "supplier_name": "WARMNIS spol. s r.o.",
           "date": "2025-08-27",
-          "price": null,
-          "status": "ukončeno plnění smlouvy",
-          "type": "tender"
+          "price": 1237000,
+          "status": "smlouva zveřejněna",
+          "type": "contract"
         },
         "_source_file": "data/sources/vhodne-uverejneni/vu-000034.json"
       }
@@ -94,26 +96,30 @@
     "timeline": [
       {
         "date": "2025-08-27",
-        "event": "tender",
+        "event": "contract",
         "source": "vhodne-uverejneni",
-        "source_id": "P25V000?",
+        "source_id": "P25-REG-99697",
         "title": "Rekonstrukce technologie kotelny v budově radnice č.p. 6, Husovo náměstí v Lomnici nad Popelkou",
-        "price": null,
+        "price": 1237000.0,
         "deadline": null
       }
     ],
     "financial": {
-      "baseline_price": null,
-      "current_observed_price": null,
-      "absolute_change": null,
+      "baseline_price": 1237000.0,
+      "current_observed_price": 1237000.0,
+      "absolute_change": 0.0,
       "percent_change": null,
-      "observed_prices": [],
+      "observed_prices": [
+        1237000.0
+      ],
       "addendum_count": 0
     },
     "metrics": {
       "source_count": 1,
-      "supplier_count": 0,
-      "price_values": [],
+      "supplier_count": 1,
+      "price_values": [
+        1237000.0
+      ],
       "date_values": [
         "2025-08-27"
       ],

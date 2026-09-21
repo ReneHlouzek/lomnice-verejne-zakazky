@@ -1,24 +1,24 @@
 {
-  "id": "p-modernizace-uceben-zus-stavebni-prace-0136",
-  "title": "Modernizace UČEBEN ZUŠ - stavební práce",
+  "id": "p-oprava-fasady-sportovni-haly-cp-999-ul-za-skolou-v-lomnici-nad-popelko-0141",
+  "title": "Oprava fasády sportovní haly čp. 999, ul. Za Školou v Lomnici nad Popelkou",
   "buyer_ico": "00275905",
   "status": "plneni-smlouvy",
   "project_type": "procurement",
   "canonical": {
-    "title": "Modernizace UČEBEN ZUŠ - stavební práce",
-    "supplier_ico": "25937499",
+    "title": "Oprava fasády sportovní haly čp. 999, ul. Za Školou v Lomnici nad Popelkou",
+    "supplier_ico": "25990764",
     "identifiers": [
-      "P25V00000799"
+      "P25V00008303"
     ],
     "lifecycle": {
       "events": [
         {
-          "date": "2025-01-28",
+          "date": "2025-09-23",
           "type": "tender",
           "source": "vhodne-uverejneni",
-          "source_id": "P25V00000799",
-          "title": "Modernizace UČEBEN ZUŠ - stavební práce",
-          "price": 15485071.64
+          "source_id": "P25V00008303",
+          "title": "Oprava fasády sportovní haly čp. 999, ul. Za Školou v Lomnici nad Popelkou",
+          "price": 1139962.0
         }
       ],
       "event_count": 1,
@@ -34,8 +34,8 @@
       "reason": "Zdrojový text obsahuje přímou zmínku o veřejné zakázce, výběru nebo zadávacím řízení."
     },
     "dates": {
-      "first_observed": "2025-01-28",
-      "last_observed": "2025-01-28"
+      "first_observed": "2025-09-23",
+      "last_observed": "2025-09-23"
     },
     "financial": {
       "observed_prices": [],
@@ -46,42 +46,42 @@
   },
   "sources": [
     {
-      "source_file": "data/sources/vhodne-uverejneni/vu-000001.json",
-      "source_id": "P25V00000799",
+      "source_file": "data/sources/vhodne-uverejneni/vu-000005.json",
+      "source_id": "P25V00008303",
       "record": {
         "source": "vhodne-uverejneni",
-        "source_id": "P25V00000799",
-        "procurement_id": "P25V00000799",
-        "source_url": "https://www.vhodne-uverejneni.cz/zakazka/modernizace-uceben-zus-stavebni-prace",
-        "title": "Modernizace UČEBEN ZUŠ - stavební práce",
+        "source_id": "P25V00008303",
+        "procurement_id": "P25V00008303",
+        "source_url": "https://www.vhodne-uverejneni.cz/zakazka/oprava-fasady-sportovni-haly-cp-999-ul-za-skolou-v-lomnici-nad-popelkou",
+        "title": "Oprava fasády sportovní haly čp. 999, ul. Za Školou v Lomnici nad Popelkou",
         "buyer_ico": "00275905",
-        "supplier_ico": "25937499",
-        "supplier_name": "REDOMO a.s.",
-        "date": "2025-01-28",
-        "price": 15485071.64,
+        "supplier_ico": "25990764",
+        "supplier_name": "D - BAU s.r.o.",
+        "date": "2025-09-23",
+        "price": 1139962.0,
         "status": "zakázka byla zadána (Plnění smlouvy)",
         "type": "tender",
         "raw": {
           "source": "vhodne-uverejneni",
-          "source_id": "P25V00000799",
-          "procurement_id": "P25V00000799",
-          "source_url": "https://www.vhodne-uverejneni.cz/zakazka/modernizace-uceben-zus-stavebni-prace",
-          "title": "Modernizace UČEBEN ZUŠ - stavební práce",
+          "source_id": "P25V00008303",
+          "procurement_id": "P25V00008303",
+          "source_url": "https://www.vhodne-uverejneni.cz/zakazka/oprava-fasady-sportovni-haly-cp-999-ul-za-skolou-v-lomnici-nad-popelkou",
+          "title": "Oprava fasády sportovní haly čp. 999, ul. Za Školou v Lomnici nad Popelkou",
           "buyer_ico": "00275905",
-          "supplier_ico": "25937499",
-          "supplier_name": "REDOMO a.s.",
-          "date": "2025-01-28",
-          "price": 15485071.64,
+          "supplier_ico": "25990764",
+          "supplier_name": "D - BAU s.r.o.",
+          "date": "2025-09-23",
+          "price": 1139962,
           "status": "zakázka byla zadána (Plnění smlouvy)",
           "type": "tender"
         },
-        "_source_file": "data/sources/vhodne-uverejneni/vu-000001.json"
+        "_source_file": "data/sources/vhodne-uverejneni/vu-000005.json"
       }
     }
   ],
   "analysis": {
     "schema_version": 4,
-    "project_id": "p-modernizace-uceben-zus-stavebni-prace-0136",
+    "project_id": "p-oprava-fasady-sportovni-haly-cp-999-ul-za-skolou-v-lomnici-nad-popelko-0141",
     "signal_count": 1,
     "signals": [
       {
@@ -93,22 +93,22 @@
     ],
     "timeline": [
       {
-        "date": "2025-01-28",
+        "date": "2025-09-23",
         "event": "tender",
         "source": "vhodne-uverejneni",
-        "source_id": "P25V00000799",
-        "title": "Modernizace UČEBEN ZUŠ - stavební práce",
-        "price": 15485071.64,
+        "source_id": "P25V00008303",
+        "title": "Oprava fasády sportovní haly čp. 999, ul. Za Školou v Lomnici nad Popelkou",
+        "price": 1139962.0,
         "deadline": null
       }
     ],
     "financial": {
-      "baseline_price": 15485071.64,
-      "current_observed_price": 15485071.64,
+      "baseline_price": 1139962.0,
+      "current_observed_price": 1139962.0,
       "absolute_change": 0.0,
       "percent_change": null,
       "observed_prices": [
-        15485071.64
+        1139962.0
       ],
       "addendum_count": 0
     },
@@ -116,10 +116,10 @@
       "source_count": 1,
       "supplier_count": 1,
       "price_values": [
-        15485071.64
+        1139962.0
       ],
       "date_values": [
-        "2025-01-28"
+        "2025-09-23"
       ],
       "document_count": 0,
       "deadline_observations": 0

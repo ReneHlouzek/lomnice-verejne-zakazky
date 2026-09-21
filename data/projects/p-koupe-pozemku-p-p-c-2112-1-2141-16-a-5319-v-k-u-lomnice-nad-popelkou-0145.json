@@ -1,21 +1,21 @@
 {
-  "id": "p-obnova-asfaltoveho-krytu-komunikace-k-oborskemu-rybniku-lomnice-nad-po-0121",
-  "title": "Obnova asfaltového krytu komunikace k Oborskému rybníku, Lomnice nad Popelkou",
+  "id": "p-koupe-pozemku-p-p-c-2112-1-2141-16-a-5319-v-k-u-lomnice-nad-popelkou-0145",
+  "title": "Koupě pozemků p. p. č. 2112/1, 2141/16, a 5319 v k. ú. Lomnice nad Popelkou",
   "buyer_ico": "00275905",
   "status": "plneni-smlouvy",
   "project_type": "procurement",
   "canonical": {
-    "title": "Obnova asfaltového krytu komunikace k Oborskému rybníku, Lomnice nad Popelkou",
+    "title": "Koupě pozemků p. p. č. 2112/1, 2141/16, a 5319 v k. ú. Lomnice nad Popelkou",
     "supplier_ico": null,
     "identifiers": [],
     "lifecycle": {
       "events": [
         {
-          "date": "2024-06-27",
+          "date": "2025-02-14",
           "type": "tender",
           "source": "vhodne-uverejneni",
           "source_id": null,
-          "title": "Obnova asfaltového krytu komunikace k Oborskému rybníku, Lomnice nad Popelkou",
+          "title": "Koupě pozemků p. p. č. 2112/1, 2141/16, a 5319 v k. ú. Lomnice nad Popelkou",
           "price": null
         }
       ],
@@ -27,13 +27,13 @@
     },
     "project_type": "procurement",
     "procurement_signal": {
-      "level": "likely",
-      "label": "Pravděpodobně souvisí se zakázkou",
-      "reason": "Název/předmět odpovídá investiční dodávce, stavebním pracím nebo jiné běžné zadavatelské dodávce; způsob výběru dodavatele z tohoto záznamu sám o sobě neplyne."
+      "level": "none",
+      "label": "Bez rozpoznané vazby na zakázku",
+      "reason": "V dostupném textu nebyl nalezen dostatečný signál."
     },
     "dates": {
-      "first_observed": "2024-06-27",
-      "last_observed": "2024-06-27"
+      "first_observed": "2025-02-14",
+      "last_observed": "2025-02-14"
     },
     "financial": {
       "observed_prices": [],
@@ -44,18 +44,18 @@
   },
   "sources": [
     {
-      "source_file": "data/sources/vhodne-uverejneni/vu-000033.json",
+      "source_file": "data/sources/vhodne-uverejneni/vu-000027.json",
       "source_id": null,
       "record": {
         "source": "vhodne-uverejneni",
         "source_id": null,
         "procurement_id": null,
-        "source_url": "https://www.vhodne-uverejneni.cz/zakazka/obnova-asfaltoveho-krytu-komunikace-k-oborskemu-rybniku-lomnice-nad-popelkou",
-        "title": "Obnova asfaltového krytu komunikace k Oborskému rybníku, Lomnice nad Popelkou",
+        "source_url": "https://www.vhodne-uverejneni.cz/zakazka/koupe-pozemku-p-p-c-2112-1-2141-16-a-5319-v-k-u-lomnice-nad-popelkou",
+        "title": "Koupě pozemků p. p. č. 2112/1, 2141/16, a 5319 v k. ú. Lomnice nad Popelkou",
         "buyer_ico": "00275905",
         "supplier_ico": null,
         "supplier_name": null,
-        "date": "2024-06-27",
+        "date": "2025-02-14",
         "price": null,
         "status": "plnění smlouvy",
         "type": "tender",
@@ -63,23 +63,23 @@
           "source": "vhodne-uverejneni",
           "source_id": null,
           "procurement_id": null,
-          "source_url": "https://www.vhodne-uverejneni.cz/zakazka/obnova-asfaltoveho-krytu-komunikace-k-oborskemu-rybniku-lomnice-nad-popelkou",
-          "title": "Obnova asfaltového krytu komunikace k Oborskému rybníku, Lomnice nad Popelkou",
+          "source_url": "https://www.vhodne-uverejneni.cz/zakazka/koupe-pozemku-p-p-c-2112-1-2141-16-a-5319-v-k-u-lomnice-nad-popelkou",
+          "title": "Koupě pozemků p. p. č. 2112/1, 2141/16, a 5319 v k. ú. Lomnice nad Popelkou",
           "buyer_ico": "00275905",
           "supplier_ico": null,
           "supplier_name": null,
-          "date": "2024-06-27",
+          "date": "2025-02-14",
           "price": null,
           "status": "plnění smlouvy",
           "type": "tender"
         },
-        "_source_file": "data/sources/vhodne-uverejneni/vu-000033.json"
+        "_source_file": "data/sources/vhodne-uverejneni/vu-000027.json"
       }
     }
   ],
   "analysis": {
     "schema_version": 4,
-    "project_id": "p-obnova-asfaltoveho-krytu-komunikace-k-oborskemu-rybniku-lomnice-nad-po-0121",
+    "project_id": "p-koupe-pozemku-p-p-c-2112-1-2141-16-a-5319-v-k-u-lomnice-nad-popelkou-0145",
     "signal_count": 1,
     "signals": [
       {
@@ -91,11 +91,11 @@
     ],
     "timeline": [
       {
-        "date": "2024-06-27",
+        "date": "2025-02-14",
         "event": "tender",
         "source": "vhodne-uverejneni",
         "source_id": null,
-        "title": "Obnova asfaltového krytu komunikace k Oborskému rybníku, Lomnice nad Popelkou",
+        "title": "Koupě pozemků p. p. č. 2112/1, 2141/16, a 5319 v k. ú. Lomnice nad Popelkou",
         "price": null,
         "deadline": null
       }
@@ -113,7 +113,7 @@
       "supplier_count": 0,
       "price_values": [],
       "date_values": [
-        "2024-06-27"
+        "2025-02-14"
       ],
       "document_count": 0,
       "deadline_observations": 0

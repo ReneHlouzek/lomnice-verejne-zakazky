@@ -1,21 +1,23 @@
 {
-  "id": "p-oprava-vytluku-komunikaci-2025-lomnice-nad-popelkou-0147",
-  "title": "Oprava výtluků komunikací 2025, Lomnice nad Popelkou",
+  "id": "p-nemocnice-nasledne-pece-lomnice-nad-popelkou-investice-a-opravy-0135",
+  "title": "Nemocnice následné péče Lomnice nad Popelkou – investice a opravy",
   "buyer_ico": "00275905",
-  "status": "plneni-smlouvy",
+  "status": "zruseno",
   "project_type": "procurement",
   "canonical": {
-    "title": "Oprava výtluků komunikací 2025, Lomnice nad Popelkou",
+    "title": "Nemocnice následné péče Lomnice nad Popelkou – investice a opravy",
     "supplier_ico": null,
-    "identifiers": [],
+    "identifiers": [
+      "P25V00007778"
+    ],
     "lifecycle": {
       "events": [
         {
-          "date": "2025-08-12",
+          "date": "2025-09-04",
           "type": "tender",
           "source": "vhodne-uverejneni",
-          "source_id": null,
-          "title": "Oprava výtluků komunikací 2025, Lomnice nad Popelkou",
+          "source_id": "P25V00007778",
+          "title": "Nemocnice následné péče Lomnice nad Popelkou – investice a opravy",
           "price": null
         }
       ],
@@ -27,13 +29,13 @@
     },
     "project_type": "procurement",
     "procurement_signal": {
-      "level": "likely",
-      "label": "Pravděpodobně souvisí se zakázkou",
-      "reason": "Název/předmět odpovídá investiční dodávce, stavebním pracím nebo jiné běžné zadavatelské dodávce; způsob výběru dodavatele z tohoto záznamu sám o sobě neplyne."
+      "level": "explicit",
+      "label": "Výslovná vazba na veřejnou zakázku",
+      "reason": "Zdrojový text obsahuje přímou zmínku o veřejné zakázce, výběru nebo zadávacím řízení."
     },
     "dates": {
-      "first_observed": "2025-08-12",
-      "last_observed": "2025-08-12"
+      "first_observed": "2025-09-04",
+      "last_observed": "2025-09-04"
     },
     "financial": {
       "observed_prices": [],
@@ -44,42 +46,42 @@
   },
   "sources": [
     {
-      "source_file": "data/sources/vhodne-uverejneni/vu-000024.json",
-      "source_id": null,
+      "source_file": "data/sources/vhodne-uverejneni/vu-000010.json",
+      "source_id": "P25V00007778",
       "record": {
         "source": "vhodne-uverejneni",
-        "source_id": null,
-        "procurement_id": null,
-        "source_url": "https://www.vhodne-uverejneni.cz/zakazka/oprava-vytluku-komunikaci-2025-lomnice-nad-popelkou",
-        "title": "Oprava výtluků komunikací 2025, Lomnice nad Popelkou",
+        "source_id": "P25V00007778",
+        "procurement_id": "P25V00007778",
+        "source_url": "https://www.vhodne-uverejneni.cz/zakazka/nemocnice-nasledne-pece-lomnice-nad-popelkou-investice-a-opravy-1",
+        "title": "Nemocnice následné péče Lomnice nad Popelkou – investice a opravy",
         "buyer_ico": "00275905",
         "supplier_ico": null,
         "supplier_name": null,
-        "date": "2025-08-12",
+        "date": "2025-09-04",
         "price": null,
-        "status": "plnění smlouvy",
+        "status": "zakázka byla zrušena (Vyhodnocování)",
         "type": "tender",
         "raw": {
           "source": "vhodne-uverejneni",
-          "source_id": null,
-          "procurement_id": null,
-          "source_url": "https://www.vhodne-uverejneni.cz/zakazka/oprava-vytluku-komunikaci-2025-lomnice-nad-popelkou",
-          "title": "Oprava výtluků komunikací 2025, Lomnice nad Popelkou",
+          "source_id": "P25V00007778",
+          "procurement_id": "P25V00007778",
+          "source_url": "https://www.vhodne-uverejneni.cz/zakazka/nemocnice-nasledne-pece-lomnice-nad-popelkou-investice-a-opravy-1",
+          "title": "Nemocnice následné péče Lomnice nad Popelkou – investice a opravy",
           "buyer_ico": "00275905",
           "supplier_ico": null,
           "supplier_name": null,
-          "date": "2025-08-12",
+          "date": "2025-09-04",
           "price": null,
-          "status": "plnění smlouvy",
+          "status": "zakázka byla zrušena (Vyhodnocování)",
           "type": "tender"
         },
-        "_source_file": "data/sources/vhodne-uverejneni/vu-000024.json"
+        "_source_file": "data/sources/vhodne-uverejneni/vu-000010.json"
       }
     }
   ],
   "analysis": {
     "schema_version": 4,
-    "project_id": "p-oprava-vytluku-komunikaci-2025-lomnice-nad-popelkou-0147",
+    "project_id": "p-nemocnice-nasledne-pece-lomnice-nad-popelkou-investice-a-opravy-0135",
     "signal_count": 1,
     "signals": [
       {
@@ -91,11 +93,11 @@
     ],
     "timeline": [
       {
-        "date": "2025-08-12",
+        "date": "2025-09-04",
         "event": "tender",
         "source": "vhodne-uverejneni",
-        "source_id": null,
-        "title": "Oprava výtluků komunikací 2025, Lomnice nad Popelkou",
+        "source_id": "P25V00007778",
+        "title": "Nemocnice následné péče Lomnice nad Popelkou – investice a opravy",
         "price": null,
         "deadline": null
       }
@@ -113,7 +115,7 @@
       "supplier_count": 0,
       "price_values": [],
       "date_values": [
-        "2025-08-12"
+        "2025-09-04"
       ],
       "document_count": 0,
       "deadline_observations": 0

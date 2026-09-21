@@ -1,11 +1,11 @@
 {
-  "id": "p-rekonstrukce-topneho-systemu-vcetne-zdroje-tepla-v-objektu-k-urnovemu-0143",
-  "title": "Rekonstrukce topného systému včetně zdroje tepla v objektu K Urnovému háji čp. 118, Lomnice nad Popelkou",
+  "id": "p-oprava-povrchu-komunikace-rvacov-ii-etapa-lomnice-nad-popelkou-0124",
+  "title": "Oprava povrchu komunikace Rváčov - II. etapa, Lomnice nad Popelkou",
   "buyer_ico": "00275905",
   "status": "plneni-smlouvy",
   "project_type": "procurement",
   "canonical": {
-    "title": "Rekonstrukce topného systému včetně zdroje tepla v objektu K Urnovému háji čp. 118, Lomnice nad Popelkou",
+    "title": "Oprava povrchu komunikace Rváčov - II. etapa, Lomnice nad Popelkou",
     "supplier_ico": null,
     "identifiers": [],
     "lifecycle": {
@@ -15,7 +15,7 @@
           "type": "tender",
           "source": "vhodne-uverejneni",
           "source_id": null,
-          "title": "Rekonstrukce topného systému včetně zdroje tepla v objektu K Urnovému háji čp. 118, Lomnice nad Popelkou",
+          "title": "Oprava povrchu komunikace Rváčov - II. etapa, Lomnice nad Popelkou",
           "price": null
         }
       ],
@@ -44,14 +44,14 @@
   },
   "sources": [
     {
-      "source_file": "data/sources/vhodne-uverejneni/vu-000014.json",
+      "source_file": "data/sources/vhodne-uverejneni/vu-000015.json",
       "source_id": null,
       "record": {
         "source": "vhodne-uverejneni",
         "source_id": null,
         "procurement_id": null,
-        "source_url": "https://www.vhodne-uverejneni.cz/zakazka/rekonstrukce-topneho-systemu-vcetne-zdroje-tepla-v-objektu-k-urnovemu-haji-cp-118-lomnice-nad-popelkou",
-        "title": "Rekonstrukce topného systému včetně zdroje tepla v objektu K Urnovému háji čp. 118, Lomnice nad Popelkou",
+        "source_url": "https://www.vhodne-uverejneni.cz/zakazka/oprava-povrchu-komunikace-rvacov-ii-etapa-lomnice-nad-popelkou",
+        "title": "Oprava povrchu komunikace Rváčov - II. etapa, Lomnice nad Popelkou",
         "buyer_ico": "00275905",
         "supplier_ico": null,
         "supplier_name": null,
@@ -63,8 +63,8 @@
           "source": "vhodne-uverejneni",
           "source_id": null,
           "procurement_id": null,
-          "source_url": "https://www.vhodne-uverejneni.cz/zakazka/rekonstrukce-topneho-systemu-vcetne-zdroje-tepla-v-objektu-k-urnovemu-haji-cp-118-lomnice-nad-popelkou",
-          "title": "Rekonstrukce topného systému včetně zdroje tepla v objektu K Urnovému háji čp. 118, Lomnice nad Popelkou",
+          "source_url": "https://www.vhodne-uverejneni.cz/zakazka/oprava-povrchu-komunikace-rvacov-ii-etapa-lomnice-nad-popelkou",
+          "title": "Oprava povrchu komunikace Rváčov - II. etapa, Lomnice nad Popelkou",
           "buyer_ico": "00275905",
           "supplier_ico": null,
           "supplier_name": null,
@@ -73,13 +73,13 @@
           "status": "plnění smlouvy",
           "type": "tender"
         },
-        "_source_file": "data/sources/vhodne-uverejneni/vu-000014.json"
+        "_source_file": "data/sources/vhodne-uverejneni/vu-000015.json"
       }
     }
   ],
   "analysis": {
     "schema_version": 4,
-    "project_id": "p-rekonstrukce-topneho-systemu-vcetne-zdroje-tepla-v-objektu-k-urnovemu-0143",
+    "project_id": "p-oprava-povrchu-komunikace-rvacov-ii-etapa-lomnice-nad-popelkou-0124",
     "signal_count": 1,
     "signals": [
       {
@@ -95,7 +95,7 @@
         "event": "tender",
         "source": "vhodne-uverejneni",
         "source_id": null,
-        "title": "Rekonstrukce topného systému včetně zdroje tepla v objektu K Urnovému háji čp. 118, Lomnice nad Popelkou",
+        "title": "Oprava povrchu komunikace Rváčov - II. etapa, Lomnice nad Popelkou",
         "price": null,
         "deadline": null
       }

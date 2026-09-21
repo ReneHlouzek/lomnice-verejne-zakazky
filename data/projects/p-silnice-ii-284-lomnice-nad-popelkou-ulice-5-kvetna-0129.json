@@ -1,23 +1,23 @@
 {
-  "id": "p-pojisteni-majetku-mesta-jeho-prispevkovych-organizaci-a-jejich-pojiste-0131",
-  "title": "Pojištění majetku města, jeho příspěvkových organizací a jejich pojištění odpovědnosti za újmu",
+  "id": "p-silnice-ii-284-lomnice-nad-popelkou-ulice-5-kvetna-0129",
+  "title": "Silnice II/284 Lomnice nad Popelkou, ulice 5. května",
   "buyer_ico": "00275905",
   "status": "plneni-smlouvy",
   "project_type": "procurement",
   "canonical": {
-    "title": "Pojištění majetku města, jeho příspěvkových organizací a jejich pojištění odpovědnosti za újmu",
-    "supplier_ico": "45534306",
+    "title": "Silnice II/284 Lomnice nad Popelkou, ulice 5. května",
+    "supplier_ico": null,
     "identifiers": [
-      "P25V00005529"
+      "P23V00007567"
     ],
     "lifecycle": {
       "events": [
         {
-          "date": "2025-06-11",
+          "date": "2023-11-09",
           "type": "tender",
           "source": "vhodne-uverejneni",
-          "source_id": "P25V00005529",
-          "title": "Pojištění majetku města, jeho příspěvkových organizací a jejich pojištění odpovědnosti za újmu",
+          "source_id": "P23V00007567",
+          "title": "Silnice II/284 Lomnice nad Popelkou, ulice 5. května",
           "price": null
         }
       ],
@@ -34,8 +34,8 @@
       "reason": "Zdrojový text obsahuje přímou zmínku o veřejné zakázce, výběru nebo zadávacím řízení."
     },
     "dates": {
-      "first_observed": "2025-06-11",
-      "last_observed": "2025-06-11"
+      "first_observed": "2023-11-09",
+      "last_observed": "2023-11-09"
     },
     "financial": {
       "observed_prices": [],
@@ -46,42 +46,42 @@
   },
   "sources": [
     {
-      "source_file": "data/sources/vhodne-uverejneni/vu-000004.json",
-      "source_id": "P25V00005529",
+      "source_file": "data/sources/vhodne-uverejneni/vu-000035.json",
+      "source_id": "P23V00007567",
       "record": {
         "source": "vhodne-uverejneni",
-        "source_id": "P25V00005529",
-        "procurement_id": "P25V00005529",
-        "source_url": "https://www.vhodne-uverejneni.cz/zakazka/pojisteni-majetku-mesta-jeho-prispevkovych-organizaci-a-jejich-pojisteni-odpovednosti-za-ujmu",
-        "title": "Pojištění majetku města, jeho příspěvkových organizací a jejich pojištění odpovědnosti za újmu",
+        "source_id": "P23V00007567",
+        "procurement_id": "P23V00007567",
+        "source_url": "https://www.vhodne-uverejneni.cz/zakazka/silnice-ii-284-lomnice-nad-popelkou-ulice-5-kvetna",
+        "title": "Silnice II/284 Lomnice nad Popelkou, ulice 5. května",
         "buyer_ico": "00275905",
-        "supplier_ico": "45534306",
-        "supplier_name": "ČSOB Pojišťovna, a. s., člen holdingu ČSOB",
-        "date": "2025-06-11",
+        "supplier_ico": null,
+        "supplier_name": null,
+        "date": "2023-11-09",
         "price": null,
         "status": "zakázka byla zadána (Plnění smlouvy)",
         "type": "tender",
         "raw": {
           "source": "vhodne-uverejneni",
-          "source_id": "P25V00005529",
-          "procurement_id": "P25V00005529",
-          "source_url": "https://www.vhodne-uverejneni.cz/zakazka/pojisteni-majetku-mesta-jeho-prispevkovych-organizaci-a-jejich-pojisteni-odpovednosti-za-ujmu",
-          "title": "Pojištění majetku města, jeho příspěvkových organizací a jejich pojištění odpovědnosti za újmu",
+          "source_id": "P23V00007567",
+          "procurement_id": "P23V00007567",
+          "source_url": "https://www.vhodne-uverejneni.cz/zakazka/silnice-ii-284-lomnice-nad-popelkou-ulice-5-kvetna",
+          "title": "Silnice II/284 Lomnice nad Popelkou, ulice 5. května",
           "buyer_ico": "00275905",
-          "supplier_ico": "45534306",
-          "supplier_name": "ČSOB Pojišťovna, a. s., člen holdingu ČSOB",
-          "date": "2025-06-11",
+          "supplier_ico": null,
+          "supplier_name": null,
+          "date": "2023-11-09",
           "price": null,
           "status": "zakázka byla zadána (Plnění smlouvy)",
           "type": "tender"
         },
-        "_source_file": "data/sources/vhodne-uverejneni/vu-000004.json"
+        "_source_file": "data/sources/vhodne-uverejneni/vu-000035.json"
       }
     }
   ],
   "analysis": {
     "schema_version": 4,
-    "project_id": "p-pojisteni-majetku-mesta-jeho-prispevkovych-organizaci-a-jejich-pojiste-0131",
+    "project_id": "p-silnice-ii-284-lomnice-nad-popelkou-ulice-5-kvetna-0129",
     "signal_count": 1,
     "signals": [
       {
@@ -93,11 +93,11 @@
     ],
     "timeline": [
       {
-        "date": "2025-06-11",
+        "date": "2023-11-09",
         "event": "tender",
         "source": "vhodne-uverejneni",
-        "source_id": "P25V00005529",
-        "title": "Pojištění majetku města, jeho příspěvkových organizací a jejich pojištění odpovědnosti za újmu",
+        "source_id": "P23V00007567",
+        "title": "Silnice II/284 Lomnice nad Popelkou, ulice 5. května",
         "price": null,
         "deadline": null
       }
@@ -112,10 +112,10 @@
     },
     "metrics": {
       "source_count": 1,
-      "supplier_count": 1,
+      "supplier_count": 0,
       "price_values": [],
       "date_values": [
-        "2025-06-11"
+        "2023-11-09"
       ],
       "document_count": 0,
       "deadline_observations": 0

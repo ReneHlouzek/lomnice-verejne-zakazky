@@ -1,21 +1,21 @@
 {
-  "id": "p-mesto-lomnice-nad-popelkou-cisternova-automobilova-strikacka-0127",
-  "title": "Město Lomnice nad Popelkou - Cisternová automobilová stříkačka",
+  "id": "p-restauratorske-prace-na-spodnich-castech-marianskeho-sloupu-v-lomnici-0134",
+  "title": "Restaurátorské práce na spodních částech mariánského sloupu v Lomnici nad Popelkou",
   "buyer_ico": "00275905",
-  "status": "ukonceno-plneni",
+  "status": "plneni-smlouvy",
   "project_type": "procurement",
   "canonical": {
-    "title": "Město Lomnice nad Popelkou - Cisternová automobilová stříkačka",
+    "title": "Restaurátorské práce na spodních částech mariánského sloupu v Lomnici nad Popelkou",
     "supplier_ico": null,
     "identifiers": [],
     "lifecycle": {
       "events": [
         {
-          "date": "2015-04-20",
+          "date": "2025-10-20",
           "type": "tender",
           "source": "vhodne-uverejneni",
           "source_id": null,
-          "title": "Město Lomnice nad Popelkou - Cisternová automobilová stříkačka",
+          "title": "Restaurátorské práce na spodních částech mariánského sloupu v Lomnici nad Popelkou",
           "price": null
         }
       ],
@@ -32,8 +32,8 @@
       "reason": "V dostupném textu nebyl nalezen dostatečný signál."
     },
     "dates": {
-      "first_observed": "2015-04-20",
-      "last_observed": "2015-04-20"
+      "first_observed": "2025-10-20",
+      "last_observed": "2025-10-20"
     },
     "financial": {
       "observed_prices": [],
@@ -44,42 +44,42 @@
   },
   "sources": [
     {
-      "source_file": "data/sources/vhodne-uverejneni/vu-000040.json",
+      "source_file": "data/sources/vhodne-uverejneni/vu-000023.json",
       "source_id": null,
       "record": {
         "source": "vhodne-uverejneni",
         "source_id": null,
         "procurement_id": null,
-        "source_url": null,
-        "title": "Město Lomnice nad Popelkou - Cisternová automobilová stříkačka",
+        "source_url": "https://www.vhodne-uverejneni.cz/zakazka/restauratorske-prace-na-spodnich-castech-marianskeho-sloupu-v-lomnici-nad-popelkou",
+        "title": "Restaurátorské práce na spodních částech mariánského sloupu v Lomnici nad Popelkou",
         "buyer_ico": "00275905",
         "supplier_ico": null,
         "supplier_name": null,
-        "date": "2015-04-20",
+        "date": "2025-10-20",
         "price": null,
-        "status": "ukončeno plnění smlouvy",
+        "status": "plnění smlouvy",
         "type": "tender",
         "raw": {
           "source": "vhodne-uverejneni",
           "source_id": null,
           "procurement_id": null,
-          "source_url": null,
-          "title": "Město Lomnice nad Popelkou - Cisternová automobilová stříkačka",
+          "source_url": "https://www.vhodne-uverejneni.cz/zakazka/restauratorske-prace-na-spodnich-castech-marianskeho-sloupu-v-lomnici-nad-popelkou",
+          "title": "Restaurátorské práce na spodních částech mariánského sloupu v Lomnici nad Popelkou",
           "buyer_ico": "00275905",
           "supplier_ico": null,
           "supplier_name": null,
-          "date": "2015-04-20",
+          "date": "2025-10-20",
           "price": null,
-          "status": "ukončeno plnění smlouvy",
+          "status": "plnění smlouvy",
           "type": "tender"
         },
-        "_source_file": "data/sources/vhodne-uverejneni/vu-000040.json"
+        "_source_file": "data/sources/vhodne-uverejneni/vu-000023.json"
       }
     }
   ],
   "analysis": {
     "schema_version": 4,
-    "project_id": "p-mesto-lomnice-nad-popelkou-cisternova-automobilova-strikacka-0127",
+    "project_id": "p-restauratorske-prace-na-spodnich-castech-marianskeho-sloupu-v-lomnici-0134",
     "signal_count": 1,
     "signals": [
       {
@@ -91,11 +91,11 @@
     ],
     "timeline": [
       {
-        "date": "2015-04-20",
+        "date": "2025-10-20",
         "event": "tender",
         "source": "vhodne-uverejneni",
         "source_id": null,
-        "title": "Město Lomnice nad Popelkou - Cisternová automobilová stříkačka",
+        "title": "Restaurátorské práce na spodních částech mariánského sloupu v Lomnici nad Popelkou",
         "price": null,
         "deadline": null
       }
@@ -113,7 +113,7 @@
       "supplier_count": 0,
       "price_values": [],
       "date_values": [
-        "2015-04-20"
+        "2025-10-20"
       ],
       "document_count": 0,
       "deadline_observations": 0

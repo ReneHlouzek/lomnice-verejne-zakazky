@@ -1,23 +1,21 @@
 {
-  "id": "p-silnice-ii-284-lomnice-nad-popelkou-ulice-5-kvetna-0128",
-  "title": "Silnice II/284 Lomnice nad Popelkou, ulice 5. května",
+  "id": "p-obnova-asfaltoveho-krytu-komunikace-k-oborskemu-rybniku-lomnice-nad-po-0122",
+  "title": "Obnova asfaltového krytu komunikace k Oborskému rybníku, Lomnice nad Popelkou",
   "buyer_ico": "00275905",
-  "status": "ukonceno-plneni",
+  "status": "plneni-smlouvy",
   "project_type": "procurement",
   "canonical": {
-    "title": "Silnice II/284 Lomnice nad Popelkou, ulice 5. května",
+    "title": "Obnova asfaltového krytu komunikace k Oborskému rybníku, Lomnice nad Popelkou",
     "supplier_ico": null,
-    "identifiers": [
-      "P23V000?"
-    ],
+    "identifiers": [],
     "lifecycle": {
       "events": [
         {
-          "date": "2023-11-09",
+          "date": "2024-06-27",
           "type": "tender",
           "source": "vhodne-uverejneni",
-          "source_id": "P23V000?",
-          "title": "Silnice II/284 Lomnice nad Popelkou, ulice 5. května",
+          "source_id": null,
+          "title": "Obnova asfaltového krytu komunikace k Oborskému rybníku, Lomnice nad Popelkou",
           "price": null
         }
       ],
@@ -29,13 +27,13 @@
     },
     "project_type": "procurement",
     "procurement_signal": {
-      "level": "none",
-      "label": "Bez rozpoznané vazby na zakázku",
-      "reason": "V dostupném textu nebyl nalezen dostatečný signál."
+      "level": "likely",
+      "label": "Pravděpodobně souvisí se zakázkou",
+      "reason": "Název/předmět odpovídá investiční dodávce, stavebním pracím nebo jiné běžné zadavatelské dodávce; způsob výběru dodavatele z tohoto záznamu sám o sobě neplyne."
     },
     "dates": {
-      "first_observed": "2023-11-09",
-      "last_observed": "2023-11-09"
+      "first_observed": "2024-06-27",
+      "last_observed": "2024-06-27"
     },
     "financial": {
       "observed_prices": [],
@@ -46,42 +44,42 @@
   },
   "sources": [
     {
-      "source_file": "data/sources/vhodne-uverejneni/vu-000035.json",
-      "source_id": "P23V000?",
+      "source_file": "data/sources/vhodne-uverejneni/vu-000033.json",
+      "source_id": null,
       "record": {
         "source": "vhodne-uverejneni",
-        "source_id": "P23V000?",
-        "procurement_id": "P23V000?",
-        "source_url": null,
-        "title": "Silnice II/284 Lomnice nad Popelkou, ulice 5. května",
+        "source_id": null,
+        "procurement_id": null,
+        "source_url": "https://www.vhodne-uverejneni.cz/zakazka/obnova-asfaltoveho-krytu-komunikace-k-oborskemu-rybniku-lomnice-nad-popelkou",
+        "title": "Obnova asfaltového krytu komunikace k Oborskému rybníku, Lomnice nad Popelkou",
         "buyer_ico": "00275905",
         "supplier_ico": null,
         "supplier_name": null,
-        "date": "2023-11-09",
+        "date": "2024-06-27",
         "price": null,
-        "status": "ukončeno plnění smlouvy",
+        "status": "plnění smlouvy",
         "type": "tender",
         "raw": {
           "source": "vhodne-uverejneni",
-          "source_id": "P23V000?",
-          "procurement_id": "P23V000?",
-          "source_url": null,
-          "title": "Silnice II/284 Lomnice nad Popelkou, ulice 5. května",
+          "source_id": null,
+          "procurement_id": null,
+          "source_url": "https://www.vhodne-uverejneni.cz/zakazka/obnova-asfaltoveho-krytu-komunikace-k-oborskemu-rybniku-lomnice-nad-popelkou",
+          "title": "Obnova asfaltového krytu komunikace k Oborskému rybníku, Lomnice nad Popelkou",
           "buyer_ico": "00275905",
           "supplier_ico": null,
           "supplier_name": null,
-          "date": "2023-11-09",
+          "date": "2024-06-27",
           "price": null,
-          "status": "ukončeno plnění smlouvy",
+          "status": "plnění smlouvy",
           "type": "tender"
         },
-        "_source_file": "data/sources/vhodne-uverejneni/vu-000035.json"
+        "_source_file": "data/sources/vhodne-uverejneni/vu-000033.json"
       }
     }
   ],
   "analysis": {
     "schema_version": 4,
-    "project_id": "p-silnice-ii-284-lomnice-nad-popelkou-ulice-5-kvetna-0128",
+    "project_id": "p-obnova-asfaltoveho-krytu-komunikace-k-oborskemu-rybniku-lomnice-nad-po-0122",
     "signal_count": 1,
     "signals": [
       {
@@ -93,11 +91,11 @@
     ],
     "timeline": [
       {
-        "date": "2023-11-09",
+        "date": "2024-06-27",
         "event": "tender",
         "source": "vhodne-uverejneni",
-        "source_id": "P23V000?",
-        "title": "Silnice II/284 Lomnice nad Popelkou, ulice 5. května",
+        "source_id": null,
+        "title": "Obnova asfaltového krytu komunikace k Oborskému rybníku, Lomnice nad Popelkou",
         "price": null,
         "deadline": null
       }
@@ -115,7 +113,7 @@
       "supplier_count": 0,
       "price_values": [],
       "date_values": [
-        "2023-11-09"
+        "2024-06-27"
       ],
       "document_count": 0,
       "deadline_observations": 0

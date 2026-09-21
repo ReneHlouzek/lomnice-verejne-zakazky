@@ -1,24 +1,24 @@
 {
-  "id": "p-nemocnice-nasledne-pece-lomnice-nad-popelkou-investice-a-opravy-0137",
-  "title": "Nemocnice následné péče Lomnice nad Popelkou – investice a opravy",
+  "id": "p-modernizace-infrastruktury-zs-t-g-masaryka-lomnice-nad-popelkou-vybave-0126",
+  "title": "\"Modernizace infrastruktury ZŠ T. G. Masaryka Lomnice nad Popelkou – vybavení\" Část 1 - Nábytek",
   "buyer_ico": "00275905",
   "status": "zruseno",
   "project_type": "procurement",
   "canonical": {
-    "title": "Nemocnice následné péče Lomnice nad Popelkou – investice a opravy",
+    "title": "\"Modernizace infrastruktury ZŠ T. G. Masaryka Lomnice nad Popelkou – vybavení\" Část 1 - Nábytek",
     "supplier_ico": null,
     "identifiers": [
-      "P25V00006718"
+      "P21V00006334"
     ],
     "lifecycle": {
       "events": [
         {
-          "date": "2025-07-22",
+          "date": "2021-08-16",
           "type": "tender",
           "source": "vhodne-uverejneni",
-          "source_id": "P25V00006718",
-          "title": "Nemocnice následné péče Lomnice nad Popelkou – investice a opravy",
-          "price": null
+          "source_id": "P21V00006334",
+          "title": "\"Modernizace infrastruktury ZŠ T. G. Masaryka Lomnice nad Popelkou – vybavení\" Část 1 - Nábytek",
+          "price": 5110000.0
         }
       ],
       "event_count": 1,
@@ -34,8 +34,8 @@
       "reason": "Zdrojový text obsahuje přímou zmínku o veřejné zakázce, výběru nebo zadávacím řízení."
     },
     "dates": {
-      "first_observed": "2025-07-22",
-      "last_observed": "2025-07-22"
+      "first_observed": "2021-08-16",
+      "last_observed": "2021-08-16"
     },
     "financial": {
       "observed_prices": [],
@@ -46,42 +46,42 @@
   },
   "sources": [
     {
-      "source_file": "data/sources/vhodne-uverejneni/vu-000009.json",
-      "source_id": "P25V00006718",
+      "source_file": "data/sources/vhodne-uverejneni/vu-000036.json",
+      "source_id": "P21V00006334",
       "record": {
         "source": "vhodne-uverejneni",
-        "source_id": "P25V00006718",
-        "procurement_id": "P25V00006718",
-        "source_url": "https://www.vhodne-uverejneni.cz/zakazka/nemocnice-nasledne-pece-lomnice-nad-popelkou-investice-a-opravy",
-        "title": "Nemocnice následné péče Lomnice nad Popelkou – investice a opravy",
+        "source_id": "P21V00006334",
+        "procurement_id": "P21V00006334",
+        "source_url": "https://www.vhodne-uverejneni.cz/zakazka/modernizace-infrastruktury-zs-t-g-masaryka-lomnice-nad-popelkou-vybaveni",
+        "title": "\"Modernizace infrastruktury ZŠ T. G. Masaryka Lomnice nad Popelkou – vybavení\" Část 1 - Nábytek",
         "buyer_ico": "00275905",
         "supplier_ico": null,
         "supplier_name": null,
-        "date": "2025-07-22",
-        "price": null,
+        "date": "2021-08-16",
+        "price": 5110000.0,
         "status": "zakázka byla zrušena (Vyhodnocování)",
         "type": "tender",
         "raw": {
           "source": "vhodne-uverejneni",
-          "source_id": "P25V00006718",
-          "procurement_id": "P25V00006718",
-          "source_url": "https://www.vhodne-uverejneni.cz/zakazka/nemocnice-nasledne-pece-lomnice-nad-popelkou-investice-a-opravy",
-          "title": "Nemocnice následné péče Lomnice nad Popelkou – investice a opravy",
+          "source_id": "P21V00006334",
+          "procurement_id": "P21V00006334",
+          "source_url": "https://www.vhodne-uverejneni.cz/zakazka/modernizace-infrastruktury-zs-t-g-masaryka-lomnice-nad-popelkou-vybaveni",
+          "title": "\"Modernizace infrastruktury ZŠ T. G. Masaryka Lomnice nad Popelkou – vybavení\" Část 1 - Nábytek",
           "buyer_ico": "00275905",
           "supplier_ico": null,
           "supplier_name": null,
-          "date": "2025-07-22",
-          "price": null,
+          "date": "2021-08-16",
+          "price": 5110000,
           "status": "zakázka byla zrušena (Vyhodnocování)",
           "type": "tender"
         },
-        "_source_file": "data/sources/vhodne-uverejneni/vu-000009.json"
+        "_source_file": "data/sources/vhodne-uverejneni/vu-000036.json"
       }
     }
   ],
   "analysis": {
     "schema_version": 4,
-    "project_id": "p-nemocnice-nasledne-pece-lomnice-nad-popelkou-investice-a-opravy-0137",
+    "project_id": "p-modernizace-infrastruktury-zs-t-g-masaryka-lomnice-nad-popelkou-vybave-0126",
     "signal_count": 1,
     "signals": [
       {
@@ -93,29 +93,33 @@
     ],
     "timeline": [
       {
-        "date": "2025-07-22",
+        "date": "2021-08-16",
         "event": "tender",
         "source": "vhodne-uverejneni",
-        "source_id": "P25V00006718",
-        "title": "Nemocnice následné péče Lomnice nad Popelkou – investice a opravy",
-        "price": null,
+        "source_id": "P21V00006334",
+        "title": "\"Modernizace infrastruktury ZŠ T. G. Masaryka Lomnice nad Popelkou – vybavení\" Část 1 - Nábytek",
+        "price": 5110000.0,
         "deadline": null
       }
     ],
     "financial": {
-      "baseline_price": null,
-      "current_observed_price": null,
-      "absolute_change": null,
+      "baseline_price": 5110000.0,
+      "current_observed_price": 5110000.0,
+      "absolute_change": 0.0,
       "percent_change": null,
-      "observed_prices": [],
+      "observed_prices": [
+        5110000.0
+      ],
       "addendum_count": 0
     },
     "metrics": {
       "source_count": 1,
       "supplier_count": 0,
-      "price_values": [],
+      "price_values": [
+        5110000.0
+      ],
       "date_values": [
-        "2025-07-22"
+        "2021-08-16"
       ],
       "document_count": 0,
       "deadline_observations": 0

@@ -1,21 +1,21 @@
 {
-  "id": "p-koupe-pozemku-p-p-c-453-v-k-u-lomnice-nad-popelkou-0129",
-  "title": "Koupě pozemku p. p. č. 453 v k. ú. Lomnice nad Popelkou",
+  "id": "p-oprava-vytluku-komunikaci-2025-lomnice-nad-popelkou-0148",
+  "title": "Oprava výtluků komunikací 2025, Lomnice nad Popelkou",
   "buyer_ico": "00275905",
   "status": "plneni-smlouvy",
   "project_type": "procurement",
   "canonical": {
-    "title": "Koupě pozemku p. p. č. 453 v k. ú. Lomnice nad Popelkou",
+    "title": "Oprava výtluků komunikací 2025, Lomnice nad Popelkou",
     "supplier_ico": null,
     "identifiers": [],
     "lifecycle": {
       "events": [
         {
-          "date": "2024-07-22",
+          "date": "2025-08-12",
           "type": "tender",
           "source": "vhodne-uverejneni",
           "source_id": null,
-          "title": "Koupě pozemku p. p. č. 453 v k. ú. Lomnice nad Popelkou",
+          "title": "Oprava výtluků komunikací 2025, Lomnice nad Popelkou",
           "price": null
         }
       ],
@@ -27,13 +27,13 @@
     },
     "project_type": "procurement",
     "procurement_signal": {
-      "level": "none",
-      "label": "Bez rozpoznané vazby na zakázku",
-      "reason": "V dostupném textu nebyl nalezen dostatečný signál."
+      "level": "likely",
+      "label": "Pravděpodobně souvisí se zakázkou",
+      "reason": "Název/předmět odpovídá investiční dodávce, stavebním pracím nebo jiné běžné zadavatelské dodávce; způsob výběru dodavatele z tohoto záznamu sám o sobě neplyne."
     },
     "dates": {
-      "first_observed": "2024-07-22",
-      "last_observed": "2024-07-22"
+      "first_observed": "2025-08-12",
+      "last_observed": "2025-08-12"
     },
     "financial": {
       "observed_prices": [],
@@ -44,18 +44,18 @@
   },
   "sources": [
     {
-      "source_file": "data/sources/vhodne-uverejneni/vu-000032.json",
+      "source_file": "data/sources/vhodne-uverejneni/vu-000024.json",
       "source_id": null,
       "record": {
         "source": "vhodne-uverejneni",
         "source_id": null,
         "procurement_id": null,
-        "source_url": "https://www.vhodne-uverejneni.cz/zakazka/koupe-pozemku-p-p-c-453-v-k-u-lomnice-nad-popelkou",
-        "title": "Koupě pozemku p. p. č. 453 v k. ú. Lomnice nad Popelkou",
+        "source_url": "https://www.vhodne-uverejneni.cz/zakazka/oprava-vytluku-komunikaci-2025-lomnice-nad-popelkou",
+        "title": "Oprava výtluků komunikací 2025, Lomnice nad Popelkou",
         "buyer_ico": "00275905",
         "supplier_ico": null,
         "supplier_name": null,
-        "date": "2024-07-22",
+        "date": "2025-08-12",
         "price": null,
         "status": "plnění smlouvy",
         "type": "tender",
@@ -63,23 +63,23 @@
           "source": "vhodne-uverejneni",
           "source_id": null,
           "procurement_id": null,
-          "source_url": "https://www.vhodne-uverejneni.cz/zakazka/koupe-pozemku-p-p-c-453-v-k-u-lomnice-nad-popelkou",
-          "title": "Koupě pozemku p. p. č. 453 v k. ú. Lomnice nad Popelkou",
+          "source_url": "https://www.vhodne-uverejneni.cz/zakazka/oprava-vytluku-komunikaci-2025-lomnice-nad-popelkou",
+          "title": "Oprava výtluků komunikací 2025, Lomnice nad Popelkou",
           "buyer_ico": "00275905",
           "supplier_ico": null,
           "supplier_name": null,
-          "date": "2024-07-22",
+          "date": "2025-08-12",
           "price": null,
           "status": "plnění smlouvy",
           "type": "tender"
         },
-        "_source_file": "data/sources/vhodne-uverejneni/vu-000032.json"
+        "_source_file": "data/sources/vhodne-uverejneni/vu-000024.json"
       }
     }
   ],
   "analysis": {
     "schema_version": 4,
-    "project_id": "p-koupe-pozemku-p-p-c-453-v-k-u-lomnice-nad-popelkou-0129",
+    "project_id": "p-oprava-vytluku-komunikaci-2025-lomnice-nad-popelkou-0148",
     "signal_count": 1,
     "signals": [
       {
@@ -91,11 +91,11 @@
     ],
     "timeline": [
       {
-        "date": "2024-07-22",
+        "date": "2025-08-12",
         "event": "tender",
         "source": "vhodne-uverejneni",
         "source_id": null,
-        "title": "Koupě pozemku p. p. č. 453 v k. ú. Lomnice nad Popelkou",
+        "title": "Oprava výtluků komunikací 2025, Lomnice nad Popelkou",
         "price": null,
         "deadline": null
       }
@@ -113,7 +113,7 @@
       "supplier_count": 0,
       "price_values": [],
       "date_values": [
-        "2024-07-22"
+        "2025-08-12"
       ],
       "document_count": 0,
       "deadline_observations": 0

@@ -1,21 +1,21 @@
 {
-  "id": "p-domov-pro-osoby-s-poruchou-autistickeho-spektra-0146",
-  "title": "Domov pro osoby s poruchou autistického spektra",
+  "id": "p-dodavka-elektriny-na-vo-0139",
+  "title": "Dodávka elektřiny na VO",
   "buyer_ico": "00275905",
-  "status": "ukonceno-plneni",
+  "status": "plneni-smlouvy",
   "project_type": "procurement",
   "canonical": {
-    "title": "Domov pro osoby s poruchou autistického spektra",
+    "title": "Dodávka elektřiny na VO",
     "supplier_ico": null,
     "identifiers": [],
     "lifecycle": {
       "events": [
         {
-          "date": "2020-09-08",
+          "date": "2025-12-19",
           "type": "tender",
           "source": "vhodne-uverejneni",
           "source_id": null,
-          "title": "Domov pro osoby s poruchou autistického spektra",
+          "title": "Dodávka elektřiny na VO",
           "price": null
         }
       ],
@@ -27,13 +27,13 @@
     },
     "project_type": "procurement",
     "procurement_signal": {
-      "level": "none",
-      "label": "Bez rozpoznané vazby na zakázku",
-      "reason": "V dostupném textu nebyl nalezen dostatečný signál."
+      "level": "likely",
+      "label": "Pravděpodobně souvisí se zakázkou",
+      "reason": "Název/předmět odpovídá investiční dodávce, stavebním pracím nebo jiné běžné zadavatelské dodávce; způsob výběru dodavatele z tohoto záznamu sám o sobě neplyne."
     },
     "dates": {
-      "first_observed": "2020-09-08",
-      "last_observed": "2020-09-08"
+      "first_observed": "2025-12-19",
+      "last_observed": "2025-12-19"
     },
     "financial": {
       "observed_prices": [],
@@ -44,42 +44,42 @@
   },
   "sources": [
     {
-      "source_file": "data/sources/vhodne-uverejneni/vu-000037.json",
+      "source_file": "data/sources/vhodne-uverejneni/vu-000021.json",
       "source_id": null,
       "record": {
         "source": "vhodne-uverejneni",
         "source_id": null,
         "procurement_id": null,
-        "source_url": null,
-        "title": "Domov pro osoby s poruchou autistického spektra",
+        "source_url": "https://www.vhodne-uverejneni.cz/zakazka/dodavka-elektriny-na-vo",
+        "title": "Dodávka elektřiny na VO",
         "buyer_ico": "00275905",
         "supplier_ico": null,
         "supplier_name": null,
-        "date": "2020-09-08",
+        "date": "2025-12-19",
         "price": null,
-        "status": "ukončeno plnění smlouvy",
+        "status": "plnění smlouvy",
         "type": "tender",
         "raw": {
           "source": "vhodne-uverejneni",
           "source_id": null,
           "procurement_id": null,
-          "source_url": null,
-          "title": "Domov pro osoby s poruchou autistického spektra",
+          "source_url": "https://www.vhodne-uverejneni.cz/zakazka/dodavka-elektriny-na-vo",
+          "title": "Dodávka elektřiny na VO",
           "buyer_ico": "00275905",
           "supplier_ico": null,
           "supplier_name": null,
-          "date": "2020-09-08",
+          "date": "2025-12-19",
           "price": null,
-          "status": "ukončeno plnění smlouvy",
+          "status": "plnění smlouvy",
           "type": "tender"
         },
-        "_source_file": "data/sources/vhodne-uverejneni/vu-000037.json"
+        "_source_file": "data/sources/vhodne-uverejneni/vu-000021.json"
       }
     }
   ],
   "analysis": {
     "schema_version": 4,
-    "project_id": "p-domov-pro-osoby-s-poruchou-autistickeho-spektra-0146",
+    "project_id": "p-dodavka-elektriny-na-vo-0139",
     "signal_count": 1,
     "signals": [
       {
@@ -91,11 +91,11 @@
     ],
     "timeline": [
       {
-        "date": "2020-09-08",
+        "date": "2025-12-19",
         "event": "tender",
         "source": "vhodne-uverejneni",
         "source_id": null,
-        "title": "Domov pro osoby s poruchou autistického spektra",
+        "title": "Dodávka elektřiny na VO",
         "price": null,
         "deadline": null
       }
@@ -113,7 +113,7 @@
       "supplier_count": 0,
       "price_values": [],
       "date_values": [
-        "2020-09-08"
+        "2025-12-19"
       ],
       "document_count": 0,
       "deadline_observations": 0

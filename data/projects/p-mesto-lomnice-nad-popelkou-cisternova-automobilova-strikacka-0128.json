@@ -1,24 +1,24 @@
 {
-  "id": "p-nemocnice-nasledne-pece-lomnice-nad-popelkou-investice-a-opravy-0134",
-  "title": "Nemocnice následné péče Lomnice nad Popelkou – investice a opravy",
+  "id": "p-mesto-lomnice-nad-popelkou-cisternova-automobilova-strikacka-0128",
+  "title": "Město Lomnice nad Popelkou - Cisternová automobilová stříkačka",
   "buyer_ico": "00275905",
   "status": "zruseno",
   "project_type": "procurement",
   "canonical": {
-    "title": "Nemocnice následné péče Lomnice nad Popelkou – investice a opravy",
+    "title": "Město Lomnice nad Popelkou - Cisternová automobilová stříkačka",
     "supplier_ico": null,
     "identifiers": [
-      "P25V00007778"
+      "P15V00002212"
     ],
     "lifecycle": {
       "events": [
         {
-          "date": "2025-09-04",
+          "date": "2015-04-20",
           "type": "tender",
           "source": "vhodne-uverejneni",
-          "source_id": "P25V00007778",
-          "title": "Nemocnice následné péče Lomnice nad Popelkou – investice a opravy",
-          "price": null
+          "source_id": "P15V00002212",
+          "title": "Město Lomnice nad Popelkou - Cisternová automobilová stříkačka",
+          "price": 4546000.0
         }
       ],
       "event_count": 1,
@@ -34,8 +34,8 @@
       "reason": "Zdrojový text obsahuje přímou zmínku o veřejné zakázce, výběru nebo zadávacím řízení."
     },
     "dates": {
-      "first_observed": "2025-09-04",
-      "last_observed": "2025-09-04"
+      "first_observed": "2015-04-20",
+      "last_observed": "2015-04-20"
     },
     "financial": {
       "observed_prices": [],
@@ -46,42 +46,42 @@
   },
   "sources": [
     {
-      "source_file": "data/sources/vhodne-uverejneni/vu-000010.json",
-      "source_id": "P25V00007778",
+      "source_file": "data/sources/vhodne-uverejneni/vu-000040.json",
+      "source_id": "P15V00002212",
       "record": {
         "source": "vhodne-uverejneni",
-        "source_id": "P25V00007778",
-        "procurement_id": "P25V00007778",
-        "source_url": "https://www.vhodne-uverejneni.cz/zakazka/nemocnice-nasledne-pece-lomnice-nad-popelkou-investice-a-opravy-1",
-        "title": "Nemocnice následné péče Lomnice nad Popelkou – investice a opravy",
+        "source_id": "P15V00002212",
+        "procurement_id": "P15V00002212",
+        "source_url": "https://www.vhodne-uverejneni.cz/zakazka/mesto-lomnice-nad-popelkou-cisternova-automobilova-strikacka",
+        "title": "Město Lomnice nad Popelkou - Cisternová automobilová stříkačka",
         "buyer_ico": "00275905",
         "supplier_ico": null,
         "supplier_name": null,
-        "date": "2025-09-04",
-        "price": null,
-        "status": "zakázka byla zrušena (Vyhodnocování)",
+        "date": "2015-04-20",
+        "price": 4546000.0,
+        "status": "zakázka byla zrušena (Aktuální zadávací řízení)",
         "type": "tender",
         "raw": {
           "source": "vhodne-uverejneni",
-          "source_id": "P25V00007778",
-          "procurement_id": "P25V00007778",
-          "source_url": "https://www.vhodne-uverejneni.cz/zakazka/nemocnice-nasledne-pece-lomnice-nad-popelkou-investice-a-opravy-1",
-          "title": "Nemocnice následné péče Lomnice nad Popelkou – investice a opravy",
+          "source_id": "P15V00002212",
+          "procurement_id": "P15V00002212",
+          "source_url": "https://www.vhodne-uverejneni.cz/zakazka/mesto-lomnice-nad-popelkou-cisternova-automobilova-strikacka",
+          "title": "Město Lomnice nad Popelkou - Cisternová automobilová stříkačka",
           "buyer_ico": "00275905",
           "supplier_ico": null,
           "supplier_name": null,
-          "date": "2025-09-04",
-          "price": null,
-          "status": "zakázka byla zrušena (Vyhodnocování)",
+          "date": "2015-04-20",
+          "price": 4546000,
+          "status": "zakázka byla zrušena (Aktuální zadávací řízení)",
           "type": "tender"
         },
-        "_source_file": "data/sources/vhodne-uverejneni/vu-000010.json"
+        "_source_file": "data/sources/vhodne-uverejneni/vu-000040.json"
       }
     }
   ],
   "analysis": {
     "schema_version": 4,
-    "project_id": "p-nemocnice-nasledne-pece-lomnice-nad-popelkou-investice-a-opravy-0134",
+    "project_id": "p-mesto-lomnice-nad-popelkou-cisternova-automobilova-strikacka-0128",
     "signal_count": 1,
     "signals": [
       {
@@ -93,29 +93,33 @@
     ],
     "timeline": [
       {
-        "date": "2025-09-04",
+        "date": "2015-04-20",
         "event": "tender",
         "source": "vhodne-uverejneni",
-        "source_id": "P25V00007778",
-        "title": "Nemocnice následné péče Lomnice nad Popelkou – investice a opravy",
-        "price": null,
+        "source_id": "P15V00002212",
+        "title": "Město Lomnice nad Popelkou - Cisternová automobilová stříkačka",
+        "price": 4546000.0,
         "deadline": null
       }
     ],
     "financial": {
-      "baseline_price": null,
-      "current_observed_price": null,
-      "absolute_change": null,
+      "baseline_price": 4546000.0,
+      "current_observed_price": 4546000.0,
+      "absolute_change": 0.0,
       "percent_change": null,
-      "observed_prices": [],
+      "observed_prices": [
+        4546000.0
+      ],
       "addendum_count": 0
     },
     "metrics": {
       "source_count": 1,
       "supplier_count": 0,
-      "price_values": [],
+      "price_values": [
+        4546000.0
+      ],
       "date_values": [
-        "2025-09-04"
+        "2015-04-20"
       ],
       "document_count": 0,
       "deadline_observations": 0
