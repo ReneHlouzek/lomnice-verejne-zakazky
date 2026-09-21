@@ -3,7 +3,7 @@ let index=null,activeType="";
 const money=v=>v==null?"—":new Intl.NumberFormat("cs-CZ",{style:"currency",currency:"CZK",maximumFractionDigits:0}).format(v);
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#039;"}[c]));
 async function load(){
-  try{index=await fetch("../data/index.json").then(r=>r.json());populate();render();}
+  try{index=await fetch("./data/index.json").then(r=>r.json());populate();render();}
   catch(e){$("#projects").innerHTML='<div class="empty">Data zatím nejsou dostupná.</div>'}
 }
 function populate(){
