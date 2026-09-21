@@ -25,7 +25,7 @@ def rows_for(source_dir: str):
             rows.append(r)
     return rows
 
-def audit_source(rows):
+def audit_source(rows, require_status=True):
     missing_url, missing_status, missing_price, missing_id = [], [], [], []
     ids = []
     for i, r in enumerate(rows, 1):
@@ -33,7 +33,7 @@ def audit_source(rows):
         url = str(r.get("source_url") or "").strip()
         if not url or not url.startswith("https://"):
             missing_url.append(i)
-        if not str(r.get("status") or "").strip():
+        if require_status and not str(r.get("status") or "").strip():
             missing_status.append(i)
         if r.get("price") in (None, ""):
             missing_price.append(i)
@@ -56,14 +56,15 @@ def main():
         "schema_version": 1,
         "buyer_ico": "00275905",
         "sources": {
-            "vhodne-uverejneni": audit_source(rows_for("vhodne-uverejneni")),
-            "registr-smluv": audit_source(rows_for("registr-smluv")),
+            "vhodne-uverejneni": audit_source(rows_for("vhodne-uverejneni"), require_status=True),
+            "registr-smluv": audit_source(rows_for("registr-smluv"), require_status=False),
         },
         "methodology": [
             "Audit pouze popisuje chybějící nebo duplicitní metadata; nic nedoplňuje odhadem.",
             "Chybějící cena není chyba: některé veřejné záznamy ji nemusí obsahovat.",
             "Chybějící URL znamená, že veřejná aplikace nemá bezpečný přímý odkaz na zdrojový záznam.",
             "Duplicitní identifikátor se nepovažuje automaticky za chybu; může jít o více verzí nebo zdrojových záznamů.",
+            "Registr smluv nemá v importu normalizovaný životní status; jeho absence se proto v auditu nepovažuje za chybu.",
         ],
     }
     OUT.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
