@@ -7,9 +7,7 @@
   "canonical": {
     "title": "Rekonstrukce technologie kotelny v budově radnice č.p. 6, Husovo náměstí v Lomnici nad Popelkou",
     "supplier_ico": "43224679",
-    "identifiers": [
-      "P25V000?"
-    ],
+    "identifiers": [],
     "lifecycle": {
       "events": [
         {
@@ -53,7 +51,7 @@
       "record": {
         "source": "vhodne-uverejneni",
         "source_id": "P25-REG-99697",
-        "procurement_id": "P25V000?",
+        "procurement_id": null,
         "source_url": "https://www.vhodne-uverejneni.cz/index.php?a=detail&contract=99697&h=contractsregister&m=xenorders",
         "title": "Rekonstrukce technologie kotelny v budově radnice č.p. 6, Husovo náměstí v Lomnici nad Popelkou",
         "buyer_ico": "00275905",
@@ -66,7 +64,7 @@
         "raw": {
           "source": "vhodne-uverejneni",
           "source_id": "P25-REG-99697",
-          "procurement_id": "P25V000?",
+          "procurement_id": null,
           "source_url": "https://www.vhodne-uverejneni.cz/index.php?a=detail&contract=99697&h=contractsregister&m=xenorders",
           "title": "Rekonstrukce technologie kotelny v budově radnice č.p. 6, Husovo náměstí v Lomnici nad Popelkou",
           "buyer_ico": "00275905",
