@@ -234,6 +234,8 @@ def canonical(g):
     procedures = sorted(set(str(r.get("procurement_procedure")) for r in g if r.get("procurement_procedure")))
     regimes = sorted(set(str(r.get("procurement_regime")) for r in g if r.get("procurement_regime")))
     funded = any(r.get("funded") is True for r in g)
+    known_addenda = sorted(set(n for r in g for n in (r.get("known_addenda_numbers") or []) if isinstance(n, int)))
+    project_registry_ids = sorted(set(r.get("project_registry_id") for r in g if r.get("project_registry_id")))
     type_counts = {}
     for e in events:
         type_counts[e["type"]] = type_counts.get(e["type"], 0) + 1
@@ -269,10 +271,12 @@ def canonical(g):
         "procurement": {
             "procedures": procedures,
             "regimes": regimes,
-            "funded": funded
+            "funded": funded,
+            "known_addenda_numbers": known_addenda
         },
         "verification": {
             "levels": verification_levels,
+            "project_registry_ids": project_registry_ids,
             "detail_verified_sources": sum(1 for r in g if r.get("verification_level") in ("detail","contract_detail","city_contract_document"))
         },
         "source_count": len(g),
