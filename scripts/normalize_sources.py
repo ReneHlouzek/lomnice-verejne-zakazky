@@ -116,6 +116,7 @@ def normalize_vu_seed():
     for old in target.glob("*.json"):
         old.unlink()
     count = 0
+    verified_count = 0
     for r in rows:
         if not isinstance(r, dict) or not clean(r.get("title")):
             continue
@@ -132,18 +133,23 @@ def normalize_vu_seed():
             "price": price(r.get("price")),
             "status": clean(r.get("status")),
             "type": clean(r.get("type")),
+            "verified_web": bool(r.get("verified_web")),
+            "verified_at": clean(r.get("verified_at")),
+            "verification_source": clean(r.get("verification_source")),
             "raw": r,
         }
         (target / f"vu-{count + 1:06d}.json").write_text(
             json.dumps(record, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
         )
         count += 1
-    return count
+        if record["verified_web"]:
+            verified_count += 1
+    return count, verified_count
 
 
 def main():
     count = normalize_rs()
-    vu_count = normalize_vu_seed()
+    vu_count, vu_verified_count = normalize_vu_seed()
     if RS.exists() and count == 0:
         raise SystemExit("Registr smluv normalization produced zero records.")
     if VU_SEED.exists() and vu_count == 0:
@@ -154,11 +160,12 @@ def main():
         "buyer_ico": BUYER_ICO,
         "registr_smluv_records": count,
         "vhodne_uverejneni_seed_records": vu_count,
+        "vhodne_uverejneni_verified_web_records": vu_verified_count,
         "sources": ["registr-smluv", "vhodne-uverejneni-seed"],
     }
     OUT.mkdir(parents=True, exist_ok=True)
     (OUT / "manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(f"Normalized {count} Registr smluv records and {vu_count} seeded VU records.")
+    print(f"Normalized {count} Registr smluv records and {vu_count} seeded VU records ({vu_verified_count} web-verified).")
 
 
 if __name__ == "__main__":
