@@ -2,19 +2,21 @@
   "id": "p-modernizace-infrastruktury-zs-t-g-masaryka-lomnice-nad-popelkou-staveb-0143",
   "title": "Modernizace infrastruktury ZŠ T. G. Masaryka Lomnice nad Popelkou – stavební práce",
   "buyer_ico": "00275905",
-  "status": "ukonceno-plneni",
+  "status": "zruseno",
   "project_type": "procurement",
   "canonical": {
     "title": "Modernizace infrastruktury ZŠ T. G. Masaryka Lomnice nad Popelkou – stavební práce",
     "supplier_ico": null,
-    "identifiers": [],
+    "identifiers": [
+      "P20V00001448"
+    ],
     "lifecycle": {
       "events": [
         {
           "date": "2020-02-28",
           "type": "tender",
           "source": "vhodne-uverejneni",
-          "source_id": null,
+          "source_id": "P20V00001448",
           "title": "Modernizace infrastruktury ZŠ T. G. Masaryka Lomnice nad Popelkou – stavební práce",
           "price": null
         }
@@ -27,9 +29,9 @@
     },
     "project_type": "procurement",
     "procurement_signal": {
-      "level": "likely",
-      "label": "Pravděpodobně souvisí se zakázkou",
-      "reason": "Název/předmět odpovídá investiční dodávce, stavebním pracím nebo jiné běžné zadavatelské dodávce; způsob výběru dodavatele z tohoto záznamu sám o sobě neplyne."
+      "level": "explicit",
+      "label": "Výslovná vazba na veřejnou zakázku",
+      "reason": "Zdrojový text obsahuje přímou zmínku o veřejné zakázce, výběru nebo zadávacím řízení."
     },
     "dates": {
       "first_observed": "2020-02-28",
@@ -45,32 +47,32 @@
   "sources": [
     {
       "source_file": "data/sources/vhodne-uverejneni/vu-000039.json",
-      "source_id": null,
+      "source_id": "P20V00001448",
       "record": {
         "source": "vhodne-uverejneni",
-        "source_id": null,
-        "procurement_id": null,
-        "source_url": null,
+        "source_id": "P20V00001448",
+        "procurement_id": "P20V00001448",
+        "source_url": "https://www.vhodne-uverejneni.cz/zakazka/modernizace-infrastruktury-zs-t-g-masaryka-lomnice-nad-popelkou-stavebni-prace",
         "title": "Modernizace infrastruktury ZŠ T. G. Masaryka Lomnice nad Popelkou – stavební práce",
         "buyer_ico": "00275905",
         "supplier_ico": null,
         "supplier_name": null,
         "date": "2020-02-28",
         "price": null,
-        "status": "ukončeno plnění smlouvy",
+        "status": "zakázka byla zrušena (Vyhodnocování)",
         "type": "tender",
         "raw": {
           "source": "vhodne-uverejneni",
-          "source_id": null,
-          "procurement_id": null,
-          "source_url": null,
+          "source_id": "P20V00001448",
+          "procurement_id": "P20V00001448",
+          "source_url": "https://www.vhodne-uverejneni.cz/zakazka/modernizace-infrastruktury-zs-t-g-masaryka-lomnice-nad-popelkou-stavebni-prace",
           "title": "Modernizace infrastruktury ZŠ T. G. Masaryka Lomnice nad Popelkou – stavební práce",
           "buyer_ico": "00275905",
           "supplier_ico": null,
           "supplier_name": null,
           "date": "2020-02-28",
           "price": null,
-          "status": "ukončeno plnění smlouvy",
+          "status": "zakázka byla zrušena (Vyhodnocování)",
           "type": "tender"
         },
         "_source_file": "data/sources/vhodne-uverejneni/vu-000039.json"
@@ -94,7 +96,7 @@
         "date": "2020-02-28",
         "event": "tender",
         "source": "vhodne-uverejneni",
-        "source_id": null,
+        "source_id": "P20V00001448",
         "title": "Modernizace infrastruktury ZŠ T. G. Masaryka Lomnice nad Popelkou – stavební práce",
         "price": null,
         "deadline": null

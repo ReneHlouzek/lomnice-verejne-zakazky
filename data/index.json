@@ -1,7 +1,7 @@
 {
   "schema_version": 3,
   "parser_state": "resolved",
-  "generated_at": "2026-09-21T09:23:56.757576+00:00",
+  "generated_at": "2026-09-21T09:43:59.053453+00:00",
   "source": {
     "profile_url": "https://www.vhodne-uverejneni.cz/profil/mesto-lomnice-nad-popelkou",
     "organization_name": "Město Lomnice nad Popelkou",
@@ -10,8 +10,8 @@
   "counts": {
     "aktualni-uverejneni": 0,
     "plneni-smlouvy": 33,
-    "ukonceno-plneni": 2,
-    "zruseno": 6
+    "ukonceno-plneni": 1,
+    "zruseno": 7
   },
   "project_type_counts": {
     "procurement": 38,
@@ -82,7 +82,6 @@
     "ukonceno-plneni": {
       "label": "Ukončeno plnění",
       "projects": [
-        "p-modernizace-infrastruktury-zs-t-g-masaryka-lomnice-nad-popelkou-staveb-0143",
         "p-modernizace-infrastruktury-zs-t-g-masaryka-lomnice-nad-popelkou-vybave-0119"
       ]
     },
@@ -92,6 +91,7 @@
         "p-domov-pro-osoby-s-poruchou-autistickeho-spektra-0121",
         "p-domov-pro-osoby-s-poruchou-autistickeho-spektra-0147",
         "p-mesto-lomnice-nad-popelkou-cisternova-automobilova-strikacka-0128",
+        "p-modernizace-infrastruktury-zs-t-g-masaryka-lomnice-nad-popelkou-staveb-0143",
         "p-modernizace-infrastruktury-zs-t-g-masaryka-lomnice-nad-popelkou-vybave-0126",
         "p-nemocnice-nasledne-pece-lomnice-nad-popelkou-investice-a-opravy-0135",
         "p-nemocnice-nasledne-pece-lomnice-nad-popelkou-investice-a-opravy-0138"
@@ -1091,7 +1091,7 @@
     {
       "id": "p-modernizace-infrastruktury-zs-t-g-masaryka-lomnice-nad-popelkou-staveb-0143",
       "title": "Modernizace infrastruktury ZŠ T. G. Masaryka Lomnice nad Popelkou – stavební práce",
-      "status": "ukonceno-plneni",
+      "status": "zruseno",
       "project_type": "procurement",
       "record_types": {
         "tender": 1
@@ -1101,9 +1101,9 @@
       "last_observed": "2020-02-28",
       "supplier_ico": null,
       "procurement_signal": {
-        "level": "likely",
-        "label": "Pravděpodobně souvisí se zakázkou",
-        "reason": "Název/předmět odpovídá investiční dodávce, stavebním pracím nebo jiné běžné zadavatelské dodávce; způsob výběru dodavatele z tohoto záznamu sám o sobě neplyne."
+        "level": "explicit",
+        "label": "Výslovná vazba na veřejnou zakázku",
+        "reason": "Zdrojový text obsahuje přímou zmínku o veřejné zakázce, výběru nebo zadávacím řízení."
       }
     },
     {
