@@ -228,6 +228,12 @@ def canonical(g):
     events.sort(key=lambda x: x["date"])
     contract_events = [e for e in events if e["type"] in ("contract", "addendum") and e["price"] is not None]
     observed_prices = [e["price"] for e in contract_events]
+    expected_values = [price(r.get("expected_value")) for r in g if price(r.get("expected_value")) is not None]
+    vat_prices = [price(r.get("price_vat_included")) for r in g if price(r.get("price_vat_included")) is not None]
+    verification_levels = sorted(set(str(r.get("verification_level")) for r in g if r.get("verification_level")))
+    procedures = sorted(set(str(r.get("procurement_procedure")) for r in g if r.get("procurement_procedure")))
+    regimes = sorted(set(str(r.get("procurement_regime")) for r in g if r.get("procurement_regime")))
+    funded = any(r.get("funded") is True for r in g)
     type_counts = {}
     for e in events:
         type_counts[e["type"]] = type_counts.get(e["type"], 0) + 1
@@ -252,7 +258,23 @@ def canonical(g):
         "project_type": project_type,
         "procurement_signal": max((procurement_signal(r) for r in g), key=lambda x: {"none":0,"likely":1,"explicit":2}[x["level"]]),
         "dates": {"first_observed": events[0]["date"] if events else None, "last_observed": events[-1]["date"] if events else None},
-        "financial": {"observed_prices": sorted(set(observed_prices)), "initial_contract_price": observed_prices[0] if observed_prices else None, "latest_observed_price": observed_prices[-1] if observed_prices else None},
+        "financial": {
+            "observed_prices": sorted(set(observed_prices)),
+            "observed_vat_included_prices": sorted(set(vat_prices)),
+            "expected_values": sorted(set(expected_values)),
+            "initial_contract_price": observed_prices[0] if observed_prices else None,
+            "latest_observed_price": observed_prices[-1] if observed_prices else None,
+            "expected_to_contract_ratio": (observed_prices[0] / expected_values[0]) if observed_prices and expected_values and expected_values[0] else None
+        },
+        "procurement": {
+            "procedures": procedures,
+            "regimes": regimes,
+            "funded": funded
+        },
+        "verification": {
+            "levels": verification_levels,
+            "detail_verified_sources": sum(1 for r in g if r.get("verification_level") in ("detail","contract_detail","city_contract_document"))
+        },
         "source_count": len(g),
     }
 
