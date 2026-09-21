@@ -405,7 +405,7 @@
     "supplier_ico": null,
     "supplier_name": null,
     "date": "2025-08-12",
-    "price": null,
+    "price": 1238953,
     "status": "plnění smlouvy",
     "type": "tender",
     "procurement_type": "Stavební práce",
@@ -416,10 +416,10 @@
     "cpv": [
       "Práce na opravě silnic"
     ],
-    "verification_level": "detail",
+    "verification_level": "detail_plus_external_tender_index",
     "verified_web": true,
     "verified_at": "2026-09-21",
-    "verification_source": "https://www.vhodne-uverejneni.cz/zakazka/opravy-mistnich-komunikaci-ve-meste-lomnice-nad-popelkou",
+    "verification_source": "https://www.hlidacstatu.cz/VerejneZakazky/Hledat?Q=osobaid%3Ajaroslav-demcak&order=",
     "contract_signed_date": "2025-05-28"
   },
   {
@@ -482,8 +482,9 @@
     "status": "plnění smlouvy",
     "type": "tender",
     "contract_signed_date": "2025-02-14",
-    "verification_level": "organization_contract_index",
-    "verification_source": "https://www.vhodne-uverejneni.cz/smlouvy-organizace/mesto-lomnice-nad-popelkou"
+    "verification_level": "profile_listing",
+    "verification_source": "https://www.vhodne-uverejneni.cz/profil/mesto-lomnice-nad-popelkou",
+    "expected_value": 2313000
   },
   {
     "source": "vhodne-uverejneni",
@@ -568,7 +569,10 @@
     "date": "2024-07-22",
     "price": null,
     "status": "plnění smlouvy",
-    "type": "tender"
+    "type": "tender",
+    "expected_value": 1903000,
+    "verification_level": "profile_listing",
+    "verification_source": "https://www.vhodne-uverejneni.cz/profil/mesto-lomnice-nad-popelkou?page-finished=2"
   },
   {
     "source": "vhodne-uverejneni",
@@ -789,12 +793,13 @@
     "supplier_ico": null,
     "supplier_name": null,
     "date": "2024-09-23",
-    "price": null,
+    "price": 619823,
     "status": "ukončeno plnění smlouvy",
     "type": "tender",
     "verified_web": true,
     "verified_at": "2026-09-21",
-    "verification_source": "Official PVU search/profile page"
+    "verification_source": "https://www.hlidacstatu.cz/VerejneZakazky/Hledat?Q=osobaid%3Ajaroslav-demcak&order=",
+    "verification_level": "external_tender_index"
   },
   {
     "source": "vhodne-uverejneni",
