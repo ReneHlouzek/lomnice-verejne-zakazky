@@ -850,7 +850,19 @@
     "type": "tender",
     "verified_web": true,
     "verified_at": "2026-09-21",
-    "verification_source": "Official city contract/budget; PVU"
+    "verification_source": "https://www.lomnicenadpopelkou.cz/assets/File.ashx?id_dokumenty=22323&id_org=8675",
+    "known_addenda_numbers": [
+      1
+    ],
+    "known_addenda_changes": [
+      {
+        "number": 1,
+        "change_without_vat": 98004,
+        "description": "Změna rozsahu prací na základě více a méně prací."
+      }
+    ],
+    "price_change_latest_observed": 969283,
+    "verification_level": "detail_plus_council_resolution"
   },
   {
     "source": "vhodne-uverejneni",
@@ -1147,11 +1159,14 @@
     "grant_id": "CZ.06.2.67/0.0/0.0/16_054/0004845",
     "known_addenda_numbers": [
       1,
+      2,
+      3,
+      4,
       5,
       6,
       7
     ],
-    "document_count": 14,
+    "document_count": 21,
     "verification_level": "contract_detail"
   },
   {
