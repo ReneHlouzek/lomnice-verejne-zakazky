@@ -11,10 +11,7 @@
     "date": "2025-01-28",
     "price": 15485071.64,
     "status": "zakázka byla zadána (Plnění smlouvy)",
-    "type": "tender",
-    "verified_web": true,
-    "verified_at": "2026-09-21",
-    "verification_source": "web"
+    "type": "tender"
   },
   {
     "source": "vhodne-uverejneni",
@@ -28,10 +25,7 @@
     "date": "2025-02-04",
     "price": null,
     "status": "zakázka byla zadána (Plnění smlouvy)",
-    "type": "tender",
-    "verified_web": true,
-    "verified_at": "2026-09-21",
-    "verification_source": "web"
+    "type": "tender"
   },
   {
     "source": "vhodne-uverejneni",
@@ -45,10 +39,7 @@
     "date": "2025-05-28",
     "price": 1047745,
     "status": "zakázka byla zadána (Plnění smlouvy)",
-    "type": "tender",
-    "verified_web": true,
-    "verified_at": "2026-09-21",
-    "verification_source": "web"
+    "type": "tender"
   },
   {
     "source": "vhodne-uverejneni",
@@ -62,10 +53,7 @@
     "date": "2025-06-11",
     "price": null,
     "status": "zakázka byla zadána (Plnění smlouvy)",
-    "type": "tender",
-    "verified_web": true,
-    "verified_at": "2026-09-21",
-    "verification_source": "web"
+    "type": "tender"
   },
   {
     "source": "vhodne-uverejneni",
@@ -79,10 +67,7 @@
     "date": "2025-09-23",
     "price": 1139962,
     "status": "zakázka byla zadána (Plnění smlouvy)",
-    "type": "tender",
-    "verified_web": true,
-    "verified_at": "2026-09-21",
-    "verification_source": "web"
+    "type": "tender"
   },
   {
     "source": "vhodne-uverejneni",
@@ -96,10 +81,7 @@
     "date": "2025-10-20",
     "price": 4243535.2,
     "status": "zakázka byla zadána (Plnění smlouvy)",
-    "type": "tender",
-    "verified_web": true,
-    "verified_at": "2026-09-21",
-    "verification_source": "web"
+    "type": "tender"
   },
   {
     "source": "vhodne-uverejneni",
@@ -113,10 +95,7 @@
     "date": "2025-11-05",
     "price": 2643822.3,
     "status": "zakázka byla zadána (Plnění smlouvy)",
-    "type": "tender",
-    "verified_web": true,
-    "verified_at": "2026-09-21",
-    "verification_source": "web"
+    "type": "tender"
   },
   {
     "source": "vhodne-uverejneni",
@@ -130,10 +109,7 @@
     "date": "2026-05-04",
     "price": null,
     "status": "zakázka byla zadána (Plnění smlouvy)",
-    "type": "tender",
-    "verified_web": true,
-    "verified_at": "2026-09-21",
-    "verification_source": "web"
+    "type": "tender"
   },
   {
     "source": "vhodne-uverejneni",
@@ -147,10 +123,7 @@
     "date": "2025-07-22",
     "price": null,
     "status": "zakázka byla zrušena (Vyhodnocování)",
-    "type": "tender",
-    "verified_web": true,
-    "verified_at": "2026-09-21",
-    "verification_source": "web"
+    "type": "tender"
   },
   {
     "source": "vhodne-uverejneni",
@@ -164,10 +137,7 @@
     "date": "2025-09-04",
     "price": null,
     "status": "zakázka byla zrušena (Vyhodnocování)",
-    "type": "tender",
-    "verified_web": true,
-    "verified_at": "2026-09-21",
-    "verification_source": "web"
+    "type": "tender"
   },
   {
     "source": "vhodne-uverejneni",
@@ -265,10 +235,7 @@
     "date": "2026-04-17",
     "price": null,
     "status": "plnění smlouvy",
-    "type": "tender",
-    "verified_web": true,
-    "verified_at": "2026-09-21",
-    "verification_source": "web"
+    "type": "tender"
   },
   {
     "source": "vhodne-uverejneni",
@@ -282,10 +249,7 @@
     "date": "2026-04-15",
     "price": null,
     "status": "plnění smlouvy",
-    "type": "tender",
-    "verified_web": true,
-    "verified_at": "2026-09-21",
-    "verification_source": "web"
+    "type": "tender"
   },
   {
     "source": "vhodne-uverejneni",
@@ -313,10 +277,7 @@
     "date": "2026-02-25",
     "price": null,
     "status": "plnění smlouvy",
-    "type": "tender",
-    "verified_web": true,
-    "verified_at": "2026-09-21",
-    "verification_source": "web"
+    "type": "tender"
   },
   {
     "source": "vhodne-uverejneni",
@@ -512,10 +473,7 @@
     "date": "2025-08-27",
     "price": 1237000,
     "status": "smlouva zveřejněna",
-    "type": "contract",
-    "verified_web": true,
-    "verified_at": "2026-09-21",
-    "verification_source": "web"
+    "type": "contract"
   },
   {
     "source": "vhodne-uverejneni",
@@ -529,10 +487,7 @@
     "date": "2023-11-09",
     "price": null,
     "status": "zakázka byla zadána (Plnění smlouvy)",
-    "type": "tender",
-    "verified_web": true,
-    "verified_at": "2026-09-21",
-    "verification_source": "web"
+    "type": "tender"
   },
   {
     "source": "vhodne-uverejneni",
@@ -546,10 +501,7 @@
     "date": "2021-08-16",
     "price": 5110000,
     "status": "zakázka byla zrušena (Vyhodnocování)",
-    "type": "tender",
-    "verified_web": true,
-    "verified_at": "2026-09-21",
-    "verification_source": "web"
+    "type": "tender"
   },
   {
     "source": "vhodne-uverejneni",
@@ -563,10 +515,7 @@
     "date": "2020-09-08",
     "price": null,
     "status": "zakázka byla zrušena (Vyhodnocování)",
-    "type": "tender",
-    "verified_web": true,
-    "verified_at": "2026-09-21",
-    "verification_source": "web"
+    "type": "tender"
   },
   {
     "source": "vhodne-uverejneni",
@@ -580,10 +529,7 @@
     "date": "2020-06-30",
     "price": 22268016.11,
     "status": "zakázka byla zrušena (Vyhodnocování)",
-    "type": "tender",
-    "verified_web": true,
-    "verified_at": "2026-09-21",
-    "verification_source": "web"
+    "type": "tender"
   },
   {
     "source": "vhodne-uverejneni",
@@ -597,10 +543,7 @@
     "date": "2020-02-28",
     "price": null,
     "status": "zakázka byla zrušena (Vyhodnocování)",
-    "type": "tender",
-    "verified_web": true,
-    "verified_at": "2026-09-21",
-    "verification_source": "web"
+    "type": "tender"
   },
   {
     "source": "vhodne-uverejneni",
@@ -614,10 +557,7 @@
     "date": "2015-04-20",
     "price": 4546000,
     "status": "zakázka byla zrušena (Aktuální zadávací řízení)",
-    "type": "tender",
-    "verified_web": true,
-    "verified_at": "2026-09-21",
-    "verification_source": "web"
+    "type": "tender"
   },
   {
     "source": "vhodne-uverejneni",
@@ -631,9 +571,6 @@
     "date": "2022-01-10",
     "price": 4953024,
     "status": "ukončeno plnění smlouvy na základě veřejné zakázky (Ukončeno plnění)",
-    "type": "tender",
-    "verified_web": true,
-    "verified_at": "2026-09-21",
-    "verification_source": "web"
+    "type": "tender"
   }
 ]
