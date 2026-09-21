@@ -713,18 +713,18 @@
     "source_url": null,
     "title": "Lesní cesta „Stránsko“",
     "buyer_ico": "00275905",
-    "supplier_ico": null,
-    "supplier_name": null,
+    "supplier_ico": "28762070",
+    "supplier_name": "MIZERA - STAVBY a.s.",
     "date": "2026-07-20",
     "price": 2240507,
     "status": "plnění smlouvy",
     "type": "tender",
     "verified_web": true,
     "verified_at": "2026-09-21",
-    "verification_source": "Official PVU search/profile page",
+    "verification_source": "https://www.hlidacstatu.cz/verejnezakazky/hledat?Q=osobaiddodavatel%3Amiloslav-mizera&oblast=&order=",
     "expected_value": 2268984,
     "description": "Rekonstrukce lesní cesty Stránsko v délce 796 metrů s úpravou parametrů lesní cesty na 2L 4,0/20.",
-    "verification_level": "listing_plus_external_contract_index"
+    "verification_level": "external_tender_index_plus_profile"
   },
   {
     "source": "vhodne-uverejneni",
