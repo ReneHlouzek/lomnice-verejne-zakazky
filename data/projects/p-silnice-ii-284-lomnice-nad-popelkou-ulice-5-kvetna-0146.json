@@ -1,0 +1,130 @@
+{
+  "id": "p-silnice-ii-284-lomnice-nad-popelkou-ulice-5-kvetna-0146",
+  "title": "Silnice II/284 Lomnice nad Popelkou, ulice 5. května",
+  "buyer_ico": "00275905",
+  "status": "plneni-smlouvy",
+  "project_type": "procurement",
+  "canonical": {
+    "title": "Silnice II/284 Lomnice nad Popelkou, ulice 5. května",
+    "supplier_ico": null,
+    "identifiers": [
+      "P23V00007567"
+    ],
+    "lifecycle": {
+      "events": [
+        {
+          "date": "2023-11-09",
+          "type": "tender",
+          "source": "vhodne-uverejneni",
+          "source_id": "P23V00007567",
+          "title": "Silnice II/284 Lomnice nad Popelkou, ulice 5. května",
+          "price": null
+        }
+      ],
+      "event_count": 1,
+      "type_counts": {
+        "tender": 1
+      },
+      "dominant_type": "tender"
+    },
+    "project_type": "procurement",
+    "procurement_signal": {
+      "level": "explicit",
+      "label": "Výslovná vazba na veřejnou zakázku",
+      "reason": "Zdrojový text obsahuje přímou zmínku o veřejné zakázce, výběru nebo zadávacím řízení."
+    },
+    "dates": {
+      "first_observed": "2023-11-09",
+      "last_observed": "2023-11-09"
+    },
+    "financial": {
+      "observed_prices": [],
+      "initial_contract_price": null,
+      "latest_observed_price": null
+    },
+    "source_count": 1
+  },
+  "sources": [
+    {
+      "source_file": "data/sources/vhodne-uverejneni/vu-000035.json",
+      "source_id": "P23V00007567",
+      "record": {
+        "source": "vhodne-uverejneni",
+        "source_id": "P23V00007567",
+        "procurement_id": "P23V00007567",
+        "source_url": "https://www.vhodne-uverejneni.cz/zakazka/silnice-ii-284-lomnice-nad-popelkou-ulice-5-kvetna",
+        "title": "Silnice II/284 Lomnice nad Popelkou, ulice 5. května",
+        "buyer_ico": "00275905",
+        "supplier_ico": null,
+        "supplier_name": null,
+        "date": "2023-11-09",
+        "price": null,
+        "status": "zakázka byla zadána (Plnění smlouvy)",
+        "type": "tender",
+        "verified_web": true,
+        "verified_at": null,
+        "verification_source": "Official PVU procurement detail",
+        "raw": {
+          "source": "vhodne-uverejneni",
+          "source_id": "P23V00007567",
+          "procurement_id": "P23V00007567",
+          "source_url": "https://www.vhodne-uverejneni.cz/zakazka/silnice-ii-284-lomnice-nad-popelkou-ulice-5-kvetna",
+          "title": "Silnice II/284 Lomnice nad Popelkou, ulice 5. května",
+          "buyer_ico": "00275905",
+          "supplier_ico": null,
+          "supplier_name": null,
+          "date": "2023-11-09",
+          "price": null,
+          "status": "zakázka byla zadána (Plnění smlouvy)",
+          "type": "tender",
+          "verified_web": true,
+          "verification_source": "Official PVU procurement detail"
+        },
+        "_source_file": "data/sources/vhodne-uverejneni/vu-000035.json"
+      }
+    }
+  ],
+  "analysis": {
+    "schema_version": 4,
+    "project_id": "p-silnice-ii-284-lomnice-nad-popelkou-ulice-5-kvetna-0146",
+    "signal_count": 1,
+    "signals": [
+      {
+        "code": "single_source",
+        "level": "info",
+        "message": "Projekt je zatím doložen pouze jedním zdrojovým záznamem.",
+        "evidence": []
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2023-11-09",
+        "event": "tender",
+        "source": "vhodne-uverejneni",
+        "source_id": "P23V00007567",
+        "title": "Silnice II/284 Lomnice nad Popelkou, ulice 5. května",
+        "price": null,
+        "deadline": null
+      }
+    ],
+    "financial": {
+      "baseline_price": null,
+      "current_observed_price": null,
+      "absolute_change": null,
+      "percent_change": null,
+      "observed_prices": [],
+      "addendum_count": 0
+    },
+    "metrics": {
+      "source_count": 1,
+      "supplier_count": 0,
+      "price_values": [],
+      "date_values": [
+        "2023-11-09"
+      ],
+      "document_count": 0,
+      "deadline_observations": 0
+    },
+    "methodology": "Signals are descriptive checks only; they do not establish wrongdoing or causality. They identify differences worth checking and retain source provenance."
+  }
+}

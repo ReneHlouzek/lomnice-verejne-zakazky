@@ -1,0 +1,33 @@
+{
+  "source": "vhodne-uverejneni",
+  "source_id": null,
+  "procurement_id": null,
+  "source_url": "https://www.vhodne-uverejneni.cz/profil/mesto-lomnice-nad-popelkou",
+  "title": "Stavební a malířské práce po opravě elektroinstalace v budově mateřské školy v 1. a 2.N.P. č.p. 1084, ul. Karla Čapka v Lomnici nad Popelkou",
+  "buyer_ico": "00275905",
+  "supplier_ico": null,
+  "supplier_name": null,
+  "date": "2024-06-27",
+  "price": null,
+  "status": "ukončeno plnění smlouvy",
+  "type": "tender",
+  "verified_web": true,
+  "verified_at": null,
+  "verification_source": "Official PVU locality listing",
+  "raw": {
+    "source": "vhodne-uverejneni",
+    "source_id": "",
+    "procurement_id": "",
+    "source_url": "https://www.vhodne-uverejneni.cz/profil/mesto-lomnice-nad-popelkou",
+    "title": "Stavební a malířské práce po opravě elektroinstalace v budově mateřské školy v 1. a 2.N.P. č.p. 1084, ul. Karla Čapka v Lomnici nad Popelkou",
+    "buyer_ico": "00275905",
+    "supplier_ico": null,
+    "supplier_name": null,
+    "date": "2024-06-27",
+    "price": null,
+    "status": "ukončeno plnění smlouvy",
+    "type": "tender",
+    "verified_web": true,
+    "verification_source": "Official PVU locality listing"
+  }
+}

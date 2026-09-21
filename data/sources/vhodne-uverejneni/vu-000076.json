@@ -1,0 +1,33 @@
+{
+  "source": "vhodne-uverejneni",
+  "source_id": null,
+  "procurement_id": null,
+  "source_url": "https://www.vhodne-uverejneni.cz/profil/mesto-lomnice-nad-popelkou",
+  "title": "Lomnice n. P. - VO Smetanova",
+  "buyer_ico": "00275905",
+  "supplier_ico": "25298194",
+  "supplier_name": "RYDVAL - ELEKTRO s.r.o.",
+  "date": "2023-12-22",
+  "price": null,
+  "status": "ukončeno plnění smlouvy",
+  "type": "tender",
+  "verified_web": true,
+  "verified_at": null,
+  "verification_source": "Official PVU organization listing and supplier reference",
+  "raw": {
+    "source": "vhodne-uverejneni",
+    "source_id": "",
+    "procurement_id": "",
+    "source_url": "https://www.vhodne-uverejneni.cz/profil/mesto-lomnice-nad-popelkou",
+    "title": "Lomnice n. P. - VO Smetanova",
+    "buyer_ico": "00275905",
+    "supplier_ico": "25298194",
+    "supplier_name": "RYDVAL - ELEKTRO s.r.o.",
+    "date": "2023-12-22",
+    "price": null,
+    "status": "ukončeno plnění smlouvy",
+    "type": "tender",
+    "verified_web": true,
+    "verification_source": "Official PVU organization listing and supplier reference"
+  }
+}

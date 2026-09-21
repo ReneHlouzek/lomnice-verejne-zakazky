@@ -1,0 +1,129 @@
+{
+  "id": "p-elektroinstalace-v-objektu-zs-tgm-lomnice-nad-popelkou-0125",
+  "title": "Elektroinstalace v objektu ZŠ TGM Lomnice nad Popelkou",
+  "buyer_ico": "00275905",
+  "status": "ukonceno-plneni",
+  "project_type": "contract",
+  "canonical": {
+    "title": "Elektroinstalace v objektu ZŠ TGM Lomnice nad Popelkou",
+    "supplier_ico": null,
+    "identifiers": [],
+    "lifecycle": {
+      "events": [
+        {
+          "date": "2021-06-24",
+          "type": "contract",
+          "source": "vhodne-uverejneni",
+          "source_id": null,
+          "title": "Elektroinstalace v objektu ZŠ TGM Lomnice nad Popelkou",
+          "price": null
+        }
+      ],
+      "event_count": 1,
+      "type_counts": {
+        "contract": 1
+      },
+      "dominant_type": "contract"
+    },
+    "project_type": "contract",
+    "procurement_signal": {
+      "level": "none",
+      "label": "Bez rozpoznané vazby na zakázku",
+      "reason": "V dostupném textu nebyl nalezen dostatečný signál."
+    },
+    "dates": {
+      "first_observed": "2021-06-24",
+      "last_observed": "2021-06-24"
+    },
+    "financial": {
+      "observed_prices": [],
+      "initial_contract_price": null,
+      "latest_observed_price": null
+    },
+    "source_count": 1
+  },
+  "sources": [
+    {
+      "source_file": "data/sources/vhodne-uverejneni/vu-000057.json",
+      "source_id": null,
+      "record": {
+        "source": "vhodne-uverejneni",
+        "source_id": null,
+        "procurement_id": null,
+        "source_url": "https://www.vhodne-uverejneni.cz/smlouvy-organizace/mesto-lomnice-nad-popelkou",
+        "title": "Elektroinstalace v objektu ZŠ TGM Lomnice nad Popelkou",
+        "buyer_ico": "00275905",
+        "supplier_ico": null,
+        "supplier_name": null,
+        "date": "2021-06-24",
+        "price": null,
+        "status": "ukončeno plnění smlouvy",
+        "type": "contract",
+        "verified_web": true,
+        "verified_at": "2026-09-21",
+        "verification_source": "Official PVU organization contract list",
+        "raw": {
+          "source": "vhodne-uverejneni",
+          "source_id": null,
+          "procurement_id": null,
+          "source_url": "https://www.vhodne-uverejneni.cz/smlouvy-organizace/mesto-lomnice-nad-popelkou",
+          "title": "Elektroinstalace v objektu ZŠ TGM Lomnice nad Popelkou",
+          "buyer_ico": "00275905",
+          "supplier_ico": null,
+          "supplier_name": null,
+          "date": "2021-06-24",
+          "price": null,
+          "status": "ukončeno plnění smlouvy",
+          "type": "contract",
+          "verified_web": true,
+          "verified_at": "2026-09-21",
+          "verification_source": "Official PVU organization contract list"
+        },
+        "_source_file": "data/sources/vhodne-uverejneni/vu-000057.json"
+      }
+    }
+  ],
+  "analysis": {
+    "schema_version": 4,
+    "project_id": "p-elektroinstalace-v-objektu-zs-tgm-lomnice-nad-popelkou-0125",
+    "signal_count": 1,
+    "signals": [
+      {
+        "code": "single_source",
+        "level": "info",
+        "message": "Projekt je zatím doložen pouze jedním zdrojovým záznamem.",
+        "evidence": []
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2021-06-24",
+        "event": "contract",
+        "source": "vhodne-uverejneni",
+        "source_id": null,
+        "title": "Elektroinstalace v objektu ZŠ TGM Lomnice nad Popelkou",
+        "price": null,
+        "deadline": null
+      }
+    ],
+    "financial": {
+      "baseline_price": null,
+      "current_observed_price": null,
+      "absolute_change": null,
+      "percent_change": null,
+      "observed_prices": [],
+      "addendum_count": 0
+    },
+    "metrics": {
+      "source_count": 1,
+      "supplier_count": 0,
+      "price_values": [],
+      "date_values": [
+        "2021-06-24"
+      ],
+      "document_count": 0,
+      "deadline_observations": 0
+    },
+    "methodology": "Signals are descriptive checks only; they do not establish wrongdoing or causality. They identify differences worth checking and retain source provenance."
+  }
+}
