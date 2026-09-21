@@ -35,8 +35,9 @@
       "ukonceno-plneni": 120,
       "zruseno": 8
     },
-    "registr_smluv_organization_contracts": 143,
-    "note": "Referenční počty se mohou průběžně měnit. Aktuálně jsou odvozeny z veřejného profilu zadavatele a stránky smluv organizace; slouží jako orientační coverage benchmark, nikoli jako počet zakázek po deduplikaci.",
-    "source_url": "https://www.vhodne-uverejneni.cz/profil/mesto-lomnice-nad-popelkou"
+    "registr_smluv_organization_contracts": 109,
+    "note": "Referenční počty se mohou průběžně měnit. 145 je aktuální součet stavů na profilu zadavatele PVU; 143 je počet smluv zobrazený na stránce smluv organizace PVU. 109 je počet záznamů aktuálně načtených z oficiálního otevřeného exportu Registru smluv pro Město Lomnice nad Popelkou. Tyto počty nejsou po deduplikaci a nesmí se zaměňovat mezi zdroji.",
+    "source_url": "https://www.vhodne-uverejneni.cz/profil/mesto-lomnice-nad-popelkou",
+    "vhodne_uverejneni_organization_contracts": 143
   }
 }
