@@ -487,7 +487,9 @@
     "date": "2023-11-09",
     "price": null,
     "status": "zakázka byla zadána (Plnění smlouvy)",
-    "type": "tender"
+    "type": "tender",
+    "verified_web": true,
+    "verification_source": "Official PVU procurement detail"
   },
   {
     "source": "vhodne-uverejneni",
@@ -515,7 +517,9 @@
     "date": "2020-09-08",
     "price": null,
     "status": "zakázka byla zrušena (Vyhodnocování)",
-    "type": "tender"
+    "type": "tender",
+    "verified_web": true,
+    "verification_source": "Official PVU profile/detail; procurement history contains cancelled and later proceedings"
   },
   {
     "source": "vhodne-uverejneni",
@@ -556,8 +560,10 @@
     "supplier_name": null,
     "date": "2015-04-20",
     "price": 4546000,
-    "status": "zakázka byla zrušena (Aktuální zadávací řízení)",
-    "type": "tender"
+    "status": "zrušeno",
+    "type": "tender",
+    "verified_web": true,
+    "verification_source": "Official PVU procurement detail"
   },
   {
     "source": "vhodne-uverejneni",
@@ -614,15 +620,15 @@
     "source_url": null,
     "title": "Stavební úpravy části městské polikliniky v Lomnici nad Popelkou čp. 866, ul. Obránců míru, čekárna stomatologické praxe",
     "buyer_ico": "00275905",
-    "supplier_ico": null,
-    "supplier_name": null,
+    "supplier_ico": "15057542",
+    "supplier_name": "Staving spol. s r.o.",
     "date": "2024-11-15",
-    "price": null,
+    "price": 3572513.37,
     "status": "ukončeno plnění smlouvy",
     "type": "tender",
     "verified_web": true,
     "verified_at": "2026-09-21",
-    "verification_source": "Official PVU search/profile page"
+    "verification_source": "Official city contract/budget"
   },
   {
     "source": "vhodne-uverejneni",
@@ -699,15 +705,15 @@
     "source_url": "https://www.vhodne-uverejneni.cz/zakazka/obnova-mvn-technolen-lomnice-nad-popelkou",
     "title": "Obnova MVN Technolen, Lomnice nad Popelkou",
     "buyer_ico": "00275905",
-    "supplier_ico": null,
-    "supplier_name": null,
+    "supplier_ico": "28762070",
+    "supplier_name": "MIZERA - STAVBY, a.s.",
     "date": "2024-02-14",
-    "price": null,
+    "price": 871279,
     "status": "ukončeno plnění smlouvy",
     "type": "tender",
     "verified_web": true,
     "verified_at": "2026-09-21",
-    "verification_source": "Official PVU search/profile page"
+    "verification_source": "Official city contract/budget; PVU"
   },
   {
     "source": "vhodne-uverejneni",
@@ -988,15 +994,15 @@
     "source_url": "https://www.vhodne-uverejneni.cz/smlouvy-organizace/mesto-lomnice-nad-popelkou",
     "title": "Modernizace infrastruktury SVČ Sluníčko Lomnice nad Popelkou , stavební práce",
     "buyer_ico": "00275905",
-    "supplier_ico": null,
-    "supplier_name": null,
+    "supplier_ico": "25937499",
+    "supplier_name": "REDOMO a.s.",
     "date": "2022-06-24",
-    "price": null,
+    "price": 20387820.9,
     "status": "ukončeno plnění smlouvy",
     "type": "contract",
     "verified_web": true,
     "verified_at": "2026-09-21",
-    "verification_source": "Official PVU organization contract list"
+    "verification_source": "Official PVU contract detail and project budget"
   },
   {
     "source": "vhodne-uverejneni",
