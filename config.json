@@ -22,9 +22,21 @@
   },
   "crawler": {
     "timeout_seconds": 30,
-    "delay_seconds": 1.0,
+    "delay_seconds": 1,
     "max_retries": 3,
     "download_documents": true,
     "max_file_mb": 95
+  },
+  "coverage_reference": {
+    "vhodne_uverejneni_profile_total": 144,
+    "vhodne_uverejneni_status_breakdown": {
+      "aktualni-uverejneni": 0,
+      "plneni-smlouvy": 17,
+      "ukonceno-plneni": 119,
+      "zruseno": 8
+    },
+    "registr_smluv_organization_contracts": 142,
+    "note": "Referenční počty převzaté z veřejného profilu zadavatele a stránky smluv organizace; slouží pouze jako orientační coverage benchmark, nikoli jako počet zakázek po deduplikaci.",
+    "source_url": "https://www.vhodne-uverejneni.cz/profil/mesto-lomnice-nad-popelkou"
   }
 }
