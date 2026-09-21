@@ -109,8 +109,8 @@
     "status": "zakázka byla zadána (Plnění smlouvy)",
     "type": "tender",
     "contract_signed_date": "2025-11-04",
-    "verification_level": "organization_contract_index",
-    "verification_source": "https://www.vhodne-uverejneni.cz/smlouvy-organizace/mesto-lomnice-nad-popelkou"
+    "verification_level": "external_tender_index",
+    "verification_source": "https://www.hlidacstatu.cz/verejnezakazky/hledat?q=osobaid%3Ajiri-kliment-4"
   },
   {
     "source": "vhodne-uverejneni",
@@ -166,7 +166,9 @@
     "date": "2025-12-19",
     "price": 2015798,
     "status": "smlouva zveřejněna",
-    "type": "contract"
+    "type": "contract",
+    "verification_level": "external_tender_index",
+    "verification_source": "https://www.hlidacstatu.cz/verejnezakazky/hledat?q=osobaid%3Ajiri-kliment-4"
   },
   {
     "source": "vhodne-uverejneni",
@@ -180,7 +182,9 @@
     "date": "2026-05-27",
     "price": 6072914,
     "status": "smlouva zveřejněna",
-    "type": "contract"
+    "type": "contract",
+    "verification_level": "external_tender_index",
+    "verification_source": "https://www.hlidacstatu.cz/verejnezakazky/hledat?q=osobaid%3Ajiri-kliment-4"
   },
   {
     "source": "vhodne-uverejneni",
@@ -237,12 +241,12 @@
     "supplier_ico": null,
     "supplier_name": null,
     "date": "2026-06-05",
-    "price": null,
+    "price": 3010766,
     "status": "plnění smlouvy",
     "type": "tender",
     "contract_signed_date": "2026-05-18",
-    "verification_level": "organization_contract_index",
-    "verification_source": "https://www.vhodne-uverejneni.cz/smlouvy-organizace/mesto-lomnice-nad-popelkou"
+    "verification_level": "external_tender_index",
+    "verification_source": "https://www.hlidacstatu.cz/verejnezakazky/hledat?q=osobaid%3Ajiri-kliment-4"
   },
   {
     "source": "vhodne-uverejneni",
