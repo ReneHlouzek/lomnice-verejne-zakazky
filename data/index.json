@@ -1,7 +1,7 @@
 {
   "schema_version": 3,
   "parser_state": "resolved",
-  "generated_at": "2026-09-21T07:09:22.008105+00:00",
+  "generated_at": "2026-09-21T07:23:55.332459+00:00",
   "source": {
     "profile_url": "https://www.vhodne-uverejneni.cz/profil/mesto-lomnice-nad-popelkou",
     "organization_name": "Město Lomnice nad Popelkou",
@@ -22,6 +22,20 @@
     "unclassified": 0
   },
   "total_projects": 149,
+  "coverage": {
+    "vhodne_uverejneni_profile_total": 144,
+    "vhodne_uverejneni_status_breakdown": {
+      "aktualni-uverejneni": 0,
+      "plneni-smlouvy": 17,
+      "ukonceno-plneni": 119,
+      "zruseno": 8
+    },
+    "registr_smluv_organization_contracts": 142,
+    "note": "Referenční počty převzaté z veřejného profilu zadavatele a stránky smluv organizace; slouží pouze jako orientační coverage benchmark, nikoli jako počet zakázek po deduplikaci.",
+    "source_url": "https://www.vhodne-uverejneni.cz/profil/mesto-lomnice-nad-popelkou",
+    "vhodne_uverejneni_seed_loaded": 41,
+    "registr_smluv_loaded": 109
+  },
   "statuses": {
     "aktualni-uverejneni": {
       "label": "Aktuální uveřejnění",
