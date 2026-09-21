@@ -25,4 +25,4 @@ Systém má oddělovat zdrojová fakta od automatických výpočtů a od kontrol
 Projekt je ve fázi založení infrastruktury. Další krok je implementace crawleru proti skutečné struktuře profilu a detailů Vhodného uveřejnění.
 
 
-<!-- Data refresh marker: PVU archive expanded 2026-09-21. -->
+<!-- Data refresh marker: PVU archive expanded with organization contracts 2026-09-21. -->
