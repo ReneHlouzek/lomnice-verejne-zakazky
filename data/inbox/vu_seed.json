@@ -1154,53 +1154,5 @@
     "type": "tender",
     "verified_web": true,
     "verification_source": "Official PVU procurement detail"
-  },
-  {
-    "source": "vhodne-uverejneni",
-    "source_id": "",
-    "procurement_id": "",
-    "source_url": "https://www.vhodne-uverejneni.cz/profil/mesto-lomnice-nad-popelkou",
-    "title": "Lomnice n. P. - VO Smetanova",
-    "buyer_ico": "00275905",
-    "supplier_ico": "25298194",
-    "supplier_name": "RYDVAL - ELEKTRO s.r.o.",
-    "date": "2023-12-22",
-    "price": null,
-    "status": "ukončeno plnění smlouvy",
-    "type": "tender",
-    "verified_web": true,
-    "verification_source": "Official PVU organization listing and supplier reference"
-  },
-  {
-    "source": "vhodne-uverejneni",
-    "source_id": "",
-    "procurement_id": "",
-    "source_url": "https://www.vhodne-uverejneni.cz/profil/mesto-lomnice-nad-popelkou",
-    "title": "Oprava elektroinstalace v budově mateřské školy č.p. 1084, ul. Karla Čapka v Lomnici nad Popelkou",
-    "buyer_ico": "00275905",
-    "supplier_ico": null,
-    "supplier_name": null,
-    "date": "2024-06-27",
-    "price": null,
-    "status": "ukončeno plnění smlouvy",
-    "type": "tender",
-    "verified_web": true,
-    "verification_source": "Official PVU locality listing"
-  },
-  {
-    "source": "vhodne-uverejneni",
-    "source_id": "",
-    "procurement_id": "",
-    "source_url": "https://www.vhodne-uverejneni.cz/profil/mesto-lomnice-nad-popelkou",
-    "title": "Stavební a malířské práce po opravě elektroinstalace v budově mateřské školy v 1. a 2.N.P. č.p. 1084, ul. Karla Čapka v Lomnici nad Popelkou",
-    "buyer_ico": "00275905",
-    "supplier_ico": null,
-    "supplier_name": null,
-    "date": "2024-06-27",
-    "price": null,
-    "status": "ukončeno plnění smlouvy",
-    "type": "tender",
-    "verified_web": true,
-    "verification_source": "Official PVU locality listing"
   }
 ]

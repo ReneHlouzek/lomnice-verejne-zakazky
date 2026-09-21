@@ -5,15 +5,15 @@
   "source_url": "https://www.vhodne-uverejneni.cz/zakazka/obnova-mvn-technolen-lomnice-nad-popelkou",
   "title": "Obnova MVN Technolen, Lomnice nad Popelkou",
   "buyer_ico": "00275905",
-  "supplier_ico": null,
-  "supplier_name": null,
+  "supplier_ico": "28762070",
+  "supplier_name": "MIZERA - STAVBY, a.s.",
   "date": "2024-02-14",
-  "price": null,
+  "price": 871279.0,
   "status": "ukončeno plnění smlouvy",
   "type": "tender",
   "verified_web": true,
   "verified_at": "2026-09-21",
-  "verification_source": "Official PVU search/profile page",
+  "verification_source": "Official city contract/budget; PVU",
   "raw": {
     "source": "vhodne-uverejneni",
     "source_id": "P24V00000978",
@@ -21,14 +21,14 @@
     "source_url": "https://www.vhodne-uverejneni.cz/zakazka/obnova-mvn-technolen-lomnice-nad-popelkou",
     "title": "Obnova MVN Technolen, Lomnice nad Popelkou",
     "buyer_ico": "00275905",
-    "supplier_ico": null,
-    "supplier_name": null,
+    "supplier_ico": "28762070",
+    "supplier_name": "MIZERA - STAVBY, a.s.",
     "date": "2024-02-14",
-    "price": null,
+    "price": 871279,
     "status": "ukončeno plnění smlouvy",
     "type": "tender",
     "verified_web": true,
     "verified_at": "2026-09-21",
-    "verification_source": "Official PVU search/profile page"
+    "verification_source": "Official city contract/budget; PVU"
   }
 }

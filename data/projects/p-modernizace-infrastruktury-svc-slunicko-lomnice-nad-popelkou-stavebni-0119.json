@@ -6,7 +6,7 @@
   "project_type": "contract",
   "canonical": {
     "title": "Modernizace infrastruktury SVČ Sluníčko Lomnice nad Popelkou , stavební práce",
-    "supplier_ico": null,
+    "supplier_ico": "25937499",
     "identifiers": [],
     "lifecycle": {
       "events": [
@@ -16,7 +16,7 @@
           "source": "vhodne-uverejneni",
           "source_id": null,
           "title": "Modernizace infrastruktury SVČ Sluníčko Lomnice nad Popelkou , stavební práce",
-          "price": null
+          "price": 20387820.9
         }
       ],
       "event_count": 1,
@@ -36,9 +36,11 @@
       "last_observed": "2022-06-24"
     },
     "financial": {
-      "observed_prices": [],
-      "initial_contract_price": null,
-      "latest_observed_price": null
+      "observed_prices": [
+        20387820.9
+      ],
+      "initial_contract_price": 20387820.9,
+      "latest_observed_price": 20387820.9
     },
     "source_count": 1
   },
@@ -53,15 +55,15 @@
         "source_url": "https://www.vhodne-uverejneni.cz/smlouvy-organizace/mesto-lomnice-nad-popelkou",
         "title": "Modernizace infrastruktury SVČ Sluníčko Lomnice nad Popelkou , stavební práce",
         "buyer_ico": "00275905",
-        "supplier_ico": null,
-        "supplier_name": null,
+        "supplier_ico": "25937499",
+        "supplier_name": "REDOMO a.s.",
         "date": "2022-06-24",
-        "price": null,
+        "price": 20387820.9,
         "status": "ukončeno plnění smlouvy",
         "type": "contract",
         "verified_web": true,
         "verified_at": "2026-09-21",
-        "verification_source": "Official PVU organization contract list",
+        "verification_source": "Official PVU contract detail and project budget",
         "raw": {
           "source": "vhodne-uverejneni",
           "source_id": null,
@@ -69,15 +71,15 @@
           "source_url": "https://www.vhodne-uverejneni.cz/smlouvy-organizace/mesto-lomnice-nad-popelkou",
           "title": "Modernizace infrastruktury SVČ Sluníčko Lomnice nad Popelkou , stavební práce",
           "buyer_ico": "00275905",
-          "supplier_ico": null,
-          "supplier_name": null,
+          "supplier_ico": "25937499",
+          "supplier_name": "REDOMO a.s.",
           "date": "2022-06-24",
-          "price": null,
+          "price": 20387820.9,
           "status": "ukončeno plnění smlouvy",
           "type": "contract",
           "verified_web": true,
           "verified_at": "2026-09-21",
-          "verification_source": "Official PVU organization contract list"
+          "verification_source": "Official PVU contract detail and project budget"
         },
         "_source_file": "data/sources/vhodne-uverejneni/vu-000066.json"
       }
@@ -102,22 +104,26 @@
         "source": "vhodne-uverejneni",
         "source_id": null,
         "title": "Modernizace infrastruktury SVČ Sluníčko Lomnice nad Popelkou , stavební práce",
-        "price": null,
+        "price": 20387820.9,
         "deadline": null
       }
     ],
     "financial": {
-      "baseline_price": null,
-      "current_observed_price": null,
-      "absolute_change": null,
+      "baseline_price": 20387820.9,
+      "current_observed_price": 20387820.9,
+      "absolute_change": 0.0,
       "percent_change": null,
-      "observed_prices": [],
+      "observed_prices": [
+        20387820.9
+      ],
       "addendum_count": 0
     },
     "metrics": {
       "source_count": 1,
-      "supplier_count": 0,
-      "price_values": [],
+      "supplier_count": 1,
+      "price_values": [
+        20387820.9
+      ],
       "date_values": [
         "2022-06-24"
       ],

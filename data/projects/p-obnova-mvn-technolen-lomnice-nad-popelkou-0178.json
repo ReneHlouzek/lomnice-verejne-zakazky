@@ -6,7 +6,7 @@
   "project_type": "procurement",
   "canonical": {
     "title": "Obnova MVN Technolen, Lomnice nad Popelkou",
-    "supplier_ico": null,
+    "supplier_ico": "28762070",
     "identifiers": [
       "P24V00000978"
     ],
@@ -18,7 +18,7 @@
           "source": "vhodne-uverejneni",
           "source_id": "P24V00000978",
           "title": "Obnova MVN Technolen, Lomnice nad Popelkou",
-          "price": null
+          "price": 871279.0
         }
       ],
       "event_count": 1,
@@ -55,15 +55,15 @@
         "source_url": "https://www.vhodne-uverejneni.cz/zakazka/obnova-mvn-technolen-lomnice-nad-popelkou",
         "title": "Obnova MVN Technolen, Lomnice nad Popelkou",
         "buyer_ico": "00275905",
-        "supplier_ico": null,
-        "supplier_name": null,
+        "supplier_ico": "28762070",
+        "supplier_name": "MIZERA - STAVBY, a.s.",
         "date": "2024-02-14",
-        "price": null,
+        "price": 871279.0,
         "status": "ukončeno plnění smlouvy",
         "type": "tender",
         "verified_web": true,
         "verified_at": "2026-09-21",
-        "verification_source": "Official PVU search/profile page",
+        "verification_source": "Official city contract/budget; PVU",
         "raw": {
           "source": "vhodne-uverejneni",
           "source_id": "P24V00000978",
@@ -71,15 +71,15 @@
           "source_url": "https://www.vhodne-uverejneni.cz/zakazka/obnova-mvn-technolen-lomnice-nad-popelkou",
           "title": "Obnova MVN Technolen, Lomnice nad Popelkou",
           "buyer_ico": "00275905",
-          "supplier_ico": null,
-          "supplier_name": null,
+          "supplier_ico": "28762070",
+          "supplier_name": "MIZERA - STAVBY, a.s.",
           "date": "2024-02-14",
-          "price": null,
+          "price": 871279,
           "status": "ukončeno plnění smlouvy",
           "type": "tender",
           "verified_web": true,
           "verified_at": "2026-09-21",
-          "verification_source": "Official PVU search/profile page"
+          "verification_source": "Official city contract/budget; PVU"
         },
         "_source_file": "data/sources/vhodne-uverejneni/vu-000049.json"
       }
@@ -104,22 +104,26 @@
         "source": "vhodne-uverejneni",
         "source_id": "P24V00000978",
         "title": "Obnova MVN Technolen, Lomnice nad Popelkou",
-        "price": null,
+        "price": 871279.0,
         "deadline": null
       }
     ],
     "financial": {
-      "baseline_price": null,
-      "current_observed_price": null,
-      "absolute_change": null,
+      "baseline_price": 871279.0,
+      "current_observed_price": 871279.0,
+      "absolute_change": 0.0,
       "percent_change": null,
-      "observed_prices": [],
+      "observed_prices": [
+        871279.0
+      ],
       "addendum_count": 0
     },
     "metrics": {
       "source_count": 1,
-      "supplier_count": 0,
-      "price_values": [],
+      "supplier_count": 1,
+      "price_values": [
+        871279.0
+      ],
       "date_values": [
         "2024-02-14"
       ],

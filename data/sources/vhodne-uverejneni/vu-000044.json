@@ -5,15 +5,15 @@
   "source_url": null,
   "title": "Stavební úpravy části městské polikliniky v Lomnici nad Popelkou čp. 866, ul. Obránců míru, čekárna stomatologické praxe",
   "buyer_ico": "00275905",
-  "supplier_ico": null,
-  "supplier_name": null,
+  "supplier_ico": "15057542",
+  "supplier_name": "Staving spol. s r.o.",
   "date": "2024-11-15",
-  "price": null,
+  "price": 3572513.37,
   "status": "ukončeno plnění smlouvy",
   "type": "tender",
   "verified_web": true,
   "verified_at": "2026-09-21",
-  "verification_source": "Official PVU search/profile page",
+  "verification_source": "Official city contract/budget",
   "raw": {
     "source": "vhodne-uverejneni",
     "source_id": null,
@@ -21,14 +21,14 @@
     "source_url": null,
     "title": "Stavební úpravy části městské polikliniky v Lomnici nad Popelkou čp. 866, ul. Obránců míru, čekárna stomatologické praxe",
     "buyer_ico": "00275905",
-    "supplier_ico": null,
-    "supplier_name": null,
+    "supplier_ico": "15057542",
+    "supplier_name": "Staving spol. s r.o.",
     "date": "2024-11-15",
-    "price": null,
+    "price": 3572513.37,
     "status": "ukončeno plnění smlouvy",
     "type": "tender",
     "verified_web": true,
     "verified_at": "2026-09-21",
-    "verification_source": "Official PVU search/profile page"
+    "verification_source": "Official city contract/budget"
   }
 }

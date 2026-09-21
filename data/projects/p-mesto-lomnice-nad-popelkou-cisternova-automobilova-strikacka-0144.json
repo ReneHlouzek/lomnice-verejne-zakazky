@@ -29,9 +29,9 @@
     },
     "project_type": "procurement",
     "procurement_signal": {
-      "level": "explicit",
-      "label": "Výslovná vazba na veřejnou zakázku",
-      "reason": "Zdrojový text obsahuje přímou zmínku o veřejné zakázce, výběru nebo zadávacím řízení."
+      "level": "none",
+      "label": "Bez rozpoznané vazby na zakázku",
+      "reason": "V dostupném textu nebyl nalezen dostatečný signál."
     },
     "dates": {
       "first_observed": "2015-04-20",
@@ -59,11 +59,11 @@
         "supplier_name": null,
         "date": "2015-04-20",
         "price": 4546000.0,
-        "status": "zakázka byla zrušena (Aktuální zadávací řízení)",
+        "status": "zrušeno",
         "type": "tender",
-        "verified_web": false,
+        "verified_web": true,
         "verified_at": null,
-        "verification_source": null,
+        "verification_source": "Official PVU procurement detail",
         "raw": {
           "source": "vhodne-uverejneni",
           "source_id": "P15V00002212",
@@ -75,8 +75,10 @@
           "supplier_name": null,
           "date": "2015-04-20",
           "price": 4546000,
-          "status": "zakázka byla zrušena (Aktuální zadávací řízení)",
-          "type": "tender"
+          "status": "zrušeno",
+          "type": "tender",
+          "verified_web": true,
+          "verification_source": "Official PVU procurement detail"
         },
         "_source_file": "data/sources/vhodne-uverejneni/vu-000040.json"
       }

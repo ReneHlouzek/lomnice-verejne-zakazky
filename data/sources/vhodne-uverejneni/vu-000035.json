@@ -11,9 +11,9 @@
   "price": null,
   "status": "zakázka byla zadána (Plnění smlouvy)",
   "type": "tender",
-  "verified_web": false,
+  "verified_web": true,
   "verified_at": null,
-  "verification_source": null,
+  "verification_source": "Official PVU procurement detail",
   "raw": {
     "source": "vhodne-uverejneni",
     "source_id": "P23V00007567",
@@ -26,6 +26,8 @@
     "date": "2023-11-09",
     "price": null,
     "status": "zakázka byla zadána (Plnění smlouvy)",
-    "type": "tender"
+    "type": "tender",
+    "verified_web": true,
+    "verification_source": "Official PVU procurement detail"
   }
 }
