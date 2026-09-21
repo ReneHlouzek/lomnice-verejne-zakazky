@@ -1,6 +1,7 @@
 name: Deploy web
 
 on:
+  workflow_dispatch:
   push:
     branches: [main]
     paths:
@@ -10,8 +11,7 @@ on:
       - "data/changes/**"
       - "data/sources/**"
       - ".github/workflows/pages.yml"
-  workflow_dispatch:
-
+  
 permissions:
   contents: read
   pages: write
