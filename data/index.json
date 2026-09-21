@@ -1,7 +1,7 @@
 {
   "schema_version": 3,
   "parser_state": "resolved",
-  "generated_at": "2026-09-21T12:09:08.478389+00:00",
+  "generated_at": "2026-09-21T12:23:45.550507+00:00",
   "source": {
     "profile_url": "https://www.vhodne-uverejneni.cz/profil/mesto-lomnice-nad-popelkou",
     "organization_name": "Město Lomnice nad Popelkou",
@@ -34,6 +34,7 @@
     "note": "Referenční počty převzaté z veřejného profilu zadavatele a stránky smluv organizace; slouží pouze jako orientační coverage benchmark, nikoli jako počet zakázek po deduplikaci.",
     "source_url": "https://www.vhodne-uverejneni.cz/profil/mesto-lomnice-nad-popelkou",
     "vhodne_uverejneni_seed_loaded": 41,
+    "vhodne_uverejneni_verified_web_loaded": 0,
     "registr_smluv_loaded": 109
   },
   "statuses": {
