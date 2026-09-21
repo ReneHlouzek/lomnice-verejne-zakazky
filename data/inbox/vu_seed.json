@@ -235,7 +235,25 @@
     "date": "2026-04-17",
     "price": null,
     "status": "plnění smlouvy",
-    "type": "tender"
+    "type": "tender",
+    "procurement_type": "Stavební práce",
+    "procurement_regime": "Podlimitní",
+    "procurement_procedure": "Zjednodušené podlimitní řízení",
+    "outcome": "Uzavření jednorázové smlouvy",
+    "offer_deadline": "2026-05-20T09:00:00",
+    "description": "Zřízení nové osvětlovací soustavy v délce cca 2,0 km ve třech etapách v letech 2026–2028; 50 stožárů výšky 8,2 m, 4 stožáry výšky 6 m a celkem 54 LED svítidel.",
+    "cpv": [
+      "Elektrické zdroje světla a svítidla",
+      "Lampy a svítidla",
+      "Bodové reflektory",
+      "Venkovní svítidla",
+      "Zařízení pouličního osvětlení",
+      "Instalace a montáž zařízení pro osvětlení silnic"
+    ],
+    "verification_level": "detail",
+    "verified_web": true,
+    "verified_at": "2026-09-21",
+    "verification_source": "https://www.vhodne-uverejneni.cz/zakazka/verejne-osvetleni-11"
   },
   {
     "source": "vhodne-uverejneni",
@@ -253,8 +271,8 @@
   },
   {
     "source": "vhodne-uverejneni",
-    "source_id": null,
-    "procurement_id": null,
+    "source_id": "P26V00001385",
+    "procurement_id": "P26V00001385",
     "source_url": "https://www.vhodne-uverejneni.cz/zakazka/modernizace-uceben-zus-dodavky",
     "title": "Modernizace UČEBEN ZUŠ - dodávky",
     "buyer_ico": "00275905",
@@ -263,7 +281,18 @@
     "date": "2026-03-04",
     "price": null,
     "status": "plnění smlouvy",
-    "type": "tender"
+    "type": "tender",
+    "procurement_type": "Dodávky",
+    "procurement_regime": "VZ malého rozsahu",
+    "procurement_procedure": "Přímé zadání - Zakázka malého rozsahu",
+    "outcome": "Uzavření jednorázové smlouvy",
+    "description": "Dodávka vnitřního vybavení v rozsahu nábytek, koncové prvky, IT vybavení, výukové pomůcky a schodolez včetně případné instalace, montáže či zaškolení.",
+    "funded": true,
+    "grant_id": "CZ.06.04.01/00/23_087/0004757",
+    "verification_level": "detail",
+    "verified_web": true,
+    "verified_at": "2026-09-21",
+    "verification_source": "https://www.vhodne-uverejneni.cz/zakazka/modernizace-uceben-zus-dodavky"
   },
   {
     "source": "vhodne-uverejneni",
@@ -277,7 +306,23 @@
     "date": "2026-02-25",
     "price": null,
     "status": "plnění smlouvy",
-    "type": "tender"
+    "type": "tender",
+    "procurement_type": "Stavební práce",
+    "procurement_regime": "VZ malého rozsahu",
+    "procurement_procedure": "Přímé zadání - Zakázka malého rozsahu",
+    "outcome": "Uzavření jednorázové smlouvy",
+    "description": "Sanace vlhkého zdiva sklepních prostor čp. 886; izolace zdiva, injektáž, drenáž, kanalizace a dlažba.",
+    "cpv": [
+      "Drenážní systém",
+      "Kanalizační potrubí",
+      "Stavební práce",
+      "Izolace proti vodě",
+      "Pokládka dlažby"
+    ],
+    "verification_level": "detail",
+    "verified_web": true,
+    "verified_at": "2026-09-21",
+    "verification_source": "https://www.vhodne-uverejneni.cz/zakazka/sanace-vlhkeho-zdiva-sklepnich-prostor-cp-886-lomnice-nad-popelkou"
   },
   {
     "source": "vhodne-uverejneni",
@@ -323,8 +368,8 @@
   },
   {
     "source": "vhodne-uverejneni",
-    "source_id": null,
-    "procurement_id": null,
+    "source_id": "P25V00007263",
+    "procurement_id": "P25V00007263",
     "source_url": "https://www.vhodne-uverejneni.cz/zakazka/oprava-vytluku-komunikaci-2025-lomnice-nad-popelkou",
     "title": "Oprava výtluků komunikací 2025, Lomnice nad Popelkou",
     "buyer_ico": "00275905",
@@ -333,7 +378,19 @@
     "date": "2025-08-12",
     "price": null,
     "status": "plnění smlouvy",
-    "type": "tender"
+    "type": "tender",
+    "procurement_type": "Stavební práce",
+    "procurement_regime": "VZ malého rozsahu",
+    "procurement_procedure": "Přímé zadání - Zakázka malého rozsahu",
+    "outcome": "Uzavření jednorázové smlouvy",
+    "description": "Oprava úseků komunikací vyznačených v příloze č. 2 smlouvy.",
+    "cpv": [
+      "Práce na opravě silnic"
+    ],
+    "verification_level": "detail",
+    "verified_web": true,
+    "verified_at": "2026-09-21",
+    "verification_source": "https://www.vhodne-uverejneni.cz/zakazka/opravy-mistnich-komunikaci-ve-meste-lomnice-nad-popelkou"
   },
   {
     "source": "vhodne-uverejneni",
@@ -351,8 +408,8 @@
   },
   {
     "source": "vhodne-uverejneni",
-    "source_id": null,
-    "procurement_id": null,
+    "source_id": "P25V00001848",
+    "procurement_id": "P25V00001848",
     "source_url": "https://www.vhodne-uverejneni.cz/zakazka/revitalizace-verejneho-prostranstvi-na-hrbitove-2-etapa-lomnice-nad-popelkou",
     "title": "Revitalizace veřejného prostranství na hřbitově - 2. etapa, Lomnice nad Popelkou",
     "buyer_ico": "00275905",
@@ -361,7 +418,21 @@
     "date": "2025-02-26",
     "price": null,
     "status": "plnění smlouvy",
-    "type": "tender"
+    "type": "tender",
+    "procurement_type": "Stavební práce",
+    "procurement_regime": "VZ malého rozsahu",
+    "procurement_procedure": "Přímé zadání - Zakázka malého rozsahu",
+    "outcome": "Uzavření jednorázové smlouvy",
+    "description": "Provedení stavebních prací v rámci revitalizace cesty na hřbitově.",
+    "cpv": [
+      "Chodníky a jiné zpevněné povrchy"
+    ],
+    "funded": true,
+    "grant_id": "24/002/52775/433/013276",
+    "verification_level": "detail",
+    "verified_web": true,
+    "verified_at": "2026-09-21",
+    "verification_source": "https://www.vhodne-uverejneni.cz/zakazka/revitalizace-verejneho-prostranstvi-na-hrbitove-2-etapa-lomnice-nad-popelkou"
   },
   {
     "source": "vhodne-uverejneni",
@@ -393,8 +464,8 @@
   },
   {
     "source": "vhodne-uverejneni",
-    "source_id": null,
-    "procurement_id": null,
+    "source_id": "P24V00007896",
+    "procurement_id": "P24V00007896",
     "source_url": "https://www.vhodne-uverejneni.cz/zakazka/oprava-strechy-domu-c-p-32-ul-antala-staska-v-lomnici-nad-popelkou",
     "title": "Oprava střechy domu č.p. 32, ul. Antala Staška v Lomnici nad Popelkou",
     "buyer_ico": "00275905",
@@ -403,7 +474,22 @@
     "date": "2024-09-02",
     "price": null,
     "status": "plnění smlouvy",
-    "type": "tender"
+    "type": "tender",
+    "procurement_type": "Stavební práce",
+    "procurement_regime": "VZ malého rozsahu",
+    "procurement_procedure": "Veřejná zakázka malého rozsahu",
+    "outcome": "Uzavření jednorázové smlouvy",
+    "offer_deadline": "2024-08-14T23:59:00",
+    "description": "Úprava střešní krytiny, doplnění tepelné izolace, separační vrstva z geotextilie, výměna klempířských prvků, montáž nové krytiny, oprava komínů a výlezu na střechu a oprava hromosvodu.",
+    "cpv": [
+      "Stavební práce",
+      "Stavební úpravy bytových domů a rodinných domů",
+      "Stavba střešních konstrukcí a pokládka střešních krytin a pomocné práce"
+    ],
+    "verification_level": "detail",
+    "verified_web": true,
+    "verified_at": "2026-09-21",
+    "verification_source": "https://www.vhodne-uverejneni.cz/zakazka/oprava-strechy-domu-c-p-32-ul-antala-staska-v-lomnici-nad-popelkou"
   },
   {
     "source": "vhodne-uverejneni",
@@ -589,12 +675,15 @@
     "supplier_ico": null,
     "supplier_name": null,
     "date": "2026-07-20",
-    "price": null,
+    "price": 2240507,
     "status": "plnění smlouvy",
     "type": "tender",
     "verified_web": true,
     "verified_at": "2026-09-21",
-    "verification_source": "Official PVU search/profile page"
+    "verification_source": "Official PVU search/profile page",
+    "expected_value": 2268984,
+    "description": "Rekonstrukce lesní cesty Stránsko v délce 796 metrů s úpravou parametrů lesní cesty na 2L 4,0/20.",
+    "verification_level": "listing_plus_external_contract_index"
   },
   {
     "source": "vhodne-uverejneni",
@@ -611,7 +700,10 @@
     "type": "contract",
     "verified_web": true,
     "verified_at": "2026-09-21",
-    "verification_source": "Official PVU search/profile page"
+    "verification_source": "https://www.vhodne-uverejneni.cz/index.php?a=detail&contract=92577&h=contractsregister&m=xenorders",
+    "price_vat_included": 420269.3,
+    "contract_signed_date": "2024-04-16",
+    "verification_level": "contract_detail"
   },
   {
     "source": "vhodne-uverejneni",
@@ -628,7 +720,10 @@
     "type": "tender",
     "verified_web": true,
     "verified_at": "2026-09-21",
-    "verification_source": "Official city contract/budget"
+    "verification_source": "https://www.lomnicenadpopelkou.cz/assets/File.ashx?id_dokumenty=23280&id_org=8675",
+    "price_vat_included": 4322741.18,
+    "contract_signed_date": "2024-11-15",
+    "verification_level": "city_contract_document"
   },
   {
     "source": "vhodne-uverejneni",
