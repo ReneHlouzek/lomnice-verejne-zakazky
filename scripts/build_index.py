@@ -31,7 +31,7 @@ def main():
       "counts":{k:len(v) for k,v in buckets.items()},
       "project_type_counts":{k:len(v) for k,v in types.items()},
       "total_projects":len(projects),
-      "coverage":{**CONFIG.get("coverage_reference",{}),"vhodne_uverejneni_seed_loaded":None},
+      "coverage":{**CONFIG.get("coverage_reference",{}),"vhodne_uverejneni_seed_loaded":None,"vhodne_uverejneni_verified_web_loaded":None},
       "statuses":{k:{"label":v,"projects":buckets[k]} for k,v in statuses.items()},
       "project_types":{
         "procurement":{"label":"Veřejná zakázka / výběr / smlouva","projects":types.get("procurement",[])},
@@ -64,6 +64,7 @@ def main():
         try:
             manifest=json.loads(manifest_path.read_text(encoding="utf-8"))
             index["coverage"]["vhodne_uverejneni_seed_loaded"]=manifest.get("vhodne_uverejneni_seed_records")
+            index["coverage"]["vhodne_uverejneni_verified_web_loaded"]=manifest.get("vhodne_uverejneni_verified_web_records")
             index["coverage"]["registr_smluv_loaded"]=manifest.get("registr_smluv_records")
         except Exception:
             pass
