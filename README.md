@@ -33,3 +33,5 @@ Projekt je ve fázi založení infrastruktury. Další krok je implementace craw
 <!-- archive-refresh-2026-09-21-3 -->
 
 <!-- archive-refresh-2026-09-21-4 -->
+
+<!-- automated data refresh: 2026-09-21T20:20Z -->
