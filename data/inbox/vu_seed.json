@@ -1116,5 +1116,37 @@
     "verified_web": true,
     "verified_at": "2026-09-21",
     "verification_source": "Official PVU organization contract list"
+  },
+  {
+    "source": "vhodne-uverejneni",
+    "source_id": "P24V00003708",
+    "procurement_id": "P24V00003708",
+    "source_url": "https://www.vhodne-uverejneni.cz/zakazka/rekonstrukce-verejneho-osvetleni-ulice-jilemnicka-a-cast-plk-truhlare-lomnice-nad-popelkou",
+    "title": "Rekonstrukce veřejného osvětlení- ulice Jilemnická a část Plk. Truhláře, Lomnice nad Popelkou",
+    "buyer_ico": "00275905",
+    "supplier_ico": null,
+    "supplier_name": null,
+    "date": "2024-05-13",
+    "price": null,
+    "status": "ukončeno plnění smlouvy",
+    "type": "tender",
+    "verified_web": true,
+    "verification_source": "Official PVU procurement detail"
+  },
+  {
+    "source": "vhodne-uverejneni",
+    "source_id": "P20V00009092",
+    "procurement_id": "P20V00009092",
+    "source_url": "https://www.vhodne-uverejneni.cz/zakazka/domov-pro-osoby-s-poruchou-autistickeho-spektra",
+    "title": "Domov pro osoby s poruchou autistického spektra",
+    "buyer_ico": "00275905",
+    "supplier_ico": null,
+    "supplier_name": null,
+    "date": "2020-11-03",
+    "price": null,
+    "status": "ukončeno plnění smlouvy",
+    "type": "tender",
+    "verified_web": true,
+    "verification_source": "Official PVU procurement detail"
   }
 ]
