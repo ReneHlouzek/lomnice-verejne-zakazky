@@ -323,9 +323,9 @@
   },
   {
     "source": "vhodne-uverejneni",
-    "source_id": "P25V00007263",
-    "procurement_id": "P25V00007263",
-    "source_url": "https://www.vhodne-uverejneni.cz/zakazka/opravy-mistnich-komunikaci-ve-meste-lomnice-nad-popelkou",
+    "source_id": null,
+    "procurement_id": null,
+    "source_url": "https://www.vhodne-uverejneni.cz/zakazka/oprava-vytluku-komunikaci-2025-lomnice-nad-popelkou",
     "title": "Oprava výtluků komunikací 2025, Lomnice nad Popelkou",
     "buyer_ico": "00275905",
     "supplier_ico": null,
@@ -333,9 +333,7 @@
     "date": "2025-08-12",
     "price": null,
     "status": "plnění smlouvy",
-    "type": "tender",
-    "verified_web": true,
-    "verification_source": "https://www.vhodne-uverejneni.cz/zakazka/opravy-mistnich-komunikaci-ve-meste-lomnice-nad-popelkou"
+    "type": "tender"
   },
   {
     "source": "vhodne-uverejneni",
@@ -353,8 +351,8 @@
   },
   {
     "source": "vhodne-uverejneni",
-    "source_id": "P25V00001848",
-    "procurement_id": "P25V00001848",
+    "source_id": null,
+    "procurement_id": null,
     "source_url": "https://www.vhodne-uverejneni.cz/zakazka/revitalizace-verejneho-prostranstvi-na-hrbitove-2-etapa-lomnice-nad-popelkou",
     "title": "Revitalizace veřejného prostranství na hřbitově - 2. etapa, Lomnice nad Popelkou",
     "buyer_ico": "00275905",
@@ -363,9 +361,7 @@
     "date": "2025-02-26",
     "price": null,
     "status": "plnění smlouvy",
-    "type": "tender",
-    "verified_web": true,
-    "verification_source": "https://www.vhodne-uverejneni.cz/zakazka/revitalizace-verejneho-prostranstvi-na-hrbitove-2-etapa-lomnice-nad-popelkou"
+    "type": "tender"
   },
   {
     "source": "vhodne-uverejneni",
@@ -397,8 +393,8 @@
   },
   {
     "source": "vhodne-uverejneni",
-    "source_id": "P24V00007896",
-    "procurement_id": "P24V00007896",
+    "source_id": null,
+    "procurement_id": null,
     "source_url": "https://www.vhodne-uverejneni.cz/zakazka/oprava-strechy-domu-c-p-32-ul-antala-staska-v-lomnici-nad-popelkou",
     "title": "Oprava střechy domu č.p. 32, ul. Antala Staška v Lomnici nad Popelkou",
     "buyer_ico": "00275905",
@@ -407,9 +403,7 @@
     "date": "2024-09-02",
     "price": null,
     "status": "plnění smlouvy",
-    "type": "tender",
-    "verified_web": true,
-    "verification_source": "https://www.vhodne-uverejneni.cz/zakazka/oprava-strechy-domu-c-p-32-ul-antala-staska-v-lomnici-nad-popelkou"
+    "type": "tender"
   },
   {
     "source": "vhodne-uverejneni",
