@@ -7,14 +7,16 @@
   "canonical": {
     "title": "Rozšíření polikliniky Lomnice nad Popelkou - dokumentace stavebního záměru",
     "supplier_ico": null,
-    "identifiers": [],
+    "identifiers": [
+      "P26V00002405"
+    ],
     "lifecycle": {
       "events": [
         {
           "date": "2026-04-15",
           "type": "tender",
           "source": "vhodne-uverejneni",
-          "source_id": null,
+          "source_id": "P26V00002405",
           "title": "Rozšíření polikliniky Lomnice nad Popelkou - dokumentace stavebního záměru",
           "price": null
         }
@@ -45,11 +47,11 @@
   "sources": [
     {
       "source_file": "data/sources/vhodne-uverejneni/vu-000018.json",
-      "source_id": null,
+      "source_id": "P26V00002405",
       "record": {
         "source": "vhodne-uverejneni",
-        "source_id": null,
-        "procurement_id": null,
+        "source_id": "P26V00002405",
+        "procurement_id": "P26V00002405",
         "source_url": "https://www.vhodne-uverejneni.cz/zakazka/rozsireni-polikliniky-lomnice-nad-popelkou-dokumentace-stavebniho-zameru",
         "title": "Rozšíření polikliniky Lomnice nad Popelkou - dokumentace stavebního záměru",
         "buyer_ico": "00275905",
@@ -61,8 +63,8 @@
         "type": "tender",
         "raw": {
           "source": "vhodne-uverejneni",
-          "source_id": null,
-          "procurement_id": null,
+          "source_id": "P26V00002405",
+          "procurement_id": "P26V00002405",
           "source_url": "https://www.vhodne-uverejneni.cz/zakazka/rozsireni-polikliniky-lomnice-nad-popelkou-dokumentace-stavebniho-zameru",
           "title": "Rozšíření polikliniky Lomnice nad Popelkou - dokumentace stavebního záměru",
           "buyer_ico": "00275905",
@@ -94,7 +96,7 @@
         "date": "2026-04-15",
         "event": "tender",
         "source": "vhodne-uverejneni",
-        "source_id": null,
+        "source_id": "P26V00002405",
         "title": "Rozšíření polikliniky Lomnice nad Popelkou - dokumentace stavebního záměru",
         "price": null,
         "deadline": null

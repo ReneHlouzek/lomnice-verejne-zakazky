@@ -7,14 +7,16 @@
   "canonical": {
     "title": "Sanace vlhkého zdiva sklepních prostor čp. 886, Lomnice nad Popelkou",
     "supplier_ico": null,
-    "identifiers": [],
+    "identifiers": [
+      "P26V00001118"
+    ],
     "lifecycle": {
       "events": [
         {
           "date": "2026-02-25",
           "type": "tender",
           "source": "vhodne-uverejneni",
-          "source_id": null,
+          "source_id": "P26V00001118",
           "title": "Sanace vlhkého zdiva sklepních prostor čp. 886, Lomnice nad Popelkou",
           "price": null
         }
@@ -45,11 +47,11 @@
   "sources": [
     {
       "source_file": "data/sources/vhodne-uverejneni/vu-000020.json",
-      "source_id": null,
+      "source_id": "P26V00001118",
       "record": {
         "source": "vhodne-uverejneni",
-        "source_id": null,
-        "procurement_id": null,
+        "source_id": "P26V00001118",
+        "procurement_id": "P26V00001118",
         "source_url": "https://www.vhodne-uverejneni.cz/zakazka/sanace-vlhkeho-zdiva-sklepnich-prostor-cp-886-lomnice-nad-popelkou",
         "title": "Sanace vlhkého zdiva sklepních prostor čp. 886, Lomnice nad Popelkou",
         "buyer_ico": "00275905",
@@ -61,8 +63,8 @@
         "type": "tender",
         "raw": {
           "source": "vhodne-uverejneni",
-          "source_id": null,
-          "procurement_id": null,
+          "source_id": "P26V00001118",
+          "procurement_id": "P26V00001118",
           "source_url": "https://www.vhodne-uverejneni.cz/zakazka/sanace-vlhkeho-zdiva-sklepnich-prostor-cp-886-lomnice-nad-popelkou",
           "title": "Sanace vlhkého zdiva sklepních prostor čp. 886, Lomnice nad Popelkou",
           "buyer_ico": "00275905",
@@ -94,7 +96,7 @@
         "date": "2026-02-25",
         "event": "tender",
         "source": "vhodne-uverejneni",
-        "source_id": null,
+        "source_id": "P26V00001118",
         "title": "Sanace vlhkého zdiva sklepních prostor čp. 886, Lomnice nad Popelkou",
         "price": null,
         "deadline": null
