@@ -133,6 +133,8 @@ jobs:
               raise SystemExit("Normalizace vytvořila 0 záznamů; build se zastavuje.")
           print(f"Normalizováno {n} záznamů Registru smluv")
           PY
+      - name: Audit source completeness
+        run: python scripts/audit_sources.py
       - name: Resolve cross-source records
         run: python scripts/resolve_projects.py
       - name: Analyze projects
