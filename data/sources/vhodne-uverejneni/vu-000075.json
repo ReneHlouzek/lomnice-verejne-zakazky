@@ -1,0 +1,33 @@
+{
+  "source": "vhodne-uverejneni",
+  "source_id": "P20V00009092",
+  "procurement_id": "P20V00009092",
+  "source_url": "https://www.vhodne-uverejneni.cz/zakazka/domov-pro-osoby-s-poruchou-autistickeho-spektra",
+  "title": "Domov pro osoby s poruchou autistického spektra",
+  "buyer_ico": "00275905",
+  "supplier_ico": null,
+  "supplier_name": null,
+  "date": "2020-11-03",
+  "price": null,
+  "status": "ukončeno plnění smlouvy",
+  "type": "tender",
+  "verified_web": true,
+  "verified_at": null,
+  "verification_source": "Official PVU procurement detail",
+  "raw": {
+    "source": "vhodne-uverejneni",
+    "source_id": "P20V00009092",
+    "procurement_id": "P20V00009092",
+    "source_url": "https://www.vhodne-uverejneni.cz/zakazka/domov-pro-osoby-s-poruchou-autistickeho-spektra",
+    "title": "Domov pro osoby s poruchou autistického spektra",
+    "buyer_ico": "00275905",
+    "supplier_ico": null,
+    "supplier_name": null,
+    "date": "2020-11-03",
+    "price": null,
+    "status": "ukončeno plnění smlouvy",
+    "type": "tender",
+    "verified_web": true,
+    "verification_source": "Official PVU procurement detail"
+  }
+}
