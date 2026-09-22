@@ -31,6 +31,7 @@
 <button data-mode="explicit">Výslovná vazba na zakázku</button>
 <button data-mode="likely">Pravděpodobná vazba</button>
 <button data-mode="none">Bez rozpoznané vazby</button>
+<button data-mode="matches">Možné propojení zdrojů</button>
 </section>
 <section class="toolbar card">
 <div class="search-wrap"><span>⌕</span><input id="search" type="search" placeholder="Hledat název, dodavatele nebo IČO…" autocomplete="off"></div>
@@ -46,7 +47,7 @@
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));
 const labels={'plneni-smlouvy':'Plnění smlouvy','ukonceno-plneni':'Ukončeno plnění','zruseno':'Zrušeno','aktualni-uverejneni':'Aktuální uveřejnění',unclassified:'Nezařazeno'};
 const types={procurement:'Veřejná zakázka',procurement_with_changes:'Veřejná zakázka se změnami',contract:'Smlouva',contract_with_changes:'Smlouva se změnami',other:'Jiný záznam'};
-let projects=[],mode='all';
+let projects=[],candidates=[],mode='all';
 const norm=p=>({id:p.id,title:p.title||'',status:p.status||'',type:p.project_type||'',sources:p.source_count||0,supplier:p.supplier_ico||'',signal:p.procurement_signal?.level||'none'});
 function matches(p){
  const q=document.querySelector('#search').value.toLowerCase().trim(), st=document.querySelector('#status').value, ty=document.querySelector('#type').value;
@@ -56,7 +57,18 @@ function matches(p){
  if(mode==='supplier'&&p.supplier)return false;if(['explicit','likely','none'].includes(mode)&&p.signal!==mode)return false;
  return true;
 }
+function renderMatches(){
+ const q=document.querySelector('#search').value.toLowerCase().trim();
+ const out=candidates.filter(x=>!q||((x.a?.title||'')+' '+(x.b?.title||'')+' '+(x.a?.supplier_ico||'')+' '+(x.b?.supplier_ico||'')).toLowerCase().includes(q));
+ document.querySelector('#count').textContent=out.length+' možných propojení';
+ document.querySelector('#heading').textContent='Možné propojení zdrojů';
+ document.querySelector('#rows').innerHTML=out.map(function(x){
+   const a=x.a||{},b=x.b||{},ev=(x.evidence||[]).map(function(e){return '<span class="tag">'+esc(e)+'</span>';}).join('');
+   return '<tr><td><strong>'+esc(a.title||'bez názvu')+'</strong><div class="radar-meta">'+esc(x.source_a||a.source||'')+' · '+esc(a.source_id||'')+'</div><hr><strong>'+esc(b.title||'bez názvu')+'</strong><div class="radar-meta">'+esc(x.source_b||b.source||'')+' · '+esc(b.source_id||'')+'</div></td><td><span class="tag warn">vyžaduje ověření</span><div class="radar-meta">'+esc(x.reason||'')+'</div></td><td>'+esc(a.price??'—')+' / '+esc(b.price??'—')+'</td><td>'+esc(a.supplier_ico||b.supplier_ico||'neuveden')+'</td><td>'+ev+'</td></tr>';
+ }).join('')||'<tr><td colspan="5" class="radar-empty">Žádné možné propojení neodpovídá hledání.</td></tr>';
+}
 function render(){
+ if(mode==='matches'){renderMatches();return;}
  const out=projects.map(norm).filter(matches);
  document.querySelector('#count').textContent=out.length+' záznamů';
  document.querySelector('#heading').textContent=mode==='all'?'Všechny záznamy':document.querySelector('.radar-tabs button.active').textContent;
@@ -64,6 +76,7 @@ function render(){
 }
 async function init(){
  const d=await fetch('./data/index.json').then(r=>r.json());projects=d.projects||[];
+ try{candidates=await fetch('./data/link_candidates.json').then(r=>r.json());if(!Array.isArray(candidates))candidates=[];}catch(e){candidates=[];}
  const stats=[['Vše',projects.length],['Jeden zdroj',projects.filter(p=>(p.source_count||0)===1).length],['Více zdrojů',projects.filter(p=>(p.source_count||0)>1).length],['Bez dodavatele',projects.filter(p=>!p.supplier_ico).length]];
  document.querySelector('#stats').innerHTML=stats.map(x=>`<div class="stat"><strong>${x[1]}</strong><span>${x[0]}</span></div>`).join('');
  const statuses=[...new Set(projects.map(p=>p.status).filter(Boolean))],typesList=[...new Set(projects.map(p=>p.project_type).filter(Boolean))];
