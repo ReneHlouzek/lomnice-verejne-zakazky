@@ -91,9 +91,19 @@ def analyze(project):
     docs = []
     deadlines = []
     scopes = []
+    expected_values = []
+    procedures = set()
+    regimes = set()
+    offer_deadlines = []
 
     for r in rows:
         p = num(field(r, "price", "contract_price", "winning_bid", "value"))
+        ev = num(field(r, "expected_value", "estimated_value", "predicted_value"))
+        if ev is not None: expected_values.append({"value": ev, "source_id": r.get("source_id")})
+        if field(r, "procurement_procedure"): procedures.add(str(field(r, "procurement_procedure")))
+        if field(r, "procurement_regime"): regimes.add(str(field(r, "procurement_regime")))
+        od = field(r, "offer_deadline")
+        if od: offer_deadlines.append({"raw": str(od), "source_id": r.get("source_id")})
         d = date_value(field(r, "date", "published", "signed_date", "award_date"))
         s = field(r, "supplier_ico", "ico_dodavatele")
         if s:
