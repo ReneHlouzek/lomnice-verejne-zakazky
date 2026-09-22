@@ -95,6 +95,8 @@ def analyze(project):
     procedures = set()
     regimes = set()
     offer_deadlines = []
+    participant_counts = []
+    bid_counts = []
 
     for r in rows:
         p = num(field(r, "price", "contract_price", "winning_bid", "value"))
@@ -104,6 +106,12 @@ def analyze(project):
         if field(r, "procurement_regime"): regimes.add(str(field(r, "procurement_regime")))
         od = field(r, "offer_deadline")
         if od: offer_deadlines.append({"raw": str(od), "source_id": r.get("source_id")})
+        pc = field(r, "participant_count", "participants_count")
+        bc = field(r, "bid_count", "offers_count")
+        if isinstance(pc, (int, float)) or (isinstance(pc, str) and pc.isdigit()):
+            participant_counts.append({"value": int(pc), "source_id": r.get("source_id")})
+        if isinstance(bc, (int, float)) or (isinstance(bc, str) and bc.isdigit()):
+            bid_counts.append({"value": int(bc), "source_id": r.get("source_id")})
         d = date_value(field(r, "date", "published", "signed_date", "award_date"))
         s = field(r, "supplier_ico", "ico_dodavatele")
         if s:
@@ -163,6 +171,15 @@ def analyze(project):
         add("addendum_count", "info", f"Ve zdrojových záznamech je doloženo nejméně {addenda_count} dodatků / změnových záznamů.",
             [{"type": "count", "value": addenda_count, "declared_numbers": sorted(declared_addenda)}])
 
+    if participant_counts:
+        vals = [x["value"] for x in participant_counts]
+        add("participant_count", "info", f"Ve zdrojových datech je uveden počet účastníků: {vals[-1]}.",
+            [{"type": "participant_count", "values": vals}])
+    if bid_counts:
+        vals = [x["value"] for x in bid_counts]
+        add("bid_count", "info", f"Ve zdrojových datech je uveden počet nabídek: {vals[-1]}.",
+            [{"type": "bid_count", "values": vals}])
+
     if expected_values and baseline is not None:
         expected = expected_values[0]["value"]
         if expected:
@@ -221,7 +238,10 @@ def analyze(project):
         "metrics": {"source_count": len(rows), "supplier_count": len(suppliers),
                      "price_values": unique_prices,
                      "date_values": sorted({x["date"] for x in timeline if x["date"]}),
-                     "document_count": len(docs), "deadline_observations": len(known_deadlines)},
+                     "document_count": len(docs), "deadline_observations": len(known_deadlines),
+                     "expected_value_observations": len(expected_values),
+                     "participant_observations": len(participant_counts),
+                     "bid_observations": len(bid_counts)},
         "methodology": "Signals are descriptive checks only; they do not establish wrongdoing or causality. They identify differences worth checking and retain source provenance.",
     }
 
