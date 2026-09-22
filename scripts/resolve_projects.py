@@ -269,6 +269,7 @@ def canonical(g):
         project_type = "contract"
     else:
         project_type = "other"
+    source_types = sorted(set(str(r.get("source") or "").strip() for r in g if r.get("source")))
     return {
         "title": max(titles, key=len) if titles else None,
         "supplier_ico": next((ico(x) for x in suppliers if ico(x)), None),
@@ -296,7 +297,9 @@ def canonical(g):
             "project_registry_ids": project_registry_ids,
             "detail_verified_sources": sum(1 for r in g if r.get("verification_level") in ("detail","contract_detail","city_contract_document"))
         },
-        "source_count": len(g),
+        "source_count": len(source_types),
+        "source_types": source_types,
+        "record_count": len(g),
     }
 
 
