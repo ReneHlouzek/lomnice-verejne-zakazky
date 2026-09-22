@@ -138,7 +138,10 @@
         "2026-06-26"
       ],
       "document_count": 0,
-      "deadline_observations": 0
+      "deadline_observations": 0,
+      "expected_value_observations": 0,
+      "participant_observations": 0,
+      "bid_observations": 0
     },
     "methodology": "Signals are descriptive checks only; they do not establish wrongdoing or causality. They identify differences worth checking and retain source provenance."
   }
