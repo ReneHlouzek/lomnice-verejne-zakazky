@@ -1,22 +1,22 @@
 {
-  "id": "p-poskytnuti-ucelove-dotace-z-rozpoctu-libereckeho-kraje-na-projekt-kara-0004",
-  "title": "Poskytnutí účelové dotace z rozpočtu Libereckého kraje na projekt Karavanové stání Koupaliště, Lomnice nad Popelkou",
+  "id": "p-poskytnuti-ucelove-neinvesticni-dotace-na-vypracovani-planu-ochrany-pr-0095",
+  "title": "poskytnutí účelové neinvestiční dotace na vypracování plánu ochrany pro památkovou zónu města Lomnice nad Popelkou - 2. a 3. etapa",
   "buyer_ico": "00275905",
   "status": "unclassified",
   "project_type": "other",
   "canonical": {
-    "title": "Poskytnutí účelové dotace z rozpočtu Libereckého kraje na projekt Karavanové stání Koupaliště, Lomnice nad Popelkou",
+    "title": "poskytnutí účelové neinvestiční dotace na vypracování plánu ochrany pro památkovou zónu města Lomnice nad Popelkou - 2. a 3. etapa",
     "supplier_ico": "70891508",
     "identifiers": [],
     "lifecycle": {
       "events": [
         {
-          "date": "2021-07-14",
+          "date": "2016-09-21",
           "type": "source_record",
           "source": "registr-smluv",
-          "source_id": "15970715",
-          "title": "Poskytnutí účelové dotace z rozpočtu Libereckého kraje na projekt Karavanové stání Koupaliště, Lomnice nad Popelkou",
-          "price": 500000.0
+          "source_id": "301745",
+          "title": "poskytnutí účelové neinvestiční dotace na vypracování plánu ochrany pro památkovou zónu města Lomnice nad Popelkou - 2. a 3. etapa",
+          "price": 100000.0
         }
       ],
       "event_count": 1,
@@ -32,8 +32,8 @@
       "reason": "V dostupném textu nebyl nalezen dostatečný signál."
     },
     "dates": {
-      "first_observed": "2021-07-14",
-      "last_observed": "2021-07-14"
+      "first_observed": "2016-09-21",
+      "last_observed": "2016-09-21"
     },
     "financial": {
       "observed_prices": [],
@@ -58,49 +58,49 @@
   },
   "sources": [
     {
-      "source_file": "data/sources/registr-smluv/rs-000053.json",
-      "source_id": "15970715",
+      "source_file": "data/sources/registr-smluv/rs-000006.json",
+      "source_id": "301745",
       "record": {
         "source": "registr-smluv",
-        "source_id": "15970715",
-        "version_id": "17186439",
-        "source_url": "https://smlouvy.gov.cz/smlouva/15970715",
-        "title": "Poskytnutí účelové dotace z rozpočtu Libereckého kraje na projekt Karavanové stání Koupaliště, Lomnice nad Popelkou",
+        "source_id": "301745",
+        "version_id": "322201",
+        "source_url": "https://smlouvy.gov.cz/smlouva/301745",
+        "title": "poskytnutí účelové neinvestiční dotace na vypracování plánu ochrany pro památkovou zónu města Lomnice nad Popelkou - 2. a 3. etapa",
         "buyer_ico": "00275905",
         "supplier_ico": "70891508",
         "supplier_name": "Liberecký kraj",
-        "contract_number": "07-OLP/2373/2021",
-        "date": "2021-07-14",
-        "signed_date": "2021-07-14",
+        "contract_number": "07-OLP/3833/2016",
+        "date": "2016-09-21",
+        "signed_date": "2016-09-21",
         "published": null,
-        "price": 500000.0,
+        "price": 100000.0,
         "status": null,
         "raw": {
           "source": "registr-smluv",
-          "source_id": "15970715",
-          "version_id": "17186439",
-          "source_url": "https://smlouvy.gov.cz/smlouva/15970715",
-          "title": "Poskytnutí účelové dotace z rozpočtu Libereckého kraje na projekt Karavanové stání Koupaliště, Lomnice nad Popelkou",
+          "source_id": "301745",
+          "version_id": "322201",
+          "source_url": "https://smlouvy.gov.cz/smlouva/301745",
+          "title": "poskytnutí účelové neinvestiční dotace na vypracování plánu ochrany pro památkovou zónu města Lomnice nad Popelkou - 2. a 3. etapa",
           "buyer_ico": "00275905",
           "supplier_ico": "70891508",
-          "contract_number": "07-OLP/2373/2021",
-          "date": "2021-07-14",
-          "signed_date": "2021-07-14",
+          "contract_number": "07-OLP/3833/2016",
+          "date": "2016-09-21",
+          "signed_date": "2016-09-21",
           "published": "",
-          "price": "500000",
-          "value": "500000",
+          "price": "100000",
+          "value": "100000",
           "publisher": "",
-          "subject": "Poskytnutí účelové dotace z rozpočtu Libereckého kraje na projekt Karavanové stání Koupaliště, Lomnice nad Popelkou",
+          "subject": "poskytnutí účelové neinvestiční dotace na vypracování plánu ochrany pro památkovou zónu města Lomnice nad Popelkou - 2. a 3. etapa",
           "counterparty": "Liberecký kraj",
-          "detail_url": "https://smlouvy.gov.cz/smlouva/15970715"
+          "detail_url": "https://smlouvy.gov.cz/smlouva/301745"
         },
-        "_source_file": "data/sources/registr-smluv/rs-000053.json"
+        "_source_file": "data/sources/registr-smluv/rs-000006.json"
       }
     }
   ],
   "analysis": {
     "schema_version": 4,
-    "project_id": "p-poskytnuti-ucelove-dotace-z-rozpoctu-libereckeho-kraje-na-projekt-kara-0004",
+    "project_id": "p-poskytnuti-ucelove-neinvesticni-dotace-na-vypracovani-planu-ochrany-pr-0095",
     "signal_count": 1,
     "signals": [
       {
@@ -112,22 +112,22 @@
     ],
     "timeline": [
       {
-        "date": "2021-07-14",
+        "date": "2016-09-21",
         "event": "source_record",
         "source": "registr-smluv",
-        "source_id": "15970715",
-        "title": "Poskytnutí účelové dotace z rozpočtu Libereckého kraje na projekt Karavanové stání Koupaliště, Lomnice nad Popelkou",
-        "price": 500000.0,
+        "source_id": "301745",
+        "title": "poskytnutí účelové neinvestiční dotace na vypracování plánu ochrany pro památkovou zónu města Lomnice nad Popelkou - 2. a 3. etapa",
+        "price": 100000.0,
         "deadline": null
       }
     ],
     "financial": {
-      "baseline_price": 500000.0,
-      "current_observed_price": 500000.0,
+      "baseline_price": 100000.0,
+      "current_observed_price": 100000.0,
       "absolute_change": 0.0,
       "percent_change": null,
       "observed_prices": [
-        500000.0
+        100000.0
       ],
       "addendum_count": 0,
       "declared_addenda_count": 0
@@ -136,10 +136,10 @@
       "source_count": 1,
       "supplier_count": 1,
       "price_values": [
-        500000.0
+        100000.0
       ],
       "date_values": [
-        "2021-07-14"
+        "2016-09-21"
       ],
       "document_count": 0,
       "deadline_observations": 0,

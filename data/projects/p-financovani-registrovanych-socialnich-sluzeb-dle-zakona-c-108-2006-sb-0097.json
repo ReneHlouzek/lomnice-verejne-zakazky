@@ -1,22 +1,22 @@
 {
-  "id": "p-poskytnuti-ucelove-dotace-z-rozpoctu-libereckeho-kraje-na-projekt-kara-0004",
-  "title": "Poskytnutí účelové dotace z rozpočtu Libereckého kraje na projekt Karavanové stání Koupaliště, Lomnice nad Popelkou",
+  "id": "p-financovani-registrovanych-socialnich-sluzeb-dle-zakona-c-108-2006-sb-0097",
+  "title": "Financování registrovaných sociálních služeb dle zákona č. 108/2006 Sb., o sociálních službách, ve znění pozdějších předpisů.",
   "buyer_ico": "00275905",
   "status": "unclassified",
   "project_type": "other",
   "canonical": {
-    "title": "Poskytnutí účelové dotace z rozpočtu Libereckého kraje na projekt Karavanové stání Koupaliště, Lomnice nad Popelkou",
+    "title": "Financování registrovaných sociálních služeb dle zákona č. 108/2006 Sb., o sociálních službách, ve znění pozdějších předpisů.",
     "supplier_ico": "70891508",
     "identifiers": [],
     "lifecycle": {
       "events": [
         {
-          "date": "2021-07-14",
+          "date": "2017-02-27",
           "type": "source_record",
           "source": "registr-smluv",
-          "source_id": "15970715",
-          "title": "Poskytnutí účelové dotace z rozpočtu Libereckého kraje na projekt Karavanové stání Koupaliště, Lomnice nad Popelkou",
-          "price": 500000.0
+          "source_id": "1287978",
+          "title": "Financování registrovaných sociálních služeb dle zákona č. 108/2006 Sb., o sociálních službách, ve znění pozdějších předpisů.",
+          "price": 896000.0
         }
       ],
       "event_count": 1,
@@ -32,8 +32,8 @@
       "reason": "V dostupném textu nebyl nalezen dostatečný signál."
     },
     "dates": {
-      "first_observed": "2021-07-14",
-      "last_observed": "2021-07-14"
+      "first_observed": "2017-02-27",
+      "last_observed": "2017-02-27"
     },
     "financial": {
       "observed_prices": [],
@@ -58,49 +58,49 @@
   },
   "sources": [
     {
-      "source_file": "data/sources/registr-smluv/rs-000053.json",
-      "source_id": "15970715",
+      "source_file": "data/sources/registr-smluv/rs-000015.json",
+      "source_id": "1287978",
       "record": {
         "source": "registr-smluv",
-        "source_id": "15970715",
-        "version_id": "17186439",
-        "source_url": "https://smlouvy.gov.cz/smlouva/15970715",
-        "title": "Poskytnutí účelové dotace z rozpočtu Libereckého kraje na projekt Karavanové stání Koupaliště, Lomnice nad Popelkou",
+        "source_id": "1287978",
+        "version_id": "1380934",
+        "source_url": "https://smlouvy.gov.cz/smlouva/1287978",
+        "title": "Financování registrovaných sociálních služeb dle zákona č. 108/2006 Sb., o sociálních službách, ve znění pozdějších předpisů.",
         "buyer_ico": "00275905",
         "supplier_ico": "70891508",
         "supplier_name": "Liberecký kraj",
-        "contract_number": "07-OLP/2373/2021",
-        "date": "2021-07-14",
-        "signed_date": "2021-07-14",
+        "contract_number": "05-OLP/618/2017",
+        "date": "2017-02-27",
+        "signed_date": "2017-02-27",
         "published": null,
-        "price": 500000.0,
+        "price": 896000.0,
         "status": null,
         "raw": {
           "source": "registr-smluv",
-          "source_id": "15970715",
-          "version_id": "17186439",
-          "source_url": "https://smlouvy.gov.cz/smlouva/15970715",
-          "title": "Poskytnutí účelové dotace z rozpočtu Libereckého kraje na projekt Karavanové stání Koupaliště, Lomnice nad Popelkou",
+          "source_id": "1287978",
+          "version_id": "1380934",
+          "source_url": "https://smlouvy.gov.cz/smlouva/1287978",
+          "title": "Financování registrovaných sociálních služeb dle zákona č. 108/2006 Sb., o sociálních službách, ve znění pozdějších předpisů.",
           "buyer_ico": "00275905",
           "supplier_ico": "70891508",
-          "contract_number": "07-OLP/2373/2021",
-          "date": "2021-07-14",
-          "signed_date": "2021-07-14",
+          "contract_number": "05-OLP/618/2017",
+          "date": "2017-02-27",
+          "signed_date": "2017-02-27",
           "published": "",
-          "price": "500000",
-          "value": "500000",
+          "price": "896000",
+          "value": "896000",
           "publisher": "",
-          "subject": "Poskytnutí účelové dotace z rozpočtu Libereckého kraje na projekt Karavanové stání Koupaliště, Lomnice nad Popelkou",
+          "subject": "Financování registrovaných sociálních služeb dle zákona č. 108/2006 Sb., o sociálních službách, ve znění pozdějších předpisů.",
           "counterparty": "Liberecký kraj",
-          "detail_url": "https://smlouvy.gov.cz/smlouva/15970715"
+          "detail_url": "https://smlouvy.gov.cz/smlouva/1287978"
         },
-        "_source_file": "data/sources/registr-smluv/rs-000053.json"
+        "_source_file": "data/sources/registr-smluv/rs-000015.json"
       }
     }
   ],
   "analysis": {
     "schema_version": 4,
-    "project_id": "p-poskytnuti-ucelove-dotace-z-rozpoctu-libereckeho-kraje-na-projekt-kara-0004",
+    "project_id": "p-financovani-registrovanych-socialnich-sluzeb-dle-zakona-c-108-2006-sb-0097",
     "signal_count": 1,
     "signals": [
       {
@@ -112,22 +112,22 @@
     ],
     "timeline": [
       {
-        "date": "2021-07-14",
+        "date": "2017-02-27",
         "event": "source_record",
         "source": "registr-smluv",
-        "source_id": "15970715",
-        "title": "Poskytnutí účelové dotace z rozpočtu Libereckého kraje na projekt Karavanové stání Koupaliště, Lomnice nad Popelkou",
-        "price": 500000.0,
+        "source_id": "1287978",
+        "title": "Financování registrovaných sociálních služeb dle zákona č. 108/2006 Sb., o sociálních službách, ve znění pozdějších předpisů.",
+        "price": 896000.0,
         "deadline": null
       }
     ],
     "financial": {
-      "baseline_price": 500000.0,
-      "current_observed_price": 500000.0,
+      "baseline_price": 896000.0,
+      "current_observed_price": 896000.0,
       "absolute_change": 0.0,
       "percent_change": null,
       "observed_prices": [
-        500000.0
+        896000.0
       ],
       "addendum_count": 0,
       "declared_addenda_count": 0
@@ -136,10 +136,10 @@
       "source_count": 1,
       "supplier_count": 1,
       "price_values": [
-        500000.0
+        896000.0
       ],
       "date_values": [
-        "2021-07-14"
+        "2017-02-27"
       ],
       "document_count": 0,
       "deadline_observations": 0,
