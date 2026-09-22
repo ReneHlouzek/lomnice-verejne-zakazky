@@ -234,14 +234,14 @@ def canonical(g):
     procedures = sorted(set(str(r.get("procurement_procedure")) for r in g if r.get("procurement_procedure")))
     regimes = sorted(set(str(r.get("procurement_regime")) for r in g if r.get("procurement_regime")))
     funded = any(r.get("funded") is True for r in g)
-    known_addenda = sorted(set(n for r in g for n in (r.get("known_addenda_numbers") or []) if isinstance(n, int)))
+    known_addenda = sorted(set(str(n) for r in g for n in (r.get("known_addenda_numbers") or []) if n not in (None, "")))
     project_registry_ids = sorted(set(r.get("project_registry_id") for r in g if r.get("project_registry_id")))
     type_counts = {}
     for e in events:
         type_counts[e["type"]] = type_counts.get(e["type"], 0) + 1
     dominant_type = max(type_counts, key=type_counts.get) if type_counts else "source_record"
     has_procurement_event = bool(type_counts.get("tender") or type_counts.get("award"))
-    has_addendum = bool(type_counts.get("addendum"))
+    has_addendum = bool(type_counts.get("addendum") or known_addenda)
     if has_procurement_event and has_addendum:
         project_type = "procurement_with_changes"
     elif has_procurement_event:
