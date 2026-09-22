@@ -44,7 +44,7 @@
 <footer class="footer"><div class="wrap">Veřejný datový přehled · radar je pouze datový nástroj.</div></footer>
 <script>
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));
-const labels={plneni-smlouvy:'Plnění smlouvy',ukonceno-plneni:'Ukončeno plnění',zruseno:'Zrušeno',aktualni-uverejneni:'Aktuální uveřejnění',unclassified:'Nezařazeno'};
+const labels={'plneni-smlouvy':'Plnění smlouvy','ukonceno-plneni':'Ukončeno plnění','zruseno':'Zrušeno','aktualni-uverejneni':'Aktuální uveřejnění',unclassified:'Nezařazeno'};
 const types={procurement:'Veřejná zakázka',procurement_with_changes:'Veřejná zakázka se změnami',contract:'Smlouva',contract_with_changes:'Smlouva se změnami',other:'Jiný záznam'};
 let projects=[],mode='all';
 const norm=p=>({id:p.id,title:p.title||'',status:p.status||'',type:p.project_type||'',sources:p.source_count||0,supplier:p.supplier_ico||'',signal:p.procurement_signal?.level||'none'});
