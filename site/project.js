@@ -31,6 +31,7 @@ async function run(){
         <div class="stat"><strong>${c.source_count||0}</strong><span>zdrojových záznamů</span></div>
       </div>
       <section class="card"><h2>Zařazení</h2><p><strong>${esc(p.status||'neuvedeno')}</strong></p><p class="meta">${esc(c.project_type||p.project_type||'')}</p>${c.procurement_signal?`<p class="meta">${esc(c.procurement_signal.label)} — ${esc(c.procurement_signal.reason)}</p>`:''}</section>
+      <section class="card"><h2>Zadávání a ověření</h2>${procurement(c)}</section>
       <section class="card"><h2>Dodavatel</h2>${suppliers.length?suppliers.map(x=>`<p><strong>${esc(x)}</strong></p>`).join(''):'<p class="meta">Dodavatel zatím není ve zdrojových datech uveden.</p>'}</section>
       <section class="card"><h2>Finanční mapa</h2>${finance(f,events)}</section>
       <section class="card"><h2>Časová osa</h2>${timeline(events)}</section>
@@ -38,6 +39,7 @@ async function run(){
       <section class="card"><h2>Zdroje a dokumentace</h2>${ss.length?sourceRows(ss):'<p class="meta">Zdroje zatím nejsou evidovány.</p>'}</section>`;
   }catch(e){root.innerHTML='<div class="empty">Detail se nepodařilo načíst.</div>'}
 }
+function procurement(c){const p=c.procurement||{},v=c.verification||{},f=c.financial||{};const rows=[];if(p.regimes?.length)rows.push('<p><strong>Režim:</strong> '+esc(p.regimes.join(', '))+'</p>');if(p.procedures?.length)rows.push('<p><strong>Postup:</strong> '+esc(p.procedures.join(', '))+'</p>');if(p.known_addenda_numbers?.length)rows.push('<p><strong>Doložené dodatky:</strong> '+esc(p.known_addenda_numbers.join(', '))+'</p>');if(f.expected_values?.length)rows.push('<p><strong>Předpokládaná hodnota:</strong> '+money(f.expected_values[0])+'</p>');if(v.levels?.length)rows.push('<p><strong>Úroveň ověření:</strong> '+esc(v.levels.join(', '))+'</p>');return rows.length?rows.join(''):'<p class="meta">V dostupných zdrojích zatím nejsou tyto údaje vyplněny.</p>'}
 function finance(f,es){
   const prices=es.filter(e=>e.price!=null);
   if(!prices.length)return'<p class="meta">Pro finanční mapu zatím není k dispozici dostatek cenových údajů.</p>';
