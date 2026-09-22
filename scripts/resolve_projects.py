@@ -302,7 +302,13 @@ def canonical(g):
 
 def group_score(record, group):
     best = (0, "none", [])
+    record_source = str(record.get("source") or "").strip()
     for member in group:
+        member_source = str(member.get("source") or "").strip()
+        # Never merge two independent records from the same source merely
+        # because supplier/title/price happen to look similar.
+        if record_source and member_source and record_source == member_source:
+            continue
         current = score(record, member)
         if current[0] > best[0]:
             best = current
