@@ -227,7 +227,12 @@
     "date": "2026-07-02",
     "price": null,
     "status": "plnění smlouvy",
-    "type": "tender"
+    "type": "tender",
+    "expected_value": 1100000,
+    "verification_level": "detail",
+    "verified_web": true,
+    "verified_at": "2026-09-22",
+    "verification_source": "https://www.vhodne-uverejneni.cz/zakazky-podle-sidla-zadavatele?a=listbylocality&h=order&m=xenorders&order=ASC&orderFilterByLocality%5B__mw3_form__%5D=&orderFilterByLocality%5Blimit%5D=25&orderFilterByLocality%5BorderState%5D=supply&orderFilterByLocality%5Bsearch%5D=Hledat&orderFilterByLocality%5BterritorialUnit%5D=&page=1081&sort=expected_price"
   },
   {
     "source": "vhodne-uverejneni",
@@ -370,8 +375,10 @@
     ],
     "verification_level": "detail",
     "verified_web": true,
-    "verified_at": "2026-09-21",
-    "verification_source": "https://www.vhodne-uverejneni.cz/zakazka/sanace-vlhkeho-zdiva-sklepnich-prostor-cp-886-lomnice-nad-popelkou"
+    "verified_at": "2026-09-22",
+    "verification_source": "https://www.kraj-lbc.cz/getFile/case%3Ashow/id%3A589766/2026-04-27%2008%3A20%3A09.000000",
+    "funded": true,
+    "grant_id": "Projekt Libereckého kraje – obnova kulturní památky"
   },
   {
     "source": "vhodne-uverejneni",
@@ -415,8 +422,12 @@
     "status": "plnění smlouvy",
     "type": "tender",
     "contract_signed_date": "2025-05-02",
-    "verification_level": "organization_contract_index",
-    "verification_source": "https://www.vhodne-uverejneni.cz/smlouvy-organizace/mesto-lomnice-nad-popelkou"
+    "verification_level": "detail",
+    "verification_source": "https://www.vhodne-uverejneni.cz/zakazka/restauratorske-prace-na-spodnich-castech-marianskeho-sloupu-v-lomnici-nad-popelkou",
+    "funded": true,
+    "grant_id": "Čj. MK 64613/2025 OPP",
+    "verified_web": true,
+    "verified_at": "2026-09-22"
   },
   {
     "source": "vhodne-uverejneni",
