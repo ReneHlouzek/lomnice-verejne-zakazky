@@ -175,6 +175,10 @@ def score(a, b):
         return .84, "supplier_title_price_date", [ai, "price", f"date_gap_days={gap}"]
     if addendum_pair and same_supplier and core_sim >= .68:
         return .74, "candidate_addendum_core_title", [ai]
+    if same_supplier and sim >= .55:
+        return .64, "candidate_supplier_title", [ai, f"title_similarity={sim:.2f}", f"date_gap_days={gap}" if gap is not None else "no_date_match"]
+    if sim >= .88 and (near_price or near_date):
+        return .68, "candidate_title_price_or_date", ["title_similarity={:.2f}".format(sim), "price" if near_price else f"date_gap_days={gap}"]
     if same_supplier and sim >= .60 and (near_price or near_date):
         return .72, "candidate_supplier_title_date_or_price", [ai, f"date_gap_days={gap}" if gap is not None else "no_date_match"]
     if sim >= .75 and near_price:
