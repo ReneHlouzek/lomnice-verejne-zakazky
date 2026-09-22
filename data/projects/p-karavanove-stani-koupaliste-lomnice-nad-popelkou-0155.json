@@ -1,23 +1,21 @@
 {
-  "id": "p-nemocnice-nasledne-pece-lomnice-nad-popelkou-investice-a-opravy-0153",
-  "title": "Nemocnice následné péče Lomnice nad Popelkou – investice a opravy",
+  "id": "p-karavanove-stani-koupaliste-lomnice-nad-popelkou-0155",
+  "title": "Karavanové stání Koupaliště, Lomnice nad Popelkou",
   "buyer_ico": "00275905",
-  "status": "zruseno",
+  "status": "ukonceno-plneni",
   "project_type": "procurement",
   "canonical": {
-    "title": "Nemocnice následné péče Lomnice nad Popelkou – investice a opravy",
+    "title": "Karavanové stání Koupaliště, Lomnice nad Popelkou",
     "supplier_ico": null,
-    "identifiers": [
-      "P25V00007778"
-    ],
+    "identifiers": [],
     "lifecycle": {
       "events": [
         {
-          "date": "2025-09-04",
+          "date": "2024-10-23",
           "type": "tender",
           "source": "vhodne-uverejneni",
-          "source_id": "P25V00007778",
-          "title": "Nemocnice následné péče Lomnice nad Popelkou – investice a opravy",
+          "source_id": null,
+          "title": "Karavanové stání Koupaliště, Lomnice nad Popelkou",
           "price": null
         }
       ],
@@ -29,13 +27,13 @@
     },
     "project_type": "procurement",
     "procurement_signal": {
-      "level": "explicit",
-      "label": "Výslovná vazba na veřejnou zakázku",
-      "reason": "Zdrojový text obsahuje přímou zmínku o veřejné zakázce, výběru nebo zadávacím řízení."
+      "level": "none",
+      "label": "Bez rozpoznané vazby na zakázku",
+      "reason": "V dostupném textu nebyl nalezen dostatečný signál."
     },
     "dates": {
-      "first_observed": "2025-09-04",
-      "last_observed": "2025-09-04"
+      "first_observed": "2024-10-23",
+      "last_observed": "2024-10-23"
     },
     "financial": {
       "observed_prices": [],
@@ -60,22 +58,22 @@
   },
   "sources": [
     {
-      "source_file": "data/sources/vhodne-uverejneni/vu-000010.json",
-      "source_id": "P25V00007778",
+      "source_file": "data/sources/vhodne-uverejneni/vu-000045.json",
+      "source_id": null,
       "record": {
         "source": "vhodne-uverejneni",
-        "source_id": "P25V00007778",
-        "procurement_id": "P25V00007778",
-        "source_url": "https://www.vhodne-uverejneni.cz/zakazka/nemocnice-nasledne-pece-lomnice-nad-popelkou-investice-a-opravy-1",
-        "title": "Nemocnice následné péče Lomnice nad Popelkou – investice a opravy",
+        "source_id": null,
+        "procurement_id": null,
+        "source_url": "https://www.vhodne-uverejneni.cz/zakazka/karavanove-stani-koupaliste-lomnice-nad-popelkou",
+        "title": "Karavanové stání Koupaliště, Lomnice nad Popelkou",
         "buyer_ico": "00275905",
         "supplier_ico": null,
         "supplier_name": null,
-        "date": "2025-09-04",
+        "date": "2024-10-23",
         "price": null,
         "expected_value": null,
         "price_vat_included": null,
-        "status": "zakázka byla zrušena (Vyhodnocování)",
+        "status": "ukončeno plnění smlouvy",
         "type": "tender",
         "procurement_regime": null,
         "procurement_procedure": null,
@@ -91,30 +89,33 @@
         "known_addenda_numbers": [],
         "document_count": null,
         "verification_level": null,
-        "verified_web": false,
-        "verified_at": null,
-        "verification_source": null,
+        "verified_web": true,
+        "verified_at": "2026-09-21",
+        "verification_source": "Official PVU search/profile page",
         "raw": {
           "source": "vhodne-uverejneni",
-          "source_id": "P25V00007778",
-          "procurement_id": "P25V00007778",
-          "source_url": "https://www.vhodne-uverejneni.cz/zakazka/nemocnice-nasledne-pece-lomnice-nad-popelkou-investice-a-opravy-1",
-          "title": "Nemocnice následné péče Lomnice nad Popelkou – investice a opravy",
+          "source_id": null,
+          "procurement_id": null,
+          "source_url": "https://www.vhodne-uverejneni.cz/zakazka/karavanove-stani-koupaliste-lomnice-nad-popelkou",
+          "title": "Karavanové stání Koupaliště, Lomnice nad Popelkou",
           "buyer_ico": "00275905",
           "supplier_ico": null,
           "supplier_name": null,
-          "date": "2025-09-04",
+          "date": "2024-10-23",
           "price": null,
-          "status": "zakázka byla zrušena (Vyhodnocování)",
-          "type": "tender"
+          "status": "ukončeno plnění smlouvy",
+          "type": "tender",
+          "verified_web": true,
+          "verified_at": "2026-09-21",
+          "verification_source": "Official PVU search/profile page"
         },
-        "_source_file": "data/sources/vhodne-uverejneni/vu-000010.json"
+        "_source_file": "data/sources/vhodne-uverejneni/vu-000045.json"
       }
     }
   ],
   "analysis": {
     "schema_version": 4,
-    "project_id": "p-nemocnice-nasledne-pece-lomnice-nad-popelkou-investice-a-opravy-0153",
+    "project_id": "p-karavanove-stani-koupaliste-lomnice-nad-popelkou-0155",
     "signal_count": 1,
     "signals": [
       {
@@ -126,11 +127,11 @@
     ],
     "timeline": [
       {
-        "date": "2025-09-04",
+        "date": "2024-10-23",
         "event": "tender",
         "source": "vhodne-uverejneni",
-        "source_id": "P25V00007778",
-        "title": "Nemocnice následné péče Lomnice nad Popelkou – investice a opravy",
+        "source_id": null,
+        "title": "Karavanové stání Koupaliště, Lomnice nad Popelkou",
         "price": null,
         "deadline": null
       }
@@ -141,14 +142,15 @@
       "absolute_change": null,
       "percent_change": null,
       "observed_prices": [],
-      "addendum_count": 0
+      "addendum_count": 0,
+      "declared_addenda_count": 0
     },
     "metrics": {
       "source_count": 1,
       "supplier_count": 0,
       "price_values": [],
       "date_values": [
-        "2025-09-04"
+        "2024-10-23"
       ],
       "document_count": 0,
       "deadline_observations": 0

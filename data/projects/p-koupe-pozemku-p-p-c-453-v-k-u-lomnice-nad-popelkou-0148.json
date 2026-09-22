@@ -1,21 +1,21 @@
 {
-  "id": "p-lomnice-n-p-ul-5-kvetna-destova-kanalizace-0150",
-  "title": "Lomnice n. P., ul. 5. května - dešťová kanalizace",
+  "id": "p-koupe-pozemku-p-p-c-453-v-k-u-lomnice-nad-popelkou-0148",
+  "title": "Koupě pozemku p. p. č. 453 v k. ú. Lomnice nad Popelkou",
   "buyer_ico": "00275905",
   "status": "plneni-smlouvy",
   "project_type": "procurement",
   "canonical": {
-    "title": "Lomnice n. P., ul. 5. května - dešťová kanalizace",
+    "title": "Koupě pozemku p. p. č. 453 v k. ú. Lomnice nad Popelkou",
     "supplier_ico": null,
     "identifiers": [],
     "lifecycle": {
       "events": [
         {
-          "date": "2025-01-16",
+          "date": "2024-07-22",
           "type": "tender",
           "source": "vhodne-uverejneni",
           "source_id": null,
-          "title": "Lomnice n. P., ul. 5. května - dešťová kanalizace",
+          "title": "Koupě pozemku p. p. č. 453 v k. ú. Lomnice nad Popelkou",
           "price": null
         }
       ],
@@ -32,13 +32,15 @@
       "reason": "V dostupném textu nebyl nalezen dostatečný signál."
     },
     "dates": {
-      "first_observed": "2025-01-16",
-      "last_observed": "2025-01-16"
+      "first_observed": "2024-07-22",
+      "last_observed": "2024-07-22"
     },
     "financial": {
       "observed_prices": [],
       "observed_vat_included_prices": [],
-      "expected_values": [],
+      "expected_values": [
+        1903000.0
+      ],
       "initial_contract_price": null,
       "latest_observed_price": null,
       "expected_to_contract_ratio": null
@@ -50,7 +52,9 @@
       "known_addenda_numbers": []
     },
     "verification": {
-      "levels": [],
+      "levels": [
+        "profile_listing"
+      ],
       "project_registry_ids": [],
       "detail_verified_sources": 0
     },
@@ -58,20 +62,20 @@
   },
   "sources": [
     {
-      "source_file": "data/sources/vhodne-uverejneni/vu-000028.json",
+      "source_file": "data/sources/vhodne-uverejneni/vu-000032.json",
       "source_id": null,
       "record": {
         "source": "vhodne-uverejneni",
         "source_id": null,
         "procurement_id": null,
-        "source_url": "https://www.vhodne-uverejneni.cz/zakazka/lomnice-n-p-ul-5-kvetna-destova-kanalizace",
-        "title": "Lomnice n. P., ul. 5. května - dešťová kanalizace",
+        "source_url": "https://www.vhodne-uverejneni.cz/zakazka/koupe-pozemku-p-p-c-453-v-k-u-lomnice-nad-popelkou",
+        "title": "Koupě pozemku p. p. č. 453 v k. ú. Lomnice nad Popelkou",
         "buyer_ico": "00275905",
         "supplier_ico": null,
         "supplier_name": null,
-        "date": "2025-01-16",
+        "date": "2024-07-22",
         "price": null,
-        "expected_value": null,
+        "expected_value": 1903000.0,
         "price_vat_included": null,
         "status": "plnění smlouvy",
         "type": "tender",
@@ -88,31 +92,34 @@
         "project_registry_id": null,
         "known_addenda_numbers": [],
         "document_count": null,
-        "verification_level": null,
+        "verification_level": "profile_listing",
         "verified_web": false,
         "verified_at": null,
-        "verification_source": null,
+        "verification_source": "https://www.vhodne-uverejneni.cz/profil/mesto-lomnice-nad-popelkou?page-finished=2",
         "raw": {
           "source": "vhodne-uverejneni",
           "source_id": null,
           "procurement_id": null,
-          "source_url": "https://www.vhodne-uverejneni.cz/zakazka/lomnice-n-p-ul-5-kvetna-destova-kanalizace",
-          "title": "Lomnice n. P., ul. 5. května - dešťová kanalizace",
+          "source_url": "https://www.vhodne-uverejneni.cz/zakazka/koupe-pozemku-p-p-c-453-v-k-u-lomnice-nad-popelkou",
+          "title": "Koupě pozemku p. p. č. 453 v k. ú. Lomnice nad Popelkou",
           "buyer_ico": "00275905",
           "supplier_ico": null,
           "supplier_name": null,
-          "date": "2025-01-16",
+          "date": "2024-07-22",
           "price": null,
           "status": "plnění smlouvy",
-          "type": "tender"
+          "type": "tender",
+          "expected_value": 1903000,
+          "verification_level": "profile_listing",
+          "verification_source": "https://www.vhodne-uverejneni.cz/profil/mesto-lomnice-nad-popelkou?page-finished=2"
         },
-        "_source_file": "data/sources/vhodne-uverejneni/vu-000028.json"
+        "_source_file": "data/sources/vhodne-uverejneni/vu-000032.json"
       }
     }
   ],
   "analysis": {
     "schema_version": 4,
-    "project_id": "p-lomnice-n-p-ul-5-kvetna-destova-kanalizace-0150",
+    "project_id": "p-koupe-pozemku-p-p-c-453-v-k-u-lomnice-nad-popelkou-0148",
     "signal_count": 1,
     "signals": [
       {
@@ -124,11 +131,11 @@
     ],
     "timeline": [
       {
-        "date": "2025-01-16",
+        "date": "2024-07-22",
         "event": "tender",
         "source": "vhodne-uverejneni",
         "source_id": null,
-        "title": "Lomnice n. P., ul. 5. května - dešťová kanalizace",
+        "title": "Koupě pozemku p. p. č. 453 v k. ú. Lomnice nad Popelkou",
         "price": null,
         "deadline": null
       }
@@ -139,14 +146,15 @@
       "absolute_change": null,
       "percent_change": null,
       "observed_prices": [],
-      "addendum_count": 0
+      "addendum_count": 0,
+      "declared_addenda_count": 0
     },
     "metrics": {
       "source_count": 1,
       "supplier_count": 0,
       "price_values": [],
       "date_values": [
-        "2025-01-16"
+        "2024-07-22"
       ],
       "document_count": 0,
       "deadline_observations": 0

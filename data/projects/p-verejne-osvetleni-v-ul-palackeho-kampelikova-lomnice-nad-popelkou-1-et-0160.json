@@ -1,21 +1,21 @@
 {
-  "id": "p-sanace-vlhkeho-zdiva-a-upravy-sklepnich-prostor-cp-43-a-44-sanace-sv-o-0156",
-  "title": "Sanace vlhkého zdiva a úpravy sklepních prostor čp. 43 a 44 - sanace SV obvodové stěny, Lomnice nad Popelkou",
+  "id": "p-verejne-osvetleni-v-ul-palackeho-kampelikova-lomnice-nad-popelkou-1-et-0160",
+  "title": "Veřejné osvětlení v ul. Palackého + Kampelíkova, Lomnice nad Popelkou, 1. etapa",
   "buyer_ico": "00275905",
   "status": "ukonceno-plneni",
   "project_type": "contract",
   "canonical": {
-    "title": "Sanace vlhkého zdiva a úpravy sklepních prostor čp. 43 a 44 - sanace SV obvodové stěny, Lomnice nad Popelkou",
+    "title": "Veřejné osvětlení v ul. Palackého + Kampelíkova, Lomnice nad Popelkou, 1. etapa",
     "supplier_ico": null,
     "identifiers": [],
     "lifecycle": {
       "events": [
         {
-          "date": "2022-03-23",
+          "date": "2021-07-22",
           "type": "contract",
           "source": "vhodne-uverejneni",
           "source_id": null,
-          "title": "Sanace vlhkého zdiva a úpravy sklepních prostor čp. 43 a 44 - sanace SV obvodové stěny, Lomnice nad Popelkou",
+          "title": "Veřejné osvětlení v ul. Palackého + Kampelíkova, Lomnice nad Popelkou, 1. etapa",
           "price": null
         }
       ],
@@ -27,13 +27,13 @@
     },
     "project_type": "contract",
     "procurement_signal": {
-      "level": "likely",
-      "label": "Pravděpodobně souvisí se zakázkou",
-      "reason": "Název/předmět odpovídá investiční dodávce, stavebním pracím nebo jiné běžné zadavatelské dodávce; způsob výběru dodavatele z tohoto záznamu sám o sobě neplyne."
+      "level": "none",
+      "label": "Bez rozpoznané vazby na zakázku",
+      "reason": "V dostupném textu nebyl nalezen dostatečný signál."
     },
     "dates": {
-      "first_observed": "2022-03-23",
-      "last_observed": "2022-03-23"
+      "first_observed": "2021-07-22",
+      "last_observed": "2021-07-22"
     },
     "financial": {
       "observed_prices": [],
@@ -58,18 +58,18 @@
   },
   "sources": [
     {
-      "source_file": "data/sources/vhodne-uverejneni/vu-000068.json",
+      "source_file": "data/sources/vhodne-uverejneni/vu-000058.json",
       "source_id": null,
       "record": {
         "source": "vhodne-uverejneni",
         "source_id": null,
         "procurement_id": null,
         "source_url": "https://www.vhodne-uverejneni.cz/smlouvy-organizace/mesto-lomnice-nad-popelkou",
-        "title": "Sanace vlhkého zdiva a úpravy sklepních prostor čp. 43 a 44 - sanace SV obvodové stěny, Lomnice nad Popelkou",
+        "title": "Veřejné osvětlení v ul. Palackého + Kampelíkova, Lomnice nad Popelkou, 1. etapa",
         "buyer_ico": "00275905",
         "supplier_ico": null,
         "supplier_name": null,
-        "date": "2022-03-23",
+        "date": "2021-07-22",
         "price": null,
         "expected_value": null,
         "price_vat_included": null,
@@ -97,11 +97,11 @@
           "source_id": null,
           "procurement_id": null,
           "source_url": "https://www.vhodne-uverejneni.cz/smlouvy-organizace/mesto-lomnice-nad-popelkou",
-          "title": "Sanace vlhkého zdiva a úpravy sklepních prostor čp. 43 a 44 - sanace SV obvodové stěny, Lomnice nad Popelkou",
+          "title": "Veřejné osvětlení v ul. Palackého + Kampelíkova, Lomnice nad Popelkou, 1. etapa",
           "buyer_ico": "00275905",
           "supplier_ico": null,
           "supplier_name": null,
-          "date": "2022-03-23",
+          "date": "2021-07-22",
           "price": null,
           "status": "ukončeno plnění smlouvy",
           "type": "contract",
@@ -109,13 +109,13 @@
           "verified_at": "2026-09-21",
           "verification_source": "Official PVU organization contract list"
         },
-        "_source_file": "data/sources/vhodne-uverejneni/vu-000068.json"
+        "_source_file": "data/sources/vhodne-uverejneni/vu-000058.json"
       }
     }
   ],
   "analysis": {
     "schema_version": 4,
-    "project_id": "p-sanace-vlhkeho-zdiva-a-upravy-sklepnich-prostor-cp-43-a-44-sanace-sv-o-0156",
+    "project_id": "p-verejne-osvetleni-v-ul-palackeho-kampelikova-lomnice-nad-popelkou-1-et-0160",
     "signal_count": 1,
     "signals": [
       {
@@ -127,11 +127,11 @@
     ],
     "timeline": [
       {
-        "date": "2022-03-23",
+        "date": "2021-07-22",
         "event": "contract",
         "source": "vhodne-uverejneni",
         "source_id": null,
-        "title": "Sanace vlhkého zdiva a úpravy sklepních prostor čp. 43 a 44 - sanace SV obvodové stěny, Lomnice nad Popelkou",
+        "title": "Veřejné osvětlení v ul. Palackého + Kampelíkova, Lomnice nad Popelkou, 1. etapa",
         "price": null,
         "deadline": null
       }
@@ -142,14 +142,15 @@
       "absolute_change": null,
       "percent_change": null,
       "observed_prices": [],
-      "addendum_count": 0
+      "addendum_count": 0,
+      "declared_addenda_count": 0
     },
     "metrics": {
       "source_count": 1,
       "supplier_count": 0,
       "price_values": [],
       "date_values": [
-        "2022-03-23"
+        "2021-07-22"
       ],
       "document_count": 0,
       "deadline_observations": 0

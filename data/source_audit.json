@@ -3,7 +3,7 @@
   "buyer_ico": "00275905",
   "sources": {
     "vhodne-uverejneni": {
-      "records": 78,
+      "records": 80,
       "missing_source_url": [
         42,
         44,
@@ -110,7 +110,9 @@
         73,
         76,
         77,
-        78
+        78,
+        79,
+        80
       ],
       "duplicate_identifiers": []
     },

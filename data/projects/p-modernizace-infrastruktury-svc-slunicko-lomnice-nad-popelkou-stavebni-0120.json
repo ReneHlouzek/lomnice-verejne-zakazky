@@ -147,8 +147,25 @@
   "analysis": {
     "schema_version": 4,
     "project_id": "p-modernizace-infrastruktury-svc-slunicko-lomnice-nad-popelkou-stavebni-0120",
-    "signal_count": 1,
+    "signal_count": 2,
     "signals": [
+      {
+        "code": "addendum_count",
+        "level": "info",
+        "message": "Ve zdrojových záznamech je doloženo nejméně 4 dodatků / změnových záznamů.",
+        "evidence": [
+          {
+            "type": "count",
+            "value": 4,
+            "declared_numbers": [
+              "1",
+              "5",
+              "6",
+              "7"
+            ]
+          }
+        ]
+      },
       {
         "code": "single_source",
         "level": "info",
@@ -175,7 +192,8 @@
       "observed_prices": [
         20387820.9
       ],
-      "addendum_count": 0
+      "addendum_count": 4,
+      "declared_addenda_count": 4
     },
     "metrics": {
       "source_count": 1,

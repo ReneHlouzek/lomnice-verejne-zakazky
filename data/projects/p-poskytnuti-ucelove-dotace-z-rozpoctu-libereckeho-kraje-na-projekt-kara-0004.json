@@ -155,11 +155,12 @@
       {
         "code": "addendum_count",
         "level": "info",
-        "message": "Ve zdrojových záznamech bylo rozpoznáno 1 dodatků / změnových záznamů.",
+        "message": "Ve zdrojových záznamech je doloženo nejméně 1 dodatků / změnových záznamů.",
         "evidence": [
           {
             "type": "count",
-            "value": 1
+            "value": 1,
+            "declared_numbers": []
           }
         ]
       }
@@ -192,7 +193,8 @@
       "observed_prices": [
         500000.0
       ],
-      "addendum_count": 1
+      "addendum_count": 1,
+      "declared_addenda_count": 0
     },
     "metrics": {
       "source_count": 2,

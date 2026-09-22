@@ -39,7 +39,9 @@
       "observed_prices": [
         6072914.0
       ],
-      "observed_vat_included_prices": [],
+      "observed_vat_included_prices": [
+        7348225.94
+      ],
       "expected_values": [],
       "initial_contract_price": 6072914.0,
       "latest_observed_price": 6072914.0,
@@ -53,7 +55,7 @@
     },
     "verification": {
       "levels": [
-        "external_tender_index"
+        "contract_pdf"
       ],
       "project_registry_ids": [],
       "detail_verified_sources": 0
@@ -68,7 +70,7 @@
         "source": "vhodne-uverejneni",
         "source_id": "P26-REG-105575",
         "procurement_id": null,
-        "source_url": "https://www.vhodne-uverejneni.cz/zakazka/stavebni-prace-pri-vymene-oken-a-upravy-3-np-cp-61-lomnice-nad-popelkou",
+        "source_url": "https://www.vhodne-uverejneni.cz/index.php?a=detail&contract=105575&h=contractsregister&m=xenorders",
         "title": "Stavební práce při výměně oken a úpravy 3. NP čp. 61, Lomnice nad Popelkou",
         "buyer_ico": "00275905",
         "supplier_ico": "25937499",
@@ -76,7 +78,7 @@
         "date": "2026-05-27",
         "price": 6072914.0,
         "expected_value": null,
-        "price_vat_included": null,
+        "price_vat_included": 7348225.94,
         "status": "smlouva zveřejněna",
         "type": "contract",
         "procurement_regime": null,
@@ -92,15 +94,15 @@
         "project_registry_id": null,
         "known_addenda_numbers": [],
         "document_count": null,
-        "verification_level": "external_tender_index",
-        "verified_web": false,
-        "verified_at": null,
-        "verification_source": "https://www.hlidacstatu.cz/verejnezakazky/hledat?q=osobaid%3Ajiri-kliment-4",
+        "verification_level": "contract_pdf",
+        "verified_web": true,
+        "verified_at": "2026-09-22",
+        "verification_source": "https://www.vhodne-uverejneni.cz/index.php?a=detail&contract=105575&h=contractsregister&m=xenorders",
         "raw": {
           "source": "vhodne-uverejneni",
           "source_id": "P26-REG-105575",
           "procurement_id": null,
-          "source_url": "https://www.vhodne-uverejneni.cz/zakazka/stavebni-prace-pri-vymene-oken-a-upravy-3-np-cp-61-lomnice-nad-popelkou",
+          "source_url": "https://www.vhodne-uverejneni.cz/index.php?a=detail&contract=105575&h=contractsregister&m=xenorders",
           "title": "Stavební práce při výměně oken a úpravy 3. NP čp. 61, Lomnice nad Popelkou",
           "buyer_ico": "00275905",
           "supplier_ico": "25937499",
@@ -109,8 +111,11 @@
           "price": 6072914,
           "status": "smlouva zveřejněna",
           "type": "contract",
-          "verification_level": "external_tender_index",
-          "verification_source": "https://www.hlidacstatu.cz/verejnezakazky/hledat?q=osobaid%3Ajiri-kliment-4"
+          "verification_level": "contract_pdf",
+          "verification_source": "https://www.vhodne-uverejneni.cz/index.php?a=detail&contract=105575&h=contractsregister&m=xenorders",
+          "price_vat_included": 7348225.94,
+          "verified_web": true,
+          "verified_at": "2026-09-22"
         },
         "_source_file": "data/sources/vhodne-uverejneni/vu-000012.json"
       }
@@ -147,7 +152,8 @@
       "observed_prices": [
         6072914.0
       ],
-      "addendum_count": 0
+      "addendum_count": 0,
+      "declared_addenda_count": 0
     },
     "metrics": {
       "source_count": 1,

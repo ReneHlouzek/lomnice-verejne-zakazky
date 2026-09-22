@@ -28,7 +28,7 @@
   "document_count": null,
   "verification_level": "detail",
   "verified_web": true,
-  "verified_at": null,
+  "verified_at": "2026-09-22",
   "verification_source": "https://www.vhodne-uverejneni.cz/zakazka/rozsireni-polikliniky-lomnice-nad-popelkou-dokumentace-stavebniho-zameru",
   "raw": {
     "source": "vhodne-uverejneni",
@@ -50,6 +50,7 @@
     "description": "Vypracování dokumentace povolení záměru projektu k vydání správních rozhodnutí potřebných k realizaci projektu a získání potřebných správních rozhodnutí.",
     "verification_level": "detail",
     "verified_web": true,
-    "verification_source": "https://www.vhodne-uverejneni.cz/zakazka/rozsireni-polikliniky-lomnice-nad-popelkou-dokumentace-stavebniho-zameru"
+    "verification_source": "https://www.vhodne-uverejneni.cz/zakazka/rozsireni-polikliniky-lomnice-nad-popelkou-dokumentace-stavebniho-zameru",
+    "verified_at": "2026-09-22"
   }
 }

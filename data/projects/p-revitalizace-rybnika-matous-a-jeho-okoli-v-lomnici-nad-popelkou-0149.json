@@ -1,5 +1,5 @@
 {
-  "id": "p-revitalizace-rybnika-matous-a-jeho-okoli-v-lomnici-nad-popelkou-0148",
+  "id": "p-revitalizace-rybnika-matous-a-jeho-okoli-v-lomnici-nad-popelkou-0149",
   "title": "Revitalizace rybníka Matouš a jeho okolí v Lomnici nad Popelkou",
   "buyer_ico": "00275905",
   "status": "plneni-smlouvy",
@@ -132,7 +132,7 @@
   ],
   "analysis": {
     "schema_version": 4,
-    "project_id": "p-revitalizace-rybnika-matous-a-jeho-okoli-v-lomnici-nad-popelkou-0148",
+    "project_id": "p-revitalizace-rybnika-matous-a-jeho-okoli-v-lomnici-nad-popelkou-0149",
     "signal_count": 1,
     "signals": [
       {
@@ -161,7 +161,8 @@
       "observed_prices": [
         35816700.0
       ],
-      "addendum_count": 0
+      "addendum_count": 0,
+      "declared_addenda_count": 0
     },
     "metrics": {
       "source_count": 1,

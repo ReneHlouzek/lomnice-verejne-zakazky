@@ -11,7 +11,7 @@
   "price": null,
   "expected_value": null,
   "price_vat_included": null,
-  "status": "plnění smlouvy",
+  "status": "zakázka byla zadána (Plnění smlouvy)",
   "type": "tender",
   "procurement_regime": "VZ malého rozsahu",
   "procurement_procedure": "Přímé zadání - Zakázka malého rozsahu",
@@ -34,7 +34,7 @@
   "document_count": null,
   "verification_level": "detail",
   "verified_web": true,
-  "verified_at": "2026-09-21",
+  "verified_at": "2026-09-22",
   "verification_source": "https://www.vhodne-uverejneni.cz/zakazka/sanace-vlhkeho-zdiva-sklepnich-prostor-cp-886-lomnice-nad-popelkou",
   "raw": {
     "source": "vhodne-uverejneni",
@@ -47,7 +47,7 @@
     "supplier_name": null,
     "date": "2026-02-25",
     "price": null,
-    "status": "plnění smlouvy",
+    "status": "zakázka byla zadána (Plnění smlouvy)",
     "type": "tender",
     "procurement_type": "Stavební práce",
     "procurement_regime": "VZ malého rozsahu",
@@ -63,7 +63,7 @@
     ],
     "verification_level": "detail",
     "verified_web": true,
-    "verified_at": "2026-09-21",
+    "verified_at": "2026-09-22",
     "verification_source": "https://www.vhodne-uverejneni.cz/zakazka/sanace-vlhkeho-zdiva-sklepnich-prostor-cp-886-lomnice-nad-popelkou"
   }
 }

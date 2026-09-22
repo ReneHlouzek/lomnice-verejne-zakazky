@@ -143,7 +143,8 @@
       "observed_prices": [
         22268016.11
       ],
-      "addendum_count": 0
+      "addendum_count": 0,
+      "declared_addenda_count": 0
     },
     "metrics": {
       "source_count": 1,

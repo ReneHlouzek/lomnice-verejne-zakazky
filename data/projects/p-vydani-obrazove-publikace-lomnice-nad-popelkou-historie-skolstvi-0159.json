@@ -1,46 +1,44 @@
 {
-  "id": "p-koupe-pozemku-p-p-c-453-v-k-u-lomnice-nad-popelkou-0147",
-  "title": "Koupě pozemku p. p. č. 453 v k. ú. Lomnice nad Popelkou",
+  "id": "p-vydani-obrazove-publikace-lomnice-nad-popelkou-historie-skolstvi-0159",
+  "title": "Vydání obrazové publikace Lomnice nad Popelkou - historie školství",
   "buyer_ico": "00275905",
-  "status": "plneni-smlouvy",
-  "project_type": "procurement",
+  "status": "ukonceno-plneni",
+  "project_type": "contract",
   "canonical": {
-    "title": "Koupě pozemku p. p. č. 453 v k. ú. Lomnice nad Popelkou",
+    "title": "Vydání obrazové publikace Lomnice nad Popelkou - historie školství",
     "supplier_ico": null,
     "identifiers": [],
     "lifecycle": {
       "events": [
         {
-          "date": "2024-07-22",
-          "type": "tender",
+          "date": "2022-08-22",
+          "type": "contract",
           "source": "vhodne-uverejneni",
           "source_id": null,
-          "title": "Koupě pozemku p. p. č. 453 v k. ú. Lomnice nad Popelkou",
+          "title": "Vydání obrazové publikace Lomnice nad Popelkou - historie školství",
           "price": null
         }
       ],
       "event_count": 1,
       "type_counts": {
-        "tender": 1
+        "contract": 1
       },
-      "dominant_type": "tender"
+      "dominant_type": "contract"
     },
-    "project_type": "procurement",
+    "project_type": "contract",
     "procurement_signal": {
       "level": "none",
       "label": "Bez rozpoznané vazby na zakázku",
       "reason": "V dostupném textu nebyl nalezen dostatečný signál."
     },
     "dates": {
-      "first_observed": "2024-07-22",
-      "last_observed": "2024-07-22"
+      "first_observed": "2022-08-22",
+      "last_observed": "2022-08-22"
     },
     "financial": {
       "observed_prices": [],
       "observed_vat_included_prices": [],
-      "expected_values": [
-        1903000.0
-      ],
+      "expected_values": [],
       "initial_contract_price": null,
       "latest_observed_price": null,
       "expected_to_contract_ratio": null
@@ -52,9 +50,7 @@
       "known_addenda_numbers": []
     },
     "verification": {
-      "levels": [
-        "profile_listing"
-      ],
+      "levels": [],
       "project_registry_ids": [],
       "detail_verified_sources": 0
     },
@@ -62,23 +58,23 @@
   },
   "sources": [
     {
-      "source_file": "data/sources/vhodne-uverejneni/vu-000032.json",
+      "source_file": "data/sources/vhodne-uverejneni/vu-000073.json",
       "source_id": null,
       "record": {
         "source": "vhodne-uverejneni",
         "source_id": null,
         "procurement_id": null,
-        "source_url": "https://www.vhodne-uverejneni.cz/zakazka/koupe-pozemku-p-p-c-453-v-k-u-lomnice-nad-popelkou",
-        "title": "Koupě pozemku p. p. č. 453 v k. ú. Lomnice nad Popelkou",
+        "source_url": "https://www.vhodne-uverejneni.cz/smlouvy-organizace/mesto-lomnice-nad-popelkou",
+        "title": "Vydání obrazové publikace Lomnice nad Popelkou - historie školství",
         "buyer_ico": "00275905",
         "supplier_ico": null,
         "supplier_name": null,
-        "date": "2024-07-22",
+        "date": "2022-08-22",
         "price": null,
-        "expected_value": 1903000.0,
+        "expected_value": null,
         "price_vat_included": null,
-        "status": "plnění smlouvy",
-        "type": "tender",
+        "status": "ukončeno plnění smlouvy",
+        "type": "contract",
         "procurement_regime": null,
         "procurement_procedure": null,
         "procurement_type": null,
@@ -92,34 +88,34 @@
         "project_registry_id": null,
         "known_addenda_numbers": [],
         "document_count": null,
-        "verification_level": "profile_listing",
-        "verified_web": false,
-        "verified_at": null,
-        "verification_source": "https://www.vhodne-uverejneni.cz/profil/mesto-lomnice-nad-popelkou?page-finished=2",
+        "verification_level": null,
+        "verified_web": true,
+        "verified_at": "2026-09-21",
+        "verification_source": "Official PVU organization contract list",
         "raw": {
           "source": "vhodne-uverejneni",
           "source_id": null,
           "procurement_id": null,
-          "source_url": "https://www.vhodne-uverejneni.cz/zakazka/koupe-pozemku-p-p-c-453-v-k-u-lomnice-nad-popelkou",
-          "title": "Koupě pozemku p. p. č. 453 v k. ú. Lomnice nad Popelkou",
+          "source_url": "https://www.vhodne-uverejneni.cz/smlouvy-organizace/mesto-lomnice-nad-popelkou",
+          "title": "Vydání obrazové publikace Lomnice nad Popelkou - historie školství",
           "buyer_ico": "00275905",
           "supplier_ico": null,
           "supplier_name": null,
-          "date": "2024-07-22",
+          "date": "2022-08-22",
           "price": null,
-          "status": "plnění smlouvy",
-          "type": "tender",
-          "expected_value": 1903000,
-          "verification_level": "profile_listing",
-          "verification_source": "https://www.vhodne-uverejneni.cz/profil/mesto-lomnice-nad-popelkou?page-finished=2"
+          "status": "ukončeno plnění smlouvy",
+          "type": "contract",
+          "verified_web": true,
+          "verified_at": "2026-09-21",
+          "verification_source": "Official PVU organization contract list"
         },
-        "_source_file": "data/sources/vhodne-uverejneni/vu-000032.json"
+        "_source_file": "data/sources/vhodne-uverejneni/vu-000073.json"
       }
     }
   ],
   "analysis": {
     "schema_version": 4,
-    "project_id": "p-koupe-pozemku-p-p-c-453-v-k-u-lomnice-nad-popelkou-0147",
+    "project_id": "p-vydani-obrazove-publikace-lomnice-nad-popelkou-historie-skolstvi-0159",
     "signal_count": 1,
     "signals": [
       {
@@ -131,11 +127,11 @@
     ],
     "timeline": [
       {
-        "date": "2024-07-22",
-        "event": "tender",
+        "date": "2022-08-22",
+        "event": "contract",
         "source": "vhodne-uverejneni",
         "source_id": null,
-        "title": "Koupě pozemku p. p. č. 453 v k. ú. Lomnice nad Popelkou",
+        "title": "Vydání obrazové publikace Lomnice nad Popelkou - historie školství",
         "price": null,
         "deadline": null
       }
@@ -146,14 +142,15 @@
       "absolute_change": null,
       "percent_change": null,
       "observed_prices": [],
-      "addendum_count": 0
+      "addendum_count": 0,
+      "declared_addenda_count": 0
     },
     "metrics": {
       "source_count": 1,
       "supplier_count": 0,
       "price_values": [],
       "date_values": [
-        "2024-07-22"
+        "2022-08-22"
       ],
       "document_count": 0,
       "deadline_observations": 0

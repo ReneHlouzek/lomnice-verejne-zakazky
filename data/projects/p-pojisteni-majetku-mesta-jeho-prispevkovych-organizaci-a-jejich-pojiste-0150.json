@@ -1,5 +1,5 @@
 {
-  "id": "p-pojisteni-majetku-mesta-jeho-prispevkovych-organizaci-a-jejich-pojiste-0149",
+  "id": "p-pojisteni-majetku-mesta-jeho-prispevkovych-organizaci-a-jejich-pojiste-0150",
   "title": "Pojištění majetku města, jeho příspěvkových organizací a jejich pojištění odpovědnosti za újmu",
   "buyer_ico": "00275905",
   "status": "plneni-smlouvy",
@@ -114,7 +114,7 @@
   ],
   "analysis": {
     "schema_version": 4,
-    "project_id": "p-pojisteni-majetku-mesta-jeho-prispevkovych-organizaci-a-jejich-pojiste-0149",
+    "project_id": "p-pojisteni-majetku-mesta-jeho-prispevkovych-organizaci-a-jejich-pojiste-0150",
     "signal_count": 1,
     "signals": [
       {
@@ -141,7 +141,8 @@
       "absolute_change": null,
       "percent_change": null,
       "observed_prices": [],
-      "addendum_count": 0
+      "addendum_count": 0,
+      "declared_addenda_count": 0
     },
     "metrics": {
       "source_count": 1,

@@ -98,7 +98,7 @@
         "document_count": null,
         "verification_level": "detail",
         "verified_web": true,
-        "verified_at": "2026-09-21",
+        "verified_at": "2026-09-22",
         "verification_source": "https://www.vhodne-uverejneni.cz/zakazka/modernizace-uceben-zus-dodavky",
         "raw": {
           "source": "vhodne-uverejneni",
@@ -122,7 +122,7 @@
           "grant_id": "CZ.06.04.01/00/23_087/0004757",
           "verification_level": "detail",
           "verified_web": true,
-          "verified_at": "2026-09-21",
+          "verified_at": "2026-09-22",
           "verification_source": "https://www.vhodne-uverejneni.cz/zakazka/modernizace-uceben-zus-dodavky"
         },
         "_source_file": "data/sources/vhodne-uverejneni/vu-000019.json"
@@ -158,7 +158,8 @@
       "absolute_change": null,
       "percent_change": null,
       "observed_prices": [],
-      "addendum_count": 0
+      "addendum_count": 0,
+      "declared_addenda_count": 0
     },
     "metrics": {
       "source_count": 1,
