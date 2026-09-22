@@ -1,0 +1,242 @@
+{
+  "id": "p-rekonstrukce-technologie-kotelny-v-budove-radnice-c-p-6-husovo-namesti-0131",
+  "title": "Rekonstrukce technologie kotelny v budově radnice č.p. 6, Husovo náměstí v Lomnici nad Popelkou",
+  "buyer_ico": "00275905",
+  "status": "plneni-smlouvy",
+  "project_type": "contract",
+  "canonical": {
+    "title": "Rekonstrukce technologie kotelny v budově radnice č.p. 6, Husovo náměstí v Lomnici nad Popelkou",
+    "supplier_ico": "43224679",
+    "identifiers": [],
+    "lifecycle": {
+      "events": [
+        {
+          "date": "2025-08-27",
+          "type": "contract",
+          "source": "vhodne-uverejneni",
+          "source_id": "P25-REG-99697",
+          "title": "Rekonstrukce technologie kotelny v budově radnice č.p. 6, Husovo náměstí v Lomnici nad Popelkou",
+          "price": 1237000.0
+        },
+        {
+          "date": "2025-08-27",
+          "type": "contract",
+          "source": "vhodne-uverejneni",
+          "source_id": null,
+          "title": "Rekonstrukce technologie kotelny v budově radnice č.p. 6, Husovo náměstí v Lomnici nad Popelkou",
+          "price": 1237000.0
+        }
+      ],
+      "event_count": 2,
+      "type_counts": {
+        "contract": 2
+      },
+      "dominant_type": "contract"
+    },
+    "project_type": "contract",
+    "procurement_signal": {
+      "level": "likely",
+      "label": "Pravděpodobně souvisí se zakázkou",
+      "reason": "Název/předmět odpovídá investiční dodávce, stavebním pracím nebo jiné běžné zadavatelské dodávce; způsob výběru dodavatele z tohoto záznamu sám o sobě neplyne."
+    },
+    "dates": {
+      "first_observed": "2025-08-27",
+      "last_observed": "2025-08-27"
+    },
+    "financial": {
+      "observed_prices": [
+        1237000.0
+      ],
+      "observed_vat_included_prices": [
+        1496770.0
+      ],
+      "expected_values": [],
+      "initial_contract_price": 1237000.0,
+      "latest_observed_price": 1237000.0,
+      "expected_to_contract_ratio": null
+    },
+    "procurement": {
+      "procedures": [],
+      "regimes": [],
+      "funded": false,
+      "known_addenda_numbers": []
+    },
+    "verification": {
+      "levels": [
+        "contract_pdf"
+      ],
+      "project_registry_ids": [],
+      "detail_verified_sources": 0
+    },
+    "source_count": 2
+  },
+  "sources": [
+    {
+      "source_file": "data/sources/vhodne-uverejneni/vu-000034.json",
+      "source_id": "P25-REG-99697",
+      "record": {
+        "source": "vhodne-uverejneni",
+        "source_id": "P25-REG-99697",
+        "procurement_id": null,
+        "source_url": "https://www.vhodne-uverejneni.cz/index.php?a=detail&contract=99697&h=contractsregister&m=xenorders",
+        "title": "Rekonstrukce technologie kotelny v budově radnice č.p. 6, Husovo náměstí v Lomnici nad Popelkou",
+        "buyer_ico": "00275905",
+        "supplier_ico": "43224679",
+        "supplier_name": "WARMNIS spol. s r.o.",
+        "date": "2025-08-27",
+        "price": 1237000.0,
+        "expected_value": null,
+        "price_vat_included": null,
+        "status": "smlouva zveřejněna",
+        "type": "contract",
+        "procurement_regime": null,
+        "procurement_procedure": null,
+        "procurement_type": null,
+        "outcome": null,
+        "description": null,
+        "cpv": [],
+        "offer_deadline": null,
+        "contract_signed_date": null,
+        "award_date": null,
+        "participant_count": null,
+        "bid_count": null,
+        "funded": null,
+        "grant_id": null,
+        "project_registry_id": null,
+        "known_addenda_numbers": [],
+        "document_count": null,
+        "verification_level": null,
+        "verified_web": false,
+        "verified_at": null,
+        "verification_source": null,
+        "raw": {
+          "source": "vhodne-uverejneni",
+          "source_id": "P25-REG-99697",
+          "procurement_id": null,
+          "source_url": "https://www.vhodne-uverejneni.cz/index.php?a=detail&contract=99697&h=contractsregister&m=xenorders",
+          "title": "Rekonstrukce technologie kotelny v budově radnice č.p. 6, Husovo náměstí v Lomnici nad Popelkou",
+          "buyer_ico": "00275905",
+          "supplier_ico": "43224679",
+          "supplier_name": "WARMNIS spol. s r.o.",
+          "date": "2025-08-27",
+          "price": 1237000,
+          "status": "smlouva zveřejněna",
+          "type": "contract"
+        },
+        "_source_file": "data/sources/vhodne-uverejneni/vu-000034.json"
+      }
+    },
+    {
+      "source_file": "data/sources/vhodne-uverejneni/vu-000079.json",
+      "source_id": null,
+      "record": {
+        "source": "vhodne-uverejneni",
+        "source_id": null,
+        "procurement_id": null,
+        "source_url": "https://www.vhodne-uverejneni.cz/index.php?a=detail&contract=99697&h=contractsregister&m=xenorders",
+        "title": "Rekonstrukce technologie kotelny v budově radnice č.p. 6, Husovo náměstí v Lomnici nad Popelkou",
+        "buyer_ico": "00275905",
+        "supplier_ico": "43224679",
+        "supplier_name": "WARMNIS spol. s r.o.",
+        "date": "2025-08-27",
+        "price": 1237000.0,
+        "expected_value": null,
+        "price_vat_included": 1496770.0,
+        "status": "smlouva zveřejněna",
+        "type": "contract",
+        "procurement_regime": null,
+        "procurement_procedure": null,
+        "procurement_type": null,
+        "outcome": null,
+        "description": null,
+        "cpv": [],
+        "offer_deadline": null,
+        "contract_signed_date": null,
+        "award_date": null,
+        "participant_count": null,
+        "bid_count": null,
+        "funded": null,
+        "grant_id": null,
+        "project_registry_id": null,
+        "known_addenda_numbers": [],
+        "document_count": null,
+        "verification_level": "contract_pdf",
+        "verified_web": true,
+        "verified_at": "2026-09-22",
+        "verification_source": "https://www.vhodne-uverejneni.cz/index.php?a=detail&contract=99697&h=contractsregister&m=xenorders",
+        "raw": {
+          "source": "vhodne-uverejneni",
+          "source_id": null,
+          "source_url": "https://www.vhodne-uverejneni.cz/index.php?a=detail&contract=99697&h=contractsregister&m=xenorders",
+          "title": "Rekonstrukce technologie kotelny v budově radnice č.p. 6, Husovo náměstí v Lomnici nad Popelkou",
+          "buyer_ico": "00275905",
+          "supplier_ico": "43224679",
+          "supplier_name": "WARMNIS spol. s r.o.",
+          "date": "2025-08-27",
+          "price": 1237000,
+          "price_vat_included": 1496770,
+          "status": "smlouva zveřejněna",
+          "type": "contract",
+          "verification_level": "contract_pdf",
+          "verified_web": true,
+          "verified_at": "2026-09-22",
+          "verification_source": "https://www.vhodne-uverejneni.cz/index.php?a=detail&contract=99697&h=contractsregister&m=xenorders"
+        },
+        "_source_file": "data/sources/vhodne-uverejneni/vu-000079.json"
+      }
+    }
+  ],
+  "analysis": {
+    "schema_version": 4,
+    "project_id": "p-rekonstrukce-technologie-kotelny-v-budove-radnice-c-p-6-husovo-namesti-0131",
+    "signal_count": 0,
+    "signals": [],
+    "timeline": [
+      {
+        "date": "2025-08-27",
+        "event": "contract",
+        "source": "vhodne-uverejneni",
+        "source_id": "P25-REG-99697",
+        "title": "Rekonstrukce technologie kotelny v budově radnice č.p. 6, Husovo náměstí v Lomnici nad Popelkou",
+        "price": 1237000.0,
+        "deadline": null
+      },
+      {
+        "date": "2025-08-27",
+        "event": "contract",
+        "source": "vhodne-uverejneni",
+        "source_id": null,
+        "title": "Rekonstrukce technologie kotelny v budově radnice č.p. 6, Husovo náměstí v Lomnici nad Popelkou",
+        "price": 1237000.0,
+        "deadline": null
+      }
+    ],
+    "financial": {
+      "baseline_price": 1237000.0,
+      "current_observed_price": 1237000.0,
+      "absolute_change": 0.0,
+      "percent_change": null,
+      "observed_prices": [
+        1237000.0
+      ],
+      "addendum_count": 0,
+      "declared_addenda_count": 0
+    },
+    "metrics": {
+      "source_count": 2,
+      "supplier_count": 1,
+      "price_values": [
+        1237000.0
+      ],
+      "date_values": [
+        "2025-08-27"
+      ],
+      "document_count": 0,
+      "deadline_observations": 0,
+      "expected_value_observations": 0,
+      "participant_observations": 0,
+      "bid_observations": 0
+    },
+    "methodology": "Signals are descriptive checks only; they do not establish wrongdoing or causality. They identify differences worth checking and retain source provenance."
+  }
+}

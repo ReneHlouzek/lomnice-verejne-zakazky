@@ -1,0 +1,165 @@
+{
+  "id": "p-pojisteni-majetku-mesta-jeho-prispevkovych-organizaci-a-jejich-pojiste-0150",
+  "title": "Pojištění majetku města, jeho příspěvkových organizací a jejich pojištění odpovědnosti za újmu",
+  "buyer_ico": "00275905",
+  "status": "plneni-smlouvy",
+  "project_type": "procurement",
+  "canonical": {
+    "title": "Pojištění majetku města, jeho příspěvkových organizací a jejich pojištění odpovědnosti za újmu",
+    "supplier_ico": "45534306",
+    "identifiers": [
+      "P25V00005529"
+    ],
+    "lifecycle": {
+      "events": [
+        {
+          "date": "2025-06-11",
+          "type": "tender",
+          "source": "vhodne-uverejneni",
+          "source_id": "P25V00005529",
+          "title": "Pojištění majetku města, jeho příspěvkových organizací a jejich pojištění odpovědnosti za újmu",
+          "price": null
+        }
+      ],
+      "event_count": 1,
+      "type_counts": {
+        "tender": 1
+      },
+      "dominant_type": "tender"
+    },
+    "project_type": "procurement",
+    "procurement_signal": {
+      "level": "explicit",
+      "label": "Výslovná vazba na veřejnou zakázku",
+      "reason": "Zdrojový text obsahuje přímou zmínku o veřejné zakázce, výběru nebo zadávacím řízení."
+    },
+    "dates": {
+      "first_observed": "2025-06-11",
+      "last_observed": "2025-06-11"
+    },
+    "financial": {
+      "observed_prices": [],
+      "observed_vat_included_prices": [],
+      "expected_values": [],
+      "initial_contract_price": null,
+      "latest_observed_price": null,
+      "expected_to_contract_ratio": null
+    },
+    "procurement": {
+      "procedures": [],
+      "regimes": [],
+      "funded": false,
+      "known_addenda_numbers": []
+    },
+    "verification": {
+      "levels": [],
+      "project_registry_ids": [],
+      "detail_verified_sources": 0
+    },
+    "source_count": 1
+  },
+  "sources": [
+    {
+      "source_file": "data/sources/vhodne-uverejneni/vu-000004.json",
+      "source_id": "P25V00005529",
+      "record": {
+        "source": "vhodne-uverejneni",
+        "source_id": "P25V00005529",
+        "procurement_id": "P25V00005529",
+        "source_url": "https://www.vhodne-uverejneni.cz/zakazka/pojisteni-majetku-mesta-jeho-prispevkovych-organizaci-a-jejich-pojisteni-odpovednosti-za-ujmu",
+        "title": "Pojištění majetku města, jeho příspěvkových organizací a jejich pojištění odpovědnosti za újmu",
+        "buyer_ico": "00275905",
+        "supplier_ico": "45534306",
+        "supplier_name": "ČSOB Pojišťovna, a. s., člen holdingu ČSOB",
+        "date": "2025-06-11",
+        "price": null,
+        "expected_value": null,
+        "price_vat_included": null,
+        "status": "zakázka byla zadána (Plnění smlouvy)",
+        "type": "tender",
+        "procurement_regime": null,
+        "procurement_procedure": null,
+        "procurement_type": null,
+        "outcome": null,
+        "description": null,
+        "cpv": [],
+        "offer_deadline": null,
+        "contract_signed_date": null,
+        "award_date": null,
+        "participant_count": null,
+        "bid_count": null,
+        "funded": null,
+        "grant_id": null,
+        "project_registry_id": null,
+        "known_addenda_numbers": [],
+        "document_count": null,
+        "verification_level": null,
+        "verified_web": false,
+        "verified_at": null,
+        "verification_source": null,
+        "raw": {
+          "source": "vhodne-uverejneni",
+          "source_id": "P25V00005529",
+          "procurement_id": "P25V00005529",
+          "source_url": "https://www.vhodne-uverejneni.cz/zakazka/pojisteni-majetku-mesta-jeho-prispevkovych-organizaci-a-jejich-pojisteni-odpovednosti-za-ujmu",
+          "title": "Pojištění majetku města, jeho příspěvkových organizací a jejich pojištění odpovědnosti za újmu",
+          "buyer_ico": "00275905",
+          "supplier_ico": "45534306",
+          "supplier_name": "ČSOB Pojišťovna, a. s., člen holdingu ČSOB",
+          "date": "2025-06-11",
+          "price": null,
+          "status": "zakázka byla zadána (Plnění smlouvy)",
+          "type": "tender"
+        },
+        "_source_file": "data/sources/vhodne-uverejneni/vu-000004.json"
+      }
+    }
+  ],
+  "analysis": {
+    "schema_version": 4,
+    "project_id": "p-pojisteni-majetku-mesta-jeho-prispevkovych-organizaci-a-jejich-pojiste-0150",
+    "signal_count": 1,
+    "signals": [
+      {
+        "code": "single_source",
+        "level": "info",
+        "message": "Projekt je zatím doložen pouze jedním zdrojovým záznamem.",
+        "evidence": []
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2025-06-11",
+        "event": "tender",
+        "source": "vhodne-uverejneni",
+        "source_id": "P25V00005529",
+        "title": "Pojištění majetku města, jeho příspěvkových organizací a jejich pojištění odpovědnosti za újmu",
+        "price": null,
+        "deadline": null
+      }
+    ],
+    "financial": {
+      "baseline_price": null,
+      "current_observed_price": null,
+      "absolute_change": null,
+      "percent_change": null,
+      "observed_prices": [],
+      "addendum_count": 0,
+      "declared_addenda_count": 0
+    },
+    "metrics": {
+      "source_count": 1,
+      "supplier_count": 1,
+      "price_values": [],
+      "date_values": [
+        "2025-06-11"
+      ],
+      "document_count": 0,
+      "deadline_observations": 0,
+      "expected_value_observations": 0,
+      "participant_observations": 0,
+      "bid_observations": 0
+    },
+    "methodology": "Signals are descriptive checks only; they do not establish wrongdoing or causality. They identify differences worth checking and retain source provenance."
+  }
+}
