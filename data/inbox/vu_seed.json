@@ -26,12 +26,19 @@
     "supplier_ico": "25344447",
     "supplier_name": "AQUASYS spol. s r.o.",
     "date": "2025-02-04",
-    "price": null,
+    "price": 35816700,
     "status": "zakázka byla zadána (Plnění smlouvy)",
     "type": "tender",
     "contract_signed_date": "2025-03-24",
-    "verification_level": "organization_contract_index",
-    "verification_source": "https://www.vhodne-uverejneni.cz/smlouvy-organizace/mesto-lomnice-nad-popelkou"
+    "verification_level": "contract_pdf",
+    "verification_source": "https://lomnicenadpopelkou.cz/assets/File.ashx?id_dokumenty=23753&id_org=8675",
+    "price_vat_included": 43338207,
+    "procurement_regime": "Podlimitní",
+    "procurement_procedure": "Zjednodušené podlimitní řízení",
+    "procurement_type": "Stavební práce",
+    "outcome": "Uzavření jednorázové smlouvy",
+    "verified_web": true,
+    "description": "Obnova vodní nádrže včetně odbahnění, zpevnění hráze, nového sdruženého funkčního objektu a přívodu vody; součástí jsou terénní úpravy, mobiliář, opatření na podporu biodiverzity, cesta pro pěší, osvětlení, výsadba a rekreační prvky."
   },
   {
     "source": "vhodne-uverejneni",
@@ -124,7 +131,15 @@
     "date": "2026-05-04",
     "price": null,
     "status": "zakázka byla zadána (Plnění smlouvy)",
-    "type": "tender"
+    "type": "tender",
+    "procurement_regime": "Podlimitní",
+    "procurement_procedure": "Zjednodušené podlimitní řízení",
+    "procurement_type": "Stavební práce",
+    "outcome": "Uzavření jednorázové smlouvy",
+    "description": "Zakázka se skládá ze 3 částí: přístavba spojovací chodby, demoliční práce a související stavební úpravy; exteriér před spojovací chodbou; třetí část dle zadávací dokumentace.",
+    "verification_level": "detail",
+    "verified_web": true,
+    "verification_source": "https://www.vhodne-uverejneni.cz/zakazka/nemocnice-nasledne-pece-lomnice-nad-popelkou-investice-a-opravy-2"
   },
   {
     "source": "vhodne-uverejneni",
@@ -266,7 +281,7 @@
     "procurement_procedure": "Zjednodušené podlimitní řízení",
     "outcome": "Uzavření jednorázové smlouvy",
     "offer_deadline": "2026-05-20T09:00:00",
-    "description": "Zřízení nové osvětlovací soustavy v délce cca 2,0 km ve třech etapách v letech 2026–2028; 50 stožárů výšky 8,2 m, 4 stožáry výšky 6 m a celkem 54 LED svítidel.",
+    "description": "Zřízení nové osvětlovací soustavy v délce cca 2,0 km ve třech etapách v letech 2026–2028; 50 stožárů výšky 8,2 m, 4 stožáry výšky 6 m a 54 LED svítidel.",
     "cpv": [
       "Elektrické zdroje světla a svítidla",
       "Lampy a svítidla",
@@ -293,7 +308,15 @@
     "date": "2026-04-15",
     "price": null,
     "status": "plnění smlouvy",
-    "type": "tender"
+    "type": "tender",
+    "procurement_regime": "VZ malého rozsahu",
+    "procurement_procedure": "Přímé zadání - Zakázka malého rozsahu",
+    "procurement_type": "Služby",
+    "outcome": "Uzavření jednorázové smlouvy",
+    "description": "Vypracování dokumentace povolení záměru projektu k vydání správních rozhodnutí potřebných k realizaci projektu a získání potřebných správních rozhodnutí.",
+    "verification_level": "detail",
+    "verified_web": true,
+    "verification_source": "https://www.vhodne-uverejneni.cz/zakazka/rozsireni-polikliniky-lomnice-nad-popelkou-dokumentace-stavebniho-zameru"
   },
   {
     "source": "vhodne-uverejneni",
@@ -337,7 +360,7 @@
     "procurement_regime": "VZ malého rozsahu",
     "procurement_procedure": "Přímé zadání - Zakázka malého rozsahu",
     "outcome": "Uzavření jednorázové smlouvy",
-    "description": "Sanace vlhkého zdiva sklepních prostor čp. 886; izolace zdiva, injektáž, drenáž, kanalizace a dlažba.",
+    "description": "Sanace vlhkého zdiva sklepních prostor; izolace zdiva, injektáž, drenáž, kanalizace a dlažba.",
     "cpv": [
       "Drenážní systém",
       "Kanalizační potrubí",
@@ -416,10 +439,10 @@
     "cpv": [
       "Práce na opravě silnic"
     ],
-    "verification_level": "detail_plus_external_tender_index",
+    "verification_level": "detail",
     "verified_web": true,
     "verified_at": "2026-09-21",
-    "verification_source": "https://www.hlidacstatu.cz/VerejneZakazky/Hledat?Q=osobaid%3Ajaroslav-demcak&order=",
+    "verification_source": "https://www.vhodne-uverejneni.cz/zakazka/opravy-mistnich-komunikaci-ve-meste-lomnice-nad-popelkou",
     "contract_signed_date": "2025-05-28"
   },
   {
