@@ -46,15 +46,21 @@
       "expected_to_contract_ratio": null
     },
     "procurement": {
-      "procedures": [],
-      "regimes": [],
+      "procedures": [
+        "Přímé zadání - Zakázka malého rozsahu"
+      ],
+      "regimes": [
+        "VZ malého rozsahu"
+      ],
       "funded": false,
       "known_addenda_numbers": []
     },
     "verification": {
-      "levels": [],
+      "levels": [
+        "detail"
+      ],
       "project_registry_ids": [],
-      "detail_verified_sources": 0
+      "detail_verified_sources": 1
     },
     "source_count": 1
   },
@@ -77,11 +83,11 @@
         "price_vat_included": null,
         "status": "plnění smlouvy",
         "type": "tender",
-        "procurement_regime": null,
-        "procurement_procedure": null,
-        "procurement_type": null,
-        "outcome": null,
-        "description": null,
+        "procurement_regime": "VZ malého rozsahu",
+        "procurement_procedure": "Přímé zadání - Zakázka malého rozsahu",
+        "procurement_type": "Služby",
+        "outcome": "Uzavření jednorázové smlouvy",
+        "description": "Vypracování dokumentace povolení záměru projektu k vydání správních rozhodnutí potřebných k realizaci projektu a získání potřebných správních rozhodnutí.",
         "cpv": [],
         "offer_deadline": null,
         "contract_signed_date": null,
@@ -90,10 +96,10 @@
         "project_registry_id": null,
         "known_addenda_numbers": [],
         "document_count": null,
-        "verification_level": null,
-        "verified_web": false,
+        "verification_level": "detail",
+        "verified_web": true,
         "verified_at": null,
-        "verification_source": null,
+        "verification_source": "https://www.vhodne-uverejneni.cz/zakazka/rozsireni-polikliniky-lomnice-nad-popelkou-dokumentace-stavebniho-zameru",
         "raw": {
           "source": "vhodne-uverejneni",
           "source_id": "P26V00002405",
@@ -106,7 +112,15 @@
           "date": "2026-04-15",
           "price": null,
           "status": "plnění smlouvy",
-          "type": "tender"
+          "type": "tender",
+          "procurement_regime": "VZ malého rozsahu",
+          "procurement_procedure": "Přímé zadání - Zakázka malého rozsahu",
+          "procurement_type": "Služby",
+          "outcome": "Uzavření jednorázové smlouvy",
+          "description": "Vypracování dokumentace povolení záměru projektu k vydání správních rozhodnutí potřebných k realizaci projektu a získání potřebných správních rozhodnutí.",
+          "verification_level": "detail",
+          "verified_web": true,
+          "verification_source": "https://www.vhodne-uverejneni.cz/zakazka/rozsireni-polikliniky-lomnice-nad-popelkou-dokumentace-stavebniho-zameru"
         },
         "_source_file": "data/sources/vhodne-uverejneni/vu-000018.json"
       }

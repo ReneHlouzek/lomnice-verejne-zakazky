@@ -18,7 +18,7 @@
           "source": "vhodne-uverejneni",
           "source_id": "P25V00001095",
           "title": "Revitalizace rybníka Matouš a jeho okolí v Lomnici nad Popelkou",
-          "price": null
+          "price": 35816700.0
         }
       ],
       "event_count": 1,
@@ -39,21 +39,27 @@
     },
     "financial": {
       "observed_prices": [],
-      "observed_vat_included_prices": [],
+      "observed_vat_included_prices": [
+        43338207.0
+      ],
       "expected_values": [],
       "initial_contract_price": null,
       "latest_observed_price": null,
       "expected_to_contract_ratio": null
     },
     "procurement": {
-      "procedures": [],
-      "regimes": [],
+      "procedures": [
+        "Zjednodušené podlimitní řízení"
+      ],
+      "regimes": [
+        "Podlimitní"
+      ],
       "funded": false,
       "known_addenda_numbers": []
     },
     "verification": {
       "levels": [
-        "organization_contract_index"
+        "contract_pdf"
       ],
       "project_registry_ids": [],
       "detail_verified_sources": 0
@@ -74,16 +80,16 @@
         "supplier_ico": "25344447",
         "supplier_name": "AQUASYS spol. s r.o.",
         "date": "2025-02-04",
-        "price": null,
+        "price": 35816700.0,
         "expected_value": null,
-        "price_vat_included": null,
+        "price_vat_included": 43338207.0,
         "status": "zakázka byla zadána (Plnění smlouvy)",
         "type": "tender",
-        "procurement_regime": null,
-        "procurement_procedure": null,
-        "procurement_type": null,
-        "outcome": null,
-        "description": null,
+        "procurement_regime": "Podlimitní",
+        "procurement_procedure": "Zjednodušené podlimitní řízení",
+        "procurement_type": "Stavební práce",
+        "outcome": "Uzavření jednorázové smlouvy",
+        "description": "Obnova vodní nádrže včetně odbahnění, zpevnění hráze, nového sdruženého funkčního objektu a přívodu vody; součástí jsou terénní úpravy, mobiliář, opatření na podporu biodiverzity, cesta pro pěší, osvětlení, výsadba a rekreační prvky.",
         "cpv": [],
         "offer_deadline": null,
         "contract_signed_date": "2025-03-24",
@@ -92,10 +98,10 @@
         "project_registry_id": null,
         "known_addenda_numbers": [],
         "document_count": null,
-        "verification_level": "organization_contract_index",
-        "verified_web": false,
+        "verification_level": "contract_pdf",
+        "verified_web": true,
         "verified_at": null,
-        "verification_source": "https://www.vhodne-uverejneni.cz/smlouvy-organizace/mesto-lomnice-nad-popelkou",
+        "verification_source": "https://lomnicenadpopelkou.cz/assets/File.ashx?id_dokumenty=23753&id_org=8675",
         "raw": {
           "source": "vhodne-uverejneni",
           "source_id": "P25V00001095",
@@ -106,12 +112,19 @@
           "supplier_ico": "25344447",
           "supplier_name": "AQUASYS spol. s r.o.",
           "date": "2025-02-04",
-          "price": null,
+          "price": 35816700,
           "status": "zakázka byla zadána (Plnění smlouvy)",
           "type": "tender",
           "contract_signed_date": "2025-03-24",
-          "verification_level": "organization_contract_index",
-          "verification_source": "https://www.vhodne-uverejneni.cz/smlouvy-organizace/mesto-lomnice-nad-popelkou"
+          "verification_level": "contract_pdf",
+          "verification_source": "https://lomnicenadpopelkou.cz/assets/File.ashx?id_dokumenty=23753&id_org=8675",
+          "price_vat_included": 43338207,
+          "procurement_regime": "Podlimitní",
+          "procurement_procedure": "Zjednodušené podlimitní řízení",
+          "procurement_type": "Stavební práce",
+          "outcome": "Uzavření jednorázové smlouvy",
+          "verified_web": true,
+          "description": "Obnova vodní nádrže včetně odbahnění, zpevnění hráze, nového sdruženého funkčního objektu a přívodu vody; součástí jsou terénní úpravy, mobiliář, opatření na podporu biodiverzity, cesta pro pěší, osvětlení, výsadba a rekreační prvky."
         },
         "_source_file": "data/sources/vhodne-uverejneni/vu-000002.json"
       }
@@ -136,22 +149,26 @@
         "source": "vhodne-uverejneni",
         "source_id": "P25V00001095",
         "title": "Revitalizace rybníka Matouš a jeho okolí v Lomnici nad Popelkou",
-        "price": null,
+        "price": 35816700.0,
         "deadline": null
       }
     ],
     "financial": {
-      "baseline_price": null,
-      "current_observed_price": null,
-      "absolute_change": null,
+      "baseline_price": 35816700.0,
+      "current_observed_price": 35816700.0,
+      "absolute_change": 0.0,
       "percent_change": null,
-      "observed_prices": [],
+      "observed_prices": [
+        35816700.0
+      ],
       "addendum_count": 0
     },
     "metrics": {
       "source_count": 1,
       "supplier_count": 1,
-      "price_values": [],
+      "price_values": [
+        35816700.0
+      ],
       "date_values": [
         "2025-02-04"
       ],
