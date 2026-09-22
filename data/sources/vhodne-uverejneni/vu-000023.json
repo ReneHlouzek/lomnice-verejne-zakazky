@@ -21,15 +21,18 @@
   "cpv": [],
   "offer_deadline": null,
   "contract_signed_date": "2025-05-02",
-  "funded": null,
-  "grant_id": null,
+  "award_date": null,
+  "participant_count": null,
+  "bid_count": null,
+  "funded": true,
+  "grant_id": "Čj. MK 64613/2025 OPP",
   "project_registry_id": null,
   "known_addenda_numbers": [],
   "document_count": null,
-  "verification_level": "organization_contract_index",
-  "verified_web": false,
-  "verified_at": null,
-  "verification_source": "https://www.vhodne-uverejneni.cz/smlouvy-organizace/mesto-lomnice-nad-popelkou",
+  "verification_level": "detail",
+  "verified_web": true,
+  "verified_at": "2026-09-22",
+  "verification_source": "https://www.vhodne-uverejneni.cz/zakazka/restauratorske-prace-na-spodnich-castech-marianskeho-sloupu-v-lomnici-nad-popelkou",
   "raw": {
     "source": "vhodne-uverejneni",
     "source_id": null,
@@ -44,7 +47,11 @@
     "status": "plnění smlouvy",
     "type": "tender",
     "contract_signed_date": "2025-05-02",
-    "verification_level": "organization_contract_index",
-    "verification_source": "https://www.vhodne-uverejneni.cz/smlouvy-organizace/mesto-lomnice-nad-popelkou"
+    "verification_level": "detail",
+    "verification_source": "https://www.vhodne-uverejneni.cz/zakazka/restauratorske-prace-na-spodnich-castech-marianskeho-sloupu-v-lomnici-nad-popelkou",
+    "funded": true,
+    "grant_id": "Čj. MK 64613/2025 OPP",
+    "verified_web": true,
+    "verified_at": "2026-09-22"
   }
 }
