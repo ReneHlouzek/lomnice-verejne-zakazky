@@ -1,7 +1,7 @@
 {
   "schema_version": 3,
   "parser_state": "resolved",
-  "generated_at": "2026-09-22T09:10:11.031724+00:00",
+  "generated_at": "2026-09-22T09:24:49.685836+00:00",
   "source": {
     "profile_url": "https://www.vhodne-uverejneni.cz/profil/mesto-lomnice-nad-popelkou",
     "organization_name": "Město Lomnice nad Popelkou",
@@ -364,6 +364,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2022-06-20",
       "last_observed": "2022-06-20",
       "supplier_ico": "70891508",
@@ -382,6 +385,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2023-06-07",
       "last_observed": "2023-06-07",
       "supplier_ico": "70891508",
@@ -400,6 +406,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2025-06-30",
       "last_observed": "2025-06-30",
       "supplier_ico": "70891508",
@@ -418,6 +427,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2022-03-23",
       "last_observed": "2022-03-23",
       "supplier_ico": "70891508",
@@ -436,6 +448,9 @@
         "source_record": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2023-10-31",
       "last_observed": "2023-10-31",
       "supplier_ico": "70891508",
@@ -454,6 +469,9 @@
         "tender": 1
       },
       "source_count": 1,
+      "source_types": [
+        "vhodne-uverejneni"
+      ],
       "first_observed": "2020-12-21",
       "last_observed": "2020-12-21",
       "supplier_ico": null,
@@ -472,6 +490,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2021-07-14",
       "last_observed": "2021-07-14",
       "supplier_ico": "70891508",
@@ -490,6 +511,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2019-11-27",
       "last_observed": "2019-11-27",
       "supplier_ico": "70891508",
@@ -508,6 +532,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2021-01-19",
       "last_observed": "2021-01-19",
       "supplier_ico": "70891508",
@@ -526,6 +553,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2017-10-12",
       "last_observed": "2017-10-12",
       "supplier_ico": "70888744",
@@ -544,6 +574,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2016-11-22",
       "last_observed": "2016-11-22",
       "supplier_ico": "70801304",
@@ -562,6 +595,9 @@
         "addendum": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2017-06-29",
       "last_observed": "2017-06-29",
       "supplier_ico": "72050501",
@@ -580,6 +616,9 @@
         "addendum": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2022-05-24",
       "last_observed": "2022-05-24",
       "supplier_ico": "72050501",
@@ -598,6 +637,9 @@
         "addendum": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2017-12-12",
       "last_observed": "2017-12-12",
       "supplier_ico": "49295934",
@@ -616,6 +658,9 @@
         "addendum": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2025-12-15",
       "last_observed": "2025-12-15",
       "supplier_ico": "49295934",
@@ -634,6 +679,9 @@
         "addendum": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2024-10-14",
       "last_observed": "2024-10-14",
       "supplier_ico": "49295934",
@@ -652,6 +700,9 @@
         "addendum": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2016-10-21",
       "last_observed": "2016-10-21",
       "supplier_ico": "70891508",
@@ -670,6 +721,9 @@
         "addendum": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2016-12-22",
       "last_observed": "2016-12-22",
       "supplier_ico": "70891508",
@@ -688,6 +742,9 @@
         "addendum": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2022-09-14",
       "last_observed": "2022-09-14",
       "supplier_ico": "70891508",
@@ -706,6 +763,9 @@
         "addendum": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2026-02-09",
       "last_observed": "2026-02-09",
       "supplier_ico": "70891508",
@@ -724,6 +784,9 @@
         "addendum": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2023-12-12",
       "last_observed": "2023-12-12",
       "supplier_ico": "49295934",
@@ -742,6 +805,9 @@
         "addendum": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2025-09-22",
       "last_observed": "2025-09-22",
       "supplier_ico": "49295934",
@@ -760,6 +826,9 @@
         "addendum": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2017-06-29",
       "last_observed": "2017-06-29",
       "supplier_ico": "70891508",
@@ -778,6 +847,9 @@
         "addendum": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2024-09-09",
       "last_observed": "2024-09-09",
       "supplier_ico": "70891508",
@@ -796,6 +868,9 @@
         "tender": 1
       },
       "source_count": 1,
+      "source_types": [
+        "vhodne-uverejneni"
+      ],
       "first_observed": "2025-03-10",
       "last_observed": "2025-03-10",
       "supplier_ico": null,
@@ -814,6 +889,9 @@
         "tender": 1
       },
       "source_count": 1,
+      "source_types": [
+        "vhodne-uverejneni"
+      ],
       "first_observed": "2025-12-19",
       "last_observed": "2025-12-19",
       "supplier_ico": null,
@@ -832,6 +910,9 @@
         "source_record": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2025-04-01",
       "last_observed": "2025-04-01",
       "supplier_ico": "48133981",
@@ -850,6 +931,9 @@
         "source_record": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2025-08-14",
       "last_observed": "2025-08-14",
       "supplier_ico": "48133981",
@@ -868,6 +952,9 @@
         "source_record": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2026-02-03",
       "last_observed": "2026-02-03",
       "supplier_ico": "48133981",
@@ -886,6 +973,9 @@
         "source_record": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2019-02-20",
       "last_observed": "2019-02-20",
       "supplier_ico": "48133981",
@@ -904,6 +994,9 @@
         "source_record": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2021-02-16",
       "last_observed": "2021-02-16",
       "supplier_ico": "48133981",
@@ -922,6 +1015,9 @@
         "source_record": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2015-12-07",
       "last_observed": "2015-12-07",
       "supplier_ico": "47114983",
@@ -940,6 +1036,9 @@
         "source_record": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2018-10-08",
       "last_observed": "2018-10-08",
       "supplier_ico": "70856788",
@@ -958,6 +1057,9 @@
         "tender": 1
       },
       "source_count": 1,
+      "source_types": [
+        "vhodne-uverejneni"
+      ],
       "first_observed": "2020-11-03",
       "last_observed": "2020-11-03",
       "supplier_ico": null,
@@ -976,6 +1078,9 @@
         "tender": 1
       },
       "source_count": 1,
+      "source_types": [
+        "vhodne-uverejneni"
+      ],
       "first_observed": "2020-06-30",
       "last_observed": "2020-06-30",
       "supplier_ico": null,
@@ -994,6 +1099,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "vhodne-uverejneni"
+      ],
       "first_observed": "2021-01-06",
       "last_observed": "2021-01-06",
       "supplier_ico": null,
@@ -1012,6 +1120,9 @@
         "tender": 1
       },
       "source_count": 1,
+      "source_types": [
+        "vhodne-uverejneni"
+      ],
       "first_observed": "2020-09-08",
       "last_observed": "2020-09-08",
       "supplier_ico": null,
@@ -1030,6 +1141,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "vhodne-uverejneni"
+      ],
       "first_observed": "2021-06-24",
       "last_observed": "2021-06-24",
       "supplier_ico": null,
@@ -1048,6 +1162,9 @@
         "source_record": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2017-02-27",
       "last_observed": "2017-02-27",
       "supplier_ico": "70891508",
@@ -1066,6 +1183,9 @@
         "tender": 1
       },
       "source_count": 1,
+      "source_types": [
+        "vhodne-uverejneni"
+      ],
       "first_observed": "2022-12-02",
       "last_observed": "2022-12-02",
       "supplier_ico": null,
@@ -1084,6 +1204,9 @@
         "source_record": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2018-01-19",
       "last_observed": "2018-01-19",
       "supplier_ico": "72050501",
@@ -1102,6 +1225,9 @@
         "tender": 1
       },
       "source_count": 1,
+      "source_types": [
+        "vhodne-uverejneni"
+      ],
       "first_observed": "2024-10-23",
       "last_observed": "2024-10-23",
       "supplier_ico": null,
@@ -1120,6 +1246,9 @@
         "tender": 1
       },
       "source_count": 1,
+      "source_types": [
+        "vhodne-uverejneni"
+      ],
       "first_observed": "2025-02-14",
       "last_observed": "2025-02-14",
       "supplier_ico": null,
@@ -1138,6 +1267,9 @@
         "tender": 1
       },
       "source_count": 1,
+      "source_types": [
+        "vhodne-uverejneni"
+      ],
       "first_observed": "2024-07-22",
       "last_observed": "2024-07-22",
       "supplier_ico": null,
@@ -1156,6 +1288,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "vhodne-uverejneni"
+      ],
       "first_observed": "2020-10-21",
       "last_observed": "2020-10-21",
       "supplier_ico": null,
@@ -1174,6 +1309,9 @@
         "tender": 1
       },
       "source_count": 1,
+      "source_types": [
+        "vhodne-uverejneni"
+      ],
       "first_observed": "2024-01-25",
       "last_observed": "2024-01-25",
       "supplier_ico": null,
@@ -1192,6 +1330,9 @@
         "tender": 1
       },
       "source_count": 1,
+      "source_types": [
+        "vhodne-uverejneni"
+      ],
       "first_observed": "2025-12-11",
       "last_observed": "2025-12-11",
       "supplier_ico": null,
@@ -1210,6 +1351,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2024-05-15",
       "last_observed": "2024-05-15",
       "supplier_ico": "70891508",
@@ -1228,6 +1372,9 @@
         "tender": 1
       },
       "source_count": 1,
+      "source_types": [
+        "vhodne-uverejneni"
+      ],
       "first_observed": "2026-07-20",
       "last_observed": "2026-07-20",
       "supplier_ico": "28762070",
@@ -1246,6 +1393,9 @@
         "tender": 1
       },
       "source_count": 1,
+      "source_types": [
+        "vhodne-uverejneni"
+      ],
       "first_observed": "2025-01-16",
       "last_observed": "2025-01-16",
       "supplier_ico": null,
@@ -1264,6 +1414,9 @@
         "tender": 1
       },
       "source_count": 1,
+      "source_types": [
+        "vhodne-uverejneni"
+      ],
       "first_observed": "2023-12-22",
       "last_observed": "2023-12-22",
       "supplier_ico": "25298194",
@@ -1282,6 +1435,9 @@
         "source_record": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2016-11-29",
       "last_observed": "2016-11-29",
       "supplier_ico": "72050501",
@@ -1300,6 +1456,9 @@
         "source_record": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2026-02-06",
       "last_observed": "2026-02-06",
       "supplier_ico": "49295934",
@@ -1318,6 +1477,9 @@
         "tender": 1
       },
       "source_count": 1,
+      "source_types": [
+        "vhodne-uverejneni"
+      ],
       "first_observed": "2015-04-20",
       "last_observed": "2015-04-20",
       "supplier_ico": null,
@@ -1336,6 +1498,9 @@
         "tender": 1
       },
       "source_count": 1,
+      "source_types": [
+        "vhodne-uverejneni"
+      ],
       "first_observed": "2024-08-28",
       "last_observed": "2024-08-28",
       "supplier_ico": null,
@@ -1354,6 +1519,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "vhodne-uverejneni"
+      ],
       "first_observed": "2022-06-24",
       "last_observed": "2022-06-24",
       "supplier_ico": "25937499",
@@ -1372,6 +1540,9 @@
         "tender": 1
       },
       "source_count": 1,
+      "source_types": [
+        "vhodne-uverejneni"
+      ],
       "first_observed": "2020-02-28",
       "last_observed": "2020-02-28",
       "supplier_ico": null,
@@ -1390,6 +1561,9 @@
         "tender": 1
       },
       "source_count": 1,
+      "source_types": [
+        "vhodne-uverejneni"
+      ],
       "first_observed": "2022-01-10",
       "last_observed": "2022-01-10",
       "supplier_ico": "42408121",
@@ -1408,6 +1582,9 @@
         "tender": 1
       },
       "source_count": 1,
+      "source_types": [
+        "vhodne-uverejneni"
+      ],
       "first_observed": "2021-08-16",
       "last_observed": "2021-08-16",
       "supplier_ico": null,
@@ -1426,6 +1603,9 @@
         "tender": 1
       },
       "source_count": 1,
+      "source_types": [
+        "vhodne-uverejneni"
+      ],
       "first_observed": "2026-03-04",
       "last_observed": "2026-03-04",
       "supplier_ico": null,
@@ -1445,6 +1625,9 @@
         "contract": 1
       },
       "source_count": 2,
+      "source_types": [
+        "vhodne-uverejneni"
+      ],
       "first_observed": "2025-01-28",
       "last_observed": "2025-04-01",
       "supplier_ico": "25937499",
@@ -1463,6 +1646,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "vhodne-uverejneni"
+      ],
       "first_observed": "2019-12-12",
       "last_observed": "2019-12-12",
       "supplier_ico": null,
@@ -1481,6 +1667,9 @@
         "tender": 1
       },
       "source_count": 1,
+      "source_types": [
+        "vhodne-uverejneni"
+      ],
       "first_observed": "2025-10-20",
       "last_observed": "2025-10-20",
       "supplier_ico": "28762070",
@@ -1499,6 +1688,9 @@
         "tender": 1
       },
       "source_count": 1,
+      "source_types": [
+        "vhodne-uverejneni"
+      ],
       "first_observed": "2025-09-04",
       "last_observed": "2025-09-04",
       "supplier_ico": null,
@@ -1517,6 +1709,9 @@
         "tender": 1
       },
       "source_count": 1,
+      "source_types": [
+        "vhodne-uverejneni"
+      ],
       "first_observed": "2025-07-22",
       "last_observed": "2025-07-22",
       "supplier_ico": null,
@@ -1535,6 +1730,9 @@
         "tender": 1
       },
       "source_count": 1,
+      "source_types": [
+        "vhodne-uverejneni"
+      ],
       "first_observed": "2026-05-04",
       "last_observed": "2026-05-04",
       "supplier_ico": null,
@@ -1553,6 +1751,9 @@
         "source_record": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2017-12-18",
       "last_observed": "2017-12-18",
       "supplier_ico": "42196451",
@@ -1571,6 +1772,9 @@
         "tender": 1
       },
       "source_count": 1,
+      "source_types": [
+        "vhodne-uverejneni"
+      ],
       "first_observed": "2024-06-27",
       "last_observed": "2024-06-27",
       "supplier_ico": null,
@@ -1589,6 +1793,9 @@
         "source_record": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2019-09-11",
       "last_observed": "2019-09-11",
       "supplier_ico": "70891508",
@@ -1607,6 +1814,9 @@
         "tender": 1
       },
       "source_count": 1,
+      "source_types": [
+        "vhodne-uverejneni"
+      ],
       "first_observed": "2024-01-15",
       "last_observed": "2024-01-15",
       "supplier_ico": null,
@@ -1625,6 +1835,9 @@
         "tender": 1
       },
       "source_count": 1,
+      "source_types": [
+        "vhodne-uverejneni"
+      ],
       "first_observed": "2024-02-14",
       "last_observed": "2024-02-14",
       "supplier_ico": "28762070",
@@ -1643,6 +1856,9 @@
         "source_record": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2024-04-23",
       "last_observed": "2024-04-23",
       "supplier_ico": "70891508",
@@ -1661,6 +1877,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "vhodne-uverejneni"
+      ],
       "first_observed": "2021-09-17",
       "last_observed": "2021-09-17",
       "supplier_ico": null,
@@ -1679,6 +1898,9 @@
         "tender": 1
       },
       "source_count": 1,
+      "source_types": [
+        "vhodne-uverejneni"
+      ],
       "first_observed": "2021-07-22",
       "last_observed": "2021-07-22",
       "supplier_ico": null,
@@ -1697,6 +1919,9 @@
         "tender": 1
       },
       "source_count": 1,
+      "source_types": [
+        "vhodne-uverejneni"
+      ],
       "first_observed": "2024-06-27",
       "last_observed": "2024-06-27",
       "supplier_ico": null,
@@ -1715,6 +1940,9 @@
         "tender": 1
       },
       "source_count": 1,
+      "source_types": [
+        "vhodne-uverejneni"
+      ],
       "first_observed": "2025-09-23",
       "last_observed": "2025-09-23",
       "supplier_ico": "25990764",
@@ -1733,6 +1961,9 @@
         "tender": 1
       },
       "source_count": 1,
+      "source_types": [
+        "vhodne-uverejneni"
+      ],
       "first_observed": "2026-07-02",
       "last_observed": "2026-07-02",
       "supplier_ico": null,
@@ -1751,6 +1982,9 @@
         "tender": 1
       },
       "source_count": 1,
+      "source_types": [
+        "vhodne-uverejneni"
+      ],
       "first_observed": "2024-09-02",
       "last_observed": "2024-09-02",
       "supplier_ico": null,
@@ -1769,6 +2003,9 @@
         "tender": 1
       },
       "source_count": 1,
+      "source_types": [
+        "vhodne-uverejneni"
+      ],
       "first_observed": "2024-09-23",
       "last_observed": "2024-09-23",
       "supplier_ico": null,
@@ -1787,6 +2024,9 @@
         "tender": 1
       },
       "source_count": 1,
+      "source_types": [
+        "vhodne-uverejneni"
+      ],
       "first_observed": "2025-08-12",
       "last_observed": "2025-08-12",
       "supplier_ico": null,
@@ -1805,6 +2045,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "vhodne-uverejneni"
+      ],
       "first_observed": "2022-10-05",
       "last_observed": "2022-10-05",
       "supplier_ico": null,
@@ -1823,6 +2066,9 @@
         "source_record": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2019-04-04",
       "last_observed": "2019-04-04",
       "supplier_ico": "70891508",
@@ -1841,6 +2087,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "vhodne-uverejneni"
+      ],
       "first_observed": "2020-06-10",
       "last_observed": "2020-06-10",
       "supplier_ico": null,
@@ -1859,6 +2108,9 @@
         "tender": 1
       },
       "source_count": 1,
+      "source_types": [
+        "vhodne-uverejneni"
+      ],
       "first_observed": "2025-06-11",
       "last_observed": "2025-06-11",
       "supplier_ico": "45534306",
@@ -1877,6 +2129,9 @@
         "source_record": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2018-07-26",
       "last_observed": "2018-07-26",
       "supplier_ico": "70891508",
@@ -1895,6 +2150,9 @@
         "source_record": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2024-06-19",
       "last_observed": "2024-06-19",
       "supplier_ico": "70891508",
@@ -1914,6 +2172,9 @@
         "addendum": 1
       },
       "source_count": 2,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2021-07-14",
       "last_observed": "2023-11-13",
       "supplier_ico": "70891508",
@@ -1932,6 +2193,9 @@
         "source_record": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2016-09-21",
       "last_observed": "2016-09-21",
       "supplier_ico": "70891508",
@@ -1950,6 +2214,9 @@
         "source_record": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2018-03-30",
       "last_observed": "2018-03-30",
       "supplier_ico": "70891508",
@@ -1968,6 +2235,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "vhodne-uverejneni"
+      ],
       "first_observed": "2022-01-06",
       "last_observed": "2022-01-06",
       "supplier_ico": null,
@@ -1986,6 +2256,9 @@
         "tender": 1
       },
       "source_count": 1,
+      "source_types": [
+        "vhodne-uverejneni"
+      ],
       "first_observed": "2022-01-20",
       "last_observed": "2022-01-20",
       "supplier_ico": null,
@@ -2004,6 +2277,9 @@
         "tender": 1
       },
       "source_count": 1,
+      "source_types": [
+        "vhodne-uverejneni"
+      ],
       "first_observed": "2017-05-18",
       "last_observed": "2017-05-18",
       "supplier_ico": null,
@@ -2022,6 +2298,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "vhodne-uverejneni"
+      ],
       "first_observed": "2020-09-22",
       "last_observed": "2020-09-22",
       "supplier_ico": null,
@@ -2040,6 +2319,9 @@
         "tender": 1
       },
       "source_count": 1,
+      "source_types": [
+        "vhodne-uverejneni"
+      ],
       "first_observed": "2026-07-09",
       "last_observed": "2026-07-09",
       "supplier_ico": null,
@@ -2058,6 +2340,9 @@
         "contract": 2
       },
       "source_count": 2,
+      "source_types": [
+        "vhodne-uverejneni"
+      ],
       "first_observed": "2025-08-27",
       "last_observed": "2025-08-27",
       "supplier_ico": "43224679",
@@ -2076,6 +2361,9 @@
         "tender": 1
       },
       "source_count": 1,
+      "source_types": [
+        "vhodne-uverejneni"
+      ],
       "first_observed": "2026-07-02",
       "last_observed": "2026-07-02",
       "supplier_ico": null,
@@ -2094,6 +2382,9 @@
         "tender": 1
       },
       "source_count": 1,
+      "source_types": [
+        "vhodne-uverejneni"
+      ],
       "first_observed": "2024-05-13",
       "last_observed": "2024-05-13",
       "supplier_ico": null,
@@ -2112,6 +2403,9 @@
         "tender": 1
       },
       "source_count": 1,
+      "source_types": [
+        "vhodne-uverejneni"
+      ],
       "first_observed": "2025-10-20",
       "last_observed": "2025-10-20",
       "supplier_ico": null,
@@ -2130,6 +2424,9 @@
         "tender": 1
       },
       "source_count": 1,
+      "source_types": [
+        "vhodne-uverejneni"
+      ],
       "first_observed": "2025-02-04",
       "last_observed": "2025-02-04",
       "supplier_ico": "25344447",
@@ -2148,6 +2445,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "vhodne-uverejneni"
+      ],
       "first_observed": "2020-10-13",
       "last_observed": "2020-10-13",
       "supplier_ico": null,
@@ -2166,6 +2466,9 @@
         "tender": 1
       },
       "source_count": 1,
+      "source_types": [
+        "vhodne-uverejneni"
+      ],
       "first_observed": "2025-02-26",
       "last_observed": "2025-02-26",
       "supplier_ico": null,
@@ -2184,6 +2487,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "vhodne-uverejneni"
+      ],
       "first_observed": "2020-09-14",
       "last_observed": "2020-09-14",
       "supplier_ico": null,
@@ -2202,6 +2508,9 @@
         "tender": 1
       },
       "source_count": 1,
+      "source_types": [
+        "vhodne-uverejneni"
+      ],
       "first_observed": "2026-04-15",
       "last_observed": "2026-04-15",
       "supplier_ico": null,
@@ -2220,6 +2529,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "vhodne-uverejneni"
+      ],
       "first_observed": "2025-12-19",
       "last_observed": "2025-12-19",
       "supplier_ico": "25937499",
@@ -2238,6 +2550,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "vhodne-uverejneni"
+      ],
       "first_observed": "2022-03-23",
       "last_observed": "2022-03-23",
       "supplier_ico": null,
@@ -2256,6 +2571,9 @@
         "tender": 1
       },
       "source_count": 1,
+      "source_types": [
+        "vhodne-uverejneni"
+      ],
       "first_observed": "2026-02-25",
       "last_observed": "2026-02-25",
       "supplier_ico": null,
@@ -2274,6 +2592,9 @@
         "tender": 1
       },
       "source_count": 1,
+      "source_types": [
+        "vhodne-uverejneni"
+      ],
       "first_observed": "2023-11-09",
       "last_observed": "2023-11-09",
       "supplier_ico": null,
@@ -2292,6 +2613,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2017-08-16",
       "last_observed": "2017-08-16",
       "supplier_ico": "00832227",
@@ -2310,6 +2634,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2023-09-26",
       "last_observed": "2023-09-26",
       "supplier_ico": "70994234",
@@ -2328,6 +2655,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2017-10-06",
       "last_observed": "2017-10-06",
       "supplier_ico": "00006947",
@@ -2346,6 +2676,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2026-02-10",
       "last_observed": "2026-02-10",
       "supplier_ico": "70994234",
@@ -2364,6 +2697,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2026-04-10",
       "last_observed": "2026-04-10",
       "supplier_ico": "28746503",
@@ -2382,6 +2718,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2017-08-10",
       "last_observed": "2017-08-10",
       "supplier_ico": "72496991",
@@ -2400,6 +2739,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2023-12-12",
       "last_observed": "2023-12-12",
       "supplier_ico": "70856788",
@@ -2418,6 +2760,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2016-09-23",
       "last_observed": "2016-09-23",
       "supplier_ico": "70891508",
@@ -2436,6 +2781,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2017-06-27",
       "last_observed": "2017-06-27",
       "supplier_ico": "70891508",
@@ -2454,6 +2802,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2024-07-29",
       "last_observed": "2024-07-29",
       "supplier_ico": "70891508",
@@ -2472,6 +2823,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2026-06-26",
       "last_observed": "2026-06-26",
       "supplier_ico": "70891508",
@@ -2490,6 +2844,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2026-06-26",
       "last_observed": "2026-06-26",
       "supplier_ico": "70891508",
@@ -2508,6 +2865,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2026-06-26",
       "last_observed": "2026-06-26",
       "supplier_ico": "70891508",
@@ -2526,6 +2886,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2025-10-17",
       "last_observed": "2025-10-17",
       "supplier_ico": "70891508",
@@ -2544,6 +2907,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2025-10-17",
       "last_observed": "2025-10-17",
       "supplier_ico": "70891508",
@@ -2562,6 +2928,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2023-08-30",
       "last_observed": "2023-08-30",
       "supplier_ico": "70891508",
@@ -2580,6 +2949,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2023-08-30",
       "last_observed": "2023-08-30",
       "supplier_ico": "70891508",
@@ -2598,6 +2970,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2022-08-12",
       "last_observed": "2022-08-12",
       "supplier_ico": "70891508",
@@ -2616,6 +2991,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2022-08-12",
       "last_observed": "2022-08-12",
       "supplier_ico": "70891508",
@@ -2634,6 +3012,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2016-07-13",
       "last_observed": "2016-07-13",
       "supplier_ico": "70891508",
@@ -2652,6 +3033,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2016-07-13",
       "last_observed": "2016-07-13",
       "supplier_ico": "70891508",
@@ -2670,6 +3054,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2017-06-20",
       "last_observed": "2017-06-20",
       "supplier_ico": "70891508",
@@ -2688,6 +3075,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2026-08-31",
       "last_observed": "2026-08-31",
       "supplier_ico": "70891508",
@@ -2706,6 +3096,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2026-07-27",
       "last_observed": "2026-07-27",
       "supplier_ico": "00023221",
@@ -2724,6 +3117,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2016-07-07",
       "last_observed": "2016-07-07",
       "supplier_ico": "70891508",
@@ -2742,6 +3138,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2018-05-17",
       "last_observed": "2018-05-17",
       "supplier_ico": "70891508",
@@ -2760,6 +3159,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2018-07-26",
       "last_observed": "2018-07-26",
       "supplier_ico": "70891508",
@@ -2778,6 +3180,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2018-10-03",
       "last_observed": "2018-10-03",
       "supplier_ico": "70891508",
@@ -2796,6 +3201,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2021-07-19",
       "last_observed": "2021-07-19",
       "supplier_ico": "70891508",
@@ -2814,6 +3222,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2016-07-27",
       "last_observed": "2016-07-27",
       "supplier_ico": "70891508",
@@ -2832,6 +3243,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2024-07-02",
       "last_observed": "2024-07-02",
       "supplier_ico": "70891508",
@@ -2850,6 +3264,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2021-07-19",
       "last_observed": "2021-07-19",
       "supplier_ico": "70891508",
@@ -2868,6 +3285,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2019-06-25",
       "last_observed": "2019-06-25",
       "supplier_ico": "70891508",
@@ -2886,6 +3306,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2020-07-31",
       "last_observed": "2020-07-31",
       "supplier_ico": "70891508",
@@ -2904,6 +3327,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2026-07-07",
       "last_observed": "2026-07-07",
       "supplier_ico": "70891508",
@@ -2922,6 +3348,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2025-06-18",
       "last_observed": "2025-06-18",
       "supplier_ico": "70891508",
@@ -2940,6 +3369,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2020-08-05",
       "last_observed": "2020-08-05",
       "supplier_ico": "70891508",
@@ -2958,6 +3390,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2022-06-21",
       "last_observed": "2022-06-21",
       "supplier_ico": "70891508",
@@ -2976,6 +3411,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2023-11-10",
       "last_observed": "2023-11-10",
       "supplier_ico": "70891508",
@@ -2994,6 +3432,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2020-08-05",
       "last_observed": "2020-08-05",
       "supplier_ico": "70891508",
@@ -3012,6 +3453,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2023-11-27",
       "last_observed": "2023-11-27",
       "supplier_ico": "70891508",
@@ -3030,6 +3474,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2016-11-28",
       "last_observed": "2016-11-28",
       "supplier_ico": "70891508",
@@ -3048,6 +3495,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2020-01-02",
       "last_observed": "2020-01-02",
       "supplier_ico": "70891508",
@@ -3066,6 +3516,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2024-01-22",
       "last_observed": "2024-01-22",
       "supplier_ico": "00854875",
@@ -3084,6 +3537,9 @@
         "tender": 1
       },
       "source_count": 1,
+      "source_types": [
+        "vhodne-uverejneni"
+      ],
       "first_observed": "2025-11-05",
       "last_observed": "2025-11-05",
       "supplier_ico": "25937499",
@@ -3102,6 +3558,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2020-10-29",
       "last_observed": "2020-10-29",
       "supplier_ico": "70856788",
@@ -3120,6 +3579,9 @@
         "tender": 1
       },
       "source_count": 1,
+      "source_types": [
+        "vhodne-uverejneni"
+      ],
       "first_observed": "2024-06-27",
       "last_observed": "2024-06-27",
       "supplier_ico": null,
@@ -3138,6 +3600,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "vhodne-uverejneni"
+      ],
       "first_observed": "2026-05-27",
       "last_observed": "2026-05-27",
       "supplier_ico": "25937499",
@@ -3156,6 +3621,9 @@
         "tender": 1
       },
       "source_count": 1,
+      "source_types": [
+        "vhodne-uverejneni"
+      ],
       "first_observed": "2024-11-15",
       "last_observed": "2024-11-15",
       "supplier_ico": "15057542",
@@ -3174,6 +3642,9 @@
         "tender": 1
       },
       "source_count": 1,
+      "source_types": [
+        "vhodne-uverejneni"
+      ],
       "first_observed": "2024-09-02",
       "last_observed": "2024-09-02",
       "supplier_ico": null,
@@ -3192,6 +3663,9 @@
         "source_record": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2024-08-27",
       "last_observed": "2024-08-27",
       "supplier_ico": "70891508",
@@ -3210,6 +3684,9 @@
         "source_record": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2023-11-28",
       "last_observed": "2023-11-28",
       "supplier_ico": "70891508",
@@ -3228,6 +3705,9 @@
         "source_record": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2020-01-14",
       "last_observed": "2020-01-14",
       "supplier_ico": "70891508",
@@ -3246,6 +3726,9 @@
         "tender": 1
       },
       "source_count": 1,
+      "source_types": [
+        "vhodne-uverejneni"
+      ],
       "first_observed": "2026-04-17",
       "last_observed": "2026-04-17",
       "supplier_ico": null,
@@ -3264,6 +3747,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "vhodne-uverejneni"
+      ],
       "first_observed": "2021-12-03",
       "last_observed": "2021-12-03",
       "supplier_ico": null,
@@ -3282,6 +3768,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "vhodne-uverejneni"
+      ],
       "first_observed": "2021-04-26",
       "last_observed": "2021-04-26",
       "supplier_ico": null,
@@ -3300,6 +3789,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "vhodne-uverejneni"
+      ],
       "first_observed": "2021-07-22",
       "last_observed": "2021-07-22",
       "supplier_ico": null,
@@ -3318,6 +3810,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2016-10-19",
       "last_observed": "2016-10-19",
       "supplier_ico": "49295934",
@@ -3336,6 +3831,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2022-09-22",
       "last_observed": "2022-09-22",
       "supplier_ico": "49295934",
@@ -3354,6 +3852,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2026-06-25",
       "last_observed": "2026-06-25",
       "supplier_ico": "49295934",
@@ -3372,6 +3873,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2025-12-15",
       "last_observed": "2025-12-15",
       "supplier_ico": "49295934",
@@ -3390,6 +3894,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2020-05-21",
       "last_observed": "2020-05-21",
       "supplier_ico": "49295934",
@@ -3408,6 +3915,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2020-11-30",
       "last_observed": "2020-11-30",
       "supplier_ico": "49295934",
@@ -3426,6 +3936,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2016-12-05",
       "last_observed": "2016-12-05",
       "supplier_ico": "49295934",
@@ -3444,6 +3957,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2023-11-06",
       "last_observed": "2023-11-06",
       "supplier_ico": "49295934",
@@ -3462,6 +3978,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2026-06-25",
       "last_observed": "2026-06-25",
       "supplier_ico": "49295934",
@@ -3480,6 +3999,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2024-12-11",
       "last_observed": "2024-12-11",
       "supplier_ico": "49295934",
@@ -3498,6 +4020,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2020-05-21",
       "last_observed": "2020-05-21",
       "supplier_ico": "49295934",
@@ -3516,6 +4041,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2017-03-23",
       "last_observed": "2017-03-23",
       "supplier_ico": "49295934",
@@ -3534,6 +4062,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2018-05-14",
       "last_observed": "2018-05-14",
       "supplier_ico": "49295934",
@@ -3552,6 +4083,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2025-05-05",
       "last_observed": "2025-05-05",
       "supplier_ico": "49295934",
@@ -3570,6 +4104,9 @@
         "tender": 1
       },
       "source_count": 1,
+      "source_types": [
+        "vhodne-uverejneni"
+      ],
       "first_observed": "2025-05-28",
       "last_observed": "2025-05-28",
       "supplier_ico": "25298194",
@@ -3588,6 +4125,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "vhodne-uverejneni"
+      ],
       "first_observed": "2022-08-22",
       "last_observed": "2022-08-22",
       "supplier_ico": null,
@@ -3606,6 +4146,9 @@
         "tender": 1
       },
       "source_count": 1,
+      "source_types": [
+        "vhodne-uverejneni"
+      ],
       "first_observed": "2023-01-04",
       "last_observed": "2023-01-04",
       "supplier_ico": null,
@@ -3624,6 +4167,9 @@
         "tender": 1
       },
       "source_count": 1,
+      "source_types": [
+        "vhodne-uverejneni"
+      ],
       "first_observed": "2026-06-05",
       "last_observed": "2026-06-05",
       "supplier_ico": null,
@@ -3642,6 +4188,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "vhodne-uverejneni"
+      ],
       "first_observed": "2024-04-16",
       "last_observed": "2024-04-16",
       "supplier_ico": "09610138",
@@ -3660,6 +4209,9 @@
         "source_record": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2018-10-05",
       "last_observed": "2018-10-05",
       "supplier_ico": "70891508",
@@ -3678,6 +4230,9 @@
         "source_record": 1
       },
       "source_count": 1,
+      "source_types": [
+        "registr-smluv"
+      ],
       "first_observed": "2017-09-26",
       "last_observed": "2017-09-26",
       "supplier_ico": "70891508",
@@ -3696,6 +4251,9 @@
         "contract": 1
       },
       "source_count": 1,
+      "source_types": [
+        "vhodne-uverejneni"
+      ],
       "first_observed": "2022-04-29",
       "last_observed": "2022-04-29",
       "supplier_ico": null,
