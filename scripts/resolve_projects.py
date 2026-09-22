@@ -122,6 +122,14 @@ def core_title(r):
     return re.sub(r"\s+", " ", t).strip()
 
 
+def token_overlap(a, b):
+    aa = set(norm(a).split())
+    bb = set(norm(b).split())
+    if not aa or not bb:
+        return 0.0
+    return len(aa & bb) / max(len(aa), len(bb))
+
+
 def date_gap_days(a, b):
     da = date_value(a.get("date") or a.get("published") or a.get("signed_date") or a.get("award_date"))
     db = date_value(b.get("date") or b.get("published") or b.get("signed_date") or b.get("award_date"))
@@ -150,6 +158,7 @@ def score(a, b):
     act = core_title(a)
     bct = core_title(b)
     sim = SequenceMatcher(None, at, bt).ratio() if at and bt else 0
+    token_sim = token_overlap(at, bt)
     core_sim = SequenceMatcher(None, act, bct).ratio() if act and bct else 0
     ap = price(a.get("price") or a.get("contract_price") or a.get("value"))
     bp = price(b.get("price") or b.get("contract_price") or b.get("value"))
@@ -175,10 +184,10 @@ def score(a, b):
         return .84, "supplier_title_price_date", [ai, "price", f"date_gap_days={gap}"]
     if addendum_pair and same_supplier and core_sim >= .68:
         return .74, "candidate_addendum_core_title", [ai]
-    if same_supplier and sim >= .55:
-        return .64, "candidate_supplier_title", [ai, f"title_similarity={sim:.2f}", f"date_gap_days={gap}" if gap is not None else "no_date_match"]
-    if sim >= .88 and (near_price or near_date):
-        return .68, "candidate_title_price_or_date", ["title_similarity={:.2f}".format(sim), "price" if near_price else f"date_gap_days={gap}"]
+    if same_supplier and (sim >= .40 or token_sim >= .45):
+        return .64, "candidate_supplier_title", [ai, f"title_similarity={sim:.2f}", f"token_overlap={token_sim:.2f}", f"date_gap_days={gap}" if gap is not None else "no_date_match"]
+    if (sim >= .72 or token_sim >= .55) and (near_price or near_date):
+        return .68, "candidate_title_price_or_date", ["title_similarity={:.2f}".format(sim), f"token_overlap={token_sim:.2f}", "price" if near_price else f"date_gap_days={gap}"]
     if same_supplier and sim >= .60 and (near_price or near_date):
         return .72, "candidate_supplier_title_date_or_price", [ai, f"date_gap_days={gap}" if gap is not None else "no_date_match"]
     if sim >= .75 and near_price:
@@ -376,7 +385,9 @@ def main():
                     "b": b,
                 })
     candidates.sort(key=lambda x: (-x["score"], str(x["a"].get("source_id")), str(x["b"].get("source_id"))))
+    candidates = candidates[:100]
     audit["candidate_count"] = len(candidates)
+    audit["candidate_limit"] = 100
     audit["cross_source_pairs"] = [list(x) for x in sorted(source_pairs)]
     audit["auto_link_threshold"] = .82
     (ROOT / "data" / "link_candidates.json").write_text(json.dumps(candidates, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
