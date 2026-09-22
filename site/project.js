@@ -192,11 +192,11 @@ function coverage(c,p,ss,events,f){
   if(!records.some(r=>r.bid_count!=null))gaps.push('Počet nabídek není ve zdrojových datech doložen.');
   if(!records.some(r=>r.award_date))gaps.push('Datum výběru dodavatele není ve zdrojových datech doloženo.');
   const consistency=[];
-  consistency.push({label:'Název',value:titles.length<=1?'shoda':\`${titles.length} variant\`});
-  consistency.push({label:'Dodavatel',value:suppliers.length<=1?'shoda':\`${suppliers.length} IČO\`});
-  consistency.push({label:'Cena bez DPH',value:prices.length<=1?'shoda':\`${prices.length} hodnot\`});
-  consistency.push({label:'Datum',value:dates.length<=1?'shoda':\`${dates.length} hodnot\`});
-  return \`
+  consistency.push({label:'Název',value:titles.length<=1?'shoda':`${titles.length} variant`});
+  consistency.push({label:'Dodavatel',value:suppliers.length<=1?'shoda':`${suppliers.length} IČO`});
+  consistency.push({label:'Cena bez DPH',value:prices.length<=1?'shoda':`${prices.length} hodnot`});
+  consistency.push({label:'Datum',value:dates.length<=1?'shoda':`${dates.length} hodnot`});
+  return `
     <div class="fact-grid">
       ${fact('Zdrojové záznamy',ss.length)}
       ${fact('Události v časové ose',events.length)}
@@ -207,17 +207,17 @@ function coverage(c,p,ss,events,f){
     </div>
     <div class="evidence-note">
       <strong>Shoda mezi zdroji</strong>
-      <span>${consistency.map(x=>\`${esc(x.label)}: <b>${esc(x.value)}</b>\`).join(' · ')}</span>
+      <span>${consistency.map(x=>`${esc(x.label)}: <b>${esc(x.value)}</b>`).join(' · ')}</span>
     </div>
-    ${gaps.length?\`<div class="evidence-note warning"><strong>Co v dostupných datech chybí</strong><span>${gaps.map(g=>\`• ${esc(g)}\`).join('<br>')}</span></div>\`:'<div class="evidence-note"><strong>Základní pole jsou pokryta.</strong><span>V dostupných zdrojích nebyla nalezena žádná z uvedených mezer.</span></div>'}
-  \`;
+    ${gaps.length?`<div class="evidence-note warning"><strong>Co v dostupných datech chybí</strong><span>${gaps.map(g=>`• ${esc(g)}`).join('<br>')}</span></div>`:'<div class="evidence-note"><strong>Základní pole jsou pokryta.</strong><span>V dostupných zdrojích nebyla nalezena žádná z uvedených mezer.</span></div>'}
+  `;
 }
 function finance(f,es,change,changePct){
   const prices=es.filter(e=>e.price!=null);
   if(!prices.length){
     const vat=f.observed_vat_included_prices||[];
     if(vat.length){
-      return \`<div class="finance-head"><div><small>Poslední pozorovaná cena vč. DPH</small><strong>\${money(vat[vat.length-1])}</strong><span>Cena bez DPH nebyla ve zdrojovém záznamu dostupná.</span></div><div><small>Cena bez DPH</small><strong>—</strong><span>údaj není doložen</span></div></div><p class="meta">Finanční mapa je omezená na hodnotu skutečně uvedenou ve zdroji.</p>\`;
+      return `<div class="finance-head"><div><small>Poslední pozorovaná cena vč. DPH</small><strong>${money(vat[vat.length-1])}</strong><span>Cena bez DPH nebyla ve zdrojovém záznamu dostupná.</span></div><div><small>Cena bez DPH</small><strong>—</strong><span>údaj není doložen</span></div></div><p class="meta">Finanční mapa je omezená na hodnotu skutečně uvedenou ve zdroji.</p>`;
     }
     return'<p class="meta">Pro finanční mapu zatím není k dispozici žádná pozorovaná cena.</p>';
   }
