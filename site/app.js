@@ -13,10 +13,7 @@ function populate(){
 }
 function hasSource(p,source){
   if(!source)return true;
-  return (p.sources||[]).some(s=>{
-    const r=s.record||s;
-    return String(r.source||s.source||"").toLowerCase()===source.toLowerCase();
-  });
+  return (p.source_types||[]).some(s=>String(s).toLowerCase()===source.toLowerCase());
 }
 function setStatState(){
   document.querySelectorAll(".stat-button").forEach(b=>{
