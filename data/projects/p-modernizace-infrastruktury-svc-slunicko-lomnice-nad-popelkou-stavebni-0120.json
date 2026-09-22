@@ -3,7 +3,7 @@
   "title": "Modernizace infrastruktury SVČ Sluníčko Lomnice nad Popelkou , stavební práce",
   "buyer_ico": "00275905",
   "status": "ukonceno-plneni",
-  "project_type": "contract",
+  "project_type": "contract_with_changes",
   "canonical": {
     "title": "Modernizace infrastruktury SVČ Sluníčko Lomnice nad Popelkou , stavební práce",
     "supplier_ico": "25937499",
@@ -25,7 +25,7 @@
       },
       "dominant_type": "contract"
     },
-    "project_type": "contract",
+    "project_type": "contract_with_changes",
     "procurement_signal": {
       "level": "likely",
       "label": "Pravděpodobně souvisí se zakázkou",
@@ -52,10 +52,10 @@
       "regimes": [],
       "funded": true,
       "known_addenda_numbers": [
-        1,
-        5,
-        6,
-        7
+        "1",
+        "5",
+        "6",
+        "7"
       ]
     },
     "verification": {

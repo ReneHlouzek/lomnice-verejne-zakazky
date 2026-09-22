@@ -3,7 +3,7 @@
   "title": "SOH a zázemí PS Lomnice nad Popelkou",
   "buyer_ico": "00275905",
   "status": "ukonceno-plneni",
-  "project_type": "procurement",
+  "project_type": "procurement_with_changes",
   "canonical": {
     "title": "SOH a zázemí PS Lomnice nad Popelkou",
     "supplier_ico": "25937499",
@@ -27,7 +27,7 @@
       },
       "dominant_type": "tender"
     },
-    "project_type": "procurement",
+    "project_type": "procurement_with_changes",
     "procurement_signal": {
       "level": "none",
       "label": "Bez rozpoznané vazby na zakázku",
@@ -55,7 +55,10 @@
         "VZ malého rozsahu"
       ],
       "funded": true,
-      "known_addenda_numbers": []
+      "known_addenda_numbers": [
+        "1",
+        "2"
+      ]
     },
     "verification": {
       "levels": [

@@ -3,7 +3,7 @@
   "title": "Modernizace UČEBEN ZUŠ - stavební práce",
   "buyer_ico": "00275905",
   "status": "plneni-smlouvy",
-  "project_type": "procurement",
+  "project_type": "procurement_with_changes",
   "canonical": {
     "title": "Modernizace UČEBEN ZUŠ - stavební práce",
     "supplier_ico": "25937499",
@@ -36,7 +36,7 @@
       },
       "dominant_type": "tender"
     },
-    "project_type": "procurement",
+    "project_type": "procurement_with_changes",
     "procurement_signal": {
       "level": "explicit",
       "label": "Výslovná vazba na veřejnou zakázku",
@@ -62,7 +62,12 @@
       "procedures": [],
       "regimes": [],
       "funded": false,
-      "known_addenda_numbers": []
+      "known_addenda_numbers": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
     },
     "verification": {
       "levels": [

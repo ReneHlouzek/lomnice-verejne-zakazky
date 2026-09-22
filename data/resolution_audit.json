@@ -190,10 +190,11 @@
     "p-nakup-nakladniho-automobilu-pro-lesni-hospodarstvi-0186": 1
   },
   "classifications": {
-    "contract": 91,
-    "contract_with_changes": 14,
+    "contract": 90,
+    "contract_with_changes": 15,
     "other": 25,
-    "procurement": 56
+    "procurement": 53,
+    "procurement_with_changes": 3
   },
   "candidate_count": 151
 }

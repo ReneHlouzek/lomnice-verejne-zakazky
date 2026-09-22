@@ -3,7 +3,7 @@
   "title": "Nástupní místo Košov a Rváčov, Lomnice nad Popelkou",
   "buyer_ico": "00275905",
   "status": "plneni-smlouvy",
-  "project_type": "procurement",
+  "project_type": "procurement_with_changes",
   "canonical": {
     "title": "Nástupní místo Košov a Rváčov, Lomnice nad Popelkou",
     "supplier_ico": "28762070",
@@ -27,7 +27,7 @@
       },
       "dominant_type": "tender"
     },
-    "project_type": "procurement",
+    "project_type": "procurement_with_changes",
     "procurement_signal": {
       "level": "none",
       "label": "Bez rozpoznané vazby na zakázku",
@@ -51,7 +51,9 @@
       "procedures": [],
       "regimes": [],
       "funded": false,
-      "known_addenda_numbers": []
+      "known_addenda_numbers": [
+        "1"
+      ]
     },
     "verification": {
       "levels": [

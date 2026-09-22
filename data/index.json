@@ -1,7 +1,7 @@
 {
   "schema_version": 3,
   "parser_state": "resolved",
-  "generated_at": "2026-09-22T05:46:14.943379+00:00",
+  "generated_at": "2026-09-22T06:49:02.815020+00:00",
   "source": {
     "profile_url": "https://www.vhodne-uverejneni.cz/profil/mesto-lomnice-nad-popelkou",
     "organization_name": "Město Lomnice nad Popelkou",
@@ -14,10 +14,10 @@
     "zruseno": 7
   },
   "project_type_counts": {
-    "procurement": 56,
-    "procurement_with_changes": 0,
-    "contract_with_changes": 14,
-    "contract": 91,
+    "procurement": 53,
+    "procurement_with_changes": 3,
+    "contract_with_changes": 15,
+    "contract": 90,
     "other": 25,
     "unclassified": 0
   },
@@ -162,8 +162,6 @@
         "p-modernizace-infrastruktury-zs-t-g-masaryka-lomnice-nad-popelkou-vybave-0135",
         "p-modernizace-infrastruktury-zs-t-g-masaryka-lomnice-nad-popelkou-vybave-0142",
         "p-modernizace-uceben-zus-dodavky-0116",
-        "p-modernizace-uceben-zus-stavebni-prace-0147",
-        "p-nastupni-misto-kosov-a-rvacov-lomnice-nad-popelkou-0130",
         "p-nemocnice-nasledne-pece-lomnice-nad-popelkou-investice-a-opravy-0154",
         "p-nemocnice-nasledne-pece-lomnice-nad-popelkou-investice-a-opravy-0164",
         "p-nemocnice-nasledne-pece-lomnice-nad-popelkou-investice-a-opravy-0174",
@@ -189,7 +187,6 @@
         "p-rozsireni-polikliniky-lomnice-nad-popelkou-dokumentace-stavebniho-zame-0136",
         "p-sanace-vlhkeho-zdiva-sklepnich-prostor-cp-886-lomnice-nad-popelkou-0169",
         "p-silnice-ii-284-lomnice-nad-popelkou-ulice-5-kvetna-0146",
-        "p-soh-a-zazemi-ps-lomnice-nad-popelkou-0115",
         "p-stavebni-a-malirske-prace-po-oprave-elektroinstalace-v-budove-materske-0112",
         "p-stavebni-upravy-casti-mestske-polikliniky-v-lomnici-nad-popelkou-cp-86-0122",
         "p-tylovo-divadlo-lomnice-nad-popelkou-dokumentace-stavebniho-zameru-0109",
@@ -201,7 +198,11 @@
     },
     "procurement_with_changes": {
       "label": "Zakázka se změnami / dodatky",
-      "projects": []
+      "projects": [
+        "p-modernizace-uceben-zus-stavebni-prace-0147",
+        "p-nastupni-misto-kosov-a-rvacov-lomnice-nad-popelkou-0130",
+        "p-soh-a-zazemi-ps-lomnice-nad-popelkou-0115"
+      ]
     },
     "contract_with_changes": {
       "label": "Smlouva se změnami / dodatky",
@@ -219,6 +220,7 @@
         "p-dodatek-c-1-verejnopravni-smlouvy-o-poskytnuti-neinvesticni-dotace-z-r-0020",
         "p-dodatek-c-2-ke-smlouve-o-poskytnuti-ucelove-dotace-libereckemu-kraji-z-0034",
         "p-dodatek-c-3-ke-smlouve-o-poskytnuti-ucelove-dotace-na-projekt-karavano-0061",
+        "p-modernizace-infrastruktury-svc-slunicko-lomnice-nad-popelkou-stavebni-0120",
         "p-poskytnuti-ucelove-dotace-z-rozpoctu-libereckeho-kraje-na-projekt-kara-0004"
       ]
     },
@@ -238,7 +240,6 @@
         "p-elektroinstalace-v-objektu-zs-tgm-lomnice-nad-popelkou-0125",
         "p-koupe-pozemku-ppc-451-4-0161",
         "p-kupni-smlouva-c-j-olp-101-2024-prodej-pozemku-v-k-u-plouznice-pod-tabo-0091",
-        "p-modernizace-infrastruktury-svc-slunicko-lomnice-nad-popelkou-stavebni-0120",
         "p-nakup-nakladniho-automobilu-pro-lesni-hospodarstvi-0186",
         "p-obnova-telocvicen-pri-zs-t-g-masaryka-v-lomnici-nad-popelkou-0129",
         "p-pd-akce-silnice-ii-284-lomnice-nad-popelkou-ulice-5-kvetna-0121",
@@ -1348,7 +1349,7 @@
       "id": "p-modernizace-infrastruktury-svc-slunicko-lomnice-nad-popelkou-stavebni-0120",
       "title": "Modernizace infrastruktury SVČ Sluníčko Lomnice nad Popelkou , stavební práce",
       "status": "ukonceno-plneni",
-      "project_type": "contract",
+      "project_type": "contract_with_changes",
       "record_types": {
         "contract": 1
       },
@@ -1438,7 +1439,7 @@
       "id": "p-modernizace-uceben-zus-stavebni-prace-0147",
       "title": "Modernizace UČEBEN ZUŠ - stavební práce",
       "status": "plneni-smlouvy",
-      "project_type": "procurement",
+      "project_type": "procurement_with_changes",
       "record_types": {
         "tender": 1,
         "contract": 1
@@ -1475,7 +1476,7 @@
       "id": "p-nastupni-misto-kosov-a-rvacov-lomnice-nad-popelkou-0130",
       "title": "Nástupní místo Košov a Rváčov, Lomnice nad Popelkou",
       "status": "plneni-smlouvy",
-      "project_type": "procurement",
+      "project_type": "procurement_with_changes",
       "record_types": {
         "tender": 1
       },
@@ -3078,7 +3079,7 @@
       "id": "p-soh-a-zazemi-ps-lomnice-nad-popelkou-0115",
       "title": "SOH a zázemí PS Lomnice nad Popelkou",
       "status": "ukonceno-plneni",
-      "project_type": "procurement",
+      "project_type": "procurement_with_changes",
       "record_types": {
         "tender": 1
       },
