@@ -24,7 +24,12 @@
   </header>
 
   <main class="wrap">
-    <section class="stats" id="stats"></section>
+    <section class="stats" id="stats" aria-label="Datová pokrytí">
+      <button class="stat stat-button" data-source-filter="" type="button" aria-pressed="false"><strong id="stat-projects">0</strong><span>propojených projektů</span><small>zobrazit celý propojený přehled</small></button>
+      <button class="stat stat-button" data-source-filter="vhodne-uverejneni" type="button" aria-pressed="false"><strong id="stat-vu">0</strong><span>načtených z Vhodného uveřejnění</span><small>zobrazit projekty s vazbou na VU</small></button>
+      <button class="stat stat-button" data-source-filter="registr-smluv" type="button" aria-pressed="false"><strong id="stat-rs">0</strong><span>záznamů z Registru smluv</span><small>zobrazit projekty s vazbou na RS</small></button>
+      <button class="stat stat-button" data-filter="plneni-smlouvy" type="button" aria-pressed="false"><strong id="stat-plneni">0</strong><span>záznamů ve stavu plnění</span><small>zobrazit právě probíhající plnění</small></button>
+    </section>
 
     <section class="quick-nav">
       <button data-filter="">Vše</button>
