@@ -146,11 +146,9 @@ def score(a, b):
     if common:
         return 1.0, "exact_identifier", sorted(common)
 
-    an = contract_number(a)
-    bn = contract_number(b)
-    if an and bn and an != bn:
-        return 0, "different_contract_number", [an, bn]
-
+    # Contract numbers from VU and the Register of Contracts are not
+    # necessarily the same identifier. Do not reject a cross-source pair
+    # merely because both sources expose different numbering schemes.
     ai = ico(a.get("supplier_ico") or a.get("ico_dodavatele"))
     bi = ico(b.get("supplier_ico") or b.get("ico_dodavatele"))
     at = norm(title(a))
