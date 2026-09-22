@@ -122,6 +122,17 @@ def core_title(r):
     return re.sub(r"\s+", " ", t).strip()
 
 
+def date_gap_days(a, b):
+    da = date_value(a.get("date") or a.get("published") or a.get("signed_date") or a.get("award_date"))
+    db = date_value(b.get("date") or b.get("published") or b.get("signed_date") or b.get("award_date"))
+    if not da or not db:
+        return None
+    try:
+        return abs((datetime.fromisoformat(da) - datetime.fromisoformat(db)).days)
+    except ValueError:
+        return None
+
+
 def score(a, b):
     common = key_ids(a) & key_ids(b)
     if common:
@@ -130,7 +141,6 @@ def score(a, b):
     an = contract_number(a)
     bn = contract_number(b)
     if an and bn and an != bn:
-        # Different explicit contract numbers are strong evidence against merging.
         return 0, "different_contract_number", [an, bn]
 
     ai = ico(a.get("supplier_ico") or a.get("ico_dodavatele"))
@@ -145,23 +155,30 @@ def score(a, b):
     bp = price(b.get("price") or b.get("contract_price") or b.get("value"))
     same_supplier = bool(ai and bi and ai == bi)
     near_price = bool(ap is not None and bp is not None and (abs(ap - bp) / max(ap, bp) <= .03))
+    exact_price = bool(ap is not None and bp is not None and abs(ap - bp) < 0.01)
+    gap = date_gap_days(a, b)
+    near_date = gap is not None and gap <= 45
+    same_year = gap is not None and gap <= 365
     addendum_pair = is_addendum(a) != is_addendum(b)
 
-    # Auto-merge only when the evidence is sufficiently specific. A generic
-    # title + same supplier is not enough: one supplier can have many unrelated
-    # contracts with very similar legal wording.
+    # Automatic linking requires multiple independent pieces of evidence.
+    # Supplier alone or a generic title alone is never enough.
     if addendum_pair and same_supplier and core_sim >= .82 and (near_price or ap is None or bp is None):
         return .96, "addendum_core_title", [ai]
+    if same_supplier and exact_price and near_date and sim >= .55:
+        return .95, "supplier_price_date_title", [ai, "price", f"date_gap_days={gap}"]
     if same_supplier and sim >= .82 and near_price:
-        return .9, "supplier_title_price", [ai]
-    if sim >= .9 and near_price:
-        return .82, "title_price", []
+        return .9, "supplier_title_price", [ai, "price"]
+    if sim >= .9 and near_price and same_year:
+        return .88, "title_price_date", ["price", f"date_gap_days={gap}"]
+    if same_supplier and sim >= .66 and near_price and same_year:
+        return .84, "supplier_title_price_date", [ai, "price", f"date_gap_days={gap}"]
     if addendum_pair and same_supplier and core_sim >= .68:
         return .74, "candidate_addendum_core_title", [ai]
-    if same_supplier and sim >= .66 and near_price:
-        return .74, "candidate_supplier_title_price", [ai]
-    if same_supplier and sim >= .60:
-        return .65, "candidate_supplier_title", [ai]
+    if same_supplier and sim >= .60 and (near_price or near_date):
+        return .72, "candidate_supplier_title_date_or_price", [ai, f"date_gap_days={gap}" if gap is not None else "no_date_match"]
+    if sim >= .75 and near_price:
+        return .70, "candidate_title_price", ["price"]
     return 0, "none", []
 
 
@@ -324,14 +341,31 @@ def main():
         audit["project_sizes"][pid] = len(g)
         audit["classifications"][can["project_type"]] = audit["classifications"].get(can["project_type"], 0) + 1
 
+    # Candidate review is intentionally cross-source only. Comparing
+    # multiple files within one source creates noise rather than cross-source links.
+    source_pairs = set()
     for i, a in enumerate(rows):
+        sa = str(a.get("source") or "").strip()
         for b in rows[i + 1:]:
-            if a.get("_source_file") == b.get("_source_file"):
+            sb = str(b.get("source") or "").strip()
+            if not sa or not sb or sa == sb:
                 continue
+            source_pairs.add(tuple(sorted((sa, sb))))
             s, reason, evidence = score(a, b)
-            if .60 <= s < .82:
-                candidates.append({"score": s, "reason": reason, "evidence": evidence, "a": a, "b": b})
+            if s >= .60:
+                candidates.append({
+                    "score": s,
+                    "reason": reason,
+                    "evidence": evidence,
+                    "source_a": sa,
+                    "source_b": sb,
+                    "a": a,
+                    "b": b,
+                })
+    candidates.sort(key=lambda x: (-x["score"], str(x["a"].get("source_id")), str(x["b"].get("source_id"))))
     audit["candidate_count"] = len(candidates)
+    audit["cross_source_pairs"] = [list(x) for x in sorted(source_pairs)]
+    audit["auto_link_threshold"] = .82
     (ROOT / "data" / "link_candidates.json").write_text(json.dumps(candidates, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     (ROOT / "data" / "resolution_audit.json").write_text(json.dumps(audit, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"Resolved {len(rows)} source records into {len(groups)} projects; {len(candidates)} candidates for review.")
