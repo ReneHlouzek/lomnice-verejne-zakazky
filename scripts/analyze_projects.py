@@ -153,9 +153,26 @@ def analyze(project):
               "calculation": "(current-baseline)/baseline*100"}])
 
     addenda = [x for x in timeline if x["event"] == "addendum"]
-    if addenda:
-        add("addendum_count", "info", f"Ve zdrojových záznamech bylo rozpoznáno {len(addenda)} dodatků / změnových záznamů.",
-            [{"type": "count", "value": len(addenda)}])
+    declared_addenda = set()
+    for r in rows:
+        vals = r.get("known_addenda_numbers")
+        if isinstance(vals, list):
+            declared_addenda.update(str(v) for v in vals if v not in (None, ""))
+    addenda_count = max(len(addenda), len(declared_addenda))
+    if addenda_count:
+        add("addendum_count", "info", f"Ve zdrojových záznamech je doloženo nejméně {addenda_count} dodatků / změnových záznamů.",
+            [{"type": "count", "value": addenda_count, "declared_numbers": sorted(declared_addenda)}])
+
+    if expected_values and baseline is not None:
+        expected = expected_values[0]["value"]
+        if expected:
+            delta = baseline - expected
+            pct = delta / expected * 100
+            add("expected_vs_contract_price", "info",
+                f"Výchozí evidovaná smluvní cena se od první nalezené předpokládané hodnoty liší o {pct:+.1f} %.",
+                [{"type": "expected_vs_contract", "expected_value": expected,
+                  "contract_price": baseline, "delta": delta, "percent": pct,
+                  "calculation": "(contract_price-expected_value)/expected_value*100"}])
 
     if len(suppliers) > 1:
         add("supplier_difference", "review",
@@ -200,7 +217,7 @@ def analyze(project):
         "financial": {"baseline_price": baseline, "current_observed_price": current,
                       "absolute_change": (current - baseline) if baseline is not None and current is not None else None,
                       "percent_change": price_change_pct, "observed_prices": unique_prices,
-                      "addendum_count": len(addenda)},
+                      "addendum_count": addenda_count, "declared_addenda_count": len(declared_addenda)},
         "metrics": {"source_count": len(rows), "supplier_count": len(suppliers),
                      "price_values": unique_prices,
                      "date_values": sorted({x["date"] for x in timeline if x["date"]}),
