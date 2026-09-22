@@ -11,9 +11,16 @@ function populate(){
   $("#status").innerHTML='<option value="">Všechny stavy</option>'+Object.entries(status).map(([k,v])=>'<option value="'+esc(k)+'">'+esc(v.label||k)+'</option>').join("");
   $("#type").innerHTML='<option value="">Všechny typy</option>'+Object.entries(types).map(([k,v])=>'<option value="'+esc(k)+'">'+esc(v.label||k)+'</option>').join("");
 }
+function normalizeSource(s){
+  const v=String(s||"").toLowerCase().trim();
+  if(v==="vhodne-uverejneni"||v==="vhodné uveřejnění"||v==="vu") return "vhodne-uverejneni";
+  if(v==="registr-smluv"||v==="registr smluv"||v==="rs") return "registr-smluv";
+  return v;
+}
 function hasSource(p,source){
   if(!source)return true;
-  return (p.source_types||[]).some(s=>String(s).toLowerCase()===source.toLowerCase());
+  const wanted=normalizeSource(source);
+  return (p.source_types||[]).map(normalizeSource).includes(wanted);
 }
 function setStatState(){
   document.querySelectorAll(".stat-button").forEach(b=>{
@@ -63,7 +70,7 @@ document.addEventListener("click",e=>{
   const b=e.target.closest("[data-filter],[data-type],[data-source-filter]");
   if(!b)return;
   e.preventDefault();
-  if(b.dataset.sourceFilter!==undefined){activeSource=b.dataset.sourceFilter||"";activeType="";$("#status").value="";$("#type").value=""}
+  if(b.dataset.sourceFilter!==undefined){activeSource=normalizeSource(b.dataset.sourceFilter||"");activeType="";$("#status").value="";$("#type").value=""}
   else if(b.dataset.filter!==undefined){activeSource="";activeType="";$("#status").value=b.dataset.filter;$("#type").value=""}
   if(b.dataset.type!==undefined){activeType=b.dataset.type;$("#type").value=b.dataset.type;$("#status").value=""}
   render();
