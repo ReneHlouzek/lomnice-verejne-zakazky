@@ -36,6 +36,8 @@ function sourceRows(ss){
         ${supplier?`<span><small>Dodavatel</small><b>${esc(supplier)}</b></span>`:''}
         ${r.price!=null?`<span><small>Cena bez DPH</small><b>${money(r.price)}</b></span>`:''}
         ${r.price_vat_included!=null?`<span><small>Cena vč. DPH</small><b>${money(r.price_vat_included)}</b></span>`:''}
+        ${r.contract_number?`<span><small>Číslo smlouvy</small><b>${esc(r.contract_number)}</b></span>`:''}
+        ${r.document_count!=null?`<span><small>Dokumentů</small><b>${esc(r.document_count)}</b></span>`:''}
       </div>
       <div class="source-actions">
         ${r.source_id?`<span class="meta">ID: ${esc(r.source_id)}</span>`:''}
@@ -101,7 +103,7 @@ function render(p){
     </section>
 
     <nav class="detail-nav">
-      <a href="#overview">Přehled</a><a href="#procurement">Zakázka</a><a href="#finance">Finance</a><a href="#timeline">Časová osa</a><a href="#checks">Kontroly</a><a href="#sources">Zdroje</a>
+      <a href="#overview">Přehled</a><a href="#procurement">Zakázka</a><a href="#coverage">Data</a><a href="#finance">Finance</a><a href="#timeline">Časová osa</a><a href="#checks">Kontroly</a><a href="#sources">Zdroje</a>
     </nav>
 
     <section id="overview" class="card detail-summary">
@@ -134,6 +136,11 @@ function render(p){
     <section class="card">
       <div class="section-title"><div><p class="eyebrow dark">DODAVATEL</p><h2>Kdo je ve zdrojích uveden</h2></div></div>
       ${suppliers.length?`<div class="supplier-list">${suppliers.map(s=>`<div class="supplier"><strong>${esc(s.name)}</strong><span>IČO ${esc(s.ico)}</span></div>`).join('')}</div>`:'<p class="meta">Dodavatel zatím není ve zdrojových datech uveden.</p>'}
+    </section>
+
+    <section id="coverage" class="card">
+      <div class="section-title"><div><p class="eyebrow dark">ÚPLNOST DAT</p><h2>Co je a není v evidenci</h2></div></div>
+      ${coverage(c,p,ss,events,f)}
     </section>
 
     <section id="finance" class="card">
@@ -170,9 +177,50 @@ function summaryText(c,p,events){
 }
 function fact(label,value){return value!=null&&value!==''?`<div class="fact"><small>${esc(label)}</small><strong>${esc(value)}</strong></div>`:''}
 function contractSignedDate(ss){const d=ss.map(s=>(s.record||s).contract_signed_date).find(Boolean);return d?date(d):null}
+function coverage(c,p,ss,events,f){
+  const records=ss.map(s=>s.record||s);
+  const uniq=(key,normal=v=>String(v||''))=>[...new Set(records.map(r=>r[key]).filter(v=>v!=null&&v!=='').map(normal))];
+  const titles=uniq('title');
+  const suppliers=uniq('supplier_ico');
+  const prices=uniq('price',v=>Number(v).toFixed(2));
+  const dates=uniq('date');
+  const gaps=[];
+  if(!f.expected_values?.length)gaps.push('Předpokládaná hodnota není ve zdrojových datech doložena.');
+  if(!c.procurement?.procedures?.length)gaps.push('Konkrétní postup zadání není ve zdrojových datech doložen.');
+  if(!c.procurement?.regimes?.length)gaps.push('Zadávací režim není ve zdrojových datech doložen.');
+  if(!records.some(r=>r.participant_count!=null))gaps.push('Počet účastníků není ve zdrojových datech doložen.');
+  if(!records.some(r=>r.bid_count!=null))gaps.push('Počet nabídek není ve zdrojových datech doložen.');
+  if(!records.some(r=>r.award_date))gaps.push('Datum výběru dodavatele není ve zdrojových datech doloženo.');
+  const consistency=[];
+  consistency.push({label:'Název',value:titles.length<=1?'shoda':\`${titles.length} variant\`});
+  consistency.push({label:'Dodavatel',value:suppliers.length<=1?'shoda':\`${suppliers.length} IČO\`});
+  consistency.push({label:'Cena bez DPH',value:prices.length<=1?'shoda':\`${prices.length} hodnot\`});
+  consistency.push({label:'Datum',value:dates.length<=1?'shoda':\`${dates.length} hodnot\`});
+  return \`
+    <div class="fact-grid">
+      ${fact('Zdrojové záznamy',ss.length)}
+      ${fact('Události v časové ose',events.length)}
+      ${fact('Varianty názvu',titles.length||0)}
+      ${fact('Varianty dodavatele',suppliers.length||0)}
+      ${fact('Varianty ceny bez DPH',prices.length||0)}
+      ${fact('Úrovně ověření',(c.verification?.levels||[]).join(', ')||null)}
+    </div>
+    <div class="evidence-note">
+      <strong>Shoda mezi zdroji</strong>
+      <span>${consistency.map(x=>\`${esc(x.label)}: <b>${esc(x.value)}</b>\`).join(' · ')}</span>
+    </div>
+    ${gaps.length?\`<div class="evidence-note warning"><strong>Co v dostupných datech chybí</strong><span>${gaps.map(g=>\`• ${esc(g)}\`).join('<br>')}</span></div>\`:'<div class="evidence-note"><strong>Základní pole jsou pokryta.</strong><span>V dostupných zdrojích nebyla nalezena žádná z uvedených mezer.</span></div>'}
+  \`;
+}
 function finance(f,es,change,changePct){
   const prices=es.filter(e=>e.price!=null);
-  if(!prices.length)return'<p class="meta">Pro finanční mapu zatím není k dispozici dostatek cenových údajů.</p>';
+  if(!prices.length){
+    const vat=f.observed_vat_included_prices||[];
+    if(vat.length){
+      return \`<div class="finance-head"><div><small>Poslední pozorovaná cena vč. DPH</small><strong>\${money(vat[vat.length-1])}</strong><span>Cena bez DPH nebyla ve zdrojovém záznamu dostupná.</span></div><div><small>Cena bez DPH</small><strong>—</strong><span>údaj není doložen</span></div></div><p class="meta">Finanční mapa je omezená na hodnotu skutečně uvedenou ve zdroji.</p>\`;
+    }
+    return'<p class="meta">Pro finanční mapu zatím není k dispozici žádná pozorovaná cena.</p>';
+  }
   return`<div class="finance-head"><div><small>Rozdíl mezi první a poslední pozorovanou cenou</small><strong>${change==null?'—':money(change)}</strong><span>${changePct==null?'Procentní změnu nelze spolehlivě spočítat.':pct(changePct)}</span></div><div><small>DPH</small><strong>${f.observed_vat_included_prices?.length?money(f.observed_vat_included_prices[f.observed_vat_included_prices.length-1]):'—'}</strong><span>poslední pozorovaná cena vč. DPH</span></div></div>
   <div class="finance-map">${prices.map((e,i)=>`<div class="finance-step"><span>${i===0?'Výchozí':esc(eventLabel(e.type))}</span><strong>${money(e.price)}</strong><small>${date(e.date)}</small>${i?'<em>'+changeMoney(prices[i-1].price,e.price)+'</em>':''}</div>`).join('')}</div>
   <p class="meta">Mapa zobrazuje pouze ceny skutečně nalezené v evidovaných zdrojích. Uvedené částky nejsou samy o sobě účetní závěrkou.</p>`;
@@ -181,7 +229,7 @@ function changeMoney(a,b){if(a==null)return'';const d=b-a,p=a?d/a*100:null;retur
 function eventLabel(v){return({tender:'Zakázka',contract:'Smlouva',addendum:'Dodatek',award:'Výběr dodavatele'}[v]||v||'Záznam')}
 function timeline(es){
   if(!es.length)return'<p class="meta">Časová osa zatím nemá dostatek dat.</p>';
-  return'<div class="timeline">'+es.map((e,i)=>`<div class="timeline-item"><div class="timeline-marker"><span>${i+1}</span></div><div><div class="timeline-top"><strong>${date(e.date)}</strong><span class="badge">${esc(eventLabel(e.type))}</span></div><p>${esc(e.title||'Bez názvu')}${e.price!=null?` · <strong>${money(e.price)}</strong>`:''}</p>${e.source?'<small class="meta">'+esc(sourceLabel(e.source))+'</small>':''}</div></div>`).join('')+'</div>';
+  return'<div class="timeline">'+es.map((e,i)=>`<div class="timeline-item"><div class="timeline-marker"><span>${i+1}</span></div><div><div class="timeline-top"><strong>${date(e.date)}</strong><span class="badge">${esc(eventLabel(e.type))}</span></div><p>${esc(e.title||'Bez názvu')}${e.price!=null?` · <strong>${money(e.price)}</strong>`:''}</p>${e.source?'<small class="meta">'+esc(sourceLabel(e.source))+(e.source_id?' · ID '+esc(e.source_id):'')+'</small>':''}</div></div>`).join('')+'</div>';
 }
 function signals(ss){
   if(!ss.length)return'<div class="clean-state"><strong>Žádný kontrolní signál.</strong><span>V dostupných datech nebyla nalezena definovaná kontrola, která by vyžadovala pozornost.</span></div>';
