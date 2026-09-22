@@ -1,57 +1,190 @@
 const root=document.querySelector('#detail');
 const id=new URLSearchParams(location.search).get('id');
+
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));
 const money=v=>v==null?'—':new Intl.NumberFormat('cs-CZ',{style:'currency',currency:'CZK',maximumFractionDigits:0}).format(v);
 const pct=v=>v==null?'—':`${v>=0?'+':''}${Number(v).toFixed(1)} %`;
+const date=v=>v?new Intl.DateTimeFormat('cs-CZ').format(new Date(v+'T00:00:00')):'—';
+
+const statusLabels={
+  'plneni-smlouvy':'Plnění smlouvy',
+  'ukonceno-plneni':'Ukončeno plnění',
+  'zruseno':'Zrušeno',
+  'aktualni-uverejneni':'Aktuální uveřejnění',
+  'unclassified':'Nezařazeno'
+};
+const typeLabels={
+  procurement:'Veřejná zakázka',
+  procurement_with_changes:'Veřejná zakázka se změnami',
+  contract:'Smlouva',
+  contract_with_changes:'Smlouva se změnami',
+  other:'Jiný záznam'
+};
 
 function sourceRows(ss){
-  return ss.map(s=>{
+  return ss.map((s,i)=>{
     const r=s.record||s;
     const url=r.source_url||s.source_url;
-    const title=r.title||r.subject||'';
+    const title=r.title||r.subject||'Zdrojový záznam';
     const supplier=r.supplier_name||r.supplier_ico||'';
-    return `<div class="source"><strong>${esc(r.source||s.source||'zdroj')}</strong><p>${esc(title)}</p>${supplier?`<p class="meta">Dodavatel: ${esc(supplier)}</p>`:''}${url?`<a href="${esc(url)}" target="_blank" rel="noopener">Otevřít zdroj →</a>`:''}</div>`;
+    const verified=r.verified_web===true;
+    return `<article class="source">
+      <div class="source-head"><span class="source-no">${i+1}</span><strong>${esc(sourceLabel(r.source||s.source))}</strong>${verified?'<span class="badge green">ověřeno na webu</span>':''}</div>
+      <h3>${esc(title)}</h3>
+      <div class="source-grid">
+        ${r.date?`<span><small>Datum</small><b>${date(r.date)}</b></span>`:''}
+        ${supplier?`<span><small>Dodavatel</small><b>${esc(supplier)}</b></span>`:''}
+        ${r.price!=null?`<span><small>Cena bez DPH</small><b>${money(r.price)}</b></span>`:''}
+        ${r.price_vat_included!=null?`<span><small>Cena vč. DPH</small><b>${money(r.price_vat_included)}</b></span>`:''}
+      </div>
+      <div class="source-actions">
+        ${r.source_id?`<span class="meta">ID: ${esc(r.source_id)}</span>`:''}
+        ${url?`<a href="${esc(url)}" target="_blank" rel="noopener">Otevřít zdroj →</a>`:''}
+      </div>
+    </article>`;
   }).join('');
+}
+function sourceLabel(v){
+  return ({'vhodne-uverejneni':'Vhodné uveřejnění','registr-smluv':'Registr smluv'}[v]||v||'Zdroj');
 }
 
 async function run(){
   if(!id){root.innerHTML='<div class="empty">Chybí identifikátor zakázky.</div>';return}
   try{
-    const p=await fetch(`./data/projects/${encodeURIComponent(id)}.json`).then(r=>r.json());
-    const c=p.canonical||{},f=c.financial||{},a=p.analysis||{},events=c.lifecycle?.events||[],ss=p.sources||[];
-    const suppliers=[...new Map(ss.map(s=>{const r=s.record||s;const ico=r.supplier_ico||r.ico_dodavatele;return ico?[String(ico),r.supplier_name||ico]:null}).filter(Boolean)).values()];
-    const addenda=events.filter(e=>e.type==='addendum').length;
-    root.innerHTML=`
-      <p class="eyebrow">DETAIL ZÁZNAMU</p>
-      <h1>${esc(p.title||c.title)}</h1>
-      <div class="stats">
-        <div class="stat"><strong>${money(f.initial_contract_price)}</strong><span>výchozí pozorovaná cena</span></div>
-        <div class="stat"><strong>${money(f.latest_observed_price)}</strong><span>poslední pozorovaná cena</span></div>
-        <div class="stat"><strong>${addenda}</strong><span>dodatků / změnových záznamů</span></div>
-        <div class="stat"><strong>${c.source_count||0}</strong><span>zdrojových záznamů</span></div>
-      </div>
-      <section class="card"><h2>Zařazení</h2><p><strong>${esc(p.status||'neuvedeno')}</strong></p><p class="meta">${esc(c.project_type||p.project_type||'')}</p>${c.procurement_signal?`<p class="meta">${esc(c.procurement_signal.label)} — ${esc(c.procurement_signal.reason)}</p>`:''}</section>
-      <section class="card"><h2>Zadávání a ověření</h2>${procurement(c)}</section>
-      <section class="card"><h2>Dodavatel</h2>${suppliers.length?suppliers.map(x=>`<p><strong>${esc(x)}</strong></p>`).join(''):'<p class="meta">Dodavatel zatím není ve zdrojových datech uveden.</p>'}</section>
-      <section class="card"><h2>Finanční mapa</h2>${finance(f,events)}</section>
-      <section class="card"><h2>Časová osa</h2>${timeline(events)}</section>
-      <section class="card"><h2>Kontrolní signály</h2>${signals(a.signals||[])}</section>
-      <section class="card"><h2>Zdroje a dokumentace</h2>${ss.length?sourceRows(ss):'<p class="meta">Zdroje zatím nejsou evidovány.</p>'}</section>`;
-  }catch(e){root.innerHTML='<div class="empty">Detail se nepodařilo načíst.</div>'}
+    const p=await fetch(`./data/projects/${encodeURIComponent(id)}.json`).then(r=>{if(!r.ok)throw Error('HTTP '+r.status);return r.json()});
+    render(p);
+  }catch(e){
+    console.error(e);
+    root.innerHTML='<div class="empty"><strong>Detail se nepodařilo načíst.</strong><br><span class="meta">Záznam nemusí být dostupný nebo došlo k chybě při načtení dat.</span></div>';
+  }
 }
-function procurement(c){const p=c.procurement||{},v=c.verification||{},f=c.financial||{};const rows=[];if(p.regimes?.length)rows.push('<p><strong>Režim:</strong> '+esc(p.regimes.join(', '))+'</p>');if(p.procedures?.length)rows.push('<p><strong>Postup:</strong> '+esc(p.procedures.join(', '))+'</p>');if(p.known_addenda_numbers?.length)rows.push('<p><strong>Doložené dodatky:</strong> '+esc(p.known_addenda_numbers.join(', '))+'</p>');if(f.expected_values?.length)rows.push('<p><strong>Předpokládaná hodnota:</strong> '+money(f.expected_values[0])+'</p>');if(v.levels?.length)rows.push('<p><strong>Úroveň ověření:</strong> '+esc(v.levels.join(', '))+'</p>');return rows.length?rows.join(''):'<p class="meta">V dostupných zdrojích zatím nejsou tyto údaje vyplněny.</p>'}
-function finance(f,es){
+
+function render(p){
+  const c=p.canonical||{},f=c.financial||{},a=p.analysis||{},events=c.lifecycle?.events||[],ss=p.sources||[];
+  const procurement=c.procurement||{}, verification=c.verification||{};
+  const analysisFinancial=a.financial||{};
+  const suppliers=[...new Map(ss.map(s=>{
+    const r=s.record||s,ico=r.supplier_ico||r.ico_dodavatele;
+    return ico?[String(ico),{name:r.supplier_name||'Neuvedený název',ico}]:null
+  }).filter(Boolean)).values()];
+  const declaredAddenda=new Set((procurement.known_addenda_numbers||[]).map(String));
+  const addenda=events.filter(e=>e.type==='addendum').length;
+  const firstDate=c.dates?.first_observed||events[0]?.date;
+  const lastDate=c.dates?.last_observed||events[events.length-1]?.date;
+  const change=analysisFinancial.absolute_change ?? (f.latest_observed_price!=null&&f.initial_contract_price!=null?f.latest_observed_price-f.initial_contract_price:null);
+  const changePct=analysisFinancial.percent_change ?? (f.initial_contract_price&&change!=null?change/f.initial_contract_price*100:null);
+  const sourceCount=c.source_count||ss.length||0;
+  const verificationLevels=verification.levels||[];
+  const certainty=verificationLevels.length?'Evidence ze zdrojových záznamů':'Omezené ověření';
+
+  root.innerHTML=`
+    <header class="detail-head">
+      <p class="eyebrow">DETAIL ZÁZNAMU</p>
+      <div class="detail-title-row">
+        <div>
+          <h1>${esc(p.title||c.title)}</h1>
+          <div class="badges">
+            <span class="badge gold">${esc(statusLabels[p.status]||p.status||'Stav neuveden')}</span>
+            <span class="badge">${esc(typeLabels[p.project_type]||p.project_type||'Typ neuveden')}</span>
+            ${c.procurement_signal?'<span class="badge green">'+esc(c.procurement_signal.label)+'</span>':''}
+          </div>
+        </div>
+        <div class="detail-id"><small>Projekt</small><code>${esc(p.id||id)}</code></div>
+      </div>
+    </header>
+
+    <section class="stats detail-stats">
+      <div class="stat"><strong>${money(f.initial_contract_price)}</strong><span>výchozí pozorovaná cena bez DPH</span></div>
+      <div class="stat"><strong>${money(f.latest_observed_price)}</strong><span>poslední pozorovaná cena bez DPH</span></div>
+      <div class="stat"><strong>${addenda||declaredAddenda.size}</strong><span>${addenda?'zachycených':'doložených'} dodatků / změnových záznamů</span></div>
+      <div class="stat"><strong>${sourceCount}</strong><span>zdrojových záznamů</span></div>
+    </section>
+
+    <nav class="detail-nav">
+      <a href="#overview">Přehled</a><a href="#procurement">Zakázka</a><a href="#finance">Finance</a><a href="#timeline">Časová osa</a><a href="#checks">Kontroly</a><a href="#sources">Zdroje</a>
+    </nav>
+
+    <section id="overview" class="card detail-summary">
+      <div>
+        <p class="eyebrow dark">RYCHLÝ PŘEHLED</p>
+        <h2>Co o záznamu skutečně víme</h2>
+        <p>${summaryText(c,p,events)}</p>
+      </div>
+      <div class="summary-facts">
+        <div><small>První pozorování</small><strong>${date(firstDate)}</strong></div>
+        <div><small>Poslední pozorování</small><strong>${date(lastDate)}</strong></div>
+        <div><small>Úroveň ověření</small><strong>${esc(certainty)}</strong></div>
+      </div>
+    </section>
+
+    <section id="procurement" class="card">
+      <div class="section-title"><div><p class="eyebrow dark">ZADÁNÍ A OVĚŘENÍ</p><h2>Jak je zakázka doložena</h2></div></div>
+      <div class="fact-grid">
+        ${fact('Režim',procurement.regimes?.join(', '))}
+        ${fact('Postup',procurement.procedures?.join(', '))}
+        ${fact('Předpokládaná hodnota',f.expected_values?.length?money(f.expected_values[0]):null)}
+        ${fact('Identifikátor zakázky',c.identifiers?.join(', '))}
+        ${fact('Datum podpisu',contractSignedDate(ss))}
+        ${fact('Počet zdrojů',sourceCount)}
+      </div>
+      ${c.procurement_signal?'<div class="evidence-note"><strong>'+esc(c.procurement_signal.label)+'</strong><span>'+esc(c.procurement_signal.reason)+'</span></div>':''}
+      ${declaredAddenda.size?'<div class="evidence-note warning"><strong>Dodatky uvedené ve zdrojovém záznamu</strong><span>Čísla: '+esc([...declaredAddenda].join(', '))+'. Samotné uvedení počtu dodatků zde neznamená, že jsou všechny dodatky samostatně načtené a oceněné.</span></div>':''}
+    </section>
+
+    <section class="card">
+      <div class="section-title"><div><p class="eyebrow dark">DODAVATEL</p><h2>Kdo je ve zdrojích uveden</h2></div></div>
+      ${suppliers.length?`<div class="supplier-list">${suppliers.map(s=>`<div class="supplier"><strong>${esc(s.name)}</strong><span>IČO ${esc(s.ico)}</span></div>`).join('')}</div>`:'<p class="meta">Dodavatel zatím není ve zdrojových datech uveden.</p>'}
+    </section>
+
+    <section id="finance" class="card">
+      <div class="section-title"><div><p class="eyebrow dark">PENÍZE</p><h2>Finanční mapa</h2></div></div>
+      ${finance(f,events,change,changePct)}
+    </section>
+
+    <section id="timeline" class="card">
+      <div class="section-title"><div><p class="eyebrow dark">CHRONOLOGIE</p><h2>Časová osa</h2></div><span>${events.length} událostí</span></div>
+      ${timeline(events)}
+    </section>
+
+    <section id="checks" class="card">
+      <div class="section-title"><div><p class="eyebrow dark">KONTROLA</p><h2>Kontrolní signály</h2></div></div>
+      <p class="method-note">Signály jsou popisné kontroly dat. Samy o sobě neprokazují pochybení ani nezákonnost.</p>
+      ${signals(a.signals||[])}
+    </section>
+
+    <section id="sources" class="card">
+      <div class="section-title"><div><p class="eyebrow dark">DOKUMENTACE</p><h2>Zdrojové záznamy</h2></div><span>${sourceCount} ${sourceCount===1?'záznam':'záznamů'}</span></div>
+      ${ss.length?sourceRows(ss):'<p class="meta">Zdroje zatím nejsou evidovány.</p>'}
+    </section>
+    <p class="detail-footnote">Data jsou automaticky skládána z evidovaných zdrojů. Pokud údaj ve zdrojích není, detail ho záměrně nedoplňuje odhadem.</p>
+  `;
+}
+function summaryText(c,p,events){
+  const parts=[];
+  parts.push(`Záznam je veden jako „${statusLabels[p.status]||p.status||'stav neuveden'}“ a jako „${typeLabels[p.project_type]||p.project_type||'typ neuveden'}“.`);
+  if(c.supplier_ico)parts.push(`Ve zdrojích je uveden dodavatel s IČO ${c.supplier_ico}.`);
+  if(events.length)parts.push(`Časová osa obsahuje ${events.length} evidované události od ${date(events[0].date)} do ${date(events[events.length-1].date)}.`);
+  if(c.procurement_signal?.level==='explicit')parts.push('Zdrojová data obsahují výslovnou vazbu na veřejnou zakázku.');
+  else if(c.procurement_signal?.level==='likely')parts.push('Záznam pravděpodobně souvisí se zakázkou, ale zdrojová data sama o sobě nepotvrzují konkrétní postup výběru.');
+  return parts.join(' ');
+}
+function fact(label,value){return value!=null&&value!==''?`<div class="fact"><small>${esc(label)}</small><strong>${esc(value)}</strong></div>`:''}
+function contractSignedDate(ss){const d=ss.map(s=>(s.record||s).contract_signed_date).find(Boolean);return d?date(d):null}
+function finance(f,es,change,changePct){
   const prices=es.filter(e=>e.price!=null);
   if(!prices.length)return'<p class="meta">Pro finanční mapu zatím není k dispozici dostatek cenových údajů.</p>';
-  return`<div class="finance-map">${prices.map((e,i)=>`<div class="finance-step"><span>${i===0?'Výchozí':esc(e.type||'Změna')}</span><strong>${money(e.price)}</strong><small>${esc(e.date||'Datum neuvedeno')}</small>${i?`<em>${change(prices[i-1].price,e.price)}</em>`:''}</div>`).join('')}</div><p class="meta">Mapa zobrazuje pouze ceny skutečně nalezené v evidovaných zdrojích. Nejde o právní ani účetní závěr.</p>`;
+  return`<div class="finance-head"><div><small>Rozdíl mezi první a poslední pozorovanou cenou</small><strong>${change==null?'—':money(change)}</strong><span>${changePct==null?'Procentní změnu nelze spolehlivě spočítat.':pct(changePct)}</span></div><div><small>DPH</small><strong>${f.observed_vat_included_prices?.length?money(f.observed_vat_included_prices[f.observed_vat_included_prices.length-1]):'—'}</strong><span>poslední pozorovaná cena vč. DPH</span></div></div>
+  <div class="finance-map">${prices.map((e,i)=>`<div class="finance-step"><span>${i===0?'Výchozí':esc(eventLabel(e.type))}</span><strong>${money(e.price)}</strong><small>${date(e.date)}</small>${i?'<em>'+changeMoney(prices[i-1].price,e.price)+'</em>':''}</div>`).join('')}</div>
+  <p class="meta">Mapa zobrazuje pouze ceny skutečně nalezené v evidovaných zdrojích. Uvedené částky nejsou samy o sobě účetní závěrkou.</p>`;
 }
-function change(a,b){if(a==null)return'';const d=b-a,p=a?d/a*100:0;return`${d>=0?'+':''}${money(d)} (${pct(p)})`}
+function changeMoney(a,b){if(a==null)return'';const d=b-a,p=a?d/a*100:null;return`${d>=0?'+':''}${money(d)} ${p==null?'':`(${pct(p)})`}`}
+function eventLabel(v){return({tender:'Zakázka',contract:'Smlouva',addendum:'Dodatek',award:'Výběr dodavatele'}[v]||v||'Záznam')}
 function timeline(es){
   if(!es.length)return'<p class="meta">Časová osa zatím nemá dostatek dat.</p>';
-  return'<div class="timeline">'+es.map(e=>`<div class="timeline-item"><div class="dot"></div><div><strong>${esc(e.date||'Datum neuvedeno')}</strong><span class="badge">${esc(e.type||'záznam')}</span><p>${esc(e.title||'')}${e.price!=null?` · <strong>${money(e.price)}</strong>`:''}</p></div></div>`).join('')+'</div>';
+  return'<div class="timeline">'+es.map((e,i)=>`<div class="timeline-item"><div class="timeline-marker"><span>${i+1}</span></div><div><div class="timeline-top"><strong>${date(e.date)}</strong><span class="badge">${esc(eventLabel(e.type))}</span></div><p>${esc(e.title||'Bez názvu')}${e.price!=null?` · <strong>${money(e.price)}</strong>`:''}</p>${e.source?'<small class="meta">'+esc(sourceLabel(e.source))+'</small>':''}</div></div>`).join('')+'</div>';
 }
 function signals(ss){
-  if(!ss.length)return'<p class="meta">Žádný kontrolní signál.</p>';
-  return ss.map(s=>`<div class="signal"><span class="badge">${esc(s.level||'info')}</span><strong>${esc(s.code||s.type||'kontrola')}</strong><p>${esc(s.message||s.description||'')}</p>${s.evidence?.length?`<p class="meta">Evidence: ${esc(JSON.stringify(s.evidence))}</p>`:''}</div>`).join('');
+  if(!ss.length)return'<div class="clean-state"><strong>Žádný kontrolní signál.</strong><span>V dostupných datech nebyla nalezena definovaná kontrola, která by vyžadovala pozornost.</span></div>';
+  return ss.map(s=>`<div class="signal"><div><span class="badge ${s.level==='warning'||s.level==='alert'?'warn':'blue'}">${esc(s.level||'info')}</span> <strong>${esc(s.code||s.type||'kontrola')}</strong></div><p>${esc(s.message||s.description||'')}</p>${s.evidence?.length?`<details><summary>Zobrazit evidenci</summary><pre>${esc(JSON.stringify(s.evidence,null,2))}</pre></details>`:''}</div>`).join('');
 }
 run();
