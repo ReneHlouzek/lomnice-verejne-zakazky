@@ -1,0 +1,166 @@
+{
+  "id": "p-dodatek-c-1-verejnopravni-smlouvy-o-poskytnuti-investicni-dotace-z-roz-0028",
+  "title": "Dodatek č. 1 veřejnoprávní smlouvy o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou",
+  "buyer_ico": "00275905",
+  "status": "unclassified",
+  "project_type": "contract_with_changes",
+  "canonical": {
+    "title": "Dodatek č. 1 veřejnoprávní smlouvy o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou",
+    "supplier_ico": "49295934",
+    "identifiers": [],
+    "lifecycle": {
+      "events": [
+        {
+          "date": "2023-12-12",
+          "type": "addendum",
+          "source": "registr-smluv",
+          "source_id": "25099803",
+          "title": "Dodatek č. 1 veřejnoprávní smlouvy o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou",
+          "price": 748000.0
+        }
+      ],
+      "event_count": 1,
+      "type_counts": {
+        "addendum": 1
+      },
+      "dominant_type": "addendum"
+    },
+    "project_type": "contract_with_changes",
+    "procurement_signal": {
+      "level": "none",
+      "label": "Bez rozpoznané vazby na zakázku",
+      "reason": "V dostupném textu nebyl nalezen dostatečný signál."
+    },
+    "dates": {
+      "first_observed": "2023-12-12",
+      "last_observed": "2023-12-12"
+    },
+    "financial": {
+      "observed_prices": [
+        748000.0
+      ],
+      "observed_vat_included_prices": [],
+      "expected_values": [],
+      "initial_contract_price": 748000.0,
+      "latest_observed_price": 748000.0,
+      "expected_to_contract_ratio": null
+    },
+    "procurement": {
+      "procedures": [],
+      "regimes": [],
+      "funded": false,
+      "known_addenda_numbers": []
+    },
+    "verification": {
+      "levels": [],
+      "project_registry_ids": [],
+      "detail_verified_sources": 0
+    },
+    "source_count": 1
+  },
+  "sources": [
+    {
+      "source_file": "data/sources/registr-smluv/rs-000075.json",
+      "source_id": "25099803",
+      "record": {
+        "source": "registr-smluv",
+        "source_id": "25099803",
+        "version_id": "26873839",
+        "source_url": "https://smlouvy.gov.cz/smlouva/25099803",
+        "title": "Dodatek č. 1 veřejnoprávní smlouvy o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou",
+        "buyer_ico": "00275905",
+        "supplier_ico": "49295934",
+        "supplier_name": "Vodohospodářské sdružení Turnov",
+        "contract_number": null,
+        "date": "2023-12-12",
+        "signed_date": "2023-12-12",
+        "published": null,
+        "price": 748000.0,
+        "status": null,
+        "raw": {
+          "source": "registr-smluv",
+          "source_id": "25099803",
+          "version_id": "26873839",
+          "source_url": "https://smlouvy.gov.cz/smlouva/25099803",
+          "title": "Dodatek č. 1 veřejnoprávní smlouvy o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou",
+          "buyer_ico": "00275905",
+          "supplier_ico": "49295934",
+          "contract_number": "",
+          "date": "2023-12-12",
+          "signed_date": "2023-12-12",
+          "published": "",
+          "price": "748000",
+          "value": "748000",
+          "publisher": "",
+          "subject": "Dodatek č. 1 veřejnoprávní smlouvy o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou",
+          "counterparty": "Vodohospodářské sdružení Turnov",
+          "detail_url": "https://smlouvy.gov.cz/smlouva/25099803"
+        },
+        "_source_file": "data/sources/registr-smluv/rs-000075.json"
+      }
+    }
+  ],
+  "analysis": {
+    "schema_version": 4,
+    "project_id": "p-dodatek-c-1-verejnopravni-smlouvy-o-poskytnuti-investicni-dotace-z-roz-0028",
+    "signal_count": 2,
+    "signals": [
+      {
+        "code": "addendum_count",
+        "level": "info",
+        "message": "Ve zdrojových záznamech je doloženo nejméně 1 dodatků / změnových záznamů.",
+        "evidence": [
+          {
+            "type": "count",
+            "value": 1,
+            "declared_numbers": []
+          }
+        ]
+      },
+      {
+        "code": "single_source",
+        "level": "info",
+        "message": "Projekt je zatím doložen pouze jedním zdrojovým záznamem.",
+        "evidence": []
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2023-12-12",
+        "event": "addendum",
+        "source": "registr-smluv",
+        "source_id": "25099803",
+        "title": "Dodatek č. 1 veřejnoprávní smlouvy o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou",
+        "price": 748000.0,
+        "deadline": null
+      }
+    ],
+    "financial": {
+      "baseline_price": 748000.0,
+      "current_observed_price": 748000.0,
+      "absolute_change": 0.0,
+      "percent_change": null,
+      "observed_prices": [
+        748000.0
+      ],
+      "addendum_count": 1,
+      "declared_addenda_count": 0
+    },
+    "metrics": {
+      "source_count": 1,
+      "supplier_count": 1,
+      "price_values": [
+        748000.0
+      ],
+      "date_values": [
+        "2023-12-12"
+      ],
+      "document_count": 0,
+      "deadline_observations": 0,
+      "expected_value_observations": 0,
+      "participant_observations": 0,
+      "bid_observations": 0
+    },
+    "methodology": "Signals are descriptive checks only; they do not establish wrongdoing or causality. They identify differences worth checking and retain source provenance."
+  }
+}

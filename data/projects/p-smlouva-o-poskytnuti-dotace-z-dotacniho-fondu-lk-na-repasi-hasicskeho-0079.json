@@ -1,0 +1,154 @@
+{
+  "id": "p-smlouva-o-poskytnuti-dotace-z-dotacniho-fondu-lk-na-repasi-hasicskeho-0079",
+  "title": "Smlouva o poskytnutí dotace z Dotačního fondu LK na repasi hasičského vozíku",
+  "buyer_ico": "00275905",
+  "status": "unclassified",
+  "project_type": "contract",
+  "canonical": {
+    "title": "Smlouva o poskytnutí dotace z Dotačního fondu LK na repasi hasičského vozíku",
+    "supplier_ico": "70891508",
+    "identifiers": [],
+    "lifecycle": {
+      "events": [
+        {
+          "date": "2022-08-12",
+          "type": "contract",
+          "source": "registr-smluv",
+          "source_id": "20018743",
+          "title": "Smlouva o poskytnutí dotace z Dotačního fondu LK na repasi hasičského vozíku",
+          "price": 60000.0
+        }
+      ],
+      "event_count": 1,
+      "type_counts": {
+        "contract": 1
+      },
+      "dominant_type": "contract"
+    },
+    "project_type": "contract",
+    "procurement_signal": {
+      "level": "none",
+      "label": "Bez rozpoznané vazby na zakázku",
+      "reason": "V dostupném textu nebyl nalezen dostatečný signál."
+    },
+    "dates": {
+      "first_observed": "2022-08-12",
+      "last_observed": "2022-08-12"
+    },
+    "financial": {
+      "observed_prices": [
+        60000.0
+      ],
+      "observed_vat_included_prices": [],
+      "expected_values": [],
+      "initial_contract_price": 60000.0,
+      "latest_observed_price": 60000.0,
+      "expected_to_contract_ratio": null
+    },
+    "procurement": {
+      "procedures": [],
+      "regimes": [],
+      "funded": false,
+      "known_addenda_numbers": []
+    },
+    "verification": {
+      "levels": [],
+      "project_registry_ids": [],
+      "detail_verified_sources": 0
+    },
+    "source_count": 1
+  },
+  "sources": [
+    {
+      "source_file": "data/sources/registr-smluv/rs-000062.json",
+      "source_id": "20018743",
+      "record": {
+        "source": "registr-smluv",
+        "source_id": "20018743",
+        "version_id": "21509235",
+        "source_url": "https://smlouvy.gov.cz/smlouva/20018743",
+        "title": "Smlouva o poskytnutí dotace z Dotačního fondu LK na repasi hasičského vozíku",
+        "buyer_ico": "00275905",
+        "supplier_ico": "70891508",
+        "supplier_name": "Liberecký kraj",
+        "contract_number": "01-OLP/2437/2022",
+        "date": "2022-08-12",
+        "signed_date": "2022-08-12",
+        "published": null,
+        "price": 60000.0,
+        "status": null,
+        "raw": {
+          "source": "registr-smluv",
+          "source_id": "20018743",
+          "version_id": "21509235",
+          "source_url": "https://smlouvy.gov.cz/smlouva/20018743",
+          "title": "Smlouva o poskytnutí dotace z Dotačního fondu LK na repasi hasičského vozíku",
+          "buyer_ico": "00275905",
+          "supplier_ico": "70891508",
+          "contract_number": "01-OLP/2437/2022",
+          "date": "2022-08-12",
+          "signed_date": "2022-08-12",
+          "published": "",
+          "price": "60000",
+          "value": "60000",
+          "publisher": "",
+          "subject": "Smlouva o poskytnutí dotace z Dotačního fondu LK na repasi hasičského vozíku",
+          "counterparty": "Liberecký kraj",
+          "detail_url": "https://smlouvy.gov.cz/smlouva/20018743"
+        },
+        "_source_file": "data/sources/registr-smluv/rs-000062.json"
+      }
+    }
+  ],
+  "analysis": {
+    "schema_version": 4,
+    "project_id": "p-smlouva-o-poskytnuti-dotace-z-dotacniho-fondu-lk-na-repasi-hasicskeho-0079",
+    "signal_count": 1,
+    "signals": [
+      {
+        "code": "single_source",
+        "level": "info",
+        "message": "Projekt je zatím doložen pouze jedním zdrojovým záznamem.",
+        "evidence": []
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2022-08-12",
+        "event": "contract",
+        "source": "registr-smluv",
+        "source_id": "20018743",
+        "title": "Smlouva o poskytnutí dotace z Dotačního fondu LK na repasi hasičského vozíku",
+        "price": 60000.0,
+        "deadline": null
+      }
+    ],
+    "financial": {
+      "baseline_price": 60000.0,
+      "current_observed_price": 60000.0,
+      "absolute_change": 0.0,
+      "percent_change": null,
+      "observed_prices": [
+        60000.0
+      ],
+      "addendum_count": 0,
+      "declared_addenda_count": 0
+    },
+    "metrics": {
+      "source_count": 1,
+      "supplier_count": 1,
+      "price_values": [
+        60000.0
+      ],
+      "date_values": [
+        "2022-08-12"
+      ],
+      "document_count": 0,
+      "deadline_observations": 0,
+      "expected_value_observations": 0,
+      "participant_observations": 0,
+      "bid_observations": 0
+    },
+    "methodology": "Signals are descriptive checks only; they do not establish wrongdoing or causality. They identify differences worth checking and retain source provenance."
+  }
+}

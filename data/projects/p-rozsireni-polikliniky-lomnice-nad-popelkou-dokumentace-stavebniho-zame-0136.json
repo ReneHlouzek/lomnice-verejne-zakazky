@@ -1,0 +1,180 @@
+{
+  "id": "p-rozsireni-polikliniky-lomnice-nad-popelkou-dokumentace-stavebniho-zame-0136",
+  "title": "Rozšíření polikliniky Lomnice nad Popelkou - dokumentace stavebního záměru",
+  "buyer_ico": "00275905",
+  "status": "plneni-smlouvy",
+  "project_type": "procurement",
+  "canonical": {
+    "title": "Rozšíření polikliniky Lomnice nad Popelkou - dokumentace stavebního záměru",
+    "supplier_ico": null,
+    "identifiers": [
+      "P26V00002405"
+    ],
+    "lifecycle": {
+      "events": [
+        {
+          "date": "2026-04-15",
+          "type": "tender",
+          "source": "vhodne-uverejneni",
+          "source_id": "P26V00002405",
+          "title": "Rozšíření polikliniky Lomnice nad Popelkou - dokumentace stavebního záměru",
+          "price": null
+        }
+      ],
+      "event_count": 1,
+      "type_counts": {
+        "tender": 1
+      },
+      "dominant_type": "tender"
+    },
+    "project_type": "procurement",
+    "procurement_signal": {
+      "level": "likely",
+      "label": "Pravděpodobně souvisí se zakázkou",
+      "reason": "Název/předmět odpovídá investiční dodávce, stavebním pracím nebo jiné běžné zadavatelské dodávce; způsob výběru dodavatele z tohoto záznamu sám o sobě neplyne."
+    },
+    "dates": {
+      "first_observed": "2026-04-15",
+      "last_observed": "2026-04-15"
+    },
+    "financial": {
+      "observed_prices": [],
+      "observed_vat_included_prices": [],
+      "expected_values": [],
+      "initial_contract_price": null,
+      "latest_observed_price": null,
+      "expected_to_contract_ratio": null
+    },
+    "procurement": {
+      "procedures": [
+        "Přímé zadání - Zakázka malého rozsahu"
+      ],
+      "regimes": [
+        "VZ malého rozsahu"
+      ],
+      "funded": false,
+      "known_addenda_numbers": []
+    },
+    "verification": {
+      "levels": [
+        "detail"
+      ],
+      "project_registry_ids": [],
+      "detail_verified_sources": 1
+    },
+    "source_count": 1
+  },
+  "sources": [
+    {
+      "source_file": "data/sources/vhodne-uverejneni/vu-000018.json",
+      "source_id": "P26V00002405",
+      "record": {
+        "source": "vhodne-uverejneni",
+        "source_id": "P26V00002405",
+        "procurement_id": "P26V00002405",
+        "source_url": "https://www.vhodne-uverejneni.cz/zakazka/rozsireni-polikliniky-lomnice-nad-popelkou-dokumentace-stavebniho-zameru",
+        "title": "Rozšíření polikliniky Lomnice nad Popelkou - dokumentace stavebního záměru",
+        "buyer_ico": "00275905",
+        "supplier_ico": null,
+        "supplier_name": null,
+        "date": "2026-04-15",
+        "price": null,
+        "expected_value": null,
+        "price_vat_included": null,
+        "status": "plnění smlouvy",
+        "type": "tender",
+        "procurement_regime": "VZ malého rozsahu",
+        "procurement_procedure": "Přímé zadání - Zakázka malého rozsahu",
+        "procurement_type": "Služby",
+        "outcome": "Uzavření jednorázové smlouvy",
+        "description": "Vypracování dokumentace povolení záměru projektu k vydání správních rozhodnutí potřebných k realizaci projektu a získání potřebných správních rozhodnutí.",
+        "cpv": [],
+        "offer_deadline": null,
+        "contract_signed_date": null,
+        "award_date": null,
+        "participant_count": null,
+        "bid_count": null,
+        "funded": null,
+        "grant_id": null,
+        "project_registry_id": null,
+        "known_addenda_numbers": [],
+        "document_count": null,
+        "verification_level": "detail",
+        "verified_web": true,
+        "verified_at": "2026-09-22",
+        "verification_source": "https://www.vhodne-uverejneni.cz/zakazka/rozsireni-polikliniky-lomnice-nad-popelkou-dokumentace-stavebniho-zameru",
+        "raw": {
+          "source": "vhodne-uverejneni",
+          "source_id": "P26V00002405",
+          "procurement_id": "P26V00002405",
+          "source_url": "https://www.vhodne-uverejneni.cz/zakazka/rozsireni-polikliniky-lomnice-nad-popelkou-dokumentace-stavebniho-zameru",
+          "title": "Rozšíření polikliniky Lomnice nad Popelkou - dokumentace stavebního záměru",
+          "buyer_ico": "00275905",
+          "supplier_ico": null,
+          "supplier_name": null,
+          "date": "2026-04-15",
+          "price": null,
+          "status": "plnění smlouvy",
+          "type": "tender",
+          "procurement_regime": "VZ malého rozsahu",
+          "procurement_procedure": "Přímé zadání - Zakázka malého rozsahu",
+          "procurement_type": "Služby",
+          "outcome": "Uzavření jednorázové smlouvy",
+          "description": "Vypracování dokumentace povolení záměru projektu k vydání správních rozhodnutí potřebných k realizaci projektu a získání potřebných správních rozhodnutí.",
+          "verification_level": "detail",
+          "verified_web": true,
+          "verification_source": "https://www.vhodne-uverejneni.cz/zakazka/rozsireni-polikliniky-lomnice-nad-popelkou-dokumentace-stavebniho-zameru",
+          "verified_at": "2026-09-22"
+        },
+        "_source_file": "data/sources/vhodne-uverejneni/vu-000018.json"
+      }
+    }
+  ],
+  "analysis": {
+    "schema_version": 4,
+    "project_id": "p-rozsireni-polikliniky-lomnice-nad-popelkou-dokumentace-stavebniho-zame-0136",
+    "signal_count": 1,
+    "signals": [
+      {
+        "code": "single_source",
+        "level": "info",
+        "message": "Projekt je zatím doložen pouze jedním zdrojovým záznamem.",
+        "evidence": []
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2026-04-15",
+        "event": "tender",
+        "source": "vhodne-uverejneni",
+        "source_id": "P26V00002405",
+        "title": "Rozšíření polikliniky Lomnice nad Popelkou - dokumentace stavebního záměru",
+        "price": null,
+        "deadline": null
+      }
+    ],
+    "financial": {
+      "baseline_price": null,
+      "current_observed_price": null,
+      "absolute_change": null,
+      "percent_change": null,
+      "observed_prices": [],
+      "addendum_count": 0,
+      "declared_addenda_count": 0
+    },
+    "metrics": {
+      "source_count": 1,
+      "supplier_count": 0,
+      "price_values": [],
+      "date_values": [
+        "2026-04-15"
+      ],
+      "document_count": 0,
+      "deadline_observations": 0,
+      "expected_value_observations": 0,
+      "participant_observations": 0,
+      "bid_observations": 0
+    },
+    "methodology": "Signals are descriptive checks only; they do not establish wrongdoing or causality. They identify differences worth checking and retain source provenance."
+  }
+}
