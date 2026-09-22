@@ -67,7 +67,11 @@
       ],
       "detail_verified_sources": 1
     },
-    "source_count": 1
+    "source_count": 1,
+    "source_types": [
+      "vhodne-uverejneni"
+    ],
+    "record_count": 1
   },
   "sources": [
     {

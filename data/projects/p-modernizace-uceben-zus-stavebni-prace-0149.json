@@ -65,7 +65,11 @@
       "project_registry_ids": [],
       "detail_verified_sources": 0
     },
-    "source_count": 1
+    "source_count": 1,
+    "source_types": [
+      "vhodne-uverejneni"
+    ],
+    "record_count": 1
   },
   "sources": [
     {
