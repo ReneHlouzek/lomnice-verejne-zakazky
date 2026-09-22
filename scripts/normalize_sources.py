@@ -12,6 +12,7 @@ BUYER_ICO = "00275905"
 OUT = ROOT / "data" / "sources"
 RS = ROOT / "data" / "registr_smluv" / "contracts.json"
 VU_SEED = ROOT / "data" / "inbox" / "vu_seed.json"
+VU_ENRICHMENT = ROOT / "data" / "inbox" / "vu_enrichment_2026-09-22.json"
 
 
 def clean(v):
@@ -111,6 +112,29 @@ def normalize_vu_seed():
     rows = json.loads(VU_SEED.read_text(encoding="utf-8"))
     if not isinstance(rows, list):
         return 0
+    # Independently verified enrichment records override matching seed rows.
+    if VU_ENRICHMENT.exists():
+        extra = json.loads(VU_ENRICHMENT.read_text(encoding="utf-8"))
+        if isinstance(extra, list):
+            merged = list(rows)
+            def key(r):
+                sid = clean(r.get("source_id") or r.get("procurement_id"))
+                if sid:
+                    return ("id", sid)
+                return ("text", clean(r.get("source_url")), clean(r.get("title")), clean(r.get("date")))
+            positions = {key(r): i for i, r in enumerate(merged) if isinstance(r, dict)}
+            for r in extra:
+                if not isinstance(r, dict) or not clean(r.get("title")):
+                    continue
+                k = key(r)
+                if k in positions:
+                    base = dict(merged[positions[k]])
+                    base.update({kk: vv for kk, vv in r.items() if vv not in (None, "")})
+                    merged[positions[k]] = base
+                else:
+                    positions[k] = len(merged)
+                    merged.append(r)
+            rows = merged
     target = OUT / "vhodne-uverejneni"
     target.mkdir(parents=True, exist_ok=True)
     for old in target.glob("*.json"):
@@ -177,7 +201,8 @@ def main():
         "registr_smluv_records": count,
         "vhodne_uverejneni_seed_records": vu_count,
         "vhodne_uverejneni_verified_web_records": vu_verified_count,
-        "sources": ["registr-smluv", "vhodne-uverejneni-seed"],
+        "sources": ["registr-smluv", "vhodne-uverejneni-seed", "vhodne-uverejneni-enrichment"],
+        "vhodne_uverejneni_enrichment_records": len(json.loads(VU_ENRICHMENT.read_text(encoding="utf-8"))) if VU_ENRICHMENT.exists() else 0,
     }
     OUT.mkdir(parents=True, exist_ok=True)
     (OUT / "manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
