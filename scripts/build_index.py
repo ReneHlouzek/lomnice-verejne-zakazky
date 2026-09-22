@@ -46,6 +46,7 @@ def main():
           "project_type":p.get("project_type") or p.get("canonical",{}).get("project_type","other"),
           "record_types":p.get("canonical",{}).get("lifecycle",{}).get("type_counts",{}),
           "source_count":len(p.get("sources",[])),
+          "source_types":sorted({str((s.get("record") or s).get("source") or s.get("source") or "").strip() for s in p.get("sources",[]) if str((s.get("record") or s).get("source") or s.get("source") or "").strip()}),
           "first_observed":p.get("canonical",{}).get("dates",{}).get("first_observed"),
           "last_observed":p.get("canonical",{}).get("dates",{}).get("last_observed"),
           "supplier_ico":p.get("canonical",{}).get("supplier_ico"),
