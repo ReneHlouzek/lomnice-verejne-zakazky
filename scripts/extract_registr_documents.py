@@ -61,6 +61,15 @@ def process(path:Path):
             clean_name=clean_name.split("https://smlouvy.gov.cz/smlouva/soubor/",1)[0]
         clean_name=clean_name.strip()
         item={"index":i,"name":clean_name,"url":url}
+        existing=OUT/sid/f"{i:03d}.txt"
+        if existing.exists():
+            text=existing.read_text(encoding="utf-8",errors="replace")
+            item["text_available"]=bool(text)
+            item["text_chars"]=len(text)
+            item["text_file"]=f"data/documents/registr-smluv/{sid}/{i:03d}.txt"
+            item["status"]="retained_existing_text"
+            result["documents"].append(item)
+            continue
         try:
             meta,text=extract(url)
             item.update(meta)
