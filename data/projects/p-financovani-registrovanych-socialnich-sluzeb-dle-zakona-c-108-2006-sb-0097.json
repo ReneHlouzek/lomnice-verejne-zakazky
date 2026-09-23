@@ -1,0 +1,156 @@
+{
+  "id": "p-financovani-registrovanych-socialnich-sluzeb-dle-zakona-c-108-2006-sb-0097",
+  "title": "Financování registrovaných sociálních služeb dle zákona č. 108/2006 Sb., o sociálních službách, ve znění pozdějších předpisů.",
+  "buyer_ico": "00275905",
+  "status": "unclassified",
+  "project_type": "other",
+  "canonical": {
+    "title": "Financování registrovaných sociálních služeb dle zákona č. 108/2006 Sb., o sociálních službách, ve znění pozdějších předpisů.",
+    "supplier_ico": "70891508",
+    "identifiers": [],
+    "lifecycle": {
+      "events": [
+        {
+          "date": "2017-02-27",
+          "type": "source_record",
+          "source": "registr-smluv",
+          "source_id": "1287978",
+          "title": "Financování registrovaných sociálních služeb dle zákona č. 108/2006 Sb., o sociálních službách, ve znění pozdějších předpisů.",
+          "price": 896000.0
+        }
+      ],
+      "event_count": 1,
+      "type_counts": {
+        "source_record": 1
+      },
+      "dominant_type": "source_record"
+    },
+    "project_type": "other",
+    "procurement_signal": {
+      "level": "none",
+      "label": "Bez rozpoznané vazby na zakázku",
+      "reason": "V dostupném textu nebyl nalezen dostatečný signál."
+    },
+    "dates": {
+      "first_observed": "2017-02-27",
+      "last_observed": "2017-02-27"
+    },
+    "financial": {
+      "observed_prices": [],
+      "observed_vat_included_prices": [],
+      "expected_values": [],
+      "initial_contract_price": null,
+      "latest_observed_price": null,
+      "expected_to_contract_ratio": null
+    },
+    "procurement": {
+      "procedures": [],
+      "regimes": [],
+      "funded": false,
+      "known_addenda_numbers": []
+    },
+    "verification": {
+      "levels": [],
+      "project_registry_ids": [],
+      "detail_verified_sources": 0
+    },
+    "source_count": 1,
+    "source_types": [
+      "registr-smluv"
+    ],
+    "record_count": 1
+  },
+  "sources": [
+    {
+      "source_file": "data/sources/registr-smluv/rs-000015.json",
+      "source_id": "1287978",
+      "record": {
+        "source": "registr-smluv",
+        "source_id": "1287978",
+        "version_id": "1380934",
+        "source_url": "https://smlouvy.gov.cz/smlouva/1287978",
+        "title": "Financování registrovaných sociálních služeb dle zákona č. 108/2006 Sb., o sociálních službách, ve znění pozdějších předpisů.",
+        "buyer_ico": "00275905",
+        "supplier_ico": "70891508",
+        "supplier_name": "Liberecký kraj",
+        "contract_number": "05-OLP/618/2017",
+        "date": "2017-02-27",
+        "signed_date": "2017-02-27",
+        "published": null,
+        "price": 896000.0,
+        "status": null,
+        "raw": {
+          "source": "registr-smluv",
+          "source_id": "1287978",
+          "version_id": "1380934",
+          "source_url": "https://smlouvy.gov.cz/smlouva/1287978",
+          "title": "Financování registrovaných sociálních služeb dle zákona č. 108/2006 Sb., o sociálních službách, ve znění pozdějších předpisů.",
+          "buyer_ico": "00275905",
+          "supplier_ico": "70891508",
+          "contract_number": "05-OLP/618/2017",
+          "date": "2017-02-27",
+          "signed_date": "2017-02-27",
+          "published": "",
+          "price": "896000",
+          "value": "896000",
+          "publisher": "",
+          "subject": "Financování registrovaných sociálních služeb dle zákona č. 108/2006 Sb., o sociálních službách, ve znění pozdějších předpisů.",
+          "counterparty": "Liberecký kraj",
+          "detail_url": "https://smlouvy.gov.cz/smlouva/1287978"
+        },
+        "_source_file": "data/sources/registr-smluv/rs-000015.json"
+      }
+    }
+  ],
+  "analysis": {
+    "schema_version": 4,
+    "project_id": "p-financovani-registrovanych-socialnich-sluzeb-dle-zakona-c-108-2006-sb-0097",
+    "signal_count": 1,
+    "signals": [
+      {
+        "code": "single_source",
+        "level": "info",
+        "message": "Projekt je zatím doložen pouze jedním zdrojovým záznamem.",
+        "evidence": []
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2017-02-27",
+        "event": "source_record",
+        "source": "registr-smluv",
+        "source_id": "1287978",
+        "title": "Financování registrovaných sociálních služeb dle zákona č. 108/2006 Sb., o sociálních službách, ve znění pozdějších předpisů.",
+        "price": 896000.0,
+        "deadline": null
+      }
+    ],
+    "financial": {
+      "baseline_price": 896000.0,
+      "current_observed_price": 896000.0,
+      "absolute_change": 0.0,
+      "percent_change": null,
+      "observed_prices": [
+        896000.0
+      ],
+      "addendum_count": 0,
+      "declared_addenda_count": 0
+    },
+    "metrics": {
+      "source_count": 1,
+      "supplier_count": 1,
+      "price_values": [
+        896000.0
+      ],
+      "date_values": [
+        "2017-02-27"
+      ],
+      "document_count": 0,
+      "deadline_observations": 0,
+      "expected_value_observations": 0,
+      "participant_observations": 0,
+      "bid_observations": 0
+    },
+    "methodology": "Signals are descriptive checks only; they do not establish wrongdoing or causality. They identify differences worth checking and retain source provenance."
+  }
+}
