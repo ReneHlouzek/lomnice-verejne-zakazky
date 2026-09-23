@@ -123,6 +123,8 @@ jobs:
         run: python scripts/extract_vu_documents.py
       - name: Extract Registr smluv attachments and PDF text
         run: python scripts/extract_registr_documents.py
+      - name: Analyze retained document text
+        run: python scripts/analyze_documents.py
       - name: Normalize source records
         run: python scripts/normalize_sources.py
       - name: Validate normalized records
