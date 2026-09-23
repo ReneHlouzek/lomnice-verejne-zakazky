@@ -1,49 +1,11 @@
 {
-  "updated_at": "2026-09-23T18:34:48Z",
+  "updated_at": "2026-09-23T19:19:20Z",
   "pages_checked": 31,
   "declared_documents": 31,
   "documents_discovered": 1,
   "documents_downloaded": 0,
   "documents_text_extracted": 0,
   "records": [
-    {
-      "source": "vhodne-uverejneni",
-      "source_id": "42ccd73a00ab",
-      "page_url": "https://www.vhodne-uverejneni.cz/smlouvy-organizace/mesto-lomnice-nad-popelkou",
-      "title": "Veřejné osvětlení Nové Dvory - 1. etapa",
-      "document_count_declared": null,
-      "documents": [],
-      "status": "page_error",
-      "error": "VU page unavailable: Command '['curl', '-4', '--fail', '--location', '--http1.1', '--retry', '2', '--retry-delay', '1', '--connect-timeout', '8', '--max-time', '20', '-A', 'Lomnice-Verejne-Zakazky/1.0 (public-data-archive)', '-H', 'Accept: text/html,application/xhtml+xml', 'https://www.vhodne-uverejneni.cz/smlouvy-organizace/mesto-lomnice-nad-popelkou']' returned non-zero exit status 28."
-    },
-    {
-      "source": "vhodne-uverejneni",
-      "source_id": "6490d3752523",
-      "page_url": "https://www.vhodne-uverejneni.cz/zakazka/restauratorske-prace-na-spodnich-castech-marianskeho-sloupu-v-lomnici-nad-popelkou",
-      "title": "Restaurátorské práce na spodních částech mariánského sloupu v Lomnici nad Popelkou",
-      "document_count_declared": null,
-      "documents": [],
-      "status": "page_error",
-      "error": "VU page unavailable: Command '['curl', '-4', '--fail', '--location', '--http1.1', '--retry', '2', '--retry-delay', '1', '--connect-timeout', '8', '--max-time', '20', '-A', 'Lomnice-Verejne-Zakazky/1.0 (public-data-archive)', '-H', 'Accept: text/html,application/xhtml+xml', 'https://www.vhodne-uverejneni.cz/zakazka/restauratorske-prace-na-spodnich-castech-marianskeho-sloupu-v-lomnici-nad-popelkou']' returned non-zero exit status 28."
-    },
-    {
-      "source": "vhodne-uverejneni",
-      "source_id": "9fa7201122f8",
-      "page_url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3212050&h=orderdocument&m=xenorders&token=",
-      "title": "Obnova komunikace Lomnice nad Popelkou – Chlum, I. etapa",
-      "document_count_declared": null,
-      "documents": [
-        {
-          "index": 1,
-          "label": "Obnova komunikace Lomnice nad Popelkou – Chlum, I. etapa",
-          "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3212050&h=orderdocument&m=xenorders&token=",
-          "status": "download_error",
-          "error": "Command '['curl', '--fail', '--location', '--http1.1', '--retry', '3', '--retry-delay', '2', '--connect-timeout', '8', '--max-time', '25', '-A', 'Lomnice-Verejne-Zakazky/1.0 (public-data-archive)', '-H', 'Accept: application/pdf,*/*', 'https://www.vhodne-uverejneni.cz/index.php?a=download&document=3212050&h=orderdocument&m=xenorders&token=']' returned non-zero exit status 28."
-        }
-      ],
-      "status": "ok",
-      "transport": "direct_document_url"
-    },
     {
       "source": "vhodne-uverejneni",
       "source_id": "P15V00002212",
@@ -286,7 +248,45 @@
     },
     {
       "source": "vhodne-uverejneni",
-      "source_id": "aa111e3e347c",
+      "source_id": "vu-42ccd73a00ab",
+      "page_url": "https://www.vhodne-uverejneni.cz/smlouvy-organizace/mesto-lomnice-nad-popelkou",
+      "title": "Veřejné osvětlení Nové Dvory - 1. etapa",
+      "document_count_declared": null,
+      "documents": [],
+      "status": "page_error",
+      "error": "VU page unavailable: Command '['curl', '-4', '--fail', '--location', '--http1.1', '--retry', '2', '--retry-delay', '1', '--connect-timeout', '8', '--max-time', '20', '-A', 'Lomnice-Verejne-Zakazky/1.0 (public-data-archive)', '-H', 'Accept: text/html,application/xhtml+xml', 'https://www.vhodne-uverejneni.cz/smlouvy-organizace/mesto-lomnice-nad-popelkou']' returned non-zero exit status 28."
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "vu-6490d3752523",
+      "page_url": "https://www.vhodne-uverejneni.cz/zakazka/restauratorske-prace-na-spodnich-castech-marianskeho-sloupu-v-lomnici-nad-popelkou",
+      "title": "Restaurátorské práce na spodních částech mariánského sloupu v Lomnici nad Popelkou",
+      "document_count_declared": null,
+      "documents": [],
+      "status": "page_error",
+      "error": "VU page unavailable: Command '['curl', '-4', '--fail', '--location', '--http1.1', '--retry', '2', '--retry-delay', '1', '--connect-timeout', '8', '--max-time', '20', '-A', 'Lomnice-Verejne-Zakazky/1.0 (public-data-archive)', '-H', 'Accept: text/html,application/xhtml+xml', 'https://www.vhodne-uverejneni.cz/zakazka/restauratorske-prace-na-spodnich-castech-marianskeho-sloupu-v-lomnici-nad-popelkou']' returned non-zero exit status 28."
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "vu-9fa7201122f8",
+      "page_url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3212050&h=orderdocument&m=xenorders&token=",
+      "title": "Obnova komunikace Lomnice nad Popelkou – Chlum, I. etapa",
+      "document_count_declared": null,
+      "documents": [
+        {
+          "index": 1,
+          "label": "Obnova komunikace Lomnice nad Popelkou – Chlum, I. etapa",
+          "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3212050&h=orderdocument&m=xenorders&token=",
+          "status": "download_error",
+          "error": "Command '['curl', '--fail', '--location', '--http1.1', '--retry', '3', '--retry-delay', '2', '--connect-timeout', '8', '--max-time', '25', '-A', 'Lomnice-Verejne-Zakazky/1.0 (public-data-archive)', '-H', 'Accept: application/pdf,*/*', 'https://www.vhodne-uverejneni.cz/index.php?a=download&document=3212050&h=orderdocument&m=xenorders&token=']' returned non-zero exit status 28."
+        }
+      ],
+      "status": "ok",
+      "transport": "direct_document_url"
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "vu-aa111e3e347c",
       "page_url": "https://www.vhodne-uverejneni.cz/zakazka/karavanove-stani-koupaliste-lomnice-nad-popelkou",
       "title": "Karavanové stání Koupaliště, Lomnice nad Popelkou",
       "document_count_declared": null,
@@ -296,7 +296,7 @@
     },
     {
       "source": "vhodne-uverejneni",
-      "source_id": "d67d36a20afb",
+      "source_id": "vu-d67d36a20afb",
       "page_url": "https://www.vhodne-uverejneni.cz/profil/mesto-lomnice-nad-popelkou",
       "title": "Lomnice n. P. - VO Smetanova",
       "document_count_declared": null,
@@ -306,7 +306,7 @@
     },
     {
       "source": "vhodne-uverejneni",
-      "source_id": "ebd1ca9c3e3c",
+      "source_id": "vu-ebd1ca9c3e3c",
       "page_url": "https://www.vhodne-uverejneni.cz/zakazka/rekonstrukce-topneho-systemu-vcetne-zdroje-tepla-v-objektu-k-urnovemu-haji-cp-118-lomnice-nad-popelkou",
       "title": "Rekonstrukce topného systému včetně zdroje tepla v objektu K Urnovému háji čp. 118, Lomnice nad Popelkou",
       "document_count_declared": null,
@@ -316,7 +316,7 @@
     },
     {
       "source": "vhodne-uverejneni",
-      "source_id": "f58017e9cad3",
+      "source_id": "vu-f58017e9cad3",
       "page_url": "https://www.vhodne-uverejneni.cz/index.php?a=detail&contract=95276&h=contractsregister&m=xenorders",
       "title": "Modernizace UČEBEN ZUŠ - stavební práce",
       "document_count_declared": 15,

@@ -1,6 +1,77 @@
 {
   "version": 2,
-  "documents_analyzed": 0,
+  "documents_analyzed": 2,
   "method": "Pravidlová extrakce z textu PDF; nejde o právní ani ekonomické hodnocení.",
-  "documents": []
+  "documents": [
+    {
+      "source": "registr-smluv",
+      "source_id": "36813062",
+      "source_url": "https://smlouvy.gov.cz/smlouva/36813062",
+      "title": "Smlouva o poskytnutí rozmnoženiny díla - Lomnice nad Popelkou",
+      "document_name": "Smlouva_Lomnice_n.Popelkou%20komplet.pdf",
+      "text_file": "data/documents/registr-smluv/36813062/001.txt",
+      "text_chars": 8853,
+      "document_types": [
+        "contract"
+      ],
+      "signals": {
+        "contract": 1,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [
+        38006.18,
+        180981.82
+      ],
+      "dates": [
+        "27.4.2016"
+      ],
+      "snippets": [
+        "takto ujednaným účelem užití rozmnoženiny díla souhlasí. ČI. II Poplatky, predikovaná celková částka a platební podmínky 1) Predlohu pro zhotovení rozmnoženiny díla dle ČI. I odst. 1) této smlouvy poskytne Národní knihovna uživateli za částku ve výši 180.981,82 Kč, dále 21% DPH ve výši 38.006,18 Kč, celkem tedy vč. DPH za částku 218.988,- Kč"
+      ]
+    },
+    {
+      "source": "registr-smluv",
+      "source_id": "36978239",
+      "source_url": "https://smlouvy.gov.cz/smlouva/36978239",
+      "title": "Smlouva o poskytnutí individuální dotace Město Lomnice nad Popelkou, ul 5. května",
+      "document_name": "Smlouva_individualni_dotace_Lomnice_OLP-02908-2026_sig.pdf",
+      "text_file": "data/documents/registr-smluv/36978239/001.txt",
+      "text_chars": 24954,
+      "document_types": [
+        "contract",
+        "grant",
+        "deadline"
+      ],
+      "signals": {
+        "contract": 1,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 2,
+        "tender": 0,
+        "deadline": 2
+      },
+      "amounts_czk": [
+        50000.0,
+        1584824.0
+      ],
+      "dates": [
+        "19.02.2027",
+        "2.11.2023",
+        "25.8.2026",
+        "31.12.2026"
+      ],
+      "snippets": [
+        "věrečném vyúčtování projektu nižší než celková výše poskytnuté dotace, bude dotace proplacena ve výši doložených dokladů. 3. V případě, že způsobilé výdaje projektu budou vyšší než výše poskytnuté dotace, hradí toto navýšení výdajů příjemce z vlastních zdrojů. 4. Příjemci může být poskytnuta záloha max. do výše 100 % z celkové přiznané dotace",
+        "práci konané mimo pracovní poměr musí být předmět a cena prací a termín realizace), e) dodatek ke smlouvě o dílo nebo novou objednávku v případě navýšení prací nad rámec smlouvy o dílo nebo objednávky. 10. Nevyčerpané, resp. neproinvestované finanční prostředky poskytnuté v souladu s touto smlouvou je příjemce povinen vrátit nejpozději do",
+        "Stránka 1 z 12 *KULBX00YOAZO* Smlouva o poskytnutí účelové dotace z rozpočtu Libereckého kraje INDIVIDUÁLNÍ DOTACE OLP/02908/2026 schválená Zastupitelstvem Libereckého kraje dne 25.8.2026 usnesením č. 413/26/ZK Smluvní strany: Liberecký kraj se sídlem U Jezu 642/2a, 460 01 Liberec IV - Perštýn korespondenč",
+        "a alkohol a tabák a výrobky z nich. 4. Termín zahájení realizace projektu je 2.11.2023 a termín ukončení realizace projektu je nejpozději 31.12.2026. 5. Ukončením realizace projektu se rozumí dokončení veškerých aktivit na projektu. 6. Projekt musí být vyúčtován do 50 kalendářních dnů po ukončení realizace projektu, nejpozději do 19.02.2027."
+      ]
+    }
+  ]
 }
