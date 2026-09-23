@@ -14,7 +14,7 @@ permissions:
 
 concurrency:
   group: sync-verejne-zakazky
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   fetch-vu:
