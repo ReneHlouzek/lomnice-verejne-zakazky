@@ -43,10 +43,14 @@ def process(path:Path):
     for i,a in enumerate(attachments,1):
         url=a.get("url") if isinstance(a,dict) else str(a)
         name=a.get("name","") if isinstance(a,dict) else ""
-        if not url or url in seen:
+        if not url or url in seen or not url.lower().split("?",1)[0].endswith(".pdf"):
             continue
         seen.add(url)
-        item={"index":i,"name":name,"url":url}
+        clean_name=name
+        if "https://smlouvy.gov.cz/smlouva/soubor/" in clean_name:
+            clean_name=clean_name.split("https://smlouvy.gov.cz/smlouva/soubor/",1)[0]
+        clean_name=clean_name.strip()
+        item={"index":i,"name":clean_name,"url":url}
         try:
             meta,text=extract(url)
             item.update(meta)
