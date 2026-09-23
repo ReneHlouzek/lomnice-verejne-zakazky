@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-23T19:28:49Z",
+  "updated_at": "2026-09-23T20:27:47Z",
   "records_checked": 109,
   "attachments_declared": 2,
   "documents_discovered": 2,
@@ -677,7 +677,8 @@
           "content_type": "application/pdf",
           "text_available": true,
           "text_chars": 8853,
-          "text_file": "data/documents/registr-smluv/36813062/001.txt"
+          "text_file": "data/documents/registr-smluv/36813062/001.txt",
+          "status": "retained_from_previous_run"
         }
       ],
       "status": "ok"
@@ -697,7 +698,8 @@
           "content_type": "application/pdf",
           "text_available": true,
           "text_chars": 24954,
-          "text_file": "data/documents/registr-smluv/36978239/001.txt"
+          "text_file": "data/documents/registr-smluv/36978239/001.txt",
+          "status": "retained_from_previous_run"
         }
       ],
       "status": "ok"

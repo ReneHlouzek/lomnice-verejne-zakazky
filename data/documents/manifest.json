@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-23T19:28:32Z",
+  "updated_at": "2026-09-23T20:27:46Z",
   "pages_checked": 31,
   "declared_documents": 31,
   "documents_discovered": 1,
@@ -277,8 +277,7 @@
           "index": 1,
           "label": "Obnova komunikace Lomnice nad Popelkou – Chlum, I. etapa",
           "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3212050&h=orderdocument&m=xenorders&token=",
-          "status": "download_error",
-          "error": "Command '['curl', '--fail', '--location', '--http1.1', '--retry', '3', '--retry-delay', '2', '--connect-timeout', '8', '--max-time', '25', '-A', 'Lomnice-Verejne-Zakazky/1.0 (public-data-archive)', '-H', 'Accept: application/pdf,*/*', 'https://www.vhodne-uverejneni.cz/index.php?a=download&document=3212050&h=orderdocument&m=xenorders&token=']' returned non-zero exit status 28."
+          "status": "retained_from_previous_run"
         }
       ],
       "status": "ok",
