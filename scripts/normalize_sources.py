@@ -2,6 +2,7 @@
 """Normalize acquired official-source records into data/sources/."""
 from __future__ import annotations
 
+import hashlib
 import json
 import re
 from datetime import datetime, timezone
@@ -146,7 +147,7 @@ def normalize_vu_seed():
             continue
         record = {
             "source": "vhodne-uverejneni",
-            "source_id": clean(r.get("source_id") or r.get("procurement_id")),
+            "source_id": clean(r.get("source_id") or r.get("procurement_id")) or ("vu-" + hashlib.sha1(clean(r.get("source_url") or r.get("title") or "").encode("utf-8")).hexdigest()[:12]),
             "procurement_id": clean(r.get("procurement_id")),
             "source_url": clean(r.get("source_url")),
             "title": clean(r.get("title")),
