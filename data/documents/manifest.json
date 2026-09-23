@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-23T04:50:05Z",
+  "updated_at": "2026-09-23T05:12:40Z",
   "pages_checked": 31,
   "declared_documents": 31,
   "documents_discovered": 0,
@@ -14,7 +14,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "HTTPSConnectionPool(host='www.vhodne-uverejneni.cz', port=443): Max retries exceeded with url: /smlouvy-organizace/mesto-lomnice-nad-popelkou (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.vhodne-uverejneni.cz', port=443) at 0x7fdc47d84980>, 'Connection to www.vhodne-uverejneni.cz timed out. (connect timeout=45)'))"
+      "error": "422 Client Error: Unprocessable Entity for url: https://r.jina.ai/http://www.vhodne-uverejneni.cz/smlouvy-organizace/mesto-lomnice-nad-popelkou"
     },
     {
       "source": "vhodne-uverejneni",
@@ -24,7 +24,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "HTTPSConnectionPool(host='www.vhodne-uverejneni.cz', port=443): Max retries exceeded with url: /zakazka/restauratorske-prace-na-spodnich-castech-marianskeho-sloupu-v-lomnici-nad-popelkou (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.vhodne-uverejneni.cz', port=443) at 0x7fdc47dd7290>, 'Connection to www.vhodne-uverejneni.cz timed out. (connect timeout=45)'))"
+      "error": "422 Client Error: Unprocessable Entity for url: https://r.jina.ai/http://www.vhodne-uverejneni.cz/zakazka/restauratorske-prace-na-spodnich-castech-marianskeho-sloupu-v-lomnici-nad-popelkou"
     },
     {
       "source": "vhodne-uverejneni",
@@ -34,7 +34,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "HTTPSConnectionPool(host='www.vhodne-uverejneni.cz', port=443): Max retries exceeded with url: /index.php?a=download&document=3212050&h=orderdocument&m=xenorders&token= (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.vhodne-uverejneni.cz', port=443) at 0x7fdc47d85940>, 'Connection to www.vhodne-uverejneni.cz timed out. (connect timeout=45)'))"
+      "error": "422 Client Error: Unprocessable Entity for url: https://r.jina.ai/http://www.vhodne-uverejneni.cz/index.php?a=download&document=3212050&h=orderdocument&m=xenorders&token="
     },
     {
       "source": "vhodne-uverejneni",
@@ -44,7 +44,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "HTTPSConnectionPool(host='www.vhodne-uverejneni.cz', port=443): Max retries exceeded with url: /zakazka/mesto-lomnice-nad-popelkou-cisternova-automobilova-strikacka (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.vhodne-uverejneni.cz', port=443) at 0x7fdc47d85760>, 'Connection to www.vhodne-uverejneni.cz timed out. (connect timeout=45)'))"
+      "error": "422 Client Error: Unprocessable Entity for url: https://r.jina.ai/http://www.vhodne-uverejneni.cz/zakazka/mesto-lomnice-nad-popelkou-cisternova-automobilova-strikacka"
     },
     {
       "source": "vhodne-uverejneni",
@@ -54,7 +54,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "HTTPSConnectionPool(host='www.vhodne-uverejneni.cz', port=443): Max retries exceeded with url: /zakazka/projektova-dokumentace-mistnich-komunikaci-lomnice-nad-popelkou (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.vhodne-uverejneni.cz', port=443) at 0x7fdc47d87320>, 'Connection to www.vhodne-uverejneni.cz timed out. (connect timeout=45)'))"
+      "error": "422 Client Error: Unprocessable Entity for url: https://r.jina.ai/http://www.vhodne-uverejneni.cz/zakazka/projektova-dokumentace-mistnich-komunikaci-lomnice-nad-popelkou"
     },
     {
       "source": "vhodne-uverejneni",
@@ -64,7 +64,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "HTTPSConnectionPool(host='www.vhodne-uverejneni.cz', port=443): Max retries exceeded with url: /zakazka/domov-pro-osoby-s-poruchou-autistickeho-spektra-1 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.vhodne-uverejneni.cz', port=443) at 0x7fdc47d84bc0>, 'Connection to www.vhodne-uverejneni.cz timed out. (connect timeout=45)'))"
+      "error": "422 Client Error: Unprocessable Entity for url: https://r.jina.ai/http://www.vhodne-uverejneni.cz/zakazka/domov-pro-osoby-s-poruchou-autistickeho-spektra-1"
     },
     {
       "source": "vhodne-uverejneni",
@@ -74,7 +74,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "HTTPSConnectionPool(host='www.vhodne-uverejneni.cz', port=443): Max retries exceeded with url: /zakazka/automobil-pro-terenni-socialni-sluzbu-pecovatelske-sluzby-lomnice-nad-popelkou-prispevkove-organizace (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.vhodne-uverejneni.cz', port=443) at 0x7fdc47ddcc50>, 'Connection to www.vhodne-uverejneni.cz timed out. (connect timeout=45)'))"
+      "error": "422 Client Error: Unprocessable Entity for url: https://r.jina.ai/http://www.vhodne-uverejneni.cz/zakazka/automobil-pro-terenni-socialni-sluzbu-pecovatelske-sluzby-lomnice-nad-popelkou-prispevkove-organizace"
     },
     {
       "source": "vhodne-uverejneni",
@@ -84,7 +84,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "HTTPSConnectionPool(host='www.vhodne-uverejneni.cz', port=443): Max retries exceeded with url: /zakazka/obnova-telocvicen-pri-zs-t-g-masaryka-v-lomnici-nad-popelkou (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.vhodne-uverejneni.cz', port=443) at 0x7fdc47dd7260>, 'Connection to www.vhodne-uverejneni.cz timed out. (connect timeout=45)'))"
+      "error": "422 Client Error: Unprocessable Entity for url: https://r.jina.ai/http://www.vhodne-uverejneni.cz/zakazka/obnova-telocvicen-pri-zs-t-g-masaryka-v-lomnici-nad-popelkou"
     },
     {
       "source": "vhodne-uverejneni",
@@ -94,7 +94,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "HTTPSConnectionPool(host='www.vhodne-uverejneni.cz', port=443): Max retries exceeded with url: /zakazka/pristavba-servisniho-objektu-lomnice-nad-popelkou (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.vhodne-uverejneni.cz', port=443) at 0x7fdc47d843e0>, 'Connection to www.vhodne-uverejneni.cz timed out. (connect timeout=45)'))"
+      "error": "422 Client Error: Unprocessable Entity for url: https://r.jina.ai/http://www.vhodne-uverejneni.cz/zakazka/pristavba-servisniho-objektu-lomnice-nad-popelkou"
     },
     {
       "source": "vhodne-uverejneni",
@@ -104,7 +104,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "HTTPSConnectionPool(host='www.vhodne-uverejneni.cz', port=443): Max retries exceeded with url: /zakazka/instalace-domovniho-telefonu-a-rozvodu-strukturovane-kabelaze-nnp-lomnice-nad-popelkou (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.vhodne-uverejneni.cz', port=443) at 0x7fdc47dd58e0>, 'Connection to www.vhodne-uverejneni.cz timed out. (connect timeout=45)'))"
+      "error": "422 Client Error: Unprocessable Entity for url: https://r.jina.ai/http://www.vhodne-uverejneni.cz/zakazka/instalace-domovniho-telefonu-a-rozvodu-strukturovane-kabelaze-nnp-lomnice-nad-popelkou"
     },
     {
       "source": "vhodne-uverejneni",
@@ -114,7 +114,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "HTTPSConnectionPool(host='www.vhodne-uverejneni.cz', port=443): Max retries exceeded with url: /zakazka/vydani-obrazove-publikace-lomnice-nad-popelkou-historie-skolstvi (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.vhodne-uverejneni.cz', port=443) at 0x7fdc47ddc5f0>, 'Connection to www.vhodne-uverejneni.cz timed out. (connect timeout=45)'))"
+      "error": "422 Client Error: Unprocessable Entity for url: https://r.jina.ai/http://www.vhodne-uverejneni.cz/zakazka/vydani-obrazove-publikace-lomnice-nad-popelkou-historie-skolstvi"
     },
     {
       "source": "vhodne-uverejneni",
@@ -124,7 +124,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "HTTPSConnectionPool(host='www.vhodne-uverejneni.cz', port=443): Max retries exceeded with url: /zakazka/silnice-ii-284-lomnice-nad-popelkou-ulice-5-kvetna (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.vhodne-uverejneni.cz', port=443) at 0x7fdc47d85790>, 'Connection to www.vhodne-uverejneni.cz timed out. (connect timeout=45)'))"
+      "error": "422 Client Error: Unprocessable Entity for url: https://r.jina.ai/http://www.vhodne-uverejneni.cz/zakazka/silnice-ii-284-lomnice-nad-popelkou-ulice-5-kvetna"
     },
     {
       "source": "vhodne-uverejneni",
@@ -134,7 +134,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "HTTPSConnectionPool(host='www.vhodne-uverejneni.cz', port=443): Max retries exceeded with url: /index.php?a=detail&contract=92577&h=contractsregister&m=xenorders (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.vhodne-uverejneni.cz', port=443) at 0x7fdc47d85940>, 'Connection to www.vhodne-uverejneni.cz timed out. (connect timeout=45)'))"
+      "error": "422 Client Error: Unprocessable Entity for url: https://r.jina.ai/http://www.vhodne-uverejneni.cz/index.php?a=detail&contract=92577&h=contractsregister&m=xenorders"
     },
     {
       "source": "vhodne-uverejneni",
@@ -144,7 +144,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "HTTPSConnectionPool(host='www.vhodne-uverejneni.cz', port=443): Max retries exceeded with url: /zakazka/obnova-mvn-technolen-lomnice-nad-popelkou (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.vhodne-uverejneni.cz', port=443) at 0x7fdc47d840e0>, 'Connection to www.vhodne-uverejneni.cz timed out. (connect timeout=45)'))"
+      "error": "422 Client Error: Unprocessable Entity for url: https://r.jina.ai/http://www.vhodne-uverejneni.cz/zakazka/obnova-mvn-technolen-lomnice-nad-popelkou"
     },
     {
       "source": "vhodne-uverejneni",
@@ -154,7 +154,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "HTTPSConnectionPool(host='www.vhodne-uverejneni.cz', port=443): Max retries exceeded with url: /zakazka/rekonstrukce-verejneho-osvetleni-ulice-jilemnicka-a-cast-plk-truhlare-lomnice-nad-popelkou (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.vhodne-uverejneni.cz', port=443) at 0x7fdc47dd6de0>, 'Connection to www.vhodne-uverejneni.cz timed out. (connect timeout=45)'))"
+      "error": "422 Client Error: Unprocessable Entity for url: https://r.jina.ai/http://www.vhodne-uverejneni.cz/zakazka/rekonstrukce-verejneho-osvetleni-ulice-jilemnicka-a-cast-plk-truhlare-lomnice-nad-popelkou"
     },
     {
       "source": "vhodne-uverejneni",
@@ -164,7 +164,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "HTTPSConnectionPool(host='www.vhodne-uverejneni.cz', port=443): Max retries exceeded with url: /zakazka/oprava-strechy-domu-c-p-32-ul-antala-staska-v-lomnici-nad-popelkou (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.vhodne-uverejneni.cz', port=443) at 0x7fdc47dd6330>, 'Connection to www.vhodne-uverejneni.cz timed out. (connect timeout=45)'))"
+      "error": "422 Client Error: Unprocessable Entity for url: https://r.jina.ai/http://www.vhodne-uverejneni.cz/zakazka/oprava-strechy-domu-c-p-32-ul-antala-staska-v-lomnici-nad-popelkou"
     },
     {
       "source": "vhodne-uverejneni",
@@ -174,7 +174,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "HTTPSConnectionPool(host='www.vhodne-uverejneni.cz', port=443): Max retries exceeded with url: /zakazka/revitalizace-rybnika-matous-a-jeho-okoli-v-lomnici-nad-popelkou (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.vhodne-uverejneni.cz', port=443) at 0x7fdc47d84e00>, 'Connection to www.vhodne-uverejneni.cz timed out. (connect timeout=45)'))"
+      "error": "422 Client Error: Unprocessable Entity for url: https://r.jina.ai/http://www.vhodne-uverejneni.cz/zakazka/revitalizace-rybnika-matous-a-jeho-okoli-v-lomnici-nad-popelkou"
     },
     {
       "source": "vhodne-uverejneni",
@@ -184,7 +184,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "HTTPSConnectionPool(host='www.vhodne-uverejneni.cz', port=443): Max retries exceeded with url: /zakazka/revitalizace-verejneho-prostranstvi-na-hrbitove-2-etapa-lomnice-nad-popelkou (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.vhodne-uverejneni.cz', port=443) at 0x7fdc47ddc380>, 'Connection to www.vhodne-uverejneni.cz timed out. (connect timeout=45)'))"
+      "error": "422 Client Error: Unprocessable Entity for url: https://r.jina.ai/http://www.vhodne-uverejneni.cz/zakazka/revitalizace-verejneho-prostranstvi-na-hrbitove-2-etapa-lomnice-nad-popelkou"
     },
     {
       "source": "vhodne-uverejneni",
@@ -194,7 +194,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "HTTPSConnectionPool(host='www.vhodne-uverejneni.cz', port=443): Max retries exceeded with url: /zakazka/opravy-mistnich-komunikaci-ve-meste-lomnice-nad-popelkou (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.vhodne-uverejneni.cz', port=443) at 0x7fdc47dd7b30>, 'Connection to www.vhodne-uverejneni.cz timed out. (connect timeout=45)'))"
+      "error": "422 Client Error: Unprocessable Entity for url: https://r.jina.ai/http://www.vhodne-uverejneni.cz/zakazka/opravy-mistnich-komunikaci-ve-meste-lomnice-nad-popelkou"
     },
     {
       "source": "vhodne-uverejneni",
@@ -204,7 +204,7 @@
       "document_count_declared": 6,
       "documents": [],
       "status": "page_error",
-      "error": "HTTPSConnectionPool(host='www.vhodne-uverejneni.cz', port=443): Max retries exceeded with url: /index.php?a=detail&contract=101051&h=contractsregister&m=xenorders (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.vhodne-uverejneni.cz', port=443) at 0x7fdc47d86480>, 'Connection to www.vhodne-uverejneni.cz timed out. (connect timeout=45)'))"
+      "error": "422 Client Error: Unprocessable Entity for url: https://r.jina.ai/http://www.vhodne-uverejneni.cz/index.php?a=detail&contract=101051&h=contractsregister&m=xenorders"
     },
     {
       "source": "vhodne-uverejneni",
@@ -214,7 +214,7 @@
       "document_count_declared": 10,
       "documents": [],
       "status": "page_error",
-      "error": "HTTPSConnectionPool(host='www.vhodne-uverejneni.cz', port=443): Max retries exceeded with url: /index.php?a=detail&contract=101359&h=contractsregister&m=xenorders (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.vhodne-uverejneni.cz', port=443) at 0x7fdc47fb9040>, 'Connection to www.vhodne-uverejneni.cz timed out. (connect timeout=45)'))"
+      "error": "422 Client Error: Unprocessable Entity for url: https://r.jina.ai/http://www.vhodne-uverejneni.cz/index.php?a=detail&contract=101359&h=contractsregister&m=xenorders"
     },
     {
       "source": "vhodne-uverejneni",
@@ -224,7 +224,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "HTTPSConnectionPool(host='www.vhodne-uverejneni.cz', port=443): Max retries exceeded with url: /index.php?a=detail&contract=105575&h=contractsregister&m=xenorders (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.vhodne-uverejneni.cz', port=443) at 0x7fdc47d861e0>, 'Connection to www.vhodne-uverejneni.cz timed out. (connect timeout=45)'))"
+      "error": "422 Client Error: Unprocessable Entity for url: https://r.jina.ai/http://www.vhodne-uverejneni.cz/index.php?a=detail&contract=105575&h=contractsregister&m=xenorders"
     },
     {
       "source": "vhodne-uverejneni",
@@ -234,7 +234,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "HTTPSConnectionPool(host='www.vhodne-uverejneni.cz', port=443): Max retries exceeded with url: /zakazka/sanace-vlhkeho-zdiva-sklepnich-prostor-cp-886-lomnice-nad-popelkou (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.vhodne-uverejneni.cz', port=443) at 0x7fdc47dd6a20>, 'Connection to www.vhodne-uverejneni.cz timed out. (connect timeout=45)'))"
+      "error": "422 Client Error: Unprocessable Entity for url: https://r.jina.ai/http://www.vhodne-uverejneni.cz/zakazka/sanace-vlhkeho-zdiva-sklepnich-prostor-cp-886-lomnice-nad-popelkou"
     },
     {
       "source": "vhodne-uverejneni",
@@ -244,7 +244,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "HTTPSConnectionPool(host='www.vhodne-uverejneni.cz', port=443): Max retries exceeded with url: /zakazka/modernizace-uceben-zus-dodavky (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.vhodne-uverejneni.cz', port=443) at 0x7fdc47d869c0>, 'Connection to www.vhodne-uverejneni.cz timed out. (connect timeout=45)'))"
+      "error": "422 Client Error: Unprocessable Entity for url: https://r.jina.ai/http://www.vhodne-uverejneni.cz/zakazka/modernizace-uceben-zus-dodavky"
     },
     {
       "source": "vhodne-uverejneni",
@@ -254,7 +254,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "HTTPSConnectionPool(host='www.vhodne-uverejneni.cz', port=443): Max retries exceeded with url: /zakazka/verejne-osvetleni-11 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.vhodne-uverejneni.cz', port=443) at 0x7fdc47ee69f0>, 'Connection to www.vhodne-uverejneni.cz timed out. (connect timeout=45)'))"
+      "error": "422 Client Error: Unprocessable Entity for url: https://r.jina.ai/http://www.vhodne-uverejneni.cz/zakazka/verejne-osvetleni-11"
     },
     {
       "source": "vhodne-uverejneni",
@@ -264,7 +264,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "HTTPSConnectionPool(host='www.vhodne-uverejneni.cz', port=443): Max retries exceeded with url: /zakazka/rozsireni-polikliniky-lomnice-nad-popelkou-dokumentace-stavebniho-zameru (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.vhodne-uverejneni.cz', port=443) at 0x7fdc47d87d70>, 'Connection to www.vhodne-uverejneni.cz timed out. (connect timeout=45)'))"
+      "error": "422 Client Error: Unprocessable Entity for url: https://r.jina.ai/http://www.vhodne-uverejneni.cz/zakazka/rozsireni-polikliniky-lomnice-nad-popelkou-dokumentace-stavebniho-zameru"
     },
     {
       "source": "vhodne-uverejneni",
@@ -274,7 +274,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "HTTPSConnectionPool(host='www.vhodne-uverejneni.cz', port=443): Max retries exceeded with url: /zakazka/nemocnice-nasledne-pece-lomnice-nad-popelkou-investice-a-opravy (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.vhodne-uverejneni.cz', port=443) at 0x7fdc47d85310>, 'Connection to www.vhodne-uverejneni.cz timed out. (connect timeout=45)'))"
+      "error": "422 Client Error: Unprocessable Entity for url: https://r.jina.ai/http://www.vhodne-uverejneni.cz/zakazka/nemocnice-nasledne-pece-lomnice-nad-popelkou-investice-a-opravy"
     },
     {
       "source": "vhodne-uverejneni",
@@ -284,7 +284,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "HTTPSConnectionPool(host='www.vhodne-uverejneni.cz', port=443): Max retries exceeded with url: /zakazka/karavanove-stani-koupaliste-lomnice-nad-popelkou (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.vhodne-uverejneni.cz', port=443) at 0x7fdc47d84fe0>, 'Connection to www.vhodne-uverejneni.cz timed out. (connect timeout=45)'))"
+      "error": "422 Client Error: Unprocessable Entity for url: https://r.jina.ai/http://www.vhodne-uverejneni.cz/zakazka/karavanove-stani-koupaliste-lomnice-nad-popelkou"
     },
     {
       "source": "vhodne-uverejneni",
@@ -294,7 +294,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "HTTPSConnectionPool(host='www.vhodne-uverejneni.cz', port=443): Max retries exceeded with url: /profil/mesto-lomnice-nad-popelkou (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.vhodne-uverejneni.cz', port=443) at 0x7fdc47dd6ab0>, 'Connection to www.vhodne-uverejneni.cz timed out. (connect timeout=45)'))"
+      "error": "422 Client Error: Unprocessable Entity for url: https://r.jina.ai/http://www.vhodne-uverejneni.cz/profil/mesto-lomnice-nad-popelkou"
     },
     {
       "source": "vhodne-uverejneni",
@@ -304,7 +304,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "HTTPSConnectionPool(host='www.vhodne-uverejneni.cz', port=443): Max retries exceeded with url: /zakazka/rekonstrukce-topneho-systemu-vcetne-zdroje-tepla-v-objektu-k-urnovemu-haji-cp-118-lomnice-nad-popelkou (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.vhodne-uverejneni.cz', port=443) at 0x7fdc47d842f0>, 'Connection to www.vhodne-uverejneni.cz timed out. (connect timeout=45)'))"
+      "error": "422 Client Error: Unprocessable Entity for url: https://r.jina.ai/http://www.vhodne-uverejneni.cz/zakazka/rekonstrukce-topneho-systemu-vcetne-zdroje-tepla-v-objektu-k-urnovemu-haji-cp-118-lomnice-nad-popelkou"
     },
     {
       "source": "vhodne-uverejneni",
@@ -314,8 +314,8 @@
       "document_count_declared": 15,
       "documents": [],
       "status": "page_error",
-      "error": "HTTPSConnectionPool(host='www.vhodne-uverejneni.cz', port=443): Max retries exceeded with url: /index.php?a=detail&contract=95276&h=contractsregister&m=xenorders (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.vhodne-uverejneni.cz', port=443) at 0x7fdc47ddc320>, 'Connection to www.vhodne-uverejneni.cz timed out. (connect timeout=45)'))"
+      "error": "422 Client Error: Unprocessable Entity for url: https://r.jina.ai/http://www.vhodne-uverejneni.cz/index.php?a=detail&contract=95276&h=contractsregister&m=xenorders"
     }
   ],
-  "note": "Archives public document metadata and extracted PDF text. Original binaries are not committed."
+  "note": "Archives public document metadata and extracted PDF text. Original binaries are not committed; direct PVU access may fall back to jina.ai."
 }
