@@ -157,7 +157,7 @@ def extract_records(path: Path, ico: str) -> Iterable[dict]:
         for node in elem.iter():
             val = text(node)
             if "smlouvy.gov.cz/smlouva/soubor/" in val:
-                matches = re.findall(r"https?://smlouvy\\.gov\\.cz/smlouva/soubor/[A-Za-z0-9_./?=&%-]+", val)
+                matches = re.findall(r"https?://smlouvy\.gov\.cz/smlouva/soubor/[A-Za-z0-9_./?=&%-]+", val)
                 for match in matches:
                     name = ""
                     for child in node.iter():
