@@ -122,12 +122,10 @@ def extract_pdf(url: str):
                 except Exception:
                     parts.append("")
             return meta, "\n\n".join(parts).strip()
-        except Exception:
-            pr = requests.get(jina_url(url), timeout=TIMEOUT, headers={"User-Agent": UA})
-            pr.raise_for_status()
-            text = pr.text.strip()
-            return {"url": url, "content_type": "text/markdown; proxy=jina.ai",
-                    "transport": "jina.ai"}, text or None
+        except Exception as pdf_exc:
+            # Jina is intentionally not used for binary PDF endpoints; failed documents
+            # remain visible in the manifest instead of keeping the build waiting.
+            raise pdf_exc
 
 def process(record: dict) -> dict:
     source_id = record.get("source_id") or record.get("procurement_id") or hashlib.sha1(
