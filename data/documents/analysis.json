@@ -1,11 +1,12 @@
 {
-  "version": 1,
+  "version": 2,
   "documents_analyzed": 2,
   "method": "Pravidlová extrakce z textu PDF; nejde o právní ani ekonomické hodnocení.",
   "documents": [
     {
       "source": "registr-smluv",
       "source_id": "36813062",
+      "source_url": "https://smlouvy.gov.cz/smlouva/36813062",
       "title": "Smlouva o poskytnutí rozmnoženiny díla - Lomnice nad Popelkou",
       "document_name": "Smlouva_Lomnice_n.Popelkou%20komplet.pdf",
       "text_file": "data/documents/registr-smluv/36813062/001.txt",
@@ -36,6 +37,7 @@
     {
       "source": "registr-smluv",
       "source_id": "36978239",
+      "source_url": "https://smlouvy.gov.cz/smlouva/36978239",
       "title": "Smlouva o poskytnutí individuální dotace Město Lomnice nad Popelkou, ul 5. května",
       "document_name": "Smlouva_individualni_dotace_Lomnice_OLP-02908-2026_sig.pdf",
       "text_file": "data/documents/registr-smluv/36978239/001.txt",

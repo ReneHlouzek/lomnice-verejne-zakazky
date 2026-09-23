@@ -1,0 +1,192 @@
+{
+  "id": "p-revitalizace-verejneho-prostranstvi-na-hrbitove-2-etapa-lomnice-nad-po-0007",
+  "title": "Revitalizace veřejného prostranství na hřbitově - 2. etapa, Lomnice nad Popelkou",
+  "buyer_ico": "00275905",
+  "status": "plneni-smlouvy",
+  "project_type": "procurement",
+  "canonical": {
+    "title": "Revitalizace veřejného prostranství na hřbitově - 2. etapa, Lomnice nad Popelkou",
+    "supplier_ico": null,
+    "identifiers": [
+      "P25V00001848"
+    ],
+    "lifecycle": {
+      "events": [
+        {
+          "date": "2025-02-26",
+          "type": "tender",
+          "source": "vhodne-uverejneni",
+          "source_id": "P25V00001848",
+          "title": "Revitalizace veřejného prostranství na hřbitově - 2. etapa, Lomnice nad Popelkou",
+          "price": null
+        }
+      ],
+      "event_count": 1,
+      "type_counts": {
+        "tender": 1
+      },
+      "dominant_type": "tender"
+    },
+    "project_type": "procurement",
+    "procurement_signal": {
+      "level": "likely",
+      "label": "Pravděpodobně souvisí se zakázkou",
+      "reason": "Název/předmět odpovídá investiční dodávce, stavebním pracím nebo jiné běžné zadavatelské dodávce; způsob výběru dodavatele z tohoto záznamu sám o sobě neplyne."
+    },
+    "dates": {
+      "first_observed": "2025-02-26",
+      "last_observed": "2025-02-26"
+    },
+    "financial": {
+      "observed_prices": [],
+      "observed_vat_included_prices": [],
+      "expected_values": [],
+      "initial_contract_price": null,
+      "latest_observed_price": null,
+      "expected_to_contract_ratio": null
+    },
+    "procurement": {
+      "procedures": [
+        "Přímé zadání - Zakázka malého rozsahu"
+      ],
+      "regimes": [
+        "VZ malého rozsahu"
+      ],
+      "funded": true,
+      "known_addenda_numbers": []
+    },
+    "verification": {
+      "levels": [
+        "detail"
+      ],
+      "project_registry_ids": [],
+      "detail_verified_sources": 1
+    },
+    "source_count": 1,
+    "source_types": [
+      "vhodne-uverejneni"
+    ],
+    "record_count": 1
+  },
+  "sources": [
+    {
+      "source_file": "data/sources/vhodne-uverejneni/vu-000026.json",
+      "source_id": "P25V00001848",
+      "record": {
+        "source": "vhodne-uverejneni",
+        "source_id": "P25V00001848",
+        "procurement_id": "P25V00001848",
+        "source_url": "https://www.vhodne-uverejneni.cz/zakazka/revitalizace-verejneho-prostranstvi-na-hrbitove-2-etapa-lomnice-nad-popelkou",
+        "title": "Revitalizace veřejného prostranství na hřbitově - 2. etapa, Lomnice nad Popelkou",
+        "buyer_ico": "00275905",
+        "supplier_ico": null,
+        "supplier_name": null,
+        "date": "2025-02-26",
+        "price": null,
+        "expected_value": null,
+        "price_vat_included": null,
+        "status": "plnění smlouvy",
+        "type": "tender",
+        "procurement_regime": "VZ malého rozsahu",
+        "procurement_procedure": "Přímé zadání - Zakázka malého rozsahu",
+        "procurement_type": "Stavební práce",
+        "outcome": "Uzavření jednorázové smlouvy",
+        "description": "Provedení stavebních prací v rámci revitalizace cesty na hřbitově.",
+        "cpv": [
+          "Chodníky a jiné zpevněné povrchy"
+        ],
+        "offer_deadline": null,
+        "contract_signed_date": "2025-02-11",
+        "award_date": null,
+        "participant_count": null,
+        "bid_count": null,
+        "funded": true,
+        "grant_id": "24/002/52775/433/013276",
+        "project_registry_id": null,
+        "known_addenda_numbers": [],
+        "document_count": null,
+        "verification_level": "detail",
+        "verified_web": true,
+        "verified_at": "2026-09-21",
+        "verification_source": "https://www.vhodne-uverejneni.cz/zakazka/revitalizace-verejneho-prostranstvi-na-hrbitove-2-etapa-lomnice-nad-popelkou",
+        "raw": {
+          "source": "vhodne-uverejneni",
+          "source_id": "P25V00001848",
+          "procurement_id": "P25V00001848",
+          "source_url": "https://www.vhodne-uverejneni.cz/zakazka/revitalizace-verejneho-prostranstvi-na-hrbitove-2-etapa-lomnice-nad-popelkou",
+          "title": "Revitalizace veřejného prostranství na hřbitově - 2. etapa, Lomnice nad Popelkou",
+          "buyer_ico": "00275905",
+          "supplier_ico": null,
+          "supplier_name": null,
+          "date": "2025-02-26",
+          "price": null,
+          "status": "plnění smlouvy",
+          "type": "tender",
+          "procurement_type": "Stavební práce",
+          "procurement_regime": "VZ malého rozsahu",
+          "procurement_procedure": "Přímé zadání - Zakázka malého rozsahu",
+          "outcome": "Uzavření jednorázové smlouvy",
+          "description": "Provedení stavebních prací v rámci revitalizace cesty na hřbitově.",
+          "cpv": [
+            "Chodníky a jiné zpevněné povrchy"
+          ],
+          "funded": true,
+          "grant_id": "24/002/52775/433/013276",
+          "verification_level": "detail",
+          "verified_web": true,
+          "verified_at": "2026-09-21",
+          "verification_source": "https://www.vhodne-uverejneni.cz/zakazka/revitalizace-verejneho-prostranstvi-na-hrbitove-2-etapa-lomnice-nad-popelkou",
+          "contract_signed_date": "2025-02-11"
+        },
+        "_source_file": "data/sources/vhodne-uverejneni/vu-000026.json"
+      }
+    }
+  ],
+  "analysis": {
+    "schema_version": 4,
+    "project_id": "p-revitalizace-verejneho-prostranstvi-na-hrbitove-2-etapa-lomnice-nad-po-0007",
+    "signal_count": 1,
+    "signals": [
+      {
+        "code": "single_source",
+        "level": "info",
+        "message": "Projekt je zatím doložen pouze jedním zdrojovým záznamem.",
+        "evidence": []
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2025-02-26",
+        "event": "tender",
+        "source": "vhodne-uverejneni",
+        "source_id": "P25V00001848",
+        "title": "Revitalizace veřejného prostranství na hřbitově - 2. etapa, Lomnice nad Popelkou",
+        "price": null,
+        "deadline": null
+      }
+    ],
+    "financial": {
+      "baseline_price": null,
+      "current_observed_price": null,
+      "absolute_change": null,
+      "percent_change": null,
+      "observed_prices": [],
+      "addendum_count": 0,
+      "declared_addenda_count": 0
+    },
+    "metrics": {
+      "source_count": 1,
+      "supplier_count": 0,
+      "price_values": [],
+      "date_values": [
+        "2025-02-26"
+      ],
+      "document_count": 0,
+      "deadline_observations": 0,
+      "expected_value_observations": 0,
+      "participant_observations": 0,
+      "bid_observations": 0
+    },
+    "methodology": "Signals are descriptive checks only; they do not establish wrongdoing or causality. They identify differences worth checking and retain source provenance."
+  }
+}
