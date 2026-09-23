@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-09-23T06:36:14Z",
-  "records_checked": 218,
+  "updated_at": "2026-09-23T07:02:22Z",
+  "records_checked": 109,
   "attachments_declared": 0,
-  "documents_discovered": 6,
-  "documents_downloaded": 4,
-  "documents_text_extracted": 4,
+  "documents_discovered": 0,
+  "documents_downloaded": 0,
+  "documents_text_extracted": 0,
   "records": [
     {
       "source": "registr-smluv",
@@ -16,33 +16,9 @@
     },
     {
       "source": "registr-smluv",
-      "source_id": "10174036",
-      "title": "Darovací smlouva č.j. OLP/3650/2019 - darování pozemku v k.ú. Želechy",
-      "page_url": "https://smlouvy.gov.cz/smlouva/10174036",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
       "source_id": "10520108",
       "title": "Smlouva o spolupráci při zajištění dopravní obslužnosti Libereckého kraje na období od roku 2020 do roku 2023",
       "page_url": "https://smlouvy.gov.cz/smlouva/10520108",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
-      "source_id": "10520108",
-      "title": "Smlouva o spolupráci při zajištění dopravní obslužnosti Libereckého kraje na období od roku 2020 do roku 2023",
-      "page_url": "https://smlouvy.gov.cz/smlouva/10520108",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
-      "source_id": "10601144",
-      "title": "účelová dotace z rozpočtu Libereckého kraje na projekt \"Rekonstrukce multifunkčního hřiště při ZŠ T.G.Masaryka v Lomnici nad Popelkou\"",
-      "page_url": "https://smlouvy.gov.cz/smlouva/10601144",
       "documents": [],
       "status": "ok"
     },
@@ -64,33 +40,9 @@
     },
     {
       "source": "registr-smluv",
-      "source_id": "1078317",
-      "title": "Darovací smlouva - zabezpečení mateřských škol",
-      "page_url": "https://smlouvy.gov.cz/smlouva/1078317",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
       "source_id": "11922756",
       "title": "Veřejnoprávní smlouva o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou na akci Lomnice n. P. - Obnova VH sítí v ulici Sportovců",
       "page_url": "https://smlouvy.gov.cz/smlouva/11922756",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
-      "source_id": "11922756",
-      "title": "Veřejnoprávní smlouva o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou na akci Lomnice n. P. - Obnova VH sítí v ulici Sportovců",
-      "page_url": "https://smlouvy.gov.cz/smlouva/11922756",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
-      "source_id": "11922952",
-      "title": "Veřejnoprávní smlouva o poskytnutí neinvestiční dotace z rozpočtu města Lomnice nad Popelkou na akci Lomnice n. P. - oprava vodovodu Hrádka",
-      "page_url": "https://smlouvy.gov.cz/smlouva/11922952",
       "documents": [],
       "status": "ok"
     },
@@ -112,33 +64,9 @@
     },
     {
       "source": "registr-smluv",
-      "source_id": "12516296",
-      "title": "Smlouva o poskytnutí účelové dotace z Dotačního fondu LK, programu č. 1.1, na nákup ochranných prostředků",
-      "page_url": "https://smlouvy.gov.cz/smlouva/12516296",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
       "source_id": "12560592",
       "title": "Smlouva o spolupráci při realizaci stavební akce \"Snížení energetické náročnosti budovy v ulici Pivovarská 80 - Střední škola, Lomnice nad Popelkou, Antala Staška 213, p. o.\"",
       "page_url": "https://smlouvy.gov.cz/smlouva/12560592",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
-      "source_id": "12560592",
-      "title": "Smlouva o spolupráci při realizaci stavební akce \"Snížení energetické náročnosti budovy v ulici Pivovarská 80 - Střední škola, Lomnice nad Popelkou, Antala Staška 213, p. o.\"",
-      "page_url": "https://smlouvy.gov.cz/smlouva/12560592",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
-      "source_id": "12587736",
-      "title": "Smlouva o poskytnutí účelové dotace z rozpočtu Libereckého kraje - Lomnice nad Popelkou - Rekonstrukce požární zbrojnice",
-      "page_url": "https://smlouvy.gov.cz/smlouva/12587736",
       "documents": [],
       "status": "ok"
     },
@@ -160,33 +88,9 @@
     },
     {
       "source": "registr-smluv",
-      "source_id": "1287978",
-      "title": "Financování registrovaných sociálních služeb dle zákona č. 108/2006 Sb., o sociálních službách, ve znění pozdějších předpisů.",
-      "page_url": "https://smlouvy.gov.cz/smlouva/1287978",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
       "source_id": "13349796",
       "title": "Státní fond podpory investic - Smlouva č. 3908110142 o poskytnutí dotace na úhradu nákladů na regeneraci veřejného prostranství na sídlišti dle NV č.390/2017 Sb.",
       "page_url": "https://smlouvy.gov.cz/smlouva/13349796",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
-      "source_id": "13349796",
-      "title": "Státní fond podpory investic - Smlouva č. 3908110142 o poskytnutí dotace na úhradu nákladů na regeneraci veřejného prostranství na sídlišti dle NV č.390/2017 Sb.",
-      "page_url": "https://smlouvy.gov.cz/smlouva/13349796",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
-      "source_id": "13692373",
-      "title": "Veřejnoprávní smlouva o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou",
-      "page_url": "https://smlouvy.gov.cz/smlouva/13692373",
       "documents": [],
       "status": "ok"
     },
@@ -208,33 +112,9 @@
     },
     {
       "source": "registr-smluv",
-      "source_id": "14213067",
-      "title": "darovací smlouva - darování pozemků včetně vyřazeného tělesa komunikace ev.č. III/2847 na pozemcích v k.ú. Lomnice nad Popelkou",
-      "page_url": "https://smlouvy.gov.cz/smlouva/14213067",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
       "source_id": "1426690",
       "title": "Veřejnoprávní smlouva o poskytnutí neinvestiční dotace z rozpočtu města Lomnice nad Popelkou",
       "page_url": "https://smlouvy.gov.cz/smlouva/1426690",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
-      "source_id": "1426690",
-      "title": "Veřejnoprávní smlouva o poskytnutí neinvestiční dotace z rozpočtu města Lomnice nad Popelkou",
-      "page_url": "https://smlouvy.gov.cz/smlouva/1426690",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
-      "source_id": "14454471",
-      "title": "Dohoda o poskytnutí dotace z Programu rozvoje venkova ČR - 20/007/19210/451/173/001124",
-      "page_url": "https://smlouvy.gov.cz/smlouva/14454471",
       "documents": [],
       "status": "ok"
     },
@@ -256,33 +136,9 @@
     },
     {
       "source": "registr-smluv",
-      "source_id": "15777827",
-      "title": "Dohoda o používání výplatního stroje k úhradě cen za poštovní služby",
-      "page_url": "https://smlouvy.gov.cz/smlouva/15777827",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
       "source_id": "15970715",
       "title": "Poskytnutí účelové dotace z rozpočtu Libereckého kraje na projekt Karavanové stání Koupaliště, Lomnice nad Popelkou",
       "page_url": "https://smlouvy.gov.cz/smlouva/15970715",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
-      "source_id": "15970715",
-      "title": "Poskytnutí účelové dotace z rozpočtu Libereckého kraje na projekt Karavanové stání Koupaliště, Lomnice nad Popelkou",
-      "page_url": "https://smlouvy.gov.cz/smlouva/15970715",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
-      "source_id": "15976779",
-      "title": "budoucí darovací smlouva - budoucí darování pozemků o celkové výměře 8333 m2 v k.ú. Lomnice nad Popelkou a k.ú. želechy v četně vyřazovaného tělesa komunikace ev.č. III/28613 na pozemcích",
-      "page_url": "https://smlouvy.gov.cz/smlouva/15976779",
       "documents": [],
       "status": "ok"
     },
@@ -304,33 +160,9 @@
     },
     {
       "source": "registr-smluv",
-      "source_id": "16025755",
-      "title": "Smlouva o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje na nákup ochranných prostředků požární ochrany",
-      "page_url": "https://smlouvy.gov.cz/smlouva/16025755",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
       "source_id": "16025759",
       "title": "Smlouva o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje na nákup věcných prostředků k provádění speciálních činností",
       "page_url": "https://smlouvy.gov.cz/smlouva/16025759",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
-      "source_id": "16025759",
-      "title": "Smlouva o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje na nákup věcných prostředků k provádění speciálních činností",
-      "page_url": "https://smlouvy.gov.cz/smlouva/16025759",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
-      "source_id": "18432479",
-      "title": "07 Smlouva o poskytnutí finančního daru Městu Lomnice nad Popelkou Program regenerace 2021",
-      "page_url": "https://smlouvy.gov.cz/smlouva/18432479",
       "documents": [],
       "status": "ok"
     },
@@ -352,33 +184,9 @@
     },
     {
       "source": "registr-smluv",
-      "source_id": "19084011",
-      "title": "Dodatek 2 Lomnice n. Popelkou - navýšení paušálních plateb",
-      "page_url": "https://smlouvy.gov.cz/smlouva/19084011",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
       "source_id": "19350067",
       "title": "Smlouva o smlouvě budoucí o zřízení služebnosti č.j. OLP/2194/2022 \"Rekonstrukce veřejného osvětlení - ulice Jičínská, Nádražní a Na Větrově, k.ú. Lomnice nad Popelkou\"",
       "page_url": "https://smlouvy.gov.cz/smlouva/19350067",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
-      "source_id": "19350067",
-      "title": "Smlouva o smlouvě budoucí o zřízení služebnosti č.j. OLP/2194/2022 \"Rekonstrukce veřejného osvětlení - ulice Jičínská, Nádražní a Na Větrově, k.ú. Lomnice nad Popelkou\"",
-      "page_url": "https://smlouvy.gov.cz/smlouva/19350067",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
-      "source_id": "19382259",
-      "title": "07 Smlouva o dotaci, Město Lomnice nad Popelkou, obnova soklu a schodiště budovy muzea",
-      "page_url": "https://smlouvy.gov.cz/smlouva/19382259",
       "documents": [],
       "status": "ok"
     },
@@ -400,33 +208,9 @@
     },
     {
       "source": "registr-smluv",
-      "source_id": "20017947",
-      "title": "Smlouva o poskytnutí dotace z Dotačního fondu LK na osobní ochranné prostředky PO",
-      "page_url": "https://smlouvy.gov.cz/smlouva/20017947",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
       "source_id": "20018743",
       "title": "Smlouva o poskytnutí dotace z Dotačního fondu LK na repasi hasičského vozíku",
       "page_url": "https://smlouvy.gov.cz/smlouva/20018743",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
-      "source_id": "20018743",
-      "title": "Smlouva o poskytnutí dotace z Dotačního fondu LK na repasi hasičského vozíku",
-      "page_url": "https://smlouvy.gov.cz/smlouva/20018743",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
-      "source_id": "20176309",
-      "title": "Dodatek č. 1 ke smlouvě o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje na projekt karavanová stání v Lomnici nad Popelkou",
-      "page_url": "https://smlouvy.gov.cz/smlouva/20176309",
       "documents": [],
       "status": "ok"
     },
@@ -448,33 +232,9 @@
     },
     {
       "source": "registr-smluv",
-      "source_id": "20244341",
-      "title": "Veřejnoprávní smlouva o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou - Lomnice nad popekou - obnva vodovdou a kanalizace Jilemnická ulice",
-      "page_url": "https://smlouvy.gov.cz/smlouva/20244341",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
       "source_id": "2125466",
       "title": "Smlouva o poskytnutí dotace z dotačního fondu LK v oblasti podpory Požární ochrany na ochranné prostředky",
       "page_url": "https://smlouvy.gov.cz/smlouva/2125466",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
-      "source_id": "2125466",
-      "title": "Smlouva o poskytnutí dotace z dotačního fondu LK v oblasti podpory Požární ochrany na ochranné prostředky",
-      "page_url": "https://smlouvy.gov.cz/smlouva/2125466",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
-      "source_id": "2233702",
-      "title": "Smlouva o poskytnutí dotace na SHP Rohanského zámečku v Lomnici nad Popelkou",
-      "page_url": "https://smlouvy.gov.cz/smlouva/2233702",
       "documents": [],
       "status": "ok"
     },
@@ -496,33 +256,9 @@
     },
     {
       "source": "registr-smluv",
-      "source_id": "2264882",
-      "title": "Dodatek č.2 ke Smlouvě o poskytnutí účelové dotace Libereckému kraji z rozpočtu Města Lomnice nad Popelkou na stavební akci „II/286 x II/284 Lomnice nad Popelkou - havárie zdi - nezpůsobilé výdaje“",
-      "page_url": "https://smlouvy.gov.cz/smlouva/2264882",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
       "source_id": "23137771",
       "title": "07 Smlouva o poskytnutí dotace na Oprava střešního pláště domu č.p. 886",
       "page_url": "https://smlouvy.gov.cz/smlouva/23137771",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
-      "source_id": "23137771",
-      "title": "07 Smlouva o poskytnutí dotace na Oprava střešního pláště domu č.p. 886",
-      "page_url": "https://smlouvy.gov.cz/smlouva/23137771",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
-      "source_id": "2316654",
-      "title": "Dodatek 1 Lomnice n.Popelkou - nájem NP",
-      "page_url": "https://smlouvy.gov.cz/smlouva/2316654",
       "documents": [],
       "status": "ok"
     },
@@ -544,33 +280,9 @@
     },
     {
       "source": "registr-smluv",
-      "source_id": "24191791",
-      "title": "Smlouva o poskytnutí dotace z Dotačního fondu LK na osobní ochranné prostředky PO",
-      "page_url": "https://smlouvy.gov.cz/smlouva/24191791",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
       "source_id": "24191795",
       "title": "Smlouva o poskytnutí dotace z Dotačního fondu LK na čtyřkolky pro JSDHO",
       "page_url": "https://smlouvy.gov.cz/smlouva/24191795",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
-      "source_id": "24191795",
-      "title": "Smlouva o poskytnutí dotace z Dotačního fondu LK na čtyřkolky pro JSDHO",
-      "page_url": "https://smlouvy.gov.cz/smlouva/24191795",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
-      "source_id": "24200939",
-      "title": "Smlouva o bezúplatném převodu a o sjednání jiných věcných práv, pozemky p.č.2340/15 a p.č.2340/19 vzniklé dle GP č.2112-1453/2021 v k.ú.Lomnice nad Popelkou, včetně jejich součástí a příslušenství",
-      "page_url": "https://smlouvy.gov.cz/smlouva/24200939",
       "documents": [],
       "status": "ok"
     },
@@ -592,33 +304,9 @@
     },
     {
       "source": "registr-smluv",
-      "source_id": "24676351",
-      "title": "86_OLP/2721/2023_8.2 Město Lomnice nad Popelkou",
-      "page_url": "https://smlouvy.gov.cz/smlouva/24676351",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
       "source_id": "24735923",
       "title": "Smlouva o smlouvě budoucí o zřízení služebnosti č.j. OLP/3553/2023 - rekonstrukce veřejného osvětlení ul. Jilemnická a část plk.Truhláře, k.ú. Lomnice nad Popelkou",
       "page_url": "https://smlouvy.gov.cz/smlouva/24735923",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
-      "source_id": "24735923",
-      "title": "Smlouva o smlouvě budoucí o zřízení služebnosti č.j. OLP/3553/2023 - rekonstrukce veřejného osvětlení ul. Jilemnická a část plk.Truhláře, k.ú. Lomnice nad Popelkou",
-      "page_url": "https://smlouvy.gov.cz/smlouva/24735923",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
-      "source_id": "24740963",
-      "title": "Dodatek č. 2 ke smlouvě o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje na projekt karavanová stání Lomnice nad Popelkou",
-      "page_url": "https://smlouvy.gov.cz/smlouva/24740963",
       "documents": [],
       "status": "ok"
     },
@@ -640,33 +328,9 @@
     },
     {
       "source": "registr-smluv",
-      "source_id": "24787731",
-      "title": "Veřejnoprávní smlouva o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou",
-      "page_url": "https://smlouvy.gov.cz/smlouva/24787731",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
       "source_id": "24928323",
       "title": "účelová dotace z rozpočtu Libereckého kraje, dotačního programu Podpora sportovní infrastruktury v Libereckém kraji na projekt \"Osvětlení sportovní haly u ZŠ v Lomnici nad Popelkou\"",
       "page_url": "https://smlouvy.gov.cz/smlouva/24928323",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
-      "source_id": "24928323",
-      "title": "účelová dotace z rozpočtu Libereckého kraje, dotačního programu Podpora sportovní infrastruktury v Libereckém kraji na projekt \"Osvětlení sportovní haly u ZŠ v Lomnici nad Popelkou\"",
-      "page_url": "https://smlouvy.gov.cz/smlouva/24928323",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
-      "source_id": "24993819",
-      "title": "Smlouva o spolupráci při zajištění dopravní obslužnosti Libereckého kraje na období od roku 2024 do roku 2028",
-      "page_url": "https://smlouvy.gov.cz/smlouva/24993819",
       "documents": [],
       "status": "ok"
     },
@@ -688,33 +352,9 @@
     },
     {
       "source": "registr-smluv",
-      "source_id": "25099803",
-      "title": "Dodatek č. 1 veřejnoprávní smlouvy o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou",
-      "page_url": "https://smlouvy.gov.cz/smlouva/25099803",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
       "source_id": "25122007",
       "title": "Smlouva o poskytnutí dotace dle NV č. 2/2023 Sb.",
       "page_url": "https://smlouvy.gov.cz/smlouva/25122007",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
-      "source_id": "25122007",
-      "title": "Smlouva o poskytnutí dotace dle NV č. 2/2023 Sb.",
-      "page_url": "https://smlouvy.gov.cz/smlouva/25122007",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
-      "source_id": "25788491",
-      "title": "Smlouva o vybudování skiagrafického pracoviště a zajištění jeho provozu + příloha č.1 a příloha č.2",
-      "page_url": "https://smlouvy.gov.cz/smlouva/25788491",
       "documents": [],
       "status": "ok"
     },
@@ -736,33 +376,9 @@
     },
     {
       "source": "registr-smluv",
-      "source_id": "2642022",
-      "title": "Smlouva o organizování veřejné služby",
-      "page_url": "https://smlouvy.gov.cz/smlouva/2642022",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
       "source_id": "26812007",
       "title": "Obnova rybníka Matouš v Lomnici nad Popelkou",
       "page_url": "https://smlouvy.gov.cz/smlouva/26812007",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
-      "source_id": "26812007",
-      "title": "Obnova rybníka Matouš v Lomnici nad Popelkou",
-      "page_url": "https://smlouvy.gov.cz/smlouva/26812007",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
-      "source_id": "26892268",
-      "title": "Kupní smlouva č.j.OLP/101/2024, prodej pozemku v k.ú. Ploužnice pod Táborem",
-      "page_url": "https://smlouvy.gov.cz/smlouva/26892268",
       "documents": [],
       "status": "ok"
     },
@@ -784,33 +400,9 @@
     },
     {
       "source": "registr-smluv",
-      "source_id": "2704422",
-      "title": "Smlouva : \" Lomnice nad Popelkou a Nowogrodziec-společná cesta časem \"",
-      "page_url": "https://smlouvy.gov.cz/smlouva/2704422",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
       "source_id": "27256880",
       "title": "Poskytnutí účelové dotace z dotačního fondu Libereckého kraje na projekt Infrastruktura pro cyklisty v Lomnici nad Popelkou",
       "page_url": "https://smlouvy.gov.cz/smlouva/27256880",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
-      "source_id": "27256880",
-      "title": "Poskytnutí účelové dotace z dotačního fondu Libereckého kraje na projekt Infrastruktura pro cyklisty v Lomnici nad Popelkou",
-      "page_url": "https://smlouvy.gov.cz/smlouva/27256880",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
-      "source_id": "27585960",
-      "title": "Smlouva o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje - oblast podpory DOPRAVA program 6.1 - Podpora výstavby komunikací pro cyklisty",
-      "page_url": "https://smlouvy.gov.cz/smlouva/27585960",
       "documents": [],
       "status": "ok"
     },
@@ -832,33 +424,9 @@
     },
     {
       "source": "registr-smluv",
-      "source_id": "27785608",
-      "title": "Smlouva o poskytnutí dotace z DF LK - Nákup ochranných prostředků PO 2024",
-      "page_url": "https://smlouvy.gov.cz/smlouva/27785608",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
       "source_id": "28119324",
       "title": "Účelová dotace na projekt \"Pořízení domácích kompostérů\"",
       "page_url": "https://smlouvy.gov.cz/smlouva/28119324",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
-      "source_id": "28119324",
-      "title": "Účelová dotace na projekt \"Pořízení domácích kompostérů\"",
-      "page_url": "https://smlouvy.gov.cz/smlouva/28119324",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
-      "source_id": "28204604",
-      "title": "Dodatek č. 3 ke smlouvě o poskytnutí účelové dotace na projekt Karavanové stání - Lomnice nad Popelkou",
-      "page_url": "https://smlouvy.gov.cz/smlouva/28204604",
       "documents": [],
       "status": "ok"
     },
@@ -880,33 +448,9 @@
     },
     {
       "source": "registr-smluv",
-      "source_id": "28586216",
-      "title": "Dodatek č. 1 k veřejnoprávní smlouvě o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou",
-      "page_url": "https://smlouvy.gov.cz/smlouva/28586216",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
       "source_id": "286209",
       "title": "Smlouva o poskytnutí dotace na poskytování služeb v obecném hospodářském zájmu z rozpočtu Libereckého kraje č. OLP/4637/2016",
       "page_url": "https://smlouvy.gov.cz/smlouva/286209",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
-      "source_id": "286209",
-      "title": "Smlouva o poskytnutí dotace na poskytování služeb v obecném hospodářském zájmu z rozpočtu Libereckého kraje č. OLP/4637/2016",
-      "page_url": "https://smlouvy.gov.cz/smlouva/286209",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
-      "source_id": "29417636",
-      "title": "Veřejnoprávní smlouva o poskytnutí neinvestiční dotace z rozpočtu města Lomnice nad Popelkou - Lomnice nad Popelkou - Košov - obnova vodovodu",
-      "page_url": "https://smlouvy.gov.cz/smlouva/29417636",
       "documents": [],
       "status": "ok"
     },
@@ -928,33 +472,9 @@
     },
     {
       "source": "registr-smluv",
-      "source_id": "301745",
-      "title": "poskytnutí účelové neinvestiční dotace na vypracování plánu ochrany pro památkovou zónu města Lomnice nad Popelkou - 2. a 3. etapa",
-      "page_url": "https://smlouvy.gov.cz/smlouva/301745",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
       "source_id": "30665684",
       "title": "Dohoda o poskytnutí dotace na projekt rozvoje venkova ČR - 24/001/52775/433/000057",
       "page_url": "https://smlouvy.gov.cz/smlouva/30665684",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
-      "source_id": "30665684",
-      "title": "Dohoda o poskytnutí dotace na projekt rozvoje venkova ČR - 24/001/52775/433/000057",
-      "page_url": "https://smlouvy.gov.cz/smlouva/30665684",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
-      "source_id": "31062824",
-      "title": "Veřejnoprávnmí smlouva o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou - Prodloužení sítí technické infrastruktury pro budoucí rozvojovou lokalitu BM8",
-      "page_url": "https://smlouvy.gov.cz/smlouva/31062824",
       "documents": [],
       "status": "ok"
     },
@@ -976,33 +496,9 @@
     },
     {
       "source": "registr-smluv",
-      "source_id": "3124922",
-      "title": "Smlouva o bezúplatném převodu privatizovaného majetku do vlastnictví obce - Města Lomnice nad Popelkou - nemovitost v k.ú. Rváčov (účetní hodnota převáděného majetku činí 3000,-Kč) (AVISme 2017000988)",
-      "page_url": "https://smlouvy.gov.cz/smlouva/3124922",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
       "source_id": "3132722",
       "title": "Změna výše celkové neinvestiční alokace výhradně na použití na provoz základních činností organizace, tj. na úhradu nákladů souvisejících s poskytováním základních činností veřejné služby.",
       "page_url": "https://smlouvy.gov.cz/smlouva/3132722",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
-      "source_id": "3132722",
-      "title": "Změna výše celkové neinvestiční alokace výhradně na použití na provoz základních činností organizace, tj. na úhradu nákladů souvisejících s poskytováním základních činností veřejné služby.",
-      "page_url": "https://smlouvy.gov.cz/smlouva/3132722",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
-      "source_id": "31612737",
-      "title": "Smlouva o poskytnutí účelové dotace z rozpočtu Libereckého kraje - 7.10 Infrastruktura cestovního ruchu - město Lomnice nad Popelkou",
-      "page_url": "https://smlouvy.gov.cz/smlouva/31612737",
       "documents": [],
       "status": "ok"
     },
@@ -1024,33 +520,9 @@
     },
     {
       "source": "registr-smluv",
-      "source_id": "31807981",
-      "title": "07 Smlouva o poskytnutí dotace z programu 7.2",
-      "page_url": "https://smlouvy.gov.cz/smlouva/31807981",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
       "source_id": "32292445",
       "title": "Dohoda o poskytnutí dotace na projekt rozvoje venkova ČR - 24/002/52775/433/013276",
       "page_url": "https://smlouvy.gov.cz/smlouva/32292445",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
-      "source_id": "32292445",
-      "title": "Dohoda o poskytnutí dotace na projekt rozvoje venkova ČR - 24/002/52775/433/013276",
-      "page_url": "https://smlouvy.gov.cz/smlouva/32292445",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
-      "source_id": "32731945",
-      "title": "Dodatek č. 1 veřejnoprávní smlouvy o poskytnutí neinvestiční dotace z rozpočtu města Lomnice nad Popelkou na akci Lomnice nad Popelkou - KOšov , obnova vodovodu",
-      "page_url": "https://smlouvy.gov.cz/smlouva/32731945",
       "documents": [],
       "status": "ok"
     },
@@ -1072,33 +544,9 @@
     },
     {
       "source": "registr-smluv",
-      "source_id": "3312200",
-      "title": "Darovací smlouva - RDS Lomnice n. Popel.",
-      "page_url": "https://smlouvy.gov.cz/smlouva/3312200",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
       "source_id": "33251081",
       "title": "Smlouva o poskytnutí dotace z DFLK program 1.1 – Podpora jednotek požární ochrany obcí Libereckého kraje",
       "page_url": "https://smlouvy.gov.cz/smlouva/33251081",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
-      "source_id": "33251081",
-      "title": "Smlouva o poskytnutí dotace z DFLK program 1.1 – Podpora jednotek požární ochrany obcí Libereckého kraje",
-      "page_url": "https://smlouvy.gov.cz/smlouva/33251081",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
-      "source_id": "33251089",
-      "title": "Smlouva o poskytnutí dotace z DFLK program 1.1 – Podpora jednotek požární ochrany obcí Libereckého kraje",
-      "page_url": "https://smlouvy.gov.cz/smlouva/33251089",
       "documents": [],
       "status": "ok"
     },
@@ -1120,33 +568,9 @@
     },
     {
       "source": "registr-smluv",
-      "source_id": "33854281",
-      "title": "Veřejnoprávní smlouva o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou",
-      "page_url": "https://smlouvy.gov.cz/smlouva/33854281",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
       "source_id": "33854349",
       "title": "Dodatek č. 1 k veřejnoprávní smlouvě o poskytnutí dotace z rozpčtu města Lomnice nad Popelkou",
       "page_url": "https://smlouvy.gov.cz/smlouva/33854349",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
-      "source_id": "33854349",
-      "title": "Dodatek č. 1 k veřejnoprávní smlouvě o poskytnutí dotace z rozpčtu města Lomnice nad Popelkou",
-      "page_url": "https://smlouvy.gov.cz/smlouva/33854349",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
-      "source_id": "34390649",
-      "title": "Dohoda o poskytnutí dotace na projekt rozvoje venkova ČR - 25/003/52776/433/005885",
-      "page_url": "https://smlouvy.gov.cz/smlouva/34390649",
       "documents": [],
       "status": "ok"
     },
@@ -1168,33 +592,9 @@
     },
     {
       "source": "registr-smluv",
-      "source_id": "34464673",
-      "title": "Memorandum o vzájemné spolupráci v rámci akce „Rekonstrukce silnice II/284, Lomnice nad Popelkou“",
-      "page_url": "https://smlouvy.gov.cz/smlouva/34464673",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
       "source_id": "34496525",
       "title": "Smlouva o bezúplatném převodu vlastnického práva se sjednáním jiných věcných práv - k. ú. Lomnice nad Popelkou, p. p. č. 2402/4",
       "page_url": "https://smlouvy.gov.cz/smlouva/34496525",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
-      "source_id": "34496525",
-      "title": "Smlouva o bezúplatném převodu vlastnického práva se sjednáním jiných věcných práv - k. ú. Lomnice nad Popelkou, p. p. č. 2402/4",
-      "page_url": "https://smlouvy.gov.cz/smlouva/34496525",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
-      "source_id": "34549017",
-      "title": "Dodatek č. 1 OLP/3394/2023 - Smlouva DFLK 8.6 - Město Lomnice nad Popelkou",
-      "page_url": "https://smlouvy.gov.cz/smlouva/34549017",
       "documents": [],
       "status": "ok"
     },
@@ -1216,33 +616,9 @@
     },
     {
       "source": "registr-smluv",
-      "source_id": "35224121",
-      "title": "Smlouva o dílo - Oprava úseku místní komunikace Poděbradova v Lomnici nad Popelkou",
-      "page_url": "https://smlouvy.gov.cz/smlouva/35224121",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
       "source_id": "36197230",
       "title": "Veřejnoprávní smlouva o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou - rekonstrukce vodohospodářských sítí a následná obnova ulice 5. května",
       "page_url": "https://smlouvy.gov.cz/smlouva/36197230",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
-      "source_id": "36197230",
-      "title": "Veřejnoprávní smlouva o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou - rekonstrukce vodohospodářských sítí a následná obnova ulice 5. května",
-      "page_url": "https://smlouvy.gov.cz/smlouva/36197230",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
-      "source_id": "36197262",
-      "title": "Veřejnoprávní smlouva o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou - obnova vodovodu v Želechách",
-      "page_url": "https://smlouvy.gov.cz/smlouva/36197262",
       "documents": [],
       "status": "ok"
     },
@@ -1264,33 +640,9 @@
     },
     {
       "source": "registr-smluv",
-      "source_id": "36216116",
-      "title": "Smlouva o poskytnutí dotace z DFLK program 1.1 – 2026",
-      "page_url": "https://smlouvy.gov.cz/smlouva/36216116",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
       "source_id": "36216124",
       "title": "Smlouva o poskytnutí dotace z DFLK program 1.1 – 2026",
       "page_url": "https://smlouvy.gov.cz/smlouva/36216124",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
-      "source_id": "36216124",
-      "title": "Smlouva o poskytnutí dotace z DFLK program 1.1 – 2026",
-      "page_url": "https://smlouvy.gov.cz/smlouva/36216124",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
-      "source_id": "36217164",
-      "title": "Smlouva o poskytnutí dotace z DFLK program 1.1 – 2026",
-      "page_url": "https://smlouvy.gov.cz/smlouva/36217164",
       "documents": [],
       "status": "ok"
     },
@@ -1312,14 +664,6 @@
     },
     {
       "source": "registr-smluv",
-      "source_id": "36342832",
-      "title": "Smlouva o poskytnutí účelové dotace z programu 7.2 Záchranná obnova památek, MĚSTO LOMNICE NAD POPELKOU",
-      "page_url": "https://smlouvy.gov.cz/smlouva/36342832",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
       "source_id": "36813062",
       "title": "Smlouva o poskytnutí rozmnoženiny díla - Lomnice nad Popelkou",
       "page_url": "https://smlouvy.gov.cz/smlouva/36813062",
@@ -1328,93 +672,9 @@
     },
     {
       "source": "registr-smluv",
-      "source_id": "36813062",
-      "title": "Smlouva o poskytnutí rozmnoženiny díla - Lomnice nad Popelkou",
-      "page_url": "https://smlouvy.gov.cz/smlouva/36813062",
-      "documents": [
-        {
-          "index": 1,
-          "name": "Smlouva_Lomnice_n.Popelkou komplet.pdf909ff2416a6784b8f0eecdb2fa84a28c0650ef128c0ac8de310136757c40537chttps://smlouvy.gov.cz/smlouva/soubor/47248726/Smlouva_Lomnice_n.Popelkou%20komplet.pdf",
-          "url": "https://smlouvy.gov.cz/smlouva/soubor/47248726/Smlouva_Lomnice_n.Popelkou%20komplet.pdf1",
-          "status": "download_error",
-          "error": "404 Client Error: Not Found for url: https://smlouvy.gov.cz/smlouva/soubor/47248726/Smlouva_Lomnice_n.Popelkou%20komplet.pdf1"
-        },
-        {
-          "index": 2,
-          "name": "Smlouva_Lomnice_n.Popelkou komplet.pdf909ff2416a6784b8f0eecdb2fa84a28c0650ef128c0ac8de310136757c40537chttps://smlouvy.gov.cz/smlouva/soubor/47248726/Smlouva_Lomnice_n.Popelkou%20komplet.pdf",
-          "url": "https://smlouvy.gov.cz/smlouva/soubor/47248726/Smlouva_Lomnice_n.Popelkou%20komplet.pdf",
-          "sha256": "909ff2416a6784b8f0eecdb2fa84a28c0650ef128c0ac8de310136757c40537c",
-          "bytes": 2082603,
-          "content_type": "application/pdf",
-          "text_available": true,
-          "text_chars": 8853,
-          "text_file": "data/documents/registr-smluv/36813062/002.txt"
-        },
-        {
-          "index": 3,
-          "name": "https://smlouvy.gov.cz/smlouva/soubor/47248726/Smlouva_Lomnice_n.Popelkou%20komplet.pdf",
-          "url": "https://smlouvy.gov.cz/smlouva/soubor/47248726/Smlouva_Lomnice_n.Popelkou%20komplet.pdf",
-          "sha256": "909ff2416a6784b8f0eecdb2fa84a28c0650ef128c0ac8de310136757c40537c",
-          "bytes": 2082603,
-          "content_type": "application/pdf",
-          "text_available": true,
-          "text_chars": 8853,
-          "text_file": "data/documents/registr-smluv/36813062/003.txt"
-        }
-      ],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
       "source_id": "36978239",
       "title": "Smlouva o poskytnutí individuální dotace Město Lomnice nad Popelkou, ul 5. května",
       "page_url": "https://smlouvy.gov.cz/smlouva/36978239",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
-      "source_id": "36978239",
-      "title": "Smlouva o poskytnutí individuální dotace Město Lomnice nad Popelkou, ul 5. května",
-      "page_url": "https://smlouvy.gov.cz/smlouva/36978239",
-      "documents": [
-        {
-          "index": 1,
-          "name": "Smlouva_individualni_dotace_Lomnice_OLP-02908-2026_sig.pdf1caa63a23e28856d13a3989308e6cf983822cf3ed11f4379015f754927ae2901https://smlouvy.gov.cz/smlouva/soubor/47440583/Smlouva_individualni_dotace_Lomnice_OLP-02908-2026_sig.pdf",
-          "url": "https://smlouvy.gov.cz/smlouva/soubor/47440583/Smlouva_individualni_dotace_Lomnice_OLP-02908-2026_sig.pdf1",
-          "status": "download_error",
-          "error": "404 Client Error: Not Found for url: https://smlouvy.gov.cz/smlouva/soubor/47440583/Smlouva_individualni_dotace_Lomnice_OLP-02908-2026_sig.pdf1"
-        },
-        {
-          "index": 2,
-          "name": "Smlouva_individualni_dotace_Lomnice_OLP-02908-2026_sig.pdf1caa63a23e28856d13a3989308e6cf983822cf3ed11f4379015f754927ae2901https://smlouvy.gov.cz/smlouva/soubor/47440583/Smlouva_individualni_dotace_Lomnice_OLP-02908-2026_sig.pdf",
-          "url": "https://smlouvy.gov.cz/smlouva/soubor/47440583/Smlouva_individualni_dotace_Lomnice_OLP-02908-2026_sig.pdf",
-          "sha256": "1caa63a23e28856d13a3989308e6cf983822cf3ed11f4379015f754927ae2901",
-          "bytes": 477425,
-          "content_type": "application/pdf",
-          "text_available": true,
-          "text_chars": 24954,
-          "text_file": "data/documents/registr-smluv/36978239/002.txt"
-        },
-        {
-          "index": 3,
-          "name": "https://smlouvy.gov.cz/smlouva/soubor/47440583/Smlouva_individualni_dotace_Lomnice_OLP-02908-2026_sig.pdf",
-          "url": "https://smlouvy.gov.cz/smlouva/soubor/47440583/Smlouva_individualni_dotace_Lomnice_OLP-02908-2026_sig.pdf",
-          "sha256": "1caa63a23e28856d13a3989308e6cf983822cf3ed11f4379015f754927ae2901",
-          "bytes": 477425,
-          "content_type": "application/pdf",
-          "text_available": true,
-          "text_chars": 24954,
-          "text_file": "data/documents/registr-smluv/36978239/003.txt"
-        }
-      ],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
-      "source_id": "3753",
-      "title": "Smlouva o poskytnutí účelové dotace Libereckému kraji z rozpočtu města Lomnice nad Popelkou",
-      "page_url": "https://smlouvy.gov.cz/smlouva/3753",
       "documents": [],
       "status": "ok"
     },
@@ -1436,33 +696,9 @@
     },
     {
       "source": "registr-smluv",
-      "source_id": "3861664",
-      "title": "Dodatek č. 1 k veřejnoprávní smlouvě o poskynutí neinvestiční dotace",
-      "page_url": "https://smlouvy.gov.cz/smlouva/3861664",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
       "source_id": "40425",
       "title": "Smlouva o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje, Tělovýchova a sport - Sportovní akce",
       "page_url": "https://smlouvy.gov.cz/smlouva/40425",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
-      "source_id": "40425",
-      "title": "Smlouva o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje, Tělovýchova a sport - Sportovní akce",
-      "page_url": "https://smlouvy.gov.cz/smlouva/40425",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
-      "source_id": "4098080",
-      "title": "o převodu z majetku ČR s právem hospodařit pro LČR",
-      "page_url": "https://smlouvy.gov.cz/smlouva/4098080",
       "documents": [],
       "status": "ok"
     },
@@ -1484,33 +720,9 @@
     },
     {
       "source": "registr-smluv",
-      "source_id": "426037",
-      "title": "Dodatek č. 1 ke smlouvě o poskytnutí dotace na poskytování služeb v obecném hospodářském zájmu z rozpočtu Libereckého kraje z finančních prostředků Ministerstva práce a sociálních věcí, č. OLP/588/2016",
-      "page_url": "https://smlouvy.gov.cz/smlouva/426037",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
       "source_id": "4286240",
       "title": "Kamerový systém Lomnice nad Popelkou",
       "page_url": "https://smlouvy.gov.cz/smlouva/4286240",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
-      "source_id": "4286240",
-      "title": "Kamerový systém Lomnice nad Popelkou",
-      "page_url": "https://smlouvy.gov.cz/smlouva/4286240",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
-      "source_id": "4618624",
-      "title": "Poskytnutí účelové neinvestiční dotace na závazek veřejné služby z rozpočtu Libereckého kraje z finančních prostředků MPSV.",
-      "page_url": "https://smlouvy.gov.cz/smlouva/4618624",
       "documents": [],
       "status": "ok"
     },
@@ -1532,33 +744,9 @@
     },
     {
       "source": "registr-smluv",
-      "source_id": "496285",
-      "title": "Veřejnoprávní smlouva o poskytnutí investiční dotace - Lomnice nad Popelkou - bytová zóna BM3 a BK2",
-      "page_url": "https://smlouvy.gov.cz/smlouva/496285",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
       "source_id": "5136459",
       "title": "Veřejnoprávní smlouva o poskytnutí neinvestiční dotace z rozpočtu města Lomnice nad Popelkou na realizaci oprav Lomnice nad Popelkou - oprava VH sítí v ul. Za školou a Lomnice nad Popelkou - rekonstrukce VH sítí v ul. Karla Čapka",
       "page_url": "https://smlouvy.gov.cz/smlouva/5136459",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
-      "source_id": "5136459",
-      "title": "Veřejnoprávní smlouva o poskytnutí neinvestiční dotace z rozpočtu města Lomnice nad Popelkou na realizaci oprav Lomnice nad Popelkou - oprava VH sítí v ul. Za školou a Lomnice nad Popelkou - rekonstrukce VH sítí v ul. Karla Čapka",
-      "page_url": "https://smlouvy.gov.cz/smlouva/5136459",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
-      "source_id": "5195191",
-      "title": "Smlouva o poskytnutí účelové dotace na stavebníě historický průzkum Křížovy vily v Lomnici nad Popelkou",
-      "page_url": "https://smlouvy.gov.cz/smlouva/5195191",
       "documents": [],
       "status": "ok"
     },
@@ -1580,33 +768,9 @@
     },
     {
       "source": "registr-smluv",
-      "source_id": "5853423",
-      "title": "Smlouva o poskytnutí účelové dotace - program 1.1.",
-      "page_url": "https://smlouvy.gov.cz/smlouva/5853423",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
       "source_id": "5857111",
       "title": "Poskytnutí dotace z Dotačního fondu Libereckého kraje program č.1.1 Podpora jednotek požární ochrany obcí Libereckého kraje",
       "page_url": "https://smlouvy.gov.cz/smlouva/5857111",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
-      "source_id": "5857111",
-      "title": "Poskytnutí dotace z Dotačního fondu Libereckého kraje program č.1.1 Podpora jednotek požární ochrany obcí Libereckého kraje",
-      "page_url": "https://smlouvy.gov.cz/smlouva/5857111",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
-      "source_id": "6375151",
-      "title": "Smlouva o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje, programu 8.5 Podpora předcházení vzniku odpadů, jejich opětovného použití a podpora sběru a využití bioodpadu",
-      "page_url": "https://smlouvy.gov.cz/smlouva/6375151",
       "documents": [],
       "status": "ok"
     },
@@ -1628,33 +792,9 @@
     },
     {
       "source": "registr-smluv",
-      "source_id": "6414639",
-      "title": "Dohoda o změně podmínek poskytnutí dotace na základě Smlouvy č. 9270370988,dle NV č. 146/2003 Sb.",
-      "page_url": "https://smlouvy.gov.cz/smlouva/6414639",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
       "source_id": "6439647",
       "title": "Změna výše celkové neinvestiční alokace, kterou lze použít výhradně na provoz základních činností organizace, tj. na úhradu nákladů souvisejících s poskytováním základních činností veřejné služby.",
       "page_url": "https://smlouvy.gov.cz/smlouva/6439647",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
-      "source_id": "6439647",
-      "title": "Změna výše celkové neinvestiční alokace, kterou lze použít výhradně na provoz základních činností organizace, tj. na úhradu nákladů souvisejících s poskytováním základních činností veřejné služby.",
-      "page_url": "https://smlouvy.gov.cz/smlouva/6439647",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
-      "source_id": "711165",
-      "title": "Smlouva o spolupráci při zajištění dopravní obslužnosti Libereckého kraje na období od roku 2017 do roku 2019",
-      "page_url": "https://smlouvy.gov.cz/smlouva/711165",
       "documents": [],
       "status": "ok"
     },
@@ -1676,33 +816,9 @@
     },
     {
       "source": "registr-smluv",
-      "source_id": "7189",
-      "title": "Smlouva o poskytnutí dotace z Dotačního fondu LK - Podpora jednotek požární ochrany obcí LK",
-      "page_url": "https://smlouvy.gov.cz/smlouva/7189",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
       "source_id": "761909",
       "title": "Veřejnoprávní smlouva o poskytnutí investiční dotace z rozpočtu města Lomnice n. P.",
       "page_url": "https://smlouvy.gov.cz/smlouva/761909",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
-      "source_id": "761909",
-      "title": "Veřejnoprávní smlouva o poskytnutí investiční dotace z rozpočtu města Lomnice n. P.",
-      "page_url": "https://smlouvy.gov.cz/smlouva/761909",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
-      "source_id": "7649691",
-      "title": "Dohoda o poskytnutí dotace z Programu rozvoje venkova ČR - 18/003/19210/451/173/002129",
-      "page_url": "https://smlouvy.gov.cz/smlouva/7649691",
       "documents": [],
       "status": "ok"
     },
@@ -1724,33 +840,9 @@
     },
     {
       "source": "registr-smluv",
-      "source_id": "774449",
-      "title": "Lomnice nad Popelkou - nájem NP pro OOP",
-      "page_url": "https://smlouvy.gov.cz/smlouva/774449",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
       "source_id": "8074447",
       "title": "Podskytnutí dotace na poskytování služeb v obecném hospodářském zájmu z rozpočtu LK z finančních prostředků MPSV.",
       "page_url": "https://smlouvy.gov.cz/smlouva/8074447",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
-      "source_id": "8074447",
-      "title": "Podskytnutí dotace na poskytování služeb v obecném hospodářském zájmu z rozpočtu LK z finančních prostředků MPSV.",
-      "page_url": "https://smlouvy.gov.cz/smlouva/8074447",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
-      "source_id": "845225",
-      "title": "Dodatek č. 1 ke smlouvě o poskytnutí účelové dotace Libereckému kraji z rozpočtu Města Lomnice nad Popelkou",
-      "page_url": "https://smlouvy.gov.cz/smlouva/845225",
       "documents": [],
       "status": "ok"
     },
@@ -1772,33 +864,9 @@
     },
     {
       "source": "registr-smluv",
-      "source_id": "8497295",
-      "title": "Obnova bývalé Svobodovy hrobky na hřbitově v Lomnici nad Popelkou - okna a vstupní dveře",
-      "page_url": "https://smlouvy.gov.cz/smlouva/8497295",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
       "source_id": "8513",
       "title": "Smlouva o poskytnutí dotace z Dotačního fondu LK - Podpora jednotek požární ochrany obcí LK",
       "page_url": "https://smlouvy.gov.cz/smlouva/8513",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
-      "source_id": "8513",
-      "title": "Smlouva o poskytnutí dotace z Dotačního fondu LK - Podpora jednotek požární ochrany obcí LK",
-      "page_url": "https://smlouvy.gov.cz/smlouva/8513",
-      "documents": [],
-      "status": "ok"
-    },
-    {
-      "source": "registr-smluv",
-      "source_id": "8786327",
-      "title": "Smlouva o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje na nákup ochranných prostředků požární ochrany",
-      "page_url": "https://smlouvy.gov.cz/smlouva/8786327",
       "documents": [],
       "status": "ok"
     },
