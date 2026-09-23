@@ -36,15 +36,33 @@ def fetch_page(url: str):
         r.raise_for_status()
         html, final_url, transport = r.text, r.url, "direct"
     except requests.RequestException:
-        r = requests.get(jina_url(url), timeout=TIMEOUT, headers={"User-Agent": UA})
-        r.raise_for_status()
-        html, final_url, transport = r.text, url, "jina.ai"
+        try:
+            import subprocess
+            cp = subprocess.run(
+                ["curl", "--fail", "--location", "--http1.1",
+                 "--retry", "3", "--retry-delay", "2",
+                 "--connect-timeout", "20", "--max-time", "45",
+                 "-A", UA, "-H", "Accept: text/html,application/xhtml+xml", url],
+                check=True, capture_output=True, text=True,
+            )
+            html, final_url, transport = cp.stdout, url, "curl"
+        except Exception:
+            r = requests.get(jina_url(url), timeout=TIMEOUT, headers={"User-Agent": UA})
+            r.raise_for_status()
+            html, final_url, transport = r.text, url, "jina.ai"
     soup = BeautifulSoup(html, "html.parser")
     docs = []
     for a in soup.find_all("a", href=True):
         href = norm_url(a["href"])
         label = " ".join(a.stripped_strings)
         if is_document_url(href):
+            docs.append({"url": href, "label": label})
+    # X-EN often exposes document downloads through an orderdocument endpoint
+    # without a .pdf suffix. Keep those links as documents as well.
+    for a in soup.find_all("a", href=True):
+        href = norm_url(a["href"])
+        label = " ".join(a.stripped_strings)
+        if "xenorders" in href.lower() and "orderdocument" in href.lower():
             docs.append({"url": href, "label": label})
     for tag in soup.find_all(True):
         for key, value in tag.attrs.items():
@@ -79,11 +97,37 @@ def extract_pdf(url: str):
                 parts.append("")
         return meta, "\n\n".join(parts).strip()
     except (requests.RequestException, ValueError):
-        pr = requests.get(jina_url(url), timeout=TIMEOUT, headers={"User-Agent": UA})
-        pr.raise_for_status()
-        text = pr.text.strip()
-        return {"url": url, "content_type": "text/markdown; proxy=jina.ai",
-                "transport": "jina.ai"}, text or None
+        try:
+            import subprocess
+            cp = subprocess.run(
+                ["curl", "--fail", "--location", "--http1.1",
+                 "--retry", "3", "--retry-delay", "2",
+                 "--connect-timeout", "20", "--max-time", "60",
+                 "-A", UA, "-H", "Accept: application/pdf,*/*", url],
+                check=True, capture_output=True,
+            )
+            data = cp.stdout
+            if len(data) > MAX_DOC_BYTES:
+                raise ValueError(f"document too large: {len(data)} bytes")
+            meta = {"url": url, "sha256": hashlib.sha256(data).hexdigest(),
+                    "bytes": len(data), "content_type": "application/pdf",
+                    "transport": "curl"}
+            if not data.startswith(b"%PDF"):
+                return meta, None
+            reader = PdfReader(io.BytesIO(data))
+            parts = []
+            for page in reader.pages:
+                try:
+                    parts.append(page.extract_text() or "")
+                except Exception:
+                    parts.append("")
+            return meta, "\n\n".join(parts).strip()
+        except Exception:
+            pr = requests.get(jina_url(url), timeout=TIMEOUT, headers={"User-Agent": UA})
+            pr.raise_for_status()
+            text = pr.text.strip()
+            return {"url": url, "content_type": "text/markdown; proxy=jina.ai",
+                    "transport": "jina.ai"}, text or None
 
 def process(record: dict) -> dict:
     source_id = record.get("source_id") or record.get("procurement_id") or hashlib.sha1(
