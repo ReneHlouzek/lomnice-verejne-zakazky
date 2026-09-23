@@ -140,6 +140,11 @@ def process(record: dict) -> dict:
     if any(x in page_url.lower() for x in ("orderdocument", "a=download", "/download", "/document")):
         result["documents"] = [{"index": 1, "label": record.get("title") or "Dokument", "url": page_url}]
         result["transport"] = "direct_document_url"
+        existing=OUT/str(source_id)/"001.txt"
+        if existing.exists():
+            text=existing.read_text(encoding="utf-8",errors="replace")
+            result["documents"][0].update({"text_available":bool(text),"text_chars":len(text),"text_file":f"data/documents/{source_id}/001.txt","status":"retained_existing_text"})
+            return result
         try:
             meta, text = extract_pdf(page_url)
             result["documents"][0].update(meta)
@@ -162,6 +167,15 @@ def process(record: dict) -> dict:
         return result
     for i, doc in enumerate(docs, 1):
         item = {"index": i, "label": doc["label"], "url": doc["url"]}
+        existing=OUT/str(source_id)/f"{i:03d}.txt"
+        if existing.exists():
+            text=existing.read_text(encoding="utf-8",errors="replace")
+            item["text_available"]=bool(text)
+            item["text_chars"]=len(text)
+            item["text_file"]=f"data/documents/{source_id}/{i:03d}.txt"
+            item["status"]="retained_existing_text"
+            result["documents"].append(item)
+            continue
         try:
             meta, text = extract_pdf(doc["url"])
             item.update(meta)
