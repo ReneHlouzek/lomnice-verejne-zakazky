@@ -154,21 +154,20 @@ def extract_records(path: Path, ico: str) -> Iterable[dict]:
 
         detail = "https://smlouvy.gov.cz/smlouva/" + contract_id if contract_id else ""
         attachments = []
-        for node in elem.iter():
-            val = text(node)
-            if "smlouvy.gov.cz/smlouva/soubor/" in val:
-                matches = re.findall(r"https?://smlouvy\.gov\.cz/smlouva/soubor/[0-9]+/[^\\s<>\"']+?\.pdf", val, flags=re.IGNORECASE)
-                for match in matches:
-                    name = ""
-                    for child in node.iter():
-                        candidate = text(child)
-                        if candidate.lower().endswith((".pdf", ".doc", ".docx", ".rtf", ".odf", ".txt")):
-                            name = candidate
-                            break
-                    name = name.split("https://smlouvy.gov.cz/smlouva/soubor/", 1)[0].strip() or match.rsplit("/", 1)[-1]
-                    item = {"url": match, "name": name}
-                    if item not in attachments:
-                        attachments.append(item)
+        # Attachment URLs can occur in text nodes or XML attributes. Search the
+        # complete serialized record so minor XML shape changes do not erase them.
+        xml_fragment = ET.tostring(elem, encoding="unicode")
+        matches = re.findall(
+            r"https?://smlouvy\\.gov\\.cz/smlouva/soubor/[0-9]+/[^\\s<>\"']+?\\.pdf(?:\\?[^\\s<>\"']*)?",
+            xml_fragment,
+            flags=re.IGNORECASE,
+        )
+        for match in matches:
+            match = match.rstrip(".,;)")
+            name = match.rsplit("/", 1)[-1].split("?", 1)[0]
+            item = {"url": match, "name": name}
+            if item not in attachments:
+                attachments.append(item)
         yield {
             "source": "registr-smluv",
             "source_id": contract_id or version_id,
