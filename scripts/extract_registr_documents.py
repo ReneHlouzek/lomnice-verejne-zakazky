@@ -11,15 +11,25 @@ ROOT=Path(__file__).resolve().parents[1]
 SRC=ROOT/"data"/"sources"/"registr-smluv"
 OUT=ROOT/"data"/"documents"/"registr-smluv"
 MANIFEST=OUT/"manifest.json"
-TIMEOUT=45
+TIMEOUT=20
 MAX_DOC_BYTES=25*1024*1024
 WORKERS=6
 UA="Lomnice-Verejne-Zakazky/1.0 (public-data-archive)"
 
 def extract(url:str):
-    r=requests.get(url,timeout=TIMEOUT,headers={"User-Agent":UA,"Accept":"application/pdf,*/*"})
-    r.raise_for_status()
-    data=r.content
+    try:
+        r=requests.get(url,timeout=TIMEOUT,headers={"User-Agent":UA,"Accept":"application/pdf,*/*"})
+        r.raise_for_status()
+        data=r.content
+    except requests.RequestException:
+        import subprocess
+        cp=subprocess.run(
+            ["curl","--fail","--location","--http1.1","--retry","2","--retry-delay","1",
+             "--connect-timeout","8","--max-time","25","-A",UA,
+             "-H","Accept: application/pdf,*/*",url],
+            check=True,capture_output=True
+        )
+        data=cp.stdout
     if len(data)>MAX_DOC_BYTES: raise ValueError(f"document too large: {len(data)} bytes")
     meta={"url":r.url,"sha256":hashlib.sha256(data).hexdigest(),"bytes":len(data),
           "content_type":r.headers.get("content-type","")}
@@ -69,7 +79,19 @@ def process(path:Path):
 
 def main():
     OUT.mkdir(parents=True,exist_ok=True)
-    files=sorted(SRC.glob("*.json"))
+    # The importer can retain both normalized and raw snapshots. Process each
+    # official contract only once by source_id.
+    all_files=sorted(SRC.glob("*.json"))
+    by_id={}
+    for p in all_files:
+        try:
+            o=json.loads(p.read_text(encoding="utf-8"))
+            rec=o.get("record",o)
+            sid=str(rec.get("source_id") or p.stem)
+            by_id.setdefault(sid,p)
+        except Exception:
+            continue
+    files=list(by_id.values())
     results=[]
     with ThreadPoolExecutor(max_workers=WORKERS) as pool:
         futures={pool.submit(process,p):p for p in files}
