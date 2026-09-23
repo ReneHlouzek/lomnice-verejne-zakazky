@@ -13,9 +13,9 @@ ROOT = Path(__file__).resolve().parents[1]
 SRC = ROOT / "data" / "sources" / "vhodne-uverejneni"
 OUT = ROOT / "data" / "documents"
 MANIFEST = OUT / "manifest.json"
-TIMEOUT = 45
+TIMEOUT = 15
 MAX_DOC_BYTES = 25 * 1024 * 1024
-WORKERS = 6
+WORKERS = 8
 PDF_RE = re.compile(r"\.pdf(?:$|[?#])", re.I)
 UA = "Lomnice-Verejne-Zakazky/1.0 (public-data-archive)"
 
@@ -41,13 +41,13 @@ def fetch_page(url: str):
             cp = subprocess.run(
                 ["curl", "--fail", "--location", "--http1.1",
                  "--retry", "3", "--retry-delay", "2",
-                 "--connect-timeout", "20", "--max-time", "45",
+                 "--connect-timeout", "8", "--max-time", "20",
                  "-A", UA, "-H", "Accept: text/html,application/xhtml+xml", url],
                 check=True, capture_output=True, text=True,
             )
             html, final_url, transport = cp.stdout, url, "curl"
         except Exception:
-            r = requests.get(jina_url(url), timeout=TIMEOUT, headers={"User-Agent": UA})
+            r = requests.get(jina_url(url), timeout=10, headers={"User-Agent": UA})
             r.raise_for_status()
             html, final_url, transport = r.text, url, "jina.ai"
     soup = BeautifulSoup(html, "html.parser")
@@ -102,7 +102,7 @@ def extract_pdf(url: str):
             cp = subprocess.run(
                 ["curl", "--fail", "--location", "--http1.1",
                  "--retry", "3", "--retry-delay", "2",
-                 "--connect-timeout", "20", "--max-time", "60",
+                 "--connect-timeout", "8", "--max-time", "25",
                  "-A", UA, "-H", "Accept: application/pdf,*/*", url],
                 check=True, capture_output=True,
             )
@@ -197,7 +197,7 @@ def main() -> None:
         "pages_checked": len(results), "declared_documents": declared,
         "documents_discovered": discovered, "documents_downloaded": downloaded,
         "documents_text_extracted": extracted, "records": results,
-        "note": "Archives public document metadata and extracted PDF text. Original binaries are not committed; direct PVU access may fall back to jina.ai."
+        "note": "Archives public document metadata and extracted PDF text. Original binaries are not committed; inaccessible documents are retained in the manifest as errors."
     }, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"VU documents: pages={len(results)} declared={declared} discovered={discovered} downloaded={downloaded} text={extracted}")
 
