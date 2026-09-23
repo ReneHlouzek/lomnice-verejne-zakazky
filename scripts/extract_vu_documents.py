@@ -39,7 +39,7 @@ def fetch_page(url: str):
         try:
             import subprocess
             cp = subprocess.run(
-                ["curl", "--fail", "--location", "--http1.1",
+                ["curl", "-4", "--fail", "--location", "--http1.1",
                  "--retry", "2", "--retry-delay", "1",
                  "--connect-timeout", "8", "--max-time", "20",
                  "-A", UA, "-H", "Accept: text/html,application/xhtml+xml", url],
