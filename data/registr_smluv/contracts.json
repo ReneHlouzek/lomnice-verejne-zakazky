@@ -2050,7 +2050,8 @@
       "publisher": "",
       "subject": "Smlouva o poskytnutí rozmnoženiny díla - Lomnice nad Popelkou",
       "counterparty": "Národní knihovna České republiky",
-      "detail_url": "https://smlouvy.gov.cz/smlouva/36813062"
+      "detail_url": "https://smlouvy.gov.cz/smlouva/36813062",
+      "attachments": []
     },
     {
       "source": "registr-smluv",
@@ -2069,7 +2070,8 @@
       "publisher": "",
       "subject": "Smlouva o poskytnutí individuální dotace Město Lomnice nad Popelkou, ul 5. května",
       "counterparty": "Liberecký kraj",
-      "detail_url": "https://smlouvy.gov.cz/smlouva/36978239"
+      "detail_url": "https://smlouvy.gov.cz/smlouva/36978239",
+      "attachments": []
     }
   ],
   "total": 109

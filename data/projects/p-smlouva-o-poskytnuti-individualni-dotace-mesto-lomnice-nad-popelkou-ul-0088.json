@@ -96,7 +96,8 @@
           "publisher": "",
           "subject": "Smlouva o poskytnutí individuální dotace Město Lomnice nad Popelkou, ul 5. května",
           "counterparty": "Liberecký kraj",
-          "detail_url": "https://smlouvy.gov.cz/smlouva/36978239"
+          "detail_url": "https://smlouvy.gov.cz/smlouva/36978239",
+          "attachments": []
         },
         "_source_file": "data/sources/registr-smluv/rs-000109.json"
       }
