@@ -22,8 +22,17 @@ const typeLabels={
 };
 
 function documentsSection(ss,analysis){
-  const ids=new Set(ss.map(s=>String((s.record||s).source_id||'')).filter(Boolean));
-  const docs=(analysis?.documents||[]).filter(d=>ids.has(String(d.source_id||'')));
+  const ids=new Set();
+  const urls=new Set();
+  ss.forEach(s=>{
+    const r=s.record||s;
+    if(r.source_id)ids.add(String(r.source_id));
+    if(r.source_url)urls.add(String(r.source_url));
+  });
+  const docs=(analysis?.documents||[]).filter(d=>
+    (d.source_id!=null && ids.has(String(d.source_id))) ||
+    (d.source_url && urls.has(String(d.source_url)))
+  );
   if(!docs.length)return '';
   const typeLabels={contract:'smlouva',addendum:'dodatek',budget:'rozpočet',change_sheet:'změnový list',grant:'dotace',tender:'zakázka',deadline:'termíny'};
   return `<section id="documents" class="card">
