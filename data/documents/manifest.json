@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-09-23T18:01:02Z",
+  "updated_at": "2026-09-23T18:18:33Z",
   "pages_checked": 31,
   "declared_documents": 31,
-  "documents_discovered": 0,
+  "documents_discovered": 1,
   "documents_downloaded": 0,
   "documents_text_extracted": 0,
   "records": [
@@ -14,7 +14,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=10)"
+      "error": "VU page unavailable: Command '['curl', '--fail', '--location', '--http1.1', '--retry', '2', '--retry-delay', '1', '--connect-timeout', '8', '--max-time', '20', '-A', 'Lomnice-Verejne-Zakazky/1.0 (public-data-archive)', '-H', 'Accept: text/html,application/xhtml+xml', 'https://www.vhodne-uverejneni.cz/smlouvy-organizace/mesto-lomnice-nad-popelkou']' returned non-zero exit status 28."
     },
     {
       "source": "vhodne-uverejneni",
@@ -24,7 +24,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=10)"
+      "error": "VU page unavailable: Command '['curl', '--fail', '--location', '--http1.1', '--retry', '2', '--retry-delay', '1', '--connect-timeout', '8', '--max-time', '20', '-A', 'Lomnice-Verejne-Zakazky/1.0 (public-data-archive)', '-H', 'Accept: text/html,application/xhtml+xml', 'https://www.vhodne-uverejneni.cz/zakazka/restauratorske-prace-na-spodnich-castech-marianskeho-sloupu-v-lomnici-nad-popelkou']' returned non-zero exit status 28."
     },
     {
       "source": "vhodne-uverejneni",
@@ -32,9 +32,17 @@
       "page_url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3212050&h=orderdocument&m=xenorders&token=",
       "title": "Obnova komunikace Lomnice nad Popelkou – Chlum, I. etapa",
       "document_count_declared": null,
-      "documents": [],
-      "status": "page_error",
-      "error": "HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=10)"
+      "documents": [
+        {
+          "index": 1,
+          "label": "Obnova komunikace Lomnice nad Popelkou – Chlum, I. etapa",
+          "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3212050&h=orderdocument&m=xenorders&token=",
+          "status": "download_error",
+          "error": "Command '['curl', '--fail', '--location', '--http1.1', '--retry', '3', '--retry-delay', '2', '--connect-timeout', '8', '--max-time', '25', '-A', 'Lomnice-Verejne-Zakazky/1.0 (public-data-archive)', '-H', 'Accept: application/pdf,*/*', 'https://www.vhodne-uverejneni.cz/index.php?a=download&document=3212050&h=orderdocument&m=xenorders&token=']' returned non-zero exit status 28."
+        }
+      ],
+      "status": "ok",
+      "transport": "direct_document_url"
     },
     {
       "source": "vhodne-uverejneni",
@@ -44,7 +52,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=10)"
+      "error": "VU page unavailable: Command '['curl', '--fail', '--location', '--http1.1', '--retry', '2', '--retry-delay', '1', '--connect-timeout', '8', '--max-time', '20', '-A', 'Lomnice-Verejne-Zakazky/1.0 (public-data-archive)', '-H', 'Accept: text/html,application/xhtml+xml', 'https://www.vhodne-uverejneni.cz/zakazka/mesto-lomnice-nad-popelkou-cisternova-automobilova-strikacka']' returned non-zero exit status 28."
     },
     {
       "source": "vhodne-uverejneni",
@@ -54,7 +62,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=10)"
+      "error": "VU page unavailable: Command '['curl', '--fail', '--location', '--http1.1', '--retry', '2', '--retry-delay', '1', '--connect-timeout', '8', '--max-time', '20', '-A', 'Lomnice-Verejne-Zakazky/1.0 (public-data-archive)', '-H', 'Accept: text/html,application/xhtml+xml', 'https://www.vhodne-uverejneni.cz/zakazka/projektova-dokumentace-mistnich-komunikaci-lomnice-nad-popelkou']' returned non-zero exit status 28."
     },
     {
       "source": "vhodne-uverejneni",
@@ -64,7 +72,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=10)"
+      "error": "VU page unavailable: Command '['curl', '--fail', '--location', '--http1.1', '--retry', '2', '--retry-delay', '1', '--connect-timeout', '8', '--max-time', '20', '-A', 'Lomnice-Verejne-Zakazky/1.0 (public-data-archive)', '-H', 'Accept: text/html,application/xhtml+xml', 'https://www.vhodne-uverejneni.cz/zakazka/domov-pro-osoby-s-poruchou-autistickeho-spektra-1']' returned non-zero exit status 28."
     },
     {
       "source": "vhodne-uverejneni",
@@ -74,7 +82,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=10)"
+      "error": "VU page unavailable: Command '['curl', '--fail', '--location', '--http1.1', '--retry', '2', '--retry-delay', '1', '--connect-timeout', '8', '--max-time', '20', '-A', 'Lomnice-Verejne-Zakazky/1.0 (public-data-archive)', '-H', 'Accept: text/html,application/xhtml+xml', 'https://www.vhodne-uverejneni.cz/zakazka/automobil-pro-terenni-socialni-sluzbu-pecovatelske-sluzby-lomnice-nad-popelkou-prispevkove-organizace']' returned non-zero exit status 28."
     },
     {
       "source": "vhodne-uverejneni",
@@ -84,7 +92,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=10)"
+      "error": "VU page unavailable: Command '['curl', '--fail', '--location', '--http1.1', '--retry', '2', '--retry-delay', '1', '--connect-timeout', '8', '--max-time', '20', '-A', 'Lomnice-Verejne-Zakazky/1.0 (public-data-archive)', '-H', 'Accept: text/html,application/xhtml+xml', 'https://www.vhodne-uverejneni.cz/zakazka/obnova-telocvicen-pri-zs-t-g-masaryka-v-lomnici-nad-popelkou']' returned non-zero exit status 28."
     },
     {
       "source": "vhodne-uverejneni",
@@ -94,7 +102,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=10)"
+      "error": "VU page unavailable: Command '['curl', '--fail', '--location', '--http1.1', '--retry', '2', '--retry-delay', '1', '--connect-timeout', '8', '--max-time', '20', '-A', 'Lomnice-Verejne-Zakazky/1.0 (public-data-archive)', '-H', 'Accept: text/html,application/xhtml+xml', 'https://www.vhodne-uverejneni.cz/zakazka/pristavba-servisniho-objektu-lomnice-nad-popelkou']' returned non-zero exit status 28."
     },
     {
       "source": "vhodne-uverejneni",
@@ -104,7 +112,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=10)"
+      "error": "VU page unavailable: Command '['curl', '--fail', '--location', '--http1.1', '--retry', '2', '--retry-delay', '1', '--connect-timeout', '8', '--max-time', '20', '-A', 'Lomnice-Verejne-Zakazky/1.0 (public-data-archive)', '-H', 'Accept: text/html,application/xhtml+xml', 'https://www.vhodne-uverejneni.cz/zakazka/instalace-domovniho-telefonu-a-rozvodu-strukturovane-kabelaze-nnp-lomnice-nad-popelkou']' returned non-zero exit status 28."
     },
     {
       "source": "vhodne-uverejneni",
@@ -114,7 +122,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=10)"
+      "error": "VU page unavailable: Command '['curl', '--fail', '--location', '--http1.1', '--retry', '2', '--retry-delay', '1', '--connect-timeout', '8', '--max-time', '20', '-A', 'Lomnice-Verejne-Zakazky/1.0 (public-data-archive)', '-H', 'Accept: text/html,application/xhtml+xml', 'https://www.vhodne-uverejneni.cz/zakazka/vydani-obrazove-publikace-lomnice-nad-popelkou-historie-skolstvi']' returned non-zero exit status 28."
     },
     {
       "source": "vhodne-uverejneni",
@@ -124,7 +132,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=10)"
+      "error": "VU page unavailable: Command '['curl', '--fail', '--location', '--http1.1', '--retry', '2', '--retry-delay', '1', '--connect-timeout', '8', '--max-time', '20', '-A', 'Lomnice-Verejne-Zakazky/1.0 (public-data-archive)', '-H', 'Accept: text/html,application/xhtml+xml', 'https://www.vhodne-uverejneni.cz/zakazka/silnice-ii-284-lomnice-nad-popelkou-ulice-5-kvetna']' returned non-zero exit status 28."
     },
     {
       "source": "vhodne-uverejneni",
@@ -134,7 +142,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=10)"
+      "error": "VU page unavailable: Command '['curl', '--fail', '--location', '--http1.1', '--retry', '2', '--retry-delay', '1', '--connect-timeout', '8', '--max-time', '20', '-A', 'Lomnice-Verejne-Zakazky/1.0 (public-data-archive)', '-H', 'Accept: text/html,application/xhtml+xml', 'https://www.vhodne-uverejneni.cz/index.php?a=detail&contract=92577&h=contractsregister&m=xenorders']' returned non-zero exit status 28."
     },
     {
       "source": "vhodne-uverejneni",
@@ -144,7 +152,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=10)"
+      "error": "VU page unavailable: Command '['curl', '--fail', '--location', '--http1.1', '--retry', '2', '--retry-delay', '1', '--connect-timeout', '8', '--max-time', '20', '-A', 'Lomnice-Verejne-Zakazky/1.0 (public-data-archive)', '-H', 'Accept: text/html,application/xhtml+xml', 'https://www.vhodne-uverejneni.cz/zakazka/obnova-mvn-technolen-lomnice-nad-popelkou']' returned non-zero exit status 28."
     },
     {
       "source": "vhodne-uverejneni",
@@ -154,7 +162,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=10)"
+      "error": "VU page unavailable: Command '['curl', '--fail', '--location', '--http1.1', '--retry', '2', '--retry-delay', '1', '--connect-timeout', '8', '--max-time', '20', '-A', 'Lomnice-Verejne-Zakazky/1.0 (public-data-archive)', '-H', 'Accept: text/html,application/xhtml+xml', 'https://www.vhodne-uverejneni.cz/zakazka/rekonstrukce-verejneho-osvetleni-ulice-jilemnicka-a-cast-plk-truhlare-lomnice-nad-popelkou']' returned non-zero exit status 28."
     },
     {
       "source": "vhodne-uverejneni",
@@ -164,7 +172,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=10)"
+      "error": "VU page unavailable: Command '['curl', '--fail', '--location', '--http1.1', '--retry', '2', '--retry-delay', '1', '--connect-timeout', '8', '--max-time', '20', '-A', 'Lomnice-Verejne-Zakazky/1.0 (public-data-archive)', '-H', 'Accept: text/html,application/xhtml+xml', 'https://www.vhodne-uverejneni.cz/zakazka/oprava-strechy-domu-c-p-32-ul-antala-staska-v-lomnici-nad-popelkou']' returned non-zero exit status 28."
     },
     {
       "source": "vhodne-uverejneni",
@@ -174,7 +182,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=10)"
+      "error": "VU page unavailable: Command '['curl', '--fail', '--location', '--http1.1', '--retry', '2', '--retry-delay', '1', '--connect-timeout', '8', '--max-time', '20', '-A', 'Lomnice-Verejne-Zakazky/1.0 (public-data-archive)', '-H', 'Accept: text/html,application/xhtml+xml', 'https://www.vhodne-uverejneni.cz/zakazka/revitalizace-rybnika-matous-a-jeho-okoli-v-lomnici-nad-popelkou']' returned non-zero exit status 28."
     },
     {
       "source": "vhodne-uverejneni",
@@ -184,7 +192,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=10)"
+      "error": "VU page unavailable: Command '['curl', '--fail', '--location', '--http1.1', '--retry', '2', '--retry-delay', '1', '--connect-timeout', '8', '--max-time', '20', '-A', 'Lomnice-Verejne-Zakazky/1.0 (public-data-archive)', '-H', 'Accept: text/html,application/xhtml+xml', 'https://www.vhodne-uverejneni.cz/zakazka/revitalizace-verejneho-prostranstvi-na-hrbitove-2-etapa-lomnice-nad-popelkou']' returned non-zero exit status 28."
     },
     {
       "source": "vhodne-uverejneni",
@@ -194,7 +202,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=10)"
+      "error": "VU page unavailable: Command '['curl', '--fail', '--location', '--http1.1', '--retry', '2', '--retry-delay', '1', '--connect-timeout', '8', '--max-time', '20', '-A', 'Lomnice-Verejne-Zakazky/1.0 (public-data-archive)', '-H', 'Accept: text/html,application/xhtml+xml', 'https://www.vhodne-uverejneni.cz/zakazka/opravy-mistnich-komunikaci-ve-meste-lomnice-nad-popelkou']' returned non-zero exit status 28."
     },
     {
       "source": "vhodne-uverejneni",
@@ -204,7 +212,7 @@
       "document_count_declared": 6,
       "documents": [],
       "status": "page_error",
-      "error": "HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=10)"
+      "error": "VU page unavailable: Command '['curl', '--fail', '--location', '--http1.1', '--retry', '2', '--retry-delay', '1', '--connect-timeout', '8', '--max-time', '20', '-A', 'Lomnice-Verejne-Zakazky/1.0 (public-data-archive)', '-H', 'Accept: text/html,application/xhtml+xml', 'https://www.vhodne-uverejneni.cz/index.php?a=detail&contract=101051&h=contractsregister&m=xenorders']' returned non-zero exit status 28."
     },
     {
       "source": "vhodne-uverejneni",
@@ -214,7 +222,7 @@
       "document_count_declared": 10,
       "documents": [],
       "status": "page_error",
-      "error": "HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=10)"
+      "error": "VU page unavailable: Command '['curl', '--fail', '--location', '--http1.1', '--retry', '2', '--retry-delay', '1', '--connect-timeout', '8', '--max-time', '20', '-A', 'Lomnice-Verejne-Zakazky/1.0 (public-data-archive)', '-H', 'Accept: text/html,application/xhtml+xml', 'https://www.vhodne-uverejneni.cz/index.php?a=detail&contract=101359&h=contractsregister&m=xenorders']' returned non-zero exit status 28."
     },
     {
       "source": "vhodne-uverejneni",
@@ -224,7 +232,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=10)"
+      "error": "VU page unavailable: Command '['curl', '--fail', '--location', '--http1.1', '--retry', '2', '--retry-delay', '1', '--connect-timeout', '8', '--max-time', '20', '-A', 'Lomnice-Verejne-Zakazky/1.0 (public-data-archive)', '-H', 'Accept: text/html,application/xhtml+xml', 'https://www.vhodne-uverejneni.cz/index.php?a=detail&contract=105575&h=contractsregister&m=xenorders']' returned non-zero exit status 28."
     },
     {
       "source": "vhodne-uverejneni",
@@ -234,7 +242,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=10)"
+      "error": "VU page unavailable: Command '['curl', '--fail', '--location', '--http1.1', '--retry', '2', '--retry-delay', '1', '--connect-timeout', '8', '--max-time', '20', '-A', 'Lomnice-Verejne-Zakazky/1.0 (public-data-archive)', '-H', 'Accept: text/html,application/xhtml+xml', 'https://www.vhodne-uverejneni.cz/zakazka/sanace-vlhkeho-zdiva-sklepnich-prostor-cp-886-lomnice-nad-popelkou']' returned non-zero exit status 28."
     },
     {
       "source": "vhodne-uverejneni",
@@ -244,7 +252,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=10)"
+      "error": "VU page unavailable: Command '['curl', '--fail', '--location', '--http1.1', '--retry', '2', '--retry-delay', '1', '--connect-timeout', '8', '--max-time', '20', '-A', 'Lomnice-Verejne-Zakazky/1.0 (public-data-archive)', '-H', 'Accept: text/html,application/xhtml+xml', 'https://www.vhodne-uverejneni.cz/zakazka/modernizace-uceben-zus-dodavky']' returned non-zero exit status 28."
     },
     {
       "source": "vhodne-uverejneni",
@@ -254,7 +262,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=10)"
+      "error": "VU page unavailable: Command '['curl', '--fail', '--location', '--http1.1', '--retry', '2', '--retry-delay', '1', '--connect-timeout', '8', '--max-time', '20', '-A', 'Lomnice-Verejne-Zakazky/1.0 (public-data-archive)', '-H', 'Accept: text/html,application/xhtml+xml', 'https://www.vhodne-uverejneni.cz/zakazka/verejne-osvetleni-11']' returned non-zero exit status 28."
     },
     {
       "source": "vhodne-uverejneni",
@@ -264,7 +272,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=10)"
+      "error": "VU page unavailable: Command '['curl', '--fail', '--location', '--http1.1', '--retry', '2', '--retry-delay', '1', '--connect-timeout', '8', '--max-time', '20', '-A', 'Lomnice-Verejne-Zakazky/1.0 (public-data-archive)', '-H', 'Accept: text/html,application/xhtml+xml', 'https://www.vhodne-uverejneni.cz/zakazka/rozsireni-polikliniky-lomnice-nad-popelkou-dokumentace-stavebniho-zameru']' returned non-zero exit status 28."
     },
     {
       "source": "vhodne-uverejneni",
@@ -274,7 +282,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=10)"
+      "error": "VU page unavailable: Command '['curl', '--fail', '--location', '--http1.1', '--retry', '2', '--retry-delay', '1', '--connect-timeout', '8', '--max-time', '20', '-A', 'Lomnice-Verejne-Zakazky/1.0 (public-data-archive)', '-H', 'Accept: text/html,application/xhtml+xml', 'https://www.vhodne-uverejneni.cz/zakazka/nemocnice-nasledne-pece-lomnice-nad-popelkou-investice-a-opravy']' returned non-zero exit status 28."
     },
     {
       "source": "vhodne-uverejneni",
@@ -284,7 +292,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=10)"
+      "error": "VU page unavailable: Command '['curl', '--fail', '--location', '--http1.1', '--retry', '2', '--retry-delay', '1', '--connect-timeout', '8', '--max-time', '20', '-A', 'Lomnice-Verejne-Zakazky/1.0 (public-data-archive)', '-H', 'Accept: text/html,application/xhtml+xml', 'https://www.vhodne-uverejneni.cz/zakazka/karavanove-stani-koupaliste-lomnice-nad-popelkou']' returned non-zero exit status 28."
     },
     {
       "source": "vhodne-uverejneni",
@@ -294,7 +302,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=10)"
+      "error": "VU page unavailable: Command '['curl', '--fail', '--location', '--http1.1', '--retry', '2', '--retry-delay', '1', '--connect-timeout', '8', '--max-time', '20', '-A', 'Lomnice-Verejne-Zakazky/1.0 (public-data-archive)', '-H', 'Accept: text/html,application/xhtml+xml', 'https://www.vhodne-uverejneni.cz/profil/mesto-lomnice-nad-popelkou']' returned non-zero exit status 28."
     },
     {
       "source": "vhodne-uverejneni",
@@ -304,7 +312,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=10)"
+      "error": "VU page unavailable: Command '['curl', '--fail', '--location', '--http1.1', '--retry', '2', '--retry-delay', '1', '--connect-timeout', '8', '--max-time', '20', '-A', 'Lomnice-Verejne-Zakazky/1.0 (public-data-archive)', '-H', 'Accept: text/html,application/xhtml+xml', 'https://www.vhodne-uverejneni.cz/zakazka/rekonstrukce-topneho-systemu-vcetne-zdroje-tepla-v-objektu-k-urnovemu-haji-cp-118-lomnice-nad-popelkou']' returned non-zero exit status 28."
     },
     {
       "source": "vhodne-uverejneni",
@@ -314,7 +322,7 @@
       "document_count_declared": 15,
       "documents": [],
       "status": "page_error",
-      "error": "HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=10)"
+      "error": "VU page unavailable: Command '['curl', '--fail', '--location', '--http1.1', '--retry', '2', '--retry-delay', '1', '--connect-timeout', '8', '--max-time', '20', '-A', 'Lomnice-Verejne-Zakazky/1.0 (public-data-archive)', '-H', 'Accept: text/html,application/xhtml+xml', 'https://www.vhodne-uverejneni.cz/index.php?a=detail&contract=95276&h=contractsregister&m=xenorders']' returned non-zero exit status 28."
     }
   ],
   "note": "Archives public document metadata and extracted PDF text. Original binaries are not committed; inaccessible documents are retained in the manifest as errors."
