@@ -22,7 +22,7 @@ import requests
 ROOT = Path(__file__).resolve().parents[1]
 CONFIG = json.loads((ROOT / "config.json").read_text(encoding="utf-8"))
 PROFILE = CONFIG["source"]["profile_url"].rstrip("/")
-TIMEOUT = max(int(CONFIG["crawler"].get("timeout_seconds", 30)), 60)
+TIMEOUT = min(max(int(CONFIG["crawler"].get("timeout_seconds", 30)), 8), 20)
 RETRIES = max(int(CONFIG["crawler"].get("max_retries", 3)), 3)
 
 
@@ -51,7 +51,7 @@ def fetch_curl(url: str) -> bytes | None:
     try:
         cmd = [
             "curl", "--fail", "--silent", "--show-error", "--location",
-            "--ipv4", "--max-time", str(TIMEOUT), "--connect-timeout", "15",
+            "--ipv4", "--retry", "1", "--retry-delay", "1", "--max-time", str(TIMEOUT), "--connect-timeout", "5",
             "-A", "Mozilla/5.0 (compatible; Lomnice-Verejne-Zakazky/0.6)",
             "-o", output, url,
         ]
@@ -71,9 +71,9 @@ def fetch_requests(session: requests.Session, url: str) -> bytes | None:
         "User-Agent": "Mozilla/5.0 (compatible; Lomnice-Verejne-Zakazky/0.6; +public-data-archive)",
         "Accept": "application/xml,text/xml,*/*;q=0.8",
     }
-    for attempt in range(RETRIES):
+    for attempt in range(min(RETRIES, 2)):
         try:
-            response = session.get(url, timeout=(15, TIMEOUT), headers=headers, allow_redirects=True)
+            response = session.get(url, timeout=(5, TIMEOUT), headers=headers, allow_redirects=True)
             response.raise_for_status()
             return response.content
         except requests.RequestException:
