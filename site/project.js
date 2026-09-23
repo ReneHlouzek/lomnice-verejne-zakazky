@@ -21,6 +21,26 @@ const typeLabels={
   other:'Jiný záznam'
 };
 
+function documentsSection(ss,analysis){
+  const ids=new Set(ss.map(s=>String((s.record||s).source_id||'')).filter(Boolean));
+  const docs=(analysis?.documents||[]).filter(d=>ids.has(String(d.source_id||'')));
+  if(!docs.length)return '';
+  const typeLabels={contract:'smlouva',addendum:'dodatek',budget:'rozpočet',change_sheet:'změnový list',grant:'dotace',tender:'zakázka',deadline:'termíny'};
+  return `<section id="documents" class="card">
+    <div class="section-title"><div><p class="eyebrow dark">DOKUMENTY</p><h2>Co bylo nalezeno v přílohách</h2></div><span>${docs.length} analyzovaných dokumentů</span></div>
+    <p class="method-note">Tato část zobrazuje pouze automaticky rozpoznané údaje z textu dostupných PDF. Nejde o právní ani ekonomické hodnocení a výňatky mohou vyžadovat ruční kontrolu.</p>
+    <div class="document-list">${docs.map(d=>`<article class="source document-item">
+      <div class="source-head"><span class="source-no">PDF</span><strong>${esc(d.document_name||'Dokument')}</strong></div>
+      <div class="badges">${(d.document_types||[]).map(t=>`<span class="badge">${esc(typeLabels[t]||t)}</span>`).join('')}</div>
+      <div class="source-grid">
+        <span><small>Text</small><b>${Number(d.text_chars||0).toLocaleString('cs-CZ')} znaků</b></span>
+        <span><small>Částky</small><b>${d.amounts_czk?.length?d.amounts_czk.map(money).join(', '):'—'}</b></span>
+        <span><small>Data</small><b>${d.dates?.length?d.dates.slice(0,5).map(date).join(', '):'—'}</b></span>
+      </div>
+      ${d.snippets?.length?`<details><summary>Ukázky nalezeného textu</summary><div class="document-snippets">${d.snippets.map(x=>`<p>${esc(x)}</p>`).join('')}</div></details>`:''}
+    </article>`).join('')}</div>
+  </section>`;
+}
 function sourceRows(ss){
   return ss.map((s,i)=>{
     const r=s.record||s;
@@ -54,14 +74,16 @@ async function run(){
   if(!id){root.innerHTML='<div class="empty">Chybí identifikátor zakázky.</div>';return}
   try{
     const p=await fetch(`./data/projects/${encodeURIComponent(id)}.json`).then(r=>{if(!r.ok)throw Error('HTTP '+r.status);return r.json()});
-    render(p);
+    let documentAnalysis={documents:[]};
+    try{ documentAnalysis=await fetch('./data/documents/analysis.json').then(r=>r.ok?r.json():({documents:[]})); }catch(_){ }
+    render(p,documentAnalysis);
   }catch(e){
     console.error(e);
     root.innerHTML='<div class="empty"><strong>Detail se nepodařilo načíst.</strong><br><span class="meta">Záznam nemusí být dostupný nebo došlo k chybě při načtení dat.</span></div>';
   }
 }
 
-function render(p){
+function render(p,documentAnalysis={documents:[]}){
   const c=p.canonical||{},f=c.financial||{},a=p.analysis||{},events=c.lifecycle?.events||[],ss=p.sources||[];
   const procurement=c.procurement||{}, verification=c.verification||{};
   const analysisFinancial=a.financial||{};
@@ -103,7 +125,7 @@ function render(p){
     </section>
 
     <nav class="detail-nav">
-      <a href="#overview">Přehled</a><a href="#procurement">Zakázka</a><a href="#coverage">Data</a><a href="#finance">Finance</a><a href="#timeline">Časová osa</a><a href="#checks">Kontroly</a><a href="#sources">Zdroje</a>
+      <a href="#overview">Přehled</a><a href="#procurement">Zakázka</a><a href="#coverage">Data</a><a href="#finance">Finance</a><a href="#timeline">Časová osa</a><a href="#checks">Kontroly</a><a href="#documents">Dokumenty</a><a href="#sources">Zdroje</a>
     </nav>
 
     <section id="overview" class="card detail-summary">
@@ -158,6 +180,8 @@ function render(p){
       <p class="method-note">Signály jsou popisné kontroly dat. Samy o sobě neprokazují pochybení ani nezákonnost.</p>
       ${signals(a.signals||[])}
     </section>
+
+    ${documentsSection(ss,documentAnalysis)}
 
     <section id="sources" class="card">
       <div class="section-title"><div><p class="eyebrow dark">DOKUMENTACE</p><h2>Zdrojové záznamy</h2></div><span>${sourceCount} ${sourceCount===1?'záznam':'záznamů'}</span></div>
