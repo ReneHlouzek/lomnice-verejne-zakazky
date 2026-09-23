@@ -158,10 +158,42 @@ def extract_records(path: Path, ico: str) -> Iterable[dict]:
         # complete serialized record so minor XML shape changes do not erase them.
         xml_fragment = ET.tostring(elem, encoding="unicode")
         matches = re.findall(
-            r"https?://smlouvy\.gov\.cz/smlouva/soubor/[0-9]+/[^\s<>\x22\x27]+?\.pdf(?:\?[^\s<>\x22\x27]*)?",
+            r"https?://(?:smlouvy|isrs)\.gov\.cz/smlouva/soubor/[0-9]+/[^\s<>\x22\x27]+?\.pdf(?:\?[^\s<>\x22\x27]*)?",
             xml_fragment,
             flags=re.IGNORECASE,
         )
+        # Some current exports omit attachment URLs even though the public
+        # detail page exposes them. Fall back to the official detail page.
+        if not matches and detail:
+            try:
+                html = subprocess.run(
+                    [
+                        "curl", "--fail", "--location", "--http1.1",
+                        "--retry", "3", "--retry-delay", "2",
+                        "--connect-timeout", "20", "--max-time", "40",
+                        "-A", "Lomnice-verejne-zakazky/1.0",
+                        detail,
+                    ],
+                    check=True, capture_output=True, text=True,
+                ).stdout
+                matches = re.findall(
+                    r"https?://(?:smlouvy|isrs)\.gov\.cz/smlouva/soubor/[0-9]+/[^\s<>\x22\x27]+?\.pdf(?:\?[^\s<>\x22\x27]*)?",
+                    html,
+                    flags=re.IGNORECASE,
+                )
+                if not matches:
+                    hrefs = re.findall(
+                        r"""href\s*=\s*["']([^"']+\.pdf(?:\?[^"']*)?)["']""",
+                        html,
+                        flags=re.IGNORECASE,
+                    )
+                    matches = [
+                        ("https://smlouvy.gov.cz" + h if h.startswith("/") else h)
+                        for h in hrefs
+                        if "/smlouva/soubor/" in h
+                    ]
+            except Exception:
+                matches = []
         for match in matches:
             match = match.rstrip(".,;)")
             name = match.rsplit("/", 1)[-1].split("?", 1)[0]
