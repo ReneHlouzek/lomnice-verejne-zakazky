@@ -97,7 +97,20 @@
           "subject": "Smlouva o poskytnutí rozmnoženiny díla - Lomnice nad Popelkou",
           "counterparty": "Národní knihovna České republiky",
           "detail_url": "https://smlouvy.gov.cz/smlouva/36813062",
-          "attachments": []
+          "attachments": [
+            {
+              "url": "https://smlouvy.gov.cz/smlouva/soubor/47248726/Smlouva_Lomnice_n.Popelkou%20komplet.pdf1",
+              "name": "Smlouva_Lomnice_n.Popelkou komplet.pdf909ff2416a6784b8f0eecdb2fa84a28c0650ef128c0ac8de310136757c40537chttps://smlouvy.gov.cz/smlouva/soubor/47248726/Smlouva_Lomnice_n.Popelkou%20komplet.pdf"
+            },
+            {
+              "url": "https://smlouvy.gov.cz/smlouva/soubor/47248726/Smlouva_Lomnice_n.Popelkou%20komplet.pdf",
+              "name": "Smlouva_Lomnice_n.Popelkou komplet.pdf909ff2416a6784b8f0eecdb2fa84a28c0650ef128c0ac8de310136757c40537chttps://smlouvy.gov.cz/smlouva/soubor/47248726/Smlouva_Lomnice_n.Popelkou%20komplet.pdf"
+            },
+            {
+              "url": "https://smlouvy.gov.cz/smlouva/soubor/47248726/Smlouva_Lomnice_n.Popelkou%20komplet.pdf",
+              "name": "https://smlouvy.gov.cz/smlouva/soubor/47248726/Smlouva_Lomnice_n.Popelkou%20komplet.pdf"
+            }
+          ]
         },
         "_source_file": "data/sources/registr-smluv/rs-000108.json"
       }
