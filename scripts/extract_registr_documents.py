@@ -69,7 +69,7 @@ def main():
             try: results.append(fut.result())
             except Exception as exc: results.append({"source":"registr-smluv","source_id":p.stem,"documents":[],"status":"worker_error","error":str(exc)})
     results.sort(key=lambda x:x.get("source_id",""))
-    declared=sum(len(json.loads(p.read_text(encoding="utf-8")).get("record",{}).get("attachments") or []) for p in files)
+    declared=sum(len((lambda o: o.get("record", o).get("attachments") or [])(json.loads(p.read_text(encoding="utf-8"))) ) for p in files)
     discovered=sum(len(x.get("documents",[])) for x in results)
     downloaded=sum(1 for x in results for d in x.get("documents",[]) if d.get("sha256"))
     extracted=sum(1 for x in results for d in x.get("documents",[]) if d.get("text_available"))
