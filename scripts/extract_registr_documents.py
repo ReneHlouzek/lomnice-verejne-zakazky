@@ -35,12 +35,17 @@ def process(path:Path):
     obj=json.loads(path.read_text(encoding="utf-8"))
     rec=obj.get("record",obj)
     sid=str(rec.get("source_id") or path.stem)
-    attachments=rec.get("attachments") or []
+    raw=rec.get("raw") or {}
+    attachments=rec.get("attachments") or raw.get("attachments") or []
+    seen=set()
     result={"source":"registr-smluv","source_id":sid,"title":rec.get("title"),
             "page_url":rec.get("source_url"),"documents":[],"status":"ok"}
     for i,a in enumerate(attachments,1):
         url=a.get("url") if isinstance(a,dict) else str(a)
         name=a.get("name","") if isinstance(a,dict) else ""
+        if not url or url in seen:
+            continue
+        seen.add(url)
         item={"index":i,"name":name,"url":url}
         try:
             meta,text=extract(url)
@@ -69,7 +74,10 @@ def main():
             try: results.append(fut.result())
             except Exception as exc: results.append({"source":"registr-smluv","source_id":p.stem,"documents":[],"status":"worker_error","error":str(exc)})
     results.sort(key=lambda x:x.get("source_id",""))
-    declared=sum(len((lambda o: o.get("record", o).get("attachments") or [])(json.loads(p.read_text(encoding="utf-8"))) ) for p in files)
+    def get_attachments(o):
+        rec=o.get("record",o)
+        return rec.get("attachments") or (rec.get("raw") or {}).get("attachments") or []
+    declared=sum(len(get_attachments(json.loads(p.read_text(encoding="utf-8")))) for p in files)
     discovered=sum(len(x.get("documents",[])) for x in results)
     downloaded=sum(1 for x in results for d in x.get("documents",[]) if d.get("sha256"))
     extracted=sum(1 for x in results for d in x.get("documents",[]) if d.get("text_available"))
