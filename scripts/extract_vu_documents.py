@@ -178,6 +178,14 @@ def process(record: dict) -> dict:
 
 def main() -> None:
     OUT.mkdir(parents=True, exist_ok=True)
+    previous={}
+    if MANIFEST.exists():
+        try:
+            old=json.loads(MANIFEST.read_text(encoding="utf-8"))
+            for rec in old.get("records",[]):
+                previous[str(rec.get("source_id"))]=rec
+        except Exception:
+            previous={}
     records, seen = [], set()
     for path in sorted(SRC.glob("*.json")):
         try:
@@ -202,6 +210,18 @@ def main() -> None:
                                 "page_url": r.get("source_url"), "status": "worker_error",
                                 "error": str(exc)})
     results.sort(key=lambda x: (x.get("source_id") or "", x.get("page_url") or ""))
+    for result in results:
+        old=previous.get(str(result.get("source_id")))
+        if not old:
+            continue
+        old_docs={d.get("url"):d for d in old.get("documents",[]) if d.get("url")}
+        for doc in result.get("documents",[]):
+            old_doc=old_docs.get(doc.get("url"))
+            if old_doc and not doc.get("sha256"):
+                retained={k:v for k,v in old_doc.items() if k not in ("status","error")}
+                retained["status"]="retained_from_previous_run"
+                doc.clear()
+                doc.update(retained)
     declared = sum(int(x.get("document_count_declared") or 0) for x in results)
     discovered = sum(len(x.get("documents", [])) for x in results)
     downloaded = sum(1 for x in results for d in x.get("documents", []) if d.get("sha256"))
