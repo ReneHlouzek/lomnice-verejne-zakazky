@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-09-23T14:21:51Z",
+  "updated_at": "2026-09-23T14:41:36Z",
   "records_checked": 218,
   "attachments_declared": 4,
   "documents_discovered": 4,
-  "documents_downloaded": 4,
-  "documents_text_extracted": 4,
+  "documents_downloaded": 0,
+  "documents_text_extracted": 0,
   "records": [
     {
       "source": "registr-smluv",
@@ -1328,12 +1328,8 @@
           "index": 1,
           "name": "Smlouva_Lomnice_n.Popelkou%20komplet.pdf",
           "url": "https://smlouvy.gov.cz/smlouva/soubor/47248726/Smlouva_Lomnice_n.Popelkou%20komplet.pdf",
-          "sha256": "909ff2416a6784b8f0eecdb2fa84a28c0650ef128c0ac8de310136757c40537c",
-          "bytes": 2082603,
-          "content_type": "application/pdf",
-          "text_available": true,
-          "text_chars": 8853,
-          "text_file": "data/documents/registr-smluv/36813062/001.txt"
+          "status": "download_error",
+          "error": "HTTPSConnectionPool(host='smlouvy.gov.cz', port=443): Read timed out. (read timeout=45)"
         }
       ],
       "status": "ok"
@@ -1348,12 +1344,8 @@
           "index": 1,
           "name": "Smlouva_Lomnice_n.Popelkou%20komplet.pdf",
           "url": "https://smlouvy.gov.cz/smlouva/soubor/47248726/Smlouva_Lomnice_n.Popelkou%20komplet.pdf",
-          "sha256": "909ff2416a6784b8f0eecdb2fa84a28c0650ef128c0ac8de310136757c40537c",
-          "bytes": 2082603,
-          "content_type": "application/pdf",
-          "text_available": true,
-          "text_chars": 8853,
-          "text_file": "data/documents/registr-smluv/36813062/001.txt"
+          "status": "download_error",
+          "error": "HTTPSConnectionPool(host='smlouvy.gov.cz', port=443): Read timed out. (read timeout=45)"
         }
       ],
       "status": "ok"
@@ -1368,12 +1360,8 @@
           "index": 1,
           "name": "Smlouva_individualni_dotace_Lomnice_OLP-02908-2026_sig.pdf",
           "url": "https://smlouvy.gov.cz/smlouva/soubor/47440583/Smlouva_individualni_dotace_Lomnice_OLP-02908-2026_sig.pdf",
-          "sha256": "1caa63a23e28856d13a3989308e6cf983822cf3ed11f4379015f754927ae2901",
-          "bytes": 477425,
-          "content_type": "application/pdf",
-          "text_available": true,
-          "text_chars": 24954,
-          "text_file": "data/documents/registr-smluv/36978239/001.txt"
+          "status": "download_error",
+          "error": "HTTPSConnectionPool(host='smlouvy.gov.cz', port=443): Read timed out. (read timeout=45)"
         }
       ],
       "status": "ok"
@@ -1388,12 +1376,8 @@
           "index": 1,
           "name": "Smlouva_individualni_dotace_Lomnice_OLP-02908-2026_sig.pdf",
           "url": "https://smlouvy.gov.cz/smlouva/soubor/47440583/Smlouva_individualni_dotace_Lomnice_OLP-02908-2026_sig.pdf",
-          "sha256": "1caa63a23e28856d13a3989308e6cf983822cf3ed11f4379015f754927ae2901",
-          "bytes": 477425,
-          "content_type": "application/pdf",
-          "text_available": true,
-          "text_chars": 24954,
-          "text_file": "data/documents/registr-smluv/36978239/001.txt"
+          "status": "download_error",
+          "error": "HTTPSConnectionPool(host='smlouvy.gov.cz', port=443): Read timed out. (read timeout=45)"
         }
       ],
       "status": "ok"
