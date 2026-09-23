@@ -40,16 +40,14 @@ def fetch_page(url: str):
             import subprocess
             cp = subprocess.run(
                 ["curl", "--fail", "--location", "--http1.1",
-                 "--retry", "3", "--retry-delay", "2",
+                 "--retry", "2", "--retry-delay", "1",
                  "--connect-timeout", "8", "--max-time", "20",
                  "-A", UA, "-H", "Accept: text/html,application/xhtml+xml", url],
                 check=True, capture_output=True, text=True,
             )
             html, final_url, transport = cp.stdout, url, "curl"
-        except Exception:
-            r = requests.get(jina_url(url), timeout=10, headers={"User-Agent": UA})
-            r.raise_for_status()
-            html, final_url, transport = r.text, url, "jina.ai"
+        except Exception as exc:
+            raise RuntimeError(f"VU page unavailable: {exc}")
     soup = BeautifulSoup(html, "html.parser")
     docs = []
     for a in soup.find_all("a", href=True):
@@ -137,6 +135,24 @@ def process(record: dict) -> dict:
               "documents": [], "status": "ok"}
     if not page_url:
         result["status"] = "missing_page_url"
+        return result
+    # Some VU records point directly to an orderdocument/download endpoint.
+    if any(x in page_url.lower() for x in ("orderdocument", "a=download", "/download", "/document")):
+        result["documents"] = [{"index": 1, "label": record.get("title") or "Dokument", "url": page_url}]
+        result["transport"] = "direct_document_url"
+        try:
+            meta, text = extract_pdf(page_url)
+            result["documents"][0].update(meta)
+            result["documents"][0]["text_available"] = bool(text)
+            result["documents"][0]["text_chars"] = len(text or "")
+            if text:
+                outdir = OUT / str(source_id)
+                outdir.mkdir(parents=True, exist_ok=True)
+                result["documents"][0]["text_file"] = f"data/documents/{source_id}/001.txt"
+                (outdir / "001.txt").write_text(text, encoding="utf-8")
+        except Exception as exc:
+            result["documents"][0]["status"] = "download_error"
+            result["documents"][0]["error"] = str(exc)
         return result
     try:
         final_url, docs, transport = fetch_page(page_url)
