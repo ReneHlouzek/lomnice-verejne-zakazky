@@ -1,0 +1,321 @@
+{
+  "updated_at": "2026-09-23T04:50:05Z",
+  "pages_checked": 31,
+  "declared_documents": 31,
+  "documents_discovered": 0,
+  "documents_downloaded": 0,
+  "documents_text_extracted": 0,
+  "records": [
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "42ccd73a00ab",
+      "page_url": "https://www.vhodne-uverejneni.cz/smlouvy-organizace/mesto-lomnice-nad-popelkou",
+      "title": "Veřejné osvětlení Nové Dvory - 1. etapa",
+      "document_count_declared": null,
+      "documents": [],
+      "status": "page_error",
+      "error": "HTTPSConnectionPool(host='www.vhodne-uverejneni.cz', port=443): Max retries exceeded with url: /smlouvy-organizace/mesto-lomnice-nad-popelkou (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.vhodne-uverejneni.cz', port=443) at 0x7fdc47d84980>, 'Connection to www.vhodne-uverejneni.cz timed out. (connect timeout=45)'))"
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "6490d3752523",
+      "page_url": "https://www.vhodne-uverejneni.cz/zakazka/restauratorske-prace-na-spodnich-castech-marianskeho-sloupu-v-lomnici-nad-popelkou",
+      "title": "Restaurátorské práce na spodních částech mariánského sloupu v Lomnici nad Popelkou",
+      "document_count_declared": null,
+      "documents": [],
+      "status": "page_error",
+      "error": "HTTPSConnectionPool(host='www.vhodne-uverejneni.cz', port=443): Max retries exceeded with url: /zakazka/restauratorske-prace-na-spodnich-castech-marianskeho-sloupu-v-lomnici-nad-popelkou (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.vhodne-uverejneni.cz', port=443) at 0x7fdc47dd7290>, 'Connection to www.vhodne-uverejneni.cz timed out. (connect timeout=45)'))"
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "9fa7201122f8",
+      "page_url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3212050&h=orderdocument&m=xenorders&token=",
+      "title": "Obnova komunikace Lomnice nad Popelkou – Chlum, I. etapa",
+      "document_count_declared": null,
+      "documents": [],
+      "status": "page_error",
+      "error": "HTTPSConnectionPool(host='www.vhodne-uverejneni.cz', port=443): Max retries exceeded with url: /index.php?a=download&document=3212050&h=orderdocument&m=xenorders&token= (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.vhodne-uverejneni.cz', port=443) at 0x7fdc47d85940>, 'Connection to www.vhodne-uverejneni.cz timed out. (connect timeout=45)'))"
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "P15V00002212",
+      "page_url": "https://www.vhodne-uverejneni.cz/zakazka/mesto-lomnice-nad-popelkou-cisternova-automobilova-strikacka",
+      "title": "Město Lomnice nad Popelkou - Cisternová automobilová stříkačka",
+      "document_count_declared": null,
+      "documents": [],
+      "status": "page_error",
+      "error": "HTTPSConnectionPool(host='www.vhodne-uverejneni.cz', port=443): Max retries exceeded with url: /zakazka/mesto-lomnice-nad-popelkou-cisternova-automobilova-strikacka (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.vhodne-uverejneni.cz', port=443) at 0x7fdc47d85760>, 'Connection to www.vhodne-uverejneni.cz timed out. (connect timeout=45)'))"
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "P17V00003185",
+      "page_url": "https://www.vhodne-uverejneni.cz/zakazka/projektova-dokumentace-mistnich-komunikaci-lomnice-nad-popelkou",
+      "title": "Projektová dokumentace místních komunikací, Lomnice nad Popelkou",
+      "document_count_declared": null,
+      "documents": [],
+      "status": "page_error",
+      "error": "HTTPSConnectionPool(host='www.vhodne-uverejneni.cz', port=443): Max retries exceeded with url: /zakazka/projektova-dokumentace-mistnich-komunikaci-lomnice-nad-popelkou (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.vhodne-uverejneni.cz', port=443) at 0x7fdc47d87320>, 'Connection to www.vhodne-uverejneni.cz timed out. (connect timeout=45)'))"
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "P20V00007053",
+      "page_url": "https://www.vhodne-uverejneni.cz/zakazka/domov-pro-osoby-s-poruchou-autistickeho-spektra-1",
+      "title": "Domov pro osoby s poruchou autistického spektra",
+      "document_count_declared": null,
+      "documents": [],
+      "status": "page_error",
+      "error": "HTTPSConnectionPool(host='www.vhodne-uverejneni.cz', port=443): Max retries exceeded with url: /zakazka/domov-pro-osoby-s-poruchou-autistickeho-spektra-1 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.vhodne-uverejneni.cz', port=443) at 0x7fdc47d84bc0>, 'Connection to www.vhodne-uverejneni.cz timed out. (connect timeout=45)'))"
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "P20V00010161",
+      "page_url": "https://www.vhodne-uverejneni.cz/zakazka/automobil-pro-terenni-socialni-sluzbu-pecovatelske-sluzby-lomnice-nad-popelkou-prispevkove-organizace",
+      "title": "Automobil pro terénní sociální službu Pečovatelské služby Lomnice nad Popelkou, příspěvkové organizace",
+      "document_count_declared": null,
+      "documents": [],
+      "status": "page_error",
+      "error": "HTTPSConnectionPool(host='www.vhodne-uverejneni.cz', port=443): Max retries exceeded with url: /zakazka/automobil-pro-terenni-socialni-sluzbu-pecovatelske-sluzby-lomnice-nad-popelkou-prispevkove-organizace (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.vhodne-uverejneni.cz', port=443) at 0x7fdc47ddcc50>, 'Connection to www.vhodne-uverejneni.cz timed out. (connect timeout=45)'))"
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "P21V00005590",
+      "page_url": "https://www.vhodne-uverejneni.cz/zakazka/obnova-telocvicen-pri-zs-t-g-masaryka-v-lomnici-nad-popelkou",
+      "title": "Obnova tělocvičen při ZŠ T. G. Masaryka v Lomnici nad Popelkou",
+      "document_count_declared": null,
+      "documents": [],
+      "status": "page_error",
+      "error": "HTTPSConnectionPool(host='www.vhodne-uverejneni.cz', port=443): Max retries exceeded with url: /zakazka/obnova-telocvicen-pri-zs-t-g-masaryka-v-lomnici-nad-popelkou (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.vhodne-uverejneni.cz', port=443) at 0x7fdc47dd7260>, 'Connection to www.vhodne-uverejneni.cz timed out. (connect timeout=45)'))"
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "P22V00000389",
+      "page_url": "https://www.vhodne-uverejneni.cz/zakazka/pristavba-servisniho-objektu-lomnice-nad-popelkou",
+      "title": "Přístavba servisního objektu, Lomnice nad Popelkou",
+      "document_count_declared": null,
+      "documents": [],
+      "status": "page_error",
+      "error": "HTTPSConnectionPool(host='www.vhodne-uverejneni.cz', port=443): Max retries exceeded with url: /zakazka/pristavba-servisniho-objektu-lomnice-nad-popelkou (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.vhodne-uverejneni.cz', port=443) at 0x7fdc47d843e0>, 'Connection to www.vhodne-uverejneni.cz timed out. (connect timeout=45)'))"
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "P22V00008434",
+      "page_url": "https://www.vhodne-uverejneni.cz/zakazka/instalace-domovniho-telefonu-a-rozvodu-strukturovane-kabelaze-nnp-lomnice-nad-popelkou",
+      "title": "Instalace domovního telefonu a rozvodů strukturované kabeláže NNP, Lomnice nad Popelkou",
+      "document_count_declared": null,
+      "documents": [],
+      "status": "page_error",
+      "error": "HTTPSConnectionPool(host='www.vhodne-uverejneni.cz', port=443): Max retries exceeded with url: /zakazka/instalace-domovniho-telefonu-a-rozvodu-strukturovane-kabelaze-nnp-lomnice-nad-popelkou (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.vhodne-uverejneni.cz', port=443) at 0x7fdc47dd58e0>, 'Connection to www.vhodne-uverejneni.cz timed out. (connect timeout=45)'))"
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "P23V00000047",
+      "page_url": "https://www.vhodne-uverejneni.cz/zakazka/vydani-obrazove-publikace-lomnice-nad-popelkou-historie-skolstvi",
+      "title": "Vydání obrazové publikace Lomnice nad Popelkou - historie školství",
+      "document_count_declared": null,
+      "documents": [],
+      "status": "page_error",
+      "error": "HTTPSConnectionPool(host='www.vhodne-uverejneni.cz', port=443): Max retries exceeded with url: /zakazka/vydani-obrazove-publikace-lomnice-nad-popelkou-historie-skolstvi (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.vhodne-uverejneni.cz', port=443) at 0x7fdc47ddc5f0>, 'Connection to www.vhodne-uverejneni.cz timed out. (connect timeout=45)'))"
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "P23V00007567",
+      "page_url": "https://www.vhodne-uverejneni.cz/zakazka/silnice-ii-284-lomnice-nad-popelkou-ulice-5-kvetna",
+      "title": "Silnice II/284 Lomnice nad Popelkou, ulice 5. května",
+      "document_count_declared": null,
+      "documents": [],
+      "status": "page_error",
+      "error": "HTTPSConnectionPool(host='www.vhodne-uverejneni.cz', port=443): Max retries exceeded with url: /zakazka/silnice-ii-284-lomnice-nad-popelkou-ulice-5-kvetna (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.vhodne-uverejneni.cz', port=443) at 0x7fdc47d85790>, 'Connection to www.vhodne-uverejneni.cz timed out. (connect timeout=45)'))"
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "P24-REG-92577",
+      "page_url": "https://www.vhodne-uverejneni.cz/index.php?a=detail&contract=92577&h=contractsregister&m=xenorders",
+      "title": "Zabezpečení technického dozoru stavebníka na stavbě „Depozitář u muzea v Lomnici nad Popelkou\"",
+      "document_count_declared": null,
+      "documents": [],
+      "status": "page_error",
+      "error": "HTTPSConnectionPool(host='www.vhodne-uverejneni.cz', port=443): Max retries exceeded with url: /index.php?a=detail&contract=92577&h=contractsregister&m=xenorders (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.vhodne-uverejneni.cz', port=443) at 0x7fdc47d85940>, 'Connection to www.vhodne-uverejneni.cz timed out. (connect timeout=45)'))"
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "P24V00000978",
+      "page_url": "https://www.vhodne-uverejneni.cz/zakazka/obnova-mvn-technolen-lomnice-nad-popelkou",
+      "title": "Obnova MVN Technolen, Lomnice nad Popelkou",
+      "document_count_declared": null,
+      "documents": [],
+      "status": "page_error",
+      "error": "HTTPSConnectionPool(host='www.vhodne-uverejneni.cz', port=443): Max retries exceeded with url: /zakazka/obnova-mvn-technolen-lomnice-nad-popelkou (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.vhodne-uverejneni.cz', port=443) at 0x7fdc47d840e0>, 'Connection to www.vhodne-uverejneni.cz timed out. (connect timeout=45)'))"
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "P24V00003708",
+      "page_url": "https://www.vhodne-uverejneni.cz/zakazka/rekonstrukce-verejneho-osvetleni-ulice-jilemnicka-a-cast-plk-truhlare-lomnice-nad-popelkou",
+      "title": "Rekonstrukce veřejného osvětlení- ulice Jilemnická a část Plk. Truhláře, Lomnice nad Popelkou",
+      "document_count_declared": null,
+      "documents": [],
+      "status": "page_error",
+      "error": "HTTPSConnectionPool(host='www.vhodne-uverejneni.cz', port=443): Max retries exceeded with url: /zakazka/rekonstrukce-verejneho-osvetleni-ulice-jilemnicka-a-cast-plk-truhlare-lomnice-nad-popelkou (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.vhodne-uverejneni.cz', port=443) at 0x7fdc47dd6de0>, 'Connection to www.vhodne-uverejneni.cz timed out. (connect timeout=45)'))"
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "P24V00007896",
+      "page_url": "https://www.vhodne-uverejneni.cz/zakazka/oprava-strechy-domu-c-p-32-ul-antala-staska-v-lomnici-nad-popelkou",
+      "title": "Oprava střechy domu č.p. 32, ul. Antala Staška v Lomnici nad Popelkou",
+      "document_count_declared": null,
+      "documents": [],
+      "status": "page_error",
+      "error": "HTTPSConnectionPool(host='www.vhodne-uverejneni.cz', port=443): Max retries exceeded with url: /zakazka/oprava-strechy-domu-c-p-32-ul-antala-staska-v-lomnici-nad-popelkou (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.vhodne-uverejneni.cz', port=443) at 0x7fdc47dd6330>, 'Connection to www.vhodne-uverejneni.cz timed out. (connect timeout=45)'))"
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "P25V00001095",
+      "page_url": "https://www.vhodne-uverejneni.cz/zakazka/revitalizace-rybnika-matous-a-jeho-okoli-v-lomnici-nad-popelkou",
+      "title": "Revitalizace rybníka Matouš a jeho okolí v Lomnici nad Popelkou",
+      "document_count_declared": null,
+      "documents": [],
+      "status": "page_error",
+      "error": "HTTPSConnectionPool(host='www.vhodne-uverejneni.cz', port=443): Max retries exceeded with url: /zakazka/revitalizace-rybnika-matous-a-jeho-okoli-v-lomnici-nad-popelkou (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.vhodne-uverejneni.cz', port=443) at 0x7fdc47d84e00>, 'Connection to www.vhodne-uverejneni.cz timed out. (connect timeout=45)'))"
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "P25V00001848",
+      "page_url": "https://www.vhodne-uverejneni.cz/zakazka/revitalizace-verejneho-prostranstvi-na-hrbitove-2-etapa-lomnice-nad-popelkou",
+      "title": "Revitalizace veřejného prostranství na hřbitově - 2. etapa, Lomnice nad Popelkou",
+      "document_count_declared": null,
+      "documents": [],
+      "status": "page_error",
+      "error": "HTTPSConnectionPool(host='www.vhodne-uverejneni.cz', port=443): Max retries exceeded with url: /zakazka/revitalizace-verejneho-prostranstvi-na-hrbitove-2-etapa-lomnice-nad-popelkou (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.vhodne-uverejneni.cz', port=443) at 0x7fdc47ddc380>, 'Connection to www.vhodne-uverejneni.cz timed out. (connect timeout=45)'))"
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "P25V00007263",
+      "page_url": "https://www.vhodne-uverejneni.cz/zakazka/opravy-mistnich-komunikaci-ve-meste-lomnice-nad-popelkou",
+      "title": "Oprava výtluků komunikací 2025, Lomnice nad Popelkou",
+      "document_count_declared": null,
+      "documents": [],
+      "status": "page_error",
+      "error": "HTTPSConnectionPool(host='www.vhodne-uverejneni.cz', port=443): Max retries exceeded with url: /zakazka/opravy-mistnich-komunikaci-ve-meste-lomnice-nad-popelkou (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.vhodne-uverejneni.cz', port=443) at 0x7fdc47dd7b30>, 'Connection to www.vhodne-uverejneni.cz timed out. (connect timeout=45)'))"
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "P25V00008902",
+      "page_url": "https://www.vhodne-uverejneni.cz/index.php?a=detail&contract=101051&h=contractsregister&m=xenorders",
+      "title": "Nástupní místo Košov a Rváčov, Lomnice nad Popelkou",
+      "document_count_declared": 6,
+      "documents": [],
+      "status": "page_error",
+      "error": "HTTPSConnectionPool(host='www.vhodne-uverejneni.cz', port=443): Max retries exceeded with url: /index.php?a=detail&contract=101051&h=contractsregister&m=xenorders (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.vhodne-uverejneni.cz', port=443) at 0x7fdc47d86480>, 'Connection to www.vhodne-uverejneni.cz timed out. (connect timeout=45)'))"
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "P25V00009321",
+      "page_url": "https://www.vhodne-uverejneni.cz/index.php?a=detail&contract=101359&h=contractsregister&m=xenorders",
+      "title": "SOH a zázemí PS Lomnice nad Popelkou",
+      "document_count_declared": 10,
+      "documents": [],
+      "status": "page_error",
+      "error": "HTTPSConnectionPool(host='www.vhodne-uverejneni.cz', port=443): Max retries exceeded with url: /index.php?a=detail&contract=101359&h=contractsregister&m=xenorders (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.vhodne-uverejneni.cz', port=443) at 0x7fdc47fb9040>, 'Connection to www.vhodne-uverejneni.cz timed out. (connect timeout=45)'))"
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "P26-REG-105575",
+      "page_url": "https://www.vhodne-uverejneni.cz/index.php?a=detail&contract=105575&h=contractsregister&m=xenorders",
+      "title": "Stavební práce při výměně oken a úpravy 3. NP čp. 61, Lomnice nad Popelkou",
+      "document_count_declared": null,
+      "documents": [],
+      "status": "page_error",
+      "error": "HTTPSConnectionPool(host='www.vhodne-uverejneni.cz', port=443): Max retries exceeded with url: /index.php?a=detail&contract=105575&h=contractsregister&m=xenorders (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.vhodne-uverejneni.cz', port=443) at 0x7fdc47d861e0>, 'Connection to www.vhodne-uverejneni.cz timed out. (connect timeout=45)'))"
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "P26V00001118",
+      "page_url": "https://www.vhodne-uverejneni.cz/zakazka/sanace-vlhkeho-zdiva-sklepnich-prostor-cp-886-lomnice-nad-popelkou",
+      "title": "Sanace vlhkého zdiva sklepních prostor čp. 886, Lomnice nad Popelkou",
+      "document_count_declared": null,
+      "documents": [],
+      "status": "page_error",
+      "error": "HTTPSConnectionPool(host='www.vhodne-uverejneni.cz', port=443): Max retries exceeded with url: /zakazka/sanace-vlhkeho-zdiva-sklepnich-prostor-cp-886-lomnice-nad-popelkou (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.vhodne-uverejneni.cz', port=443) at 0x7fdc47dd6a20>, 'Connection to www.vhodne-uverejneni.cz timed out. (connect timeout=45)'))"
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "P26V00001385",
+      "page_url": "https://www.vhodne-uverejneni.cz/zakazka/modernizace-uceben-zus-dodavky",
+      "title": "Modernizace UČEBEN ZUŠ - dodávky",
+      "document_count_declared": null,
+      "documents": [],
+      "status": "page_error",
+      "error": "HTTPSConnectionPool(host='www.vhodne-uverejneni.cz', port=443): Max retries exceeded with url: /zakazka/modernizace-uceben-zus-dodavky (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.vhodne-uverejneni.cz', port=443) at 0x7fdc47d869c0>, 'Connection to www.vhodne-uverejneni.cz timed out. (connect timeout=45)'))"
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "P26V00002162",
+      "page_url": "https://www.vhodne-uverejneni.cz/zakazka/verejne-osvetleni-11",
+      "title": "Veřejné osvětlení",
+      "document_count_declared": null,
+      "documents": [],
+      "status": "page_error",
+      "error": "HTTPSConnectionPool(host='www.vhodne-uverejneni.cz', port=443): Max retries exceeded with url: /zakazka/verejne-osvetleni-11 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.vhodne-uverejneni.cz', port=443) at 0x7fdc47ee69f0>, 'Connection to www.vhodne-uverejneni.cz timed out. (connect timeout=45)'))"
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "P26V00002405",
+      "page_url": "https://www.vhodne-uverejneni.cz/zakazka/rozsireni-polikliniky-lomnice-nad-popelkou-dokumentace-stavebniho-zameru",
+      "title": "Rozšíření polikliniky Lomnice nad Popelkou - dokumentace stavebního záměru",
+      "document_count_declared": null,
+      "documents": [],
+      "status": "page_error",
+      "error": "HTTPSConnectionPool(host='www.vhodne-uverejneni.cz', port=443): Max retries exceeded with url: /zakazka/rozsireni-polikliniky-lomnice-nad-popelkou-dokumentace-stavebniho-zameru (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.vhodne-uverejneni.cz', port=443) at 0x7fdc47d87d70>, 'Connection to www.vhodne-uverejneni.cz timed out. (connect timeout=45)'))"
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "P26V00002929",
+      "page_url": "https://www.vhodne-uverejneni.cz/zakazka/nemocnice-nasledne-pece-lomnice-nad-popelkou-investice-a-opravy",
+      "title": "Nemocnice následné péče Lomnice nad Popelkou – investice a opravy",
+      "document_count_declared": null,
+      "documents": [],
+      "status": "page_error",
+      "error": "HTTPSConnectionPool(host='www.vhodne-uverejneni.cz', port=443): Max retries exceeded with url: /zakazka/nemocnice-nasledne-pece-lomnice-nad-popelkou-investice-a-opravy (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.vhodne-uverejneni.cz', port=443) at 0x7fdc47d85310>, 'Connection to www.vhodne-uverejneni.cz timed out. (connect timeout=45)'))"
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "aa111e3e347c",
+      "page_url": "https://www.vhodne-uverejneni.cz/zakazka/karavanove-stani-koupaliste-lomnice-nad-popelkou",
+      "title": "Karavanové stání Koupaliště, Lomnice nad Popelkou",
+      "document_count_declared": null,
+      "documents": [],
+      "status": "page_error",
+      "error": "HTTPSConnectionPool(host='www.vhodne-uverejneni.cz', port=443): Max retries exceeded with url: /zakazka/karavanove-stani-koupaliste-lomnice-nad-popelkou (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.vhodne-uverejneni.cz', port=443) at 0x7fdc47d84fe0>, 'Connection to www.vhodne-uverejneni.cz timed out. (connect timeout=45)'))"
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "d67d36a20afb",
+      "page_url": "https://www.vhodne-uverejneni.cz/profil/mesto-lomnice-nad-popelkou",
+      "title": "Lomnice n. P. - VO Smetanova",
+      "document_count_declared": null,
+      "documents": [],
+      "status": "page_error",
+      "error": "HTTPSConnectionPool(host='www.vhodne-uverejneni.cz', port=443): Max retries exceeded with url: /profil/mesto-lomnice-nad-popelkou (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.vhodne-uverejneni.cz', port=443) at 0x7fdc47dd6ab0>, 'Connection to www.vhodne-uverejneni.cz timed out. (connect timeout=45)'))"
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "ebd1ca9c3e3c",
+      "page_url": "https://www.vhodne-uverejneni.cz/zakazka/rekonstrukce-topneho-systemu-vcetne-zdroje-tepla-v-objektu-k-urnovemu-haji-cp-118-lomnice-nad-popelkou",
+      "title": "Rekonstrukce topného systému včetně zdroje tepla v objektu K Urnovému háji čp. 118, Lomnice nad Popelkou",
+      "document_count_declared": null,
+      "documents": [],
+      "status": "page_error",
+      "error": "HTTPSConnectionPool(host='www.vhodne-uverejneni.cz', port=443): Max retries exceeded with url: /zakazka/rekonstrukce-topneho-systemu-vcetne-zdroje-tepla-v-objektu-k-urnovemu-haji-cp-118-lomnice-nad-popelkou (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.vhodne-uverejneni.cz', port=443) at 0x7fdc47d842f0>, 'Connection to www.vhodne-uverejneni.cz timed out. (connect timeout=45)'))"
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "f58017e9cad3",
+      "page_url": "https://www.vhodne-uverejneni.cz/index.php?a=detail&contract=95276&h=contractsregister&m=xenorders",
+      "title": "Modernizace UČEBEN ZUŠ - stavební práce",
+      "document_count_declared": 15,
+      "documents": [],
+      "status": "page_error",
+      "error": "HTTPSConnectionPool(host='www.vhodne-uverejneni.cz', port=443): Max retries exceeded with url: /index.php?a=detail&contract=95276&h=contractsregister&m=xenorders (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.vhodne-uverejneni.cz', port=443) at 0x7fdc47ddc320>, 'Connection to www.vhodne-uverejneni.cz timed out. (connect timeout=45)'))"
+    }
+  ],
+  "note": "Archives public document metadata and extracted PDF text. Original binaries are not committed."
+}
