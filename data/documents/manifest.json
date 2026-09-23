@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-23T09:34:10Z",
+  "updated_at": "2026-09-23T09:55:15Z",
   "pages_checked": 31,
   "declared_documents": 31,
   "documents_discovered": 0,
@@ -174,7 +174,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "422 Client Error: Unprocessable Entity for url: https://r.jina.ai/http://www.vhodne-uverejneni.cz/zakazka/revitalizace-rybnika-matous-a-jeho-okoli-v-lomnici-nad-popelkou"
+      "error": "HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=45)"
     },
     {
       "source": "vhodne-uverejneni",
