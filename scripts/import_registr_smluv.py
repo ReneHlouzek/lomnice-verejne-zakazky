@@ -158,7 +158,7 @@ def extract_records(path: Path, ico: str) -> Iterable[dict]:
         # complete serialized record so minor XML shape changes do not erase them.
         xml_fragment = ET.tostring(elem, encoding="unicode")
         matches = re.findall(
-            r"https?://smlouvy\\.gov\\.cz/smlouva/soubor/[0-9]+/[^\\s<>\"']+?\\.pdf(?:\\?[^\\s<>\"']*)?",
+            r"https?://smlouvy\.gov\.cz/smlouva/soubor/[0-9]+/[^\s<>"']+?\.pdf(?:\?[^\s<>"']*)?",
             xml_fragment,
             flags=re.IGNORECASE,
         )
