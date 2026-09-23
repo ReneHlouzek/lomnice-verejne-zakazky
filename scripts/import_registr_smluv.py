@@ -165,7 +165,8 @@ def extract_records(path: Path, ico: str) -> Iterable[dict]:
                         if candidate.lower().endswith((".pdf", ".doc", ".docx", ".rtf", ".odf", ".txt")):
                             name = candidate
                             break
-                    name = name.split("https://smlouvy.gov.cz/smlouva/soubor/", 1)[0].strip() or match.rsplit("/", 1)[-1]\n                    item = {"url": match, "name": name}
+                    name = name.split("https://smlouvy.gov.cz/smlouva/soubor/", 1)[0].strip() or match.rsplit("/", 1)[-1]
+                    item = {"url": match, "name": name}
                     if item not in attachments:
                         attachments.append(item)
         yield {
