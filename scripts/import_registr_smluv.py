@@ -153,6 +153,21 @@ def extract_records(path: Path, ico: str) -> Iterable[dict]:
                     counterparty = pname
 
         detail = "https://smlouvy.gov.cz/smlouva/" + contract_id if contract_id else ""
+        attachments = []
+        for node in elem.iter():
+            val = text(node)
+            if "smlouvy.gov.cz/smlouva/soubor/" in val:
+                matches = re.findall(r"https?://smlouvy\\.gov\\.cz/smlouva/soubor/[A-Za-z0-9_./?=&%-]+", val)
+                for match in matches:
+                    name = ""
+                    for child in node.iter():
+                        candidate = text(child)
+                        if candidate.lower().endswith((".pdf", ".doc", ".docx", ".rtf", ".odf", ".txt")):
+                            name = candidate
+                            break
+                    item = {"url": match, "name": name}
+                    if item not in attachments:
+                        attachments.append(item)
         yield {
             "source": "registr-smluv",
             "source_id": contract_id or version_id,
@@ -171,6 +186,7 @@ def extract_records(path: Path, ico: str) -> Iterable[dict]:
             "subject": title,
             "counterparty": counterparty,
             "detail_url": detail,
+            "attachments": attachments,
         }
         elem.clear()
 
