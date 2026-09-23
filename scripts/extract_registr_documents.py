@@ -31,8 +31,8 @@ def extract(url:str):
         )
         data=cp.stdout
     if len(data)>MAX_DOC_BYTES: raise ValueError(f"document too large: {len(data)} bytes")
-    meta={"url":r.url,"sha256":hashlib.sha256(data).hexdigest(),"bytes":len(data),
-          "content_type":r.headers.get("content-type","")}
+    meta={"url":(r.url if "r" in locals() else url),"sha256":hashlib.sha256(data).hexdigest(),"bytes":len(data),
+          "content_type":(r.headers.get("content-type","") if "r" in locals() else "")}
     if not data.startswith(b"%PDF"): return meta,None
     reader=PdfReader(io.BytesIO(data))
     parts=[]
@@ -79,6 +79,14 @@ def process(path:Path):
 
 def main():
     OUT.mkdir(parents=True,exist_ok=True)
+    previous={}
+    if MANIFEST.exists():
+        try:
+            old=json.loads(MANIFEST.read_text(encoding="utf-8"))
+            for rec in old.get("records",[]):
+                previous[str(rec.get("source_id"))]=rec
+        except Exception:
+            previous={}
     # The importer can retain both normalized and raw snapshots. Process each
     # official contract only once by source_id.
     all_files=sorted(SRC.glob("*.json"))
@@ -100,6 +108,18 @@ def main():
             try: results.append(fut.result())
             except Exception as exc: results.append({"source":"registr-smluv","source_id":p.stem,"documents":[],"status":"worker_error","error":str(exc)})
     results.sort(key=lambda x:x.get("source_id",""))
+    for result in results:
+        old=previous.get(str(result.get("source_id")))
+        if not old:
+            continue
+        old_docs={d.get("url"):d for d in old.get("documents",[]) if d.get("url")}
+        for doc in result.get("documents",[]):
+            old_doc=old_docs.get(doc.get("url"))
+            if old_doc and not doc.get("sha256"):
+                retained={k:v for k,v in old_doc.items() if k not in ("status","error")}
+                retained["status"]="retained_from_previous_run"
+                doc.clear()
+                doc.update(retained)
     def get_attachments(o):
         rec=o.get("record",o)
         return rec.get("attachments") or (rec.get("raw") or {}).get("attachments") or []
