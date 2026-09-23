@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-23T11:51:39Z",
+  "updated_at": "2026-09-23T14:21:43Z",
   "pages_checked": 31,
   "declared_documents": 31,
   "documents_discovered": 0,
@@ -14,7 +14,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "422 Client Error: Unprocessable Entity for url: https://r.jina.ai/http://www.vhodne-uverejneni.cz/smlouvy-organizace/mesto-lomnice-nad-popelkou"
+      "error": "HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=10)"
     },
     {
       "source": "vhodne-uverejneni",
@@ -24,7 +24,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "422 Client Error: Unprocessable Entity for url: https://r.jina.ai/http://www.vhodne-uverejneni.cz/zakazka/restauratorske-prace-na-spodnich-castech-marianskeho-sloupu-v-lomnici-nad-popelkou"
+      "error": "HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=10)"
     },
     {
       "source": "vhodne-uverejneni",
@@ -34,7 +34,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "422 Client Error: Unprocessable Entity for url: https://r.jina.ai/http://www.vhodne-uverejneni.cz/index.php?a=download&document=3212050&h=orderdocument&m=xenorders&token="
+      "error": "HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=10)"
     },
     {
       "source": "vhodne-uverejneni",
@@ -44,7 +44,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "422 Client Error: Unprocessable Entity for url: https://r.jina.ai/http://www.vhodne-uverejneni.cz/zakazka/mesto-lomnice-nad-popelkou-cisternova-automobilova-strikacka"
+      "error": "HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=10)"
     },
     {
       "source": "vhodne-uverejneni",
@@ -54,7 +54,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "422 Client Error: Unprocessable Entity for url: https://r.jina.ai/http://www.vhodne-uverejneni.cz/zakazka/projektova-dokumentace-mistnich-komunikaci-lomnice-nad-popelkou"
+      "error": "HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=10)"
     },
     {
       "source": "vhodne-uverejneni",
@@ -64,7 +64,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "422 Client Error: Unprocessable Entity for url: https://r.jina.ai/http://www.vhodne-uverejneni.cz/zakazka/domov-pro-osoby-s-poruchou-autistickeho-spektra-1"
+      "error": "HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=10)"
     },
     {
       "source": "vhodne-uverejneni",
@@ -74,7 +74,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "422 Client Error: Unprocessable Entity for url: https://r.jina.ai/http://www.vhodne-uverejneni.cz/zakazka/automobil-pro-terenni-socialni-sluzbu-pecovatelske-sluzby-lomnice-nad-popelkou-prispevkove-organizace"
+      "error": "HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=10)"
     },
     {
       "source": "vhodne-uverejneni",
@@ -84,7 +84,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "422 Client Error: Unprocessable Entity for url: https://r.jina.ai/http://www.vhodne-uverejneni.cz/zakazka/obnova-telocvicen-pri-zs-t-g-masaryka-v-lomnici-nad-popelkou"
+      "error": "HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=10)"
     },
     {
       "source": "vhodne-uverejneni",
@@ -94,7 +94,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "422 Client Error: Unprocessable Entity for url: https://r.jina.ai/http://www.vhodne-uverejneni.cz/zakazka/pristavba-servisniho-objektu-lomnice-nad-popelkou"
+      "error": "HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=10)"
     },
     {
       "source": "vhodne-uverejneni",
@@ -104,7 +104,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "422 Client Error: Unprocessable Entity for url: https://r.jina.ai/http://www.vhodne-uverejneni.cz/zakazka/instalace-domovniho-telefonu-a-rozvodu-strukturovane-kabelaze-nnp-lomnice-nad-popelkou"
+      "error": "HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=10)"
     },
     {
       "source": "vhodne-uverejneni",
@@ -114,7 +114,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "422 Client Error: Unprocessable Entity for url: https://r.jina.ai/http://www.vhodne-uverejneni.cz/zakazka/vydani-obrazove-publikace-lomnice-nad-popelkou-historie-skolstvi"
+      "error": "HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=10)"
     },
     {
       "source": "vhodne-uverejneni",
@@ -124,7 +124,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "422 Client Error: Unprocessable Entity for url: https://r.jina.ai/http://www.vhodne-uverejneni.cz/zakazka/silnice-ii-284-lomnice-nad-popelkou-ulice-5-kvetna"
+      "error": "HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=10)"
     },
     {
       "source": "vhodne-uverejneni",
@@ -134,7 +134,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "422 Client Error: Unprocessable Entity for url: https://r.jina.ai/http://www.vhodne-uverejneni.cz/index.php?a=detail&contract=92577&h=contractsregister&m=xenorders"
+      "error": "HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=10)"
     },
     {
       "source": "vhodne-uverejneni",
@@ -144,7 +144,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "422 Client Error: Unprocessable Entity for url: https://r.jina.ai/http://www.vhodne-uverejneni.cz/zakazka/obnova-mvn-technolen-lomnice-nad-popelkou"
+      "error": "HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=10)"
     },
     {
       "source": "vhodne-uverejneni",
@@ -154,7 +154,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "422 Client Error: Unprocessable Entity for url: https://r.jina.ai/http://www.vhodne-uverejneni.cz/zakazka/rekonstrukce-verejneho-osvetleni-ulice-jilemnicka-a-cast-plk-truhlare-lomnice-nad-popelkou"
+      "error": "HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=10)"
     },
     {
       "source": "vhodne-uverejneni",
@@ -164,7 +164,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "422 Client Error: Unprocessable Entity for url: https://r.jina.ai/http://www.vhodne-uverejneni.cz/zakazka/oprava-strechy-domu-c-p-32-ul-antala-staska-v-lomnici-nad-popelkou"
+      "error": "HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=10)"
     },
     {
       "source": "vhodne-uverejneni",
@@ -174,7 +174,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "422 Client Error: Unprocessable Entity for url: https://r.jina.ai/http://www.vhodne-uverejneni.cz/zakazka/revitalizace-rybnika-matous-a-jeho-okoli-v-lomnici-nad-popelkou"
+      "error": "HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=10)"
     },
     {
       "source": "vhodne-uverejneni",
@@ -184,7 +184,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "422 Client Error: Unprocessable Entity for url: https://r.jina.ai/http://www.vhodne-uverejneni.cz/zakazka/revitalizace-verejneho-prostranstvi-na-hrbitove-2-etapa-lomnice-nad-popelkou"
+      "error": "HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=10)"
     },
     {
       "source": "vhodne-uverejneni",
@@ -194,7 +194,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "422 Client Error: Unprocessable Entity for url: https://r.jina.ai/http://www.vhodne-uverejneni.cz/zakazka/opravy-mistnich-komunikaci-ve-meste-lomnice-nad-popelkou"
+      "error": "HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=10)"
     },
     {
       "source": "vhodne-uverejneni",
@@ -204,7 +204,7 @@
       "document_count_declared": 6,
       "documents": [],
       "status": "page_error",
-      "error": "422 Client Error: Unprocessable Entity for url: https://r.jina.ai/http://www.vhodne-uverejneni.cz/index.php?a=detail&contract=101051&h=contractsregister&m=xenorders"
+      "error": "HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=10)"
     },
     {
       "source": "vhodne-uverejneni",
@@ -214,7 +214,7 @@
       "document_count_declared": 10,
       "documents": [],
       "status": "page_error",
-      "error": "422 Client Error: Unprocessable Entity for url: https://r.jina.ai/http://www.vhodne-uverejneni.cz/index.php?a=detail&contract=101359&h=contractsregister&m=xenorders"
+      "error": "HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=10)"
     },
     {
       "source": "vhodne-uverejneni",
@@ -224,7 +224,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "422 Client Error: Unprocessable Entity for url: https://r.jina.ai/http://www.vhodne-uverejneni.cz/index.php?a=detail&contract=105575&h=contractsregister&m=xenorders"
+      "error": "HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=10)"
     },
     {
       "source": "vhodne-uverejneni",
@@ -234,7 +234,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "422 Client Error: Unprocessable Entity for url: https://r.jina.ai/http://www.vhodne-uverejneni.cz/zakazka/sanace-vlhkeho-zdiva-sklepnich-prostor-cp-886-lomnice-nad-popelkou"
+      "error": "HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=10)"
     },
     {
       "source": "vhodne-uverejneni",
@@ -244,7 +244,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "422 Client Error: Unprocessable Entity for url: https://r.jina.ai/http://www.vhodne-uverejneni.cz/zakazka/modernizace-uceben-zus-dodavky"
+      "error": "HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=10)"
     },
     {
       "source": "vhodne-uverejneni",
@@ -254,7 +254,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "422 Client Error: Unprocessable Entity for url: https://r.jina.ai/http://www.vhodne-uverejneni.cz/zakazka/verejne-osvetleni-11"
+      "error": "HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=10)"
     },
     {
       "source": "vhodne-uverejneni",
@@ -264,7 +264,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "422 Client Error: Unprocessable Entity for url: https://r.jina.ai/http://www.vhodne-uverejneni.cz/zakazka/rozsireni-polikliniky-lomnice-nad-popelkou-dokumentace-stavebniho-zameru"
+      "error": "HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=10)"
     },
     {
       "source": "vhodne-uverejneni",
@@ -274,7 +274,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "422 Client Error: Unprocessable Entity for url: https://r.jina.ai/http://www.vhodne-uverejneni.cz/zakazka/nemocnice-nasledne-pece-lomnice-nad-popelkou-investice-a-opravy"
+      "error": "HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=10)"
     },
     {
       "source": "vhodne-uverejneni",
@@ -284,7 +284,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "422 Client Error: Unprocessable Entity for url: https://r.jina.ai/http://www.vhodne-uverejneni.cz/zakazka/karavanove-stani-koupaliste-lomnice-nad-popelkou"
+      "error": "HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=10)"
     },
     {
       "source": "vhodne-uverejneni",
@@ -294,7 +294,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "422 Client Error: Unprocessable Entity for url: https://r.jina.ai/http://www.vhodne-uverejneni.cz/profil/mesto-lomnice-nad-popelkou"
+      "error": "HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=10)"
     },
     {
       "source": "vhodne-uverejneni",
@@ -304,7 +304,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "422 Client Error: Unprocessable Entity for url: https://r.jina.ai/http://www.vhodne-uverejneni.cz/zakazka/rekonstrukce-topneho-systemu-vcetne-zdroje-tepla-v-objektu-k-urnovemu-haji-cp-118-lomnice-nad-popelkou"
+      "error": "HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=10)"
     },
     {
       "source": "vhodne-uverejneni",
@@ -314,8 +314,8 @@
       "document_count_declared": 15,
       "documents": [],
       "status": "page_error",
-      "error": "422 Client Error: Unprocessable Entity for url: https://r.jina.ai/http://www.vhodne-uverejneni.cz/index.php?a=detail&contract=95276&h=contractsregister&m=xenorders"
+      "error": "HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=10)"
     }
   ],
-  "note": "Archives public document metadata and extracted PDF text. Original binaries are not committed; direct PVU access may fall back to jina.ai."
+  "note": "Archives public document metadata and extracted PDF text. Original binaries are not committed; inaccessible documents are retained in the manifest as errors."
 }
