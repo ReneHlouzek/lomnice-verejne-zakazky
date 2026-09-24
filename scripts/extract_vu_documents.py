@@ -46,6 +46,27 @@ def fetch_page(url: str):
             raise RuntimeError(f"VU page unavailable via direct and Jina: {jina_exc}")
     soup = BeautifulSoup(html, "html.parser")
     docs = []
+    for a in soup.find_all("a", href=True):
+        href = norm_url(a["href"])
+        label = " ".join(a.stripped_strings)
+        if is_document_url(href):
+            docs.append({"url": href, "label": label})
+    for a in soup.find_all("a", href=True):
+        href = norm_url(a["href"])
+        label = " ".join(a.stripped_strings)
+        if "xenorders" in href.lower() and "orderdocument" in href.lower():
+            docs.append({"url": href, "label": label})
+    for tag in soup.find_all(True):
+        for key, value in tag.attrs.items():
+            if not str(key).startswith("data-"):
+                continue
+            vals = value if isinstance(value, list) else [value]
+            for v in vals:
+                if isinstance(v, str) and is_document_url(v):
+                    docs.append({"url": norm_url(v), "label": tag.get_text(" ", strip=True)})
+    unique = {d["url"]: d for d in docs}
+    return final_url, list(unique.values()), transport
+
 def extract_pdf(url: str):
     headers = {"User-Agent": UA, "Accept": "application/pdf,*/*"}
     try:
