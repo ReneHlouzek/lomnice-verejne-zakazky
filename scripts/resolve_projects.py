@@ -351,6 +351,19 @@ def main():
     rows = records()
     groups = []
     candidates = []
+    diagnostics = {
+        "pairs": 0,
+        "shared_supplier": 0,
+        "title_similarity_ge_040": 0,
+        "token_overlap_ge_045": 0,
+        "near_price": 0,
+        "near_date_45d": 0,
+        "shared_supplier_and_title": 0,
+        "shared_supplier_and_price": 0,
+        "shared_supplier_and_title_and_price": 0,
+        "score_ge_060": 0,
+        "score_ge_082": 0,
+    }
     for r in rows:
         best = None
         for i, g in enumerate(groups):
@@ -392,7 +405,34 @@ def main():
             if not sa or not sb or sa == sb:
                 continue
             source_pairs.add(tuple(sorted((sa, sb))))
+            diagnostics["pairs"] += 1
+            ai = ico(a.get("supplier_ico") or a.get("ico_dodavatele"))
+            bi = ico(b.get("supplier_ico") or b.get("ico_dodavatele"))
+            same_supplier = bool(ai and bi and ai == bi)
+            at = norm(title(a))
+            bt = norm(title(b))
+            sim = SequenceMatcher(None, at, bt).ratio() if at and bt else 0
+            tok = token_overlap(at, bt)
+            ap_values = prices(a)
+            bp_values = prices(b)
+            near_price_pair = any(
+                abs(ap - bp) / max(ap, bp) <= .03
+                for ap in ap_values for bp in bp_values
+                if max(ap, bp) > 0
+            )
+            gap = date_gap_days(a, b)
+            near_date_pair = gap is not None and gap <= 45
+            diagnostics["shared_supplier"] += int(same_supplier)
+            diagnostics["title_similarity_ge_040"] += int(sim >= .40)
+            diagnostics["token_overlap_ge_045"] += int(tok >= .45)
+            diagnostics["near_price"] += int(near_price_pair)
+            diagnostics["near_date_45d"] += int(near_date_pair)
+            diagnostics["shared_supplier_and_title"] += int(same_supplier and (sim >= .40 or tok >= .45))
+            diagnostics["shared_supplier_and_price"] += int(same_supplier and near_price_pair)
+            diagnostics["shared_supplier_and_title_and_price"] += int(same_supplier and (sim >= .40 or tok >= .45) and near_price_pair)
             s, reason, evidence = score(a, b)
+            diagnostics["score_ge_060"] += int(s >= .60)
+            diagnostics["score_ge_082"] += int(s >= .82)
             if s >= .60:
                 candidates.append({
                     "score": s,
@@ -409,6 +449,7 @@ def main():
     audit["candidate_limit"] = 100
     audit["cross_source_pairs"] = [list(x) for x in sorted(source_pairs)]
     audit["auto_link_threshold"] = .82
+    audit["cross_source_diagnostics"] = diagnostics
     (ROOT / "data" / "link_candidates.json").write_text(json.dumps(candidates, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     (ROOT / "data" / "resolution_audit.json").write_text(json.dumps(audit, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"Resolved {len(rows)} source records into {len(groups)} projects; {len(candidates)} candidates for review.")
