@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-09-24T09:23:41Z",
+  "updated_at": "2026-09-24T10:32:56Z",
   "pages_checked": 31,
   "declared_documents": 31,
-  "documents_discovered": 1,
+  "documents_discovered": 46,
   "documents_downloaded": 0,
   "documents_text_extracted": 0,
   "records": [
@@ -14,7 +14,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: 422 Client Error: Unprocessable Entity for url: https://r.jina.ai/https://www.vhodne-uverejneni.cz/zakazka/mesto-lomnice-nad-popelkou-cisternova-automobilova-strikacka"
+      "error": "VU page unavailable via direct and proxy fallbacks: 401 Client Error: Unauthorized for url: https://corsproxy.io/?url=https%3A%2F%2Fwww.vhodne-uverejneni.cz%2Fzakazka%2Fmesto-lomnice-nad-popelkou-cisternova-automobilova-strikacka"
     },
     {
       "source": "vhodne-uverejneni",
@@ -24,7 +24,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: 422 Client Error: Unprocessable Entity for url: https://r.jina.ai/https://www.vhodne-uverejneni.cz/zakazka/projektova-dokumentace-mistnich-komunikaci-lomnice-nad-popelkou"
+      "error": "VU page unavailable via direct and proxy fallbacks: 401 Client Error: Unauthorized for url: https://corsproxy.io/?url=https%3A%2F%2Fwww.vhodne-uverejneni.cz%2Fzakazka%2Fprojektova-dokumentace-mistnich-komunikaci-lomnice-nad-popelkou"
     },
     {
       "source": "vhodne-uverejneni",
@@ -34,7 +34,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: 422 Client Error: Unprocessable Entity for url: https://r.jina.ai/https://www.vhodne-uverejneni.cz/zakazka/domov-pro-osoby-s-poruchou-autistickeho-spektra-1"
+      "error": "VU page unavailable via direct and proxy fallbacks: 401 Client Error: Unauthorized for url: https://corsproxy.io/?url=https%3A%2F%2Fwww.vhodne-uverejneni.cz%2Fzakazka%2Fdomov-pro-osoby-s-poruchou-autistickeho-spektra-1"
     },
     {
       "source": "vhodne-uverejneni",
@@ -44,7 +44,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: 422 Client Error: Unprocessable Entity for url: https://r.jina.ai/https://www.vhodne-uverejneni.cz/zakazka/automobil-pro-terenni-socialni-sluzbu-pecovatelske-sluzby-lomnice-nad-popelkou-prispevkove-organizace"
+      "error": "VU page unavailable via direct and proxy fallbacks: 401 Client Error: Unauthorized for url: https://corsproxy.io/?url=https%3A%2F%2Fwww.vhodne-uverejneni.cz%2Fzakazka%2Fautomobil-pro-terenni-socialni-sluzbu-pecovatelske-sluzby-lomnice-nad-popelkou-prispevkove-organizace"
     },
     {
       "source": "vhodne-uverejneni",
@@ -54,7 +54,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: 422 Client Error: Unprocessable Entity for url: https://r.jina.ai/https://www.vhodne-uverejneni.cz/zakazka/obnova-telocvicen-pri-zs-t-g-masaryka-v-lomnici-nad-popelkou"
+      "error": "VU page unavailable via direct and proxy fallbacks: 401 Client Error: Unauthorized for url: https://corsproxy.io/?url=https%3A%2F%2Fwww.vhodne-uverejneni.cz%2Fzakazka%2Fobnova-telocvicen-pri-zs-t-g-masaryka-v-lomnici-nad-popelkou"
     },
     {
       "source": "vhodne-uverejneni",
@@ -64,7 +64,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: 422 Client Error: Unprocessable Entity for url: https://r.jina.ai/https://www.vhodne-uverejneni.cz/zakazka/pristavba-servisniho-objektu-lomnice-nad-popelkou"
+      "error": "VU page unavailable via direct and proxy fallbacks: 401 Client Error: Unauthorized for url: https://corsproxy.io/?url=https%3A%2F%2Fwww.vhodne-uverejneni.cz%2Fzakazka%2Fpristavba-servisniho-objektu-lomnice-nad-popelkou"
     },
     {
       "source": "vhodne-uverejneni",
@@ -74,7 +74,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: 422 Client Error: Unprocessable Entity for url: https://r.jina.ai/https://www.vhodne-uverejneni.cz/zakazka/instalace-domovniho-telefonu-a-rozvodu-strukturovane-kabelaze-nnp-lomnice-nad-popelkou"
+      "error": "VU page unavailable via direct and proxy fallbacks: 401 Client Error: Unauthorized for url: https://corsproxy.io/?url=https%3A%2F%2Fwww.vhodne-uverejneni.cz%2Fzakazka%2Finstalace-domovniho-telefonu-a-rozvodu-strukturovane-kabelaze-nnp-lomnice-nad-popelkou"
     },
     {
       "source": "vhodne-uverejneni",
@@ -84,7 +84,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: 422 Client Error: Unprocessable Entity for url: https://r.jina.ai/https://www.vhodne-uverejneni.cz/zakazka/vydani-obrazove-publikace-lomnice-nad-popelkou-historie-skolstvi"
+      "error": "VU page unavailable via direct and proxy fallbacks: 401 Client Error: Unauthorized for url: https://corsproxy.io/?url=https%3A%2F%2Fwww.vhodne-uverejneni.cz%2Fzakazka%2Fvydani-obrazove-publikace-lomnice-nad-popelkou-historie-skolstvi"
     },
     {
       "source": "vhodne-uverejneni",
@@ -94,7 +94,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: 422 Client Error: Unprocessable Entity for url: https://r.jina.ai/https://www.vhodne-uverejneni.cz/zakazka/silnice-ii-284-lomnice-nad-popelkou-ulice-5-kvetna"
+      "error": "VU page unavailable via direct and proxy fallbacks: 401 Client Error: Unauthorized for url: https://corsproxy.io/?url=https%3A%2F%2Fwww.vhodne-uverejneni.cz%2Fzakazka%2Fsilnice-ii-284-lomnice-nad-popelkou-ulice-5-kvetna"
     },
     {
       "source": "vhodne-uverejneni",
@@ -104,7 +104,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: 422 Client Error: Unprocessable Entity for url: https://r.jina.ai/https://www.vhodne-uverejneni.cz/index.php?a=detail&contract=92577&h=contractsregister&m=xenorders"
+      "error": "VU page unavailable via direct and proxy fallbacks: 401 Client Error: Unauthorized for url: https://corsproxy.io/?url=https%3A%2F%2Fwww.vhodne-uverejneni.cz%2Findex.php%3Fa%3Ddetail%26contract%3D92577%26h%3Dcontractsregister%26m%3Dxenorders"
     },
     {
       "source": "vhodne-uverejneni",
@@ -114,7 +114,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: 422 Client Error: Unprocessable Entity for url: https://r.jina.ai/https://www.vhodne-uverejneni.cz/zakazka/obnova-mvn-technolen-lomnice-nad-popelkou"
+      "error": "VU page unavailable via direct and proxy fallbacks: 401 Client Error: Unauthorized for url: https://corsproxy.io/?url=https%3A%2F%2Fwww.vhodne-uverejneni.cz%2Fzakazka%2Fobnova-mvn-technolen-lomnice-nad-popelkou"
     },
     {
       "source": "vhodne-uverejneni",
@@ -124,7 +124,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: 422 Client Error: Unprocessable Entity for url: https://r.jina.ai/https://www.vhodne-uverejneni.cz/zakazka/rekonstrukce-verejneho-osvetleni-ulice-jilemnicka-a-cast-plk-truhlare-lomnice-nad-popelkou"
+      "error": "VU page unavailable via direct and proxy fallbacks: 401 Client Error: Unauthorized for url: https://corsproxy.io/?url=https%3A%2F%2Fwww.vhodne-uverejneni.cz%2Fzakazka%2Frekonstrukce-verejneho-osvetleni-ulice-jilemnicka-a-cast-plk-truhlare-lomnice-nad-popelkou"
     },
     {
       "source": "vhodne-uverejneni",
@@ -134,7 +134,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: 422 Client Error: Unprocessable Entity for url: https://r.jina.ai/https://www.vhodne-uverejneni.cz/zakazka/oprava-strechy-domu-c-p-32-ul-antala-staska-v-lomnici-nad-popelkou"
+      "error": "VU page unavailable via direct and proxy fallbacks: 401 Client Error: Unauthorized for url: https://corsproxy.io/?url=https%3A%2F%2Fwww.vhodne-uverejneni.cz%2Fzakazka%2Foprava-strechy-domu-c-p-32-ul-antala-staska-v-lomnici-nad-popelkou"
     },
     {
       "source": "vhodne-uverejneni",
@@ -144,7 +144,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: 422 Client Error: Unprocessable Entity for url: https://r.jina.ai/https://www.vhodne-uverejneni.cz/zakazka/revitalizace-rybnika-matous-a-jeho-okoli-v-lomnici-nad-popelkou"
+      "error": "VU page unavailable via direct and proxy fallbacks: 401 Client Error: Unauthorized for url: https://corsproxy.io/?url=https%3A%2F%2Fwww.vhodne-uverejneni.cz%2Fzakazka%2Frevitalizace-rybnika-matous-a-jeho-okoli-v-lomnici-nad-popelkou"
     },
     {
       "source": "vhodne-uverejneni",
@@ -154,7 +154,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: 422 Client Error: Unprocessable Entity for url: https://r.jina.ai/https://www.vhodne-uverejneni.cz/zakazka/revitalizace-verejneho-prostranstvi-na-hrbitove-2-etapa-lomnice-nad-popelkou"
+      "error": "VU page unavailable via direct and proxy fallbacks: 401 Client Error: Unauthorized for url: https://corsproxy.io/?url=https%3A%2F%2Fwww.vhodne-uverejneni.cz%2Fzakazka%2Frevitalizace-verejneho-prostranstvi-na-hrbitove-2-etapa-lomnice-nad-popelkou"
     },
     {
       "source": "vhodne-uverejneni",
@@ -164,7 +164,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: 422 Client Error: Unprocessable Entity for url: https://r.jina.ai/https://www.vhodne-uverejneni.cz/zakazka/opravy-mistnich-komunikaci-ve-meste-lomnice-nad-popelkou"
+      "error": "VU page unavailable via direct and proxy fallbacks: 401 Client Error: Unauthorized for url: https://corsproxy.io/?url=https%3A%2F%2Fwww.vhodne-uverejneni.cz%2Fzakazka%2Fopravy-mistnich-komunikaci-ve-meste-lomnice-nad-popelkou"
     },
     {
       "source": "vhodne-uverejneni",
@@ -174,7 +174,7 @@
       "document_count_declared": 6,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: 422 Client Error: Unprocessable Entity for url: https://r.jina.ai/https://www.vhodne-uverejneni.cz/index.php?a=detail&contract=101051&h=contractsregister&m=xenorders"
+      "error": "VU page unavailable via direct and proxy fallbacks: 401 Client Error: Unauthorized for url: https://corsproxy.io/?url=https%3A%2F%2Fwww.vhodne-uverejneni.cz%2Findex.php%3Fa%3Ddetail%26contract%3D101051%26h%3Dcontractsregister%26m%3Dxenorders"
     },
     {
       "source": "vhodne-uverejneni",
@@ -184,7 +184,7 @@
       "document_count_declared": 10,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: 422 Client Error: Unprocessable Entity for url: https://r.jina.ai/https://www.vhodne-uverejneni.cz/index.php?a=detail&contract=101359&h=contractsregister&m=xenorders"
+      "error": "VU page unavailable via direct and proxy fallbacks: 401 Client Error: Unauthorized for url: https://corsproxy.io/?url=https%3A%2F%2Fwww.vhodne-uverejneni.cz%2Findex.php%3Fa%3Ddetail%26contract%3D101359%26h%3Dcontractsregister%26m%3Dxenorders"
     },
     {
       "source": "vhodne-uverejneni",
@@ -192,9 +192,24 @@
       "page_url": "https://www.vhodne-uverejneni.cz/index.php?a=detail&contract=105575&h=contractsregister&m=xenorders",
       "title": "Stavební práce při výměně oken a úpravy 3. NP čp. 61, Lomnice nad Popelkou",
       "document_count_declared": null,
-      "documents": [],
-      "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: 422 Client Error: Unprocessable Entity for url: https://r.jina.ai/https://www.vhodne-uverejneni.cz/index.php?a=detail&contract=105575&h=contractsregister&m=xenorders"
+      "documents": [
+        {
+          "index": 1,
+          "label": "Výzva",
+          "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3906771&h=orderdocument&m=xenorders&token=",
+          "status": "download_error",
+          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+        },
+        {
+          "index": 2,
+          "label": "Smlouva, její změny a dodatky",
+          "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3906772&h=orderdocument&m=xenorders&token=",
+          "status": "download_error",
+          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+        }
+      ],
+      "status": "ok",
+      "transport": "xml_export"
     },
     {
       "source": "vhodne-uverejneni",
@@ -202,9 +217,17 @@
       "page_url": "https://www.vhodne-uverejneni.cz/zakazka/sanace-vlhkeho-zdiva-sklepnich-prostor-cp-886-lomnice-nad-popelkou",
       "title": "Sanace vlhkého zdiva sklepních prostor čp. 886, Lomnice nad Popelkou",
       "document_count_declared": null,
-      "documents": [],
-      "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: 422 Client Error: Unprocessable Entity for url: https://r.jina.ai/https://www.vhodne-uverejneni.cz/zakazka/sanace-vlhkeho-zdiva-sklepnich-prostor-cp-886-lomnice-nad-popelkou"
+      "documents": [
+        {
+          "index": 1,
+          "label": "Smlouva, její změny a dodatky",
+          "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3768270&h=orderdocument&m=xenorders&token=",
+          "status": "download_error",
+          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+        }
+      ],
+      "status": "ok",
+      "transport": "xml_export"
     },
     {
       "source": "vhodne-uverejneni",
@@ -212,9 +235,59 @@
       "page_url": "https://www.vhodne-uverejneni.cz/zakazka/modernizace-uceben-zus-dodavky",
       "title": "Modernizace UČEBEN ZUŠ - dodávky",
       "document_count_declared": null,
-      "documents": [],
-      "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: 422 Client Error: Unprocessable Entity for url: https://r.jina.ai/https://www.vhodne-uverejneni.cz/zakazka/modernizace-uceben-zus-dodavky"
+      "documents": [
+        {
+          "index": 1,
+          "label": "Smlouva, její změny a dodatky",
+          "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3895761&h=orderdocument&m=xenorders&token=",
+          "status": "download_error",
+          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+        },
+        {
+          "index": 2,
+          "label": "Smlouva, její změny a dodatky",
+          "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3895762&h=orderdocument&m=xenorders&token=",
+          "status": "download_error",
+          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+        },
+        {
+          "index": 3,
+          "label": "Smlouva, její změny a dodatky",
+          "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3895763&h=orderdocument&m=xenorders&token=",
+          "status": "download_error",
+          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+        },
+        {
+          "index": 4,
+          "label": "Smlouva, její změny a dodatky",
+          "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3895764&h=orderdocument&m=xenorders&token=",
+          "status": "download_error",
+          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+        },
+        {
+          "index": 5,
+          "label": "Smlouva, její změny a dodatky",
+          "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3895765&h=orderdocument&m=xenorders&token=",
+          "status": "download_error",
+          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+        },
+        {
+          "index": 6,
+          "label": "Smlouva, její změny a dodatky",
+          "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3895766&h=orderdocument&m=xenorders&token=",
+          "status": "download_error",
+          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+        },
+        {
+          "index": 7,
+          "label": "Smlouva, její změny a dodatky",
+          "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3895767&h=orderdocument&m=xenorders&token=",
+          "status": "download_error",
+          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+        }
+      ],
+      "status": "ok",
+      "transport": "xml_export"
     },
     {
       "source": "vhodne-uverejneni",
@@ -222,9 +295,171 @@
       "page_url": "https://www.vhodne-uverejneni.cz/zakazka/verejne-osvetleni-11",
       "title": "Veřejné osvětlení",
       "document_count_declared": null,
-      "documents": [],
-      "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: 422 Client Error: Unprocessable Entity for url: https://r.jina.ai/https://www.vhodne-uverejneni.cz/zakazka/verejne-osvetleni-11"
+      "documents": [
+        {
+          "index": 1,
+          "label": "Písemná zpráva zadavatele",
+          "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3868297&h=orderdocument&m=xenorders&token=",
+          "status": "download_error",
+          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+        },
+        {
+          "index": 2,
+          "label": "Smlouva, její změny a dodatky",
+          "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3868298&h=orderdocument&m=xenorders&token=",
+          "status": "download_error",
+          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+        },
+        {
+          "index": 3,
+          "label": "Smlouva, její změny a dodatky",
+          "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3868299&h=orderdocument&m=xenorders&token=",
+          "status": "download_error",
+          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+        },
+        {
+          "index": 4,
+          "label": "Oznámení o výběru nejvhodnější nabídky",
+          "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3868300&h=orderdocument&m=xenorders&token=",
+          "status": "download_error",
+          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+        },
+        {
+          "index": 5,
+          "label": "Oznámení o výběru nejvhodnější nabídky",
+          "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3868301&h=orderdocument&m=xenorders&token=",
+          "status": "download_error",
+          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+        },
+        {
+          "index": 6,
+          "label": "Vysvětlení, doplnění, změna zadávací dokumentace",
+          "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3868302&h=orderdocument&m=xenorders&token=",
+          "status": "download_error",
+          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+        },
+        {
+          "index": 7,
+          "label": "Vysvětlení, doplnění, změna zadávací dokumentace",
+          "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3868303&h=orderdocument&m=xenorders&token=",
+          "status": "download_error",
+          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+        },
+        {
+          "index": 8,
+          "label": "Vysvětlení, doplnění, změna zadávací dokumentace",
+          "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3868304&h=orderdocument&m=xenorders&token=",
+          "status": "download_error",
+          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+        },
+        {
+          "index": 9,
+          "label": "Vysvětlení, doplnění, změna zadávací dokumentace",
+          "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3868305&h=orderdocument&m=xenorders&token=",
+          "status": "download_error",
+          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+        },
+        {
+          "index": 10,
+          "label": "Vysvětlení, doplnění, změna zadávací dokumentace",
+          "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3868306&h=orderdocument&m=xenorders&token=",
+          "status": "download_error",
+          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+        },
+        {
+          "index": 11,
+          "label": "Vysvětlení, doplnění, změna zadávací dokumentace",
+          "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3868307&h=orderdocument&m=xenorders&token=",
+          "status": "download_error",
+          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+        },
+        {
+          "index": 12,
+          "label": "Vysvětlení, doplnění, změna zadávací dokumentace",
+          "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3868308&h=orderdocument&m=xenorders&token=",
+          "status": "download_error",
+          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+        },
+        {
+          "index": 13,
+          "label": "Vysvětlení, doplnění, změna zadávací dokumentace",
+          "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3868309&h=orderdocument&m=xenorders&token=",
+          "status": "download_error",
+          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+        },
+        {
+          "index": 14,
+          "label": "Vysvětlení, doplnění, změna zadávací dokumentace",
+          "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3868310&h=orderdocument&m=xenorders&token=",
+          "status": "download_error",
+          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+        },
+        {
+          "index": 15,
+          "label": "Vysvětlení, doplnění, změna zadávací dokumentace",
+          "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3868311&h=orderdocument&m=xenorders&token=",
+          "status": "download_error",
+          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+        },
+        {
+          "index": 16,
+          "label": "Výzva",
+          "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3868312&h=orderdocument&m=xenorders&token=",
+          "status": "download_error",
+          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+        },
+        {
+          "index": 17,
+          "label": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění",
+          "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3868313&h=orderdocument&m=xenorders&token=",
+          "status": "download_error",
+          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+        },
+        {
+          "index": 18,
+          "label": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění",
+          "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3868314&h=orderdocument&m=xenorders&token=",
+          "status": "download_error",
+          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+        },
+        {
+          "index": 19,
+          "label": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění",
+          "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3868315&h=orderdocument&m=xenorders&token=",
+          "status": "download_error",
+          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+        },
+        {
+          "index": 20,
+          "label": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění",
+          "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3868316&h=orderdocument&m=xenorders&token=",
+          "status": "download_error",
+          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+        },
+        {
+          "index": 21,
+          "label": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění",
+          "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3868317&h=orderdocument&m=xenorders&token=",
+          "status": "download_error",
+          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+        },
+        {
+          "index": 22,
+          "label": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění",
+          "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3868318&h=orderdocument&m=xenorders&token=",
+          "status": "download_error",
+          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+        },
+        {
+          "index": 23,
+          "label": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění",
+          "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3868319&h=orderdocument&m=xenorders&token=",
+          "status": "download_error",
+          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+        }
+      ],
+      "status": "ok",
+      "transport": "xml_export"
     },
     {
       "source": "vhodne-uverejneni",
@@ -232,9 +467,24 @@
       "page_url": "https://www.vhodne-uverejneni.cz/zakazka/rozsireni-polikliniky-lomnice-nad-popelkou-dokumentace-stavebniho-zameru",
       "title": "Rozšíření polikliniky Lomnice nad Popelkou - dokumentace stavebního záměru",
       "document_count_declared": null,
-      "documents": [],
-      "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: 422 Client Error: Unprocessable Entity for url: https://r.jina.ai/https://www.vhodne-uverejneni.cz/zakazka/rozsireni-polikliniky-lomnice-nad-popelkou-dokumentace-stavebniho-zameru"
+      "documents": [
+        {
+          "index": 1,
+          "label": "Smlouva, její změny a dodatky",
+          "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3811452&h=orderdocument&m=xenorders&token=",
+          "status": "download_error",
+          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+        },
+        {
+          "index": 2,
+          "label": "Smlouva, její změny a dodatky",
+          "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3811453&h=orderdocument&m=xenorders&token=",
+          "status": "download_error",
+          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+        }
+      ],
+      "status": "ok",
+      "transport": "xml_export"
     },
     {
       "source": "vhodne-uverejneni",
@@ -242,9 +492,73 @@
       "page_url": "https://www.vhodne-uverejneni.cz/zakazka/nemocnice-nasledne-pece-lomnice-nad-popelkou-investice-a-opravy",
       "title": "Nemocnice následné péče Lomnice nad Popelkou – investice a opravy",
       "document_count_declared": null,
-      "documents": [],
-      "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: 422 Client Error: Unprocessable Entity for url: https://r.jina.ai/https://www.vhodne-uverejneni.cz/zakazka/nemocnice-nasledne-pece-lomnice-nad-popelkou-investice-a-opravy"
+      "documents": [
+        {
+          "index": 1,
+          "label": "Písemná zpráva zadavatele",
+          "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3852455&h=orderdocument&m=xenorders&token=",
+          "status": "download_error",
+          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+        },
+        {
+          "index": 2,
+          "label": "Ostatní",
+          "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3852456&h=orderdocument&m=xenorders&token=",
+          "status": "download_error",
+          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+        },
+        {
+          "index": 3,
+          "label": "Výzva",
+          "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3852457&h=orderdocument&m=xenorders&token=",
+          "status": "download_error",
+          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+        },
+        {
+          "index": 4,
+          "label": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění",
+          "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3852458&h=orderdocument&m=xenorders&token=",
+          "status": "download_error",
+          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+        },
+        {
+          "index": 5,
+          "label": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění",
+          "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3852459&h=orderdocument&m=xenorders&token=",
+          "status": "download_error",
+          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+        },
+        {
+          "index": 6,
+          "label": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění",
+          "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3852460&h=orderdocument&m=xenorders&token=",
+          "status": "download_error",
+          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+        },
+        {
+          "index": 7,
+          "label": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění",
+          "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3852461&h=orderdocument&m=xenorders&token=",
+          "status": "download_error",
+          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+        },
+        {
+          "index": 8,
+          "label": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění",
+          "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3852462&h=orderdocument&m=xenorders&token=",
+          "status": "download_error",
+          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+        },
+        {
+          "index": 9,
+          "label": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění",
+          "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3852463&h=orderdocument&m=xenorders&token=",
+          "status": "download_error",
+          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+        }
+      ],
+      "status": "ok",
+      "transport": "xml_export"
     },
     {
       "source": "vhodne-uverejneni",
@@ -254,7 +568,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: 422 Client Error: Unprocessable Entity for url: https://r.jina.ai/https://www.vhodne-uverejneni.cz/smlouvy-organizace/mesto-lomnice-nad-popelkou"
+      "error": "VU page unavailable via direct and proxy fallbacks: 401 Client Error: Unauthorized for url: https://corsproxy.io/?url=https%3A%2F%2Fwww.vhodne-uverejneni.cz%2Fsmlouvy-organizace%2Fmesto-lomnice-nad-popelkou"
     },
     {
       "source": "vhodne-uverejneni",
@@ -264,7 +578,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=35)"
+      "error": "VU page unavailable via direct and proxy fallbacks: 401 Client Error: Unauthorized for url: https://corsproxy.io/?url=https%3A%2F%2Fwww.vhodne-uverejneni.cz%2Fzakazka%2Frestauratorske-prace-na-spodnich-castech-marianskeho-sloupu-v-lomnici-nad-popelkou"
     },
     {
       "source": "vhodne-uverejneni",
@@ -291,7 +605,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: 422 Client Error: Unprocessable Entity for url: https://r.jina.ai/https://www.vhodne-uverejneni.cz/zakazka/karavanove-stani-koupaliste-lomnice-nad-popelkou"
+      "error": "VU page unavailable via direct and proxy fallbacks: 401 Client Error: Unauthorized for url: https://corsproxy.io/?url=https%3A%2F%2Fwww.vhodne-uverejneni.cz%2Fzakazka%2Fkaravanove-stani-koupaliste-lomnice-nad-popelkou"
     },
     {
       "source": "vhodne-uverejneni",
@@ -301,7 +615,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: 422 Client Error: Unprocessable Entity for url: https://r.jina.ai/https://www.vhodne-uverejneni.cz/profil/mesto-lomnice-nad-popelkou"
+      "error": "VU page unavailable via direct and proxy fallbacks: 401 Client Error: Unauthorized for url: https://corsproxy.io/?url=https%3A%2F%2Fwww.vhodne-uverejneni.cz%2Fprofil%2Fmesto-lomnice-nad-popelkou"
     },
     {
       "source": "vhodne-uverejneni",
@@ -309,9 +623,17 @@
       "page_url": "https://www.vhodne-uverejneni.cz/zakazka/rekonstrukce-topneho-systemu-vcetne-zdroje-tepla-v-objektu-k-urnovemu-haji-cp-118-lomnice-nad-popelkou",
       "title": "Rekonstrukce topného systému včetně zdroje tepla v objektu K Urnovému háji čp. 118, Lomnice nad Popelkou",
       "document_count_declared": null,
-      "documents": [],
-      "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: 422 Client Error: Unprocessable Entity for url: https://r.jina.ai/https://www.vhodne-uverejneni.cz/zakazka/rekonstrukce-topneho-systemu-vcetne-zdroje-tepla-v-objektu-k-urnovemu-haji-cp-118-lomnice-nad-popelkou"
+      "documents": [
+        {
+          "index": 1,
+          "label": "Smlouva, její změny a dodatky",
+          "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3865358&h=orderdocument&m=xenorders&token=",
+          "status": "download_error",
+          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+        }
+      ],
+      "status": "ok",
+      "transport": "xml_export"
     },
     {
       "source": "vhodne-uverejneni",
@@ -321,7 +643,7 @@
       "document_count_declared": 15,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: 422 Client Error: Unprocessable Entity for url: https://r.jina.ai/https://www.vhodne-uverejneni.cz/index.php?a=detail&contract=95276&h=contractsregister&m=xenorders"
+      "error": "VU page unavailable via direct and proxy fallbacks: 401 Client Error: Unauthorized for url: https://corsproxy.io/?url=https%3A%2F%2Fwww.vhodne-uverejneni.cz%2Findex.php%3Fa%3Ddetail%26contract%3D95276%26h%3Dcontractsregister%26m%3Dxenorders"
     }
   ],
   "note": "Archives public document metadata and extracted PDF text. Original binaries are not committed; inaccessible documents are retained in the manifest as errors."
