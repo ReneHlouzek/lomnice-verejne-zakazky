@@ -214,6 +214,19 @@ def process(record: dict) -> dict:
         except Exception as exc:
             result["status"], result["error"] = "page_error", str(exc)
             return result
+    expanded = []
+    for doc in docs:
+        u = doc.get("url", "")
+        if "a=detail" in u.lower() and "document=" in u.lower():
+            try:
+                _, linked, _ = fetch_page(u)
+                expanded.extend(linked or [doc])
+            except Exception:
+                expanded.append(doc)
+        else:
+            expanded.append(doc)
+    docs = list({d["url"]: d for d in expanded}.values())
+
     for i, doc in enumerate(docs, 1):
         item = {"index": i, "label": doc["label"], "url": doc["url"]}
         existing=OUT/str(source_id)/f"{i:03d}.txt"
