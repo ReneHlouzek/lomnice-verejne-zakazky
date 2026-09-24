@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T10:47:17Z",
+  "updated_at": "2026-09-24T11:39:30Z",
   "pages_checked": 31,
   "declared_documents": 31,
   "documents_discovered": 46,
@@ -197,15 +197,13 @@
           "index": 1,
           "label": "Výzva",
           "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3906771&h=orderdocument&m=xenorders&token=",
-          "status": "download_error",
-          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+          "status": "retained_from_previous_run"
         },
         {
           "index": 2,
           "label": "Smlouva, její změny a dodatky",
           "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3906772&h=orderdocument&m=xenorders&token=",
-          "status": "download_error",
-          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+          "status": "retained_from_previous_run"
         }
       ],
       "status": "ok",
@@ -222,8 +220,7 @@
           "index": 1,
           "label": "Smlouva, její změny a dodatky",
           "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3768270&h=orderdocument&m=xenorders&token=",
-          "status": "download_error",
-          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+          "status": "retained_from_previous_run"
         }
       ],
       "status": "ok",
@@ -240,50 +237,43 @@
           "index": 1,
           "label": "Smlouva, její změny a dodatky",
           "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3895761&h=orderdocument&m=xenorders&token=",
-          "status": "download_error",
-          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+          "status": "retained_from_previous_run"
         },
         {
           "index": 2,
           "label": "Smlouva, její změny a dodatky",
           "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3895762&h=orderdocument&m=xenorders&token=",
-          "status": "download_error",
-          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+          "status": "retained_from_previous_run"
         },
         {
           "index": 3,
           "label": "Smlouva, její změny a dodatky",
           "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3895763&h=orderdocument&m=xenorders&token=",
-          "status": "download_error",
-          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+          "status": "retained_from_previous_run"
         },
         {
           "index": 4,
           "label": "Smlouva, její změny a dodatky",
           "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3895764&h=orderdocument&m=xenorders&token=",
-          "status": "download_error",
-          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+          "status": "retained_from_previous_run"
         },
         {
           "index": 5,
           "label": "Smlouva, její změny a dodatky",
           "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3895765&h=orderdocument&m=xenorders&token=",
-          "status": "download_error",
-          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+          "status": "retained_from_previous_run"
         },
         {
           "index": 6,
           "label": "Smlouva, její změny a dodatky",
           "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3895766&h=orderdocument&m=xenorders&token=",
-          "status": "download_error",
-          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+          "status": "retained_from_previous_run"
         },
         {
           "index": 7,
           "label": "Smlouva, její změny a dodatky",
           "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3895767&h=orderdocument&m=xenorders&token=",
-          "status": "download_error",
-          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+          "status": "retained_from_previous_run"
         }
       ],
       "status": "ok",
@@ -300,162 +290,139 @@
           "index": 1,
           "label": "Písemná zpráva zadavatele",
           "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3868297&h=orderdocument&m=xenorders&token=",
-          "status": "download_error",
-          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+          "status": "retained_from_previous_run"
         },
         {
           "index": 2,
           "label": "Smlouva, její změny a dodatky",
           "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3868298&h=orderdocument&m=xenorders&token=",
-          "status": "download_error",
-          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+          "status": "retained_from_previous_run"
         },
         {
           "index": 3,
           "label": "Smlouva, její změny a dodatky",
           "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3868299&h=orderdocument&m=xenorders&token=",
-          "status": "download_error",
-          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+          "status": "retained_from_previous_run"
         },
         {
           "index": 4,
           "label": "Oznámení o výběru nejvhodnější nabídky",
           "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3868300&h=orderdocument&m=xenorders&token=",
-          "status": "download_error",
-          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+          "status": "retained_from_previous_run"
         },
         {
           "index": 5,
           "label": "Oznámení o výběru nejvhodnější nabídky",
           "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3868301&h=orderdocument&m=xenorders&token=",
-          "status": "download_error",
-          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+          "status": "retained_from_previous_run"
         },
         {
           "index": 6,
           "label": "Vysvětlení, doplnění, změna zadávací dokumentace",
           "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3868302&h=orderdocument&m=xenorders&token=",
-          "status": "download_error",
-          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+          "status": "retained_from_previous_run"
         },
         {
           "index": 7,
           "label": "Vysvětlení, doplnění, změna zadávací dokumentace",
           "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3868303&h=orderdocument&m=xenorders&token=",
-          "status": "download_error",
-          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+          "status": "retained_from_previous_run"
         },
         {
           "index": 8,
           "label": "Vysvětlení, doplnění, změna zadávací dokumentace",
           "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3868304&h=orderdocument&m=xenorders&token=",
-          "status": "download_error",
-          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+          "status": "retained_from_previous_run"
         },
         {
           "index": 9,
           "label": "Vysvětlení, doplnění, změna zadávací dokumentace",
           "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3868305&h=orderdocument&m=xenorders&token=",
-          "status": "download_error",
-          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+          "status": "retained_from_previous_run"
         },
         {
           "index": 10,
           "label": "Vysvětlení, doplnění, změna zadávací dokumentace",
           "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3868306&h=orderdocument&m=xenorders&token=",
-          "status": "download_error",
-          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+          "status": "retained_from_previous_run"
         },
         {
           "index": 11,
           "label": "Vysvětlení, doplnění, změna zadávací dokumentace",
           "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3868307&h=orderdocument&m=xenorders&token=",
-          "status": "download_error",
-          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+          "status": "retained_from_previous_run"
         },
         {
           "index": 12,
           "label": "Vysvětlení, doplnění, změna zadávací dokumentace",
           "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3868308&h=orderdocument&m=xenorders&token=",
-          "status": "download_error",
-          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+          "status": "retained_from_previous_run"
         },
         {
           "index": 13,
           "label": "Vysvětlení, doplnění, změna zadávací dokumentace",
           "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3868309&h=orderdocument&m=xenorders&token=",
-          "status": "download_error",
-          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+          "status": "retained_from_previous_run"
         },
         {
           "index": 14,
           "label": "Vysvětlení, doplnění, změna zadávací dokumentace",
           "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3868310&h=orderdocument&m=xenorders&token=",
-          "status": "download_error",
-          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+          "status": "retained_from_previous_run"
         },
         {
           "index": 15,
           "label": "Vysvětlení, doplnění, změna zadávací dokumentace",
           "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3868311&h=orderdocument&m=xenorders&token=",
-          "status": "download_error",
-          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+          "status": "retained_from_previous_run"
         },
         {
           "index": 16,
           "label": "Výzva",
           "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3868312&h=orderdocument&m=xenorders&token=",
-          "status": "download_error",
-          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+          "status": "retained_from_previous_run"
         },
         {
           "index": 17,
           "label": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění",
           "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3868313&h=orderdocument&m=xenorders&token=",
-          "status": "download_error",
-          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+          "status": "retained_from_previous_run"
         },
         {
           "index": 18,
           "label": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění",
           "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3868314&h=orderdocument&m=xenorders&token=",
-          "status": "download_error",
-          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+          "status": "retained_from_previous_run"
         },
         {
           "index": 19,
           "label": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění",
           "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3868315&h=orderdocument&m=xenorders&token=",
-          "status": "download_error",
-          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+          "status": "retained_from_previous_run"
         },
         {
           "index": 20,
           "label": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění",
           "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3868316&h=orderdocument&m=xenorders&token=",
-          "status": "download_error",
-          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+          "status": "retained_from_previous_run"
         },
         {
           "index": 21,
           "label": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění",
           "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3868317&h=orderdocument&m=xenorders&token=",
-          "status": "download_error",
-          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+          "status": "retained_from_previous_run"
         },
         {
           "index": 22,
           "label": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění",
           "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3868318&h=orderdocument&m=xenorders&token=",
-          "status": "download_error",
-          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+          "status": "retained_from_previous_run"
         },
         {
           "index": 23,
           "label": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění",
           "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3868319&h=orderdocument&m=xenorders&token=",
-          "status": "download_error",
-          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+          "status": "retained_from_previous_run"
         }
       ],
       "status": "ok",
@@ -472,15 +439,13 @@
           "index": 1,
           "label": "Smlouva, její změny a dodatky",
           "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3811452&h=orderdocument&m=xenorders&token=",
-          "status": "download_error",
-          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+          "status": "retained_from_previous_run"
         },
         {
           "index": 2,
           "label": "Smlouva, její změny a dodatky",
           "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3811453&h=orderdocument&m=xenorders&token=",
-          "status": "download_error",
-          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+          "status": "retained_from_previous_run"
         }
       ],
       "status": "ok",
@@ -497,64 +462,55 @@
           "index": 1,
           "label": "Písemná zpráva zadavatele",
           "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3852455&h=orderdocument&m=xenorders&token=",
-          "status": "download_error",
-          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+          "status": "retained_from_previous_run"
         },
         {
           "index": 2,
           "label": "Ostatní",
           "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3852456&h=orderdocument&m=xenorders&token=",
-          "status": "download_error",
-          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+          "status": "retained_from_previous_run"
         },
         {
           "index": 3,
           "label": "Výzva",
           "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3852457&h=orderdocument&m=xenorders&token=",
-          "status": "download_error",
-          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+          "status": "retained_from_previous_run"
         },
         {
           "index": 4,
           "label": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění",
           "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3852458&h=orderdocument&m=xenorders&token=",
-          "status": "download_error",
-          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+          "status": "retained_from_previous_run"
         },
         {
           "index": 5,
           "label": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění",
           "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3852459&h=orderdocument&m=xenorders&token=",
-          "status": "download_error",
-          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+          "status": "retained_from_previous_run"
         },
         {
           "index": 6,
           "label": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění",
           "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3852460&h=orderdocument&m=xenorders&token=",
-          "status": "download_error",
-          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+          "status": "retained_from_previous_run"
         },
         {
           "index": 7,
           "label": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění",
           "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3852461&h=orderdocument&m=xenorders&token=",
-          "status": "download_error",
-          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+          "status": "retained_from_previous_run"
         },
         {
           "index": 8,
           "label": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění",
           "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3852462&h=orderdocument&m=xenorders&token=",
-          "status": "download_error",
-          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+          "status": "retained_from_previous_run"
         },
         {
           "index": 9,
           "label": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění",
           "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3852463&h=orderdocument&m=xenorders&token=",
-          "status": "download_error",
-          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+          "status": "retained_from_previous_run"
         }
       ],
       "status": "ok",
@@ -628,8 +584,7 @@
           "index": 1,
           "label": "Smlouva, její změny a dodatky",
           "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3865358&h=orderdocument&m=xenorders&token=",
-          "status": "download_error",
-          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+          "status": "retained_from_previous_run"
         }
       ],
       "status": "ok",
