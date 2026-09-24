@@ -217,5 +217,18 @@
       "vhodne-uverejneni"
     ]
   ],
-  "auto_link_threshold": 0.82
+  "auto_link_threshold": 0.82,
+  "cross_source_diagnostics": {
+    "pairs": 9374,
+    "shared_supplier": 0,
+    "title_similarity_ge_040": 1786,
+    "token_overlap_ge_045": 12,
+    "near_price": 22,
+    "near_date_45d": 264,
+    "shared_supplier_and_title": 0,
+    "shared_supplier_and_price": 0,
+    "shared_supplier_and_title_and_price": 0,
+    "score_ge_060": 0,
+    "score_ge_082": 0
+  }
 }
