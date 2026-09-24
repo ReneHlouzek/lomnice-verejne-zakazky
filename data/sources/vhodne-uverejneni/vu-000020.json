@@ -5,12 +5,12 @@
   "source_url": "https://www.vhodne-uverejneni.cz/zakazka/sanace-vlhkeho-zdiva-sklepnich-prostor-cp-886-lomnice-nad-popelkou",
   "title": "Sanace vlhkého zdiva sklepních prostor čp. 886, Lomnice nad Popelkou",
   "buyer_ico": "00275905",
-  "supplier_ico": null,
-  "supplier_name": null,
+  "supplier_ico": "00578894",
+  "supplier_name": "J. Pišta a spol., společnost s r.o.",
   "date": "2026-02-25",
-  "price": null,
+  "price": 2876767.31,
   "expected_value": null,
-  "price_vat_included": null,
+  "price_vat_included": 2876767.31,
   "status": "zakázka byla zadána (Plnění smlouvy)",
   "type": "tender",
   "procurement_regime": "VZ malého rozsahu",
@@ -25,20 +25,27 @@
     "Izolace proti vodě",
     "Pokládka dlažby"
   ],
-  "offer_deadline": null,
+  "offer_deadline": "2026-02-25T07:48:00+01:00",
   "contract_signed_date": null,
   "award_date": null,
-  "participant_count": null,
-  "bid_count": null,
+  "participant_count": 4,
+  "bid_count": 4,
   "funded": true,
   "grant_id": "Projekt Libereckého kraje – obnova kulturní památky",
   "project_registry_id": null,
   "known_addenda_numbers": [],
-  "document_count": null,
+  "document_count": 1,
   "verification_level": "detail",
   "verified_web": true,
   "verified_at": "2026-09-22",
   "verification_source": "https://www.vhodne-uverejneni.cz/zakazka/sanace-vlhkeho-zdiva-sklepnich-prostor-cp-886-lomnice-nad-popelkou",
+  "xml_documents": [
+    {
+      "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3768270",
+      "label": "Smlouva, její změny a dodatky"
+    }
+  ],
+  "xml_file": "data/xml/20260110_20260916.xml",
   "raw": {
     "source": "vhodne-uverejneni",
     "source_id": "P26V00001118",
@@ -46,10 +53,10 @@
     "source_url": "https://www.vhodne-uverejneni.cz/zakazka/sanace-vlhkeho-zdiva-sklepnich-prostor-cp-886-lomnice-nad-popelkou",
     "title": "Sanace vlhkého zdiva sklepních prostor čp. 886, Lomnice nad Popelkou",
     "buyer_ico": "00275905",
-    "supplier_ico": null,
-    "supplier_name": null,
+    "supplier_ico": "00578894",
+    "supplier_name": "J. Pišta a spol., společnost s r.o.",
     "date": "2026-02-25",
-    "price": null,
+    "price": 2876767.31,
     "status": "zakázka byla zadána (Plnění smlouvy)",
     "type": "tender",
     "procurement_type": "Stavební práce",
@@ -69,6 +76,18 @@
     "verified_at": "2026-09-22",
     "verification_source": "https://www.vhodne-uverejneni.cz/zakazka/sanace-vlhkeho-zdiva-sklepnich-prostor-cp-886-lomnice-nad-popelkou",
     "funded": true,
-    "grant_id": "Projekt Libereckého kraje – obnova kulturní památky"
+    "grant_id": "Projekt Libereckého kraje – obnova kulturní památky",
+    "offer_deadline": "2026-02-25T07:48:00+01:00",
+    "participant_count": 4,
+    "bid_count": 4,
+    "price_vat_included": 2876767.31,
+    "document_count": 1,
+    "xml_documents": [
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3768270",
+        "label": "Smlouva, její změny a dodatky"
+      }
+    ],
+    "xml_file": "data/xml/20260110_20260916.xml"
   }
 }

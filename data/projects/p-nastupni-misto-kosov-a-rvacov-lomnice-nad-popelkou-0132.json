@@ -1,0 +1,207 @@
+{
+  "id": "p-nastupni-misto-kosov-a-rvacov-lomnice-nad-popelkou-0132",
+  "title": "Nástupní místo Košov a Rváčov, Lomnice nad Popelkou",
+  "buyer_ico": "00275905",
+  "status": "plneni-smlouvy",
+  "project_type": "procurement_with_changes",
+  "canonical": {
+    "title": "Nástupní místo Košov a Rváčov, Lomnice nad Popelkou",
+    "supplier_ico": "28762070",
+    "identifiers": [
+      "P25V00008902"
+    ],
+    "lifecycle": {
+      "events": [
+        {
+          "date": "2025-10-20",
+          "type": "tender",
+          "source": "vhodne-uverejneni",
+          "source_id": "P25V00008902",
+          "title": "Nástupní místo Košov a Rváčov, Lomnice nad Popelkou",
+          "price": 4243535.2
+        }
+      ],
+      "event_count": 1,
+      "type_counts": {
+        "tender": 1
+      },
+      "dominant_type": "tender"
+    },
+    "project_type": "procurement_with_changes",
+    "procurement_signal": {
+      "level": "none",
+      "label": "Bez rozpoznané vazby na zakázku",
+      "reason": "V dostupném textu nebyl nalezen dostatečný signál."
+    },
+    "dates": {
+      "first_observed": "2025-10-20",
+      "last_observed": "2025-10-20"
+    },
+    "financial": {
+      "observed_prices": [],
+      "observed_vat_included_prices": [
+        5134677.59
+      ],
+      "expected_values": [],
+      "initial_contract_price": null,
+      "latest_observed_price": null,
+      "expected_to_contract_ratio": null
+    },
+    "procurement": {
+      "procedures": [],
+      "regimes": [],
+      "funded": false,
+      "known_addenda_numbers": [
+        "1"
+      ]
+    },
+    "verification": {
+      "levels": [
+        "contract_pdf"
+      ],
+      "project_registry_ids": [],
+      "detail_verified_sources": 0
+    },
+    "source_count": 1,
+    "source_types": [
+      "vhodne-uverejneni"
+    ],
+    "record_count": 1
+  },
+  "sources": [
+    {
+      "source_file": "data/sources/vhodne-uverejneni/vu-000006.json",
+      "source_id": "P25V00008902",
+      "record": {
+        "source": "vhodne-uverejneni",
+        "source_id": "P25V00008902",
+        "procurement_id": "P25V00008902",
+        "source_url": "https://www.vhodne-uverejneni.cz/index.php?a=detail&contract=101051&h=contractsregister&m=xenorders",
+        "title": "Nástupní místo Košov a Rváčov, Lomnice nad Popelkou",
+        "buyer_ico": "00275905",
+        "supplier_ico": "28762070",
+        "supplier_name": "MIZERA - STAVBY, a.s.",
+        "date": "2025-10-20",
+        "price": 4243535.2,
+        "expected_value": null,
+        "price_vat_included": 5134677.59,
+        "status": "plnění smlouvy",
+        "type": "tender",
+        "procurement_regime": null,
+        "procurement_procedure": null,
+        "procurement_type": null,
+        "outcome": null,
+        "description": null,
+        "cpv": [],
+        "offer_deadline": null,
+        "contract_signed_date": "2025-10-20",
+        "award_date": null,
+        "participant_count": null,
+        "bid_count": null,
+        "funded": null,
+        "grant_id": null,
+        "project_registry_id": null,
+        "known_addenda_numbers": [
+          "1"
+        ],
+        "document_count": 6,
+        "verification_level": "contract_pdf",
+        "verified_web": true,
+        "verified_at": "2026-09-22",
+        "verification_source": "https://www.vhodne-uverejneni.cz/index.php?a=detail&contract=101051&h=contractsregister&m=xenorders",
+        "xml_documents": [],
+        "xml_file": null,
+        "raw": {
+          "source": "vhodne-uverejneni",
+          "source_id": "P25V00008902",
+          "procurement_id": "P25V00008902",
+          "source_url": "https://www.vhodne-uverejneni.cz/index.php?a=detail&contract=101051&h=contractsregister&m=xenorders",
+          "title": "Nástupní místo Košov a Rváčov, Lomnice nad Popelkou",
+          "buyer_ico": "00275905",
+          "supplier_ico": "28762070",
+          "supplier_name": "MIZERA - STAVBY, a.s.",
+          "date": "2025-10-20",
+          "price": 4243535.2,
+          "status": "plnění smlouvy",
+          "type": "tender",
+          "price_vat_included": 5134677.59,
+          "contract_signed_date": "2025-10-20",
+          "known_addenda_numbers": [
+            "1"
+          ],
+          "document_count": 6,
+          "verification_level": "contract_pdf",
+          "verified_web": true,
+          "verified_at": "2026-09-22",
+          "verification_source": "https://www.vhodne-uverejneni.cz/index.php?a=detail&contract=101051&h=contractsregister&m=xenorders"
+        },
+        "_source_file": "data/sources/vhodne-uverejneni/vu-000006.json"
+      }
+    }
+  ],
+  "analysis": {
+    "schema_version": 4,
+    "project_id": "p-nastupni-misto-kosov-a-rvacov-lomnice-nad-popelkou-0132",
+    "signal_count": 2,
+    "signals": [
+      {
+        "code": "addendum_count",
+        "level": "info",
+        "message": "Ve zdrojových záznamech je doloženo nejméně 1 dodatků / změnových záznamů.",
+        "evidence": [
+          {
+            "type": "count",
+            "value": 1,
+            "declared_numbers": [
+              "1"
+            ]
+          }
+        ]
+      },
+      {
+        "code": "single_source",
+        "level": "info",
+        "message": "Projekt je zatím doložen pouze jedním zdrojovým záznamem.",
+        "evidence": []
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2025-10-20",
+        "event": "tender",
+        "source": "vhodne-uverejneni",
+        "source_id": "P25V00008902",
+        "title": "Nástupní místo Košov a Rváčov, Lomnice nad Popelkou",
+        "price": 4243535.2,
+        "deadline": null
+      }
+    ],
+    "financial": {
+      "baseline_price": 4243535.2,
+      "current_observed_price": 4243535.2,
+      "absolute_change": 0.0,
+      "percent_change": null,
+      "observed_prices": [
+        4243535.2
+      ],
+      "addendum_count": 1,
+      "declared_addenda_count": 1
+    },
+    "metrics": {
+      "source_count": 1,
+      "supplier_count": 1,
+      "price_values": [
+        4243535.2
+      ],
+      "date_values": [
+        "2025-10-20"
+      ],
+      "document_count": 0,
+      "deadline_observations": 0,
+      "expected_value_observations": 0,
+      "participant_observations": 0,
+      "bid_observations": 0
+    },
+    "methodology": "Signals are descriptive checks only; they do not establish wrongdoing or causality. They identify differences worth checking and retain source provenance."
+  }
+}

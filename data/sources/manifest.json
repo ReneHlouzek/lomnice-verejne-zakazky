@@ -1,14 +1,17 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-24T11:39:30.624219+00:00",
+  "generated_at": "2026-09-24T12:17:29.177191+00:00",
   "buyer_ico": "00275905",
   "registr_smluv_records": 109,
-  "vhodne_uverejneni_seed_records": 80,
-  "vhodne_uverejneni_verified_web_records": 56,
+  "vhodne_uverejneni_seed_records": 86,
+  "vhodne_uverejneni_verified_web_records": 55,
+  "vhodne_uverejneni_official_xml_records": 7,
   "sources": [
     "registr-smluv",
     "vhodne-uverejneni-seed",
-    "vhodne-uverejneni-enrichment"
+    "vhodne-uverejneni-enrichment",
+    "vhodne-uverejneni-xml"
   ],
-  "vhodne_uverejneni_enrichment_records": 11
+  "vhodne_uverejneni_enrichment_records": 11,
+  "vhodne_uverejneni_xml_records": 11
 }

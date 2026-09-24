@@ -7,32 +7,73 @@
   "buyer_ico": "00275905",
   "supplier_ico": null,
   "supplier_name": null,
-  "date": "2026-05-04",
+  "date": "2026-05-04T15:40:02+02:00",
   "price": null,
   "expected_value": null,
   "price_vat_included": null,
-  "status": "zakázka byla zadána (Plnění smlouvy)",
-  "type": "tender",
+  "status": "zrušen",
+  "type": "stavební práce",
   "procurement_regime": "Podlimitní",
-  "procurement_procedure": "Zjednodušené podlimitní řízení",
-  "procurement_type": "Stavební práce",
+  "procurement_procedure": "zjednodušené podlimitní řízení",
+  "procurement_type": "stavební práce",
   "outcome": "Uzavření jednorázové smlouvy",
-  "description": "Zakázka se skládá ze 3 částí: přístavba spojovací chodby, demoliční práce a související stavební úpravy; exteriér před spojovací chodbou; třetí část dle zadávací dokumentace.",
-  "cpv": [],
-  "offer_deadline": null,
+  "description": "Předmět veřejné zakázky s názvem Nemocnice následné péče Lomnice nad Popelkou – investice a opravy se skládá ze 3 částí: o Část 1 - Přístavba spojovací chodby, demoliční práce a stavební úpravy souvisejících stavebních objektů, o Část 2 – Exteriér před spojovací chodbou (úprava zahrady), o Část 3 - Stavební úprava terasy budovy č.p. 440. Prohlídka místa plnění se uskuteční dne 11. května 2026 ve 10,30 hodin se schůzkou zúčastněných před budovou čp. 440, ul. Komenského, Lomnice nad Popelkou.",
+  "cpv": [
+    "45000000"
+  ],
+  "offer_deadline": "2026-05-25T09:00:00+02:00",
   "contract_signed_date": null,
   "award_date": null,
-  "participant_count": null,
-  "bid_count": null,
+  "participant_count": 0,
+  "bid_count": 0,
   "funded": null,
   "grant_id": null,
   "project_registry_id": null,
   "known_addenda_numbers": [],
-  "document_count": null,
-  "verification_level": "detail",
-  "verified_web": true,
+  "document_count": 9,
+  "verification_level": "official_xml",
+  "verified_web": false,
   "verified_at": null,
-  "verification_source": "https://www.vhodne-uverejneni.cz/zakazka/nemocnice-nasledne-pece-lomnice-nad-popelkou-investice-a-opravy-2",
+  "verification_source": "PVU XMLdataVZ",
+  "xml_documents": [
+    {
+      "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3852455",
+      "label": "Písemná zpráva zadavatele"
+    },
+    {
+      "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3852456",
+      "label": "Ostatní"
+    },
+    {
+      "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3852457",
+      "label": "Výzva"
+    },
+    {
+      "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3852458",
+      "label": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění"
+    },
+    {
+      "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3852459",
+      "label": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění"
+    },
+    {
+      "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3852460",
+      "label": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění"
+    },
+    {
+      "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3852461",
+      "label": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění"
+    },
+    {
+      "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3852462",
+      "label": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění"
+    },
+    {
+      "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3852463",
+      "label": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění"
+    }
+  ],
+  "xml_file": "data/xml/20260110_20260916.xml",
   "raw": {
     "source": "vhodne-uverejneni",
     "source_id": "P26V00002929",
@@ -42,17 +83,63 @@
     "buyer_ico": "00275905",
     "supplier_ico": null,
     "supplier_name": null,
-    "date": "2026-05-04",
+    "date": "2026-05-04T15:40:02+02:00",
     "price": null,
-    "status": "zakázka byla zadána (Plnění smlouvy)",
-    "type": "tender",
+    "status": "zrušen",
+    "type": "stavební práce",
     "procurement_regime": "Podlimitní",
-    "procurement_procedure": "Zjednodušené podlimitní řízení",
-    "procurement_type": "Stavební práce",
+    "procurement_procedure": "zjednodušené podlimitní řízení",
+    "procurement_type": "stavební práce",
     "outcome": "Uzavření jednorázové smlouvy",
-    "description": "Zakázka se skládá ze 3 částí: přístavba spojovací chodby, demoliční práce a související stavební úpravy; exteriér před spojovací chodbou; třetí část dle zadávací dokumentace.",
-    "verification_level": "detail",
+    "description": "Předmět veřejné zakázky s názvem Nemocnice následné péče Lomnice nad Popelkou – investice a opravy se skládá ze 3 částí:\no\tČást 1 - Přístavba spojovací chodby, demoliční práce a stavební úpravy souvisejících stavebních objektů,  \no\tČást 2 – Exteriér před spojovací chodbou (úprava zahrady),\no\tČást 3 - Stavební úprava terasy budovy č.p. 440.\nProhlídka místa plnění se uskuteční dne 11. května 2026 ve 10,30 hodin se schůzkou zúčastněných před budovou čp. 440, ul. Komenského, Lomnice nad Popelkou.",
+    "verification_level": "official_xml",
     "verified_web": true,
-    "verification_source": "https://www.vhodne-uverejneni.cz/zakazka/nemocnice-nasledne-pece-lomnice-nad-popelkou-investice-a-opravy-2"
+    "verification_source": "PVU XMLdataVZ",
+    "cpv": [
+      "45000000"
+    ],
+    "offer_deadline": "2026-05-25T09:00:00+02:00",
+    "participant_count": 0,
+    "bid_count": 0,
+    "document_count": 9,
+    "xml_documents": [
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3852455",
+        "label": "Písemná zpráva zadavatele"
+      },
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3852456",
+        "label": "Ostatní"
+      },
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3852457",
+        "label": "Výzva"
+      },
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3852458",
+        "label": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění"
+      },
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3852459",
+        "label": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění"
+      },
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3852460",
+        "label": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění"
+      },
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3852461",
+        "label": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění"
+      },
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3852462",
+        "label": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění"
+      },
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3852463",
+        "label": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění"
+      }
+    ],
+    "xml_file": "data/xml/20260110_20260916.xml"
   }
 }

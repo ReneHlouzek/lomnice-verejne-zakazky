@@ -5,12 +5,12 @@
   "source_url": "https://www.vhodne-uverejneni.cz/zakazka/modernizace-uceben-zus-dodavky",
   "title": "Modernizace UČEBEN ZUŠ - dodávky",
   "buyer_ico": "00275905",
-  "supplier_ico": null,
-  "supplier_name": null,
+  "supplier_ico": "48108375",
+  "supplier_name": "AV MEDIA SYSTEMS, a.s.",
   "date": "2026-03-04",
-  "price": null,
+  "price": 3223831.92,
   "expected_value": null,
-  "price_vat_included": null,
+  "price_vat_included": 3223831.92,
   "status": "plnění smlouvy",
   "type": "tender",
   "procurement_regime": "VZ malého rozsahu",
@@ -18,21 +18,82 @@
   "procurement_type": "Dodávky",
   "outcome": "Uzavření jednorázové smlouvy",
   "description": "Dodávka vnitřního vybavení v rozsahu nábytek, koncové prvky, IT vybavení, výukové pomůcky a schodolez včetně případné instalace, montáže či zaškolení.",
-  "cpv": [],
-  "offer_deadline": null,
+  "cpv": [
+    "30213300"
+  ],
+  "offer_deadline": "2026-03-04T21:30:00+01:00",
   "contract_signed_date": null,
   "award_date": null,
-  "participant_count": null,
-  "bid_count": null,
+  "participant_count": 2,
+  "bid_count": 2,
   "funded": true,
   "grant_id": "CZ.06.04.01/00/23_087/0004757",
   "project_registry_id": null,
   "known_addenda_numbers": [],
-  "document_count": null,
+  "document_count": 14,
   "verification_level": "detail",
   "verified_web": true,
   "verified_at": "2026-09-22",
   "verification_source": "https://www.vhodne-uverejneni.cz/zakazka/modernizace-uceben-zus-dodavky",
+  "xml_documents": [
+    {
+      "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3895761",
+      "label": "Smlouva, její změny a dodatky"
+    },
+    {
+      "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3895762",
+      "label": "Smlouva, její změny a dodatky"
+    },
+    {
+      "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3895763",
+      "label": "Smlouva, její změny a dodatky"
+    },
+    {
+      "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3895764",
+      "label": "Smlouva, její změny a dodatky"
+    },
+    {
+      "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3895765",
+      "label": "Smlouva, její změny a dodatky"
+    },
+    {
+      "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3895766",
+      "label": "Smlouva, její změny a dodatky"
+    },
+    {
+      "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3895767",
+      "label": "Smlouva, její změny a dodatky"
+    },
+    {
+      "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3895761",
+      "label": "Smlouva, její změny a dodatky"
+    },
+    {
+      "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3895762",
+      "label": "Smlouva, její změny a dodatky"
+    },
+    {
+      "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3895763",
+      "label": "Smlouva, její změny a dodatky"
+    },
+    {
+      "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3895764",
+      "label": "Smlouva, její změny a dodatky"
+    },
+    {
+      "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3895765",
+      "label": "Smlouva, její změny a dodatky"
+    },
+    {
+      "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3895766",
+      "label": "Smlouva, její změny a dodatky"
+    },
+    {
+      "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3895767",
+      "label": "Smlouva, její změny a dodatky"
+    }
+  ],
+  "xml_file": "data/xml/20260110_20260916.xml",
   "raw": {
     "source": "vhodne-uverejneni",
     "source_id": "P26V00001385",
@@ -40,10 +101,10 @@
     "source_url": "https://www.vhodne-uverejneni.cz/zakazka/modernizace-uceben-zus-dodavky",
     "title": "Modernizace UČEBEN ZUŠ - dodávky",
     "buyer_ico": "00275905",
-    "supplier_ico": null,
-    "supplier_name": null,
+    "supplier_ico": "48108375",
+    "supplier_name": "AV MEDIA SYSTEMS, a.s.",
     "date": "2026-03-04",
-    "price": null,
+    "price": 3223831.92,
     "status": "plnění smlouvy",
     "type": "tender",
     "procurement_type": "Dodávky",
@@ -56,6 +117,73 @@
     "verification_level": "detail",
     "verified_web": true,
     "verified_at": "2026-09-22",
-    "verification_source": "https://www.vhodne-uverejneni.cz/zakazka/modernizace-uceben-zus-dodavky"
+    "verification_source": "https://www.vhodne-uverejneni.cz/zakazka/modernizace-uceben-zus-dodavky",
+    "cpv": [
+      "30213300"
+    ],
+    "offer_deadline": "2026-03-04T21:30:00+01:00",
+    "participant_count": 2,
+    "bid_count": 2,
+    "price_vat_included": 3223831.92,
+    "document_count": 14,
+    "xml_documents": [
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3895761",
+        "label": "Smlouva, její změny a dodatky"
+      },
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3895762",
+        "label": "Smlouva, její změny a dodatky"
+      },
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3895763",
+        "label": "Smlouva, její změny a dodatky"
+      },
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3895764",
+        "label": "Smlouva, její změny a dodatky"
+      },
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3895765",
+        "label": "Smlouva, její změny a dodatky"
+      },
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3895766",
+        "label": "Smlouva, její změny a dodatky"
+      },
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3895767",
+        "label": "Smlouva, její změny a dodatky"
+      },
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3895761",
+        "label": "Smlouva, její změny a dodatky"
+      },
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3895762",
+        "label": "Smlouva, její změny a dodatky"
+      },
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3895763",
+        "label": "Smlouva, její změny a dodatky"
+      },
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3895764",
+        "label": "Smlouva, její změny a dodatky"
+      },
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3895765",
+        "label": "Smlouva, její změny a dodatky"
+      },
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3895766",
+        "label": "Smlouva, její změny a dodatky"
+      },
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3895767",
+        "label": "Smlouva, její změny a dodatky"
+      }
+    ],
+    "xml_file": "data/xml/20260110_20260916.xml"
   }
 }

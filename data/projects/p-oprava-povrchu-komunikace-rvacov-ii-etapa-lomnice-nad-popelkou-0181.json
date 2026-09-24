@@ -1,0 +1,244 @@
+{
+  "id": "p-oprava-povrchu-komunikace-rvacov-ii-etapa-lomnice-nad-popelkou-0181",
+  "title": "Oprava povrchu komunikace Rváčov - II. etapa, Lomnice nad Popelkou",
+  "buyer_ico": "00275905",
+  "status": "ukonceno-plneni",
+  "project_type": "other",
+  "canonical": {
+    "title": "Oprava povrchu komunikace Rváčov - II. etapa, Lomnice nad Popelkou",
+    "supplier_ico": "27679438",
+    "identifiers": [
+      "P26V00004395"
+    ],
+    "lifecycle": {
+      "events": [
+        {
+          "date": "2026-07-02",
+          "type": "source_record",
+          "source": "vhodne-uverejneni",
+          "source_id": "P26V00004395",
+          "title": "Oprava povrchu komunikace Rváčov - II. etapa, Lomnice nad Popelkou",
+          "price": 1265418.0
+        }
+      ],
+      "event_count": 1,
+      "type_counts": {
+        "source_record": 1
+      },
+      "dominant_type": "source_record"
+    },
+    "project_type": "other",
+    "procurement_signal": {
+      "level": "likely",
+      "label": "Pravděpodobně souvisí se zakázkou",
+      "reason": "Název/předmět odpovídá investiční dodávce, stavebním pracím nebo jiné běžné zadavatelské dodávce; způsob výběru dodavatele z tohoto záznamu sám o sobě neplyne."
+    },
+    "dates": {
+      "first_observed": "2026-07-02",
+      "last_observed": "2026-07-02"
+    },
+    "financial": {
+      "observed_prices": [],
+      "observed_vat_included_prices": [
+        1265418.0
+      ],
+      "expected_values": [],
+      "initial_contract_price": null,
+      "latest_observed_price": null,
+      "expected_to_contract_ratio": null
+    },
+    "procurement": {
+      "procedures": [
+        "přímé zadání"
+      ],
+      "regimes": [
+        "Veřejné zakázky malého rozsahu"
+      ],
+      "funded": false,
+      "known_addenda_numbers": []
+    },
+    "verification": {
+      "levels": [
+        "official_xml"
+      ],
+      "project_registry_ids": [],
+      "detail_verified_sources": 0
+    },
+    "source_count": 1,
+    "source_types": [
+      "vhodne-uverejneni"
+    ],
+    "record_count": 1
+  },
+  "sources": [
+    {
+      "source_file": "data/sources/vhodne-uverejneni/vu-000084.json",
+      "source_id": "P26V00004395",
+      "record": {
+        "source": "vhodne-uverejneni",
+        "source_id": "P26V00004395",
+        "procurement_id": "P26V00004395",
+        "source_url": null,
+        "title": "Oprava povrchu komunikace Rváčov - II. etapa, Lomnice nad Popelkou",
+        "buyer_ico": "00275905",
+        "supplier_ico": "27679438",
+        "supplier_name": "REACOM s.r.o.",
+        "date": "2026-07-02T11:13:03+02:00",
+        "price": 1265418.0,
+        "expected_value": null,
+        "price_vat_included": 1265418.0,
+        "status": "ukončeno plnění",
+        "type": "stavební práce",
+        "procurement_regime": "Veřejné zakázky malého rozsahu",
+        "procurement_procedure": "přímé zadání",
+        "procurement_type": "stavební práce",
+        "outcome": "vybraný dodavatel",
+        "description": "Oprava místní komunikace v místní části Rváčov, Lomnice nad Popelkou",
+        "cpv": [
+          "45233142"
+        ],
+        "offer_deadline": "2026-07-02T11:13:00+02:00",
+        "contract_signed_date": null,
+        "award_date": null,
+        "participant_count": 1,
+        "bid_count": 1,
+        "funded": null,
+        "grant_id": null,
+        "project_registry_id": null,
+        "known_addenda_numbers": [],
+        "document_count": 2,
+        "verification_level": "official_xml",
+        "verified_web": false,
+        "verified_at": null,
+        "verification_source": "PVU XMLdataVZ",
+        "xml_documents": [
+          {
+            "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3907700",
+            "label": "Výše skutečně uhrazené ceny za plnění VZ"
+          },
+          {
+            "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3907712",
+            "label": "Smlouva, její změny a dodatky"
+          }
+        ],
+        "xml_file": "data/xml/20260110_20260916.xml",
+        "raw": {
+          "source_id": "P26V00004395",
+          "procurement_id": "P26V00004395",
+          "title": "Oprava povrchu komunikace Rváčov - II. etapa, Lomnice nad Popelkou",
+          "date": "2026-07-02T11:13:03+02:00",
+          "type": "stavební práce",
+          "procurement_type": "stavební práce",
+          "procurement_regime": "Veřejné zakázky malého rozsahu",
+          "procurement_procedure": "přímé zadání",
+          "status": "ukončeno plnění",
+          "description": "Oprava místní komunikace v místní části Rváčov, Lomnice nad Popelkou",
+          "cpv": [
+            "45233142"
+          ],
+          "offer_deadline": "2026-07-02T11:13:00+02:00",
+          "participant_count": 1,
+          "bid_count": 1,
+          "supplier_ico": "27679438",
+          "supplier_name": "REACOM s.r.o.",
+          "price_vat_included": 1265418.0,
+          "price": 1265418.0,
+          "outcome": "vybraný dodavatel",
+          "document_count": 2,
+          "xml_documents": [
+            {
+              "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3907700",
+              "label": "Výše skutečně uhrazené ceny za plnění VZ"
+            },
+            {
+              "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3907712",
+              "label": "Smlouva, její změny a dodatky"
+            }
+          ],
+          "xml_file": "data/xml/20260110_20260916.xml",
+          "verified_web": true,
+          "verification_level": "official_xml",
+          "verification_source": "PVU XMLdataVZ"
+        },
+        "_source_file": "data/sources/vhodne-uverejneni/vu-000084.json"
+      }
+    }
+  ],
+  "analysis": {
+    "schema_version": 4,
+    "project_id": "p-oprava-povrchu-komunikace-rvacov-ii-etapa-lomnice-nad-popelkou-0181",
+    "signal_count": 3,
+    "signals": [
+      {
+        "code": "participant_count",
+        "level": "info",
+        "message": "Ve zdrojových datech je uveden počet účastníků: 1.",
+        "evidence": [
+          {
+            "type": "participant_count",
+            "values": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "code": "bid_count",
+        "level": "info",
+        "message": "Ve zdrojových datech je uveden počet nabídek: 1.",
+        "evidence": [
+          {
+            "type": "bid_count",
+            "values": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "code": "single_source",
+        "level": "info",
+        "message": "Projekt je zatím doložen pouze jedním zdrojovým záznamem.",
+        "evidence": []
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2026-07-02",
+        "event": "source_record",
+        "source": "vhodne-uverejneni",
+        "source_id": "P26V00004395",
+        "title": "Oprava povrchu komunikace Rváčov - II. etapa, Lomnice nad Popelkou",
+        "price": 1265418.0,
+        "deadline": null
+      }
+    ],
+    "financial": {
+      "baseline_price": 1265418.0,
+      "current_observed_price": 1265418.0,
+      "absolute_change": 0.0,
+      "percent_change": null,
+      "observed_prices": [
+        1265418.0
+      ],
+      "addendum_count": 0,
+      "declared_addenda_count": 0
+    },
+    "metrics": {
+      "source_count": 1,
+      "supplier_count": 1,
+      "price_values": [
+        1265418.0
+      ],
+      "date_values": [
+        "2026-07-02"
+      ],
+      "document_count": 0,
+      "deadline_observations": 0,
+      "expected_value_observations": 0,
+      "participant_observations": 1,
+      "bid_observations": 1
+    },
+    "methodology": "Signals are descriptive checks only; they do not establish wrongdoing or causality. They identify differences worth checking and retain source provenance."
+  }
+}

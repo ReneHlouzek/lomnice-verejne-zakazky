@@ -1,0 +1,572 @@
+[
+  {
+    "source_id": "P26V00001118",
+    "procurement_id": "P26V00001118",
+    "title": "Sanace vlhkého zdiva sklepních prostor čp. 886, Lomnice nad Popelkou",
+    "date": "2026-02-25T07:48:02+01:00",
+    "type": "stavební práce",
+    "procurement_type": "stavební práce",
+    "procurement_regime": "Veřejné zakázky malého rozsahu",
+    "procurement_procedure": "přímé zadání",
+    "status": "dokončen",
+    "description": "Sanace vlhkého zdiva sklepních prostor čp. 886 v Lomnice nad Popelkou. Součástí realizace je izolace zdiva, injektáž, drenáž, kanalizace, dlažba.",
+    "cpv": [
+      "45000000"
+    ],
+    "offer_deadline": "2026-02-25T07:48:00+01:00",
+    "participant_count": 4,
+    "bid_count": 4,
+    "supplier_ico": "00578894",
+    "supplier_name": "J. Pišta a spol., společnost s r.o.",
+    "price_vat_included": 2876767.31,
+    "price": 2876767.31,
+    "outcome": "vybraný dodavatel",
+    "document_count": 1,
+    "xml_documents": [
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3768270",
+        "label": "Smlouva, její změny a dodatky"
+      }
+    ],
+    "xml_file": "data/xml/20260110_20260916.xml",
+    "verified_web": true,
+    "verification_level": "official_xml",
+    "verification_source": "PVU XMLdataVZ"
+  },
+  {
+    "source_id": "P26V00002405",
+    "procurement_id": "P26V00002405",
+    "title": "Rozšíření polikliniky Lomnice nad Popelkou - dokumentace stavebního záměru",
+    "date": "2026-04-15T13:29:03+02:00",
+    "type": "služby",
+    "procurement_type": "služby",
+    "procurement_regime": "Veřejné zakázky malého rozsahu",
+    "procurement_procedure": "přímé zadání",
+    "status": "dokončen",
+    "description": "vypracování dokumentace povolení záměru Projektu k vydání správních rozhodnutí potřebných k realizaci Projektu a získání potřebných správních rozhodnutí k Projektu",
+    "cpv": [
+      "71300000"
+    ],
+    "offer_deadline": "2026-04-15T13:29:00+02:00",
+    "participant_count": 1,
+    "bid_count": 1,
+    "supplier_ico": "23064579",
+    "supplier_name": "hůla+hájek architekti s.r.o.",
+    "price_vat_included": 1228150.0,
+    "price": 1228150.0,
+    "outcome": "vybraný dodavatel",
+    "document_count": 2,
+    "xml_documents": [
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3811452",
+        "label": "Smlouva, její změny a dodatky"
+      },
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3811453",
+        "label": "Smlouva, její změny a dodatky"
+      }
+    ],
+    "xml_file": "data/xml/20260110_20260916.xml",
+    "verified_web": true,
+    "verification_level": "official_xml",
+    "verification_source": "PVU XMLdataVZ"
+  },
+  {
+    "source_id": "P26V00002929",
+    "procurement_id": "P26V00002929",
+    "title": "Nemocnice následné péče Lomnice nad Popelkou – investice a opravy",
+    "date": "2026-05-04T15:40:02+02:00",
+    "type": "stavební práce",
+    "procurement_type": "stavební práce",
+    "procurement_regime": "Podlimitní",
+    "procurement_procedure": "zjednodušené podlimitní řízení",
+    "status": "zrušen",
+    "description": "Předmět veřejné zakázky s názvem Nemocnice následné péče Lomnice nad Popelkou – investice a opravy se skládá ze 3 částí:\no\tČást 1 - Přístavba spojovací chodby, demoliční práce a stavební úpravy souvisejících stavebních objektů,  \no\tČást 2 – Exteriér před spojovací chodbou (úprava zahrady),\no\tČást 3 - Stavební úprava terasy budovy č.p. 440.\nProhlídka místa plnění se uskuteční dne 11. května 2026 ve 10,30 hodin se schůzkou zúčastněných před budovou čp. 440, ul. Komenského, Lomnice nad Popelkou.",
+    "cpv": [
+      "45000000"
+    ],
+    "offer_deadline": "2026-05-25T09:00:00+02:00",
+    "participant_count": 0,
+    "bid_count": 0,
+    "supplier_ico": null,
+    "supplier_name": null,
+    "price_vat_included": null,
+    "price": null,
+    "outcome": null,
+    "document_count": 9,
+    "xml_documents": [
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3852455",
+        "label": "Písemná zpráva zadavatele"
+      },
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3852456",
+        "label": "Ostatní"
+      },
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3852457",
+        "label": "Výzva"
+      },
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3852458",
+        "label": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění"
+      },
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3852459",
+        "label": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění"
+      },
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3852460",
+        "label": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění"
+      },
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3852461",
+        "label": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění"
+      },
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3852462",
+        "label": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění"
+      },
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3852463",
+        "label": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění"
+      }
+    ],
+    "xml_file": "data/xml/20260110_20260916.xml",
+    "verified_web": true,
+    "verification_level": "official_xml",
+    "verification_source": "PVU XMLdataVZ"
+  },
+  {
+    "source_id": "P26V00004399",
+    "procurement_id": "P26V00004399",
+    "title": "Rekonstrukce topného systému včetně zdroje tepla v objektu K Urnovému háji čp. 118, Lomnice nad Popelkou",
+    "date": "2026-07-02T12:38:03+02:00",
+    "type": "stavební práce",
+    "procurement_type": "stavební práce",
+    "procurement_regime": "Veřejné zakázky malého rozsahu",
+    "procurement_procedure": "přímé zadání",
+    "status": "dokončen",
+    "description": "Rekonstrukce topného systému včetně zdroje tepla",
+    "cpv": [
+      "39715210"
+    ],
+    "offer_deadline": "2026-07-02T12:38:00+02:00",
+    "participant_count": 2,
+    "bid_count": 2,
+    "supplier_ico": "44564228",
+    "supplier_name": "RoBa spol. s r.o.",
+    "price_vat_included": 1953762.88,
+    "price": 1953762.88,
+    "outcome": "vybraný dodavatel",
+    "document_count": 1,
+    "xml_documents": [
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3865358",
+        "label": "Smlouva, její změny a dodatky"
+      }
+    ],
+    "xml_file": "data/xml/20260110_20260916.xml",
+    "verified_web": true,
+    "verification_level": "official_xml",
+    "verification_source": "PVU XMLdataVZ"
+  },
+  {
+    "source_id": "P26V00002162",
+    "procurement_id": "P26V00002162",
+    "title": "Veřejné osvětlení",
+    "date": "2026-04-17T07:15:01+02:00",
+    "type": "stavební práce",
+    "procurement_type": "stavební práce",
+    "procurement_regime": "Podlimitní",
+    "procurement_procedure": "zjednodušené podlimitní řízení",
+    "status": "dokončen",
+    "description": "Předmět veřejné zakázky  je zřízení nové osvětlovací soustavy v délce cca 2,0 km v průběhu tří let (3 samostatné etapy).\nOsvětlení chodníku  bude provedeno pomocí 50 stožárů o výšce 8,2 m a 4 stožárů o výšce 6 m. Na stožáry budou osazeny svítidla LED tř. I s barvou světla 2700 K dle výpočtu osvětlení. Celkem bude použito 54 svítidel uličního typu. Na nové stožáry bude ze stávajících přesunuto celkem 15 ks rozhlasových bateriových amplionů. Kromě osvětlovacích stožárů budou instalovány párové stožáry na opačnou stranu ulice za účelem zakotvení převěsu mezi osvětlovací a párový stožár. Po vybudování nové osvětlovací soustavy bude provedena demontáž stávajících stožárů a svítidel. Celkem bude zdemontováno 50 ks stožárů vč. rozbourání základu.\nPlnění je rozděleno na 3 etapy v průběhu tří let, a to:\nV roce 2026 bude realizována etapa č. 1 v rozsahu od začátku úseku po lampu č. 28.\nV roce 2027 bude realizována etapa č. 2 v rozsahu od konce úseku po lampu č. 13.\nV roce 2028 bude realizována etapa č. 3 v rozsahu mezi lampami č. 13 a 28.",
+    "cpv": [
+      "45316110"
+    ],
+    "offer_deadline": "2026-05-20T09:00:00+02:00",
+    "participant_count": 4,
+    "bid_count": 1,
+    "supplier_ico": "15043487",
+    "supplier_name": "ELEKTROS, spol. s r.o.",
+    "price_vat_included": 8549584.12,
+    "price": 8549584.12,
+    "outcome": "vybraný dodavatel",
+    "document_count": 23,
+    "xml_documents": [
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868297",
+        "label": "Písemná zpráva zadavatele"
+      },
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868298",
+        "label": "Smlouva, její změny a dodatky"
+      },
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868299",
+        "label": "Smlouva, její změny a dodatky"
+      },
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868300",
+        "label": "Oznámení o výběru nejvhodnější nabídky"
+      },
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868301",
+        "label": "Oznámení o výběru nejvhodnější nabídky"
+      },
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868302",
+        "label": "Vysvětlení, doplnění, změna zadávací dokumentace"
+      },
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868303",
+        "label": "Vysvětlení, doplnění, změna zadávací dokumentace"
+      },
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868304",
+        "label": "Vysvětlení, doplnění, změna zadávací dokumentace"
+      },
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868305",
+        "label": "Vysvětlení, doplnění, změna zadávací dokumentace"
+      },
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868306",
+        "label": "Vysvětlení, doplnění, změna zadávací dokumentace"
+      },
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868307",
+        "label": "Vysvětlení, doplnění, změna zadávací dokumentace"
+      },
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868308",
+        "label": "Vysvětlení, doplnění, změna zadávací dokumentace"
+      },
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868309",
+        "label": "Vysvětlení, doplnění, změna zadávací dokumentace"
+      },
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868310",
+        "label": "Vysvětlení, doplnění, změna zadávací dokumentace"
+      },
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868311",
+        "label": "Vysvětlení, doplnění, změna zadávací dokumentace"
+      },
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868312",
+        "label": "Výzva"
+      },
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868313",
+        "label": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění"
+      },
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868314",
+        "label": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění"
+      },
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868315",
+        "label": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění"
+      },
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868316",
+        "label": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění"
+      },
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868317",
+        "label": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění"
+      },
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868318",
+        "label": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění"
+      },
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868319",
+        "label": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění"
+      }
+    ],
+    "xml_file": "data/xml/20260110_20260916.xml",
+    "verified_web": true,
+    "verification_level": "official_xml",
+    "verification_source": "PVU XMLdataVZ"
+  },
+  {
+    "source_id": "P26V00004533",
+    "procurement_id": "P26V00004533",
+    "title": "Rekonstrukce SK, DT a VSS v budově ZUŠ, Lomnice nad Popelkou",
+    "date": "2026-07-09T13:51:02+02:00",
+    "type": "stavební práce",
+    "procurement_type": "stavební práce",
+    "procurement_regime": "Veřejné zakázky malého rozsahu",
+    "procurement_procedure": "přímé zadání",
+    "status": "dokončen",
+    "description": "Modernizace datové infrastruktury objektu ZUŠ Lomnice nad Popelkou",
+    "cpv": [
+      "32581000"
+    ],
+    "offer_deadline": "2026-07-09T13:51:00+02:00",
+    "participant_count": 2,
+    "bid_count": 2,
+    "supplier_ico": "07586272",
+    "supplier_name": "Crystal Smart Voltage s.r.o.",
+    "price_vat_included": 1579478.99,
+    "price": 1579478.99,
+    "outcome": "vybraný dodavatel",
+    "document_count": 2,
+    "xml_documents": [
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3869219",
+        "label": "Smlouva, její změny a dodatky"
+      },
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3869220",
+        "label": "Smlouva, její změny a dodatky"
+      }
+    ],
+    "xml_file": "data/xml/20260110_20260916.xml",
+    "verified_web": true,
+    "verification_level": "official_xml",
+    "verification_source": "PVU XMLdataVZ"
+  },
+  {
+    "source_id": "P26V00004559",
+    "procurement_id": "P26V00004559",
+    "title": "Lesní cesta „Stránsko“",
+    "date": "2026-07-20T11:14:03+02:00",
+    "type": "stavební práce",
+    "procurement_type": "stavební práce",
+    "procurement_regime": "Veřejné zakázky malého rozsahu",
+    "procurement_procedure": "přímé zadání",
+    "status": "dokončen",
+    "description": "Předmětem  veřejné zakázky Lesní cesta „Stránsko“ je rekonstrukce lesní cesty Stránsko v délce 796 metrů s úpravou parametrů lesní cesty na 2L 4,0/20.\nPředmět realizace se nachází mezi obcemi Stružinec, Želechy a velkolomem Koštálov. Začátek lesní cesty dle PD (km 0,000) se nachází na východním okraji obce Stružinec, odbočením z cesty spojující Stružinec s obcí Želechy. Trasa směruje přibližně severním směrem. Prochází lesními porosty v přímých úsecích, pouze se dvěma směrovými oblouky menších poloměrů v km 0,045 a 0,300. Končí výjezdem na polní cestu vedoucí po okraji lesního porostu v lokalitě Stránsko (km 0,796).\nV trase jsou řešeny sjezdy, 2 výhybny, svodnice a čištění propustu. Podkladní vrstvy budou z hrubé štěrkodrti a tříděného kameniva. Krycí vrstva je navržena z drobné štěrkodrti zavibrované do podkladního kameniva a s doplňujícím podrcením drobným kamenivem se zavibrováním. Podkladní a krycí vrstvy vozovky budou z kameniva drceného bez živičného pojiva. V km 0,285-0,310 vpravo a km 0,670-0,695 vpravo budou zpevněny výhybny.",
+    "cpv": [
+      "45233223"
+    ],
+    "offer_deadline": "2026-07-20T11:14:00+02:00",
+    "participant_count": 1,
+    "bid_count": 1,
+    "supplier_ico": "28762070",
+    "supplier_name": "MIZERA - STAVBY, a.s.",
+    "price_vat_included": 2745470.75,
+    "price": 2745470.75,
+    "outcome": "vybraný dodavatel",
+    "document_count": 1,
+    "xml_documents": [
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3870133",
+        "label": "Smlouva, její změny a dodatky"
+      }
+    ],
+    "xml_file": "data/xml/20260110_20260916.xml",
+    "verified_web": true,
+    "verification_level": "official_xml",
+    "verification_source": "PVU XMLdataVZ"
+  },
+  {
+    "source_id": "P26V00003724",
+    "procurement_id": "P26V00003724",
+    "title": "Výměna oken ZUŠ Lomnice nad Popelkou - dodávka a montáž",
+    "date": "2026-06-05T10:45:02+02:00",
+    "type": "stavební práce",
+    "procurement_type": "stavební práce",
+    "procurement_regime": "Veřejné zakázky malého rozsahu",
+    "procurement_procedure": "přímé zadání",
+    "status": "ukončeno plnění",
+    "description": "Výměna oken ZUŠ Lomnice nad Popelkou - dodávka a montáž",
+    "cpv": [
+      "45000000"
+    ],
+    "offer_deadline": "2026-06-05T10:45:00+02:00",
+    "participant_count": 1,
+    "bid_count": 1,
+    "supplier_ico": "25915185",
+    "supplier_name": "KEST s.r.o.",
+    "price_vat_included": 3643026.4,
+    "price": 3643026.4,
+    "outcome": "vybraný dodavatel",
+    "document_count": 3,
+    "xml_documents": [
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3884804",
+        "label": "Výše skutečně uhrazené ceny za plnění VZ"
+      },
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3884805",
+        "label": "Smlouva, její změny a dodatky"
+      },
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3884806",
+        "label": "Výzva"
+      }
+    ],
+    "xml_file": "data/xml/20260110_20260916.xml",
+    "verified_web": true,
+    "verification_level": "official_xml",
+    "verification_source": "PVU XMLdataVZ"
+  },
+  {
+    "source_id": "P26V00001385",
+    "procurement_id": "P26V00001385",
+    "title": "Modernizace UČEBEN ZUŠ - dodávky",
+    "date": "2026-03-04T21:30:03+01:00",
+    "type": "dodávky",
+    "procurement_type": "dodávky",
+    "procurement_regime": "Veřejné zakázky malého rozsahu",
+    "procurement_procedure": "přímé zadání",
+    "status": "dokončen",
+    "description": "Předmětem veřejné zakázky Modernizace UČEBEN ZUŠ – dodávky je  dodávka  vnitřního vybavení v rozsahu nábytek, koncové prvky, IT vybavení, výukové pomůcky a schodolez včetně případné instalace, montáže či zaškolení (pokud dané vybavení montáž, instalaci či zaškolení vyžaduje).\nZadavatel preferuje dodávku nábytku, při jehož výrobě byly využity materiály šetrné k životnímu prostředí.",
+    "cpv": [
+      "30213300"
+    ],
+    "offer_deadline": "2026-03-04T21:30:00+01:00",
+    "participant_count": 2,
+    "bid_count": 2,
+    "supplier_ico": "48108375",
+    "supplier_name": "AV MEDIA SYSTEMS, a.s.",
+    "price_vat_included": 3223831.92,
+    "price": 3223831.92,
+    "outcome": "vybraný dodavatel",
+    "document_count": 14,
+    "xml_documents": [
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3895761",
+        "label": "Smlouva, její změny a dodatky"
+      },
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3895762",
+        "label": "Smlouva, její změny a dodatky"
+      },
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3895763",
+        "label": "Smlouva, její změny a dodatky"
+      },
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3895764",
+        "label": "Smlouva, její změny a dodatky"
+      },
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3895765",
+        "label": "Smlouva, její změny a dodatky"
+      },
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3895766",
+        "label": "Smlouva, její změny a dodatky"
+      },
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3895767",
+        "label": "Smlouva, její změny a dodatky"
+      },
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3895761",
+        "label": "Smlouva, její změny a dodatky"
+      },
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3895762",
+        "label": "Smlouva, její změny a dodatky"
+      },
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3895763",
+        "label": "Smlouva, její změny a dodatky"
+      },
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3895764",
+        "label": "Smlouva, její změny a dodatky"
+      },
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3895765",
+        "label": "Smlouva, její změny a dodatky"
+      },
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3895766",
+        "label": "Smlouva, její změny a dodatky"
+      },
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3895767",
+        "label": "Smlouva, její změny a dodatky"
+      }
+    ],
+    "xml_file": "data/xml/20260110_20260916.xml",
+    "verified_web": true,
+    "verification_level": "official_xml",
+    "verification_source": "PVU XMLdataVZ"
+  },
+  {
+    "source_id": "P26V00003497",
+    "procurement_id": "P26V00003497",
+    "title": "Stavební práce při výměně oken a úpravy 3. NP čp. 61, Lomnice nad Popelkou",
+    "date": "2026-05-27T12:49:03+02:00",
+    "type": "stavební práce",
+    "procurement_type": "stavební práce",
+    "procurement_regime": "Veřejné zakázky malého rozsahu",
+    "procurement_procedure": "přímé zadání",
+    "status": "dokončen",
+    "description": "Stavební úpravy spojené s výměnou oken v 1. a 2. NP, opravy omítek a elektroinstalace ve 3. NP a související práce",
+    "cpv": [
+      "45000000"
+    ],
+    "offer_deadline": "2026-05-27T12:49:00+02:00",
+    "participant_count": 1,
+    "bid_count": 1,
+    "supplier_ico": "25937499",
+    "supplier_name": "REDOMO a.s.",
+    "price_vat_included": 7348225.94,
+    "price": 7348225.94,
+    "outcome": "vybraný dodavatel",
+    "document_count": 2,
+    "xml_documents": [
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3906771",
+        "label": "Výzva"
+      },
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3906772",
+        "label": "Smlouva, její změny a dodatky"
+      }
+    ],
+    "xml_file": "data/xml/20260110_20260916.xml",
+    "verified_web": true,
+    "verification_level": "official_xml",
+    "verification_source": "PVU XMLdataVZ"
+  },
+  {
+    "source_id": "P26V00004395",
+    "procurement_id": "P26V00004395",
+    "title": "Oprava povrchu komunikace Rváčov - II. etapa, Lomnice nad Popelkou",
+    "date": "2026-07-02T11:13:03+02:00",
+    "type": "stavební práce",
+    "procurement_type": "stavební práce",
+    "procurement_regime": "Veřejné zakázky malého rozsahu",
+    "procurement_procedure": "přímé zadání",
+    "status": "ukončeno plnění",
+    "description": "Oprava místní komunikace v místní části Rváčov, Lomnice nad Popelkou",
+    "cpv": [
+      "45233142"
+    ],
+    "offer_deadline": "2026-07-02T11:13:00+02:00",
+    "participant_count": 1,
+    "bid_count": 1,
+    "supplier_ico": "27679438",
+    "supplier_name": "REACOM s.r.o.",
+    "price_vat_included": 1265418.0,
+    "price": 1265418.0,
+    "outcome": "vybraný dodavatel",
+    "document_count": 2,
+    "xml_documents": [
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3907700",
+        "label": "Výše skutečně uhrazené ceny za plnění VZ"
+      },
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3907712",
+        "label": "Smlouva, její změny a dodatky"
+      }
+    ],
+    "xml_file": "data/xml/20260110_20260916.xml",
+    "verified_web": true,
+    "verification_level": "official_xml",
+    "verification_source": "PVU XMLdataVZ"
+  }
+]

@@ -33,6 +33,8 @@
   "verified_web": true,
   "verified_at": null,
   "verification_source": "Official PVU organization listing and supplier reference",
+  "xml_documents": [],
+  "xml_file": null,
   "raw": {
     "source": "vhodne-uverejneni",
     "source_id": "",

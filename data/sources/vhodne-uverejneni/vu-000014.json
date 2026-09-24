@@ -33,6 +33,8 @@
   "verified_web": true,
   "verified_at": "2026-09-22",
   "verification_source": "https://www.vhodne-uverejneni.cz/zakazky-podle-sidla-zadavatele?a=listbylocality&h=order&m=xenorders&order=ASC&orderFilterByLocality%5B__mw3_form__%5D=&orderFilterByLocality%5Blimit%5D=25&orderFilterByLocality%5BorderState%5D=supply&orderFilterByLocality%5Bsearch%5D=Hledat&orderFilterByLocality%5BterritorialUnit%5D=&page=1081&sort=expected_price",
+  "xml_documents": [],
+  "xml_file": null,
   "raw": {
     "source": "vhodne-uverejneni",
     "source_id": null,

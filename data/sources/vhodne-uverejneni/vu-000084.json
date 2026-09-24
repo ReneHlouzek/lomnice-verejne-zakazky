@@ -1,0 +1,87 @@
+{
+  "source": "vhodne-uverejneni",
+  "source_id": "P26V00004395",
+  "procurement_id": "P26V00004395",
+  "source_url": null,
+  "title": "Oprava povrchu komunikace Rváčov - II. etapa, Lomnice nad Popelkou",
+  "buyer_ico": "00275905",
+  "supplier_ico": "27679438",
+  "supplier_name": "REACOM s.r.o.",
+  "date": "2026-07-02T11:13:03+02:00",
+  "price": 1265418.0,
+  "expected_value": null,
+  "price_vat_included": 1265418.0,
+  "status": "ukončeno plnění",
+  "type": "stavební práce",
+  "procurement_regime": "Veřejné zakázky malého rozsahu",
+  "procurement_procedure": "přímé zadání",
+  "procurement_type": "stavební práce",
+  "outcome": "vybraný dodavatel",
+  "description": "Oprava místní komunikace v místní části Rváčov, Lomnice nad Popelkou",
+  "cpv": [
+    "45233142"
+  ],
+  "offer_deadline": "2026-07-02T11:13:00+02:00",
+  "contract_signed_date": null,
+  "award_date": null,
+  "participant_count": 1,
+  "bid_count": 1,
+  "funded": null,
+  "grant_id": null,
+  "project_registry_id": null,
+  "known_addenda_numbers": [],
+  "document_count": 2,
+  "verification_level": "official_xml",
+  "verified_web": false,
+  "verified_at": null,
+  "verification_source": "PVU XMLdataVZ",
+  "xml_documents": [
+    {
+      "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3907700",
+      "label": "Výše skutečně uhrazené ceny za plnění VZ"
+    },
+    {
+      "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3907712",
+      "label": "Smlouva, její změny a dodatky"
+    }
+  ],
+  "xml_file": "data/xml/20260110_20260916.xml",
+  "raw": {
+    "source_id": "P26V00004395",
+    "procurement_id": "P26V00004395",
+    "title": "Oprava povrchu komunikace Rváčov - II. etapa, Lomnice nad Popelkou",
+    "date": "2026-07-02T11:13:03+02:00",
+    "type": "stavební práce",
+    "procurement_type": "stavební práce",
+    "procurement_regime": "Veřejné zakázky malého rozsahu",
+    "procurement_procedure": "přímé zadání",
+    "status": "ukončeno plnění",
+    "description": "Oprava místní komunikace v místní části Rváčov, Lomnice nad Popelkou",
+    "cpv": [
+      "45233142"
+    ],
+    "offer_deadline": "2026-07-02T11:13:00+02:00",
+    "participant_count": 1,
+    "bid_count": 1,
+    "supplier_ico": "27679438",
+    "supplier_name": "REACOM s.r.o.",
+    "price_vat_included": 1265418.0,
+    "price": 1265418.0,
+    "outcome": "vybraný dodavatel",
+    "document_count": 2,
+    "xml_documents": [
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3907700",
+        "label": "Výše skutečně uhrazené ceny za plnění VZ"
+      },
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3907712",
+        "label": "Smlouva, její změny a dodatky"
+      }
+    ],
+    "xml_file": "data/xml/20260110_20260916.xml",
+    "verified_web": true,
+    "verification_level": "official_xml",
+    "verification_source": "PVU XMLdataVZ"
+  }
+}
