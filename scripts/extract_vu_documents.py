@@ -30,6 +30,14 @@ def is_document_url(url: str) -> bool:
 def jina_url(url: str) -> str:
     return "https://r.jina.ai/https://" + url.split("://", 1)[1]
 
+def proxy_urls(url: str) -> list[str]:
+    encoded = quote(url, safe="")
+    return [
+        f"https://api.allorigins.win/raw?url={encoded}",
+        f"https://corsproxy.io/?url={encoded}",
+        jina_url(url),
+    ]
+
 def fetch_page(url: str):
     headers = {"User-Agent": UA, "Accept": "text/html,application/xhtml+xml"}
     try:
