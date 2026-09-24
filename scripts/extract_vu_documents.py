@@ -8,6 +8,7 @@ from urllib.parse import quote, urljoin, urlparse
 import requests
 from bs4 import BeautifulSoup
 from pypdf import PdfReader
+import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
 SRC = ROOT / "data" / "sources" / "vhodne-uverejneni"
@@ -19,6 +20,37 @@ MAX_DOC_BYTES = 25 * 1024 * 1024
 WORKERS = 8
 PDF_RE = re.compile(r"\.pdf(?:$|[?#])", re.I)
 UA = "Lomnice-Verejne-Zakazky/1.0 (public-data-archive)"
+XML_DIR = ROOT / "data" / "xml"
+
+def load_xml_documents():
+    by_id, by_title = {}, {}
+    for path in sorted(XML_DIR.glob("*.xml")):
+        try:
+            root = ET.parse(path).getroot()
+        except Exception:
+            continue
+        for zak in root.iter():
+            if zak.tag.rsplit("}", 1)[-1] != "zakazka":
+                continue
+            vals = {child.tag.rsplit("}", 1)[-1]: (child.text or "").strip() for child in zak if child.tag.rsplit("}", 1)[-1] in {"id_objektu", "nazev_vz"}}
+            sid, title = vals.get("id_objektu"), vals.get("nazev_vz")
+            docs = []
+            for d in zak.iter():
+                if d.tag.rsplit("}", 1)[-1] != "dokument":
+                    continue
+                fields = {child.tag.rsplit("}", 1)[-1]: (child.text or "").strip() for child in d}
+                url = fields.get("url")
+                if url:
+                    docs.append({"url": url, "label": fields.get("jiny_dokument_nazev") or fields.get("typ_dokumentu") or ""})
+            if docs:
+                if sid: by_id.setdefault(sid, []).extend(docs)
+                if title: by_title.setdefault(title.casefold(), []).extend(docs)
+    for mapping in (by_id, by_title):
+        for key, docs in mapping.items():
+            mapping[key] = list({d["url"]: d for d in docs}.values())
+    return by_id, by_title
+
+XML_DOCS_BY_ID, XML_DOCS_BY_TITLE = load_xml_documents()
 
 def norm_url(url: str) -> str:
     return urljoin("https://www.vhodne-uverejneni.cz/", url.strip())
@@ -170,12 +202,18 @@ def process(record: dict) -> dict:
             result["documents"][0]["status"] = "download_error"
             result["documents"][0]["error"] = str(exc)
         return result
-    try:
-        final_url, docs, transport = fetch_page(page_url)
-        result["page_url"], result["transport"] = final_url, transport
-    except Exception as exc:
-        result["status"], result["error"] = "page_error", str(exc)
-        return result
+    # The official PVU XML export contains document references even when the public HTML page is temporarily unreachable from GitHub Actions.
+    xml_docs = XML_DOCS_BY_ID.get(str(source_id), []) or XML_DOCS_BY_TITLE.get(str(record.get("title") or "").casefold(), [])
+    if xml_docs:
+        docs = xml_docs
+        result["transport"] = "xml_export"
+    else:
+        try:
+            final_url, docs, transport = fetch_page(page_url)
+            result["page_url"], result["transport"] = final_url, transport
+        except Exception as exc:
+            result["status"], result["error"] = "page_error", str(exc)
+            return result
     for i, doc in enumerate(docs, 1):
         item = {"index": i, "label": doc["label"], "url": doc["url"]}
         existing=OUT/str(source_id)/f"{i:03d}.txt"
