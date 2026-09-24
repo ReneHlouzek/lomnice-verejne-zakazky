@@ -58,6 +58,13 @@ def date_value(v):
     s = clean(v)
     if not s:
         return None
+    # XMLdataVZ uses ISO timestamps with timezone offsets; normalize them
+    # to a plain local calendar date before the site consumes the value.
+    iso_candidate = s.replace("Z", "+00:00")
+    try:
+        return datetime.fromisoformat(iso_candidate).date().isoformat()
+    except ValueError:
+        pass
     for fmt in ("%d.%m.%Y", "%d. %m. %Y", "%Y-%m-%d", "%Y-%m-%dT%H:%M:%S"):
         try:
             return datetime.strptime(s, fmt).date().isoformat()
@@ -162,6 +169,7 @@ def normalize_vu_seed():
         if not isinstance(r, dict) or not clean(r.get("title")):
             continue
         verification_level = clean(r.get("verification_level"))
+        official_xml_available = bool(r.get("xml_file") or r.get("xml_documents") or verification_level == "official_xml")
         record = {
             "source": "vhodne-uverejneni",
             "source_id": clean(r.get("source_id") or r.get("procurement_id")) or (
@@ -196,6 +204,7 @@ def normalize_vu_seed():
             "known_addenda_numbers": r.get("known_addenda_numbers") if isinstance(r.get("known_addenda_numbers"), list) else [],
             "document_count": r.get("document_count") if isinstance(r.get("document_count"), int) else None,
             "verification_level": verification_level,
+            "official_xml_available": official_xml_available,
             "verified_web": bool(r.get("verified_web")) and verification_level != "official_xml",
             "verified_at": clean(r.get("verified_at")),
             "verification_source": clean(r.get("verification_source")),
@@ -209,7 +218,7 @@ def normalize_vu_seed():
         count += 1
         if record["verified_web"]:
             verified_count += 1
-        if verification_level == "official_xml":
+        if official_xml_available:
             xml_count += 1
 
     return count, verified_count, xml_count
