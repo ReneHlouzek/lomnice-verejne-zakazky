@@ -177,6 +177,12 @@ def process(record: dict) -> dict:
               "page_url": page_url, "title": record.get("title"),
               "document_count_declared": record.get("document_count"),
               "documents": [], "status": "ok"}
+    # The official XML export can contain document links even when the seed
+    # record has no public detail-page URL.
+    xml_docs = XML_DOCS_BY_ID.get(str(source_id), []) or XML_DOCS_BY_TITLE.get(str(record.get("title") or "").casefold(), [])
+    if not page_url and xml_docs:
+        page_url = xml_docs[0].get("url")
+        result["page_url"] = page_url
     if not page_url:
         result["status"] = "missing_page_url"
         return result
@@ -204,7 +210,6 @@ def process(record: dict) -> dict:
             result["documents"][0]["error"] = str(exc)
         return result
     # The official PVU XML export contains document references even when the public HTML page is temporarily unreachable from GitHub Actions.
-    xml_docs = XML_DOCS_BY_ID.get(str(source_id), []) or XML_DOCS_BY_TITLE.get(str(record.get("title") or "").casefold(), [])
     if xml_docs:
         docs = xml_docs
         result["transport"] = "xml_export"
