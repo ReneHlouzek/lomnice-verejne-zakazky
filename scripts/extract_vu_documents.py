@@ -101,19 +101,32 @@ def extract_pdf(url: str):
             try: parts.append(page.extract_text() or "")
             except Exception: parts.append("")
         return meta, "\n\n".join(parts).strip()
-    except (requests.RequestException, ValueError):
-        # Binary PVU documents are also readable through Jina Reader. We keep the
-        # official document URL in metadata and retain Jina's extracted text.
-        proxy = jina_url(url)
-        r = requests.get(proxy, timeout=JINA_TIMEOUT, headers={"User-Agent": UA})
-        r.raise_for_status()
-        text = r.text.strip()
-        if not text:
-            raise RuntimeError("Jina returned empty document text")
-        meta = {"url": url, "sha256": hashlib.sha256(text.encode("utf-8")).hexdigest(),
-                "bytes": len(text.encode("utf-8")), "content_type": "text/plain",
-                "transport": "jina"}
-        return meta, text
+    except (requests.RequestException, ValueError) as direct_exc:
+        last_exc = direct_exc
+        for proxy in proxy_urls(url):
+            try:
+                r = requests.get(proxy, timeout=JINA_TIMEOUT, headers={"User-Agent": UA})
+                r.raise_for_status()
+                data = r.content
+                if data.startswith(b"%PDF"):
+                    reader = PdfReader(io.BytesIO(data))
+                    parts = []
+                    for page in reader.pages:
+                        try: parts.append(page.extract_text() or "")
+                        except Exception: parts.append("")
+                    text = "\n\n".join(parts).strip()
+                else:
+                    text = r.text.strip()
+                if not text:
+                    raise RuntimeError("proxy returned empty document text")
+                transport = "proxy" if ("allorigins.win" in proxy or "corsproxy.io" in proxy) else "jina"
+                meta = {"url": url, "sha256": hashlib.sha256(text.encode("utf-8")).hexdigest(),
+                        "bytes": len(text.encode("utf-8")), "content_type": r.headers.get("content-type", "") or "text/plain",
+                        "transport": transport}
+                return meta, text
+            except (requests.RequestException, ValueError, RuntimeError) as exc:
+                last_exc = exc
+        raise RuntimeError(f"document unavailable via direct and proxy fallbacks: {last_exc}")
 
 def process(record: dict) -> dict:
     source_id = record.get("source_id") or record.get("procurement_id") or hashlib.sha1(
