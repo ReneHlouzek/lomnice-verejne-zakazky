@@ -14,6 +14,7 @@ OUT = ROOT / "data" / "sources"
 RS = ROOT / "data" / "registr_smluv" / "contracts.json"
 VU_SEED = ROOT / "data" / "inbox" / "vu_seed.json"
 VU_ENRICHMENT = ROOT / "data" / "inbox" / "vu_enrichment_2026-09-22.json"
+VU_XML_ENRICHMENT = ROOT / "data" / "inbox" / "vu_xml_enrichment.json"
 
 
 def clean(v):
@@ -113,7 +114,7 @@ def normalize_vu_seed():
     rows = json.loads(VU_SEED.read_text(encoding="utf-8"))
     if not isinstance(rows, list):
         return 0
-    # Independently verified enrichment records override matching seed rows.
+    # Official PVU XML enrichment is merged first, then independently verified enrichment overrides it.\n    if VU_XML_ENRICHMENT.exists():\n        extra = json.loads(VU_XML_ENRICHMENT.read_text(encoding="utf-8"))\n        if isinstance(extra, list):\n            merged = list(rows)\n            def key(r):\n                sid = clean(r.get("source_id") or r.get("procurement_id"))\n                return ("id", sid) if sid else ("text", clean(r.get("source_url")), clean(r.get("title")), clean(r.get("date")))\n            positions = {key(r): i for i, r in enumerate(merged) if isinstance(r, dict)}\n            for r in extra:\n                if not isinstance(r, dict) or not clean(r.get("title")): continue\n                k=key(r)\n                if k in positions:\n                    base=dict(merged[positions[k]]); base.update({kk:vv for kk,vv in r.items() if vv not in (None,"")}); merged[positions[k]]=base\n                else:\n                    positions[k]=len(merged); merged.append(r)\n            rows=merged\n\n    # Independently verified enrichment records override matching seed rows.
     if VU_ENRICHMENT.exists():
         extra = json.loads(VU_ENRICHMENT.read_text(encoding="utf-8"))
         if isinstance(extra, list):
@@ -205,8 +206,8 @@ def main():
         "registr_smluv_records": count,
         "vhodne_uverejneni_seed_records": vu_count,
         "vhodne_uverejneni_verified_web_records": vu_verified_count,
-        "sources": ["registr-smluv", "vhodne-uverejneni-seed", "vhodne-uverejneni-enrichment"],
-        "vhodne_uverejneni_enrichment_records": len(json.loads(VU_ENRICHMENT.read_text(encoding="utf-8"))) if VU_ENRICHMENT.exists() else 0,
+        "sources": ["registr-smluv", "vhodne-uverejneni-seed", "vhodne-uverejneni-enrichment", "vhodne-uverejneni-xml"],
+        "vhodne_uverejneni_enrichment_records": len(json.loads(VU_ENRICHMENT.read_text(encoding="utf-8"))) if VU_ENRICHMENT.exists() else 0,\n        "vhodne_uverejneni_xml_records": len(json.loads(VU_XML_ENRICHMENT.read_text(encoding="utf-8"))) if VU_XML_ENRICHMENT.exists() else 0,
     }
     OUT.mkdir(parents=True, exist_ok=True)
     (OUT / "manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
