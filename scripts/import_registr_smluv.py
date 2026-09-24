@@ -120,12 +120,25 @@ def extract_records(path: Path, ico: str) -> Iterable[dict]:
         if local(elem.tag) != "zaznam":
             continue
         m = children_map(elem)
-        all_icos = {
+        publisher_icos = {
             normalize_ico(text(x))
-            for key in ("ico", "ic", "icopublikujiciho", "icoosoby")
+            for key in ("icopublikujiciho", "icoPublikujiciho", "publisherIco")
             for x in m.get(key, [])
         }
-        if ico not in all_icos:
+        all_icos = {
+            normalize_ico(text(x))
+            for key in ("ico", "ic", "icopublikujiciho", "icoPublikujiciho", "icoosoby")
+            for x in m.get(key, [])
+        }
+        # The city's contract-register view should contain contracts published
+        # by the city, not every contract in which the city merely appears as
+        # another contracting party. Prefer the explicit publisher ICO when the
+        # export provides it; keep the broader fallback for older dump schemas.
+        if publisher_icos:
+            if ico not in publisher_icos:
+                elem.clear()
+                continue
+        elif ico not in all_icos:
             elem.clear()
             continue
 
