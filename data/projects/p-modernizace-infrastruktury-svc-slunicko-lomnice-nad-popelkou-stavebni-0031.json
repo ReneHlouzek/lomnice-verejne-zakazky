@@ -114,6 +114,7 @@
         ],
         "document_count": 14,
         "verification_level": "contract_detail",
+        "official_xml_available": false,
         "verified_web": true,
         "verified_at": "2026-09-21",
         "verification_source": "https://www.vhodne-uverejneni.cz/index.php?a=detail&contract=69411&h=contractsregister&m=xenorders",
