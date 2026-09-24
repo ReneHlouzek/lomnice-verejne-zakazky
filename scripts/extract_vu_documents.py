@@ -217,14 +217,15 @@ def process(record: dict) -> dict:
     expanded = []
     for doc in docs:
         u = doc.get("url", "")
+        # XML uses the lightweight document-detail endpoint. Convert it to the
+        # direct download endpoint instead of fetching the detail HTML first.
         if "a=detail" in u.lower() and "document=" in u.lower():
-            try:
-                _, linked, _ = fetch_page(u)
-                expanded.extend(linked or [doc])
-            except Exception:
-                expanded.append(doc)
-        else:
-            expanded.append(doc)
+            from urllib.parse import parse_qs, urlparse
+            q = parse_qs(urlparse(u).query)
+            document_id = (q.get("document") or [""])[0]
+            if document_id:
+                u = f"https://www.vhodne-uverejneni.cz/index.php?a=download&document={document_id}&h=orderdocument&m=xenorders&token="
+        expanded.append({"url": u, "label": doc.get("label", "")})
     docs = list({d["url"]: d for d in expanded}.values())
 
     for i, doc in enumerate(docs, 1):
