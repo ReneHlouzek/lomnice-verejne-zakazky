@@ -1,0 +1,158 @@
+{
+  "id": "p-smlouva-o-poskytnuti-ucelove-dotace-z-rozpoctu-libereckeho-kraje-lomni-0180",
+  "title": "Smlouva o poskytnutí účelové dotace z rozpočtu Libereckého kraje - Lomnice nad Popelkou - Rekonstrukce požární zbrojnice",
+  "buyer_ico": "00275905",
+  "status": "unclassified",
+  "project_type": "contract",
+  "canonical": {
+    "title": "Smlouva o poskytnutí účelové dotace z rozpočtu Libereckého kraje - Lomnice nad Popelkou - Rekonstrukce požární zbrojnice",
+    "supplier_ico": "70891508",
+    "identifiers": [],
+    "lifecycle": {
+      "events": [
+        {
+          "date": "2020-08-05",
+          "type": "contract",
+          "source": "registr-smluv",
+          "source_id": "12587736",
+          "title": "Smlouva o poskytnutí účelové dotace z rozpočtu Libereckého kraje - Lomnice nad Popelkou - Rekonstrukce požární zbrojnice",
+          "price": 1488148.0
+        }
+      ],
+      "event_count": 1,
+      "type_counts": {
+        "contract": 1
+      },
+      "dominant_type": "contract"
+    },
+    "project_type": "contract",
+    "procurement_signal": {
+      "level": "likely",
+      "label": "Pravděpodobně souvisí se zakázkou",
+      "reason": "Název/předmět odpovídá investiční dodávce, stavebním pracím nebo jiné běžné zadavatelské dodávce; způsob výběru dodavatele z tohoto záznamu sám o sobě neplyne."
+    },
+    "dates": {
+      "first_observed": "2020-08-05",
+      "last_observed": "2020-08-05"
+    },
+    "financial": {
+      "observed_prices": [
+        1488148.0
+      ],
+      "observed_vat_included_prices": [],
+      "expected_values": [],
+      "initial_contract_price": 1488148.0,
+      "latest_observed_price": 1488148.0,
+      "expected_to_contract_ratio": null
+    },
+    "procurement": {
+      "procedures": [],
+      "regimes": [],
+      "funded": false,
+      "known_addenda_numbers": []
+    },
+    "verification": {
+      "levels": [],
+      "project_registry_ids": [],
+      "detail_verified_sources": 0
+    },
+    "source_count": 1,
+    "source_types": [
+      "registr-smluv"
+    ],
+    "record_count": 1
+  },
+  "sources": [
+    {
+      "source_file": "data/sources/registr-smluv/rs-000048.json",
+      "source_id": "12587736",
+      "record": {
+        "source": "registr-smluv",
+        "source_id": "12587736",
+        "version_id": "13503992",
+        "source_url": "https://smlouvy.gov.cz/smlouva/12587736",
+        "title": "Smlouva o poskytnutí účelové dotace z rozpočtu Libereckého kraje - Lomnice nad Popelkou - Rekonstrukce požární zbrojnice",
+        "buyer_ico": "00275905",
+        "supplier_ico": "70891508",
+        "supplier_name": "Liberecký kraj",
+        "contract_number": "01/OLP/2133/2020",
+        "date": "2020-08-05",
+        "signed_date": "2020-08-05",
+        "published": null,
+        "price": 1488148.0,
+        "status": null,
+        "raw": {
+          "source": "registr-smluv",
+          "source_id": "12587736",
+          "version_id": "13503992",
+          "source_url": "https://smlouvy.gov.cz/smlouva/12587736",
+          "title": "Smlouva o poskytnutí účelové dotace z rozpočtu Libereckého kraje - Lomnice nad Popelkou - Rekonstrukce požární zbrojnice",
+          "buyer_ico": "00275905",
+          "supplier_ico": "70891508",
+          "contract_number": "01/OLP/2133/2020",
+          "date": "2020-08-05",
+          "signed_date": "2020-08-05",
+          "published": "",
+          "price": "1488148",
+          "value": "1488148",
+          "publisher": "",
+          "subject": "Smlouva o poskytnutí účelové dotace z rozpočtu Libereckého kraje - Lomnice nad Popelkou - Rekonstrukce požární zbrojnice",
+          "counterparty": "Liberecký kraj",
+          "detail_url": "https://smlouvy.gov.cz/smlouva/12587736"
+        },
+        "_source_file": "data/sources/registr-smluv/rs-000048.json"
+      }
+    }
+  ],
+  "analysis": {
+    "schema_version": 4,
+    "project_id": "p-smlouva-o-poskytnuti-ucelove-dotace-z-rozpoctu-libereckeho-kraje-lomni-0180",
+    "signal_count": 1,
+    "signals": [
+      {
+        "code": "single_source",
+        "level": "info",
+        "message": "Projekt je zatím doložen pouze jedním zdrojovým záznamem.",
+        "evidence": []
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2020-08-05",
+        "event": "contract",
+        "source": "registr-smluv",
+        "source_id": "12587736",
+        "title": "Smlouva o poskytnutí účelové dotace z rozpočtu Libereckého kraje - Lomnice nad Popelkou - Rekonstrukce požární zbrojnice",
+        "price": 1488148.0,
+        "deadline": null
+      }
+    ],
+    "financial": {
+      "baseline_price": 1488148.0,
+      "current_observed_price": 1488148.0,
+      "absolute_change": 0.0,
+      "percent_change": null,
+      "observed_prices": [
+        1488148.0
+      ],
+      "addendum_count": 0,
+      "declared_addenda_count": 0
+    },
+    "metrics": {
+      "source_count": 1,
+      "supplier_count": 1,
+      "price_values": [
+        1488148.0
+      ],
+      "date_values": [
+        "2020-08-05"
+      ],
+      "document_count": 0,
+      "deadline_observations": 0,
+      "expected_value_observations": 0,
+      "participant_observations": 0,
+      "bid_observations": 0
+    },
+    "methodology": "Signals are descriptive checks only; they do not establish wrongdoing or causality. They identify differences worth checking and retain source provenance."
+  }
+}
