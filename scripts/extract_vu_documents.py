@@ -36,14 +36,19 @@ def fetch_page(url: str):
         r = requests.get(url, timeout=TIMEOUT, headers=headers)
         r.raise_for_status()
         html, final_url, transport = r.text, r.url, "direct"
-    except requests.RequestException:
-        try:
-            proxy = jina_url(url)
-            r = requests.get(proxy, timeout=JINA_TIMEOUT, headers={"User-Agent": UA})
-            r.raise_for_status()
-            html, final_url, transport = r.text, url, "jina"
-        except requests.RequestException as jina_exc:
-            raise RuntimeError(f"VU page unavailable via direct and Jina: {jina_exc}")
+    except requests.RequestException as direct_exc:
+        last_exc = direct_exc
+        for proxy in proxy_urls(url):
+            try:
+                r = requests.get(proxy, timeout=JINA_TIMEOUT, headers={"User-Agent": UA})
+                r.raise_for_status()
+                html, final_url = r.text, url
+                transport = "proxy" if ("allorigins.win" in proxy or "corsproxy.io" in proxy) else "jina"
+                break
+            except requests.RequestException as exc:
+                last_exc = exc
+        else:
+            raise RuntimeError(f"VU page unavailable via direct and proxy fallbacks: {last_exc}")
     soup = BeautifulSoup(html, "html.parser")
     docs = []
     for a in soup.find_all("a", href=True):
