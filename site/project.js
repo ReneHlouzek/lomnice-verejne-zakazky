@@ -57,8 +57,10 @@ function sourceRows(ss){
     const title=r.title||r.subject||'Zdrojový záznam';
     const supplier=r.supplier_name||r.supplier_ico||'';
     const verified=r.verified_web===true;
+    const officialXml=r.verification_level==='official_xml';
+    const xmlDocs=Array.isArray(r.xml_documents)?[...new Map(r.xml_documents.filter(d=>d&&d.url).map(d=>[d.url,d])).values()]:[];
     return `<article class="source">
-      <div class="source-head"><span class="source-no">${i+1}</span><strong>${esc(sourceLabel(r.source||s.source))}</strong>${verified?'<span class="badge green">ověřeno na webu</span>':''}</div>
+      <div class="source-head"><span class="source-no">${i+1}</span><strong>${esc(sourceLabel(r.source||s.source))}</strong>${officialXml?'<span class="badge green">oficiální PVU XML</span>':verified?'<span class="badge green">ověřeno na webu</span>':''}</div>
       <h3>${esc(title)}</h3>
       <div class="source-grid">
         ${r.date?`<span><small>Datum</small><b>${date(r.date)}</b></span>`:''}
@@ -66,8 +68,14 @@ function sourceRows(ss){
         ${r.price!=null?`<span><small>Cena bez DPH</small><b>${money(r.price)}</b></span>`:''}
         ${r.price_vat_included!=null?`<span><small>Cena vč. DPH</small><b>${money(r.price_vat_included)}</b></span>`:''}
         ${r.contract_number?`<span><small>Číslo smlouvy</small><b>${esc(r.contract_number)}</b></span>`:''}
+        ${r.participant_count!=null?`<span><small>Účastníků</small><b>${esc(r.participant_count)}</b></span>`:''}
+        ${r.bid_count!=null?`<span><small>Nabídek</small><b>${esc(r.bid_count)}</b></span>`:''}
+        ${r.procurement_regime?`<span><small>Režim</small><b>${esc(r.procurement_regime)}</b></span>`:''}
+        ${r.procurement_procedure?`<span><small>Postup</small><b>${esc(r.procurement_procedure)}</b></span>`:''}
         ${r.document_count!=null?`<span><small>Dokumentů</small><b>${esc(r.document_count)}</b></span>`:''}
       </div>
+      ${r.description?`<p class="meta source-description">${esc(r.description)}</p>`:''}
+      ${xmlDocs.length?`<details><summary>Dokumenty z oficiálního PVU XML (${xmlDocs.length})</summary><div class="document-links">${xmlDocs.map((d,j)=>`<a href="${esc(d.url)}" target="_blank" rel="noopener">${esc(d.label||('Dokument '+(j+1)))} →</a>`).join('')}</div></details>`:''}
       <div class="source-actions">
         ${r.source_id?`<span class="meta">ID: ${esc(r.source_id)}</span>`:''}
         ${url?`<a href="${esc(url)}" target="_blank" rel="noopener">Otevřít zdroj →</a>`:''}
