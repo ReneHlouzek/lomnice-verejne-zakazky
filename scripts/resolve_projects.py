@@ -188,6 +188,8 @@ def score(a, b):
         return .68, "candidate_title_price_or_date", ["title_similarity={:.2f}".format(sim), f"token_overlap={token_sim:.2f}", "price" if near_price else f"date_gap_days={gap}"]
     if same_supplier and sim >= .60 and (near_price or near_date):
         return .72, "candidate_supplier_title_date_or_price", [ai, f"date_gap_days={gap}" if gap is not None else "no_date_match"]
+    if same_supplier and token_sim >= .28 and same_year:
+        return .62, "candidate_supplier_title_year", [ai, f"title_similarity={sim:.2f}", f"token_overlap={token_sim:.2f}", f"date_gap_days={gap}"]
     if sim >= .75 and near_price:
         return .70, "candidate_title_price", ["price"]
     return 0, "none", []
@@ -347,7 +349,10 @@ def main():
     OUT.mkdir(parents=True, exist_ok=True)
     for old in OUT.glob("*.json"):
         old.unlink()
-    audit = {"source_records": len(rows), "projects": len(groups), "project_sizes": {}, "classifications": {}, "candidate_count": 0}
+    source_counts = {}
+    for r in rows:
+        source_counts[str(r.get("source") or "unknown")] = source_counts.get(str(r.get("source") or "unknown"), 0) + 1
+    audit = {"source_records": len(rows), "projects": len(groups), "project_sizes": {}, "classifications": {}, "candidate_count": 0, "source_counts": source_counts}
     for i, g in enumerate(groups, 1):
         base = g[0]
         t = title(base)
