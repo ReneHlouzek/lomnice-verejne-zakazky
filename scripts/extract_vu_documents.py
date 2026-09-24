@@ -13,7 +13,8 @@ ROOT = Path(__file__).resolve().parents[1]
 SRC = ROOT / "data" / "sources" / "vhodne-uverejneni"
 OUT = ROOT / "data" / "documents"
 MANIFEST = OUT / "manifest.json"
-TIMEOUT = 15
+TIMEOUT = 12
+JINA_TIMEOUT = 35
 MAX_DOC_BYTES = 25 * 1024 * 1024
 WORKERS = 8
 PDF_RE = re.compile(r"\.pdf(?:$|[?#])", re.I)
@@ -37,42 +38,14 @@ def fetch_page(url: str):
         html, final_url, transport = r.text, r.url, "direct"
     except requests.RequestException:
         try:
-            import subprocess
-            cp = subprocess.run(
-                ["curl", "-4", "--fail", "--location", "--http1.1",
-                 "--retry", "2", "--retry-delay", "1",
-                 "--connect-timeout", "8", "--max-time", "20",
-                 "-A", UA, "-H", "Accept: text/html,application/xhtml+xml", url],
-                check=True, capture_output=True, text=True,
-            )
-            html, final_url, transport = cp.stdout, url, "curl"
-        except Exception as exc:
-            raise RuntimeError(f"VU page unavailable: {exc}")
+            proxy = jina_url(url)
+            r = requests.get(proxy, timeout=JINA_TIMEOUT, headers={"User-Agent": UA})
+            r.raise_for_status()
+            html, final_url, transport = r.text, url, "jina"
+        except requests.RequestException as jina_exc:
+            raise RuntimeError(f"VU page unavailable via direct and Jina: {jina_exc}")
     soup = BeautifulSoup(html, "html.parser")
     docs = []
-    for a in soup.find_all("a", href=True):
-        href = norm_url(a["href"])
-        label = " ".join(a.stripped_strings)
-        if is_document_url(href):
-            docs.append({"url": href, "label": label})
-    # X-EN often exposes document downloads through an orderdocument endpoint
-    # without a .pdf suffix. Keep those links as documents as well.
-    for a in soup.find_all("a", href=True):
-        href = norm_url(a["href"])
-        label = " ".join(a.stripped_strings)
-        if "xenorders" in href.lower() and "orderdocument" in href.lower():
-            docs.append({"url": href, "label": label})
-    for tag in soup.find_all(True):
-        for key, value in tag.attrs.items():
-            if not str(key).startswith("data-"):
-                continue
-            vals = value if isinstance(value, list) else [value]
-            for v in vals:
-                if isinstance(v, str) and is_document_url(v):
-                    docs.append({"url": norm_url(v), "label": tag.get_text(" ", strip=True)})
-    unique = {d["url"]: d for d in docs}
-    return final_url, list(unique.values()), transport
-
 def extract_pdf(url: str):
     headers = {"User-Agent": UA, "Accept": "application/pdf,*/*"}
     try:
@@ -89,41 +62,22 @@ def extract_pdf(url: str):
         reader = PdfReader(io.BytesIO(data))
         parts = []
         for page in reader.pages:
-            try:
-                parts.append(page.extract_text() or "")
-            except Exception:
-                parts.append("")
+            try: parts.append(page.extract_text() or "")
+            except Exception: parts.append("")
         return meta, "\n\n".join(parts).strip()
     except (requests.RequestException, ValueError):
-        try:
-            import subprocess
-            cp = subprocess.run(
-                ["curl", "--fail", "--location", "--http1.1",
-                 "--retry", "3", "--retry-delay", "2",
-                 "--connect-timeout", "8", "--max-time", "25",
-                 "-A", UA, "-H", "Accept: application/pdf,*/*", url],
-                check=True, capture_output=True,
-            )
-            data = cp.stdout
-            if len(data) > MAX_DOC_BYTES:
-                raise ValueError(f"document too large: {len(data)} bytes")
-            meta = {"url": url, "sha256": hashlib.sha256(data).hexdigest(),
-                    "bytes": len(data), "content_type": "application/pdf",
-                    "transport": "curl"}
-            if not data.startswith(b"%PDF"):
-                return meta, None
-            reader = PdfReader(io.BytesIO(data))
-            parts = []
-            for page in reader.pages:
-                try:
-                    parts.append(page.extract_text() or "")
-                except Exception:
-                    parts.append("")
-            return meta, "\n\n".join(parts).strip()
-        except Exception as pdf_exc:
-            # Jina is intentionally not used for binary PDF endpoints; failed documents
-            # remain visible in the manifest instead of keeping the build waiting.
-            raise pdf_exc
+        # Binary PVU documents are also readable through Jina Reader. We keep the
+        # official document URL in metadata and retain Jina's extracted text.
+        proxy = jina_url(url)
+        r = requests.get(proxy, timeout=JINA_TIMEOUT, headers={"User-Agent": UA})
+        r.raise_for_status()
+        text = r.text.strip()
+        if not text:
+            raise RuntimeError("Jina returned empty document text")
+        meta = {"url": url, "sha256": hashlib.sha256(text.encode("utf-8")).hexdigest(),
+                "bytes": len(text.encode("utf-8")), "content_type": "text/plain",
+                "transport": "jina"}
+        return meta, text
 
 def process(record: dict) -> dict:
     source_id = record.get("source_id") or record.get("procurement_id") or hashlib.sha1(
