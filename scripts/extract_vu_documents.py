@@ -4,7 +4,7 @@ from __future__ import annotations
 import hashlib, io, json, re, time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
-from urllib.parse import urljoin, urlparse
+from urllib.parse import quote, urljoin, urlparse
 import requests
 from bs4 import BeautifulSoup
 from pypdf import PdfReader
