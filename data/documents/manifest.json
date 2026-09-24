@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T06:40:37Z",
+  "updated_at": "2026-09-24T06:46:52Z",
   "pages_checked": 31,
   "declared_documents": 31,
   "documents_discovered": 1,
@@ -214,7 +214,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and Jina: 422 Client Error: Unprocessable Entity for url: https://r.jina.ai/https://www.vhodne-uverejneni.cz/zakazka/modernizace-uceben-zus-dodavky"
+      "error": "VU page unavailable via direct and Jina: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=35)"
     },
     {
       "source": "vhodne-uverejneni",
