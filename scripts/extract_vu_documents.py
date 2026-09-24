@@ -14,8 +14,9 @@ ROOT = Path(__file__).resolve().parents[1]
 SRC = ROOT / "data" / "sources" / "vhodne-uverejneni"
 OUT = ROOT / "data" / "documents"
 MANIFEST = OUT / "manifest.json"
-TIMEOUT = 12
-JINA_TIMEOUT = 35
+TIMEOUT = 5
+JINA_TIMEOUT = 8
+VU_DOC_PROXY_LIMIT = 2
 MAX_DOC_BYTES = 25 * 1024 * 1024
 WORKERS = 8
 PDF_RE = re.compile(r"\.pdf(?:$|[?#])", re.I)
@@ -78,7 +79,7 @@ def fetch_page(url: str):
         html, final_url, transport = r.text, r.url, "direct"
     except requests.RequestException as direct_exc:
         last_exc = direct_exc
-        for proxy in proxy_urls(url):
+        for proxy in proxy_urls(url)[:VU_DOC_PROXY_LIMIT]:
             try:
                 r = requests.get(proxy, timeout=JINA_TIMEOUT, headers={"User-Agent": UA})
                 r.raise_for_status()
