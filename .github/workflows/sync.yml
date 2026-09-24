@@ -83,7 +83,7 @@ jobs:
     needs: [fetch-vu, fetch-registr]
     if: always()
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 30
     steps:
       - name: Checkout
         uses: actions/checkout@v4
