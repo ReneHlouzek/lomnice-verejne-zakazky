@@ -58,6 +58,35 @@ def normalize_ico(value: str) -> str:
     return re.sub(r"\D", "", value or "")
 
 
+def publisher_info(elem: ET.Element) -> tuple[set[str], str]:
+    """Find the publishing subject across minor ISRS XML schema variations."""
+    icos: set[str] = set()
+    names: list[str] = []
+    for node in elem.iter():
+        tag = local(node.tag).lower()
+        if "publikuj" not in tag and "zverejnuj" not in tag:
+            continue
+        value = text(node)
+        if "ico" in tag:
+            n = normalize_ico(value)
+            if len(n) == 8:
+                icos.add(n)
+        if any(x in tag for x in ("nazev", "name", "subjekt")) and value:
+            names.append(value)
+        for child in node.iter():
+            ctag = local(child.tag).lower()
+            ctext = text(child)
+            if "ico" in ctag:
+                n = normalize_ico(ctext)
+                if len(n) == 8:
+                    icos.add(n)
+            if any(x in ctag for x in ("nazev", "name")) and ctext:
+                names.append(ctext)
+    # Some exports use a publishing-subject container without an ICO-specific
+    # tag. In that case inspect its descendants and recover the ICO/name.
+    return icos, (names[0] if names else "")
+
+
 def period_key(d: dict) -> str:
     return f"{d['year']:04d}-{d['month']:02d}"
 
@@ -120,10 +149,12 @@ def extract_records(path: Path, ico: str) -> Iterable[dict]:
         if local(elem.tag) != "zaznam":
             continue
         m = children_map(elem)
-        publisher_icos = {
+        publisher_icos, publisher_name = publisher_info(elem)
+        publisher_icos |= {
             normalize_ico(text(x))
-            for key in ("icopublikujiciho", "icoPublikujiciho", "publisherIco")
+            for key in ("icopublikujiciho", "icoPublikujiciho", "publisherIco", "icoPublikujicihoSubjektu")
             for x in m.get(key, [])
+            if len(normalize_ico(text(x))) == 8
         }
         all_icos = {
             normalize_ico(text(x))
@@ -145,7 +176,7 @@ def extract_records(path: Path, ico: str) -> Iterable[dict]:
         title = first_value(m, "predmetSmlouvy", "predmet", "nazevSmlouvy", "nazev")
         contract_id = first_value(m, "idSmlouvy", "id")
         version_id = first_value(m, "idVerze", "versionId")
-        publisher = first_value(m, "nazevPublikujiciho", "publikujici")
+        publisher = publisher_name or first_value(m, "nazevPublikujiciho", "publikujici")
         signed = first_value(m, "datumUzavreni", "datumPodpisu")
         published = first_value(m, "datumUverejneni", "datumPublikace", "casUverejneni")
         number = first_value(m, "cisloSmlouvy", "cisloJednaci", "evidencniCisloZakazky")
