@@ -1,0 +1,427 @@
+{
+  "id": "p-verejne-osvetleni-0073",
+  "title": "Veřejné osvětlení",
+  "buyer_ico": "00275905",
+  "status": "plneni-smlouvy",
+  "project_type": "procurement",
+  "canonical": {
+    "title": "Veřejné osvětlení",
+    "supplier_ico": "15043487",
+    "identifiers": [
+      "P26V00002162"
+    ],
+    "lifecycle": {
+      "events": [
+        {
+          "date": "2026-04-17",
+          "type": "tender",
+          "source": "vhodne-uverejneni",
+          "source_id": "P26V00002162",
+          "title": "Veřejné osvětlení",
+          "price": 8549584.12
+        }
+      ],
+      "event_count": 1,
+      "type_counts": {
+        "tender": 1
+      },
+      "dominant_type": "tender"
+    },
+    "project_type": "procurement",
+    "procurement_signal": {
+      "level": "none",
+      "label": "Bez rozpoznané vazby na zakázku",
+      "reason": "V dostupném textu nebyl nalezen dostatečný signál."
+    },
+    "dates": {
+      "first_observed": "2026-04-17",
+      "last_observed": "2026-04-17"
+    },
+    "financial": {
+      "observed_prices": [],
+      "observed_vat_included_prices": [
+        8549584.12
+      ],
+      "expected_values": [],
+      "initial_contract_price": null,
+      "latest_observed_price": null,
+      "expected_to_contract_ratio": null
+    },
+    "procurement": {
+      "procedures": [
+        "Zjednodušené podlimitní řízení"
+      ],
+      "regimes": [
+        "Podlimitní"
+      ],
+      "funded": false,
+      "known_addenda_numbers": []
+    },
+    "verification": {
+      "levels": [
+        "detail"
+      ],
+      "project_registry_ids": [],
+      "detail_verified_sources": 1
+    },
+    "source_count": 1,
+    "source_types": [
+      "vhodne-uverejneni"
+    ],
+    "record_count": 1
+  },
+  "sources": [
+    {
+      "source_file": "data/sources/vhodne-uverejneni/vu-000017.json",
+      "source_id": "P26V00002162",
+      "record": {
+        "source": "vhodne-uverejneni",
+        "source_id": "P26V00002162",
+        "procurement_id": "P26V00002162",
+        "source_url": "https://www.vhodne-uverejneni.cz/zakazka/verejne-osvetleni-11",
+        "title": "Veřejné osvětlení",
+        "buyer_ico": "00275905",
+        "supplier_ico": "15043487",
+        "supplier_name": "ELEKTROS, spol. s r.o.",
+        "date": "2026-04-17",
+        "price": 8549584.12,
+        "expected_value": null,
+        "price_vat_included": 8549584.12,
+        "status": "plnění smlouvy",
+        "type": "tender",
+        "procurement_regime": "Podlimitní",
+        "procurement_procedure": "Zjednodušené podlimitní řízení",
+        "procurement_type": "Stavební práce",
+        "outcome": "Uzavření jednorázové smlouvy",
+        "description": "Zřízení nové osvětlovací soustavy v délce cca 2,0 km ve třech etapách v letech 2026–2028; 50 stožárů výšky 8,2 m, 4 stožáry výšky 6 m a 54 LED svítidel.",
+        "cpv": [
+          "Elektrické zdroje světla a svítidla",
+          "Lampy a svítidla",
+          "Bodové reflektory",
+          "Venkovní svítidla",
+          "Zařízení pouličního osvětlení",
+          "Instalace a montáž zařízení pro osvětlení silnic"
+        ],
+        "offer_deadline": "2026-05-20T09:00:00",
+        "contract_signed_date": "2026-07-08",
+        "award_date": null,
+        "participant_count": 4,
+        "bid_count": 1,
+        "funded": null,
+        "grant_id": null,
+        "project_registry_id": null,
+        "known_addenda_numbers": [],
+        "document_count": 23,
+        "verification_level": "detail",
+        "verified_web": true,
+        "verified_at": "2026-09-22",
+        "verification_source": "https://www.vhodne-uverejneni.cz/zakazka/verejne-osvetleni-11",
+        "xml_documents": [
+          {
+            "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868297",
+            "label": "Písemná zpráva zadavatele"
+          },
+          {
+            "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868298",
+            "label": "Smlouva, její změny a dodatky"
+          },
+          {
+            "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868299",
+            "label": "Smlouva, její změny a dodatky"
+          },
+          {
+            "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868300",
+            "label": "Oznámení o výběru nejvhodnější nabídky"
+          },
+          {
+            "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868301",
+            "label": "Oznámení o výběru nejvhodnější nabídky"
+          },
+          {
+            "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868302",
+            "label": "Vysvětlení, doplnění, změna zadávací dokumentace"
+          },
+          {
+            "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868303",
+            "label": "Vysvětlení, doplnění, změna zadávací dokumentace"
+          },
+          {
+            "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868304",
+            "label": "Vysvětlení, doplnění, změna zadávací dokumentace"
+          },
+          {
+            "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868305",
+            "label": "Vysvětlení, doplnění, změna zadávací dokumentace"
+          },
+          {
+            "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868306",
+            "label": "Vysvětlení, doplnění, změna zadávací dokumentace"
+          },
+          {
+            "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868307",
+            "label": "Vysvětlení, doplnění, změna zadávací dokumentace"
+          },
+          {
+            "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868308",
+            "label": "Vysvětlení, doplnění, změna zadávací dokumentace"
+          },
+          {
+            "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868309",
+            "label": "Vysvětlení, doplnění, změna zadávací dokumentace"
+          },
+          {
+            "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868310",
+            "label": "Vysvětlení, doplnění, změna zadávací dokumentace"
+          },
+          {
+            "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868311",
+            "label": "Vysvětlení, doplnění, změna zadávací dokumentace"
+          },
+          {
+            "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868312",
+            "label": "Výzva"
+          },
+          {
+            "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868313",
+            "label": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění"
+          },
+          {
+            "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868314",
+            "label": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění"
+          },
+          {
+            "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868315",
+            "label": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění"
+          },
+          {
+            "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868316",
+            "label": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění"
+          },
+          {
+            "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868317",
+            "label": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění"
+          },
+          {
+            "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868318",
+            "label": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění"
+          },
+          {
+            "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868319",
+            "label": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění"
+          }
+        ],
+        "xml_file": "data/xml/20260110_20260916.xml",
+        "raw": {
+          "source": "vhodne-uverejneni",
+          "source_id": "P26V00002162",
+          "procurement_id": "P26V00002162",
+          "source_url": "https://www.vhodne-uverejneni.cz/zakazka/verejne-osvetleni-11",
+          "title": "Veřejné osvětlení",
+          "buyer_ico": "00275905",
+          "supplier_ico": "15043487",
+          "supplier_name": "ELEKTROS, spol. s r.o.",
+          "date": "2026-04-17",
+          "price": 8549584.12,
+          "status": "plnění smlouvy",
+          "type": "tender",
+          "procurement_type": "Stavební práce",
+          "procurement_regime": "Podlimitní",
+          "procurement_procedure": "Zjednodušené podlimitní řízení",
+          "outcome": "Uzavření jednorázové smlouvy",
+          "offer_deadline": "2026-05-20T09:00:00",
+          "description": "Zřízení nové osvětlovací soustavy v délce cca 2,0 km ve třech etapách v letech 2026–2028; 50 stožárů výšky 8,2 m, 4 stožáry výšky 6 m a 54 LED svítidel.",
+          "cpv": [
+            "Elektrické zdroje světla a svítidla",
+            "Lampy a svítidla",
+            "Bodové reflektory",
+            "Venkovní svítidla",
+            "Zařízení pouličního osvětlení",
+            "Instalace a montáž zařízení pro osvětlení silnic"
+          ],
+          "verification_level": "detail",
+          "verified_web": true,
+          "verified_at": "2026-09-22",
+          "verification_source": "https://www.vhodne-uverejneni.cz/zakazka/verejne-osvetleni-11",
+          "contract_signed_date": "2026-07-08",
+          "participant_count": 4,
+          "bid_count": 1,
+          "price_vat_included": 8549584.12,
+          "document_count": 23,
+          "xml_documents": [
+            {
+              "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868297",
+              "label": "Písemná zpráva zadavatele"
+            },
+            {
+              "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868298",
+              "label": "Smlouva, její změny a dodatky"
+            },
+            {
+              "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868299",
+              "label": "Smlouva, její změny a dodatky"
+            },
+            {
+              "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868300",
+              "label": "Oznámení o výběru nejvhodnější nabídky"
+            },
+            {
+              "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868301",
+              "label": "Oznámení o výběru nejvhodnější nabídky"
+            },
+            {
+              "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868302",
+              "label": "Vysvětlení, doplnění, změna zadávací dokumentace"
+            },
+            {
+              "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868303",
+              "label": "Vysvětlení, doplnění, změna zadávací dokumentace"
+            },
+            {
+              "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868304",
+              "label": "Vysvětlení, doplnění, změna zadávací dokumentace"
+            },
+            {
+              "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868305",
+              "label": "Vysvětlení, doplnění, změna zadávací dokumentace"
+            },
+            {
+              "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868306",
+              "label": "Vysvětlení, doplnění, změna zadávací dokumentace"
+            },
+            {
+              "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868307",
+              "label": "Vysvětlení, doplnění, změna zadávací dokumentace"
+            },
+            {
+              "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868308",
+              "label": "Vysvětlení, doplnění, změna zadávací dokumentace"
+            },
+            {
+              "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868309",
+              "label": "Vysvětlení, doplnění, změna zadávací dokumentace"
+            },
+            {
+              "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868310",
+              "label": "Vysvětlení, doplnění, změna zadávací dokumentace"
+            },
+            {
+              "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868311",
+              "label": "Vysvětlení, doplnění, změna zadávací dokumentace"
+            },
+            {
+              "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868312",
+              "label": "Výzva"
+            },
+            {
+              "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868313",
+              "label": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění"
+            },
+            {
+              "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868314",
+              "label": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění"
+            },
+            {
+              "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868315",
+              "label": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění"
+            },
+            {
+              "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868316",
+              "label": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění"
+            },
+            {
+              "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868317",
+              "label": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění"
+            },
+            {
+              "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868318",
+              "label": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění"
+            },
+            {
+              "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868319",
+              "label": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění"
+            }
+          ],
+          "xml_file": "data/xml/20260110_20260916.xml"
+        },
+        "_source_file": "data/sources/vhodne-uverejneni/vu-000017.json"
+      }
+    }
+  ],
+  "analysis": {
+    "schema_version": 4,
+    "project_id": "p-verejne-osvetleni-0073",
+    "signal_count": 3,
+    "signals": [
+      {
+        "code": "participant_count",
+        "level": "info",
+        "message": "Ve zdrojových datech je uveden počet účastníků: 4.",
+        "evidence": [
+          {
+            "type": "participant_count",
+            "values": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "code": "bid_count",
+        "level": "info",
+        "message": "Ve zdrojových datech je uveden počet nabídek: 1.",
+        "evidence": [
+          {
+            "type": "bid_count",
+            "values": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "code": "single_source",
+        "level": "info",
+        "message": "Projekt je zatím doložen pouze jedním zdrojovým záznamem.",
+        "evidence": []
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2026-04-17",
+        "event": "tender",
+        "source": "vhodne-uverejneni",
+        "source_id": "P26V00002162",
+        "title": "Veřejné osvětlení",
+        "price": 8549584.12,
+        "deadline": null
+      }
+    ],
+    "financial": {
+      "baseline_price": 8549584.12,
+      "current_observed_price": 8549584.12,
+      "absolute_change": 0.0,
+      "percent_change": null,
+      "observed_prices": [
+        8549584.12
+      ],
+      "addendum_count": 0,
+      "declared_addenda_count": 0
+    },
+    "metrics": {
+      "source_count": 1,
+      "supplier_count": 1,
+      "price_values": [
+        8549584.12
+      ],
+      "date_values": [
+        "2026-04-17"
+      ],
+      "document_count": 0,
+      "deadline_observations": 0,
+      "expected_value_observations": 0,
+      "participant_observations": 1,
+      "bid_observations": 1
+    },
+    "methodology": "Signals are descriptive checks only; they do not establish wrongdoing or causality. They identify differences worth checking and retain source provenance."
+  }
+}

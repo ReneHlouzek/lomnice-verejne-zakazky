@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-09-24T12:17:28Z",
+  "updated_at": "2026-09-24T12:44:09Z",
   "pages_checked": 31,
-  "declared_documents": 31,
+  "declared_documents": 80,
   "documents_discovered": 46,
   "documents_downloaded": 0,
   "documents_text_extracted": 0,
@@ -214,7 +214,7 @@
       "source_id": "P26V00001118",
       "page_url": "https://www.vhodne-uverejneni.cz/zakazka/sanace-vlhkeho-zdiva-sklepnich-prostor-cp-886-lomnice-nad-popelkou",
       "title": "Sanace vlhkého zdiva sklepních prostor čp. 886, Lomnice nad Popelkou",
-      "document_count_declared": null,
+      "document_count_declared": 1,
       "documents": [
         {
           "index": 1,
@@ -231,7 +231,7 @@
       "source_id": "P26V00001385",
       "page_url": "https://www.vhodne-uverejneni.cz/zakazka/modernizace-uceben-zus-dodavky",
       "title": "Modernizace UČEBEN ZUŠ - dodávky",
-      "document_count_declared": null,
+      "document_count_declared": 14,
       "documents": [
         {
           "index": 1,
@@ -284,7 +284,7 @@
       "source_id": "P26V00002162",
       "page_url": "https://www.vhodne-uverejneni.cz/zakazka/verejne-osvetleni-11",
       "title": "Veřejné osvětlení",
-      "document_count_declared": null,
+      "document_count_declared": 23,
       "documents": [
         {
           "index": 1,
@@ -433,7 +433,7 @@
       "source_id": "P26V00002405",
       "page_url": "https://www.vhodne-uverejneni.cz/zakazka/rozsireni-polikliniky-lomnice-nad-popelkou-dokumentace-stavebniho-zameru",
       "title": "Rozšíření polikliniky Lomnice nad Popelkou - dokumentace stavebního záměru",
-      "document_count_declared": null,
+      "document_count_declared": 2,
       "documents": [
         {
           "index": 1,
@@ -456,7 +456,7 @@
       "source_id": "P26V00002929",
       "page_url": "https://www.vhodne-uverejneni.cz/zakazka/nemocnice-nasledne-pece-lomnice-nad-popelkou-investice-a-opravy",
       "title": "Nemocnice následné péče Lomnice nad Popelkou – investice a opravy",
-      "document_count_declared": null,
+      "document_count_declared": 9,
       "documents": [
         {
           "index": 1,

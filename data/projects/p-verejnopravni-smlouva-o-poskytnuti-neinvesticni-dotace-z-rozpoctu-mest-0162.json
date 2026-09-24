@@ -1,0 +1,158 @@
+{
+  "id": "p-verejnopravni-smlouva-o-poskytnuti-neinvesticni-dotace-z-rozpoctu-mest-0162",
+  "title": "Veřejnoprávní smlouva o poskytnutí neinvestiční dotace z rozpočtu města Lomnice nad Popelkou - Lomnice nad Popelkou - Košov - obnova vodovodu",
+  "buyer_ico": "00275905",
+  "status": "unclassified",
+  "project_type": "contract",
+  "canonical": {
+    "title": "Veřejnoprávní smlouva o poskytnutí neinvestiční dotace z rozpočtu města Lomnice nad Popelkou - Lomnice nad Popelkou - Košov - obnova vodovodu",
+    "supplier_ico": "49295934",
+    "identifiers": [],
+    "lifecycle": {
+      "events": [
+        {
+          "date": "2024-12-11",
+          "type": "contract",
+          "source": "registr-smluv",
+          "source_id": "29417636",
+          "title": "Veřejnoprávní smlouva o poskytnutí neinvestiční dotace z rozpočtu města Lomnice nad Popelkou - Lomnice nad Popelkou - Košov - obnova vodovodu",
+          "price": 2880000.0
+        }
+      ],
+      "event_count": 1,
+      "type_counts": {
+        "contract": 1
+      },
+      "dominant_type": "contract"
+    },
+    "project_type": "contract",
+    "procurement_signal": {
+      "level": "likely",
+      "label": "Pravděpodobně souvisí se zakázkou",
+      "reason": "Název/předmět odpovídá investiční dodávce, stavebním pracím nebo jiné běžné zadavatelské dodávce; způsob výběru dodavatele z tohoto záznamu sám o sobě neplyne."
+    },
+    "dates": {
+      "first_observed": "2024-12-11",
+      "last_observed": "2024-12-11"
+    },
+    "financial": {
+      "observed_prices": [
+        2880000.0
+      ],
+      "observed_vat_included_prices": [],
+      "expected_values": [],
+      "initial_contract_price": 2880000.0,
+      "latest_observed_price": 2880000.0,
+      "expected_to_contract_ratio": null
+    },
+    "procurement": {
+      "procedures": [],
+      "regimes": [],
+      "funded": false,
+      "known_addenda_numbers": []
+    },
+    "verification": {
+      "levels": [],
+      "project_registry_ids": [],
+      "detail_verified_sources": 0
+    },
+    "source_count": 1,
+    "source_types": [
+      "registr-smluv"
+    ],
+    "record_count": 1
+  },
+  "sources": [
+    {
+      "source_file": "data/sources/registr-smluv/rs-000086.json",
+      "source_id": "29417636",
+      "record": {
+        "source": "registr-smluv",
+        "source_id": "29417636",
+        "version_id": "31432352",
+        "source_url": "https://smlouvy.gov.cz/smlouva/29417636",
+        "title": "Veřejnoprávní smlouva o poskytnutí neinvestiční dotace z rozpočtu města Lomnice nad Popelkou - Lomnice nad Popelkou - Košov - obnova vodovodu",
+        "buyer_ico": "00275905",
+        "supplier_ico": "49295934",
+        "supplier_name": "Vodohospodářské sdružení Turnov",
+        "contract_number": null,
+        "date": "2024-12-11",
+        "signed_date": "2024-12-11",
+        "published": null,
+        "price": 2880000.0,
+        "status": null,
+        "raw": {
+          "source": "registr-smluv",
+          "source_id": "29417636",
+          "version_id": "31432352",
+          "source_url": "https://smlouvy.gov.cz/smlouva/29417636",
+          "title": "Veřejnoprávní smlouva o poskytnutí neinvestiční dotace z rozpočtu města Lomnice nad Popelkou - Lomnice nad Popelkou - Košov - obnova vodovodu",
+          "buyer_ico": "00275905",
+          "supplier_ico": "49295934",
+          "contract_number": "",
+          "date": "2024-12-11",
+          "signed_date": "2024-12-11",
+          "published": "",
+          "price": "2880000",
+          "value": "2880000",
+          "publisher": "",
+          "subject": "Veřejnoprávní smlouva o poskytnutí neinvestiční dotace z rozpočtu města Lomnice nad Popelkou - Lomnice nad Popelkou - Košov - obnova vodovodu",
+          "counterparty": "Vodohospodářské sdružení Turnov",
+          "detail_url": "https://smlouvy.gov.cz/smlouva/29417636"
+        },
+        "_source_file": "data/sources/registr-smluv/rs-000086.json"
+      }
+    }
+  ],
+  "analysis": {
+    "schema_version": 4,
+    "project_id": "p-verejnopravni-smlouva-o-poskytnuti-neinvesticni-dotace-z-rozpoctu-mest-0162",
+    "signal_count": 1,
+    "signals": [
+      {
+        "code": "single_source",
+        "level": "info",
+        "message": "Projekt je zatím doložen pouze jedním zdrojovým záznamem.",
+        "evidence": []
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2024-12-11",
+        "event": "contract",
+        "source": "registr-smluv",
+        "source_id": "29417636",
+        "title": "Veřejnoprávní smlouva o poskytnutí neinvestiční dotace z rozpočtu města Lomnice nad Popelkou - Lomnice nad Popelkou - Košov - obnova vodovodu",
+        "price": 2880000.0,
+        "deadline": null
+      }
+    ],
+    "financial": {
+      "baseline_price": 2880000.0,
+      "current_observed_price": 2880000.0,
+      "absolute_change": 0.0,
+      "percent_change": null,
+      "observed_prices": [
+        2880000.0
+      ],
+      "addendum_count": 0,
+      "declared_addenda_count": 0
+    },
+    "metrics": {
+      "source_count": 1,
+      "supplier_count": 1,
+      "price_values": [
+        2880000.0
+      ],
+      "date_values": [
+        "2024-12-11"
+      ],
+      "document_count": 0,
+      "deadline_observations": 0,
+      "expected_value_observations": 0,
+      "participant_observations": 0,
+      "bid_observations": 0
+    },
+    "methodology": "Signals are descriptive checks only; they do not establish wrongdoing or causality. They identify differences worth checking and retain source provenance."
+  }
+}

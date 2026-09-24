@@ -1,0 +1,156 @@
+{
+  "id": "p-dohoda-o-pouzivani-vyplatniho-stroje-k-uhrade-cen-za-postovni-sluzby-0185",
+  "title": "Dohoda o používání výplatního stroje k úhradě cen za poštovní služby",
+  "buyer_ico": "00275905",
+  "status": "unclassified",
+  "project_type": "other",
+  "canonical": {
+    "title": "Dohoda o používání výplatního stroje k úhradě cen za poštovní služby",
+    "supplier_ico": "47114983",
+    "identifiers": [],
+    "lifecycle": {
+      "events": [
+        {
+          "date": "2015-12-07",
+          "type": "source_record",
+          "source": "registr-smluv",
+          "source_id": "15777827",
+          "title": "Dohoda o používání výplatního stroje k úhradě cen za poštovní služby",
+          "price": 430000.0
+        }
+      ],
+      "event_count": 1,
+      "type_counts": {
+        "source_record": 1
+      },
+      "dominant_type": "source_record"
+    },
+    "project_type": "other",
+    "procurement_signal": {
+      "level": "none",
+      "label": "Bez rozpoznané vazby na zakázku",
+      "reason": "V dostupném textu nebyl nalezen dostatečný signál."
+    },
+    "dates": {
+      "first_observed": "2015-12-07",
+      "last_observed": "2015-12-07"
+    },
+    "financial": {
+      "observed_prices": [],
+      "observed_vat_included_prices": [],
+      "expected_values": [],
+      "initial_contract_price": null,
+      "latest_observed_price": null,
+      "expected_to_contract_ratio": null
+    },
+    "procurement": {
+      "procedures": [],
+      "regimes": [],
+      "funded": false,
+      "known_addenda_numbers": []
+    },
+    "verification": {
+      "levels": [],
+      "project_registry_ids": [],
+      "detail_verified_sources": 0
+    },
+    "source_count": 1,
+    "source_types": [
+      "registr-smluv"
+    ],
+    "record_count": 1
+  },
+  "sources": [
+    {
+      "source_file": "data/sources/registr-smluv/rs-000001.json",
+      "source_id": "15777827",
+      "record": {
+        "source": "registr-smluv",
+        "source_id": "15777827",
+        "version_id": "16983035",
+        "source_url": "https://smlouvy.gov.cz/smlouva/15777827",
+        "title": "Dohoda o používání výplatního stroje k úhradě cen za poštovní služby",
+        "buyer_ico": "00275905",
+        "supplier_ico": "47114983",
+        "supplier_name": "Česká pošta, s.p.",
+        "contract_number": "2021/05045 /",
+        "date": "2015-12-07",
+        "signed_date": "2015-12-07",
+        "published": null,
+        "price": 430000.0,
+        "status": null,
+        "raw": {
+          "source": "registr-smluv",
+          "source_id": "15777827",
+          "version_id": "16983035",
+          "source_url": "https://smlouvy.gov.cz/smlouva/15777827",
+          "title": "Dohoda o používání výplatního stroje k úhradě cen za poštovní služby",
+          "buyer_ico": "00275905",
+          "supplier_ico": "47114983",
+          "contract_number": "2021/05045 /",
+          "date": "2015-12-07",
+          "signed_date": "2015-12-07",
+          "published": "",
+          "price": "430000",
+          "value": "430000",
+          "publisher": "",
+          "subject": "Dohoda o používání výplatního stroje k úhradě cen za poštovní služby",
+          "counterparty": "Česká pošta, s.p.",
+          "detail_url": "https://smlouvy.gov.cz/smlouva/15777827"
+        },
+        "_source_file": "data/sources/registr-smluv/rs-000001.json"
+      }
+    }
+  ],
+  "analysis": {
+    "schema_version": 4,
+    "project_id": "p-dohoda-o-pouzivani-vyplatniho-stroje-k-uhrade-cen-za-postovni-sluzby-0185",
+    "signal_count": 1,
+    "signals": [
+      {
+        "code": "single_source",
+        "level": "info",
+        "message": "Projekt je zatím doložen pouze jedním zdrojovým záznamem.",
+        "evidence": []
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2015-12-07",
+        "event": "source_record",
+        "source": "registr-smluv",
+        "source_id": "15777827",
+        "title": "Dohoda o používání výplatního stroje k úhradě cen za poštovní služby",
+        "price": 430000.0,
+        "deadline": null
+      }
+    ],
+    "financial": {
+      "baseline_price": 430000.0,
+      "current_observed_price": 430000.0,
+      "absolute_change": 0.0,
+      "percent_change": null,
+      "observed_prices": [
+        430000.0
+      ],
+      "addendum_count": 0,
+      "declared_addenda_count": 0
+    },
+    "metrics": {
+      "source_count": 1,
+      "supplier_count": 1,
+      "price_values": [
+        430000.0
+      ],
+      "date_values": [
+        "2015-12-07"
+      ],
+      "document_count": 0,
+      "deadline_observations": 0,
+      "expected_value_observations": 0,
+      "participant_observations": 0,
+      "bid_observations": 0
+    },
+    "methodology": "Signals are descriptive checks only; they do not establish wrongdoing or causality. They identify differences worth checking and retain source provenance."
+  }
+}

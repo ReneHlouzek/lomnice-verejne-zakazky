@@ -1,0 +1,158 @@
+{
+  "id": "p-smlouva-o-poskytnuti-rozmnozeniny-dila-lomnice-nad-popelkou-0110",
+  "title": "Smlouva o poskytnutí rozmnoženiny díla - Lomnice nad Popelkou",
+  "buyer_ico": "00275905",
+  "status": "unclassified",
+  "project_type": "contract",
+  "canonical": {
+    "title": "Smlouva o poskytnutí rozmnoženiny díla - Lomnice nad Popelkou",
+    "supplier_ico": "00023221",
+    "identifiers": [],
+    "lifecycle": {
+      "events": [
+        {
+          "date": "2026-07-27",
+          "type": "contract",
+          "source": "registr-smluv",
+          "source_id": "36813062",
+          "title": "Smlouva o poskytnutí rozmnoženiny díla - Lomnice nad Popelkou",
+          "price": null
+        }
+      ],
+      "event_count": 1,
+      "type_counts": {
+        "contract": 1
+      },
+      "dominant_type": "contract"
+    },
+    "project_type": "contract",
+    "procurement_signal": {
+      "level": "none",
+      "label": "Bez rozpoznané vazby na zakázku",
+      "reason": "V dostupném textu nebyl nalezen dostatečný signál."
+    },
+    "dates": {
+      "first_observed": "2026-07-27",
+      "last_observed": "2026-07-27"
+    },
+    "financial": {
+      "observed_prices": [],
+      "observed_vat_included_prices": [],
+      "expected_values": [],
+      "initial_contract_price": null,
+      "latest_observed_price": null,
+      "expected_to_contract_ratio": null
+    },
+    "procurement": {
+      "procedures": [],
+      "regimes": [],
+      "funded": false,
+      "known_addenda_numbers": []
+    },
+    "verification": {
+      "levels": [],
+      "project_registry_ids": [],
+      "detail_verified_sources": 0
+    },
+    "source_count": 1,
+    "source_types": [
+      "registr-smluv"
+    ],
+    "record_count": 1
+  },
+  "sources": [
+    {
+      "source_file": "data/sources/registr-smluv/rs-000108.json",
+      "source_id": "36813062",
+      "record": {
+        "source": "registr-smluv",
+        "source_id": "36813062",
+        "version_id": "39163982",
+        "source_url": "https://smlouvy.gov.cz/smlouva/36813062",
+        "title": "Smlouva o poskytnutí rozmnoženiny díla - Lomnice nad Popelkou",
+        "buyer_ico": "00275905",
+        "supplier_ico": "00023221",
+        "supplier_name": "Národní knihovna České republiky",
+        "contract_number": "S0232/2026",
+        "date": "2026-07-27",
+        "signed_date": "2026-07-27",
+        "published": null,
+        "price": null,
+        "status": null,
+        "raw": {
+          "source": "registr-smluv",
+          "source_id": "36813062",
+          "version_id": "39163982",
+          "source_url": "https://smlouvy.gov.cz/smlouva/36813062",
+          "title": "Smlouva o poskytnutí rozmnoženiny díla - Lomnice nad Popelkou",
+          "buyer_ico": "00275905",
+          "supplier_ico": "00023221",
+          "contract_number": "S0232/2026",
+          "date": "2026-07-27",
+          "signed_date": "2026-07-27",
+          "published": "",
+          "price": "",
+          "value": "",
+          "publisher": "",
+          "subject": "Smlouva o poskytnutí rozmnoženiny díla - Lomnice nad Popelkou",
+          "counterparty": "Národní knihovna České republiky",
+          "detail_url": "https://smlouvy.gov.cz/smlouva/36813062",
+          "attachments": [
+            {
+              "url": "https://smlouvy.gov.cz/smlouva/soubor/47248726/Smlouva_Lomnice_n.Popelkou%20komplet.pdf",
+              "name": "Smlouva_Lomnice_n.Popelkou%20komplet.pdf"
+            }
+          ]
+        },
+        "_source_file": "data/sources/registr-smluv/rs-000108.json"
+      }
+    }
+  ],
+  "analysis": {
+    "schema_version": 4,
+    "project_id": "p-smlouva-o-poskytnuti-rozmnozeniny-dila-lomnice-nad-popelkou-0110",
+    "signal_count": 1,
+    "signals": [
+      {
+        "code": "single_source",
+        "level": "info",
+        "message": "Projekt je zatím doložen pouze jedním zdrojovým záznamem.",
+        "evidence": []
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2026-07-27",
+        "event": "contract",
+        "source": "registr-smluv",
+        "source_id": "36813062",
+        "title": "Smlouva o poskytnutí rozmnoženiny díla - Lomnice nad Popelkou",
+        "price": null,
+        "deadline": null
+      }
+    ],
+    "financial": {
+      "baseline_price": null,
+      "current_observed_price": null,
+      "absolute_change": null,
+      "percent_change": null,
+      "observed_prices": [],
+      "addendum_count": 0,
+      "declared_addenda_count": 0
+    },
+    "metrics": {
+      "source_count": 1,
+      "supplier_count": 1,
+      "price_values": [],
+      "date_values": [
+        "2026-07-27"
+      ],
+      "document_count": 0,
+      "deadline_observations": 0,
+      "expected_value_observations": 0,
+      "participant_observations": 0,
+      "bid_observations": 0
+    },
+    "methodology": "Signals are descriptive checks only; they do not establish wrongdoing or causality. They identify differences worth checking and retain source provenance."
+  }
+}

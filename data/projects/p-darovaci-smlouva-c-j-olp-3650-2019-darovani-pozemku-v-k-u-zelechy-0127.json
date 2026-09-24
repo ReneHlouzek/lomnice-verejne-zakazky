@@ -1,0 +1,158 @@
+{
+  "id": "p-darovaci-smlouva-c-j-olp-3650-2019-darovani-pozemku-v-k-u-zelechy-0127",
+  "title": "Darovací smlouva č.j. OLP/3650/2019 - darování pozemku v k.ú. Želechy",
+  "buyer_ico": "00275905",
+  "status": "unclassified",
+  "project_type": "contract",
+  "canonical": {
+    "title": "Darovací smlouva č.j. OLP/3650/2019 - darování pozemku v k.ú. Želechy",
+    "supplier_ico": "70891508",
+    "identifiers": [],
+    "lifecycle": {
+      "events": [
+        {
+          "date": "2019-11-27",
+          "type": "contract",
+          "source": "registr-smluv",
+          "source_id": "10174036",
+          "title": "Darovací smlouva č.j. OLP/3650/2019 - darování pozemku v k.ú. Želechy",
+          "price": 61980.0
+        }
+      ],
+      "event_count": 1,
+      "type_counts": {
+        "contract": 1
+      },
+      "dominant_type": "contract"
+    },
+    "project_type": "contract",
+    "procurement_signal": {
+      "level": "none",
+      "label": "Bez rozpoznané vazby na zakázku",
+      "reason": "V dostupném textu nebyl nalezen dostatečný signál."
+    },
+    "dates": {
+      "first_observed": "2019-11-27",
+      "last_observed": "2019-11-27"
+    },
+    "financial": {
+      "observed_prices": [
+        61980.0
+      ],
+      "observed_vat_included_prices": [],
+      "expected_values": [],
+      "initial_contract_price": 61980.0,
+      "latest_observed_price": 61980.0,
+      "expected_to_contract_ratio": null
+    },
+    "procurement": {
+      "procedures": [],
+      "regimes": [],
+      "funded": false,
+      "known_addenda_numbers": []
+    },
+    "verification": {
+      "levels": [],
+      "project_registry_ids": [],
+      "detail_verified_sources": 0
+    },
+    "source_count": 1,
+    "source_types": [
+      "registr-smluv"
+    ],
+    "record_count": 1
+  },
+  "sources": [
+    {
+      "source_file": "data/sources/registr-smluv/rs-000041.json",
+      "source_id": "10174036",
+      "record": {
+        "source": "registr-smluv",
+        "source_id": "10174036",
+        "version_id": "10943396",
+        "source_url": "https://smlouvy.gov.cz/smlouva/10174036",
+        "title": "Darovací smlouva č.j. OLP/3650/2019 - darování pozemku v k.ú. Želechy",
+        "buyer_ico": "00275905",
+        "supplier_ico": "70891508",
+        "supplier_name": "Liberecký kraj",
+        "contract_number": "14-OLP/3650/2019",
+        "date": "2019-11-27",
+        "signed_date": "2019-11-27",
+        "published": null,
+        "price": 61980.0,
+        "status": null,
+        "raw": {
+          "source": "registr-smluv",
+          "source_id": "10174036",
+          "version_id": "10943396",
+          "source_url": "https://smlouvy.gov.cz/smlouva/10174036",
+          "title": "Darovací smlouva č.j. OLP/3650/2019 - darování pozemku v k.ú. Želechy",
+          "buyer_ico": "00275905",
+          "supplier_ico": "70891508",
+          "contract_number": "14-OLP/3650/2019",
+          "date": "2019-11-27",
+          "signed_date": "2019-11-27",
+          "published": "",
+          "price": "61980",
+          "value": "61980",
+          "publisher": "",
+          "subject": "Darovací smlouva č.j. OLP/3650/2019 - darování pozemku v k.ú. Želechy",
+          "counterparty": "Liberecký kraj",
+          "detail_url": "https://smlouvy.gov.cz/smlouva/10174036"
+        },
+        "_source_file": "data/sources/registr-smluv/rs-000041.json"
+      }
+    }
+  ],
+  "analysis": {
+    "schema_version": 4,
+    "project_id": "p-darovaci-smlouva-c-j-olp-3650-2019-darovani-pozemku-v-k-u-zelechy-0127",
+    "signal_count": 1,
+    "signals": [
+      {
+        "code": "single_source",
+        "level": "info",
+        "message": "Projekt je zatím doložen pouze jedním zdrojovým záznamem.",
+        "evidence": []
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2019-11-27",
+        "event": "contract",
+        "source": "registr-smluv",
+        "source_id": "10174036",
+        "title": "Darovací smlouva č.j. OLP/3650/2019 - darování pozemku v k.ú. Želechy",
+        "price": 61980.0,
+        "deadline": null
+      }
+    ],
+    "financial": {
+      "baseline_price": 61980.0,
+      "current_observed_price": 61980.0,
+      "absolute_change": 0.0,
+      "percent_change": null,
+      "observed_prices": [
+        61980.0
+      ],
+      "addendum_count": 0,
+      "declared_addenda_count": 0
+    },
+    "metrics": {
+      "source_count": 1,
+      "supplier_count": 1,
+      "price_values": [
+        61980.0
+      ],
+      "date_values": [
+        "2019-11-27"
+      ],
+      "document_count": 0,
+      "deadline_observations": 0,
+      "expected_value_observations": 0,
+      "participant_observations": 0,
+      "bid_observations": 0
+    },
+    "methodology": "Signals are descriptive checks only; they do not establish wrongdoing or causality. They identify differences worth checking and retain source provenance."
+  }
+}
