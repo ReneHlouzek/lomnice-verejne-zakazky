@@ -52,6 +52,16 @@ def price(v):
         return None
 
 
+def prices(r):
+    """Return all comparable monetary values exposed by a source record."""
+    values = []
+    for key in ("price", "price_vat_included", "contract_price", "value"):
+        v = price(r.get(key))
+        if v is not None and all(abs(v - x) > 0.01 for x in values):
+            values.append(v)
+    return values
+
+
 def date_value(v):
     if not v:
         return None
@@ -158,11 +168,17 @@ def score(a, b):
     sim = SequenceMatcher(None, at, bt).ratio() if at and bt else 0
     token_sim = token_overlap(at, bt)
     core_sim = SequenceMatcher(None, act, bct).ratio() if act and bct else 0
-    ap = price(a.get("price") or a.get("contract_price") or a.get("value"))
-    bp = price(b.get("price") or b.get("contract_price") or b.get("value"))
+    ap_values = prices(a)
+    bp_values = prices(b)
+    ap = ap_values[0] if ap_values else None
+    bp = bp_values[0] if bp_values else None
     same_supplier = bool(ai and bi and ai == bi)
-    near_price = bool(ap is not None and bp is not None and (abs(ap - bp) / max(ap, bp) <= .03))
-    exact_price = bool(ap is not None and bp is not None and abs(ap - bp) < 0.01)
+    near_price = any(
+        abs(ap - bp) / max(ap, bp) <= .03
+        for ap in ap_values for bp in bp_values
+        if max(ap, bp) > 0
+    )
+    exact_price = any(abs(ap - bp) < 0.01 for ap in ap_values for bp in bp_values)
     gap = date_gap_days(a, b)
     near_date = gap is not None and gap <= 45
     same_year = gap is not None and gap <= 365
