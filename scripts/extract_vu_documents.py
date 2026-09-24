@@ -28,7 +28,7 @@ def is_document_url(url: str) -> bool:
     return bool(PDF_RE.search(path)) or any(x in path for x in ("/download", "/document", "/attachment"))
 
 def jina_url(url: str) -> str:
-    return "https://r.jina.ai/http://" + url.split("://", 1)[1]
+    return "https://r.jina.ai/https://" + url.split("://", 1)[1]
 
 def fetch_page(url: str):
     headers = {"User-Agent": UA, "Accept": "text/html,application/xhtml+xml"}
@@ -64,6 +64,16 @@ def fetch_page(url: str):
             for v in vals:
                 if isinstance(v, str) and is_document_url(v):
                     docs.append({"url": norm_url(v), "label": tag.get_text(" ", strip=True)})
+    # Jina Reader returns Markdown rather than the original HTML. Recover links
+    # from Markdown and raw URLs as a fallback.
+    for label, href in re.findall(r"\\[([^\\]]*)\\]\\((https?://[^)\\s]+)\\)", html):
+        href = href.replace("&amp;", "&")
+        if is_document_url(href) or ("xenorders" in href.lower() and "orderdocument" in href.lower()):
+            docs.append({"url": href, "label": label.strip()})
+    for href in re.findall(r"https?://[^\\s<>\")]+", html):
+        href = href.rstrip(".,;")
+        if is_document_url(href) or ("xenorders" in href.lower() and "orderdocument" in href.lower()):
+            docs.append({"url": href, "label": ""})
     unique = {d["url"]: d for d in docs}
     return final_url, list(unique.values()), transport
 
