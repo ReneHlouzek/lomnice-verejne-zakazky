@@ -206,7 +206,7 @@ function render(p,documentAnalysis={documents:[]}){
 
     <section id="finance" class="card">
       <div class="section-title"><div><p class="eyebrow dark">PENÍZE</p><h2>Finanční mapa</h2></div></div>
-      ${finance(f,events,change,changePct)}
+      ${finance(f,events,change,changePct,declaredAddenda)}
     </section>
 
     <section id="timeline" class="card">
@@ -289,7 +289,7 @@ function coverage(c,p,ss,events,f){
     ${gaps.length?`<div class="evidence-note warning"><strong>Co v dostupných datech chybí</strong><span>${gaps.map(g=>`• ${esc(g)}`).join('<br>')}</span></div>`:'<div class="evidence-note"><strong>Základní pole jsou pokryta.</strong><span>V dostupných zdrojích nebyla nalezena žádná z uvedených mezer.</span></div>'}
   `;
 }
-function finance(f,es,change,changePct){
+function finance(f,es,change,changePct,declaredAddenda=new Set()){
   const prices=es.filter(e=>e.price!=null);
   if(!prices.length){
     const vat=f.observed_vat_included_prices||[];
@@ -300,6 +300,7 @@ function finance(f,es,change,changePct){
   }
   return`<div class="finance-head"><div><small>Rozdíl mezi první a poslední pozorovanou cenou</small><strong>${change==null?'—':money(change)}</strong><span>${changePct==null?'Procentní změnu nelze spolehlivě spočítat.':pct(changePct)}</span></div><div><small>DPH</small><strong>${f.observed_vat_included_prices?.length?money(f.observed_vat_included_prices[f.observed_vat_included_prices.length-1]):'—'}</strong><span>poslední pozorovaná cena vč. DPH</span></div></div>
   <div class="finance-map">${prices.map((e,i)=>`<div class="finance-step"><span>${i===0?'Výchozí':esc(eventLabel(e.type))}</span><strong>${money(e.price)}</strong><small>${date(e.date)}</small>${i?'<em>'+changeMoney(prices[i-1].price,e.price)+'</em>':''}</div>`).join('')}</div>
+  ${declaredAddenda.size?`<div class="evidence-note warning"><strong>Finanční dopad dodatků není v cenové řadě doložen</strong><span>Zdrojový záznam uvádí dodatky č. ${esc([...declaredAddenda].join(', '))}, ale dostupná data neobsahují samostatnou cenu těchto změn. Změnu ceny proto nevypočítáváme.</span></div>`:''}
   <p class="meta">Mapa zobrazuje pouze ceny skutečně nalezené v evidovaných zdrojích. Uvedené částky nejsou samy o sobě účetní závěrkou.</p>`;
 }
 function changeMoney(a,b){if(a==null)return'';const d=b-a,p=a?d/a*100:null;return`${d>=0?'+':''}${money(d)} ${p==null?'':`(${pct(p)})`}`}
