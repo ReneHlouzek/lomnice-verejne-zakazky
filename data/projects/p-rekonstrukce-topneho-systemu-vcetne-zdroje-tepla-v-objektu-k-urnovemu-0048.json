@@ -1,14 +1,14 @@
 {
-  "id": "p-oprava-povrchu-komunikace-rvacov-ii-etapa-lomnice-nad-popelkou-0014",
-  "title": "Oprava povrchu komunikace Rváčov - II. etapa, Lomnice nad Popelkou",
+  "id": "p-rekonstrukce-topneho-systemu-vcetne-zdroje-tepla-v-objektu-k-urnovemu-0048",
+  "title": "Rekonstrukce topného systému včetně zdroje tepla v objektu K Urnovému háji čp. 118, Lomnice nad Popelkou",
   "buyer_ico": "00275905",
-  "status": "ukonceno-plneni",
+  "status": "unclassified",
   "project_type": "other",
   "canonical": {
-    "title": "Oprava povrchu komunikace Rváčov - II. etapa, Lomnice nad Popelkou",
-    "supplier_ico": "27679438",
+    "title": "Rekonstrukce topného systému včetně zdroje tepla v objektu K Urnovému háji čp. 118, Lomnice nad Popelkou",
+    "supplier_ico": "44564228",
     "identifiers": [
-      "P26V00004395"
+      "P26V00004399"
     ],
     "lifecycle": {
       "events": [
@@ -16,9 +16,9 @@
           "date": "2026-07-02",
           "type": "source_record",
           "source": "vhodne-uverejneni",
-          "source_id": "P26V00004395",
-          "title": "Oprava povrchu komunikace Rváčov - II. etapa, Lomnice nad Popelkou",
-          "price": 1265418.0
+          "source_id": "P26V00004399",
+          "title": "Rekonstrukce topného systému včetně zdroje tepla v objektu K Urnovému háji čp. 118, Lomnice nad Popelkou",
+          "price": 1953762.88
         }
       ],
       "event_count": 1,
@@ -40,9 +40,11 @@
     "financial": {
       "observed_prices": [],
       "observed_vat_included_prices": [
-        1265418.0
+        1953762.88
       ],
-      "expected_values": [],
+      "expected_values": [
+        1100000.0
+      ],
       "initial_contract_price": null,
       "latest_observed_price": null,
       "expected_to_contract_ratio": null
@@ -72,117 +74,110 @@
   },
   "sources": [
     {
-      "source_file": "data/sources/vhodne-uverejneni/vu-000015.json",
-      "source_id": "P26V00004395",
+      "source_file": "data/sources/vhodne-uverejneni/vu-000014.json",
+      "source_id": "P26V00004399",
       "record": {
         "source": "vhodne-uverejneni",
-        "source_id": "P26V00004395",
-        "procurement_id": "P26V00004395",
-        "source_url": "https://www.vhodne-uverejneni.cz/zakazka/oprava-povrchu-komunikace-rvacov-ii-etapa-lomnice-nad-popelkou",
-        "title": "Oprava povrchu komunikace Rváčov - II. etapa, Lomnice nad Popelkou",
+        "source_id": "P26V00004399",
+        "procurement_id": "P26V00004399",
+        "source_url": "https://www.vhodne-uverejneni.cz/zakazka/rekonstrukce-topneho-systemu-vcetne-zdroje-tepla-v-objektu-k-urnovemu-haji-cp-118-lomnice-nad-popelkou",
+        "title": "Rekonstrukce topného systému včetně zdroje tepla v objektu K Urnovému háji čp. 118, Lomnice nad Popelkou",
         "buyer_ico": "00275905",
-        "supplier_ico": "27679438",
-        "supplier_name": "REACOM s.r.o.",
+        "supplier_ico": "44564228",
+        "supplier_name": "RoBa spol. s r.o.",
         "date": "2026-07-02",
-        "price": 1265418.0,
-        "expected_value": null,
-        "price_vat_included": 1265418.0,
-        "status": "ukončeno plnění",
+        "price": 1953762.88,
+        "expected_value": 1100000.0,
+        "price_vat_included": 1953762.88,
+        "status": "dokončen",
         "type": "stavební práce",
         "procurement_regime": "Veřejné zakázky malého rozsahu",
         "procurement_procedure": "přímé zadání",
         "procurement_type": "stavební práce",
         "outcome": "vybraný dodavatel",
-        "description": "Oprava místní komunikace v místní části Rváčov, Lomnice nad Popelkou",
+        "description": "Rekonstrukce topného systému včetně zdroje tepla",
         "cpv": [
-          "45233142"
+          "39715210"
         ],
-        "offer_deadline": "2026-07-02T11:13:00+02:00",
-        "contract_signed_date": "2026-06-22",
+        "offer_deadline": "2026-07-02T12:38:00+02:00",
+        "contract_signed_date": null,
         "award_date": null,
-        "participant_count": 1,
-        "bid_count": 1,
+        "participant_count": 2,
+        "bid_count": 2,
         "funded": null,
         "grant_id": null,
         "project_registry_id": null,
         "known_addenda_numbers": [],
-        "document_count": 2,
+        "document_count": 1,
         "verification_level": "official_xml",
         "official_xml_available": true,
         "verified_web": false,
-        "verified_at": null,
+        "verified_at": "2026-09-22",
         "verification_source": "PVU XMLdataVZ",
         "xml_documents": [
           {
-            "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3907700",
-            "label": "Výše skutečně uhrazené ceny za plnění VZ"
-          },
-          {
-            "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3907712",
+            "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3865358",
             "label": "Smlouva, její změny a dodatky"
           }
         ],
         "xml_file": "data/xml/20260110_20260916.xml",
         "raw": {
           "source": "vhodne-uverejneni",
-          "source_id": "P26V00004395",
-          "procurement_id": "P26V00004395",
-          "source_url": "https://www.vhodne-uverejneni.cz/zakazka/oprava-povrchu-komunikace-rvacov-ii-etapa-lomnice-nad-popelkou",
-          "title": "Oprava povrchu komunikace Rváčov - II. etapa, Lomnice nad Popelkou",
+          "source_id": "P26V00004399",
+          "procurement_id": "P26V00004399",
+          "source_url": "https://www.vhodne-uverejneni.cz/zakazka/rekonstrukce-topneho-systemu-vcetne-zdroje-tepla-v-objektu-k-urnovemu-haji-cp-118-lomnice-nad-popelkou",
+          "title": "Rekonstrukce topného systému včetně zdroje tepla v objektu K Urnovému háji čp. 118, Lomnice nad Popelkou",
           "buyer_ico": "00275905",
-          "supplier_ico": "27679438",
-          "supplier_name": "REACOM s.r.o.",
-          "date": "2026-07-02T11:13:03+02:00",
-          "price": 1265418.0,
-          "status": "ukončeno plnění",
+          "supplier_ico": "44564228",
+          "supplier_name": "RoBa spol. s r.o.",
+          "date": "2026-07-02T12:38:03+02:00",
+          "price": 1953762.88,
+          "status": "dokončen",
           "type": "stavební práce",
-          "contract_signed_date": "2026-06-22",
+          "expected_value": 1100000,
           "verification_level": "official_xml",
+          "verified_web": true,
+          "verified_at": "2026-09-22",
           "verification_source": "PVU XMLdataVZ",
           "procurement_type": "stavební práce",
           "procurement_regime": "Veřejné zakázky malého rozsahu",
           "procurement_procedure": "přímé zadání",
-          "description": "Oprava místní komunikace v místní části Rváčov, Lomnice nad Popelkou",
+          "description": "Rekonstrukce topného systému včetně zdroje tepla",
           "cpv": [
-            "45233142"
+            "39715210"
           ],
-          "offer_deadline": "2026-07-02T11:13:00+02:00",
-          "participant_count": 1,
-          "bid_count": 1,
-          "price_vat_included": 1265418.0,
+          "offer_deadline": "2026-07-02T12:38:00+02:00",
+          "participant_count": 2,
+          "bid_count": 2,
+          "price_vat_included": 1953762.88,
           "outcome": "vybraný dodavatel",
-          "document_count": 2,
+          "document_count": 1,
           "xml_documents": [
             {
-              "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3907700",
-              "label": "Výše skutečně uhrazené ceny za plnění VZ"
-            },
-            {
-              "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3907712",
+              "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3865358",
               "label": "Smlouva, její změny a dodatky"
             }
           ],
-          "xml_file": "data/xml/20260110_20260916.xml",
-          "verified_web": true
+          "xml_file": "data/xml/20260110_20260916.xml"
         },
-        "_source_file": "data/sources/vhodne-uverejneni/vu-000015.json"
+        "_source_file": "data/sources/vhodne-uverejneni/vu-000014.json"
       }
     }
   ],
   "analysis": {
     "schema_version": 4,
-    "project_id": "p-oprava-povrchu-komunikace-rvacov-ii-etapa-lomnice-nad-popelkou-0014",
-    "signal_count": 3,
+    "project_id": "p-rekonstrukce-topneho-systemu-vcetne-zdroje-tepla-v-objektu-k-urnovemu-0048",
+    "signal_count": 4,
     "signals": [
       {
         "code": "participant_count",
         "level": "info",
-        "message": "Ve zdrojových datech je uveden počet účastníků: 1.",
+        "message": "Ve zdrojových datech je uveden počet účastníků: 2.",
         "evidence": [
           {
             "type": "participant_count",
             "values": [
-              1
+              2
             ]
           }
         ]
@@ -190,13 +185,28 @@
       {
         "code": "bid_count",
         "level": "info",
-        "message": "Ve zdrojových datech je uveden počet nabídek: 1.",
+        "message": "Ve zdrojových datech je uveden počet nabídek: 2.",
         "evidence": [
           {
             "type": "bid_count",
             "values": [
-              1
+              2
             ]
+          }
+        ]
+      },
+      {
+        "code": "expected_vs_contract_price",
+        "level": "info",
+        "message": "Výchozí evidovaná smluvní cena se od první nalezené předpokládané hodnoty liší o +77.6 %.",
+        "evidence": [
+          {
+            "type": "expected_vs_contract",
+            "expected_value": 1100000.0,
+            "contract_price": 1953762.88,
+            "delta": 853762.8799999999,
+            "percent": 77.61480727272726,
+            "calculation": "(contract_price-expected_value)/expected_value*100"
           }
         ]
       },
@@ -212,19 +222,19 @@
         "date": "2026-07-02",
         "event": "source_record",
         "source": "vhodne-uverejneni",
-        "source_id": "P26V00004395",
-        "title": "Oprava povrchu komunikace Rváčov - II. etapa, Lomnice nad Popelkou",
-        "price": 1265418.0,
+        "source_id": "P26V00004399",
+        "title": "Rekonstrukce topného systému včetně zdroje tepla v objektu K Urnovému háji čp. 118, Lomnice nad Popelkou",
+        "price": 1953762.88,
         "deadline": null
       }
     ],
     "financial": {
-      "baseline_price": 1265418.0,
-      "current_observed_price": 1265418.0,
+      "baseline_price": 1953762.88,
+      "current_observed_price": 1953762.88,
       "absolute_change": 0.0,
       "percent_change": null,
       "observed_prices": [
-        1265418.0
+        1953762.88
       ],
       "addendum_count": 0,
       "declared_addenda_count": 0
@@ -233,14 +243,14 @@
       "source_count": 1,
       "supplier_count": 1,
       "price_values": [
-        1265418.0
+        1953762.88
       ],
       "date_values": [
         "2026-07-02"
       ],
       "document_count": 0,
       "deadline_observations": 0,
-      "expected_value_observations": 0,
+      "expected_value_observations": 1,
       "participant_observations": 1,
       "bid_observations": 1
     },

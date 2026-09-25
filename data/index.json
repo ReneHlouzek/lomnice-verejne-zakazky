@@ -1,7 +1,7 @@
 {
   "schema_version": 3,
   "parser_state": "resolved",
-  "generated_at": "2026-09-25T05:51:17.720741+00:00",
+  "generated_at": "2026-09-25T06:31:18.422867+00:00",
   "source": {
     "profile_url": "https://www.vhodne-uverejneni.cz/profil/mesto-lomnice-nad-popelkou",
     "organization_name": "Město Lomnice nad Popelkou",
@@ -9,16 +9,16 @@
   },
   "counts": {
     "aktualni-uverejneni": 0,
-    "plneni-smlouvy": 31,
-    "ukonceno-plneni": 17,
+    "plneni-smlouvy": 29,
+    "ukonceno-plneni": 19,
     "zruseno": 7
   },
   "project_type_counts": {
-    "procurement": 47,
+    "procurement": 45,
     "procurement_with_changes": 2,
     "contract_with_changes": 16,
     "contract": 69,
-    "other": 29,
+    "other": 31,
     "unclassified": 0
   },
   "total_projects": 163,
@@ -34,8 +34,8 @@
     "note": "Referenční počty se mohou průběžně měnit. 145 je aktuální součet stavů na profilu zadavatele PVU; 143 je počet smluv zobrazený na stránce smluv organizace PVU. 109 je počet záznamů aktuálně načtených z oficiálního otevřeného exportu Registru smluv pro Město Lomnice nad Popelkou. Tyto počty nejsou po deduplikaci a nesmí se zaměňovat mezi zdroji.",
     "source_url": "https://www.vhodne-uverejneni.cz/profil/mesto-lomnice-nad-popelkou",
     "vhodne_uverejneni_organization_contracts": 143,
-    "vhodne_uverejneni_seed_loaded": 86,
-    "vhodne_uverejneni_verified_web_loaded": 55,
+    "vhodne_uverejneni_seed_loaded": 79,
+    "vhodne_uverejneni_verified_web_loaded": 53,
     "registr_smluv_loaded": 109
   },
   "statuses": {
@@ -46,71 +46,71 @@
     "plneni-smlouvy": {
       "label": "Plnění smlouvy",
       "projects": [
-        "p-dodavka-elektricke-energie-vo-0057",
-        "p-dodavka-elektriny-na-vo-0056",
-        "p-koupe-pozemku-p-p-c-2112-1-2141-16-a-5319-v-k-u-lomnice-nad-popelkou-0046",
-        "p-koupe-pozemku-p-p-c-453-v-k-u-lomnice-nad-popelkou-0041",
-        "p-koupe-spoluvlastnickeho-podilu-id-1-2-na-krizove-vile-0044",
-        "p-lomnice-n-p-ul-5-kvetna-destova-kanalizace-0027",
+        "p-dodavka-elektricke-energie-vo-0055",
+        "p-dodavka-elektriny-na-vo-0054",
+        "p-koupe-pozemku-p-p-c-2112-1-2141-16-a-5319-v-k-u-lomnice-nad-popelkou-0043",
+        "p-koupe-pozemku-p-p-c-453-v-k-u-lomnice-nad-popelkou-0038",
+        "p-koupe-spoluvlastnickeho-podilu-id-1-2-na-krizove-vile-0041",
+        "p-lomnice-n-p-ul-5-kvetna-destova-kanalizace-0026",
         "p-misto-pro-prechazeni-pres-ul-gen-ludvika-svobody-lomnice-nad-popelkou-0006",
-        "p-modernizace-uceben-zus-dodavky-0022",
-        "p-modernizace-uceben-zus-stavebni-prace-0037",
-        "p-modernizace-uceben-zus-stavebni-prace-0051",
-        "p-nastupni-misto-kosov-a-rvacov-lomnice-nad-popelkou-0047",
-        "p-obnova-asfaltoveho-krytu-komunikace-k-oborskemu-rybniku-lomnice-nad-po-0018",
-        "p-obnova-komunikace-lomnice-nad-popelkou-chlum-i-etapa-0055",
+        "p-modernizace-uceben-zus-dodavky-0020",
+        "p-modernizace-uceben-zus-stavebni-prace-0036",
+        "p-modernizace-uceben-zus-stavebni-prace-0049",
+        "p-nastupni-misto-kosov-a-rvacov-lomnice-nad-popelkou-0044",
+        "p-obnova-asfaltoveho-krytu-komunikace-k-oborskemu-rybniku-lomnice-nad-po-0017",
+        "p-obnova-komunikace-lomnice-nad-popelkou-chlum-i-etapa-0053",
         "p-oprava-fasady-sportovni-haly-cp-999-ul-za-skolou-v-lomnici-nad-popelko-0015",
-        "p-oprava-povrchu-komunikace-rvacov-ii-etapa-lomnice-nad-popelkou-0014",
-        "p-oprava-strechy-domu-c-p-32-ul-antala-staska-v-lomnici-nad-popelkou-0042",
+        "p-oprava-strechy-domu-c-p-32-ul-antala-staska-v-lomnici-nad-popelkou-0039",
         "p-pojisteni-majetku-mesta-jeho-prispevkovych-organizaci-a-jejich-pojiste-0016",
-        "p-rekonstrukce-technologie-kotelny-v-budove-radnice-c-p-6-husovo-namesti-0019",
+        "p-rekonstrukce-technologie-kotelny-v-budove-radnice-c-p-6-husovo-namesti-0025",
         "p-restauratorske-prace-na-spodnich-castech-marianskeho-sloupu-v-lomnici-0010",
-        "p-revitalizace-rybnika-matous-a-jeho-okoli-v-lomnici-nad-popelkou-0036",
+        "p-revitalizace-rybnika-matous-a-jeho-okoli-v-lomnici-nad-popelkou-0034",
         "p-revitalizace-verejneho-prostranstvi-na-hrbitove-2-etapa-lomnice-nad-po-0007",
-        "p-rozsireni-polikliniky-lomnice-nad-popelkou-dokumentace-stavebniho-zame-0033",
-        "p-sanace-budovy-cp-61-lomnice-nad-popelkou-od-zemni-vlhkosti-0053",
+        "p-rozsireni-polikliniky-lomnice-nad-popelkou-dokumentace-stavebniho-zame-0031",
+        "p-sanace-budovy-cp-61-lomnice-nad-popelkou-od-zemni-vlhkosti-0051",
         "p-sanace-vlhkeho-zdiva-sklepnich-prostor-cp-886-lomnice-nad-popelkou-0012",
-        "p-silnice-ii-284-lomnice-nad-popelkou-ulice-5-kvetna-0043",
+        "p-silnice-ii-284-lomnice-nad-popelkou-ulice-5-kvetna-0040",
         "p-stavebni-prace-pri-vymene-oken-a-upravy-3-np-cp-61-lomnice-nad-popelko-0013",
         "p-tylovo-divadlo-lomnice-nad-popelkou-dokumentace-stavebniho-zameru-0008",
-        "p-verejne-osvetleni-0052",
-        "p-vo-kosov-podzemni-cast-0040",
-        "p-vymena-oken-zus-lomnice-nad-popelkou-dodavka-a-montaz-0054",
-        "p-zabezpeceni-technickeho-dozoru-stavebnika-na-stavbe-depozitar-u-muzea-0058"
+        "p-verejne-osvetleni-0050",
+        "p-vo-kosov-podzemni-cast-0037",
+        "p-zabezpeceni-technickeho-dozoru-stavebnika-na-stavbe-depozitar-u-muzea-0057"
       ]
     },
     "ukonceno-plneni": {
       "label": "Ukončeno plnění",
       "projects": [
         "p-automobil-pro-terenni-socialni-sluzbu-pecovatelske-sluzby-lomnice-nad-0005",
-        "p-instalace-domovniho-telefonu-a-rozvodu-strukturovane-kabelaze-nnp-lomn-0049",
+        "p-instalace-domovniho-telefonu-a-rozvodu-strukturovane-kabelaze-nnp-lomn-0046",
         "p-karavanove-stani-koupaliste-lomnice-nad-popelkou-0009",
-        "p-koupe-pozemku-pro-parkoviste-mestskeho-koupaliste-0035",
+        "p-koupe-pozemku-pro-parkoviste-mestskeho-koupaliste-0033",
         "p-lomnice-n-p-vo-smetanova-0004",
-        "p-modernizace-infrastruktury-zs-t-g-masaryka-lomnice-nad-popelkou-vybave-0034",
-        "p-obnova-mvn-technolen-lomnice-nad-popelkou-0021",
-        "p-obnova-telocvicen-pri-zs-t-g-masaryka-v-lomnici-nad-popelkou-0045",
-        "p-oprava-vytluku-komunikaci-2024-lomnice-nad-popelkou-0024",
-        "p-oprava-vytluku-komunikaci-2025-lomnice-nad-popelkou-0020",
-        "p-pristavba-servisniho-objektu-lomnice-nad-popelkou-0025",
-        "p-projektova-dokumentace-mistnich-komunikaci-lomnice-nad-popelkou-0029",
-        "p-rekonstrukce-verejneho-osvetleni-ulice-jilemnicka-a-cast-plk-truhlare-0048",
-        "p-soh-a-zazemi-ps-lomnice-nad-popelkou-0026",
-        "p-stavebni-upravy-casti-mestske-polikliniky-v-lomnici-nad-popelkou-cp-86-0028",
+        "p-modernizace-infrastruktury-zs-t-g-masaryka-lomnice-nad-popelkou-vybave-0032",
+        "p-obnova-mvn-technolen-lomnice-nad-popelkou-0019",
+        "p-obnova-telocvicen-pri-zs-t-g-masaryka-v-lomnici-nad-popelkou-0042",
+        "p-oprava-povrchu-komunikace-rvacov-ii-etapa-lomnice-nad-popelkou-0014",
+        "p-oprava-vytluku-komunikaci-2024-lomnice-nad-popelkou-0022",
+        "p-oprava-vytluku-komunikaci-2025-lomnice-nad-popelkou-0018",
+        "p-pristavba-servisniho-objektu-lomnice-nad-popelkou-0023",
+        "p-projektova-dokumentace-mistnich-komunikaci-lomnice-nad-popelkou-0028",
+        "p-rekonstrukce-verejneho-osvetleni-ulice-jilemnicka-a-cast-plk-truhlare-0045",
+        "p-soh-a-zazemi-ps-lomnice-nad-popelkou-0024",
+        "p-stavebni-upravy-casti-mestske-polikliniky-v-lomnici-nad-popelkou-cp-86-0027",
         "p-verejne-osvetleni-v-ul-palackeho-kampelikova-lomnice-nad-popelkou-1-et-0002",
-        "p-vydani-obrazove-publikace-lomnice-nad-popelkou-historie-skolstvi-0003"
+        "p-vydani-obrazove-publikace-lomnice-nad-popelkou-historie-skolstvi-0003",
+        "p-vymena-oken-zus-lomnice-nad-popelkou-dodavka-a-montaz-0052"
       ]
     },
     "zruseno": {
       "label": "Zrušeno",
       "projects": [
-        "p-domov-pro-osoby-s-poruchou-autistickeho-spektra-0023",
-        "p-domov-pro-osoby-s-poruchou-autistickeho-spektra-0031",
-        "p-mesto-lomnice-nad-popelkou-cisternova-automobilova-strikacka-0030",
+        "p-domov-pro-osoby-s-poruchou-autistickeho-spektra-0021",
+        "p-domov-pro-osoby-s-poruchou-autistickeho-spektra-0030",
+        "p-mesto-lomnice-nad-popelkou-cisternova-automobilova-strikacka-0029",
         "p-modernizace-infrastruktury-zs-t-g-masaryka-lomnice-nad-popelkou-staveb-0001",
-        "p-modernizace-infrastruktury-zs-t-g-masaryka-lomnice-nad-popelkou-vybave-0050",
+        "p-modernizace-infrastruktury-zs-t-g-masaryka-lomnice-nad-popelkou-vybave-0047",
         "p-nemocnice-nasledne-pece-lomnice-nad-popelkou-investice-a-opravy-0011",
-        "p-nemocnice-nasledne-pece-lomnice-nad-popelkou-investice-a-opravy-0038"
+        "p-nemocnice-nasledne-pece-lomnice-nad-popelkou-investice-a-opravy-0035"
       ]
     }
   },
@@ -119,59 +119,57 @@
       "label": "Veřejná zakázka / výběr / smlouva",
       "projects": [
         "p-automobil-pro-terenni-socialni-sluzbu-pecovatelske-sluzby-lomnice-nad-0005",
-        "p-dodavka-elektricke-energie-vo-0057",
-        "p-dodavka-elektriny-na-vo-0056",
-        "p-domov-pro-osoby-s-poruchou-autistickeho-spektra-0023",
-        "p-domov-pro-osoby-s-poruchou-autistickeho-spektra-0031",
-        "p-instalace-domovniho-telefonu-a-rozvodu-strukturovane-kabelaze-nnp-lomn-0049",
+        "p-dodavka-elektricke-energie-vo-0055",
+        "p-dodavka-elektriny-na-vo-0054",
+        "p-domov-pro-osoby-s-poruchou-autistickeho-spektra-0021",
+        "p-domov-pro-osoby-s-poruchou-autistickeho-spektra-0030",
+        "p-instalace-domovniho-telefonu-a-rozvodu-strukturovane-kabelaze-nnp-lomn-0046",
         "p-karavanove-stani-koupaliste-lomnice-nad-popelkou-0009",
-        "p-koupe-pozemku-p-p-c-2112-1-2141-16-a-5319-v-k-u-lomnice-nad-popelkou-0046",
-        "p-koupe-pozemku-p-p-c-453-v-k-u-lomnice-nad-popelkou-0041",
-        "p-koupe-pozemku-pro-parkoviste-mestskeho-koupaliste-0035",
-        "p-koupe-spoluvlastnickeho-podilu-id-1-2-na-krizove-vile-0044",
-        "p-lomnice-n-p-ul-5-kvetna-destova-kanalizace-0027",
+        "p-koupe-pozemku-p-p-c-2112-1-2141-16-a-5319-v-k-u-lomnice-nad-popelkou-0043",
+        "p-koupe-pozemku-p-p-c-453-v-k-u-lomnice-nad-popelkou-0038",
+        "p-koupe-pozemku-pro-parkoviste-mestskeho-koupaliste-0033",
+        "p-koupe-spoluvlastnickeho-podilu-id-1-2-na-krizove-vile-0041",
+        "p-lomnice-n-p-ul-5-kvetna-destova-kanalizace-0026",
         "p-lomnice-n-p-vo-smetanova-0004",
-        "p-mesto-lomnice-nad-popelkou-cisternova-automobilova-strikacka-0030",
+        "p-mesto-lomnice-nad-popelkou-cisternova-automobilova-strikacka-0029",
         "p-misto-pro-prechazeni-pres-ul-gen-ludvika-svobody-lomnice-nad-popelkou-0006",
         "p-modernizace-infrastruktury-zs-t-g-masaryka-lomnice-nad-popelkou-staveb-0001",
-        "p-modernizace-infrastruktury-zs-t-g-masaryka-lomnice-nad-popelkou-vybave-0034",
-        "p-modernizace-infrastruktury-zs-t-g-masaryka-lomnice-nad-popelkou-vybave-0050",
-        "p-modernizace-uceben-zus-dodavky-0022",
-        "p-modernizace-uceben-zus-stavebni-prace-0051",
+        "p-modernizace-infrastruktury-zs-t-g-masaryka-lomnice-nad-popelkou-vybave-0032",
+        "p-modernizace-infrastruktury-zs-t-g-masaryka-lomnice-nad-popelkou-vybave-0047",
+        "p-modernizace-uceben-zus-dodavky-0020",
+        "p-modernizace-uceben-zus-stavebni-prace-0049",
         "p-nemocnice-nasledne-pece-lomnice-nad-popelkou-investice-a-opravy-0011",
-        "p-nemocnice-nasledne-pece-lomnice-nad-popelkou-investice-a-opravy-0038",
-        "p-obnova-asfaltoveho-krytu-komunikace-k-oborskemu-rybniku-lomnice-nad-po-0018",
-        "p-obnova-komunikace-lomnice-nad-popelkou-chlum-i-etapa-0055",
-        "p-obnova-mvn-technolen-lomnice-nad-popelkou-0021",
-        "p-obnova-telocvicen-pri-zs-t-g-masaryka-v-lomnici-nad-popelkou-0045",
+        "p-nemocnice-nasledne-pece-lomnice-nad-popelkou-investice-a-opravy-0035",
+        "p-obnova-asfaltoveho-krytu-komunikace-k-oborskemu-rybniku-lomnice-nad-po-0017",
+        "p-obnova-komunikace-lomnice-nad-popelkou-chlum-i-etapa-0053",
+        "p-obnova-mvn-technolen-lomnice-nad-popelkou-0019",
+        "p-obnova-telocvicen-pri-zs-t-g-masaryka-v-lomnici-nad-popelkou-0042",
         "p-oprava-fasady-sportovni-haly-cp-999-ul-za-skolou-v-lomnici-nad-popelko-0015",
-        "p-oprava-povrchu-komunikace-rvacov-ii-etapa-lomnice-nad-popelkou-0014",
-        "p-oprava-strechy-domu-c-p-32-ul-antala-staska-v-lomnici-nad-popelkou-0042",
-        "p-oprava-vytluku-komunikaci-2024-lomnice-nad-popelkou-0024",
-        "p-oprava-vytluku-komunikaci-2025-lomnice-nad-popelkou-0020",
+        "p-oprava-strechy-domu-c-p-32-ul-antala-staska-v-lomnici-nad-popelkou-0039",
+        "p-oprava-vytluku-komunikaci-2024-lomnice-nad-popelkou-0022",
+        "p-oprava-vytluku-komunikaci-2025-lomnice-nad-popelkou-0018",
         "p-pojisteni-majetku-mesta-jeho-prispevkovych-organizaci-a-jejich-pojiste-0016",
-        "p-pristavba-servisniho-objektu-lomnice-nad-popelkou-0025",
-        "p-projektova-dokumentace-mistnich-komunikaci-lomnice-nad-popelkou-0029",
-        "p-rekonstrukce-verejneho-osvetleni-ulice-jilemnicka-a-cast-plk-truhlare-0048",
+        "p-pristavba-servisniho-objektu-lomnice-nad-popelkou-0023",
+        "p-projektova-dokumentace-mistnich-komunikaci-lomnice-nad-popelkou-0028",
+        "p-rekonstrukce-verejneho-osvetleni-ulice-jilemnicka-a-cast-plk-truhlare-0045",
         "p-restauratorske-prace-na-spodnich-castech-marianskeho-sloupu-v-lomnici-0010",
-        "p-revitalizace-rybnika-matous-a-jeho-okoli-v-lomnici-nad-popelkou-0036",
+        "p-revitalizace-rybnika-matous-a-jeho-okoli-v-lomnici-nad-popelkou-0034",
         "p-revitalizace-verejneho-prostranstvi-na-hrbitove-2-etapa-lomnice-nad-po-0007",
-        "p-rozsireni-polikliniky-lomnice-nad-popelkou-dokumentace-stavebniho-zame-0033",
+        "p-rozsireni-polikliniky-lomnice-nad-popelkou-dokumentace-stavebniho-zame-0031",
         "p-sanace-vlhkeho-zdiva-sklepnich-prostor-cp-886-lomnice-nad-popelkou-0012",
-        "p-silnice-ii-284-lomnice-nad-popelkou-ulice-5-kvetna-0043",
-        "p-stavebni-upravy-casti-mestske-polikliniky-v-lomnici-nad-popelkou-cp-86-0028",
+        "p-silnice-ii-284-lomnice-nad-popelkou-ulice-5-kvetna-0040",
+        "p-stavebni-upravy-casti-mestske-polikliniky-v-lomnici-nad-popelkou-cp-86-0027",
         "p-tylovo-divadlo-lomnice-nad-popelkou-dokumentace-stavebniho-zameru-0008",
-        "p-verejne-osvetleni-0052",
-        "p-vo-kosov-podzemni-cast-0040",
-        "p-vydani-obrazove-publikace-lomnice-nad-popelkou-historie-skolstvi-0003",
-        "p-vymena-oken-zus-lomnice-nad-popelkou-dodavka-a-montaz-0054"
+        "p-verejne-osvetleni-0050",
+        "p-vo-kosov-podzemni-cast-0037",
+        "p-vydani-obrazove-publikace-lomnice-nad-popelkou-historie-skolstvi-0003"
       ]
     },
     "procurement_with_changes": {
       "label": "Zakázka se změnami / dodatky",
       "projects": [
-        "p-nastupni-misto-kosov-a-rvacov-lomnice-nad-popelkou-0047",
-        "p-soh-a-zazemi-ps-lomnice-nad-popelkou-0026"
+        "p-nastupni-misto-kosov-a-rvacov-lomnice-nad-popelkou-0044",
+        "p-soh-a-zazemi-ps-lomnice-nad-popelkou-0024"
       ]
     },
     "contract_with_changes": {
@@ -191,7 +189,7 @@
         "p-dodatek-c-2-ke-smlouve-o-poskytnuti-ucelove-dotace-libereckemu-kraji-z-0149",
         "p-dodatek-c-2-ke-smlouve-o-poskytnuti-ucelove-dotace-z-dotacniho-fondu-l-0093",
         "p-dodatek-c-3-ke-smlouve-o-poskytnuti-ucelove-dotace-na-projekt-karavano-0115",
-        "p-modernizace-uceben-zus-stavebni-prace-0037",
+        "p-modernizace-uceben-zus-stavebni-prace-0036",
         "p-verejne-osvetleni-v-ul-palackeho-kampelikova-lomnice-nad-popelkou-1-et-0002"
       ]
     },
@@ -208,8 +206,8 @@
         "p-darovaci-smlouva-rds-lomnice-n-popel-0071",
         "p-darovaci-smlouva-zabezpeceni-materskych-skol-0077",
         "p-kupni-smlouva-c-j-olp-101-2024-prodej-pozemku-v-k-u-plouznice-pod-tabo-0144",
-        "p-rekonstrukce-technologie-kotelny-v-budove-radnice-c-p-6-husovo-namesti-0019",
-        "p-sanace-budovy-cp-61-lomnice-nad-popelkou-od-zemni-vlhkosti-0053",
+        "p-rekonstrukce-technologie-kotelny-v-budove-radnice-c-p-6-husovo-namesti-0025",
+        "p-sanace-budovy-cp-61-lomnice-nad-popelkou-od-zemni-vlhkosti-0051",
         "p-smlouva-lomnice-nad-popelkou-a-nowogrodziec-spolecna-cesta-casem-0096",
         "p-smlouva-o-bezuplatnem-prevodu-a-o-sjednani-jinych-vecnych-prav-pozemky-0155",
         "p-smlouva-o-bezuplatnem-prevodu-privatizovaneho-majetku-do-vlastnictvi-o-0140",
@@ -266,7 +264,7 @@
         "p-verejnopravni-smlouva-o-poskytnuti-neinvesticni-dotace-z-rozpoctu-mest-0114",
         "p-verejnopravni-smlouva-o-poskytnuti-neinvesticni-dotace-z-rozpoctu-mest-0133",
         "p-verejnopravnmi-smlouva-o-poskytnuti-investicni-dotace-z-rozpoctu-mesta-0151",
-        "p-zabezpeceni-technickeho-dozoru-stavebnika-na-stavbe-depozitar-u-muzea-0058"
+        "p-zabezpeceni-technickeho-dozoru-stavebnika-na-stavbe-depozitar-u-muzea-0057"
       ]
     },
     "other": {
@@ -282,23 +280,25 @@
         "p-dohoda-o-zmene-podminek-poskytnuti-dotace-na-zaklade-smlouvy-c-9270370-0148",
         "p-financovani-registrovanych-socialnich-sluzeb-dle-zakona-c-108-2006-sb-0145",
         "p-kamerovy-system-lomnice-nad-popelkou-0158",
-        "p-lesni-cesta-stransko-0017",
+        "p-lesni-cesta-stransko-0056",
         "p-lomnice-nad-popelkou-najem-np-pro-oop-0125",
         "p-memorandum-o-vzajemne-spolupraci-v-ramci-akce-rekonstrukce-silnice-ii-0162",
         "p-o-prevodu-z-majetku-cr-s-pravem-hospodarit-pro-lcr-0098",
         "p-obnova-byvale-svobodovy-hrobky-na-hrbitove-v-lomnici-nad-popelkou-okna-0083",
         "p-obnova-rybnika-matous-v-lomnici-nad-popelkou-0095",
+        "p-oprava-povrchu-komunikace-rvacov-ii-etapa-lomnice-nad-popelkou-0014",
         "p-podskytnuti-dotace-na-poskytovani-sluzeb-v-obecnem-hospodarskem-zajmu-0126",
         "p-poskytnuti-dotace-z-dotacniho-fondu-libereckeho-kraje-program-c-1-1-po-0136",
         "p-poskytnuti-ucelove-dotace-z-dotacniho-fondu-libereckeho-kraje-na-proje-0089",
         "p-poskytnuti-ucelove-dotace-z-rozpoctu-libereckeho-kraje-na-projekt-kara-0159",
         "p-poskytnuti-ucelove-neinvesticni-dotace-na-vypracovani-planu-ochrany-pr-0078",
         "p-poskytnuti-ucelove-neinvesticni-dotace-na-zavazek-verejne-sluzby-z-roz-0061",
-        "p-rekonstrukce-sk-dt-a-vss-v-budove-zus-lomnice-nad-popelkou-0032",
-        "p-rekonstrukce-topneho-systemu-vcetne-zdroje-tepla-v-objektu-k-urnovemu-0039",
+        "p-rekonstrukce-sk-dt-a-vss-v-budove-zus-lomnice-nad-popelkou-0058",
+        "p-rekonstrukce-topneho-systemu-vcetne-zdroje-tepla-v-objektu-k-urnovemu-0048",
         "p-ucelova-dotace-na-projekt-porizeni-domacich-komposteru-0072",
         "p-ucelova-dotace-z-rozpoctu-libereckeho-kraje-dotacniho-programu-podpora-0160",
         "p-ucelova-dotace-z-rozpoctu-libereckeho-kraje-na-projekt-rekonstrukce-mu-0107",
+        "p-vymena-oken-zus-lomnice-nad-popelkou-dodavka-a-montaz-0052",
         "p-zmena-vyse-celkove-neinvesticni-alokace-kterou-lze-pouzit-vyhradne-na-0142",
         "p-zmena-vyse-celkove-neinvesticni-alokace-vyhradne-na-pouziti-na-provoz-0075"
       ]
@@ -835,7 +835,7 @@
       }
     },
     {
-      "id": "p-dodavka-elektricke-energie-vo-0057",
+      "id": "p-dodavka-elektricke-energie-vo-0055",
       "title": "Dodávka elektrické energie VO",
       "status": "plneni-smlouvy",
       "project_type": "procurement",
@@ -856,7 +856,7 @@
       }
     },
     {
-      "id": "p-dodavka-elektriny-na-vo-0056",
+      "id": "p-dodavka-elektriny-na-vo-0054",
       "title": "Dodávka elektřiny na VO",
       "status": "plneni-smlouvy",
       "project_type": "procurement",
@@ -1024,7 +1024,7 @@
       }
     },
     {
-      "id": "p-domov-pro-osoby-s-poruchou-autistickeho-spektra-0023",
+      "id": "p-domov-pro-osoby-s-poruchou-autistickeho-spektra-0021",
       "title": "Domov pro osoby s poruchou autistického spektra",
       "status": "zruseno",
       "project_type": "procurement",
@@ -1045,7 +1045,7 @@
       }
     },
     {
-      "id": "p-domov-pro-osoby-s-poruchou-autistickeho-spektra-0031",
+      "id": "p-domov-pro-osoby-s-poruchou-autistickeho-spektra-0030",
       "title": "Domov pro osoby s poruchou autistického spektra",
       "status": "zruseno",
       "project_type": "procurement",
@@ -1087,7 +1087,7 @@
       }
     },
     {
-      "id": "p-instalace-domovniho-telefonu-a-rozvodu-strukturovane-kabelaze-nnp-lomn-0049",
+      "id": "p-instalace-domovniho-telefonu-a-rozvodu-strukturovane-kabelaze-nnp-lomn-0046",
       "title": "Instalace domovního telefonu a rozvodů strukturované kabeláže NNP, Lomnice nad Popelkou",
       "status": "ukonceno-plneni",
       "project_type": "procurement",
@@ -1150,7 +1150,7 @@
       }
     },
     {
-      "id": "p-koupe-pozemku-p-p-c-2112-1-2141-16-a-5319-v-k-u-lomnice-nad-popelkou-0046",
+      "id": "p-koupe-pozemku-p-p-c-2112-1-2141-16-a-5319-v-k-u-lomnice-nad-popelkou-0043",
       "title": "Koupě pozemků p. p. č. 2112/1, 2141/16, a 5319 v k. ú. Lomnice nad Popelkou",
       "status": "plneni-smlouvy",
       "project_type": "procurement",
@@ -1171,7 +1171,7 @@
       }
     },
     {
-      "id": "p-koupe-pozemku-p-p-c-453-v-k-u-lomnice-nad-popelkou-0041",
+      "id": "p-koupe-pozemku-p-p-c-453-v-k-u-lomnice-nad-popelkou-0038",
       "title": "Koupě pozemku p. p. č. 453 v k. ú. Lomnice nad Popelkou",
       "status": "plneni-smlouvy",
       "project_type": "procurement",
@@ -1192,7 +1192,7 @@
       }
     },
     {
-      "id": "p-koupe-pozemku-pro-parkoviste-mestskeho-koupaliste-0035",
+      "id": "p-koupe-pozemku-pro-parkoviste-mestskeho-koupaliste-0033",
       "title": "Koupě pozemků pro parkoviště Městského koupaliště",
       "status": "ukonceno-plneni",
       "project_type": "procurement",
@@ -1213,7 +1213,7 @@
       }
     },
     {
-      "id": "p-koupe-spoluvlastnickeho-podilu-id-1-2-na-krizove-vile-0044",
+      "id": "p-koupe-spoluvlastnickeho-podilu-id-1-2-na-krizove-vile-0041",
       "title": "Koupě spoluvlastnického podílu id. 1/2 na Křížově vile",
       "status": "plneni-smlouvy",
       "project_type": "procurement",
@@ -1255,7 +1255,7 @@
       }
     },
     {
-      "id": "p-lesni-cesta-stransko-0017",
+      "id": "p-lesni-cesta-stransko-0056",
       "title": "Lesní cesta „Stránsko“",
       "status": "unclassified",
       "project_type": "other",
@@ -1276,7 +1276,7 @@
       }
     },
     {
-      "id": "p-lomnice-n-p-ul-5-kvetna-destova-kanalizace-0027",
+      "id": "p-lomnice-n-p-ul-5-kvetna-destova-kanalizace-0026",
       "title": "Lomnice n. P., ul. 5. května - dešťová kanalizace",
       "status": "plneni-smlouvy",
       "project_type": "procurement",
@@ -1360,7 +1360,7 @@
       }
     },
     {
-      "id": "p-mesto-lomnice-nad-popelkou-cisternova-automobilova-strikacka-0030",
+      "id": "p-mesto-lomnice-nad-popelkou-cisternova-automobilova-strikacka-0029",
       "title": "Město Lomnice nad Popelkou - Cisternová automobilová stříkačka",
       "status": "zruseno",
       "project_type": "procurement",
@@ -1423,7 +1423,7 @@
       }
     },
     {
-      "id": "p-modernizace-infrastruktury-zs-t-g-masaryka-lomnice-nad-popelkou-vybave-0034",
+      "id": "p-modernizace-infrastruktury-zs-t-g-masaryka-lomnice-nad-popelkou-vybave-0032",
       "title": "\"Modernizace infrastruktury ZŠ T. G. Masaryka Lomnice nad Popelkou – vybavení\" Část 1 - Nábytek",
       "status": "ukonceno-plneni",
       "project_type": "procurement",
@@ -1444,7 +1444,7 @@
       }
     },
     {
-      "id": "p-modernizace-infrastruktury-zs-t-g-masaryka-lomnice-nad-popelkou-vybave-0050",
+      "id": "p-modernizace-infrastruktury-zs-t-g-masaryka-lomnice-nad-popelkou-vybave-0047",
       "title": "\"Modernizace infrastruktury ZŠ T. G. Masaryka Lomnice nad Popelkou – vybavení\" Část 1 - Nábytek",
       "status": "zruseno",
       "project_type": "procurement",
@@ -1465,7 +1465,7 @@
       }
     },
     {
-      "id": "p-modernizace-uceben-zus-dodavky-0022",
+      "id": "p-modernizace-uceben-zus-dodavky-0020",
       "title": "Modernizace UČEBEN ZUŠ - dodávky",
       "status": "plneni-smlouvy",
       "project_type": "procurement",
@@ -1486,7 +1486,7 @@
       }
     },
     {
-      "id": "p-modernizace-uceben-zus-stavebni-prace-0037",
+      "id": "p-modernizace-uceben-zus-stavebni-prace-0036",
       "title": "Modernizace UČEBEN ZUŠ - stavební práce",
       "status": "plneni-smlouvy",
       "project_type": "contract_with_changes",
@@ -1507,7 +1507,7 @@
       }
     },
     {
-      "id": "p-modernizace-uceben-zus-stavebni-prace-0051",
+      "id": "p-modernizace-uceben-zus-stavebni-prace-0049",
       "title": "Modernizace UČEBEN ZUŠ - stavební práce",
       "status": "plneni-smlouvy",
       "project_type": "procurement",
@@ -1528,7 +1528,7 @@
       }
     },
     {
-      "id": "p-nastupni-misto-kosov-a-rvacov-lomnice-nad-popelkou-0047",
+      "id": "p-nastupni-misto-kosov-a-rvacov-lomnice-nad-popelkou-0044",
       "title": "Nástupní místo Košov a Rváčov, Lomnice nad Popelkou",
       "status": "plneni-smlouvy",
       "project_type": "procurement_with_changes",
@@ -1570,7 +1570,7 @@
       }
     },
     {
-      "id": "p-nemocnice-nasledne-pece-lomnice-nad-popelkou-investice-a-opravy-0038",
+      "id": "p-nemocnice-nasledne-pece-lomnice-nad-popelkou-investice-a-opravy-0035",
       "title": "Nemocnice následné péče Lomnice nad Popelkou – investice a opravy",
       "status": "zruseno",
       "project_type": "procurement",
@@ -1612,7 +1612,7 @@
       }
     },
     {
-      "id": "p-obnova-asfaltoveho-krytu-komunikace-k-oborskemu-rybniku-lomnice-nad-po-0018",
+      "id": "p-obnova-asfaltoveho-krytu-komunikace-k-oborskemu-rybniku-lomnice-nad-po-0017",
       "title": "Obnova asfaltového krytu komunikace k Oborskému rybníku, Lomnice nad Popelkou",
       "status": "plneni-smlouvy",
       "project_type": "procurement",
@@ -1654,7 +1654,7 @@
       }
     },
     {
-      "id": "p-obnova-komunikace-lomnice-nad-popelkou-chlum-i-etapa-0055",
+      "id": "p-obnova-komunikace-lomnice-nad-popelkou-chlum-i-etapa-0053",
       "title": "Obnova komunikace Lomnice nad Popelkou – Chlum, I. etapa",
       "status": "plneni-smlouvy",
       "project_type": "procurement",
@@ -1675,7 +1675,7 @@
       }
     },
     {
-      "id": "p-obnova-mvn-technolen-lomnice-nad-popelkou-0021",
+      "id": "p-obnova-mvn-technolen-lomnice-nad-popelkou-0019",
       "title": "Obnova MVN Technolen, Lomnice nad Popelkou",
       "status": "ukonceno-plneni",
       "project_type": "procurement",
@@ -1717,7 +1717,7 @@
       }
     },
     {
-      "id": "p-obnova-telocvicen-pri-zs-t-g-masaryka-v-lomnici-nad-popelkou-0045",
+      "id": "p-obnova-telocvicen-pri-zs-t-g-masaryka-v-lomnici-nad-popelkou-0042",
       "title": "Obnova tělocvičen při ZŠ T. G. Masaryka v Lomnici nad Popelkou",
       "status": "ukonceno-plneni",
       "project_type": "procurement",
@@ -1761,10 +1761,10 @@
     {
       "id": "p-oprava-povrchu-komunikace-rvacov-ii-etapa-lomnice-nad-popelkou-0014",
       "title": "Oprava povrchu komunikace Rváčov - II. etapa, Lomnice nad Popelkou",
-      "status": "plneni-smlouvy",
-      "project_type": "procurement",
+      "status": "ukonceno-plneni",
+      "project_type": "other",
       "record_types": {
-        "tender": 1
+        "source_record": 1
       },
       "source_count": 1,
       "source_types": [
@@ -1780,7 +1780,7 @@
       }
     },
     {
-      "id": "p-oprava-strechy-domu-c-p-32-ul-antala-staska-v-lomnici-nad-popelkou-0042",
+      "id": "p-oprava-strechy-domu-c-p-32-ul-antala-staska-v-lomnici-nad-popelkou-0039",
       "title": "Oprava střechy domu č.p. 32, ul. Antala Staška v Lomnici nad Popelkou",
       "status": "plneni-smlouvy",
       "project_type": "procurement",
@@ -1801,7 +1801,7 @@
       }
     },
     {
-      "id": "p-oprava-vytluku-komunikaci-2024-lomnice-nad-popelkou-0024",
+      "id": "p-oprava-vytluku-komunikaci-2024-lomnice-nad-popelkou-0022",
       "title": "Oprava výtluků komunikací 2024, Lomnice nad Popelkou",
       "status": "ukonceno-plneni",
       "project_type": "procurement",
@@ -1822,7 +1822,7 @@
       }
     },
     {
-      "id": "p-oprava-vytluku-komunikaci-2025-lomnice-nad-popelkou-0020",
+      "id": "p-oprava-vytluku-komunikaci-2025-lomnice-nad-popelkou-0018",
       "title": "Oprava výtluků komunikací 2025, Lomnice nad Popelkou",
       "status": "ukonceno-plneni",
       "project_type": "procurement",
@@ -1990,7 +1990,7 @@
       }
     },
     {
-      "id": "p-pristavba-servisniho-objektu-lomnice-nad-popelkou-0025",
+      "id": "p-pristavba-servisniho-objektu-lomnice-nad-popelkou-0023",
       "title": "Přístavba servisního objektu, Lomnice nad Popelkou",
       "status": "ukonceno-plneni",
       "project_type": "procurement",
@@ -2011,7 +2011,7 @@
       }
     },
     {
-      "id": "p-projektova-dokumentace-mistnich-komunikaci-lomnice-nad-popelkou-0029",
+      "id": "p-projektova-dokumentace-mistnich-komunikaci-lomnice-nad-popelkou-0028",
       "title": "Projektová dokumentace místních komunikací, Lomnice nad Popelkou",
       "status": "ukonceno-plneni",
       "project_type": "procurement",
@@ -2032,7 +2032,7 @@
       }
     },
     {
-      "id": "p-rekonstrukce-sk-dt-a-vss-v-budove-zus-lomnice-nad-popelkou-0032",
+      "id": "p-rekonstrukce-sk-dt-a-vss-v-budove-zus-lomnice-nad-popelkou-0058",
       "title": "Rekonstrukce SK, DT a VSS v budově ZUŠ, Lomnice nad Popelkou",
       "status": "unclassified",
       "project_type": "other",
@@ -2053,7 +2053,7 @@
       }
     },
     {
-      "id": "p-rekonstrukce-technologie-kotelny-v-budove-radnice-c-p-6-husovo-namesti-0019",
+      "id": "p-rekonstrukce-technologie-kotelny-v-budove-radnice-c-p-6-husovo-namesti-0025",
       "title": "Rekonstrukce technologie kotelny v budově radnice č.p. 6, Husovo náměstí v Lomnici nad Popelkou",
       "status": "plneni-smlouvy",
       "project_type": "contract",
@@ -2074,7 +2074,7 @@
       }
     },
     {
-      "id": "p-rekonstrukce-topneho-systemu-vcetne-zdroje-tepla-v-objektu-k-urnovemu-0039",
+      "id": "p-rekonstrukce-topneho-systemu-vcetne-zdroje-tepla-v-objektu-k-urnovemu-0048",
       "title": "Rekonstrukce topného systému včetně zdroje tepla v objektu K Urnovému háji čp. 118, Lomnice nad Popelkou",
       "status": "unclassified",
       "project_type": "other",
@@ -2095,7 +2095,7 @@
       }
     },
     {
-      "id": "p-rekonstrukce-verejneho-osvetleni-ulice-jilemnicka-a-cast-plk-truhlare-0048",
+      "id": "p-rekonstrukce-verejneho-osvetleni-ulice-jilemnicka-a-cast-plk-truhlare-0045",
       "title": "Rekonstrukce veřejného osvětlení- ulice Jilemnická a část Plk. Truhláře, Lomnice nad Popelkou",
       "status": "ukonceno-plneni",
       "project_type": "procurement",
@@ -2137,7 +2137,7 @@
       }
     },
     {
-      "id": "p-revitalizace-rybnika-matous-a-jeho-okoli-v-lomnici-nad-popelkou-0036",
+      "id": "p-revitalizace-rybnika-matous-a-jeho-okoli-v-lomnici-nad-popelkou-0034",
       "title": "Revitalizace rybníka Matouš a jeho okolí v Lomnici nad Popelkou",
       "status": "plneni-smlouvy",
       "project_type": "procurement",
@@ -2179,7 +2179,7 @@
       }
     },
     {
-      "id": "p-rozsireni-polikliniky-lomnice-nad-popelkou-dokumentace-stavebniho-zame-0033",
+      "id": "p-rozsireni-polikliniky-lomnice-nad-popelkou-dokumentace-stavebniho-zame-0031",
       "title": "Rozšíření polikliniky Lomnice nad Popelkou - dokumentace stavebního záměru",
       "status": "plneni-smlouvy",
       "project_type": "procurement",
@@ -2200,7 +2200,7 @@
       }
     },
     {
-      "id": "p-sanace-budovy-cp-61-lomnice-nad-popelkou-od-zemni-vlhkosti-0053",
+      "id": "p-sanace-budovy-cp-61-lomnice-nad-popelkou-od-zemni-vlhkosti-0051",
       "title": "Sanace budovy čp. 61, Lomnice nad Popelkou, od zemní vlhkosti",
       "status": "plneni-smlouvy",
       "project_type": "contract",
@@ -2242,7 +2242,7 @@
       }
     },
     {
-      "id": "p-silnice-ii-284-lomnice-nad-popelkou-ulice-5-kvetna-0043",
+      "id": "p-silnice-ii-284-lomnice-nad-popelkou-ulice-5-kvetna-0040",
       "title": "Silnice II/284 Lomnice nad Popelkou, ulice 5. května",
       "status": "plneni-smlouvy",
       "project_type": "procurement",
@@ -3103,7 +3103,7 @@
       }
     },
     {
-      "id": "p-soh-a-zazemi-ps-lomnice-nad-popelkou-0026",
+      "id": "p-soh-a-zazemi-ps-lomnice-nad-popelkou-0024",
       "title": "SOH a zázemí PS Lomnice nad Popelkou",
       "status": "ukonceno-plneni",
       "project_type": "procurement_with_changes",
@@ -3166,7 +3166,7 @@
       }
     },
     {
-      "id": "p-stavebni-upravy-casti-mestske-polikliniky-v-lomnici-nad-popelkou-cp-86-0028",
+      "id": "p-stavebni-upravy-casti-mestske-polikliniky-v-lomnici-nad-popelkou-cp-86-0027",
       "title": "Stavební úpravy části městské polikliniky v Lomnici nad Popelkou čp. 866, ul. Obránců míru, čekárna stomatologické praxe",
       "status": "ukonceno-plneni",
       "project_type": "procurement",
@@ -3271,7 +3271,7 @@
       }
     },
     {
-      "id": "p-verejne-osvetleni-0052",
+      "id": "p-verejne-osvetleni-0050",
       "title": "Veřejné osvětlení",
       "status": "plneni-smlouvy",
       "project_type": "procurement",
@@ -3607,7 +3607,7 @@
       }
     },
     {
-      "id": "p-vo-kosov-podzemni-cast-0040",
+      "id": "p-vo-kosov-podzemni-cast-0037",
       "title": "VO Košov - podzemní část",
       "status": "plneni-smlouvy",
       "project_type": "procurement",
@@ -3649,12 +3649,12 @@
       }
     },
     {
-      "id": "p-vymena-oken-zus-lomnice-nad-popelkou-dodavka-a-montaz-0054",
+      "id": "p-vymena-oken-zus-lomnice-nad-popelkou-dodavka-a-montaz-0052",
       "title": "Výměna oken ZUŠ Lomnice nad Popelkou - dodávka a montáž",
-      "status": "plneni-smlouvy",
-      "project_type": "procurement",
+      "status": "ukonceno-plneni",
+      "project_type": "other",
       "record_types": {
-        "tender": 1
+        "source_record": 1
       },
       "source_count": 1,
       "source_types": [
@@ -3670,7 +3670,7 @@
       }
     },
     {
-      "id": "p-zabezpeceni-technickeho-dozoru-stavebnika-na-stavbe-depozitar-u-muzea-0058",
+      "id": "p-zabezpeceni-technickeho-dozoru-stavebnika-na-stavbe-depozitar-u-muzea-0057",
       "title": "Zabezpečení technického dozoru stavebníka na stavbě „Depozitář u muzea v Lomnici nad Popelkou\"",
       "status": "plneni-smlouvy",
       "project_type": "contract",

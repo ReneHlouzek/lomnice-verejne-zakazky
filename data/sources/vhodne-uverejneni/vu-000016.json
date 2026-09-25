@@ -1,56 +1,100 @@
 {
   "source": "vhodne-uverejneni",
-  "source_id": "vu-2f7b0713a864",
-  "procurement_id": null,
+  "source_id": "P26V00003724",
+  "procurement_id": "P26V00003724",
   "source_url": "https://www.vhodne-uverejneni.cz/zakazka/vymena-oken-zus-lomnice-nad-popelkou-dodavka-a-montaz",
   "title": "Výměna oken ZUŠ Lomnice nad Popelkou - dodávka a montáž",
   "buyer_ico": "00275905",
-  "supplier_ico": null,
-  "supplier_name": null,
+  "supplier_ico": "25915185",
+  "supplier_name": "KEST s.r.o.",
   "date": "2026-06-05",
-  "price": 3010766.0,
+  "price": 3643026.4,
   "expected_value": null,
-  "price_vat_included": null,
-  "status": "plnění smlouvy",
-  "type": "tender",
-  "procurement_regime": null,
-  "procurement_procedure": null,
-  "procurement_type": null,
-  "outcome": null,
-  "description": null,
-  "cpv": [],
-  "offer_deadline": null,
+  "price_vat_included": 3643026.4,
+  "status": "ukončeno plnění",
+  "type": "stavební práce",
+  "procurement_regime": "Veřejné zakázky malého rozsahu",
+  "procurement_procedure": "přímé zadání",
+  "procurement_type": "stavební práce",
+  "outcome": "vybraný dodavatel",
+  "description": "Výměna oken ZUŠ Lomnice nad Popelkou - dodávka a montáž",
+  "cpv": [
+    "45000000"
+  ],
+  "offer_deadline": "2026-06-05T10:45:00+02:00",
   "contract_signed_date": "2026-05-18",
   "award_date": null,
-  "participant_count": null,
-  "bid_count": null,
+  "participant_count": 1,
+  "bid_count": 1,
   "funded": null,
   "grant_id": null,
   "project_registry_id": null,
   "known_addenda_numbers": [],
-  "document_count": null,
-  "verification_level": "external_tender_index",
-  "official_xml_available": false,
+  "document_count": 3,
+  "verification_level": "official_xml",
+  "official_xml_available": true,
   "verified_web": false,
   "verified_at": null,
-  "verification_source": "https://www.hlidacstatu.cz/verejnezakazky/hledat?q=osobaid%3Ajiri-kliment-4",
-  "xml_documents": [],
-  "xml_file": null,
+  "verification_source": "PVU XMLdataVZ",
+  "xml_documents": [
+    {
+      "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3884804",
+      "label": "Výše skutečně uhrazené ceny za plnění VZ"
+    },
+    {
+      "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3884805",
+      "label": "Smlouva, její změny a dodatky"
+    },
+    {
+      "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3884806",
+      "label": "Výzva"
+    }
+  ],
+  "xml_file": "data/xml/20260110_20260916.xml",
   "raw": {
     "source": "vhodne-uverejneni",
-    "source_id": null,
-    "procurement_id": null,
+    "source_id": "P26V00003724",
+    "procurement_id": "P26V00003724",
     "source_url": "https://www.vhodne-uverejneni.cz/zakazka/vymena-oken-zus-lomnice-nad-popelkou-dodavka-a-montaz",
     "title": "Výměna oken ZUŠ Lomnice nad Popelkou - dodávka a montáž",
     "buyer_ico": "00275905",
-    "supplier_ico": null,
-    "supplier_name": null,
-    "date": "2026-06-05",
-    "price": 3010766,
-    "status": "plnění smlouvy",
-    "type": "tender",
+    "supplier_ico": "25915185",
+    "supplier_name": "KEST s.r.o.",
+    "date": "2026-06-05T10:45:02+02:00",
+    "price": 3643026.4,
+    "status": "ukončeno plnění",
+    "type": "stavební práce",
     "contract_signed_date": "2026-05-18",
-    "verification_level": "external_tender_index",
-    "verification_source": "https://www.hlidacstatu.cz/verejnezakazky/hledat?q=osobaid%3Ajiri-kliment-4"
+    "verification_level": "official_xml",
+    "verification_source": "PVU XMLdataVZ",
+    "procurement_type": "stavební práce",
+    "procurement_regime": "Veřejné zakázky malého rozsahu",
+    "procurement_procedure": "přímé zadání",
+    "description": "Výměna oken ZUŠ Lomnice nad Popelkou - dodávka a montáž",
+    "cpv": [
+      "45000000"
+    ],
+    "offer_deadline": "2026-06-05T10:45:00+02:00",
+    "participant_count": 1,
+    "bid_count": 1,
+    "price_vat_included": 3643026.4,
+    "outcome": "vybraný dodavatel",
+    "document_count": 3,
+    "xml_documents": [
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3884804",
+        "label": "Výše skutečně uhrazené ceny za plnění VZ"
+      },
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3884805",
+        "label": "Smlouva, její změny a dodatky"
+      },
+      {
+        "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3884806",
+        "label": "Výzva"
+      }
+    ],
+    "xml_file": "data/xml/20260110_20260916.xml",
+    "verified_web": true
   }
 }

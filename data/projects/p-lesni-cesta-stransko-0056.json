@@ -1,0 +1,259 @@
+{
+  "id": "p-lesni-cesta-stransko-0056",
+  "title": "Lesní cesta „Stránsko“",
+  "buyer_ico": "00275905",
+  "status": "unclassified",
+  "project_type": "other",
+  "canonical": {
+    "title": "Lesní cesta „Stránsko“",
+    "supplier_ico": "28762070",
+    "identifiers": [
+      "P26V00004559"
+    ],
+    "lifecycle": {
+      "events": [
+        {
+          "date": "2026-07-20",
+          "type": "source_record",
+          "source": "vhodne-uverejneni",
+          "source_id": "P26V00004559",
+          "title": "Lesní cesta „Stránsko“",
+          "price": 2745470.75
+        }
+      ],
+      "event_count": 1,
+      "type_counts": {
+        "source_record": 1
+      },
+      "dominant_type": "source_record"
+    },
+    "project_type": "other",
+    "procurement_signal": {
+      "level": "likely",
+      "label": "Pravděpodobně souvisí se zakázkou",
+      "reason": "Název/předmět odpovídá investiční dodávce, stavebním pracím nebo jiné běžné zadavatelské dodávce; způsob výběru dodavatele z tohoto záznamu sám o sobě neplyne."
+    },
+    "dates": {
+      "first_observed": "2026-07-20",
+      "last_observed": "2026-07-20"
+    },
+    "financial": {
+      "observed_prices": [],
+      "observed_vat_included_prices": [
+        2745470.75
+      ],
+      "expected_values": [
+        2268984.0
+      ],
+      "initial_contract_price": null,
+      "latest_observed_price": null,
+      "expected_to_contract_ratio": null
+    },
+    "procurement": {
+      "procedures": [
+        "přímé zadání"
+      ],
+      "regimes": [
+        "Veřejné zakázky malého rozsahu"
+      ],
+      "funded": false,
+      "known_addenda_numbers": []
+    },
+    "verification": {
+      "levels": [
+        "official_xml"
+      ],
+      "project_registry_ids": [],
+      "detail_verified_sources": 0
+    },
+    "source_count": 1,
+    "source_types": [
+      "vhodne-uverejneni"
+    ],
+    "record_count": 1
+  },
+  "sources": [
+    {
+      "source_file": "data/sources/vhodne-uverejneni/vu-000042.json",
+      "source_id": "P26V00004559",
+      "record": {
+        "source": "vhodne-uverejneni",
+        "source_id": "P26V00004559",
+        "procurement_id": "P26V00004559",
+        "source_url": null,
+        "title": "Lesní cesta „Stránsko“",
+        "buyer_ico": "00275905",
+        "supplier_ico": "28762070",
+        "supplier_name": "MIZERA - STAVBY, a.s.",
+        "date": "2026-07-20",
+        "price": 2745470.75,
+        "expected_value": 2268984.0,
+        "price_vat_included": 2745470.75,
+        "status": "dokončen",
+        "type": "stavební práce",
+        "procurement_regime": "Veřejné zakázky malého rozsahu",
+        "procurement_procedure": "přímé zadání",
+        "procurement_type": "stavební práce",
+        "outcome": "vybraný dodavatel",
+        "description": "Předmětem veřejné zakázky Lesní cesta „Stránsko“ je rekonstrukce lesní cesty Stránsko v délce 796 metrů s úpravou parametrů lesní cesty na 2L 4,0/20. Předmět realizace se nachází mezi obcemi Stružinec, Želechy a velkolomem Koštálov. Začátek lesní cesty dle PD (km 0,000) se nachází na východním okraji obce Stružinec, odbočením z cesty spojující Stružinec s obcí Želechy. Trasa směruje přibližně severním směrem. Prochází lesními porosty v přímých úsecích, pouze se dvěma směrovými oblouky menších poloměrů v km 0,045 a 0,300. Končí výjezdem na polní cestu vedoucí po okraji lesního porostu v lokalitě Stránsko (km 0,796). V trase jsou řešeny sjezdy, 2 výhybny, svodnice a čištění propustu. Podkladní vrstvy budou z hrubé štěrkodrti a tříděného kameniva. Krycí vrstva je navržena z drobné štěrkodrti zavibrované do podkladního kameniva a s doplňujícím podrcením drobným kamenivem se zavibrováním. Podkladní a krycí vrstvy vozovky budou z kameniva drceného bez živičného pojiva. V km 0,285-0,310 vpravo a km 0,670-0,695 vpravo budou zpevněny výhybny.",
+        "cpv": [
+          "45233223"
+        ],
+        "offer_deadline": "2026-07-20T11:14:00+02:00",
+        "contract_signed_date": null,
+        "award_date": null,
+        "participant_count": 1,
+        "bid_count": 1,
+        "funded": null,
+        "grant_id": null,
+        "project_registry_id": null,
+        "known_addenda_numbers": [],
+        "document_count": 1,
+        "verification_level": "official_xml",
+        "official_xml_available": true,
+        "verified_web": false,
+        "verified_at": "2026-09-21",
+        "verification_source": "PVU XMLdataVZ",
+        "xml_documents": [
+          {
+            "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3870133",
+            "label": "Smlouva, její změny a dodatky"
+          }
+        ],
+        "xml_file": "data/xml/20260110_20260916.xml",
+        "raw": {
+          "source": "vhodne-uverejneni",
+          "source_id": "P26V00004559",
+          "procurement_id": "P26V00004559",
+          "source_url": null,
+          "title": "Lesní cesta „Stránsko“",
+          "buyer_ico": "00275905",
+          "supplier_ico": "28762070",
+          "supplier_name": "MIZERA - STAVBY, a.s.",
+          "date": "2026-07-20T11:14:03+02:00",
+          "price": 2745470.75,
+          "status": "dokončen",
+          "type": "stavební práce",
+          "verified_web": true,
+          "verified_at": "2026-09-21",
+          "verification_source": "PVU XMLdataVZ",
+          "expected_value": 2268984,
+          "description": "Předmětem  veřejné zakázky Lesní cesta „Stránsko“ je rekonstrukce lesní cesty Stránsko v délce 796 metrů s úpravou parametrů lesní cesty na 2L 4,0/20.\nPředmět realizace se nachází mezi obcemi Stružinec, Želechy a velkolomem Koštálov. Začátek lesní cesty dle PD (km 0,000) se nachází na východním okraji obce Stružinec, odbočením z cesty spojující Stružinec s obcí Želechy. Trasa směruje přibližně severním směrem. Prochází lesními porosty v přímých úsecích, pouze se dvěma směrovými oblouky menších poloměrů v km 0,045 a 0,300. Končí výjezdem na polní cestu vedoucí po okraji lesního porostu v lokalitě Stránsko (km 0,796).\nV trase jsou řešeny sjezdy, 2 výhybny, svodnice a čištění propustu. Podkladní vrstvy budou z hrubé štěrkodrti a tříděného kameniva. Krycí vrstva je navržena z drobné štěrkodrti zavibrované do podkladního kameniva a s doplňujícím podrcením drobným kamenivem se zavibrováním. Podkladní a krycí vrstvy vozovky budou z kameniva drceného bez živičného pojiva. V km 0,285-0,310 vpravo a km 0,670-0,695 vpravo budou zpevněny výhybny.",
+          "verification_level": "official_xml",
+          "procurement_type": "stavební práce",
+          "procurement_regime": "Veřejné zakázky malého rozsahu",
+          "procurement_procedure": "přímé zadání",
+          "cpv": [
+            "45233223"
+          ],
+          "offer_deadline": "2026-07-20T11:14:00+02:00",
+          "participant_count": 1,
+          "bid_count": 1,
+          "price_vat_included": 2745470.75,
+          "outcome": "vybraný dodavatel",
+          "document_count": 1,
+          "xml_documents": [
+            {
+              "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3870133",
+              "label": "Smlouva, její změny a dodatky"
+            }
+          ],
+          "xml_file": "data/xml/20260110_20260916.xml"
+        },
+        "_source_file": "data/sources/vhodne-uverejneni/vu-000042.json"
+      }
+    }
+  ],
+  "analysis": {
+    "schema_version": 4,
+    "project_id": "p-lesni-cesta-stransko-0056",
+    "signal_count": 4,
+    "signals": [
+      {
+        "code": "participant_count",
+        "level": "info",
+        "message": "Ve zdrojových datech je uveden počet účastníků: 1.",
+        "evidence": [
+          {
+            "type": "participant_count",
+            "values": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "code": "bid_count",
+        "level": "info",
+        "message": "Ve zdrojových datech je uveden počet nabídek: 1.",
+        "evidence": [
+          {
+            "type": "bid_count",
+            "values": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "code": "expected_vs_contract_price",
+        "level": "info",
+        "message": "Výchozí evidovaná smluvní cena se od první nalezené předpokládané hodnoty liší o +21.0 %.",
+        "evidence": [
+          {
+            "type": "expected_vs_contract",
+            "expected_value": 2268984.0,
+            "contract_price": 2745470.75,
+            "delta": 476486.75,
+            "percent": 21.000004847984822,
+            "calculation": "(contract_price-expected_value)/expected_value*100"
+          }
+        ]
+      },
+      {
+        "code": "single_source",
+        "level": "info",
+        "message": "Projekt je zatím doložen pouze jedním zdrojovým záznamem.",
+        "evidence": []
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2026-07-20",
+        "event": "source_record",
+        "source": "vhodne-uverejneni",
+        "source_id": "P26V00004559",
+        "title": "Lesní cesta „Stránsko“",
+        "price": 2745470.75,
+        "deadline": null
+      }
+    ],
+    "financial": {
+      "baseline_price": 2745470.75,
+      "current_observed_price": 2745470.75,
+      "absolute_change": 0.0,
+      "percent_change": null,
+      "observed_prices": [
+        2745470.75
+      ],
+      "addendum_count": 0,
+      "declared_addenda_count": 0
+    },
+    "metrics": {
+      "source_count": 1,
+      "supplier_count": 1,
+      "price_values": [
+        2745470.75
+      ],
+      "date_values": [
+        "2026-07-20"
+      ],
+      "document_count": 0,
+      "deadline_observations": 0,
+      "expected_value_observations": 1,
+      "participant_observations": 1,
+      "bid_observations": 1
+    },
+    "methodology": "Signals are descriptive checks only; they do not establish wrongdoing or causality. They identify differences worth checking and retain source provenance."
+  }
+}
