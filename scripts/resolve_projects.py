@@ -108,7 +108,36 @@ def records():
                 continue
             r["_source_file"] = str(p.relative_to(ROOT))
             out.append(r)
-    return [r for r in out if ico(r.get("buyer_ico") or r.get("ico_zadavatele")) in ("", BUYER_ICO)]
+    rows = [r for r in out if ico(r.get("buyer_ico") or r.get("ico_zadavatele")) in ("", BUYER_ICO)]
+    # The VU importer intentionally combines several acquisition paths (seed,
+    # web verification and official PVU XML). They can describe the same
+    # contract with different source IDs. Collapse exact same-source
+    # representations before project resolution, otherwise one real contract
+    # appears as two projects and cross-source matching is artificially weakened.
+    deduped = {}
+    for r in rows:
+        source = str(r.get("source") or "").strip()
+        rid = str(r.get("source_id") or "").strip()
+        source_url = str(r.get("source_url") or "").strip()
+        supplier = ico(r.get("supplier_ico") or r.get("ico_dodavatele"))
+        d = date_value(r.get("date") or r.get("published") or r.get("signed_date") or r.get("award_date")) if "date_value" in globals() else str(r.get("date") or "")
+        t = norm(r.get("title") or r.get("nazev") or r.get("name") or r.get("subject"))
+        pvals = prices(r)
+        if source_url:
+            key = (source, "url", source_url)
+        elif rid:
+            key = (source, "id", rid)
+        else:
+            key = (source, "fingerprint", t, supplier, d, tuple(round(x, 2) for x in pvals))
+        if key not in deduped:
+            deduped[key] = r
+            continue
+        existing = deduped[key]
+        # Keep the richer representation field-by-field.
+        for k, v in r.items():
+            if v not in (None, "", [], {}) and existing.get(k) in (None, "", [], {}):
+                existing[k] = v
+    return list(deduped.values())
 
 
 def key_ids(r):
