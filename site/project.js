@@ -5,6 +5,7 @@ const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&
 const money=v=>v==null?'—':new Intl.NumberFormat('cs-CZ',{style:'currency',currency:'CZK',maximumFractionDigits:0}).format(v);
 const pct=v=>v==null?'—':`${v>=0?'+':''}${Number(v).toFixed(1)} %`;
 const date=v=>v?new Intl.DateTimeFormat('cs-CZ').format(new Date(v+'T00:00:00')):'—';
+const normalizeSource=s=>{const v=String(s||'').toLowerCase().trim();if(v==='vhodne-uverejneni'||v==='vhodné uveřejnění'||v==='vu')return 'vhodne-uverejneni';if(v==='registr-smluv'||v==='registr smluv'||v==='rs')return 'registr-smluv';return v;};
 
 const statusLabels={
   'plneni-smlouvy':'Plnění smlouvy',
