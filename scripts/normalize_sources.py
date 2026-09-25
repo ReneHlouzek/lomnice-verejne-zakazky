@@ -131,7 +131,7 @@ def merge_rows(base_rows, extra_rows):
         if url:
             out.append(("url", url))
         if title and date:
-            out.append(("title_date", re.sub(r"\\s+", " ", title).casefold(), date))
+            out.append(("title_date", re.sub(r"\s+", " ", title).casefold(), date))
             if supplier:
                 out.append(("title_date_supplier", re.sub(r"\\s+", " ", title).casefold(), date, supplier))
             if vals:
@@ -194,6 +194,8 @@ def normalize_vu_seed():
             continue
         verification_level = clean(r.get("verification_level"))
         official_xml_available = bool(r.get("xml_file") or r.get("xml_documents") or verification_level == "official_xml")
+        if official_xml_available:
+            verification_level = "official_xml"
         record = {
             "source": "vhodne-uverejneni",
             "source_id": clean(r.get("source_id") or r.get("procurement_id")) or (
