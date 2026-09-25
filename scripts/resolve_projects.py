@@ -109,34 +109,59 @@ def records():
             r["_source_file"] = str(p.relative_to(ROOT))
             out.append(r)
     rows = [r for r in out if ico(r.get("buyer_ico") or r.get("ico_zadavatele")) in ("", BUYER_ICO)]
-    # The VU importer intentionally combines several acquisition paths (seed,
-    # web verification and official PVU XML). They can describe the same
-    # contract with different source IDs. Collapse exact same-source
-    # representations before project resolution, otherwise one real contract
-    # appears as two projects and cross-source matching is artificially weakened.
+    # The VU importer combines several acquisition paths (seed, web
+    # verification and official PVU XML). The same real contract may therefore
+    # arrive with different source IDs or URLs. Treat exact same-source
+    # identity evidence as one record before cross-source resolution.
+    # Strong keys are URL/source ID. We also accept exact normalized title +
+    # date because sparse profile records can have no supplier/price while the
+    # official XML representation has those richer fields.
     deduped = {}
-    for r in rows:
+    aliases = {}
+
+    def identity_keys(r):
         source = str(r.get("source") or "").strip()
         rid = str(r.get("source_id") or "").strip()
         source_url = str(r.get("source_url") or "").strip()
-        supplier = ico(r.get("supplier_ico") or r.get("ico_dodavatele"))
-        d = date_value(r.get("date") or r.get("published") or r.get("signed_date") or r.get("award_date")) if "date_value" in globals() else str(r.get("date") or "")
+        d = date_value(r.get("date") or r.get("published") or r.get("signed_date") or r.get("award_date"))
         t = norm(r.get("title") or r.get("nazev") or r.get("name") or r.get("subject"))
-        pvals = prices(r)
+        keys = []
         if source_url:
-            key = (source, "url", source_url)
-        elif rid:
-            key = (source, "id", rid)
+            keys.append((source, "url", source_url))
+        if rid:
+            keys.append((source, "id", rid))
+        if t and d:
+            keys.append((source, "title_date", t, d))
+        supplier = ico(r.get("supplier_ico") or r.get("ico_dodavatele"))
+        pvals = prices(r)
+        if t and d and supplier:
+            keys.append((source, "title_date_supplier", t, d, supplier))
+        if t and d and pvals:
+            keys.append((source, "title_date_price", t, d, tuple(round(x, 2) for x in pvals)))
+        return keys
+
+    def find_root(key):
+        root = aliases.get(key)
+        seen = set()
+        while root is not None and root in aliases and root not in seen:
+            seen.add(root)
+            root = aliases[root]
+        return root
+
+    for r in rows:
+        keys = identity_keys(r)
+        root = next((find_root(k) for k in keys if find_root(k) is not None), None)
+        if root is None:
+            root = len(deduped)
+            deduped[root] = dict(r)
         else:
-            key = (source, "fingerprint", t, supplier, d, tuple(round(x, 2) for x in pvals))
-        if key not in deduped:
-            deduped[key] = r
-            continue
-        existing = deduped[key]
-        # Keep the richer representation field-by-field.
-        for k, v in r.items():
-            if v not in (None, "", [], {}) and existing.get(k) in (None, "", [], {}):
-                existing[k] = v
+            existing = deduped[root]
+            for k, v in r.items():
+                if v not in (None, "", [], {}) and existing.get(k) in (None, "", [], {}):
+                    existing[k] = v
+        for key in keys:
+            aliases[key] = root
+
     return list(deduped.values())
 
 
