@@ -7,7 +7,9 @@
   "canonical": {
     "title": "Stavební práce při výměně oken a úpravy 3. NP čp. 61, Lomnice nad Popelkou",
     "supplier_ico": "25937499",
-    "identifiers": [],
+    "identifiers": [
+      "P26V00003497"
+    ],
     "lifecycle": {
       "events": [
         {
@@ -48,8 +50,12 @@
       "expected_to_contract_ratio": null
     },
     "procurement": {
-      "procedures": [],
-      "regimes": [],
+      "procedures": [
+        "přímé zadání"
+      ],
+      "regimes": [
+        "Veřejné zakázky malého rozsahu"
+      ],
       "funded": false,
       "known_addenda_numbers": []
     },
@@ -73,7 +79,7 @@
       "record": {
         "source": "vhodne-uverejneni",
         "source_id": "P26-REG-105575",
-        "procurement_id": null,
+        "procurement_id": "P26V00003497",
         "source_url": "https://www.vhodne-uverejneni.cz/index.php?a=detail&contract=105575&h=contractsregister&m=xenorders",
         "title": "Stavební práce při výměně oken a úpravy 3. NP čp. 61, Lomnice nad Popelkou",
         "buyer_ico": "00275905",
@@ -85,29 +91,40 @@
         "price_vat_included": 7348225.94,
         "status": "smlouva zveřejněna",
         "type": "contract",
-        "procurement_regime": null,
-        "procurement_procedure": null,
-        "procurement_type": null,
-        "outcome": null,
-        "description": null,
-        "cpv": [],
-        "offer_deadline": null,
+        "procurement_regime": "Veřejné zakázky malého rozsahu",
+        "procurement_procedure": "přímé zadání",
+        "procurement_type": "stavební práce",
+        "outcome": "vybraný dodavatel",
+        "description": "Stavební úpravy spojené s výměnou oken v 1. a 2. NP, opravy omítek a elektroinstalace ve 3. NP a související práce",
+        "cpv": [
+          "45000000"
+        ],
+        "offer_deadline": "2026-05-27T12:49:00+02:00",
         "contract_signed_date": null,
         "award_date": null,
-        "participant_count": null,
-        "bid_count": null,
+        "participant_count": 1,
+        "bid_count": 1,
         "funded": null,
         "grant_id": null,
         "project_registry_id": null,
         "known_addenda_numbers": [],
-        "document_count": null,
+        "document_count": 2,
         "verification_level": "contract_pdf",
         "official_xml_available": false,
         "verified_web": true,
         "verified_at": "2026-09-22",
         "verification_source": "https://www.vhodne-uverejneni.cz/index.php?a=detail&contract=105575&h=contractsregister&m=xenorders",
-        "xml_documents": [],
-        "xml_file": null,
+        "xml_documents": [
+          {
+            "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3906771",
+            "label": "Výzva"
+          },
+          {
+            "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3906772",
+            "label": "Smlouva, její změny a dodatky"
+          }
+        ],
+        "xml_file": "data/xml/20260110_20260916.xml",
         "raw": {
           "source": "vhodne-uverejneni",
           "source_id": "P26-REG-105575",
@@ -134,8 +151,34 @@
   "analysis": {
     "schema_version": 4,
     "project_id": "p-stavebni-prace-pri-vymene-oken-a-upravy-3-np-cp-61-lomnice-nad-popelko-0013",
-    "signal_count": 1,
+    "signal_count": 3,
     "signals": [
+      {
+        "code": "participant_count",
+        "level": "info",
+        "message": "Ve zdrojových datech je uveden počet účastníků: 1.",
+        "evidence": [
+          {
+            "type": "participant_count",
+            "values": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "code": "bid_count",
+        "level": "info",
+        "message": "Ve zdrojových datech je uveden počet nabídek: 1.",
+        "evidence": [
+          {
+            "type": "bid_count",
+            "values": [
+              1
+            ]
+          }
+        ]
+      },
       {
         "code": "single_source",
         "level": "info",
@@ -177,8 +220,8 @@
       "document_count": 0,
       "deadline_observations": 0,
       "expected_value_observations": 0,
-      "participant_observations": 0,
-      "bid_observations": 0
+      "participant_observations": 1,
+      "bid_observations": 1
     },
     "methodology": "Signals are descriptive checks only; they do not establish wrongdoing or causality. They identify differences worth checking and retain source provenance."
   }

@@ -1,0 +1,254 @@
+{
+  "id": "p-rekonstrukce-topneho-systemu-vcetne-zdroje-tepla-v-objektu-k-urnovemu-0039",
+  "title": "Rekonstrukce topného systému včetně zdroje tepla v objektu K Urnovému háji čp. 118, Lomnice nad Popelkou",
+  "buyer_ico": "00275905",
+  "status": "unclassified",
+  "project_type": "other",
+  "canonical": {
+    "title": "Rekonstrukce topného systému včetně zdroje tepla v objektu K Urnovému háji čp. 118, Lomnice nad Popelkou",
+    "supplier_ico": "44564228",
+    "identifiers": [
+      "P26V00004399"
+    ],
+    "lifecycle": {
+      "events": [
+        {
+          "date": "2026-07-02",
+          "type": "source_record",
+          "source": "vhodne-uverejneni",
+          "source_id": "P26V00004399",
+          "title": "Rekonstrukce topného systému včetně zdroje tepla v objektu K Urnovému háji čp. 118, Lomnice nad Popelkou",
+          "price": 1953762.88
+        }
+      ],
+      "event_count": 1,
+      "type_counts": {
+        "source_record": 1
+      },
+      "dominant_type": "source_record"
+    },
+    "project_type": "other",
+    "procurement_signal": {
+      "level": "likely",
+      "label": "Pravděpodobně souvisí se zakázkou",
+      "reason": "Název/předmět odpovídá investiční dodávce, stavebním pracím nebo jiné běžné zadavatelské dodávce; způsob výběru dodavatele z tohoto záznamu sám o sobě neplyne."
+    },
+    "dates": {
+      "first_observed": "2026-07-02",
+      "last_observed": "2026-07-02"
+    },
+    "financial": {
+      "observed_prices": [],
+      "observed_vat_included_prices": [
+        1953762.88
+      ],
+      "expected_values": [
+        1100000.0
+      ],
+      "initial_contract_price": null,
+      "latest_observed_price": null,
+      "expected_to_contract_ratio": null
+    },
+    "procurement": {
+      "procedures": [
+        "přímé zadání"
+      ],
+      "regimes": [
+        "Veřejné zakázky malého rozsahu"
+      ],
+      "funded": false,
+      "known_addenda_numbers": []
+    },
+    "verification": {
+      "levels": [
+        "official_xml"
+      ],
+      "project_registry_ids": [],
+      "detail_verified_sources": 0
+    },
+    "source_count": 1,
+    "source_types": [
+      "vhodne-uverejneni"
+    ],
+    "record_count": 1
+  },
+  "sources": [
+    {
+      "source_file": "data/sources/vhodne-uverejneni/vu-000079.json",
+      "source_id": "P26V00004399",
+      "record": {
+        "source": "vhodne-uverejneni",
+        "source_id": "P26V00004399",
+        "procurement_id": "P26V00004399",
+        "source_url": "https://www.vhodne-uverejneni.cz/zakazka/rekonstrukce-topneho-systemu-vcetne-zdroje-tepla-v-objektu-k-urnovemu-haji-cp-118-lomnice-nad-popelkou",
+        "title": "Rekonstrukce topného systému včetně zdroje tepla v objektu K Urnovému háji čp. 118, Lomnice nad Popelkou",
+        "buyer_ico": "00275905",
+        "supplier_ico": "44564228",
+        "supplier_name": "RoBa spol. s r.o.",
+        "date": "2026-07-02",
+        "price": 1953762.88,
+        "expected_value": 1100000.0,
+        "price_vat_included": 1953762.88,
+        "status": "dokončen",
+        "type": "stavební práce",
+        "procurement_regime": "Veřejné zakázky malého rozsahu",
+        "procurement_procedure": "přímé zadání",
+        "procurement_type": "stavební práce",
+        "outcome": "vybraný dodavatel",
+        "description": "Rekonstrukce topného systému včetně zdroje tepla",
+        "cpv": [
+          "39715210"
+        ],
+        "offer_deadline": "2026-07-02T12:38:00+02:00",
+        "contract_signed_date": null,
+        "award_date": null,
+        "participant_count": 2,
+        "bid_count": 2,
+        "funded": null,
+        "grant_id": null,
+        "project_registry_id": null,
+        "known_addenda_numbers": [],
+        "document_count": 1,
+        "verification_level": "official_xml",
+        "official_xml_available": true,
+        "verified_web": false,
+        "verified_at": "2026-09-22",
+        "verification_source": "PVU XMLdataVZ",
+        "xml_documents": [
+          {
+            "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3865358",
+            "label": "Smlouva, její změny a dodatky"
+          }
+        ],
+        "xml_file": "data/xml/20260110_20260916.xml",
+        "raw": {
+          "source_id": "P26V00004399",
+          "procurement_id": "P26V00004399",
+          "title": "Rekonstrukce topného systému včetně zdroje tepla v objektu K Urnovému háji čp. 118, Lomnice nad Popelkou",
+          "date": "2026-07-02T12:38:03+02:00",
+          "type": "stavební práce",
+          "procurement_type": "stavební práce",
+          "procurement_regime": "Veřejné zakázky malého rozsahu",
+          "procurement_procedure": "přímé zadání",
+          "status": "dokončen",
+          "description": "Rekonstrukce topného systému včetně zdroje tepla",
+          "cpv": [
+            "39715210"
+          ],
+          "offer_deadline": "2026-07-02T12:38:00+02:00",
+          "participant_count": 2,
+          "bid_count": 2,
+          "supplier_ico": "44564228",
+          "supplier_name": "RoBa spol. s r.o.",
+          "price_vat_included": 1953762.88,
+          "price": 1953762.88,
+          "outcome": "vybraný dodavatel",
+          "document_count": 1,
+          "xml_documents": [
+            {
+              "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3865358",
+              "label": "Smlouva, její změny a dodatky"
+            }
+          ],
+          "xml_file": "data/xml/20260110_20260916.xml",
+          "verified_web": true,
+          "verification_level": "official_xml",
+          "verification_source": "PVU XMLdataVZ"
+        },
+        "_source_file": "data/sources/vhodne-uverejneni/vu-000079.json"
+      }
+    }
+  ],
+  "analysis": {
+    "schema_version": 4,
+    "project_id": "p-rekonstrukce-topneho-systemu-vcetne-zdroje-tepla-v-objektu-k-urnovemu-0039",
+    "signal_count": 4,
+    "signals": [
+      {
+        "code": "participant_count",
+        "level": "info",
+        "message": "Ve zdrojových datech je uveden počet účastníků: 2.",
+        "evidence": [
+          {
+            "type": "participant_count",
+            "values": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "code": "bid_count",
+        "level": "info",
+        "message": "Ve zdrojových datech je uveden počet nabídek: 2.",
+        "evidence": [
+          {
+            "type": "bid_count",
+            "values": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "code": "expected_vs_contract_price",
+        "level": "info",
+        "message": "Výchozí evidovaná smluvní cena se od první nalezené předpokládané hodnoty liší o +77.6 %.",
+        "evidence": [
+          {
+            "type": "expected_vs_contract",
+            "expected_value": 1100000.0,
+            "contract_price": 1953762.88,
+            "delta": 853762.8799999999,
+            "percent": 77.61480727272726,
+            "calculation": "(contract_price-expected_value)/expected_value*100"
+          }
+        ]
+      },
+      {
+        "code": "single_source",
+        "level": "info",
+        "message": "Projekt je zatím doložen pouze jedním zdrojovým záznamem.",
+        "evidence": []
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2026-07-02",
+        "event": "source_record",
+        "source": "vhodne-uverejneni",
+        "source_id": "P26V00004399",
+        "title": "Rekonstrukce topného systému včetně zdroje tepla v objektu K Urnovému háji čp. 118, Lomnice nad Popelkou",
+        "price": 1953762.88,
+        "deadline": null
+      }
+    ],
+    "financial": {
+      "baseline_price": 1953762.88,
+      "current_observed_price": 1953762.88,
+      "absolute_change": 0.0,
+      "percent_change": null,
+      "observed_prices": [
+        1953762.88
+      ],
+      "addendum_count": 0,
+      "declared_addenda_count": 0
+    },
+    "metrics": {
+      "source_count": 1,
+      "supplier_count": 1,
+      "price_values": [
+        1953762.88
+      ],
+      "date_values": [
+        "2026-07-02"
+      ],
+      "document_count": 0,
+      "deadline_observations": 0,
+      "expected_value_observations": 1,
+      "participant_observations": 1,
+      "bid_observations": 1
+    },
+    "methodology": "Signals are descriptive checks only; they do not establish wrongdoing or causality. They identify differences worth checking and retain source provenance."
+  }
+}

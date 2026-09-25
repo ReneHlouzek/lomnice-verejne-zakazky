@@ -1,0 +1,170 @@
+{
+  "id": "p-dodatek-c-1-verejnopravni-smlouvy-o-poskytnuti-neinvesticni-dotace-z-r-0101",
+  "title": "Dodatek č. 1 veřejnoprávní smlouvy o poskytnutí neinvestiční dotace z rozpočtu města Lomnice nad Popelkou na akci Lomnice nad Popelkou - KOšov , obnova vodovodu",
+  "buyer_ico": "00275905",
+  "status": "unclassified",
+  "project_type": "contract_with_changes",
+  "canonical": {
+    "title": "Dodatek č. 1 veřejnoprávní smlouvy o poskytnutí neinvestiční dotace z rozpočtu města Lomnice nad Popelkou na akci Lomnice nad Popelkou - KOšov , obnova vodovodu",
+    "supplier_ico": "49295934",
+    "identifiers": [],
+    "lifecycle": {
+      "events": [
+        {
+          "date": "2025-09-22",
+          "type": "addendum",
+          "source": "registr-smluv",
+          "source_id": "32731945",
+          "title": "Dodatek č. 1 veřejnoprávní smlouvy o poskytnutí neinvestiční dotace z rozpočtu města Lomnice nad Popelkou na akci Lomnice nad Popelkou - KOšov , obnova vodovodu",
+          "price": 1323950.25
+        }
+      ],
+      "event_count": 1,
+      "type_counts": {
+        "addendum": 1
+      },
+      "dominant_type": "addendum"
+    },
+    "project_type": "contract_with_changes",
+    "procurement_signal": {
+      "level": "likely",
+      "label": "Pravděpodobně souvisí se zakázkou",
+      "reason": "Název/předmět odpovídá investiční dodávce, stavebním pracím nebo jiné běžné zadavatelské dodávce; způsob výběru dodavatele z tohoto záznamu sám o sobě neplyne."
+    },
+    "dates": {
+      "first_observed": "2025-09-22",
+      "last_observed": "2025-09-22"
+    },
+    "financial": {
+      "observed_prices": [
+        1323950.25
+      ],
+      "observed_vat_included_prices": [],
+      "expected_values": [],
+      "initial_contract_price": 1323950.25,
+      "latest_observed_price": 1323950.25,
+      "expected_to_contract_ratio": null
+    },
+    "procurement": {
+      "procedures": [],
+      "regimes": [],
+      "funded": false,
+      "known_addenda_numbers": []
+    },
+    "verification": {
+      "levels": [],
+      "project_registry_ids": [],
+      "detail_verified_sources": 0
+    },
+    "source_count": 1,
+    "source_types": [
+      "registr-smluv"
+    ],
+    "record_count": 1
+  },
+  "sources": [
+    {
+      "source_file": "data/sources/registr-smluv/rs-000092.json",
+      "source_id": "32731945",
+      "record": {
+        "source": "registr-smluv",
+        "source_id": "32731945",
+        "version_id": "34905225",
+        "source_url": "https://smlouvy.gov.cz/smlouva/32731945",
+        "title": "Dodatek č. 1 veřejnoprávní smlouvy o poskytnutí neinvestiční dotace z rozpočtu města Lomnice nad Popelkou na akci Lomnice nad Popelkou - KOšov , obnova vodovodu",
+        "buyer_ico": "00275905",
+        "supplier_ico": "49295934",
+        "supplier_name": "Vodohospodářské sdružení Turnov",
+        "contract_number": null,
+        "date": "2025-09-22",
+        "signed_date": "2025-09-22",
+        "published": null,
+        "price": 1323950.25,
+        "status": null,
+        "raw": {
+          "source": "registr-smluv",
+          "source_id": "32731945",
+          "version_id": "34905225",
+          "source_url": "https://smlouvy.gov.cz/smlouva/32731945",
+          "title": "Dodatek č. 1 veřejnoprávní smlouvy o poskytnutí neinvestiční dotace z rozpočtu města Lomnice nad Popelkou na akci Lomnice nad Popelkou - KOšov , obnova vodovodu",
+          "buyer_ico": "00275905",
+          "supplier_ico": "49295934",
+          "contract_number": "",
+          "date": "2025-09-22",
+          "signed_date": "2025-09-22",
+          "published": "",
+          "price": "1323950.25",
+          "value": "1323950.25",
+          "publisher": "",
+          "subject": "Dodatek č. 1 veřejnoprávní smlouvy o poskytnutí neinvestiční dotace z rozpočtu města Lomnice nad Popelkou na akci Lomnice nad Popelkou - KOšov , obnova vodovodu",
+          "counterparty": "Vodohospodářské sdružení Turnov",
+          "detail_url": "https://smlouvy.gov.cz/smlouva/32731945"
+        },
+        "_source_file": "data/sources/registr-smluv/rs-000092.json"
+      }
+    }
+  ],
+  "analysis": {
+    "schema_version": 4,
+    "project_id": "p-dodatek-c-1-verejnopravni-smlouvy-o-poskytnuti-neinvesticni-dotace-z-r-0101",
+    "signal_count": 2,
+    "signals": [
+      {
+        "code": "addendum_count",
+        "level": "info",
+        "message": "Ve zdrojových záznamech je doloženo nejméně 1 dodatků / změnových záznamů.",
+        "evidence": [
+          {
+            "type": "count",
+            "value": 1,
+            "declared_numbers": []
+          }
+        ]
+      },
+      {
+        "code": "single_source",
+        "level": "info",
+        "message": "Projekt je zatím doložen pouze jedním zdrojovým záznamem.",
+        "evidence": []
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2025-09-22",
+        "event": "addendum",
+        "source": "registr-smluv",
+        "source_id": "32731945",
+        "title": "Dodatek č. 1 veřejnoprávní smlouvy o poskytnutí neinvestiční dotace z rozpočtu města Lomnice nad Popelkou na akci Lomnice nad Popelkou - KOšov , obnova vodovodu",
+        "price": 1323950.25,
+        "deadline": null
+      }
+    ],
+    "financial": {
+      "baseline_price": 1323950.25,
+      "current_observed_price": 1323950.25,
+      "absolute_change": 0.0,
+      "percent_change": null,
+      "observed_prices": [
+        1323950.25
+      ],
+      "addendum_count": 1,
+      "declared_addenda_count": 0
+    },
+    "metrics": {
+      "source_count": 1,
+      "supplier_count": 1,
+      "price_values": [
+        1323950.25
+      ],
+      "date_values": [
+        "2025-09-22"
+      ],
+      "document_count": 0,
+      "deadline_observations": 0,
+      "expected_value_observations": 0,
+      "participant_observations": 0,
+      "bid_observations": 0
+    },
+    "methodology": "Signals are descriptive checks only; they do not establish wrongdoing or causality. They identify differences worth checking and retain source provenance."
+  }
+}

@@ -42,7 +42,9 @@
       "observed_vat_included_prices": [
         2745470.75
       ],
-      "expected_values": [],
+      "expected_values": [
+        2268984.0
+      ],
       "initial_contract_price": null,
       "latest_observed_price": null,
       "expected_to_contract_ratio": null
@@ -85,7 +87,7 @@
         "supplier_name": "MIZERA - STAVBY, a.s.",
         "date": "2026-07-20",
         "price": 2745470.75,
-        "expected_value": null,
+        "expected_value": 2268984.0,
         "price_vat_included": 2745470.75,
         "status": "dokončen",
         "type": "stavební práce",
@@ -110,7 +112,7 @@
         "verification_level": "official_xml",
         "official_xml_available": true,
         "verified_web": false,
-        "verified_at": null,
+        "verified_at": "2026-09-21",
         "verification_source": "PVU XMLdataVZ",
         "xml_documents": [
           {
@@ -160,7 +162,7 @@
   "analysis": {
     "schema_version": 4,
     "project_id": "p-lesni-cesta-stransko-0017",
-    "signal_count": 3,
+    "signal_count": 4,
     "signals": [
       {
         "code": "participant_count",
@@ -185,6 +187,21 @@
             "values": [
               1
             ]
+          }
+        ]
+      },
+      {
+        "code": "expected_vs_contract_price",
+        "level": "info",
+        "message": "Výchozí evidovaná smluvní cena se od první nalezené předpokládané hodnoty liší o +21.0 %.",
+        "evidence": [
+          {
+            "type": "expected_vs_contract",
+            "expected_value": 2268984.0,
+            "contract_price": 2745470.75,
+            "delta": 476486.75,
+            "percent": 21.000004847984822,
+            "calculation": "(contract_price-expected_value)/expected_value*100"
           }
         ]
       },
@@ -228,7 +245,7 @@
       ],
       "document_count": 0,
       "deadline_observations": 0,
-      "expected_value_observations": 0,
+      "expected_value_observations": 1,
       "participant_observations": 1,
       "bid_observations": 1
     },
