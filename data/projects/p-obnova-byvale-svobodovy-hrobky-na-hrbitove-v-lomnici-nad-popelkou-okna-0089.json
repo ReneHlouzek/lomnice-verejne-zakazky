@@ -1,0 +1,152 @@
+{
+  "id": "p-obnova-byvale-svobodovy-hrobky-na-hrbitove-v-lomnici-nad-popelkou-okna-0089",
+  "title": "Obnova bývalé Svobodovy hrobky na hřbitově v Lomnici nad Popelkou - okna a vstupní dveře",
+  "buyer_ico": "00275905",
+  "status": "unclassified",
+  "project_type": "other",
+  "canonical": {
+    "title": "Obnova bývalé Svobodovy hrobky na hřbitově v Lomnici nad Popelkou - okna a vstupní dveře",
+    "supplier_ico": "70891508",
+    "identifiers": [],
+    "lifecycle": {
+      "events": [
+        {
+          "date": "2019-09-11",
+          "type": "source_record",
+          "source": "registr-smluv",
+          "source_id": "8497295",
+          "title": "Obnova bývalé Svobodovy hrobky na hřbitově v Lomnici nad Popelkou - okna a vstupní dveře",
+          "price": null
+        }
+      ],
+      "event_count": 1,
+      "type_counts": {
+        "source_record": 1
+      },
+      "dominant_type": "source_record"
+    },
+    "project_type": "other",
+    "procurement_signal": {
+      "level": "likely",
+      "label": "Pravděpodobně souvisí se zakázkou",
+      "reason": "Název/předmět odpovídá investiční dodávce, stavebním pracím nebo jiné běžné zadavatelské dodávce; způsob výběru dodavatele z tohoto záznamu sám o sobě neplyne."
+    },
+    "dates": {
+      "first_observed": "2019-09-11",
+      "last_observed": "2019-09-11"
+    },
+    "financial": {
+      "observed_prices": [],
+      "observed_vat_included_prices": [],
+      "expected_values": [],
+      "initial_contract_price": null,
+      "latest_observed_price": null,
+      "expected_to_contract_ratio": null
+    },
+    "procurement": {
+      "procedures": [],
+      "regimes": [],
+      "funded": false,
+      "known_addenda_numbers": []
+    },
+    "verification": {
+      "levels": [],
+      "project_registry_ids": [],
+      "detail_verified_sources": 0
+    },
+    "source_count": 1,
+    "source_types": [
+      "registr-smluv"
+    ],
+    "record_count": 1
+  },
+  "sources": [
+    {
+      "source_file": "data/sources/registr-smluv/rs-000040.json",
+      "source_id": "8497295",
+      "record": {
+        "source": "registr-smluv",
+        "source_id": "8497295",
+        "version_id": "10218374",
+        "source_url": "https://smlouvy.gov.cz/smlouva/8497295",
+        "title": "Obnova bývalé Svobodovy hrobky na hřbitově v Lomnici nad Popelkou - okna a vstupní dveře",
+        "buyer_ico": "00275905",
+        "supplier_ico": "70891508",
+        "supplier_name": "Liberecký kraj",
+        "contract_number": "07-OLP/1552/2019",
+        "date": "2019-09-11",
+        "signed_date": "2019-09-11",
+        "published": null,
+        "price": null,
+        "status": null,
+        "raw": {
+          "source": "registr-smluv",
+          "source_id": "8497295",
+          "version_id": "10218374",
+          "source_url": "https://smlouvy.gov.cz/smlouva/8497295",
+          "title": "Obnova bývalé Svobodovy hrobky na hřbitově v Lomnici nad Popelkou - okna a vstupní dveře",
+          "buyer_ico": "00275905",
+          "supplier_ico": "70891508",
+          "contract_number": "07-OLP/1552/2019",
+          "date": "2019-09-11",
+          "signed_date": "2019-09-11",
+          "published": "",
+          "price": "",
+          "value": "",
+          "publisher": "",
+          "subject": "Obnova bývalé Svobodovy hrobky na hřbitově v Lomnici nad Popelkou - okna a vstupní dveře",
+          "counterparty": "Liberecký kraj",
+          "detail_url": "https://smlouvy.gov.cz/smlouva/8497295"
+        },
+        "_source_file": "data/sources/registr-smluv/rs-000040.json"
+      }
+    }
+  ],
+  "analysis": {
+    "schema_version": 4,
+    "project_id": "p-obnova-byvale-svobodovy-hrobky-na-hrbitove-v-lomnici-nad-popelkou-okna-0089",
+    "signal_count": 1,
+    "signals": [
+      {
+        "code": "single_source",
+        "level": "info",
+        "message": "Projekt je zatím doložen pouze jedním zdrojovým záznamem.",
+        "evidence": []
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2019-09-11",
+        "event": "source_record",
+        "source": "registr-smluv",
+        "source_id": "8497295",
+        "title": "Obnova bývalé Svobodovy hrobky na hřbitově v Lomnici nad Popelkou - okna a vstupní dveře",
+        "price": null,
+        "deadline": null
+      }
+    ],
+    "financial": {
+      "baseline_price": null,
+      "current_observed_price": null,
+      "absolute_change": null,
+      "percent_change": null,
+      "observed_prices": [],
+      "addendum_count": 0,
+      "declared_addenda_count": 0
+    },
+    "metrics": {
+      "source_count": 1,
+      "supplier_count": 1,
+      "price_values": [],
+      "date_values": [
+        "2019-09-11"
+      ],
+      "document_count": 0,
+      "deadline_observations": 0,
+      "expected_value_observations": 0,
+      "participant_observations": 0,
+      "bid_observations": 0
+    },
+    "methodology": "Signals are descriptive checks only; they do not establish wrongdoing or causality. They identify differences worth checking and retain source provenance."
+  }
+}

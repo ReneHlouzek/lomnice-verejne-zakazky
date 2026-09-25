@@ -1,0 +1,152 @@
+{
+  "id": "p-kamerovy-system-lomnice-nad-popelkou-0168",
+  "title": "Kamerový systém Lomnice nad Popelkou",
+  "buyer_ico": "00275905",
+  "status": "unclassified",
+  "project_type": "other",
+  "canonical": {
+    "title": "Kamerový systém Lomnice nad Popelkou",
+    "supplier_ico": "72050501",
+    "identifiers": [],
+    "lifecycle": {
+      "events": [
+        {
+          "date": "2018-01-19",
+          "type": "source_record",
+          "source": "registr-smluv",
+          "source_id": "4286240",
+          "title": "Kamerový systém Lomnice nad Popelkou",
+          "price": null
+        }
+      ],
+      "event_count": 1,
+      "type_counts": {
+        "source_record": 1
+      },
+      "dominant_type": "source_record"
+    },
+    "project_type": "other",
+    "procurement_signal": {
+      "level": "likely",
+      "label": "Pravděpodobně souvisí se zakázkou",
+      "reason": "Název/předmět odpovídá investiční dodávce, stavebním pracím nebo jiné běžné zadavatelské dodávce; způsob výběru dodavatele z tohoto záznamu sám o sobě neplyne."
+    },
+    "dates": {
+      "first_observed": "2018-01-19",
+      "last_observed": "2018-01-19"
+    },
+    "financial": {
+      "observed_prices": [],
+      "observed_vat_included_prices": [],
+      "expected_values": [],
+      "initial_contract_price": null,
+      "latest_observed_price": null,
+      "expected_to_contract_ratio": null
+    },
+    "procurement": {
+      "procedures": [],
+      "regimes": [],
+      "funded": false,
+      "known_addenda_numbers": []
+    },
+    "verification": {
+      "levels": [],
+      "project_registry_ids": [],
+      "detail_verified_sources": 0
+    },
+    "source_count": 1,
+    "source_types": [
+      "registr-smluv"
+    ],
+    "record_count": 1
+  },
+  "sources": [
+    {
+      "source_file": "data/sources/registr-smluv/rs-000028.json",
+      "source_id": "4286240",
+      "record": {
+        "source": "registr-smluv",
+        "source_id": "4286240",
+        "version_id": "4618568",
+        "source_url": "https://smlouvy.gov.cz/smlouva/4286240",
+        "title": "Kamerový systém Lomnice nad Popelkou",
+        "buyer_ico": "00275905",
+        "supplier_ico": "72050501",
+        "supplier_name": "Krajské ředitelství policie Libereckého kraje",
+        "contract_number": "925003585.00.000 / KRPL-119398/ČJ-2015-1800IT",
+        "date": "2018-01-19",
+        "signed_date": "2018-01-19",
+        "published": null,
+        "price": null,
+        "status": null,
+        "raw": {
+          "source": "registr-smluv",
+          "source_id": "4286240",
+          "version_id": "4618568",
+          "source_url": "https://smlouvy.gov.cz/smlouva/4286240",
+          "title": "Kamerový systém Lomnice nad Popelkou",
+          "buyer_ico": "00275905",
+          "supplier_ico": "72050501",
+          "contract_number": "925003585.00.000 / KRPL-119398/ČJ-2015-1800IT",
+          "date": "2018-01-19",
+          "signed_date": "2018-01-19",
+          "published": "",
+          "price": "",
+          "value": "",
+          "publisher": "",
+          "subject": "Kamerový systém Lomnice nad Popelkou",
+          "counterparty": "Krajské ředitelství policie Libereckého kraje",
+          "detail_url": "https://smlouvy.gov.cz/smlouva/4286240"
+        },
+        "_source_file": "data/sources/registr-smluv/rs-000028.json"
+      }
+    }
+  ],
+  "analysis": {
+    "schema_version": 4,
+    "project_id": "p-kamerovy-system-lomnice-nad-popelkou-0168",
+    "signal_count": 1,
+    "signals": [
+      {
+        "code": "single_source",
+        "level": "info",
+        "message": "Projekt je zatím doložen pouze jedním zdrojovým záznamem.",
+        "evidence": []
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2018-01-19",
+        "event": "source_record",
+        "source": "registr-smluv",
+        "source_id": "4286240",
+        "title": "Kamerový systém Lomnice nad Popelkou",
+        "price": null,
+        "deadline": null
+      }
+    ],
+    "financial": {
+      "baseline_price": null,
+      "current_observed_price": null,
+      "absolute_change": null,
+      "percent_change": null,
+      "observed_prices": [],
+      "addendum_count": 0,
+      "declared_addenda_count": 0
+    },
+    "metrics": {
+      "source_count": 1,
+      "supplier_count": 1,
+      "price_values": [],
+      "date_values": [
+        "2018-01-19"
+      ],
+      "document_count": 0,
+      "deadline_observations": 0,
+      "expected_value_observations": 0,
+      "participant_observations": 0,
+      "bid_observations": 0
+    },
+    "methodology": "Signals are descriptive checks only; they do not establish wrongdoing or causality. They identify differences worth checking and retain source provenance."
+  }
+}
