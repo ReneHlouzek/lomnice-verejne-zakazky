@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-25T06:48:27Z",
+  "updated_at": "2026-09-25T07:50:43Z",
   "pages_checked": 35,
   "declared_documents": 90,
   "documents_discovered": 53,
@@ -537,22 +537,19 @@
           "index": 1,
           "label": "Výše skutečně uhrazené ceny za plnění VZ",
           "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3884804&h=orderdocument&m=xenorders&token=",
-          "status": "download_error",
-          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+          "status": "retained_from_previous_run"
         },
         {
           "index": 2,
           "label": "Smlouva, její změny a dodatky",
           "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3884805&h=orderdocument&m=xenorders&token=",
-          "status": "download_error",
-          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+          "status": "retained_from_previous_run"
         },
         {
           "index": 3,
           "label": "Výzva",
           "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3884806&h=orderdocument&m=xenorders&token=",
-          "status": "download_error",
-          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+          "status": "retained_from_previous_run"
         }
       ],
       "status": "ok",
@@ -569,15 +566,13 @@
           "index": 1,
           "label": "Výše skutečně uhrazené ceny za plnění VZ",
           "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3907700&h=orderdocument&m=xenorders&token=",
-          "status": "download_error",
-          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+          "status": "retained_from_previous_run"
         },
         {
           "index": 2,
           "label": "Smlouva, její změny a dodatky",
           "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3907712&h=orderdocument&m=xenorders&token=",
-          "status": "download_error",
-          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+          "status": "retained_from_previous_run"
         }
       ],
       "status": "ok",
@@ -594,8 +589,7 @@
           "index": 1,
           "label": "Smlouva, její změny a dodatky",
           "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3865358&h=orderdocument&m=xenorders&token=",
-          "status": "download_error",
-          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+          "status": "retained_from_previous_run"
         }
       ],
       "status": "ok",
@@ -612,15 +606,13 @@
           "index": 1,
           "label": "Smlouva, její změny a dodatky",
           "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3869219&h=orderdocument&m=xenorders&token=",
-          "status": "download_error",
-          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+          "status": "retained_from_previous_run"
         },
         {
           "index": 2,
           "label": "Smlouva, její změny a dodatky",
           "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3869220&h=orderdocument&m=xenorders&token=",
-          "status": "download_error",
-          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+          "status": "retained_from_previous_run"
         }
       ],
       "status": "ok",
