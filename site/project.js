@@ -211,7 +211,7 @@ function render(p,documentAnalysis={documents:[]}){
 
     <section id="timeline" class="card">
       <div class="section-title"><div><p class="eyebrow dark">CHRONOLOGIE</p><h2>Časová osa</h2></div><span>${events.length} událostí</span></div>
-      ${timeline(events)}
+      ${timeline(events,ss,documentAnalysis)}
     </section>
 
     <section id="checks" class="card">
@@ -304,9 +304,20 @@ function finance(f,es,change,changePct){
 }
 function changeMoney(a,b){if(a==null)return'';const d=b-a,p=a?d/a*100:null;return`${d>=0?'+':''}${money(d)} ${p==null?'':`(${pct(p)})`}`}
 function eventLabel(v){return({tender:'Zakázka',contract:'Smlouva',addendum:'Dodatek',award:'Výběr dodavatele'}[v]||v||'Záznam')}
-function timeline(es){
+function timeline(es,ss=[],analysis={documents:[]}){
   if(!es.length)return'<p class="meta">Časová osa zatím nemá dostatek dat.</p>';
-  return'<div class="timeline">'+es.map((e,i)=>`<div class="timeline-item"><div class="timeline-marker"><span>${i+1}</span></div><div><div class="timeline-top"><strong>${date(e.date)}</strong><span class="badge">${esc(eventLabel(e.type))}</span></div><p>${esc(e.title||'Bez názvu')}${e.price!=null?` · <strong>${money(e.price)}</strong>`:''}</p>${e.source?'<small class="meta">'+esc(sourceLabel(e.source))+(e.source_id?' · ID '+esc(e.source_id):'')+'</small>':''}</div></div>`).join('')+'</div>';
+  const sources=ss.map(s=>s.record||s);
+  const analyzed=analysis?.documents||[];
+  return'<div class="timeline">'+es.map((e,i)=>{
+    const src=sources.find(s=>(e.source_id&&String(s.source_id)===String(e.source_id)) || (e.source&&normalizeSource(s.source)===normalizeSource(e.source)));
+    const docs=src?.xml_documents?.filter(d=>d&&d.url)||[];
+    const pdfs=analyzed.filter(d=>(e.source_id&&String(d.source_id)===String(e.source_id)) || (src?.source_url&&d.source_url===src.source_url));
+    const evidence=[];
+    if(src?.source_url)evidence.push('<a href="'+esc(src.source_url)+'" target="_blank" rel="noopener">zdrojový záznam →</a>');
+    if(docs.length)evidence.push('<span>'+docs.length+' dokumenty v XML</span>');
+    if(pdfs.length)evidence.push('<span>'+pdfs.length+' analyzované PDF</span>');
+    return \`<div class="timeline-item"><div class="timeline-marker"><span>\${i+1}</span></div><div><div class="timeline-top"><strong>\${date(e.date)}</strong><span class="badge">\${esc(eventLabel(e.type))}</span></div><p>\${esc(e.title||'Bez názvu')}\${e.price!=null?' · <strong>'+money(e.price)+'</strong>':''}</p><div class="timeline-evidence">\${e.source?'<span class="meta">'+esc(sourceLabel(e.source))+(e.source_id?' · ID '+esc(e.source_id):'')+'</span>':''}\${evidence.length?evidence.join(' · '):'<span class="meta">Bez přímé vazby na další dokument v načtených datech.</span>'}</div></div></div>\`;
+  }).join('')+'</div>';
 }
 function signals(ss){
   if(!ss.length)return'<div class="clean-state"><strong>Žádný kontrolní signál.</strong><span>V dostupných datech nebyla nalezena definovaná kontrola, která by vyžadovala pozornost.</span></div>';
