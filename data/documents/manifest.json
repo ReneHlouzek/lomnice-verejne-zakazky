@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-09-25T06:31:09Z",
-  "pages_checked": 31,
-  "declared_documents": 80,
-  "documents_discovered": 46,
+  "updated_at": "2026-09-25T06:48:27Z",
+  "pages_checked": 35,
+  "declared_documents": 90,
+  "documents_discovered": 53,
   "documents_downloaded": 0,
   "documents_text_extracted": 0,
   "records": [
@@ -138,6 +138,16 @@
     },
     {
       "source": "vhodne-uverejneni",
+      "source_id": "P25-REG-99697",
+      "page_url": "https://www.vhodne-uverejneni.cz/index.php?a=detail&contract=99697&h=contractsregister&m=xenorders",
+      "title": "Rekonstrukce technologie kotelny v budově radnice č.p. 6, Husovo náměstí v Lomnici nad Popelkou",
+      "document_count_declared": null,
+      "documents": [],
+      "status": "page_error",
+      "error": "VU page unavailable via direct and proxy fallbacks: 401 Client Error: Unauthorized for url: https://corsproxy.io/?url=https%3A%2F%2Fwww.vhodne-uverejneni.cz%2Findex.php%3Fa%3Ddetail%26contract%3D99697%26h%3Dcontractsregister%26m%3Dxenorders"
+    },
+    {
+      "source": "vhodne-uverejneni",
       "source_id": "P25V00001095",
       "page_url": "https://www.vhodne-uverejneni.cz/zakazka/revitalizace-rybnika-matous-a-jeho-okoli-v-lomnici-nad-popelkou",
       "title": "Revitalizace rybníka Matouš a jeho okolí v Lomnici nad Popelkou",
@@ -191,7 +201,7 @@
       "source_id": "P26-REG-105575",
       "page_url": "https://www.vhodne-uverejneni.cz/index.php?a=detail&contract=105575&h=contractsregister&m=xenorders",
       "title": "Stavební práce při výměně oken a úpravy 3. NP čp. 61, Lomnice nad Popelkou",
-      "document_count_declared": null,
+      "document_count_declared": 2,
       "documents": [
         {
           "index": 1,
@@ -518,6 +528,106 @@
     },
     {
       "source": "vhodne-uverejneni",
+      "source_id": "P26V00003724",
+      "page_url": "https://www.vhodne-uverejneni.cz/zakazka/vymena-oken-zus-lomnice-nad-popelkou-dodavka-a-montaz",
+      "title": "Výměna oken ZUŠ Lomnice nad Popelkou - dodávka a montáž",
+      "document_count_declared": 3,
+      "documents": [
+        {
+          "index": 1,
+          "label": "Výše skutečně uhrazené ceny za plnění VZ",
+          "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3884804&h=orderdocument&m=xenorders&token=",
+          "status": "download_error",
+          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+        },
+        {
+          "index": 2,
+          "label": "Smlouva, její změny a dodatky",
+          "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3884805&h=orderdocument&m=xenorders&token=",
+          "status": "download_error",
+          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+        },
+        {
+          "index": 3,
+          "label": "Výzva",
+          "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3884806&h=orderdocument&m=xenorders&token=",
+          "status": "download_error",
+          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+        }
+      ],
+      "status": "ok",
+      "transport": "xml_export"
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "P26V00004395",
+      "page_url": "https://www.vhodne-uverejneni.cz/zakazka/oprava-povrchu-komunikace-rvacov-ii-etapa-lomnice-nad-popelkou",
+      "title": "Oprava povrchu komunikace Rváčov - II. etapa, Lomnice nad Popelkou",
+      "document_count_declared": 2,
+      "documents": [
+        {
+          "index": 1,
+          "label": "Výše skutečně uhrazené ceny za plnění VZ",
+          "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3907700&h=orderdocument&m=xenorders&token=",
+          "status": "download_error",
+          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+        },
+        {
+          "index": 2,
+          "label": "Smlouva, její změny a dodatky",
+          "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3907712&h=orderdocument&m=xenorders&token=",
+          "status": "download_error",
+          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+        }
+      ],
+      "status": "ok",
+      "transport": "xml_export"
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "P26V00004399",
+      "page_url": "https://www.vhodne-uverejneni.cz/zakazka/rekonstrukce-topneho-systemu-vcetne-zdroje-tepla-v-objektu-k-urnovemu-haji-cp-118-lomnice-nad-popelkou",
+      "title": "Rekonstrukce topného systému včetně zdroje tepla v objektu K Urnovému háji čp. 118, Lomnice nad Popelkou",
+      "document_count_declared": 1,
+      "documents": [
+        {
+          "index": 1,
+          "label": "Smlouva, její změny a dodatky",
+          "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3865358&h=orderdocument&m=xenorders&token=",
+          "status": "download_error",
+          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+        }
+      ],
+      "status": "ok",
+      "transport": "xml_export"
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "P26V00004533",
+      "page_url": "https://www.vhodne-uverejneni.cz/zakazka/rekonstrukce-sk-dt-a-vss-v-budove-zus-lomnice-nad-popelkou",
+      "title": "Rekonstrukce SK, DT a VSS v budově ZUŠ, Lomnice nad Popelkou",
+      "document_count_declared": 2,
+      "documents": [
+        {
+          "index": 1,
+          "label": "Smlouva, její změny a dodatky",
+          "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3869219&h=orderdocument&m=xenorders&token=",
+          "status": "download_error",
+          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+        },
+        {
+          "index": 2,
+          "label": "Smlouva, její změny a dodatky",
+          "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3869220&h=orderdocument&m=xenorders&token=",
+          "status": "download_error",
+          "error": "document unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+        }
+      ],
+      "status": "ok",
+      "transport": "xml_export"
+    },
+    {
+      "source": "vhodne-uverejneni",
       "source_id": "vu-42ccd73a00ab",
       "page_url": "https://www.vhodne-uverejneni.cz/smlouvy-organizace/mesto-lomnice-nad-popelkou",
       "title": "Veřejné osvětlení Nové Dvory - 1. etapa",
@@ -572,23 +682,6 @@
       "documents": [],
       "status": "page_error",
       "error": "VU page unavailable via direct and proxy fallbacks: 401 Client Error: Unauthorized for url: https://corsproxy.io/?url=https%3A%2F%2Fwww.vhodne-uverejneni.cz%2Fprofil%2Fmesto-lomnice-nad-popelkou"
-    },
-    {
-      "source": "vhodne-uverejneni",
-      "source_id": "vu-ebd1ca9c3e3c",
-      "page_url": "https://www.vhodne-uverejneni.cz/zakazka/rekonstrukce-topneho-systemu-vcetne-zdroje-tepla-v-objektu-k-urnovemu-haji-cp-118-lomnice-nad-popelkou",
-      "title": "Rekonstrukce topného systému včetně zdroje tepla v objektu K Urnovému háji čp. 118, Lomnice nad Popelkou",
-      "document_count_declared": null,
-      "documents": [
-        {
-          "index": 1,
-          "label": "Smlouva, její změny a dodatky",
-          "url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3865358&h=orderdocument&m=xenorders&token=",
-          "status": "retained_from_previous_run"
-        }
-      ],
-      "status": "ok",
-      "transport": "xml_export"
     },
     {
       "source": "vhodne-uverejneni",

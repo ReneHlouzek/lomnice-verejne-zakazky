@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-25T06:31:09.741618+00:00",
+  "generated_at": "2026-09-25T06:48:28.239435+00:00",
   "buyer_ico": "00275905",
   "registr_smluv_records": 109,
   "vhodne_uverejneni_seed_records": 79,
-  "vhodne_uverejneni_verified_web_records": 53,
+  "vhodne_uverejneni_verified_web_records": 48,
   "vhodne_uverejneni_official_xml_records": 11,
   "sources": [
     "registr-smluv",

@@ -59,10 +59,10 @@
     },
     "verification": {
       "levels": [
-        "detail"
+        "official_xml"
       ],
       "project_registry_ids": [],
-      "detail_verified_sources": 1
+      "detail_verified_sources": 0
     },
     "source_count": 1,
     "source_types": [
@@ -112,9 +112,9 @@
         "project_registry_id": null,
         "known_addenda_numbers": [],
         "document_count": 23,
-        "verification_level": "detail",
+        "verification_level": "official_xml",
         "official_xml_available": true,
-        "verified_web": true,
+        "verified_web": false,
         "verified_at": "2026-09-22",
         "verification_source": "https://www.vhodne-uverejneni.cz/zakazka/verejne-osvetleni-11",
         "xml_documents": [

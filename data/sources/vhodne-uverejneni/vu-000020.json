@@ -35,9 +35,9 @@
   "project_registry_id": null,
   "known_addenda_numbers": [],
   "document_count": 1,
-  "verification_level": "detail",
+  "verification_level": "official_xml",
   "official_xml_available": true,
-  "verified_web": true,
+  "verified_web": false,
   "verified_at": "2026-09-22",
   "verification_source": "https://www.vhodne-uverejneni.cz/zakazka/sanace-vlhkeho-zdiva-sklepnich-prostor-cp-886-lomnice-nad-popelkou",
   "xml_documents": [
