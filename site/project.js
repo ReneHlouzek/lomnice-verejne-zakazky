@@ -57,7 +57,7 @@ function sourceRows(ss){
     const title=r.title||r.subject||'Zdrojový záznam';
     const supplier=r.supplier_name||r.supplier_ico||'';
     const verified=r.verified_web===true;
-    const officialXml=r.verification_level==='official_xml';
+    const officialXml=r.verification_level==='official_xml' || r.official_xml_available===true;
     const xmlDocs=Array.isArray(r.xml_documents)?[...new Map(r.xml_documents.filter(d=>d&&d.url).map(d=>[d.url,d])).values()]:[];
     return `<article class="source">
       <div class="source-head"><span class="source-no">${i+1}</span><strong>${esc(sourceLabel(r.source||s.source))}</strong>${officialXml?'<span class="badge green">oficiální PVU XML</span>':verified?'<span class="badge green">ověřeno na webu</span>':''}</div>
