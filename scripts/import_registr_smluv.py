@@ -326,7 +326,25 @@ def main() -> None:
     RAW_DIR.mkdir(parents=True, exist_ok=True)
     SOURCE_DIR.mkdir(parents=True, exist_ok=True)
 
-    index = download_index(timeout)
+    # Index je malý, ale jeho server občas odpovídá pomalu nebo resetuje spojení.
+    # Použijeme samostatný delší limit a při výpadku, pokud už máme platná data
+    # z minulých běhů, zachováme poslední stav. Další běh zkusí index znovu.
+    index_timeout = max(timeout, 300)
+    try:
+        index = download_index(index_timeout)
+    except Exception as exc:
+        if CONTRACTS.exists():
+            existing = json.loads(CONTRACTS.read_text(encoding="utf-8"))
+            rows = existing.get("records", []) if isinstance(existing, dict) else []
+            if isinstance(rows, list) and rows:
+                print(
+                    f"Registr smluv: index.xml není nyní dostupný ({exc}); "
+                    f"ponechávám poslední platná data ({len(rows)} záznamů) a běh končí bez přepsání.",
+                    flush=True,
+                )
+                return
+        raise
+
     all_dumps = parse_dumps(index)
     if not all_dumps:
         raise RuntimeError("Registr smluv: index.xml neobsahuje žádné měsíční dumpy")
