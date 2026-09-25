@@ -118,24 +118,48 @@ def normalize_rs():
 def merge_rows(base_rows, extra_rows):
     merged = list(base_rows)
 
-    def key(r):
+    def keys(r):
         sid = clean(r.get("source_id") or r.get("procurement_id"))
+        title = clean(r.get("title"))
+        date = date_value(r.get("date"))
+        url = clean(r.get("source_url"))
+        supplier = ico(r.get("supplier_ico"))
+        vals = [price(r.get(k)) for k in ("price", "price_vat_included", "value") if price(r.get(k)) is not None]
+        out = []
         if sid:
-            return ("id", sid)
-        return ("text", clean(r.get("source_url")), clean(r.get("title")), clean(r.get("date")))
+            out.append(("id", sid))
+        if url:
+            out.append(("url", url))
+        if title and date:
+            out.append(("title_date", re.sub(r"\\s+", " ", title).casefold(), date))
+            if supplier:
+                out.append(("title_date_supplier", re.sub(r"\\s+", " ", title).casefold(), date, supplier))
+            if vals:
+                out.append(("title_date_price", re.sub(r"\\s+", " ", title).casefold(), date, tuple(round(x, 2) for x in vals)))
+        return out
 
-    positions = {key(r): i for i, r in enumerate(merged) if isinstance(r, dict)}
+    positions = {}
+    for i, r in enumerate(merged):
+        if not isinstance(r, dict):
+            continue
+        for k in keys(r):
+            positions.setdefault(k, i)
+
     for r in extra_rows:
         if not isinstance(r, dict) or not clean(r.get("title")):
             continue
-        k = key(r)
-        if k in positions:
-            base = dict(merged[positions[k]])
+        match = next((positions[k] for k in keys(r) if k in positions), None)
+        if match is not None:
+            base = dict(merged[match])
             base.update({kk: vv for kk, vv in r.items() if vv not in (None, "")})
-            merged[positions[k]] = base
+            merged[match] = base
+            for k in keys(base):
+                positions[k] = match
         else:
-            positions[k] = len(merged)
+            positions_index = len(merged)
             merged.append(r)
+            for k in keys(r):
+                positions[k] = positions_index
     return merged
 
 
