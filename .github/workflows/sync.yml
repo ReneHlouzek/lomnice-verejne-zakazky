@@ -1,4 +1,5 @@
 name: Sync veřejné zakázky
+# Resolver rebuilds source identity before cross-source linking.
 
 on:
   workflow_dispatch:
