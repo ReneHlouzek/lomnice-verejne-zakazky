@@ -142,7 +142,7 @@ function render(p,documentAnalysis={documents:[]}){
     </section>
 
     <nav class="detail-nav">
-      <a href="#overview">Přehled</a><a href="#procurement">Zakázka</a><a href="#coverage">Data</a><a href="#finance">Finance</a><a href="#timeline">Časová osa</a><a href="#checks">Kontroly</a><a href="#documents">Dokumenty</a><a href="#sources">Zdroje</a>
+      <a href="#overview">Přehled</a><a href="#procurement">Zakázka</a><a href="#coverage">Data</a><a href="#provenance">Provenience</a><a href="#finance">Finance</a><a href="#timeline">Časová osa</a><a href="#checks">Kontroly</a><a href="#documents">Dokumenty</a><a href="#sources">Zdroje</a>
     </nav>
 
     <section id="overview" class="card detail-summary">
@@ -182,6 +182,11 @@ function render(p,documentAnalysis={documents:[]}){
       ${coverage(c,p,ss,events,f)}
     </section>
 
+    <section id="provenance" class="card">
+      <div class="section-title"><div><p class="eyebrow dark">PROVENIENCE</p><h2>Odkud informace pocházejí</h2></div></div>
+      ${provenance(ss,c)}
+    </section>
+
     <section id="finance" class="card">
       <div class="section-title"><div><p class="eyebrow dark">PENÍZE</p><h2>Finanční mapa</h2></div></div>
       ${finance(f,events,change,changePct)}
@@ -218,6 +223,20 @@ function summaryText(c,p,events){
 }
 function fact(label,value){return value!=null&&value!==''?`<div class="fact"><small>${esc(label)}</small><strong>${esc(value)}</strong></div>`:''}
 function contractSignedDate(ss){const d=ss.map(s=>(s.record||s).contract_signed_date).find(Boolean);return d?date(d):null}
+function provenance(ss,c){
+  const hasVU=ss.some(s=>normalizeSource(s.record?.source||s.source)==='vhodne-uverejneni');
+  const hasRS=ss.some(s=>normalizeSource(s.record?.source||s.source)==='registr-smluv');
+  const xml=ss.filter(s=>(s.record||s).official_xml_available===true || (s.record||s).verification_level==='official_xml').length;
+  const web=ss.filter(s=>(s.record||s).verified_web===true).length;
+  const row=(label,yes,note)=>`<div class="provenance-row"><strong>${esc(label)}</strong><span class="badge ${yes?'green':''}">${yes?'Doloženo':'Nenalezeno'}</span><small>${esc(note)}</small></div>`;
+  return `<div class="provenance-list">
+    ${row('Vhodné uveřejnění',hasVU,'Zdroj zadavatele / profilu veřejných zakázek.')}
+    ${row('Registr smluv',hasRS,'V tomto projektu nebyl nalezen odpovídající záznam v načteném registru.')}
+    ${row('Oficiální PVU XML',xml>0,`${xml} zdrojový záznam obsahuje metadata z oficiálního XML exportu PVU.`)}
+    ${row('Ověření webem',web>0,`${web} zdrojový záznam je označen jako ověřený na webu.`)}
+  </div>
+  <p class="method-note">„Nenalezeno“ znamená pouze to, že odpovídající údaj nebyl v aktuálně načtených zdrojích nalezen. Neznamená to, že dokument nebo záznam neexistuje.</p>`;
+}
 function coverage(c,p,ss,events,f){
   const records=ss.map(s=>s.record||s);
   const uniq=(key,normal=v=>String(v||''))=>[...new Set(records.map(r=>r[key]).filter(v=>v!=null&&v!=='').map(normal))];
