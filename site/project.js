@@ -23,23 +23,39 @@ const typeLabels={
 };
 
 function documentsSection(ss,analysis){
-  const ids=new Set();
-  const urls=new Set();
+  const ids=new Set(), urls=new Set();
+  const sourceDocs=[];
   ss.forEach(s=>{
     const r=s.record||s;
     if(r.source_id)ids.add(String(r.source_id));
     if(r.source_url)urls.add(String(r.source_url));
+    const xmlDocs=Array.isArray(r.xml_documents)?r.xml_documents.filter(d=>d&&d.url):[];
+    xmlDocs.forEach(d=>sourceDocs.push({
+      ...d,
+      source:r.source||s.source,
+      source_id:r.source_id,
+      source_title:r.title||r.subject||'Zdrojový záznam'
+    }));
   });
   const docs=(analysis?.documents||[]).filter(d=>
     (d.source_id!=null && ids.has(String(d.source_id))) ||
     (d.source_url && urls.has(String(d.source_url)))
   );
-  if(!docs.length)return '';
+  const analyzed=[...new Map(docs.map(d=>[
+    [d.source_id||'',d.document_name||d.text_file||''].join('|'),
+    d
+  ])).values()];
+  const linked=[...new Map(sourceDocs.map(d=>[
+    String(d.url),
+    d
+  ])).values()];
+  if(!analyzed.length&&!linked.length)return '';
   const typeLabels={contract:'smlouva',addendum:'dodatek',budget:'rozpočet',change_sheet:'změnový list',grant:'dotace',tender:'zakázka',deadline:'termíny'};
   return `<section id="documents" class="card">
-    <div class="section-title"><div><p class="eyebrow dark">DOKUMENTY</p><h2>Co bylo nalezeno v přílohách</h2></div><span>${docs.length} analyzovaných dokumentů</span></div>
-    <p class="method-note">Tato část zobrazuje pouze automaticky rozpoznané údaje z textu dostupných PDF. Nejde o právní ani ekonomické hodnocení a výňatky mohou vyžadovat ruční kontrolu.</p>
-    <div class="document-list">${docs.map(d=>`<article class="source document-item">
+    <div class="section-title"><div><p class="eyebrow dark">DOKUMENTY</p><h2>Dokumenty a přílohy</h2></div><span>${linked.length+analyzed.length} položek</span></div>
+    <p class="method-note">Rozlišujeme dokumenty pouze uvedené ve zdrojovém záznamu a dokumenty, jejichž PDF bylo lokálně staženo a automaticky analyzováno. Absence v jedné skupině neznamená, že dokument neexistuje.</p>
+    ${linked.length?`<div class="document-subsection"><h3>Dokumenty uvedené v oficiálním PVU XML</h3><div class="document-links">${linked.map((d,j)=>`<a href="${esc(d.url)}" target="_blank" rel="noopener"><span>${esc(d.label||('Dokument '+(j+1)))}</span><small>${esc(sourceLabel(d.source))}${d.source_id?' · '+esc(d.source_id):''}</small> →</a>`).join('')}</div></div>`:''}
+    ${analyzed.length?`<div class="document-subsection"><h3>Lokálně analyzované PDF</h3><div class="document-list">${analyzed.map(d=>`<article class="source document-item">
       <div class="source-head"><span class="source-no">PDF</span><strong>${esc(d.document_name||'Dokument')}</strong></div>
       <div class="badges">${(d.document_types||[]).map(t=>`<span class="badge">${esc(typeLabels[t]||t)}</span>`).join('')}</div>
       <div class="source-grid">
@@ -48,7 +64,7 @@ function documentsSection(ss,analysis){
         <span><small>Data</small><b>${d.dates?.length?d.dates.slice(0,5).map(date).join(', '):'—'}</b></span>
       </div>
       ${d.snippets?.length?`<details><summary>Ukázky nalezeného textu</summary><div class="document-snippets">${d.snippets.map(x=>`<p>${esc(x)}</p>`).join('')}</div></details>`:''}
-    </article>`).join('')}</div>
+    </article>`).join('')}</div></div>`:''}
   </section>`;
 }
 function sourceRows(ss){
