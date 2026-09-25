@@ -395,8 +395,9 @@ def main() -> None:
                 if rid:
                     records_by_id[rid] = record
                     found_this_dump += 1
-            # Store a durable completion marker even when the official index has
-            # no hash. If a hash is present, retain it for future change detection.
+            # Store a durable completion marker only after the dump was fully
+            # downloaded and parsed. A transient failure therefore leaves the
+            # month pending for the next run without destroying existing data.
             processed_now[key] = d.get("hash", "") or processed_now.get(key, "")
             history_complete_now = not [x for x in historical if needs_processing(x) and x["url"] not in processed_now]
             save_outputs(
@@ -412,6 +413,12 @@ def main() -> None:
                 f"{period_key(d)}: nalezeno={found_this_dump}, celkem={len(records_by_id)}",
                 flush=True,
             )
+        except Exception as exc:
+            # The Register occasionally times out or resets a connection while
+            # serving a large monthly dump. Keep the last known good data and
+            # continue with the remaining months; the failed month remains
+            # unprocessed and will be retried on the next scheduled run.
+            print(f"{period_key(d)}: přeskočeno kvůli chybě stahování/zpracování: {exc}", flush=True)
         finally:
             target.unlink(missing_ok=True)
 
