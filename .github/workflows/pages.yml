@@ -11,6 +11,9 @@ on:
       - "data/changes/**"
       - "data/sources/**"
       - ".github/workflows/pages.yml"
+  workflow_run:
+    workflows: ["Sync veřejné zakázky"]
+    types: [completed]
   
 permissions:
   contents: read
@@ -23,6 +26,7 @@ concurrency:
 
 jobs:
   build:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
