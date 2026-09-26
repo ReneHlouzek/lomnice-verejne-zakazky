@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Extract neutral, factual signals from retained PDF text from all supported sources."""
 from __future__ import annotations
+import hashlib
 import json,re
 from pathlib import Path
 
@@ -45,10 +46,15 @@ def main():
     def analyze_one(source, source_id, source_url, title, document_name, text_file):
         p=ROOT/text_file
         if not p.exists(): return
-        key=text_file
+        text=p.read_text(encoding="utf-8",errors="replace")
+        # The extractor can retain the same PDF text under multiple technical
+        # TXT paths (for example after a changed manifest). Do not present one
+        # document several times in the public analysis just because its path
+        # changed; keep genuinely different texts separate.
+        digest=hashlib.sha256(text.encode("utf-8",errors="replace")).hexdigest()
+        key=(source,source_id,digest)
         if key in seen: return
         seen.add(key)
-        text=p.read_text(encoding="utf-8",errors="replace")
         cats,scores=classify(document_name or "",text)
         amounts=[]
         for m in MONEY.finditer(text):
