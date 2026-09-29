@@ -89,6 +89,7 @@ def analyze(project):
     timeline = []
     suppliers = set()
     docs = []
+    addendum_document_labels = []
     deadlines = []
     scopes = []
     expected_values = []
@@ -118,6 +119,18 @@ def analyze(project):
             suppliers.add(str(s))
         if isinstance(r.get("documents"), list):
             docs.extend(r["documents"])
+        xml_docs = r.get("xml_documents")
+        if isinstance(xml_docs, list):
+            for doc in xml_docs:
+                if not isinstance(doc, dict):
+                    continue
+                label = str(doc.get("label") or doc.get("title") or "").strip()
+                if label and re.search(r"(dodatek|změnový list|zmenovy list|change order)", label, re.I):
+                    addendum_document_labels.append({
+                        "label": label,
+                        "source_id": r.get("source_id"),
+                        "url": doc.get("url"),
+                    })
         deadline = field(r, "deadline", "completion_deadline", "term", "end_date", "deadline_date")
         if deadline:
             deadlines.append({"date": date_value(deadline), "raw": str(deadline), "source_id": r.get("source_id")})
@@ -168,6 +181,13 @@ def analyze(project):
             declared_addenda.update(str(v) for v in vals if v not in (None, ""))
     observed_addenda_count = len(addenda)
     declared_only_count = len(declared_addenda - {str(x.get("addendum_number")) for x in addenda if x.get("addendum_number") is not None})
+    unique_addendum_document_labels = []
+    seen_addendum_document_labels = set()
+    for item in addendum_document_labels:
+        key = (item.get("source_id"), item.get("label"), item.get("url"))
+        if key not in seen_addendum_document_labels:
+            seen_addendum_document_labels.add(key)
+            unique_addendum_document_labels.append(item)
     addendum_count = max(observed_addenda_count, len(declared_addenda))
     if addendum_count:
         evidence = [{
@@ -176,7 +196,12 @@ def analyze(project):
             "observed_addenda": observed_addenda_count,
             "declared_only": declared_only_count,
             "financial_change_observed": bool(price_change_pct is not None and len(unique_prices) >= 2),
+            "addendum_document_labels": unique_addendum_document_labels,
         }]
+        if unique_addendum_document_labels:
+            add("addendum_document_evidence", "info",
+                f"Zdroj obsahuje {len(unique_addendum_document_labels)} dokumentových záznamů označených jako dodatek nebo změnový list.",
+                unique_addendum_document_labels)
         if declared_only_count:
             add("addendum_count", "info",
                 f"Zdroj deklaruje nejméně {len(declared_addenda)} dodatků; konkrétně dohledáno v časové ose je {observed_addenda_count}.",
