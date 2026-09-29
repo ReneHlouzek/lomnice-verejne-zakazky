@@ -49,11 +49,16 @@ function documentsSection(ss,analysis){
     String(d.url),
     d
   ])).values()];
-  if(!analyzed.length&&!linked.length)return '';
+  const declaredCounts=ss.map(s=>{
+    const r=s.record||s;
+    return Number.isFinite(Number(r.document_count)) ? Number(r.document_count) : 0;
+  }).filter(n=>n>0);
+  const declaredTotal=declaredCounts.reduce((a,b)=>a+b,0);
+  if(!analyzed.length&&!linked.length&&!declaredTotal)return '';
   const typeLabels={contract:'smlouva',addendum:'dodatek',budget:'rozpočet',change_sheet:'změnový list',grant:'dotace',tender:'zakázka',deadline:'termíny'};
   return `<section id="documents" class="card">
     <div class="section-title"><div><p class="eyebrow dark">DOKUMENTY</p><h2>Dokumenty a přílohy</h2></div><span>${linked.length+analyzed.length} položek</span></div>
-    <p class="method-note">Rozlišujeme dokumenty pouze uvedené ve zdrojovém záznamu a dokumenty, jejichž PDF bylo lokálně staženo a automaticky analyzováno. Absence v jedné skupině neznamená, že dokument neexistuje.</p>
+    <p class="method-note">Rozlišujeme tři úrovně: počet dokumentů deklarovaný zdrojem, dokumenty s dostupným oficiálním odkazem a PDF, která se podařilo lokálně stáhnout a automaticky analyzovat. Tato čísla se nesčítají a samotný deklarovaný počet neznamená, že máme všechny dokumenty k dispozici.</p>\n    ${declaredTotal?`<div class="document-coverage"><strong>Zdroj deklaruje ${declaredTotal} dokument${declaredTotal===1?'':'ů'}.</strong> Z toho je v tomto záznamu lokálně analyzováno ${analyzed.length} PDF${linked.length?` a ${linked.length} dokument${linked.length===1?'':'ů'} má dostupný oficiální odkaz v PVU XML`:''}.</div>`:''}
     ${linked.length?`<div class="document-subsection"><h3>Dokumenty uvedené v oficiálním PVU XML</h3><div class="document-links">${linked.map((d,j)=>`<a href="${esc(d.url)}" target="_blank" rel="noopener"><span>${esc(d.label||('Dokument '+(j+1)))}</span><small>${esc(sourceLabel(d.source))}${d.source_id?' · '+esc(d.source_id):''}</small> →</a>`).join('')}</div></div>`:''}
     ${analyzed.length?`<div class="document-subsection"><h3>Lokálně analyzované PDF</h3><div class="document-list">${analyzed.map(d=>`<article class="source document-item">
       <div class="source-head"><span class="source-no">PDF</span><strong>${esc(d.document_name||'Dokument')}</strong></div>
