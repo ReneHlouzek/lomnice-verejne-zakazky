@@ -226,7 +226,9 @@
         1579478.99
       ],
       "addendum_count": 0,
-      "declared_addenda_count": 0
+      "observed_addenda_count": 0,
+      "declared_addenda_count": 0,
+      "declared_only_addenda_count": 0
     },
     "metrics": {
       "source_count": 1,

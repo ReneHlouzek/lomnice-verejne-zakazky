@@ -112,12 +112,14 @@
       {
         "code": "addendum_count",
         "level": "info",
-        "message": "Ve zdrojových záznamech je doloženo nejméně 1 dodatků / změnových záznamů.",
+        "message": "V časové ose je zachyceno 1 dodatků / změnových záznamů.",
         "evidence": [
           {
-            "type": "count",
-            "value": 1,
-            "declared_numbers": []
+            "type": "addenda_coverage",
+            "declared_numbers": [],
+            "observed_addenda": 1,
+            "declared_only": 0,
+            "financial_change_observed": false
           }
         ]
       },
@@ -148,7 +150,9 @@
         748000.0
       ],
       "addendum_count": 1,
-      "declared_addenda_count": 0
+      "observed_addenda_count": 1,
+      "declared_addenda_count": 0,
+      "declared_only_addenda_count": 0
     },
     "metrics": {
       "source_count": 1,
