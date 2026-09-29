@@ -157,7 +157,8 @@
             ],
             "observed_addenda": 0,
             "declared_only": 1,
-            "financial_change_observed": false
+            "financial_change_observed": false,
+            "addendum_document_labels": []
           }
         ]
       },

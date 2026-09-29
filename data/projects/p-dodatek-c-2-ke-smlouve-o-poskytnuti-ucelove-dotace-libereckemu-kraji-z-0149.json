@@ -117,7 +117,8 @@
             "declared_numbers": [],
             "observed_addenda": 1,
             "declared_only": 0,
-            "financial_change_observed": false
+            "financial_change_observed": false,
+            "addendum_document_labels": []
           }
         ]
       },
