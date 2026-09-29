@@ -166,10 +166,25 @@ def analyze(project):
         vals = r.get("known_addenda_numbers")
         if isinstance(vals, list):
             declared_addenda.update(str(v) for v in vals if v not in (None, ""))
-    addenda_count = max(len(addenda), len(declared_addenda))
-    if addenda_count:
-        add("addendum_count", "info", f"Ve zdrojových záznamech je doloženo nejméně {addenda_count} dodatků / změnových záznamů.",
-            [{"type": "count", "value": addenda_count, "declared_numbers": sorted(declared_addenda)}])
+    observed_addenda_count = len(addenda)
+    declared_only_count = len(declared_addenda - {str(x.get("addendum_number")) for x in addenda if x.get("addendum_number") is not None})
+    addendum_count = max(observed_addenda_count, len(declared_addenda))
+    if addendum_count:
+        evidence = [{
+            "type": "addenda_coverage",
+            "declared_numbers": sorted(declared_addenda),
+            "observed_addenda": observed_addenda_count,
+            "declared_only": declared_only_count,
+            "financial_change_observed": bool(price_change_pct is not None and len(unique_prices) >= 2),
+        }]
+        if declared_only_count:
+            add("addendum_count", "info",
+                f"Zdroj deklaruje nejméně {len(declared_addenda)} dodatků; konkrétně dohledáno v časové ose je {observed_addenda_count}.",
+                evidence)
+        else:
+            add("addendum_count", "info",
+                f"V časové ose je zachyceno {observed_addenda_count} dodatků / změnových záznamů.",
+                evidence)
 
     if participant_counts:
         vals = [x["value"] for x in participant_counts]
@@ -234,7 +249,8 @@ def analyze(project):
         "financial": {"baseline_price": baseline, "current_observed_price": current,
                       "absolute_change": (current - baseline) if baseline is not None and current is not None else None,
                       "percent_change": price_change_pct, "observed_prices": unique_prices,
-                      "addendum_count": addenda_count, "declared_addenda_count": len(declared_addenda)},
+                      "addendum_count": addendum_count, "observed_addenda_count": observed_addenda_count,
+                      "declared_addenda_count": len(declared_addenda), "declared_only_addenda_count": declared_only_count},
         "metrics": {"source_count": len(rows), "supplier_count": len(suppliers),
                      "price_values": unique_prices,
                      "date_values": sorted({x["date"] for x in timeline if x["date"]}),
