@@ -210,10 +210,18 @@
       "price_values": [
         15485071.64
       ],
+      "declared_document_counts": [
+        {
+          "value": 15,
+          "source_id": "vu-f58017e9cad3"
+        }
+      ],
+      "declared_document_count": 15,
       "date_values": [
         "2025-04-01"
       ],
       "document_count": 0,
+      "document_coverage_gap": 15,
       "deadline_observations": 0,
       "expected_value_observations": 0,
       "participant_observations": 0,

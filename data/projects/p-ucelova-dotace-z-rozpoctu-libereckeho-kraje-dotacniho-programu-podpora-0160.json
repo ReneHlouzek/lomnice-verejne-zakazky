@@ -144,10 +144,13 @@
       "price_values": [
         380240.32
       ],
+      "declared_document_counts": [],
+      "declared_document_count": 0,
       "date_values": [
         "2023-11-28"
       ],
       "document_count": 0,
+      "document_coverage_gap": 0,
       "deadline_observations": 0,
       "expected_value_observations": 0,
       "participant_observations": 0,

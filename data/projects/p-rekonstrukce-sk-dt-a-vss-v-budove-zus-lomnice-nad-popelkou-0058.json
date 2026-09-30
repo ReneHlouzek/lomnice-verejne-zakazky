@@ -236,10 +236,18 @@
       "price_values": [
         1579478.99
       ],
+      "declared_document_counts": [
+        {
+          "value": 2,
+          "source_id": "P26V00004533"
+        }
+      ],
+      "declared_document_count": 2,
       "date_values": [
         "2026-07-09"
       ],
       "document_count": 0,
+      "document_coverage_gap": 2,
       "deadline_observations": 0,
       "expected_value_observations": 0,
       "participant_observations": 1,

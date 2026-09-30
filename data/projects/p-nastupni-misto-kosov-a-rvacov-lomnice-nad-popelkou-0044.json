@@ -199,10 +199,18 @@
       "price_values": [
         4243535.2
       ],
+      "declared_document_counts": [
+        {
+          "value": 6,
+          "source_id": "P25V00008902"
+        }
+      ],
+      "declared_document_count": 6,
       "date_values": [
         "2025-10-20"
       ],
       "document_count": 0,
+      "document_coverage_gap": 6,
       "deadline_observations": 0,
       "expected_value_observations": 0,
       "participant_observations": 0,

@@ -231,10 +231,18 @@
       "source_count": 1,
       "supplier_count": 0,
       "price_values": [],
+      "declared_document_counts": [
+        {
+          "value": 9,
+          "source_id": "P25V00006718"
+        }
+      ],
+      "declared_document_count": 9,
       "date_values": [
         "2025-07-22"
       ],
       "document_count": 0,
+      "document_coverage_gap": 9,
       "deadline_observations": 0,
       "expected_value_observations": 0,
       "participant_observations": 1,

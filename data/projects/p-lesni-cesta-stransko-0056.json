@@ -247,10 +247,18 @@
       "price_values": [
         2745470.75
       ],
+      "declared_document_counts": [
+        {
+          "value": 1,
+          "source_id": "P26V00004559"
+        }
+      ],
+      "declared_document_count": 1,
       "date_values": [
         "2026-07-20"
       ],
       "document_count": 0,
+      "document_coverage_gap": 1,
       "deadline_observations": 0,
       "expected_value_observations": 1,
       "participant_observations": 1,

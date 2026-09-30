@@ -203,10 +203,18 @@
       "price_values": [
         20387820.9
       ],
+      "declared_document_counts": [
+        {
+          "value": 14,
+          "source_id": "vu-42ccd73a00ab"
+        }
+      ],
+      "declared_document_count": 14,
       "date_values": [
         "2021-07-22"
       ],
       "document_count": 0,
+      "document_coverage_gap": 14,
       "deadline_observations": 0,
       "expected_value_observations": 0,
       "participant_observations": 0,

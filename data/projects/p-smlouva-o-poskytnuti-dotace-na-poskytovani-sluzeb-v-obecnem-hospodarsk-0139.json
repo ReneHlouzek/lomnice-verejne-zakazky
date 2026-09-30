@@ -146,10 +146,13 @@
       "price_values": [
         49000.0
       ],
+      "declared_document_counts": [],
+      "declared_document_count": 0,
       "date_values": [
         "2016-09-23"
       ],
       "document_count": 0,
+      "document_coverage_gap": 0,
       "deadline_observations": 0,
       "expected_value_observations": 0,
       "participant_observations": 0,
