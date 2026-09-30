@@ -89,6 +89,7 @@ def analyze(project):
     timeline = []
     suppliers = set()
     docs = []
+    declared_document_counts = []
     addendum_document_labels = []
     deadlines = []
     scopes = []
@@ -117,6 +118,9 @@ def analyze(project):
         s = field(r, "supplier_ico", "ico_dodavatele")
         if s:
             suppliers.add(str(s))
+        dc = field(r, "document_count")
+        if isinstance(dc, (int, float)) or (isinstance(dc, str) and dc.isdigit()):
+            declared_document_counts.append({"value": int(dc), "source_id": r.get("source_id")})
         if isinstance(r.get("documents"), list):
             docs.extend(r["documents"])
         xml_docs = r.get("xml_documents")
@@ -278,8 +282,12 @@ def analyze(project):
                       "declared_addenda_count": len(declared_addenda), "declared_only_addenda_count": declared_only_count},
         "metrics": {"source_count": len(rows), "supplier_count": len(suppliers),
                      "price_values": unique_prices,
+                     "declared_document_counts": declared_document_counts,
+                     "declared_document_count": max([x["value"] for x in declared_document_counts], default=0),
                      "date_values": sorted({x["date"] for x in timeline if x["date"]}),
-                     "document_count": len(docs), "deadline_observations": len(known_deadlines),
+                     "document_count": len(docs),
+                     "document_coverage_gap": max([x["value"] for x in declared_document_counts], default=0) - len(docs),
+                     "deadline_observations": len(known_deadlines),
                      "expected_value_observations": len(expected_values),
                      "participant_observations": len(participant_counts),
                      "bid_observations": len(bid_counts)},
