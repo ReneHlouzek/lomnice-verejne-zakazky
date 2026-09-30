@@ -16,7 +16,7 @@ OUT = ROOT / "data" / "documents"
 MANIFEST = OUT / "manifest.json"
 TIMEOUT = 5
 JINA_TIMEOUT = 8
-VU_DOC_PROXY_LIMIT = 2
+VU_DOC_PROXY_LIMIT = 3
 MAX_DOC_BYTES = 25 * 1024 * 1024
 WORKERS = 8
 PDF_RE = re.compile(r"\.pdf(?:$|[?#])", re.I)
@@ -223,15 +223,32 @@ def process(record: dict) -> dict:
     expanded = []
     for doc in docs:
         u = doc.get("url", "")
-        # XML uses the lightweight document-detail endpoint. Convert it to the
-        # direct download endpoint instead of fetching the detail HTML first.
+        label = doc.get("label", "")
+        # XML exposes a document-detail URL, not necessarily the final PDF URL.
+        # Do NOT manufacture a download URL with an empty token. Resolve the
+        # official detail page first and use the download link published there.
         if "a=detail" in u.lower() and "document=" in u.lower():
-            from urllib.parse import parse_qs, urlparse
-            q = parse_qs(urlparse(u).query)
-            document_id = (q.get("document") or [""])[0]
-            if document_id:
-                u = f"https://www.vhodne-uverejneni.cz/index.php?a=download&document={document_id}&h=orderdocument&m=xenorders&token="
-        expanded.append({"url": u, "label": doc.get("label", "")})
+            try:
+                _final, detail_links, detail_transport = fetch_page(u)
+                direct_links = [
+                    x.get("url") for x in detail_links
+                    if x.get("url") and (
+                        PDF_RE.search(urlparse(x.get("url")).path)
+                        or "a=download" in x.get("url", "").lower()
+                        or "/download" in urlparse(x.get("url")).path.lower()
+                    )
+                ]
+                if direct_links:
+                    u = direct_links[0]
+                else:
+                    # Keep the official detail URL as the last resort. This is
+                    # still useful provenance and may be retried on the next run.
+                    u = u
+            except Exception:
+                # The detail endpoint itself may be temporarily inaccessible.
+                # Retain the official XML URL rather than creating a bogus URL.
+                pass
+        expanded.append({"url": u, "label": label})
     docs = list({d["url"]: d for d in expanded}.values())
 
     for i, doc in enumerate(docs, 1):
