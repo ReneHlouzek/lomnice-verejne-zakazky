@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-01T08:52:28Z",
+  "updated_at": "2026-10-01T09:52:01Z",
   "pages_checked": 35,
   "declared_documents": 90,
   "documents_discovered": 53,
@@ -915,7 +915,8 @@
           "transport": "direct",
           "text_available": true,
           "text_chars": 46500,
-          "text_file": "data/documents/vu-9fa7201122f8/001.txt"
+          "text_file": "data/documents/vu-9fa7201122f8/001.txt",
+          "status": "retained_from_previous_run"
         }
       ],
       "status": "ok",
