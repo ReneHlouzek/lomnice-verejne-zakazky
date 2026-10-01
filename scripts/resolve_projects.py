@@ -184,7 +184,7 @@ def referenced_contract_numbers(r):
     raw_text = " ".join(str(r.get(k) or "") for k in ("title", "subject", "name"))
     # Preserve punctuation inside identifiers such as 07-OLP2373/2021.
     for match in re.finditer(
-        r"\bke\s+smlouve(?:\s+o\s+dilo)?\s*(?:cislo\s*|c\s*)?([A-Za-z0-9][A-Za-z0-9./_-]{3,})",
+        r"\bke\s+smlouv(?:e|ě)(?:\s+o\s+dilo)?\s*(?:cislo\s*|c\s*)?([A-Za-z0-9][A-Za-z0-9./_-]{3,})",
         raw_text,
         flags=re.I,
     ):
