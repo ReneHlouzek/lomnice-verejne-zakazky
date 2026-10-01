@@ -182,7 +182,7 @@ def referenced_contract_numbers(r):
         if value:
             values.append(value)
     text = norm(" ".join(str(r.get(k) or "") for k in ("title", "subject", "name")))
-    for match in re.finditer(r"\\bke smlouve(?: o dilo)?\\s*(?:cislo\\s*|c\\s*)?([a-z0-9][a-z0-9./_-]{3,})", text):
+    for match in re.finditer(r"\bke smlouve(?: o dilo)?\s*(?:cislo\s*|c\s*)?([a-z0-9][a-z0-9./_-]{3,})", text):
         values.append(match.group(1))
     return sorted(set(values))
 
