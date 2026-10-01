@@ -181,9 +181,14 @@ def referenced_contract_numbers(r):
         value = str(r.get(key) or "").strip()
         if value:
             values.append(value)
-    text = norm(" ".join(str(r.get(k) or "") for k in ("title", "subject", "name")))
-    for match in re.finditer(r"\bke smlouve(?: o dilo)?\s*(?:cislo\s*|c\s*)?([a-z0-9][a-z0-9./_-]{3,})", text):
-        values.append(match.group(1))
+    raw_text = " ".join(str(r.get(k) or "") for k in ("title", "subject", "name"))
+    # Preserve punctuation inside identifiers such as 07-OLP2373/2021.
+    for match in re.finditer(
+        r"\bke\s+smlouve(?:\s+o\s+dilo)?\s*(?:cislo\s*|c\s*)?([A-Za-z0-9][A-Za-z0-9./_-]{3,})",
+        raw_text,
+        flags=re.I,
+    ):
+        values.append(match.group(1).rstrip("./_-"))
     return sorted(set(values))
 
 
@@ -428,6 +433,16 @@ def group_score(record, group):
         # when the supplier matches and the tender explicitly carries the
         # same contract signing date as the contract record.
         if record_source and member_source and record_source == member_source:
+            explicit_parent = (
+                is_addendum(record) and any(contract_number_matches(x, contract_number(member)) for x in referenced_contract_numbers(record))
+            ) or (
+                is_addendum(member) and any(contract_number_matches(x, contract_number(record)) for x in referenced_contract_numbers(member))
+            )
+            if explicit_parent:
+                current = score(record, member)
+                if current[0] > best[0]:
+                    best = current
+                continue
             pair_types = {classify(record), classify(member)}
             ri = ico(record.get("supplier_ico") or record.get("ico_dodavatele"))
             mi = ico(member.get("supplier_ico") or member.get("ico_dodavatele"))
