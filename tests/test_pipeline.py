@@ -29,6 +29,25 @@ def test_exact_identifier_is_strongest_match():
     assert evidence == ["ABC-123"]
 
 
+def test_addendum_links_to_base_by_explicit_contract_number():
+    base = {
+        "source": "registr-smluv",
+        "title": "Smlouva o dílo - oprava komunikace",
+        "contract_number": "07-OLP2373/2021",
+        "supplier_ico": "12345678",
+    }
+    addendum = {
+        "source": "registr-smluv",
+        "title": "Dodatek č. 3 ke smlouvě 07-OLP2373/2021",
+        "contract_number": "D-2024-03",
+        "supplier_ico": "87654321",
+    }
+    score, reason, evidence = resolver.score(addendum, base)
+    assert score == 1.0
+    assert reason == "explicit_parent_contract_number"
+    assert evidence == ["07 olp2373 2021"]
+
+
 def test_group_score_checks_all_members():
     group = [
         {"title": "Starý obecný název", "supplier_ico": "12345678"},
