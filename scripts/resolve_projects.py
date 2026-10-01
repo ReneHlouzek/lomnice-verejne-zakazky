@@ -391,10 +391,25 @@ def group_score(record, group):
     record_source = str(record.get("source") or "").strip()
     for member in group:
         member_source = str(member.get("source") or "").strip()
-        # Never merge two independent records from the same source merely
-        # because supplier/title/price happen to look similar.
+        # Same-source records are normally kept separate. Exception:
+        # an exact-title tender and its resulting contract may be one case
+        # when the supplier matches and the tender explicitly carries the
+        # same contract signing date as the contract record.
         if record_source and member_source and record_source == member_source:
-            continue
+            pair_types = {classify(record), classify(member)}
+            ri = ico(record.get("supplier_ico") or record.get("ico_dodavatele"))
+            mi = ico(member.get("supplier_ico") or member.get("ico_dodavatele"))
+            rt, mt = norm(title(record)), norm(title(member))
+            tender = record if classify(record) == "tender" else member if classify(member) == "tender" else None
+            contract = record if classify(record) == "contract" else member if classify(member) == "contract" else None
+            signed = date_value((tender or {}).get("contract_signed_date"))
+            contract_date = date_value((contract or {}).get("contract_signed_date") or (contract or {}).get("date"))
+            strict_tender_contract = (
+                pair_types == {"tender", "contract"} and ri and ri == mi
+                and rt and rt == mt and signed and signed == contract_date
+            )
+            if not strict_tender_contract:
+                continue
         current = score(record, member)
         if current[0] > best[0]:
             best = current
