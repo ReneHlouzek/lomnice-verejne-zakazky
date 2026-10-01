@@ -173,6 +173,29 @@ def contract_number(r):
     return str(r.get("contract_number") or r.get("cislo_smlouvy") or "").strip()
 
 
+def referenced_contract_numbers(r):
+    """Extract explicit parent-contract references from normalized fields and titles."""
+    values = []
+    for key in ("parent_contract_number", "original_contract_number", "related_contract_number",
+                "base_contract_number", "cislo_puvodni_smlouvy"):
+        value = str(r.get(key) or "").strip()
+        if value:
+            values.append(value)
+    text = norm(" ".join(str(r.get(k) or "") for k in ("title", "subject", "name")))
+    for match in re.finditer(r"\\bke smlouve(?: o dilo)?\\s*(?:cislo\\s*|c\\s*)?([a-z0-9][a-z0-9./_-]{3,})", text):
+        values.append(match.group(1))
+    return sorted(set(values))
+
+
+def contract_number_matches(reference, candidate):
+    """Compare contract numbers conservatively, tolerating punctuation differences."""
+    a = re.sub(r"[^a-z0-9]", "", norm(reference))
+    b = re.sub(r"[^a-z0-9]", "", norm(candidate))
+    if not a or not b:
+        return False
+    return a == b or (min(len(a), len(b)) >= 8 and (a in b or b in a))
+
+
 def is_addendum(r):
     return bool(re.search(r"\b(dodatek|dodatek c|zmenovy list|change order)\b", norm(title(r))))
 
@@ -206,6 +229,15 @@ def date_gap_days(a, b):
 
 
 def score(a, b):
+    # An explicit reference from an addendum to the base contract outranks
+    # fuzzy title/supplier similarity, but only when it identifies one side.
+    a_refs = referenced_contract_numbers(a)
+    b_refs = referenced_contract_numbers(b)
+    a_number, b_number = contract_number(a), contract_number(b)
+    if is_addendum(a) and not is_addendum(b) and any(contract_number_matches(x, b_number) for x in a_refs):
+        return 1.0, "explicit_parent_contract_number", sorted(a_refs)
+    if is_addendum(b) and not is_addendum(a) and any(contract_number_matches(x, a_number) for x in b_refs):
+        return 1.0, "explicit_parent_contract_number", sorted(b_refs)
     common = key_ids(a) & key_ids(b)
     if common:
         return 1.0, "exact_identifier", sorted(common)
