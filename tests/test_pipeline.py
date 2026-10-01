@@ -85,3 +85,26 @@ def test_analysis_is_neutral_and_provenance_preserving():
     result = analyzer.analyze(project)
     assert result["timeline"][0]["source_id"] == "X"
     assert "wrongdoing" in result["methodology"]
+
+
+def test_same_source_tender_and_resulting_contract_can_be_linked():
+    tender = {
+        "source": "vhodne-uverejneni",
+        "title": "Modernizace učeben ZUŠ - stavební práce",
+        "type": "tender",
+        "supplier_ico": "25937499",
+        "date": "2025-01-28",
+        "contract_signed_date": "2025-04-01",
+        "price": 15485071.64,
+    }
+    contract = {
+        "source": "vhodne-uverejneni",
+        "title": "Modernizace učeben ZUŠ - stavební práce",
+        "type": "contract",
+        "supplier_ico": "25937499",
+        "date": "2025-04-01",
+        "price": 15485071.64,
+    }
+    score, reason, _ = resolver.group_score(contract, [tender])
+    assert score >= 0.82
+    assert reason == "supplier_price_date_title"
