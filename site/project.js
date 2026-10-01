@@ -253,7 +253,7 @@ function provenance(ss,c){
   const row=(label,yes,note)=>`<div class="provenance-row"><strong>${esc(label)}</strong><span class="badge ${yes?'green':''}">${yes?'Doloženo':'Nenalezeno'}</span><small>${esc(note)}</small></div>`;
   return `<div class="provenance-list">
     ${row('Vhodné uveřejnění',hasVU,'Zdroj zadavatele / profilu veřejných zakázek.')}
-    ${row('Registr smluv',hasRS,'V tomto projektu nebyl nalezen odpovídající záznam v načteném registru.')}
+    ${row('Registr smluv',hasRS,hasRS?'V projektu je evidován odpovídající záznam z Registru smluv.':'V tomto projektu nebyl nalezen odpovídající záznam v načteném registru.')}
     ${row('Oficiální PVU XML',xml>0,`${xml} zdrojový záznam obsahuje metadata z oficiálního XML exportu PVU.`)}
     ${row('Ověření webem',web>0,`${web} zdrojový záznam je označen jako ověřený na webu.`)}
   </div>
