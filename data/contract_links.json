@@ -1,6 +1,140 @@
 {
-  "count": 1088,
-  "links": [
+  "count": 0,
+  "links": [],
+  "candidate_count": 1088,
+  "candidates": [
+    {
+      "project_a": "p-dodatek-1-lomnice-n-popelkou-najem-np-0107",
+      "title_a": "Dodatek 1 Lomnice n.Popelkou - nájem NP",
+      "project_b": "p-lomnice-nad-popelkou-najem-np-pro-oop-0124",
+      "title_b": "Lomnice nad Popelkou - nájem NP pro OOP",
+      "kind": "contextual",
+      "confidence": "strong",
+      "reason": "addendum_core_title",
+      "evidence": [
+        "72050501"
+      ],
+      "source_a": "registr-smluv",
+      "source_id_a": "2316654",
+      "source_b": "registr-smluv",
+      "source_id_b": "774449"
+    },
+    {
+      "project_a": "p-dodatek-c-1-ke-smlouve-o-poskytnuti-ucelove-dotace-libereckemu-kraji-z-0066",
+      "title_a": "Dodatek č. 1 ke smlouvě o poskytnutí účelové dotace Libereckému kraji z rozpočtu Města Lomnice nad Popelkou",
+      "project_b": "p-smlouva-o-poskytnuti-ucelove-dotace-libereckemu-kraji-z-rozpoctu-mesta-0079",
+      "title_b": "Smlouva o poskytnutí účelové dotace Libereckému kraji z rozpočtu města Lomnice nad Popelkou",
+      "kind": "contextual",
+      "confidence": "strong",
+      "reason": "addendum_core_title",
+      "evidence": [
+        "70891508"
+      ],
+      "source_a": "registr-smluv",
+      "source_id_a": "845225",
+      "source_b": "registr-smluv",
+      "source_id_b": "3753"
+    },
+    {
+      "project_a": "p-dodatek-c-1-ke-smlouve-o-poskytnuti-ucelove-dotace-z-dotacniho-fondu-l-0149",
+      "title_a": "Dodatek č. 1 ke smlouvě o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje na projekt karavanová stání v Lomnici nad Popelkou",
+      "project_b": "p-poskytnuti-ucelove-dotace-z-dotacniho-fondu-libereckeho-kraje-na-proje-0088",
+      "title_b": "Poskytnutí účelové dotace z dotačního fondu Libereckého kraje na projekt Infrastruktura pro cyklisty v Lomnici nad Popelkou",
+      "kind": "contextual",
+      "confidence": "strong",
+      "reason": "addendum_core_title",
+      "evidence": [
+        "70891508"
+      ],
+      "source_a": "registr-smluv",
+      "source_id_a": "20176309",
+      "source_b": "registr-smluv",
+      "source_id_b": "27256880"
+    },
+    {
+      "project_a": "p-dodatek-c-1-ke-smlouve-o-poskytnuti-ucelove-dotace-z-dotacniho-fondu-l-0149",
+      "title_a": "Dodatek č. 1 ke smlouvě o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje na projekt karavanová stání v Lomnici nad Popelkou",
+      "project_b": "p-poskytnuti-ucelove-dotace-z-rozpoctu-libereckeho-kraje-na-projekt-kara-0158",
+      "title_b": "Poskytnutí účelové dotace z rozpočtu Libereckého kraje na projekt Karavanové stání Koupaliště, Lomnice nad Popelkou",
+      "kind": "contextual",
+      "confidence": "strong",
+      "reason": "addendum_core_title",
+      "evidence": [
+        "70891508"
+      ],
+      "source_a": "registr-smluv",
+      "source_id_a": "20176309",
+      "source_b": "registr-smluv",
+      "source_id_b": "15970715"
+    },
+    {
+      "project_a": "p-dodatek-c-2-ke-smlouve-o-poskytnuti-ucelove-dotace-z-dotacniho-fondu-l-0092",
+      "title_a": "Dodatek č. 2 ke smlouvě o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje na projekt karavanová stání Lomnice nad Popelkou",
+      "project_b": "p-poskytnuti-ucelove-dotace-z-rozpoctu-libereckeho-kraje-na-projekt-kara-0158",
+      "title_b": "Poskytnutí účelové dotace z rozpočtu Libereckého kraje na projekt Karavanové stání Koupaliště, Lomnice nad Popelkou",
+      "kind": "contextual",
+      "confidence": "strong",
+      "reason": "addendum_core_title",
+      "evidence": [
+        "70891508"
+      ],
+      "source_a": "registr-smluv",
+      "source_id_a": "24740963",
+      "source_b": "registr-smluv",
+      "source_id_b": "15970715"
+    },
+    {
+      "project_a": "p-smlouva-o-poskytnuti-dotace-na-shp-rohanskeho-zamecku-v-lomnici-nad-po-0127",
+      "title_a": "Smlouva o poskytnutí dotace na SHP Rohanského zámečku v Lomnici nad Popelkou",
+      "project_b": "p-smlouva-o-poskytnuti-ucelove-dotace-na-stavebnie-historicky-pruzkum-kr-0146",
+      "title_b": "Smlouva o poskytnutí účelové dotace na stavebníě historický průzkum Křížovy vily v Lomnici nad Popelkou",
+      "kind": "contextual",
+      "confidence": "strong",
+      "reason": "supplier_title_price_date",
+      "evidence": [
+        "70891508",
+        "price",
+        "date_gap_days=324"
+      ],
+      "source_a": "registr-smluv",
+      "source_id_a": "2233702",
+      "source_b": "registr-smluv",
+      "source_id_b": "5195191"
+    },
+    {
+      "project_a": "p-smlouva-o-poskytnuti-dotace-z-dotacniho-fondu-lk-na-osobni-ochranne-pr-0105",
+      "title_a": "Smlouva o poskytnutí dotace z Dotačního fondu LK na osobní ochranné prostředky PO",
+      "project_b": "p-smlouva-o-poskytnuti-dotace-z-dotacniho-fondu-lk-na-osobni-ochranne-pr-0122",
+      "title_b": "Smlouva o poskytnutí dotace z Dotačního fondu LK na osobní ochranné prostředky PO",
+      "kind": "contextual",
+      "confidence": "strong",
+      "reason": "supplier_title_price",
+      "evidence": [
+        "70891508",
+        "price"
+      ],
+      "source_a": "registr-smluv",
+      "source_id_a": "24191791",
+      "source_b": "registr-smluv",
+      "source_id_b": "20017947"
+    },
+    {
+      "project_a": "p-smlouva-o-smlouve-budouci-o-zrizeni-sluzebnosti-c-j-olp-2194-2022-reko-0080",
+      "title_a": "Smlouva o smlouvě budoucí o zřízení služebnosti č.j. OLP/2194/2022 \"Rekonstrukce veřejného osvětlení - ulice Jičínská, Nádražní a Na Větrově, k.ú. Lomnice nad Popelkou\"",
+      "project_b": "p-smlouva-o-smlouve-budouci-o-zrizeni-sluzebnosti-c-j-olp-3553-2023-reko-0140",
+      "title_b": "Smlouva o smlouvě budoucí o zřízení služebnosti č.j. OLP/3553/2023 - rekonstrukce veřejného osvětlení ul. Jilemnická a část plk.Truhláře, k.ú. Lomnice nad Popelkou",
+      "kind": "contextual",
+      "confidence": "strong",
+      "reason": "supplier_title_price",
+      "evidence": [
+        "70891508",
+        "price"
+      ],
+      "source_a": "registr-smluv",
+      "source_id_a": "19350067",
+      "source_b": "registr-smluv",
+      "source_id_b": "24735923"
+    },
     {
       "project_a": "p-07-smlouva-o-dotaci-mesto-lomnice-nad-popelkou-obnova-soklu-a-schodist-0111",
       "title_a": "07 Smlouva o dotaci, Město Lomnice nad Popelkou, obnova soklu a schodiště budovy muzea",
@@ -2545,22 +2679,6 @@
       "source_id_b": "4286240"
     },
     {
-      "project_a": "p-dodatek-1-lomnice-n-popelkou-najem-np-0107",
-      "title_a": "Dodatek 1 Lomnice n.Popelkou - nájem NP",
-      "project_b": "p-lomnice-nad-popelkou-najem-np-pro-oop-0124",
-      "title_b": "Lomnice nad Popelkou - nájem NP pro OOP",
-      "kind": "contextual",
-      "confidence": "strong",
-      "reason": "addendum_core_title",
-      "evidence": [
-        "72050501"
-      ],
-      "source_a": "registr-smluv",
-      "source_id_a": "2316654",
-      "source_b": "registr-smluv",
-      "source_id_b": "774449"
-    },
-    {
       "project_a": "p-dodatek-2-lomnice-n-popelkou-navyseni-pausalnich-plateb-0137",
       "title_a": "Dodatek 2 Lomnice n. Popelkou - navýšení paušálních plateb",
       "project_b": "p-kamerovy-system-lomnice-nad-popelkou-0157",
@@ -4562,22 +4680,6 @@
     {
       "project_a": "p-dodatek-c-1-ke-smlouve-o-poskytnuti-ucelove-dotace-libereckemu-kraji-z-0066",
       "title_a": "Dodatek č. 1 ke smlouvě o poskytnutí účelové dotace Libereckému kraji z rozpočtu Města Lomnice nad Popelkou",
-      "project_b": "p-smlouva-o-poskytnuti-ucelove-dotace-libereckemu-kraji-z-rozpoctu-mesta-0079",
-      "title_b": "Smlouva o poskytnutí účelové dotace Libereckému kraji z rozpočtu města Lomnice nad Popelkou",
-      "kind": "contextual",
-      "confidence": "strong",
-      "reason": "addendum_core_title",
-      "evidence": [
-        "70891508"
-      ],
-      "source_a": "registr-smluv",
-      "source_id_a": "845225",
-      "source_b": "registr-smluv",
-      "source_id_b": "3753"
-    },
-    {
-      "project_a": "p-dodatek-c-1-ke-smlouve-o-poskytnuti-ucelove-dotace-libereckemu-kraji-z-0066",
-      "title_a": "Dodatek č. 1 ke smlouvě o poskytnutí účelové dotace Libereckému kraji z rozpočtu Města Lomnice nad Popelkou",
       "project_b": "p-smlouva-o-poskytnuti-ucelove-dotace-na-stavebnie-historicky-pruzkum-kr-0146",
       "title_b": "Smlouva o poskytnutí účelové dotace na stavebníě historický průzkum Křížovy vily v Lomnici nad Popelkou",
       "kind": "contextual",
@@ -4986,38 +5088,6 @@
       "source_id_a": "20176309",
       "source_b": "registr-smluv",
       "source_id_b": "5857111"
-    },
-    {
-      "project_a": "p-dodatek-c-1-ke-smlouve-o-poskytnuti-ucelove-dotace-z-dotacniho-fondu-l-0149",
-      "title_a": "Dodatek č. 1 ke smlouvě o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje na projekt karavanová stání v Lomnici nad Popelkou",
-      "project_b": "p-poskytnuti-ucelove-dotace-z-dotacniho-fondu-libereckeho-kraje-na-proje-0088",
-      "title_b": "Poskytnutí účelové dotace z dotačního fondu Libereckého kraje na projekt Infrastruktura pro cyklisty v Lomnici nad Popelkou",
-      "kind": "contextual",
-      "confidence": "strong",
-      "reason": "addendum_core_title",
-      "evidence": [
-        "70891508"
-      ],
-      "source_a": "registr-smluv",
-      "source_id_a": "20176309",
-      "source_b": "registr-smluv",
-      "source_id_b": "27256880"
-    },
-    {
-      "project_a": "p-dodatek-c-1-ke-smlouve-o-poskytnuti-ucelove-dotace-z-dotacniho-fondu-l-0149",
-      "title_a": "Dodatek č. 1 ke smlouvě o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje na projekt karavanová stání v Lomnici nad Popelkou",
-      "project_b": "p-poskytnuti-ucelove-dotace-z-rozpoctu-libereckeho-kraje-na-projekt-kara-0158",
-      "title_b": "Poskytnutí účelové dotace z rozpočtu Libereckého kraje na projekt Karavanové stání Koupaliště, Lomnice nad Popelkou",
-      "kind": "contextual",
-      "confidence": "strong",
-      "reason": "addendum_core_title",
-      "evidence": [
-        "70891508"
-      ],
-      "source_a": "registr-smluv",
-      "source_id_a": "20176309",
-      "source_b": "registr-smluv",
-      "source_id_b": "15970715"
     },
     {
       "project_a": "p-dodatek-c-1-ke-smlouve-o-poskytnuti-ucelove-dotace-z-dotacniho-fondu-l-0149",
@@ -6157,22 +6227,6 @@
       "source_id_a": "24740963",
       "source_b": "registr-smluv",
       "source_id_b": "27256880"
-    },
-    {
-      "project_a": "p-dodatek-c-2-ke-smlouve-o-poskytnuti-ucelove-dotace-z-dotacniho-fondu-l-0092",
-      "title_a": "Dodatek č. 2 ke smlouvě o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje na projekt karavanová stání Lomnice nad Popelkou",
-      "project_b": "p-poskytnuti-ucelove-dotace-z-rozpoctu-libereckeho-kraje-na-projekt-kara-0158",
-      "title_b": "Poskytnutí účelové dotace z rozpočtu Libereckého kraje na projekt Karavanové stání Koupaliště, Lomnice nad Popelkou",
-      "kind": "contextual",
-      "confidence": "strong",
-      "reason": "addendum_core_title",
-      "evidence": [
-        "70891508"
-      ],
-      "source_a": "registr-smluv",
-      "source_id_a": "24740963",
-      "source_b": "registr-smluv",
-      "source_id_b": "15970715"
     },
     {
       "project_a": "p-dodatek-c-2-ke-smlouve-o-poskytnuti-ucelove-dotace-z-dotacniho-fondu-l-0092",
@@ -10902,24 +10956,6 @@
     {
       "project_a": "p-smlouva-o-poskytnuti-dotace-na-shp-rohanskeho-zamecku-v-lomnici-nad-po-0127",
       "title_a": "Smlouva o poskytnutí dotace na SHP Rohanského zámečku v Lomnici nad Popelkou",
-      "project_b": "p-smlouva-o-poskytnuti-ucelove-dotace-na-stavebnie-historicky-pruzkum-kr-0146",
-      "title_b": "Smlouva o poskytnutí účelové dotace na stavebníě historický průzkum Křížovy vily v Lomnici nad Popelkou",
-      "kind": "contextual",
-      "confidence": "strong",
-      "reason": "supplier_title_price_date",
-      "evidence": [
-        "70891508",
-        "price",
-        "date_gap_days=324"
-      ],
-      "source_a": "registr-smluv",
-      "source_id_a": "2233702",
-      "source_b": "registr-smluv",
-      "source_id_b": "5195191"
-    },
-    {
-      "project_a": "p-smlouva-o-poskytnuti-dotace-na-shp-rohanskeho-zamecku-v-lomnici-nad-po-0127",
-      "title_a": "Smlouva o poskytnutí dotace na SHP Rohanského zámečku v Lomnici nad Popelkou",
       "project_b": "p-smlouva-o-poskytnuti-ucelove-dotace-z-dotacniho-fondu-lk-programu-c-1-0087",
       "title_b": "Smlouva o poskytnutí účelové dotace z Dotačního fondu LK, programu č. 1.1, na nákup ochranných prostředků",
       "kind": "contextual",
@@ -13253,23 +13289,6 @@
       "source_id_a": "20017947",
       "source_b": "registr-smluv",
       "source_id_b": "8513"
-    },
-    {
-      "project_a": "p-smlouva-o-poskytnuti-dotace-z-dotacniho-fondu-lk-na-osobni-ochranne-pr-0105",
-      "title_a": "Smlouva o poskytnutí dotace z Dotačního fondu LK na osobní ochranné prostředky PO",
-      "project_b": "p-smlouva-o-poskytnuti-dotace-z-dotacniho-fondu-lk-na-osobni-ochranne-pr-0122",
-      "title_b": "Smlouva o poskytnutí dotace z Dotačního fondu LK na osobní ochranné prostředky PO",
-      "kind": "contextual",
-      "confidence": "strong",
-      "reason": "supplier_title_price",
-      "evidence": [
-        "70891508",
-        "price"
-      ],
-      "source_a": "registr-smluv",
-      "source_id_a": "24191791",
-      "source_b": "registr-smluv",
-      "source_id_b": "20017947"
     },
     {
       "project_a": "p-smlouva-o-poskytnuti-dotace-z-dotacniho-fondu-lk-na-osobni-ochranne-pr-0105",
@@ -17810,23 +17829,6 @@
       "source_id_a": "12587736",
       "source_b": "registr-smluv",
       "source_id_b": "24928323"
-    },
-    {
-      "project_a": "p-smlouva-o-smlouve-budouci-o-zrizeni-sluzebnosti-c-j-olp-2194-2022-reko-0080",
-      "title_a": "Smlouva o smlouvě budoucí o zřízení služebnosti č.j. OLP/2194/2022 \"Rekonstrukce veřejného osvětlení - ulice Jičínská, Nádražní a Na Větrově, k.ú. Lomnice nad Popelkou\"",
-      "project_b": "p-smlouva-o-smlouve-budouci-o-zrizeni-sluzebnosti-c-j-olp-3553-2023-reko-0140",
-      "title_b": "Smlouva o smlouvě budoucí o zřízení služebnosti č.j. OLP/3553/2023 - rekonstrukce veřejného osvětlení ul. Jilemnická a část plk.Truhláře, k.ú. Lomnice nad Popelkou",
-      "kind": "contextual",
-      "confidence": "strong",
-      "reason": "supplier_title_price",
-      "evidence": [
-        "70891508",
-        "price"
-      ],
-      "source_a": "registr-smluv",
-      "source_id_a": "19350067",
-      "source_b": "registr-smluv",
-      "source_id_b": "24735923"
     },
     {
       "project_a": "p-smlouva-o-smlouve-budouci-o-zrizeni-sluzebnosti-c-j-olp-2194-2022-reko-0080",
