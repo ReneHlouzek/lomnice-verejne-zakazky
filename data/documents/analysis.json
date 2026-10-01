@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "documents_analyzed": 2,
+  "documents_analyzed": 3,
   "method": "Pravidlová extrakce z textu PDF; nejde o právní ani ekonomické hodnocení.",
   "documents": [
     {
@@ -71,6 +71,42 @@
         "práci konané mimo pracovní poměr musí být předmět a cena prací a termín realizace), e) dodatek ke smlouvě o dílo nebo novou objednávku v případě navýšení prací nad rámec smlouvy o dílo nebo objednávky. 10. Nevyčerpané, resp. neproinvestované finanční prostředky poskytnuté v souladu s touto smlouvou je příjemce povinen vrátit nejpozději do",
         "Stránka 1 z 12 *KULBX00YOAZO* Smlouva o poskytnutí účelové dotace z rozpočtu Libereckého kraje INDIVIDUÁLNÍ DOTACE OLP/02908/2026 schválená Zastupitelstvem Libereckého kraje dne 25.8.2026 usnesením č. 413/26/ZK Smluvní strany: Liberecký kraj se sídlem U Jezu 642/2a, 460 01 Liberec IV - Perštýn korespondenč",
         "a alkohol a tabák a výrobky z nich. 4. Termín zahájení realizace projektu je 2.11.2023 a termín ukončení realizace projektu je nejpozději 31.12.2026. 5. Ukončením realizace projektu se rozumí dokončení veškerých aktivit na projektu. 6. Projekt musí být vyúčtován do 50 kalendářních dnů po ukončení realizace projektu, nejpozději do 19.02.2027."
+      ]
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "vu-9fa7201122f8",
+      "source_url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3212050&h=orderdocument&m=xenorders&token=",
+      "title": "Obnova komunikace Lomnice nad Popelkou – Chlum, I. etapa",
+      "document_name": "Obnova komunikace Lomnice nad Popelkou – Chlum, I. etapa",
+      "text_file": "data/documents/vu-9fa7201122f8/001.txt",
+      "text_chars": 46500,
+      "document_types": [
+        "contract",
+        "budget",
+        "tender",
+        "deadline"
+      ],
+      "signals": {
+        "contract": 1,
+        "addendum": 0,
+        "budget": 1,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 1,
+        "deadline": 1
+      },
+      "amounts_czk": [
+        5426546.1
+      ],
+      "dates": [
+        "27. 2.2023",
+        "27.2.2023",
+        "8.3.2021"
+      ],
+      "snippets": [
+        "_________v příloze č. 2 ZD - identifikační údaje zhotovitele (smluvní strany smlouvy) - cena díla (v čl. III smlouvy, bod 3.1.) - kontakty zhotovitele pro vady díla ( v čl. VIII smlouvy, bod 8.6.) - jméno autorizovaného stavbyvedoucího (v čl. XI smlouvy, bod 11.1. b) - datum a jméno oprávněné osoby jednat jménem či za dodavatele",
+        "ílohu zadávací dokumentace č. 4 soupis stavebn ích prací, dodávek a služeb ( položkový rozpočet) vypracoval: Ing. Martin Rambousek, ČKAIT 1004379, společnost APC SILNICE s.r.o., Jana Babáka 11, 612 00 Brno, IČ: 60705981 Přílohu zadávací dokumentace č. 5 projektovou dokumentaci vypracoval: Ing. Martin Rambousek, ČKAIT 1004379, společnos"
       ]
     }
   ]
