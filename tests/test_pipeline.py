@@ -45,7 +45,7 @@ def test_addendum_links_to_base_by_explicit_contract_number():
     score, reason, evidence = resolver.score(addendum, base)
     assert score == 1.0
     assert reason == "explicit_parent_contract_number"
-    assert evidence == ["07 olp2373 2021"]
+    assert evidence == ["07-OLP2373/2021"]
 
 
 def test_group_score_checks_all_members():
