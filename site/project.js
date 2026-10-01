@@ -322,7 +322,7 @@ function timeline(es,ss=[],analysis={documents:[]}){
     if(src?.source_url)evidence.push('<a href="'+esc(src.source_url)+'" target="_blank" rel="noopener">zdrojový záznam →</a>');
     if(docs.length)evidence.push('<span>'+docs.length+' dokumenty v XML</span>');
     if(pdfs.length)evidence.push('<span>'+pdfs.length+' analyzované PDF</span>');
-    return \`<div class="timeline-item"><div class="timeline-marker"><span>\${i+1}</span></div><div><div class="timeline-top"><strong>\${date(e.date)}</strong><span class="badge">\${esc(eventLabel(e.type))}</span></div><p>\${esc(e.title||'Bez názvu')}\${e.price!=null?' · <strong>'+money(e.price)+'</strong>':''}</p><div class="timeline-evidence">\${e.source?'<span class="meta">'+esc(sourceLabel(e.source))+(e.source_id?' · ID '+esc(e.source_id):'')+'</span>':''}\${evidence.length?evidence.join(' · '):'<span class="meta">Bez přímé vazby na další dokument v načtených datech.</span>'}</div></div></div>\`;
+    return `<div class="timeline-item"><div class="timeline-marker"><span>${i+1}</span></div><div><div class="timeline-top"><strong>${date(e.date)}</strong><span class="badge">${esc(eventLabel(e.type))}</span></div><p>${esc(e.title||'Bez názvu')}${e.price!=null?' · <strong>'+money(e.price)+'</strong>':''}</p><div class="timeline-evidence">${e.source?'<span class="meta">'+esc(sourceLabel(e.source))+(e.source_id?' · ID '+esc(e.source_id):'')+'</span>':''}${evidence.length?evidence.join(' · '):'<span class="meta">Bez přímé vazby na další dokument v načtených datech.</span>'}</div></div></div>`;
   }).join('')+'</div>';
 }
 function signals(ss){
