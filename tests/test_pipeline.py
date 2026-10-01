@@ -107,4 +107,4 @@ def test_same_source_tender_and_resulting_contract_can_be_linked():
     }
     score, reason, _ = resolver.group_score(contract, [tender])
     assert score >= 0.82
-    assert reason == "supplier_price_date_title"
+    assert reason == "supplier_title_price"
