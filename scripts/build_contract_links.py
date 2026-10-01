@@ -1,4 +1,4 @@
-"""Build an explainable register of contractual and contextual links between projects."""
+"""Build an explainable register of contractual links and review candidates."""
 from __future__ import annotations
 import json
 from pathlib import Path
@@ -10,10 +10,11 @@ import resolve_projects as resolver
 
 
 def build_links(projects):
-    links = []
+    links, candidates = [], []
     for i, left in enumerate(projects):
         for right in projects[i + 1:]:
-            best = None
+            explicit_best = None
+            candidate_best = None
             for sa in left.get("sources", []):
                 a = sa.get("record", {})
                 for sb in right.get("sources", []):
@@ -30,28 +31,33 @@ def build_links(projects):
                         item = {"kind": "contractual", "confidence": "explicit",
                                 "reason": "explicit_parent_contract_number",
                                 "evidence": sorted(set(refs_a + refs_b)), "a": a, "b": b}
-                    else:
-                        score, reason, evidence = resolver.score(a, b)
-                        if score < .60:
-                            continue
-                        item = {"kind": "contextual", "confidence": "strong" if score >= .82 else "review",
-                                "reason": reason, "evidence": evidence, "a": a, "b": b}
-                    if best is None or (item["kind"] == "contractual" and best["kind"] != "contractual") or (
-                        item["kind"] == best["kind"] and item.get("confidence") == "explicit"
-                    ):
-                        best = item
-            if best:
-                links.append({
+                        explicit_best = item
+                        continue
+                    score, reason, evidence = resolver.score(a, b)
+                    if score < .60:
+                        continue
+                    item = {"kind": "contextual", "confidence": "strong" if score >= .82 else "review",
+                            "reason": reason, "evidence": evidence, "a": a, "b": b}
+                    if candidate_best is None or score > candidate_best[0]:
+                        candidate_best = (score, item)
+
+            def row(item):
+                return {
                     "project_a": left["id"], "title_a": left.get("title"),
                     "project_b": right["id"], "title_b": right.get("title"),
-                    "kind": best["kind"], "confidence": best["confidence"],
-                    "reason": best["reason"], "evidence": best["evidence"],
-                    "source_a": best["a"].get("source"), "source_id_a": best["a"].get("source_id"),
-                    "source_b": best["b"].get("source"), "source_id_b": best["b"].get("source_id"),
-                })
-    links.sort(key=lambda x: (x["kind"] != "contractual", x["confidence"] != "explicit",
-                              x["title_a"] or "", x["title_b"] or ""))
-    return links
+                    "kind": item["kind"], "confidence": item["confidence"],
+                    "reason": item["reason"], "evidence": item["evidence"],
+                    "source_a": item["a"].get("source"), "source_id_a": item["a"].get("source_id"),
+                    "source_b": item["b"].get("source"), "source_id_b": item["b"].get("source_id"),
+                }
+            if explicit_best:
+                links.append(row(explicit_best))
+            elif candidate_best:
+                candidates.append(row(candidate_best[1]))
+
+    links.sort(key=lambda x: (x["title_a"] or "", x["title_b"] or ""))
+    candidates.sort(key=lambda x: (x["confidence"] != "strong", x["title_a"] or "", x["title_b"] or ""))
+    return links, candidates
 
 
 def main():
@@ -61,11 +67,12 @@ def main():
             projects.append(json.loads(path.read_text(encoding="utf-8")))
         except (OSError, json.JSONDecodeError):
             continue
-    links = build_links(projects)
+    links, candidates = build_links(projects)
+    output = {"count": len(links), "links": links,
+              "candidate_count": len(candidates), "candidates": candidates}
     (ROOT / "data" / "contract_links.json").write_text(
-        json.dumps({"count": len(links), "links": links}, ensure_ascii=False, indent=2) + "\n",
-        encoding="utf-8")
-    print(f"Built {len(links)} contractual/contextual links across {len(projects)} projects.")
+        json.dumps(output, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print(f"Built {len(links)} explicit contractual links and {len(candidates)} review candidates across {len(projects)} projects.")
 
 
 if __name__ == "__main__":
