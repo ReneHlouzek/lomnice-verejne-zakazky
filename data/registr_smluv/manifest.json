@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-09-30T17:57:25.575965+00:00",
+  "updated_at": "2026-10-01T08:49:40.647074+00:00",
   "publisher_ico": "00275905",
   "history_from": "2016-07",
   "recent_months": 2,
   "batch_size": 36,
-  "dump_count_considered": 123,
+  "dump_count_considered": 124,
   "downloaded_this_run": 2,
   "records_total": 109,
   "history_complete": true,
   "selected_this_run": [
-    "2026-08",
-    "2026-09"
+    "2026-09",
+    "2026-10"
   ],
   "processed_dumps": {
     "https://data.smlouvy.gov.cz/dump_2016_07.xml": "",
@@ -135,6 +135,7 @@
     "https://data.smlouvy.gov.cz/dump_2026_04.xml": "",
     "https://data.smlouvy.gov.cz/dump_2026_05.xml": "",
     "https://data.smlouvy.gov.cz/dump_2026_06.xml": "",
-    "https://data.smlouvy.gov.cz/dump_2026_07.xml": ""
+    "https://data.smlouvy.gov.cz/dump_2026_07.xml": "",
+    "https://data.smlouvy.gov.cz/dump_2026_10.xml": ""
   }
 }
