@@ -289,14 +289,16 @@ def score(a, b):
         return .84, "supplier_title_price_date", [ai, "price", f"date_gap_days={gap}"]
     if addendum_pair and same_supplier and core_sim >= .68:
         return .74, "candidate_addendum_core_title", [ai]
-    if same_supplier and (sim >= .40 or token_sim >= .45):
+    # Broad candidate rules previously connected many unrelated records merely
+    # because the same public institution appeared as supplier/recipient.
+    # Keep review candidates only when title similarity is meaningful and there
+    # is an independent temporal or financial signal.
+    if same_supplier and (sim >= .68 or token_sim >= .60) and (near_price or near_date):
         return .64, "candidate_supplier_title", [ai, f"title_similarity={sim:.2f}", f"token_overlap={token_sim:.2f}", f"date_gap_days={gap}" if gap is not None else "no_date_match"]
-    if (sim >= .72 or token_sim >= .55) and (near_price or near_date):
+    if (sim >= .72 or token_sim >= .60) and (near_price or near_date):
         return .68, "candidate_title_price_or_date", ["title_similarity={:.2f}".format(sim), f"token_overlap={token_sim:.2f}", "price" if near_price else f"date_gap_days={gap}"]
     if same_supplier and sim >= .60 and (near_price or near_date):
         return .72, "candidate_supplier_title_date_or_price", [ai, f"date_gap_days={gap}" if gap is not None else "no_date_match"]
-    if same_supplier and token_sim >= .28 and same_year:
-        return .62, "candidate_supplier_title_year", [ai, f"title_similarity={sim:.2f}", f"token_overlap={token_sim:.2f}", f"date_gap_days={gap}"]
     if sim >= .75 and near_price:
         return .70, "candidate_title_price", ["price"]
     return 0, "none", []
