@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-10-02T09:52:28Z",
+  "updated_at": "2026-10-02T16:36:14Z",
   "records_checked": 110,
   "attachments_declared": 3,
   "documents_discovered": 3,
-  "documents_downloaded": 2,
-  "documents_text_extracted": 2,
+  "documents_downloaded": 3,
+  "documents_text_extracted": 3,
   "records": [
     {
       "source": "registr-smluv",
@@ -714,8 +714,12 @@
           "index": 1,
           "name": "SoBSoZS_Hodon%C3%ADn_T-Mobile%20-%20uzav%C5%99en%C3%A1.pdf",
           "url": "https://smlouvy.gov.cz/smlouva/soubor/45198501/SoBSoZS_Hodon%C3%ADn_T-Mobile%20-%20uzav%C5%99en%C3%A1.pdf",
-          "status": "download_error",
-          "error": "Command '['curl', '--fail', '--location', '--http1.1', '--retry', '2', '--retry-delay', '1', '--connect-timeout', '8', '--max-time', '25', '-A', 'Lomnice-Verejne-Zakazky/1.0 (public-data-archive)', '-H', 'Accept: application/pdf,*/*', 'https://smlouvy.gov.cz/smlouva/soubor/45198501/SoBSoZS_Hodon%C3%ADn_T-Mobile%20-%20uzav%C5%99en%C3%A1.pdf']' returned non-zero exit status 22."
+          "sha256": "2ae2a02f25749cfc39e7497d2fd0b07d774cf9f7b0abe1f8a420d8a725c20908",
+          "bytes": 2463303,
+          "content_type": "application/pdf",
+          "text_available": true,
+          "text_chars": 16817,
+          "text_file": "data/documents/registr-smluv/37367969/001.txt"
         }
       ],
       "status": "ok"

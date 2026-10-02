@@ -1,0 +1,290 @@
+TMCZ č. 64155 /bVB2/FTTH-000/2025
+1
+FIS_CZ_3416_64155_30173_00000_Hodonin_3, PL-4268
+SMLOUVA O BUDOUCÍ SMLOUVĚ O ZŘÍZE NÍ SLUŽEBNOSTI
+uzavřená níže uvedeného d ata podle ustanovení § 1785 a násl. a § 1257 a násl. zákona
+č. 89/2012 Sb., občanský zákoník, v platném znění, a ve smyslu ustanovení § 104 odst. 3zákona
+č. 127/2005 Sb., o elektronických ko munikacích a o změně některých souvisejících zákonů
+(dále též jen „zákon o elektronických komunikacích“) mezi těmito smluvními stranami:
+Město Hodonín
+sídlo: Masarykovo nám. 53/1, Hodonín, PSČ 695 01
+zastoupené Liborem Střechou, starostou
+IČO 00284891
+jako budoucí povinný ze služebnosti, dále jen „povinný“
+a
+T-Mobile Czech Repub lic a.s.
+sídlo: Praha 4, Tomíčkova 2144/1, 148 00
+zapsaný v obchodním rejstříku vedeném Městským soudem v Praze, odd íl B., vložka 3787
+zastoupený , n a základě pověření
+IČO: 64949681
+DIČ: CZ6494 9681
+bankovní spojení: BNP Paribas S.A., pobočka Česká republika
+číslo účtu: 064450-6002770110/6300
+plátce DPH
+jako budoucí oprávněný ze služebnosti, dále jen „oprávněný“
+za těchto podmínek:
+I.
+Prohlášení povinného
+Povinný je vlastníkem pozemků p. č. 1/1, 1/19, 1/20, 1/22, 1/26, 1/32, 1/33, 1 /34, 1/35, 1/44,
+1/60, 1/65, 139/2, 795/78, 795/155, 924/6, 924/14, 924/15, 924/44, 924/201, 924/202, 924/361,
+924/362, 924/385, 924/387, 924/392, 924/393, 924/400, 924/401, 924 /443, 924/444, 924/477,
+924/501, 924/502, 2878/10, 2879/8, 2879/9, 2879/10, 2879/11, 2879/12, 2879/15, 2879 /82,
+2879/88, 2879/116, 2879/121, 2879/122, 2879/123, 2879/125, 2879/136, 2879/137, 2879/143,
+2879/145, 2879/150, 2879/154, 2879/155, 2879/177, 10334 vše v k. ú. Hodonín. Pozemky jsou
+zapsány v katastru nemovitostí pro k. ú. Hodonín u Katastrálního úřadu pro Jihomoravský kraj,
+Katastrálního pr acoviště Hodonín n a listu v lastnictví č. 10001 – M ěsto Hodonín ( taktéž
+„služebné pozemky“).
+II.
+Zřízení služebnosti a podmínky jejího zřízení
+1. Obě smluvní strany se dohodly, že do jednoho roku od př edložení geometrického plánu
+pro vymezení rozsahu věcného břemene oprávněným povinnému spolu uzavřou smlouvu
+o zřízení služebnosti, a to na zá kladě výzvy opr ávněného, pod le které povinný zřídí ve
+prospěch oprávněného služebnost v souladu s § 104 zákona o elektronických komunikacích
+spočívající v právu uložení podzemního vedení veřejné komunikační sítě pod označením
+„INS_FTTH_CZ_1229_ 64155_Hodonín 3“ na částech služebných pozemků, v právu jeho
+provozování a v právu p řístupu k n ěmu za účelem jeho kontroly, údr žby, modernizací,
+
+  TMCZ č. 64155/bVB2/FTTH -000/ 2025  
+2 
+FIS_CZ_3416_64155_30173_00000_Hodonin_3, PL-4268 
+úprav a oprav. Předpokládaná trasa vedení veřejné komunikační sítě je vyznačena v  kopii 
+situačního plánu, která je nedílnou součástí této smlouvy.  
+2. Části výše uvedených pozemků, které budou dotčeny služebností uvedenou v tomto článku 
+v odstavci 1. (dále jen „předmětné části pozemků“), budou přesně vymezeny 
+v geometrickém plánu. Smluvní strany se dohodly, že oprávněný dodá povinnému 
+geometrický plán ve  třech vyhotoveních, a to nejpozději do pěti let od účinnosti této 
+smlouvy. Konec lhůty pěti let připadá na den, který se číslem shoduje se dnem, od kterého 
+se lhůta počítá, to je od data účinnosti této smlouvy. Oprávněný se zavazuje, že spolu 
+s geometrickým plánem zajistí u zpracovatele geometrického plánu výpočet délky 
+podzemního vedení veřejné komunikační sítě v běžných metrech, aby bylo možné stanovit 
+úplatu za zřízení služebnosti. 
+3. Smluvní strany se dohodly, že rozsah služebnosti bude vyznačen v geometrickém plánu 
+dodaném oprávněným v  šíři 0, 15 m na obě strany od osy podzemního vedení veřejné 
+komunikační sítě. 
+4. Oprávněný se zavazuje, že do doby uzavření smlouvy o zřízení služebnosti nepřevede 
+vedení veřejné komunikační sítě na jiný subjekt. 
+5. Oprávněný se zavazuje, že v případě konfliktu trasy veřejné komunikační sítě se stávajícími 
+vzrostlými dřevinami při výkopových pracích bude důsledně dodržovat českou normu ČSN 
+83 9061 Technologie vegetačních úprav v krajině - Ochrana stromů, porostů a vegetačních 
+ploch při stavebních pracích. V těchto místech bude provedena odpovídající ochrana kmene 
+stromu a taková opatření, aby nedošlo k poškození kořenového systému stromu – výkop 
+v blízkosti stromů bude hlouben ručně a případné odkopané kořeny silnější než 2 cm 
+v průměru nesmí být přerušeny. 
+6. Oprávněný se zavazuje, že před zahájením výkopových prací požádá odbor právní MěÚ 
+Hodonín (odpadové hospodářství a zele ň) o vydání povolení zvláštního užívání veřejného 
+prostranství. 
+7. Oprávněný se zavazuje, že v případě zásahu do chodníku a vozovky bude klást důraz na 
+dostatečné hutnění zásypu rýhy i konstrukčních vrstev dle příslušných českých norem ČSN 
+72 1006 a ČSN 73 6133. Při křížení s  vozovkou se živičným krytem bude přednostně 
+prověřena možnost provedení bezvýkopovou technologií (tzv. protlakem) . Jestliže 
+z technických důvodů nebude možné realizovat protlakem a křížení vozovky bude 
+překopem, bude toto odůvodnění a podmínky křížení předem projednány s  odborem 
+investic a údržby Městského úřadu Hodonín. 
+8. Oprávněný se zavazuje, že po dobu 3 let od e dne protokolárního předání příslušných 
+služebných pozemků zpět povinnému bude odpovídat za stav místní komunikace v místech 
+uložení veřejné komunikační sítě . Projeví-li se v  této době závada  na komunikaci (např. 
+propadlý chodník), vyzve povinný oprávněného k  odstranění závady. Oprávněný odstraní 
+závadu na komunikaci do 30 dnů od doručení výzvy k odstranění. V případě závady většího 
+rozsahu, případně vyžadující další povolení nebo s  ohledem na  aktuální klimatické 
+podmínky svolá v  této době oprávněný jednání, na kterém bude stanoven další postup a 
+termín pro odstranění závady. Z  tohoto jednání bude proveden zápis. V  případě, že 
+oprávněný neodstraní závadu v  dohodnutém termínu, je oprávněn ji bez dalšího odstranit 
+povinný, a to na náklady oprávněného. V  takovém případě se oprávněný zavazuje uhradit 
+povinnému v  plné výši náklady na odstranění závady, a to ve lhůtě uvedené ve výzvě 
+k úhradě nákladů. Výše uvedená záruka však zaniká, pokud v průběhu jejího trvání dojde 
+k jakémukoli zásahu do opraveného povrchu či pozemku pod tímto povrchem ze strany 
+povinného nebo jakékoli třetí osoby. 
+9. Pokud rozhodnutím oprávněného přestane podzemní vedení veřejné komunikační sítě 
+umístěné na služebných pozemcích plnit svoji funkci, oprávněný je odstraní na vlastní 
+náklady, nedohodnou -li se smluvní strany jinak. 
+
+  TMCZ č. 64155/bVB2/FTTH -000/ 2025  
+3 
+FIS_CZ_3416_64155_30173_00000_Hodonin_3, PL-4268 
+10. Oprávněný se zavazuje před zahájením výkopových prací na služebných pozemcích 
+konzultovat výkopové práce s  odborem investic a údržby a odborem rozvoje města, které 
+jsou oprávněny stanovit podmínky pro tyto výkopové práce. 
+ 
+III. 
+Úplata za zřízení služebnosti a další ujednání 
+1. Smluvní strany se dohodly, že služebnost uvedenou v  článku II. odstavci 1. této smlouvy 
+zřídí povinný ve prospěch oprávněného na dobu neurčitou, a to úplatně za jednorázovou 
+úplatu 200 Kč/započatý bm (slovy: dvěstě korun českých za každý započatý běžný metr) 
+podzemního vedení veřejné komunikační sítě uloženého pod povrchem předmětných částí 
+pozemků. K celkové vypočtené úplatě bude připočtena daň z  přidané hodnoty dle platné 
+právní úpravy v době uzavření smlouvy o zřízení služebnosti.  
+2. Smluvní strany se dohodly, že výše uvedená úplata za zřízení služebnosti včetně daně 
+z přidané hodnoty bude splatná do 60 dnů ode dne účinnosti smlouvy o zřízení služebnosti 
+na účet povinného uvedený ve smlouvě o zřízení služebnosti . Po zaplacení výše uvedené 
+úplaty bude oprávněnému vystaven povinným daňový doklad, a to nejpozději do 15 dnů od 
+přijetí úplaty na účet povinného . Daňový doklad  bude obsahovat náležitosti stanovené 
+platnými právními předpisy, a i číslo smlouvy o zřízení služebnosti strany oprávněné. 
+3. Smluvní strany se dohodly, že oprávněný je povinen uhradit povinnému  správní poplatek 
+spojený s vkladem práva odpovídacího služebnosti do katastru nemovitostí , a to současně 
+s úplatou za zřízení služebnosti. Náklady spojené s vyhotovením geometrického plánu nese 
+též oprávněný. 
+4. Smluvní strany se dohodly, že ve  smlouvě o zřízení služebnosti bude sjednáno právo 
+povinného odstoupit od smlouvy, pokud oprávněný nezaplatí úplatu nebo správní poplatek 
+dle předchozího odstavce této smlouvy , případně i jen jejich  nepatrnou část, a to ani po 
+uplynutí přeměřené dodatečné lhůty, kterou mu k nápravě povinný písemně poskytne. Toto 
+právo může být povinným  po uplynutí dodatečné lhůty k nápravě  uplatněno kdykoliv po 
+dobu, po kterou bude oprávněný v prodlení s plněním závazku. 
+5. Nesplní-li oprávněný smluvní povinnosti uvedené v  odstavci 1. nebo 2. článku II.  této 
+Smlouvy, sjednávají povinný a oprávněný smluvní pokutu ve výši 10.000 Kč (slovy: 
+desettisíc korun českých) za každý započatý měsíc prodlení se splněním svých povinností 
+(za každý jednotlivý případ) splatnou do jednoho měsíce od doručení písemné výzvy 
+povinným. Tímto ujednáním o smluvní pokutě není dotčen nárok po vinného na náhradu 
+škody. 
+6. Právo služebnosti, které bude sjednáno ve smlouvě o zřízení služebnosti, nabude oprávněný 
+vkladem tohoto práva do katastru nemovitostí podle smlouvy o zřízení služebnosti. 
+7. Veškerá práva a povinnosti vyplývající z této smlouvy přechází v plném rozsahu i na právní 
+nástupce stran této smlouvy, přičemž povinný se zavazuje převést práva a povinnosti z této 
+smlouvy na nového vlastníka služebných pozemků. 
+8. Smluvní strany se dohodly, že návrh na vklad práva odpovídajícího shora uvedené 
+služebnosti podle smlouvy o zřízení služebnosti podá na katastrální úřad povinný, a to do 
+15 dnů ode dne  zaplacení úplaty dohodnuté v  tomto článku v odstavci 1. a správního 
+poplatku dle odstavce 3. tohoto článku.  
+9. Povinný prohlašuje, že právo odpovídající služebnosti za výše uvedených podmínek 
+ve prospěch oprávněného zřídí. Oprávněný prohlašuje, že právo odpovídající služebnosti 
+za výše dohodnutých podmínek přijme. 
+10. Podpisem této smlouvy uděluje povinný oprávněnému souhlas s  umístěním a provedením 
+stavby podzemního vedení veřejné komunikační sítě na předmětných částech pozemků, a 
+dále se vstupem na pozemky uvedené v  článku I. odstavci 1. této smlouvy za účelem jeho 
+vybudování. Oprávněný oznámí vstup na služebné pozemky písemným oznámením 
+
+  TMCZ č. 64155/bVB2/FTTH -000/ 2025  
+4 
+FIS_CZ_3416_64155_30173_00000_Hodonin_3, PL-4268 
+doručeným nejméně 10 dnů předem odboru investic a údržby MěÚ Hodonín a odboru 
+právnímu MěÚ Hodonín (odpadové hospodářství a zele ň). 
+11. Obě smluvní strany se dohodly, že bude -li chtít povinný provést v  ochranném pásmu 
+podzemního vedení veřejné komunikační sítě výsadbu porostů, předloží oprávněnému tento 
+písemný záměr včetně grafického znázornění a přesného výčtu použitých rostlin předem ke 
+schválení. Oprávněný se zavazuje posoudit předloženou žádost nejen v  souladu 
+s ustanovením § 102 zákona č. 127/2005 Sb. v  platném znění, ale i z  pohledu 
+předpokládaného vlivu použitých rostlin na bezpečný a spolehlivý chod veřejné 
+komunikační sítě, ochran u života a zdraví osob a zvířat, ochranu majetku a na zajištění 
+přístupu k veřejné komunikační síti.  
+ 
+IV. 
+Povinnosti a odpovědnost oprávněného 
+1. Smluvní strany sjednávají povinnost oprávněného uvést služebné pozemky a jiný majetek 
+nacházející se na těchto pozemcích po uložení podzemního vedení veřejné komunikační 
+sítě do původního stavu  a není-li to možné s  ohledem na povahu provedených prací, do 
+stavu odpovídajícího předchozímu účelu nebo užívání služebných pozemků. 
+2. Odpovědnost oprávněného za případné škody způsobené povinnému na služebných 
+pozemcích a na jiném majetku povinného nacházejícím se na těchto pozemcích při realizaci 
+podzemního vedení veřejné komunikační sítě, stejně jako rozsah a způsob jejich náhrady se 
+řídí příslušnými obecně závaznými právními předpisy. 
+ 
+V. 
+Schvalovací doložka 
+Tuto smlouvu o budoucí smlouvě o zřízení služebností schválila Rada města Hodonína na své 
+schůzi dne 10. 3. 2026 usnesením č. 5540. 
+ 
+VI. 
+Závěrečná ujednání 
+1. V případě, že stavba nebude z jakýchkoliv důvodů realizována nebo pokud služebné 
+pozemky nebudou podzemním vedením veřejné komunikační sítě dotčeny, nejsou smluvní 
+strany výše uvedenými závazky vázány. Oprávněný tuto skutečnost písemně oznámí 
+povinnému. 
+2. Právní vztahy touto smlouvou neupravené se řídí příslušnými ustanoveními zákona 
+č. 89/2012 Sb., občanský zákoník, v platném znění  a zákonem o elektronických 
+komunikacích. 
+3. V souvislosti s uzavřením a plněním smlouvy zpracovává oprávněný osobní údaje fyzické 
+osoby jednající za druhou smluvní stranu nebo fyzické osoby zapojené do procesu pln ění 
+smlouvy (dále společně jako „Subjekt údajů“), a to pro účely: uzavírání a plnění smlouvy; 
+vnitřní administrativní pot řeby; ochrana majetku a osob; ochrana právních nárok ů; tvorba 
+statistik a evidencí; pln ění zákonných povinností. Právními d ůvody ke zpracování jsou 
+oprávněné zájmy (uzavírání a pln ění smlouvy, vnit řní administrativní pot řeby, ochrana 
+majetku a osob, ochrana právních nárok ů a tvorba statistik a evidencí) a pln ění právních 
+povinností (plnění zákonných povinností) správce. Zpracovávanými osobními údaji jsou 
+identifikační a kontaktní údaje, pracovní či korporátní zařazení a záznamy komunikace. V 
+případě přístupu do informačních systémů správce, jsou zpracovávány další údaje, o čemž 
+bude Subjekt údaj ů poučen v rámci p řidělení p řístupu. Smluvní strany se zavazují 
+informovat Subjekt údaj ů (své zaměstnance, pracovníky atp.) o tom, že jejich údaje jsou 
+druhou smluvní stranou, která je v pozici správce, zpracovávány, a to zejména v rozsahu čl. 
+13 a násl. nařízení Evropského parlamentu a Rady (EU) č. 2016/679. 
+
+TMCZ č. 64155 /bVB2/FTTH-000/2025
+5
+FIS_CZ_3416_64155_30173_00000_Hodonin_3, PL-4268
+4. Účastníci této smlouvy po jejím přečtení prohlašují, že souhlasí s jejím obsahem, že byla
+sepsána na zá kladě pravdivých úd ajů a jejich v ážné a svobodné vůle. Na důkaz toho
+připojují své podpisy.
+5. Tato smlouva nabývá platnosti dnem podpisu oběma smluvními stranami a bude povinným
+zveřejněna v Registru smluv vedeném Ministerstvem vnitra České republiky, a to do 30 dnů
+ode dne podpisu smlouvy ob ěma smluvními stranami, př ičemž se povinný zavazuje
+anonymizovat (začernit) osobní údaje v ní uvedené. Povinný zároveň zajistí, aby informace
+o uveřejnění této smlouvy v Registru smluv byla zaslána oprávněnému do datové schránky
+s ID ygwch5i, a to do 10 pr acovních dnů od e dne uveřejnění smlouvy v Registru smluv.
+Smlouva nabývá účinnosti dnem zveřejnění v Registru smluv.
+6. S mluvní strany se dohodly, že tato smlouva se uzavírá v písemné formě a bude podepsána
+elektronickým podpisem jednajících o sob pou žitím kvalifikovaného elektronického
+podpisu v souladu s nařízením eIDAS (EU) č. 910/2014 a příslušnými právními předpisy
+v oblasti elektronického podpisu, a to v jednom nebo více stejnopisech, z nichž každý bude
+považován za originál. Změny této smlouvy lze provést pouze na základě písemné dohody
+smluvních stran, k terá bude podepsána prostřednictvím stejného typu elektronického
+podpisu jednajících osob, který byl použit k podpisu této smlouvy.  Jakékoli úkony týkající
+se nebo související s touto smlouvou (např. výpověď, odstoupení, uznání dluhu) je možné
+uskutečnit pouze na zá kladě písemného úkonu př íslušné smluvní strany, k terý bude
+podepsán taképrostřednictvím stejného typu elektronického podpisu jednajících osob, který
+byl použitý na podpis této smlouvy.
+V Hodoníně dne V Praze dne
+Povinný: Oprávněný:
+… …… … … … …… … … .
+Libor Střecha
+starosta města na základě pověření
+T-Mobile Czech Republic a.s.
+
+TMCZ č. 64155 /bVB2/FTTH-000/2025
+6
+FIS_CZ_3416_64155_30173_00000_Hodonin_3, PL-4268
+
+TMCZ č. 64155 /bVB2/FTTH-000/2025
+7
+FIS_CZ_3416_64155_30173_00000_Hodonin_3, PL-4268
+
+TMCZ č. 64155 /bVB2/FTTH-000/2025
+8
+FIS_CZ_3416_64155_30173_00000_Hodonin_3, PL-4268
+
+TMCZ č. 64155 /bVB2/FTTH-000/2025
+9
+FIS_CZ_3416_64155_30173_00000_Hodonin_3, PL-4268
+
+TMCZ č. 64155 /bVB2/FTTH-000/2025
+10
+FIS_CZ_3416_64155_30173_00000_Hodonin_3, PL-4268
+
+TMCZ č. 64155 /bVB2/FTTH-000/2025
+11
+FIS_CZ_3416_64155_30173_00000_Hodonin_3, PL-4268
+
+TMCZ č. 64155 /bVB2/FTTH-000/2025
+12
+FIS_CZ_3416_64155_30173_00000_Hodonin_3, PL-4268
+
+TMCZ č. 64155 /bVB2/FTTH-000/2025
+13
+FIS_CZ_3416_64155_30173_00000_Hodonin_3, PL-4268
+
+TMCZ č. 64155 /bVB2/FTTH-000/2025
+14
+FIS_CZ_3416_64155_30173_00000_Hodonin_3, PL-4268
+
+TMCZ č. 64155 /bVB2/FTTH-000/2025
+15
+FIS_CZ_3416_64155_30173_00000_Hodonin_3, PL-4268
+
+TMCZ č. 64155 /bVB2/FTTH-000/2025
+16
+FIS_CZ_3416_64155_30173_00000_Hodonin_3, PL-4268
+
+TMCZ č. 64155 /bVB2/FTTH-000/2025
+17
+FIS_CZ_3416_64155_30173_00000_Hodonin_3, PL-4268
+
+TMCZ č. 64155 /bVB2/FTTH-000/2025
+18
+55_30173_00000_Hodonin_3, PL-4268

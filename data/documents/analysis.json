@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "documents_analyzed": 3,
+  "documents_analyzed": 4,
   "method": "Pravidlová extrakce z textu PDF; nejde o právní ani ekonomické hodnocení.",
   "documents": [
     {
@@ -72,6 +72,36 @@
         "Stránka 1 z 12 *KULBX00YOAZO* Smlouva o poskytnutí účelové dotace z rozpočtu Libereckého kraje INDIVIDUÁLNÍ DOTACE OLP/02908/2026 schválená Zastupitelstvem Libereckého kraje dne 25.8.2026 usnesením č. 413/26/ZK Smluvní strany: Liberecký kraj se sídlem U Jezu 642/2a, 460 01 Liberec IV - Perštýn korespondenč",
         "a alkohol a tabák a výrobky z nich. 4. Termín zahájení realizace projektu je 2.11.2023 a termín ukončení realizace projektu je nejpozději 31.12.2026. 5. Ukončením realizace projektu se rozumí dokončení veškerých aktivit na projektu. 6. Projekt musí být vyúčtován do 50 kalendářních dnů po ukončení realizace projektu, nejpozději do 19.02.2027."
       ]
+    },
+    {
+      "source": "registr-smluv",
+      "source_id": "37367969",
+      "source_url": "https://smlouvy.gov.cz/smlouva/37367969",
+      "title": "Dodatek č. 1 veřejnoprávní smlouvoy o poskytnutí neinvestiční dotace z rozpočtu města Lomnice nad Popelkou",
+      "document_name": "SoBSoZS_Hodon%C3%ADn_T-Mobile%20-%20uzav%C5%99en%C3%A1.pdf",
+      "text_file": "data/documents/registr-smluv/37367969/001.txt",
+      "text_chars": 16817,
+      "document_types": [
+        "contract",
+        "deadline"
+      ],
+      "signals": {
+        "contract": 1,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 1
+      },
+      "amounts_czk": [
+        200.0,
+        10000.0
+      ],
+      "dates": [
+        "10. 3. 2026"
+      ],
+      "snippets": []
     },
     {
       "source": "vhodne-uverejneni",
