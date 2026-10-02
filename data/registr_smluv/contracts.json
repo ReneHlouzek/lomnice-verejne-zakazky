@@ -2082,7 +2082,32 @@
           "name": "Smlouva_individualni_dotace_Lomnice_OLP-02908-2026_sig.pdf"
         }
       ]
+    },
+    {
+      "source": "registr-smluv",
+      "source_id": "37367969",
+      "version_id": "39741021",
+      "source_url": "https://smlouvy.gov.cz/smlouva/37367969",
+      "title": "Dodatek č. 1 veřejnoprávní smlouvoy o poskytnutí neinvestiční dotace z rozpočtu města Lomnice nad Popelkou",
+      "buyer_ico": "00275905",
+      "supplier_ico": "49295934",
+      "contract_number": "",
+      "date": "2026-09-30",
+      "signed_date": "2026-09-30",
+      "published": "",
+      "price": "462151",
+      "value": "462151",
+      "publisher": "",
+      "subject": "Dodatek č. 1 veřejnoprávní smlouvoy o poskytnutí neinvestiční dotace z rozpočtu města Lomnice nad Popelkou",
+      "counterparty": "Vodohospodářské sdružení Turnov",
+      "detail_url": "https://smlouvy.gov.cz/smlouva/37367969",
+      "attachments": [
+        {
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/45198501/SoBSoZS_Hodon%C3%ADn_T-Mobile%20-%20uzav%C5%99en%C3%A1.pdf",
+          "name": "SoBSoZS_Hodon%C3%ADn_T-Mobile%20-%20uzav%C5%99en%C3%A1.pdf"
+        }
+      ]
     }
   ],
-  "total": 109
+  "total": 110
 }

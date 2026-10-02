@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-10-01T20:17:51.197148+00:00",
+  "updated_at": "2026-10-02T09:49:44.815066+00:00",
   "publisher_ico": "00275905",
   "history_from": "2016-07",
   "recent_months": 2,
   "batch_size": 36,
   "dump_count_considered": 124,
   "downloaded_this_run": 2,
-  "records_total": 109,
+  "records_total": 110,
   "history_complete": true,
   "selected_this_run": [
     "2026-09",
