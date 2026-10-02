@@ -115,14 +115,32 @@ async function run(){
     const p=await fetch(`./data/projects/${encodeURIComponent(id)}.json`).then(r=>{if(!r.ok)throw Error('HTTP '+r.status);return r.json()});
     let documentAnalysis={documents:[]};
     try{ documentAnalysis=await fetch('./data/documents/analysis.json').then(r=>r.ok?r.json():({documents:[]})); }catch(_){ }
-    render(p,documentAnalysis);
+    let linkData={links:[],candidates:[]};
+    try{ linkData=await fetch('./data/contract_links.json').then(r=>r.ok?r.json():linkData); }catch(_){ }
+    render(p,documentAnalysis,linkData);
   }catch(e){
     console.error(e);
     root.innerHTML='<div class="empty"><strong>Detail se nepodařilo načíst.</strong><br><span class="meta">Záznam nemusí být dostupný nebo došlo k chybě při načtení dat.</span></div>';
   }
 }
 
-function render(p,documentAnalysis={documents:[]}){
+function relationshipsSection(p,data){
+  data=data||{links:[],candidates:[]};
+  const pid=p.id;
+  const confirmed=(data.links||[]).filter(x=>x.project_a===pid||x.project_b===pid);
+  const candidates=(data.candidates||[]).filter(x=>x.project_a===pid||x.project_b===pid);
+  if(!confirmed.length&&!candidates.length)return '';
+  const renderRow=x=>{
+    const other=x.project_a===pid?{id:x.project_b,title:x.title_b}:{id:x.project_a,title:x.title_a};
+    const evidence=Array.isArray(x.evidence)&&x.evidence.length?'<p class="meta">Podklady: '+esc(x.evidence.join(', '))+'</p>':'';
+    return '<article class="source"><div class="source-head"><strong>'+esc(other.title||other.id)+'</strong><span class="badge">'+esc(x.confidence||'')+'</span></div><p class="meta">'+esc(x.reason||'')+'</p>'+evidence+'<a href="./project.html?id='+encodeURIComponent(other.id)+'">Otevřít záznam →</a></article>';
+  };
+  let html='<section id="relationships" class="card"><div class="section-title"><div><p class="eyebrow dark">SOUVISEJÍCÍ ZÁZNAMY</p><h2>Smlouvy, dodatky a možné vazby</h2></div><span>'+(confirmed.length+candidates.length)+' položek</span></div>';
+  if(confirmed.length)html+='<h3>Potvrzené smluvní vazby</h3><div class="document-list">'+confirmed.map(renderRow).join('')+'</div>';
+  if(candidates.length)html+='<h3>Vazby k ručnímu ověření</h3><p class="method-note">Jde pouze o kandidáty podle podobnosti údajů, nikoli o potvrzené smluvní vztahy.</p><div class="document-list">'+candidates.map(renderRow).join('')+'</div>';
+  return html+'</section>';
+}
+function render(p,documentAnalysis={documents:[]},linkData={links:[],candidates:[]}){
   const c=p.canonical||{},f=c.financial||{},a=p.analysis||{},events=c.lifecycle?.events||[],ss=p.sources||[];
   const procurement=c.procurement||{}, verification=c.verification||{};
   const analysisFinancial=a.financial||{};
@@ -164,7 +182,7 @@ function render(p,documentAnalysis={documents:[]}){
     </section>
 
     <nav class="detail-nav">
-      <a href="#overview">Přehled</a><a href="#procurement">Zakázka</a><a href="#coverage">Data</a><a href="#provenance">Provenience</a><a href="#finance">Finance</a><a href="#timeline">Časová osa</a><a href="#checks">Kontroly</a><a href="#documents">Dokumenty</a><a href="#sources">Zdroje</a>
+      <a href="#overview">Přehled</a><a href="#procurement">Zakázka</a><a href="#coverage">Data</a><a href="#provenance">Provenience</a><a href="#finance">Finance</a><a href="#timeline">Časová osa</a><a href="#relationships">Vazby</a><a href="#checks">Kontroly</a><a href="#documents">Dokumenty</a><a href="#sources">Zdroje</a>
     </nav>
 
     <section id="overview" class="card detail-summary">
@@ -218,6 +236,8 @@ function render(p,documentAnalysis={documents:[]}){
       <div class="section-title"><div><p class="eyebrow dark">CHRONOLOGIE</p><h2>Časová osa</h2></div><span>${events.length} událostí</span></div>
       ${timeline(events,ss,documentAnalysis)}
     </section>
+
+    ${relationshipsSection(p,linkData)}
 
     <section id="checks" class="card">
       <div class="section-title"><div><p class="eyebrow dark">KONTROLA</p><h2>Kontrolní signály</h2></div></div>
