@@ -34,9 +34,17 @@ def build_links(projects):
                         )
                     )
                     if explicit:
+                        matching_refs = [
+                            x for x in refs_a if resolver.contract_number_matches(x, nb)
+                        ] + [
+                            x for x in refs_b if resolver.contract_number_matches(x, na)
+                        ]
+                        evidence = sorted(set(matching_refs))
+                        if not evidence and na and nb and resolver.contract_family_matches(na, nb):
+                            evidence = [na, nb]
                         item = {"kind": "contractual", "confidence": "explicit",
                                 "reason": "explicit_parent_contract_number",
-                                "evidence": sorted(set(refs_a + refs_b)), "a": a, "b": b}
+                                "evidence": evidence, "a": a, "b": b}
                         explicit_best = item
                         continue
                     score, reason, evidence = resolver.score(a, b)
