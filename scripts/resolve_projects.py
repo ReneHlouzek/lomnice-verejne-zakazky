@@ -297,8 +297,8 @@ def score(a, b):
 
     # Automatic linking requires multiple independent pieces of evidence.
     # Supplier alone or a generic title alone is never enough.
-    if addendum_pair and same_supplier and core_sim >= .82 and (near_price or ap is None or bp is None):
-        return .96, "addendum_core_title", [ai]
+    if addendum_pair and same_supplier and core_sim >= .82 and (near_price or near_date):
+        return .90, "addendum_core_title", [ai, f"date_gap_days={gap}" if near_date else "price"]
     if same_supplier and exact_price and near_date and sim >= .55:
         return .95, "supplier_price_date_title", [ai, "price", f"date_gap_days={gap}"]
     if same_supplier and sim >= .82 and near_price:
