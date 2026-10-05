@@ -201,6 +201,16 @@ def contract_number_matches(reference, candidate):
     return a == b or (min(len(a), len(b)) >= 8 and (a in b or b in a))
 
 
+def contract_family_matches(addendum_number, base_number):
+    """Match an addendum number to its base when only the addendum marker differs."""
+    a = re.sub(r"[^a-z0-9]", "", norm(addendum_number))
+    b = re.sub(r"[^a-z0-9]", "", norm(base_number))
+    if not a or not b:
+        return False
+    a = re.sub(r"d\d+", "", a)
+    return a == b and len(b) >= 8
+
+
 def is_addendum(r):
     return bool(re.search(r"\b(dodatek|dodatek c|zmenovy list|change order)\b", norm(title(r))))
 
@@ -239,10 +249,20 @@ def score(a, b):
     a_refs = referenced_contract_numbers(a)
     b_refs = referenced_contract_numbers(b)
     a_number, b_number = contract_number(a), contract_number(b)
-    if is_addendum(a) and not is_addendum(b) and any(contract_number_matches(x, b_number) for x in a_refs):
-        return 1.0, "explicit_parent_contract_number", sorted(a_refs)
-    if is_addendum(b) and not is_addendum(a) and any(contract_number_matches(x, a_number) for x in b_refs):
-        return 1.0, "explicit_parent_contract_number", sorted(b_refs)
+    if is_addendum(a) and not is_addendum(b) and (
+        any(contract_number_matches(x, b_number) for x in a_refs)
+        or contract_family_matches(a_number, b_number)
+    ):
+        evidence = sorted(a_refs) if a_refs else [a_number, b_number]
+        reason = "explicit_parent_contract_number" if a_refs else "explicit_addendum_contract_family"
+        return 1.0, reason, evidence
+    if is_addendum(b) and not is_addendum(a) and (
+        any(contract_number_matches(x, a_number) for x in b_refs)
+        or contract_family_matches(b_number, a_number)
+    ):
+        evidence = sorted(b_refs) if b_refs else [b_number, a_number]
+        reason = "explicit_parent_contract_number" if b_refs else "explicit_addendum_contract_family"
+        return 1.0, reason, evidence
     common = key_ids(a) & key_ids(b)
     if common:
         return 1.0, "exact_identifier", sorted(common)
