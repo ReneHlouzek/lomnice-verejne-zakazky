@@ -23,9 +23,15 @@ def build_links(projects):
                     refs_b = resolver.referenced_contract_numbers(b)
                     na, nb = resolver.contract_number(a), resolver.contract_number(b)
                     explicit = (
-                        resolver.is_addendum(a) and any(resolver.contract_number_matches(x, nb) for x in refs_a)
+                        resolver.is_addendum(a) and (
+                            any(resolver.contract_number_matches(x, nb) for x in refs_a)
+                            or resolver.contract_family_matches(na, nb)
+                        )
                     ) or (
-                        resolver.is_addendum(b) and any(resolver.contract_number_matches(x, na) for x in refs_b)
+                        resolver.is_addendum(b) and (
+                            any(resolver.contract_number_matches(x, na) for x in refs_b)
+                            or resolver.contract_family_matches(nb, na)
+                        )
                     )
                     if explicit:
                         item = {"kind": "contractual", "confidence": "explicit",
