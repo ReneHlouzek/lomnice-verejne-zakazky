@@ -1,20 +1,6 @@
 {
-  "count": 6,
+  "count": 4,
   "links": [
-    {
-      "project_a": "p-dodatek-c-1-ke-smlouve-o-poskytnuti-ucelove-dotace-libereckemu-kraji-z-0066",
-      "title_a": "Dodatek č. 1 ke smlouvě o poskytnutí účelové dotace Libereckému kraji z rozpočtu Města Lomnice nad Popelkou",
-      "project_b": "p-dodatek-c-2-ke-smlouve-o-poskytnuti-ucelove-dotace-libereckemu-kraji-z-0149",
-      "title_b": "Dodatek č.2 ke Smlouvě o poskytnutí účelové dotace Libereckému kraji z rozpočtu Města Lomnice nad Popelkou na stavební akci „II/286 x II/284 Lomnice nad Popelkou - havárie zdi - nezpůsobilé výdaje“",
-      "kind": "contractual",
-      "confidence": "explicit",
-      "reason": "explicit_parent_contract_number",
-      "evidence": [],
-      "source_a": "registr-smluv",
-      "source_id_a": "845225",
-      "source_b": "registr-smluv",
-      "source_id_b": "2264882"
-    },
     {
       "project_a": "p-dodatek-c-1-ke-smlouve-o-poskytnuti-ucelove-dotace-libereckemu-kraji-z-0066",
       "title_a": "Dodatek č. 1 ke smlouvě o poskytnutí účelové dotace Libereckému kraji z rozpočtu Města Lomnice nad Popelkou",
@@ -28,20 +14,6 @@
       "source_id_a": "845225",
       "source_b": "registr-smluv",
       "source_id_b": "3753"
-    },
-    {
-      "project_a": "p-dodatek-c-2-ke-smlouve-o-poskytnuti-ucelove-dotace-z-dotacniho-fondu-l-0092",
-      "title_a": "Dodatek č. 2 ke smlouvě o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje na projekt karavanová stání Lomnice nad Popelkou",
-      "project_b": "p-dodatek-c-3-ke-smlouve-o-poskytnuti-ucelove-dotace-na-projekt-karavano-0115",
-      "title_b": "Dodatek č. 3 ke smlouvě o poskytnutí účelové dotace na projekt Karavanové stání - Lomnice nad Popelkou",
-      "kind": "contractual",
-      "confidence": "explicit",
-      "reason": "explicit_parent_contract_number",
-      "evidence": [],
-      "source_a": "registr-smluv",
-      "source_id_a": "24740963",
-      "source_b": "registr-smluv",
-      "source_id_b": "28204604"
     },
     {
       "project_a": "p-dodatek-c-2-ke-smlouve-o-poskytnuti-ucelove-dotace-z-dotacniho-fondu-l-0092",
