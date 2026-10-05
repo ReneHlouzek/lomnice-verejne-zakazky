@@ -1,7 +1,92 @@
 {
-  "count": 0,
-  "links": [],
-  "candidate_count": 113,
+  "count": 6,
+  "links": [
+    {
+      "project_a": "p-dodatek-c-1-ke-smlouve-o-poskytnuti-ucelove-dotace-libereckemu-kraji-z-0066",
+      "title_a": "Dodatek č. 1 ke smlouvě o poskytnutí účelové dotace Libereckému kraji z rozpočtu Města Lomnice nad Popelkou",
+      "project_b": "p-dodatek-c-2-ke-smlouve-o-poskytnuti-ucelove-dotace-libereckemu-kraji-z-0149",
+      "title_b": "Dodatek č.2 ke Smlouvě o poskytnutí účelové dotace Libereckému kraji z rozpočtu Města Lomnice nad Popelkou na stavební akci „II/286 x II/284 Lomnice nad Popelkou - havárie zdi - nezpůsobilé výdaje“",
+      "kind": "contractual",
+      "confidence": "explicit",
+      "reason": "explicit_parent_contract_number",
+      "evidence": [],
+      "source_a": "registr-smluv",
+      "source_id_a": "845225",
+      "source_b": "registr-smluv",
+      "source_id_b": "2264882"
+    },
+    {
+      "project_a": "p-dodatek-c-1-ke-smlouve-o-poskytnuti-ucelove-dotace-libereckemu-kraji-z-0066",
+      "title_a": "Dodatek č. 1 ke smlouvě o poskytnutí účelové dotace Libereckému kraji z rozpočtu Města Lomnice nad Popelkou",
+      "project_b": "p-smlouva-o-poskytnuti-ucelove-dotace-libereckemu-kraji-z-rozpoctu-mesta-0079",
+      "title_b": "Smlouva o poskytnutí účelové dotace Libereckému kraji z rozpočtu města Lomnice nad Popelkou",
+      "kind": "contractual",
+      "confidence": "explicit",
+      "reason": "explicit_parent_contract_number",
+      "evidence": [],
+      "source_a": "registr-smluv",
+      "source_id_a": "845225",
+      "source_b": "registr-smluv",
+      "source_id_b": "3753"
+    },
+    {
+      "project_a": "p-dodatek-c-2-ke-smlouve-o-poskytnuti-ucelove-dotace-z-dotacniho-fondu-l-0092",
+      "title_a": "Dodatek č. 2 ke smlouvě o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje na projekt karavanová stání Lomnice nad Popelkou",
+      "project_b": "p-dodatek-c-3-ke-smlouve-o-poskytnuti-ucelove-dotace-na-projekt-karavano-0115",
+      "title_b": "Dodatek č. 3 ke smlouvě o poskytnutí účelové dotace na projekt Karavanové stání - Lomnice nad Popelkou",
+      "kind": "contractual",
+      "confidence": "explicit",
+      "reason": "explicit_parent_contract_number",
+      "evidence": [],
+      "source_a": "registr-smluv",
+      "source_id_a": "24740963",
+      "source_b": "registr-smluv",
+      "source_id_b": "28204604"
+    },
+    {
+      "project_a": "p-dodatek-c-2-ke-smlouve-o-poskytnuti-ucelove-dotace-z-dotacniho-fondu-l-0092",
+      "title_a": "Dodatek č. 2 ke smlouvě o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje na projekt karavanová stání Lomnice nad Popelkou",
+      "project_b": "p-poskytnuti-ucelove-dotace-z-rozpoctu-libereckeho-kraje-na-projekt-kara-0159",
+      "title_b": "Poskytnutí účelové dotace z rozpočtu Libereckého kraje na projekt Karavanové stání Koupaliště, Lomnice nad Popelkou",
+      "kind": "contractual",
+      "confidence": "explicit",
+      "reason": "explicit_parent_contract_number",
+      "evidence": [],
+      "source_a": "registr-smluv",
+      "source_id_a": "24740963",
+      "source_b": "registr-smluv",
+      "source_id_b": "15970715"
+    },
+    {
+      "project_a": "p-dodatek-c-3-ke-smlouve-o-poskytnuti-ucelove-dotace-na-projekt-karavano-0115",
+      "title_a": "Dodatek č. 3 ke smlouvě o poskytnutí účelové dotace na projekt Karavanové stání - Lomnice nad Popelkou",
+      "project_b": "p-poskytnuti-ucelove-dotace-z-rozpoctu-libereckeho-kraje-na-projekt-kara-0159",
+      "title_b": "Poskytnutí účelové dotace z rozpočtu Libereckého kraje na projekt Karavanové stání Koupaliště, Lomnice nad Popelkou",
+      "kind": "contractual",
+      "confidence": "explicit",
+      "reason": "explicit_parent_contract_number",
+      "evidence": [],
+      "source_a": "registr-smluv",
+      "source_id_a": "28204604",
+      "source_b": "registr-smluv",
+      "source_id_b": "15970715"
+    },
+    {
+      "project_a": "p-dodatek-c-2-ke-smlouve-o-poskytnuti-ucelove-dotace-libereckemu-kraji-z-0149",
+      "title_a": "Dodatek č.2 ke Smlouvě o poskytnutí účelové dotace Libereckému kraji z rozpočtu Města Lomnice nad Popelkou na stavební akci „II/286 x II/284 Lomnice nad Popelkou - havárie zdi - nezpůsobilé výdaje“",
+      "project_b": "p-smlouva-o-poskytnuti-ucelove-dotace-libereckemu-kraji-z-rozpoctu-mesta-0079",
+      "title_b": "Smlouva o poskytnutí účelové dotace Libereckému kraji z rozpočtu města Lomnice nad Popelkou",
+      "kind": "contractual",
+      "confidence": "explicit",
+      "reason": "explicit_parent_contract_number",
+      "evidence": [],
+      "source_a": "registr-smluv",
+      "source_id_a": "2264882",
+      "source_b": "registr-smluv",
+      "source_id_b": "3753"
+    }
+  ],
+  "candidate_count": 109,
   "candidates": [
     {
       "project_a": "p-dodatek-1-lomnice-n-popelkou-najem-np-0108",
@@ -18,23 +103,6 @@
       "source_id_a": "2316654",
       "source_b": "registr-smluv",
       "source_id_b": "774449"
-    },
-    {
-      "project_a": "p-dodatek-c-1-ke-smlouve-o-poskytnuti-ucelove-dotace-libereckemu-kraji-z-0066",
-      "title_a": "Dodatek č. 1 ke smlouvě o poskytnutí účelové dotace Libereckému kraji z rozpočtu Města Lomnice nad Popelkou",
-      "project_b": "p-smlouva-o-poskytnuti-ucelove-dotace-libereckemu-kraji-z-rozpoctu-mesta-0079",
-      "title_b": "Smlouva o poskytnutí účelové dotace Libereckému kraji z rozpočtu města Lomnice nad Popelkou",
-      "kind": "contextual",
-      "confidence": "strong",
-      "reason": "explicit_addendum_contract_family",
-      "evidence": [
-        "06_D01_OLP_2674_2016",
-        "06-OLP/2674/2016"
-      ],
-      "source_a": "registr-smluv",
-      "source_id_a": "845225",
-      "source_b": "registr-smluv",
-      "source_id_b": "3753"
     },
     {
       "project_a": "p-dodatek-c-1-ke-smlouve-o-poskytnuti-ucelove-dotace-z-dotacniho-fondu-l-0150",
@@ -67,57 +135,6 @@
       "source_id_a": "20176309",
       "source_b": "registr-smluv",
       "source_id_b": "15970715"
-    },
-    {
-      "project_a": "p-dodatek-c-2-ke-smlouve-o-poskytnuti-ucelove-dotace-z-dotacniho-fondu-l-0092",
-      "title_a": "Dodatek č. 2 ke smlouvě o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje na projekt karavanová stání Lomnice nad Popelkou",
-      "project_b": "p-poskytnuti-ucelove-dotace-z-rozpoctu-libereckeho-kraje-na-projekt-kara-0159",
-      "title_b": "Poskytnutí účelové dotace z rozpočtu Libereckého kraje na projekt Karavanové stání Koupaliště, Lomnice nad Popelkou",
-      "kind": "contextual",
-      "confidence": "strong",
-      "reason": "explicit_addendum_contract_family",
-      "evidence": [
-        "07-OLP/2373/2021",
-        "07-OLP/2373/2021"
-      ],
-      "source_a": "registr-smluv",
-      "source_id_a": "24740963",
-      "source_b": "registr-smluv",
-      "source_id_b": "15970715"
-    },
-    {
-      "project_a": "p-dodatek-c-3-ke-smlouve-o-poskytnuti-ucelove-dotace-na-projekt-karavano-0115",
-      "title_a": "Dodatek č. 3 ke smlouvě o poskytnutí účelové dotace na projekt Karavanové stání - Lomnice nad Popelkou",
-      "project_b": "p-poskytnuti-ucelove-dotace-z-rozpoctu-libereckeho-kraje-na-projekt-kara-0159",
-      "title_b": "Poskytnutí účelové dotace z rozpočtu Libereckého kraje na projekt Karavanové stání Koupaliště, Lomnice nad Popelkou",
-      "kind": "contextual",
-      "confidence": "strong",
-      "reason": "explicit_addendum_contract_family",
-      "evidence": [
-        "07-OLP2373/2021",
-        "07-OLP/2373/2021"
-      ],
-      "source_a": "registr-smluv",
-      "source_id_a": "28204604",
-      "source_b": "registr-smluv",
-      "source_id_b": "15970715"
-    },
-    {
-      "project_a": "p-dodatek-c-2-ke-smlouve-o-poskytnuti-ucelove-dotace-libereckemu-kraji-z-0149",
-      "title_a": "Dodatek č.2 ke Smlouvě o poskytnutí účelové dotace Libereckému kraji z rozpočtu Města Lomnice nad Popelkou na stavební akci „II/286 x II/284 Lomnice nad Popelkou - havárie zdi - nezpůsobilé výdaje“",
-      "project_b": "p-smlouva-o-poskytnuti-ucelove-dotace-libereckemu-kraji-z-rozpoctu-mesta-0079",
-      "title_b": "Smlouva o poskytnutí účelové dotace Libereckému kraji z rozpočtu města Lomnice nad Popelkou",
-      "kind": "contextual",
-      "confidence": "strong",
-      "reason": "explicit_addendum_contract_family",
-      "evidence": [
-        "06-OLP/2674/2016",
-        "06-OLP/2674/2016"
-      ],
-      "source_a": "registr-smluv",
-      "source_id_a": "2264882",
-      "source_b": "registr-smluv",
-      "source_id_b": "3753"
     },
     {
       "project_a": "p-smlouva-o-poskytnuti-dotace-na-shp-rohanskeho-zamecku-v-lomnici-nad-po-0128",
