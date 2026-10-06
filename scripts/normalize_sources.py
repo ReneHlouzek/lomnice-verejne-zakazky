@@ -101,6 +101,8 @@ def normalize_rs():
             "supplier_ico": ico(r.get("supplier_ico")),
             "supplier_name": clean(r.get("counterparty") or r.get("supplier_name")),
             "contract_number": clean(r.get("contract_number")),
+            "related_contract_ids": sorted(set(str(x).strip() for x in (r.get("related_contract_ids") or []) if str(x).strip())),
+            "related_contract_numbers": sorted(set(str(x).strip() for x in (r.get("related_contract_numbers") or []) if str(x).strip())),
             "date": date_value(r.get("signed_date") or r.get("published") or r.get("date")),
             "signed_date": date_value(r.get("signed_date")),
             "published": date_value(r.get("published")),
