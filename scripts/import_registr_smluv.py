@@ -181,6 +181,23 @@ def extract_records(path: Path, ico: str) -> Iterable[dict]:
         published = first_value(m, "datumUverejneni", "datumPublikace", "casUverejneni")
         number = first_value(m, "cisloSmlouvy", "cisloJednaci", "evidencniCisloZakazky")
         price = first_value(m, "hodnotaBezDph", "hodnota", "cenaBezDph")
+
+        # Registr smluv exposes the direct relationship to a previous
+        # contract as "ID návazné smlouvy". Preserve it as first-class
+        # evidence; this is stronger than fuzzy title/price matching.
+        related_contract_ids = []
+        related_contract_numbers = []
+        for node in elem.iter():
+            tag = local(node.tag).lower()
+            value = text(node)
+            if not value:
+                continue
+            if "navaz" in tag and "smlouv" in tag and "id" in tag:
+                related_contract_ids.extend(re.findall(r"\b\d{4,}\b", value))
+            if "navaz" in tag and "smlouv" in tag and ("cislo" in tag or "cisl" in tag):
+                related_contract_numbers.append(value)
+        related_contract_ids = sorted(set(related_contract_ids))
+        related_contract_numbers = sorted(set(related_contract_numbers))
         supplier = ""
         counterparty = ""
         for party_tag in ("smluvniStrana", "strana", "subjekt"):
@@ -253,6 +270,8 @@ def extract_records(path: Path, ico: str) -> Iterable[dict]:
             "buyer_ico": ico,
             "supplier_ico": supplier,
             "contract_number": number,
+            "related_contract_ids": related_contract_ids,
+            "related_contract_numbers": related_contract_numbers,
             "date": signed or published,
             "signed_date": signed,
             "published": published,
