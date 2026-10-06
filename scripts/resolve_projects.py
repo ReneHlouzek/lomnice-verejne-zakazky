@@ -206,7 +206,7 @@ def referenced_contract_numbers(r):
         flags=re.I,
     ):
         values.append(match.group(1).rstrip("./_-"))
-    return sorted(set(values))
+    return set(values)
 
 
 def contract_number_matches(reference, candidate):
@@ -225,29 +225,30 @@ def contract_family_matches(addendum_number, base_number):
     if not a_raw or not b_raw:
         return False
 
-    def compact(value):
-        return re.sub(r"[^a-z0-9]", "", norm(value))
+    def family_key(value, addendum=False):
+        text = unicodedata.normalize("NFKD", value).encode("ascii", "ignore").decode().lower().strip()
+        # The register may append a version after the base number:
+        #   OLP/3394/2023/1 -> OLP/3394/2023
+        if addendum:
+            text = re.sub(r"/\d+$", "", text)
+        # Or encode it as .001/.002:
+        #   924004797.00.001 -> 924004797.00
+        text = re.sub(r"\.\d{3,}$", "", text.split("/", 1)[0])
+        # D01/D1 can occur in the middle of the identifier.
+        if addendum:
+            text = re.sub(r"d\d+", "", text)
+        return re.sub(r"[^a-z0-9]", "", text)
 
-    a = compact(a_raw)
-    b = compact(b_raw)
-    if not a or not b:
-        return False
+    a = family_key(a_raw, addendum=True)
+    b = family_key(b_raw, addendum=False)
+    if a and b and a == b and len(b) >= 8:
+        return True
 
-    # D01/D1 markers may appear in the middle of the identifier.
-    a_without_d = re.sub(r"d\d+", "", a)
-
-    # .001/.002 style versions share the same stable contract prefix.
-    a_without_version = re.sub(r"(?:00\d+|0\d{2})$", "", a)
-    b_without_version = re.sub(r"(?:00\d+|0\d{2})$", "", b)
-
-    # /1, /2 ... is also used for addendum versions.
-    a_without_slash_version = re.sub(r"\d+$", "", a) if re.search(r"/\d+$", a_raw) else a
-
-    candidates_a = {a, a_without_d, a_without_version, a_without_slash_version,
-                    re.sub(r"(?:00\d+|0\d{2})$", "", a_without_d)}
-    candidates_b = {b, b_without_version}
-
-    return any(x == y and len(y) >= 8 for x in candidates_a for y in candidates_b)
+    # Fallback for identifiers where the addendum marker is represented as a
+    # standalone suffix after punctuation.
+    aa = re.sub(r"d\d+", "", re.sub(r"[^a-z0-9]", "", norm(a_raw)))
+    bb = re.sub(r"[^a-z0-9]", "", norm(b_raw))
+    return bool(aa and bb and aa == bb and len(bb) >= 8)
 
 
 def is_addendum(r):
