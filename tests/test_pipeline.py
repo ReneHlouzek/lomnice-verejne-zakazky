@@ -51,6 +51,13 @@ def test_addendum_links_to_base_by_related_contract_id():
     assert evidence == ["related_contract_id=15970715"]
 
 
+def test_spaced_versioned_contract_family_is_normalized():
+    assert resolver.contract_family_matches(
+        "924004797.00.001 / KRPL-68860-12/ČJ-2016-1800SU-5",
+        "924004797.00.000 / KRPL-68860-8/ČJ-2016-1800SU-5",
+    )
+
+
 def test_versioned_contract_numbers_share_a_family():
     assert resolver.contract_family_matches(
         "924004797.00.001 / KRPL-68860-12/ČJ-2016-1800SU-5",
