@@ -232,6 +232,24 @@ def token_overlap(a, b):
     return len(aa & bb) / max(len(aa), len(bb))
 
 
+GENERIC_CONTRACT_TOKENS = {
+    "dodatek", "ke", "smlouva", "smlouvy", "smlouve", "smlouvě",
+    "verejnopravni", "verejnopravní", "poskytnuti", "poskytnutí",
+    "ucelove", "účelové", "dotace", "dotaci", "investicni", "investiční",
+    "neinvesticni", "neinvestiční", "rozpoctu", "rozpočtu", "mesta",
+    "města", "lomnice", "nad", "popelkou", "libereckeho", "liberecký",
+    "kraje", "dflk", "df", "projekt", "projektu", "c", "cislo", "číslo",
+}
+
+
+def meaningful_token_overlap(a, b):
+    aa = {x for x in norm(a).split() if x not in GENERIC_CONTRACT_TOKENS and len(x) >= 4}
+    bb = {x for x in norm(b).split() if x not in GENERIC_CONTRACT_TOKENS and len(x) >= 4}
+    if not aa or not bb:
+        return 0.0
+    return len(aa & bb) / max(len(aa), len(bb))
+
+
 def date_gap_days(a, b):
     da = date_value(a.get("date") or a.get("published") or a.get("signed_date") or a.get("award_date"))
     db = date_value(b.get("date") or b.get("published") or b.get("signed_date") or b.get("award_date"))
@@ -279,6 +297,7 @@ def score(a, b):
     sim = SequenceMatcher(None, at, bt).ratio() if at and bt else 0
     token_sim = token_overlap(at, bt)
     core_sim = SequenceMatcher(None, act, bct).ratio() if act and bct else 0
+    meaningful_core_overlap = meaningful_token_overlap(act, bct)
     ap_values = prices(a)
     bp_values = prices(b)
     ap = ap_values[0] if ap_values else None
@@ -297,8 +316,8 @@ def score(a, b):
 
     # Automatic linking requires multiple independent pieces of evidence.
     # Supplier alone or a generic title alone is never enough.
-    if addendum_pair and same_supplier and core_sim >= .82 and (near_price or near_date):
-        return .90, "addendum_core_title", [ai, f"date_gap_days={gap}" if near_date else "price"]
+    if addendum_pair and same_supplier and core_sim >= .82 and meaningful_core_overlap >= .50 and (near_price or near_date):
+        return .90, "addendum_core_title", [ai, f"meaningful_token_overlap={meaningful_core_overlap:.2f}", f"date_gap_days={gap}" if near_date else "price"]
     if same_supplier and exact_price and near_date and sim >= .55:
         return .95, "supplier_price_date_title", [ai, "price", f"date_gap_days={gap}"]
     if same_supplier and sim >= .82 and near_price:
