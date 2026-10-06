@@ -27,7 +27,6 @@
       "confidence": "explicit",
       "reason": "explicit_parent_contract_number",
       "evidence": [
-        "07-OLP/2373/2021",
         "07-OLP/2373/2021"
       ],
       "source_a": "registr-smluv",
@@ -61,7 +60,6 @@
       "confidence": "explicit",
       "reason": "explicit_parent_contract_number",
       "evidence": [
-        "06-OLP/2674/2016",
         "06-OLP/2674/2016"
       ],
       "source_a": "registr-smluv",
@@ -72,40 +70,6 @@
   ],
   "candidate_count": 109,
   "candidates": [
-    {
-      "project_a": "p-dodatek-c-1-k-verejnopravni-smlouve-o-poskytnuti-dotace-z-rozpctu-mest-0110",
-      "title_a": "Dodatek č. 1 k veřejnoprávní smlouvě o poskytnutí dotace z rozpčtu města Lomnice nad Popelkou",
-      "project_b": "p-verejnopravni-smlouva-o-poskytnuti-investicni-dotace-z-rozpoctu-mesta-0064",
-      "title_b": "Veřejnoprávní smlouva o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou",
-      "kind": "contextual",
-      "confidence": "strong",
-      "reason": "addendum_core_title",
-      "evidence": [
-        "49295934",
-        "date_gap_days=0"
-      ],
-      "source_a": "registr-smluv",
-      "source_id_a": "33854349",
-      "source_b": "registr-smluv",
-      "source_id_b": "33854281"
-    },
-    {
-      "project_a": "p-dodatek-c-1-verejnopravni-smlouvy-o-poskytnuti-investicni-dotace-z-roz-0083",
-      "title_a": "Dodatek č. 1 veřejnoprávní smlouvy o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou",
-      "project_b": "p-verejnopravni-smlouva-o-poskytnuti-investicni-dotace-z-rozpoctu-mesta-0072",
-      "title_b": "Veřejnoprávní smlouva o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou",
-      "kind": "contextual",
-      "confidence": "strong",
-      "reason": "addendum_core_title",
-      "evidence": [
-        "49295934",
-        "date_gap_days=36"
-      ],
-      "source_a": "registr-smluv",
-      "source_id_a": "25099803",
-      "source_b": "registr-smluv",
-      "source_id_b": "24787731"
-    },
     {
       "project_a": "p-smlouva-o-poskytnuti-dotace-na-shp-rohanskeho-zamecku-v-lomnici-nad-po-0128",
       "title_a": "Smlouva o poskytnutí dotace na SHP Rohanského zámečku v Lomnici nad Popelkou",
@@ -301,6 +265,22 @@
       "source_id_a": "33854349",
       "source_b": "registr-smluv",
       "source_id_b": "761909"
+    },
+    {
+      "project_a": "p-dodatek-c-1-k-verejnopravni-smlouve-o-poskytnuti-dotace-z-rozpctu-mest-0110",
+      "title_a": "Dodatek č. 1 k veřejnoprávní smlouvě o poskytnutí dotace z rozpčtu města Lomnice nad Popelkou",
+      "project_b": "p-verejnopravni-smlouva-o-poskytnuti-investicni-dotace-z-rozpoctu-mesta-0064",
+      "title_b": "Veřejnoprávní smlouva o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou",
+      "kind": "contextual",
+      "confidence": "review",
+      "reason": "candidate_addendum_core_title",
+      "evidence": [
+        "49295934"
+      ],
+      "source_a": "registr-smluv",
+      "source_id_a": "33854349",
+      "source_b": "registr-smluv",
+      "source_id_b": "33854281"
     },
     {
       "project_a": "p-dodatek-c-1-k-verejnopravni-smlouve-o-poskytnuti-dotace-z-rozpctu-mest-0110",
@@ -1103,6 +1083,22 @@
       "source_id_a": "25099803",
       "source_b": "registr-smluv",
       "source_id_b": "33854281"
+    },
+    {
+      "project_a": "p-dodatek-c-1-verejnopravni-smlouvy-o-poskytnuti-investicni-dotace-z-roz-0083",
+      "title_a": "Dodatek č. 1 veřejnoprávní smlouvy o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou",
+      "project_b": "p-verejnopravni-smlouva-o-poskytnuti-investicni-dotace-z-rozpoctu-mesta-0072",
+      "title_b": "Veřejnoprávní smlouva o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou",
+      "kind": "contextual",
+      "confidence": "review",
+      "reason": "candidate_addendum_core_title",
+      "evidence": [
+        "49295934"
+      ],
+      "source_a": "registr-smluv",
+      "source_id_a": "25099803",
+      "source_b": "registr-smluv",
+      "source_id_b": "24787731"
     },
     {
       "project_a": "p-dodatek-c-1-verejnopravni-smlouvy-o-poskytnuti-investicni-dotace-z-roz-0083",
