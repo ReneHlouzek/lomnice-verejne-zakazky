@@ -175,3 +175,33 @@ def test_same_source_tender_and_resulting_contract_can_be_linked():
     score, reason, _ = resolver.group_score(contract, [tender])
     assert score >= 0.82
     assert reason == "supplier_title_price"
+
+
+def test_contract_family_matches_common_addendum_formats():
+    assert resolver.contract_family_matches(
+        "924004797.00.001 / KRPL-68860-12/ČJ-2016-1800SU-5",
+        "924004797.00.000 / KRPL-68860-8/ČJ-2016-1800SU-5",
+    )
+    assert resolver.contract_family_matches(
+        "06_D01_OLP_2674_2016",
+        "06-OLP/2674/2016",
+    )
+    assert resolver.contract_family_matches(
+        "OLP/3394/2023/1",
+        "OLP/3394/2023",
+    )
+
+
+def test_addendum_without_independent_evidence_is_not_strong():
+    base = {
+        "title": "Smlouva o poskytnutí dotace",
+        "supplier_ico": "49295934",
+        "date": "2024-01-01",
+    }
+    addendum = {
+        "title": "Dodatek č. 1 ke smlouvě o poskytnutí dotace",
+        "supplier_ico": "49295934",
+        "date": "2025-12-31",
+    }
+    score, _, _ = resolver.score(addendum, base)
+    assert score < 0.82
