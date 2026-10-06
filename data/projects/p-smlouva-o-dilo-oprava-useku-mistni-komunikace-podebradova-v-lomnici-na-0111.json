@@ -76,6 +76,8 @@
         "supplier_ico": "28746503",
         "supplier_name": "Silnice LK a.s.",
         "contract_number": "2026022",
+        "related_contract_ids": [],
+        "related_contract_numbers": [],
         "date": "2026-04-10",
         "signed_date": "2026-04-10",
         "published": null,

@@ -74,6 +74,8 @@
         "supplier_ico": "70891508",
         "supplier_name": "Liberecký kraj",
         "contract_number": "OLP/01653/2026",
+        "related_contract_ids": [],
+        "related_contract_numbers": [],
         "date": "2026-07-07",
         "signed_date": "2026-07-07",
         "published": null,

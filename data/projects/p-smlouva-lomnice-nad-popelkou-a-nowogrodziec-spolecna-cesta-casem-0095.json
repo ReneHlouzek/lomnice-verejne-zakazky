@@ -76,6 +76,8 @@
         "supplier_ico": "00832227",
         "supplier_name": "Euroregion Nisa",
         "contract_number": "P/2017/05/10",
+        "related_contract_ids": [],
+        "related_contract_numbers": [],
         "date": "2017-08-16",
         "signed_date": "2017-08-16",
         "published": null,

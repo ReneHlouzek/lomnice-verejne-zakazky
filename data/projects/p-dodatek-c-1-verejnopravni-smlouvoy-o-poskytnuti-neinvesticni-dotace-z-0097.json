@@ -76,6 +76,8 @@
         "supplier_ico": "49295934",
         "supplier_name": "Vodohospodářské sdružení Turnov",
         "contract_number": null,
+        "related_contract_ids": [],
+        "related_contract_numbers": [],
         "date": "2026-09-30",
         "signed_date": "2026-09-30",
         "published": null,
@@ -90,6 +92,8 @@
           "buyer_ico": "00275905",
           "supplier_ico": "49295934",
           "contract_number": "",
+          "related_contract_ids": [],
+          "related_contract_numbers": [],
           "date": "2026-09-30",
           "signed_date": "2026-09-30",
           "published": "",
@@ -99,12 +103,7 @@
           "subject": "Dodatek č. 1 veřejnoprávní smlouvoy o poskytnutí neinvestiční dotace z rozpočtu města Lomnice nad Popelkou",
           "counterparty": "Vodohospodářské sdružení Turnov",
           "detail_url": "https://smlouvy.gov.cz/smlouva/37367969",
-          "attachments": [
-            {
-              "url": "https://smlouvy.gov.cz/smlouva/soubor/45198501/SoBSoZS_Hodon%C3%ADn_T-Mobile%20-%20uzav%C5%99en%C3%A1.pdf",
-              "name": "SoBSoZS_Hodon%C3%ADn_T-Mobile%20-%20uzav%C5%99en%C3%A1.pdf"
-            }
-          ]
+          "attachments": []
         },
         "_source_file": "data/sources/registr-smluv/rs-000110.json"
       }
