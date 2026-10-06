@@ -227,29 +227,30 @@ def contract_family_matches(addendum_number, base_number):
 
     def family_key(value, addendum=False):
         text = unicodedata.normalize("NFKD", value).encode("ascii", "ignore").decode().lower().strip()
-        # The register may append a version after the base number:
+        # Registry numbers can contain a version in the first identifier:
+        #   924004797.00.001 / ... -> 924004797.00
+        #   924004797.00.000 / ... -> 924004797.00
+        first = text.split("/", 1)[0].strip()
+        first = re.sub(r"\.\d{3,}$", "", first)
+        # Or a slash version:
         #   OLP/3394/2023/1 -> OLP/3394/2023
         if addendum:
-            text = re.sub(r"/\d+$", "", text)
-        # Or encode it as .001/.002:
-        #   924004797.00.001 -> 924004797.00
-        text = re.sub(r"\.\d{3,}(?=\s*(?:/|$))", "", text)
-        # D01/D1 can occur in the middle of the identifier.
+            first = re.sub(r"/\d+$", "", first)
+        # D01/D1 can occur inside an otherwise shared identifier.
         if addendum:
-            text = re.sub(r"d\d+", "", text)
-        return re.sub(r"[^a-z0-9]", "", text)
+            first = re.sub(r"d\d+", "", first)
+        return re.sub(r"[^a-z0-9]", "", first)
 
     a = family_key(a_raw, addendum=True)
     b = family_key(b_raw, addendum=False)
     if a and b and a == b and len(b) >= 8:
         return True
 
-    # Fallback for identifiers where the addendum marker is represented as a
-    # standalone suffix after punctuation.
+    # Fallback for identifiers where the version marker is represented after
+    # punctuation or the whole identifier is written without the slash.
     aa = re.sub(r"d\d+", "", re.sub(r"[^a-z0-9]", "", norm(a_raw)))
     bb = re.sub(r"[^a-z0-9]", "", norm(b_raw))
     return bool(aa and bb and aa == bb and len(bb) >= 8)
-
 
 def is_addendum(r):
     return bool(re.search(r"\b(dodatek|dodatek c|zmenovy list|change order)\b", norm(title(r))))
