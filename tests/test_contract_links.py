@@ -85,3 +85,23 @@ def test_versioned_contract_family_is_explicit_link():
         "924004797.00.001 / KRPL-68860-12/ČJ-2016-1800SU-5",
     ]
     assert candidates == []
+
+
+def test_same_source_distinctive_addendum_is_review_candidate():
+    base = {
+        "id": "base", "title": "Košov - obnova vodovodu",
+        "sources": [{"record": {"source": "registr-smluv", "source_id": "base",
+            "title": "Veřejnoprávní smlouva o poskytnutí investiční dotace - Košov - obnova vodovodu",
+            "supplier_ico": "49295934", "price": 2880000, "date": "2024-12-11"}}],
+    }
+    addendum = {
+        "id": "add", "title": "Dodatek č. 1 - Košov - obnova vodovodu",
+        "sources": [{"record": {"source": "registr-smluv", "source_id": "add",
+            "title": "Dodatek č. 1 veřejnoprávní smlouvy o poskytnutí neinvestiční dotace - Košov - obnova vodovodu",
+            "supplier_ico": "49295934", "price": 1323950.25, "date": "2025-09-22"}}],
+    }
+    links, candidates = build_links([base, addendum])
+    assert links == []
+    assert len(candidates) == 1
+    assert candidates[0]["reason"] == "candidate_addendum_core_title"
+    assert candidates[0]["confidence"] == "review"
