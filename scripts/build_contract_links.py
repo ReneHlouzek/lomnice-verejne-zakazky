@@ -78,7 +78,26 @@ def build_links(projects):
                     # Register of Contracts, explicit identifiers can confirm a
                     # relationship; fuzzy same-source pairs are overwhelmingly
                     # unrelated contracts sharing a counterparty or generic title.
-                    if str(a.get("source") or "").strip() == str(b.get("source") or "").strip():
+                    same_source = str(a.get("source") or "").strip() == str(b.get("source") or "").strip()
+                    if same_source:
+                        # Same-source fuzzy pairs are normally noise. Keep one
+                        # narrow exception for an addendum and an earlier base
+                        # contract whose distinctive project title matches
+                        # strongly. This remains a review candidate, never an
+                        # automatic contractual link.
+                        if resolver.is_addendum(a) != resolver.is_addendum(b):
+                            score, reason, evidence = resolver.score(a, b)
+                            da = resolver.date_value(a.get("date") or a.get("published") or a.get("signed_date") or a.get("award_date"))
+                            db = resolver.date_value(b.get("date") or b.get("published") or b.get("signed_date") or b.get("award_date"))
+                            base_is_earlier = (
+                                (resolver.is_addendum(a) and db and da and db <= da)
+                                or (resolver.is_addendum(b) and da and db and da <= db)
+                            )
+                            if reason == "candidate_addendum_core_title" and score >= .74 and base_is_earlier:
+                                item = {"kind": "contextual", "confidence": "review",
+                                        "reason": reason, "evidence": evidence, "a": a, "b": b}
+                                if candidate_best is None or score > candidate_best[0]:
+                                    candidate_best = (score, item)
                         continue
                     score, reason, evidence = resolver.score(a, b)
                     if score < .60:
