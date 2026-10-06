@@ -225,6 +225,14 @@ def contract_family_matches(addendum_number, base_number):
     if not a_raw or not b_raw:
         return False
 
+    # An identical registry number on an addendum and its base contract is
+    # the strongest possible family signal. Normalize punctuation/case only;
+    # do not require the number to contain a slash or a long prefix.
+    a_exact = re.sub(r"[^a-z0-9]", "", norm(a_raw))
+    b_exact = re.sub(r"[^a-z0-9]", "", norm(b_raw))
+    if a_exact and b_exact and a_exact == b_exact and len(b_exact) >= 6:
+        return True
+
     def family_key(value, addendum=False):
         text = unicodedata.normalize("NFKD", value).encode("ascii", "ignore").decode().lower().strip()
         # Slash-versioned identifiers:
