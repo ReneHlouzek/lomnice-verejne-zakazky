@@ -227,17 +227,16 @@ def contract_family_matches(addendum_number, base_number):
 
     def family_key(value, addendum=False):
         text = unicodedata.normalize("NFKD", value).encode("ascii", "ignore").decode().lower().strip()
-        # Registry numbers can contain a version in the first identifier:
+        # Slash-versioned identifiers:
+        #   OLP/3394/2023/1 -> OLP/3394/2023
+        # Keep the whole identifier; only remove a final numeric version.
+        if addendum:
+            text = re.sub(r"/\s*\d+$", "", text)
+        # For identifiers with a separate registry prefix after the first slash,
+        # compare the first identifier as well:
         #   924004797.00.001 / ... -> 924004797.00
-        #   924004797.00.000 / ... -> 924004797.00
         first = text.split("/", 1)[0].strip()
         first = re.sub(r"\.\d{3,}$", "", first)
-        # Or a slash version:
-        #   OLP/3394/2023/1 -> OLP/3394/2023
-        # The version may be separated from the base by spaces around the slash.
-        if addendum:
-            first = re.sub(r"/\s*\d+$", "", first)
-        # D01/D1 can occur inside an otherwise shared identifier.
         if addendum:
             first = re.sub(r"d\d+", "", first)
         return re.sub(r"[^a-z0-9]", "", first)
@@ -247,11 +246,11 @@ def contract_family_matches(addendum_number, base_number):
     if a and b and a == b and len(b) >= 8:
         return True
 
-    # Fallback for identifiers where the version marker is represented after
-    # punctuation or the whole identifier is written without the slash.
-    aa = re.sub(r"d\d+", "", re.sub(r"[^a-z0-9]", "", norm(a_raw)))
-    bb = re.sub(r"[^a-z0-9]", "", norm(b_raw))
-    return bool(aa and bb and aa == bb and len(bb) >= 8)
+    # If the identifier itself uses slash-separated numbering (e.g. OLP/3394/2023),
+    # compare the normalized full identifier after removing the addendum version.
+    aa_full = re.sub(r"[^a-z0-9]", "", re.sub(r"d\d+", "", re.sub(r"/\s*\d+$", "", norm(a_raw))))
+    bb_full = re.sub(r"[^a-z0-9]", "", norm(b_raw))
+    return bool(aa_full and bb_full and aa_full == bb_full and len(bb_full) >= 8)
 
 def is_addendum(r):
     return bool(re.search(r"\b(dodatek|dodatek c|zmenovy list|change order)\b", norm(title(r))))
