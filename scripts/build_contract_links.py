@@ -74,6 +74,12 @@ def build_links(projects):
                                 "evidence": evidence, "a": a, "b": b}
                         explicit_best = item
                         continue
+                    # Review candidates are cross-source only. Within the
+                    # Register of Contracts, explicit identifiers can confirm a
+                    # relationship; fuzzy same-source pairs are overwhelmingly
+                    # unrelated contracts sharing a counterparty or generic title.
+                    if str(a.get("source") or "").strip() == str(b.get("source") or "").strip():
+                        continue
                     score, reason, evidence = resolver.score(a, b)
                     if score < .60:
                         continue
