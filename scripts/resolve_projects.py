@@ -234,8 +234,9 @@ def contract_family_matches(addendum_number, base_number):
         first = re.sub(r"\.\d{3,}$", "", first)
         # Or a slash version:
         #   OLP/3394/2023/1 -> OLP/3394/2023
+        # The version may be separated from the base by spaces around the slash.
         if addendum:
-            first = re.sub(r"/\d+$", "", first)
+            first = re.sub(r"/\s*\d+$", "", first)
         # D01/D1 can occur inside an otherwise shared identifier.
         if addendum:
             first = re.sub(r"d\d+", "", first)
