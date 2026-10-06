@@ -105,3 +105,60 @@ def test_same_source_distinctive_addendum_is_review_candidate():
     assert len(candidates) == 1
     assert candidates[0]["reason"] == "candidate_addendum_core_title"
     assert candidates[0]["confidence"] == "review"
+
+
+def test_exact_contract_number_family_matches():
+    base = {
+        "id": "base", "title": "Karavanové stání",
+        "sources": [{"record": {"source": "registr-smluv", "source_id": "base",
+            "title": "Poskytnutí účelové dotace - Karavanové stání",
+            "contract_number": "07-OLP/2373/2021"}}],
+    }
+    addendum = {
+        "id": "add", "title": "Dodatek č. 2 ke smlouvě - Karavanové stání",
+        "sources": [{"record": {"source": "registr-smluv", "source_id": "add",
+            "title": "Dodatek č. 2 ke smlouvě o poskytnutí účelové dotace - Karavanové stání",
+            "contract_number": "07-OLP/2373/2021"}}],
+    }
+    links, candidates = build_links([base, addendum])
+    assert len(links) == 1
+    assert links[0]["reason"] == "explicit_parent_contract_number"
+    assert candidates == []
+
+
+def test_compact_contract_number_family_matches_slash_version():
+    base = {
+        "id": "base", "title": "Karavanové stání",
+        "sources": [{"record": {"source": "registr-smluv", "source_id": "base",
+            "title": "Poskytnutí účelové dotace - Karavanové stání",
+            "contract_number": "07-OLP/2373/2021"}}],
+    }
+    addendum = {
+        "id": "add", "title": "Dodatek č. 3 ke smlouvě - Karavanové stání",
+        "sources": [{"record": {"source": "registr-smluv", "source_id": "add",
+            "title": "Dodatek č. 3 ke smlouvě o poskytnutí účelové dotace - Karavanové stání",
+            "contract_number": "07-OLP2373/2021"}}],
+    }
+    links, candidates = build_links([base, addendum])
+    assert len(links) == 1
+    assert links[0]["reason"] == "explicit_parent_contract_number"
+    assert candidates == []
+
+
+def test_liberecky_kraj_addendum_exact_number_is_explicit():
+    base = {
+        "id": "base", "title": "Účelová dotace Libereckému kraji",
+        "sources": [{"record": {"source": "registr-smluv", "source_id": "base",
+            "title": "Smlouva o poskytnutí účelové dotace Libereckému kraji",
+            "contract_number": "06-OLP/2674/2016"}}],
+    }
+    addendum = {
+        "id": "add", "title": "Dodatek č. 2 ke smlouvě - havárie zdi",
+        "sources": [{"record": {"source": "registr-smluv", "source_id": "add",
+            "title": "Dodatek č. 2 ke smlouvě o poskytnutí účelové dotace Libereckému kraji",
+            "contract_number": "06-OLP/2674/2016"}}],
+    }
+    links, candidates = build_links([base, addendum])
+    assert len(links) == 1
+    assert links[0]["reason"] == "explicit_parent_contract_number"
+    assert candidates == []
