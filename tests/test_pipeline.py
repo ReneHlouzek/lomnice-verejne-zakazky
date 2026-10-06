@@ -68,6 +68,21 @@ def test_procurement_signal_does_not_overclaim():
     assert resolver.procurement_signal(plain)["level"] == "none"
 
 
+def test_generic_addendum_titles_are_not_strong_candidates():
+    base = {
+        "title": "Veřejnoprávní smlouva o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou",
+        "supplier_ico": "49295934",
+        "date": "2024-01-10",
+    }
+    addendum = {
+        "title": "Dodatek č. 1 k veřejnoprávní smlouvě o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou",
+        "supplier_ico": "49295934",
+        "date": "2024-01-10",
+    }
+    score, reason, _ = resolver.score(addendum, base)
+    assert score < 0.82
+
+
 def test_generic_same_supplier_contracts_are_not_auto_merged():
     a = {"title": "Veřejnoprávní smlouva o poskytnutí neinvestiční dotace z rozpočtu města", "supplier_ico": "49295934", "price": 500000}
     b = {"title": "Veřejnoprávní smlouva o poskytnutí neinvestiční dotace z rozpočtu města - obnova vodovodu", "supplier_ico": "49295934", "price": 2880000}
