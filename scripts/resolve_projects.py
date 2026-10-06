@@ -247,9 +247,12 @@ def contract_family_matches(addendum_number, base_number):
         return True
 
     # If the identifier itself uses slash-separated numbering (e.g. OLP/3394/2023),
-    # compare the normalized full identifier after removing the addendum version.
-    aa_full = re.sub(r"[^a-z0-9]", "", re.sub(r"d\d+", "", re.sub(r"/\s*\d+$", "", norm(a_raw))))
-    bb_full = re.sub(r"[^a-z0-9]", "", norm(b_raw))
+    # preserve slashes while removing only the final addendum version.
+    a_full = unicodedata.normalize("NFKD", a_raw).encode("ascii", "ignore").decode().lower().strip()
+    b_full = unicodedata.normalize("NFKD", b_raw).encode("ascii", "ignore").decode().lower().strip()
+    a_full = re.sub(r"/\s*\d+$", "", a_full)
+    aa_full = re.sub(r"d\d+", "", re.sub(r"[^a-z0-9]", "", a_full))
+    bb_full = re.sub(r"[^a-z0-9]", "", b_full)
     return bool(aa_full and bb_full and aa_full == bb_full and len(bb_full) >= 8)
 
 def is_addendum(r):
