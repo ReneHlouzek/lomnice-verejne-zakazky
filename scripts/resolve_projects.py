@@ -233,8 +233,7 @@ def contract_family_matches(addendum_number, base_number):
             text = re.sub(r"/\d+$", "", text)
         # Or encode it as .001/.002:
         #   924004797.00.001 -> 924004797.00
-        first = text.split("/", 1)[0].strip()
-        text = re.sub(r"\.\d{3,}$", "", first)
+        text = re.sub(r"\.\d{3,}(?=\s*(?:/|$))", "", text)
         # D01/D1 can occur in the middle of the identifier.
         if addendum:
             text = re.sub(r"d\d+", "", text)
@@ -385,8 +384,15 @@ def score(a, b):
         return .88, "title_price_date", ["price", f"date_gap_days={gap}"]
     if same_supplier and sim >= .66 and near_price and same_year:
         return .84, "supplier_title_price_date", [ai, "price", f"date_gap_days={gap}"]
-    if addendum_pair and same_supplier and core_sim >= .68 and meaningful_core_overlap >= .50 and (near_price or near_date):
-        return .74, "candidate_addendum_core_title", [ai, f"meaningful_token_overlap={meaningful_core_overlap:.2f}", f"date_gap_days={gap}" if near_date else "price"]
+    if addendum_pair and same_supplier and core_sim >= .68 and meaningful_core_overlap >= .50:
+        evidence = [ai, f"meaningful_token_overlap={meaningful_core_overlap:.2f}"]
+        if near_date:
+            evidence.append(f"date_gap_days={gap}")
+        elif near_price:
+            evidence.append("price")
+        else:
+            evidence.append("title_only")
+        return .74, "candidate_addendum_core_title", evidence
     # Broad candidate rules previously connected many unrelated records merely
     # because the same public institution appeared as supplier/recipient.
     # Keep review candidates only when title similarity is meaningful and there
