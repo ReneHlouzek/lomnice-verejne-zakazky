@@ -56,7 +56,7 @@ def test_group_score_checks_all_members():
     new = {"title": "Modernizace učeben ZUS stavební práce dodatek", "supplier_ico": "12345678"}
     score, reason, _ = resolver.group_score(new, group)
     assert score >= 0.72
-    assert reason == "addendum_core_title"
+    assert reason == "candidate_addendum_core_title"
 
 
 def test_procurement_signal_does_not_overclaim():
