@@ -32,10 +32,19 @@ def build_links(projects):
                 a = sa.get("record", {})
                 for sb in right.get("sources", []):
                     b = sb.get("record", {})
-                    refs_a = resolver.referenced_contract_numbers(a)
-                    refs_b = resolver.referenced_contract_numbers(b)
+                    refs_a = resolver.referenced_contract_numbers(a) | resolver.related_contract_numbers(a)
+                    refs_b = resolver.referenced_contract_numbers(b) | resolver.related_contract_numbers(b)
+                    related_a = resolver.related_contract_ids(a)
+                    related_b = resolver.related_contract_ids(b)
+                    ida = str(a.get("source_id") or a.get("version_id") or "").strip()
+                    idb = str(b.get("source_id") or b.get("version_id") or "").strip()
                     na, nb = resolver.contract_number(a), resolver.contract_number(b)
-                    explicit = (
+                    related_id_match = (
+                        resolver.is_addendum(a) and not resolver.is_addendum(b) and idb in related_a
+                    ) or (
+                        resolver.is_addendum(b) and not resolver.is_addendum(a) and ida in related_b
+                    )
+                    explicit_parent = (
                         resolver.is_addendum(a) and not resolver.is_addendum(b) and (
                             any(resolver.contract_number_matches(x, nb) for x in refs_a)
                             or resolver.contract_family_matches(na, nb)
@@ -46,6 +55,7 @@ def build_links(projects):
                             or resolver.contract_family_matches(nb, na)
                         )
                     )
+                    explicit = related_id_match or explicit_parent
                     if explicit:
                         matching_refs = [
                             x for x in refs_a if resolver.contract_number_matches(x, nb)
@@ -53,10 +63,14 @@ def build_links(projects):
                             x for x in refs_b if resolver.contract_number_matches(x, na)
                         ]
                         evidence = unique_evidence(sorted(matching_refs))
+                        if related_id_match:
+                            related_id = idb if idb in related_a else ida
+                            evidence = unique_evidence([f"related_contract_id={related_id}"] + evidence)
                         if not evidence and na and nb and resolver.contract_family_matches(na, nb):
                             evidence = unique_evidence([na, nb])
+                        reason = "explicit_related_contract_id" if related_id_match else "explicit_parent_contract_number"
                         item = {"kind": "contractual", "confidence": "explicit",
-                                "reason": "explicit_parent_contract_number",
+                                "reason": reason,
                                 "evidence": evidence, "a": a, "b": b}
                         explicit_best = item
                         continue
