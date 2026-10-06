@@ -74,6 +74,36 @@
       ]
     },
     {
+      "source": "registr-smluv",
+      "source_id": "37367969",
+      "source_url": "https://smlouvy.gov.cz/smlouva/37367969",
+      "title": "Dodatek č. 1 veřejnoprávní smlouvoy o poskytnutí neinvestiční dotace z rozpočtu města Lomnice nad Popelkou",
+      "document_name": "SoBSoZS_Hodon%C3%ADn_T-Mobile%20-%20uzav%C5%99en%C3%A1.pdf",
+      "text_file": "data/documents/registr-smluv/37367969/001.txt",
+      "text_chars": 16817,
+      "document_types": [
+        "contract",
+        "deadline"
+      ],
+      "signals": {
+        "contract": 1,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 1
+      },
+      "amounts_czk": [
+        200.0,
+        10000.0
+      ],
+      "dates": [
+        "10. 3. 2026"
+      ],
+      "snippets": []
+    },
+    {
       "source": "vhodne-uverejneni",
       "source_id": "vu-9fa7201122f8",
       "source_url": "https://www.vhodne-uverejneni.cz/index.php?a=download&document=3212050&h=orderdocument&m=xenorders&token=",
@@ -108,36 +138,6 @@
         "_________v příloze č. 2 ZD - identifikační údaje zhotovitele (smluvní strany smlouvy) - cena díla (v čl. III smlouvy, bod 3.1.) - kontakty zhotovitele pro vady díla ( v čl. VIII smlouvy, bod 8.6.) - jméno autorizovaného stavbyvedoucího (v čl. XI smlouvy, bod 11.1. b) - datum a jméno oprávněné osoby jednat jménem či za dodavatele",
         "ílohu zadávací dokumentace č. 4 soupis stavebn ích prací, dodávek a služeb ( položkový rozpočet) vypracoval: Ing. Martin Rambousek, ČKAIT 1004379, společnost APC SILNICE s.r.o., Jana Babáka 11, 612 00 Brno, IČ: 60705981 Přílohu zadávací dokumentace č. 5 projektovou dokumentaci vypracoval: Ing. Martin Rambousek, ČKAIT 1004379, společnos"
       ]
-    },
-    {
-      "source": "registr-smluv",
-      "source_id": "37367969",
-      "source_url": null,
-      "title": null,
-      "document_name": "001.txt",
-      "text_file": "data/documents/registr-smluv/37367969/001.txt",
-      "text_chars": 16817,
-      "document_types": [
-        "contract",
-        "deadline"
-      ],
-      "signals": {
-        "contract": 1,
-        "addendum": 0,
-        "budget": 0,
-        "change_sheet": 0,
-        "grant": 0,
-        "tender": 0,
-        "deadline": 1
-      },
-      "amounts_czk": [
-        200.0,
-        10000.0
-      ],
-      "dates": [
-        "10. 3. 2026"
-      ],
-      "snippets": []
     }
   ]
 }

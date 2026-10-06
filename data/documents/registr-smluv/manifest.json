@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-10-06T13:40:44Z",
+  "updated_at": "2026-10-06T14:04:22Z",
   "records_checked": 110,
-  "attachments_declared": 2,
-  "documents_discovered": 2,
+  "attachments_declared": 3,
+  "documents_discovered": 3,
   "documents_downloaded": 2,
-  "documents_text_extracted": 2,
+  "documents_text_extracted": 3,
   "records": [
     {
       "source": "registr-smluv",
@@ -709,7 +709,17 @@
       "source_id": "37367969",
       "title": "Dodatek č. 1 veřejnoprávní smlouvoy o poskytnutí neinvestiční dotace z rozpočtu města Lomnice nad Popelkou",
       "page_url": "https://smlouvy.gov.cz/smlouva/37367969",
-      "documents": [],
+      "documents": [
+        {
+          "index": 1,
+          "name": "SoBSoZS_Hodon%C3%ADn_T-Mobile%20-%20uzav%C5%99en%C3%A1.pdf",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/45198501/SoBSoZS_Hodon%C3%ADn_T-Mobile%20-%20uzav%C5%99en%C3%A1.pdf",
+          "text_available": true,
+          "text_chars": 16817,
+          "text_file": "data/documents/registr-smluv/37367969/001.txt",
+          "status": "retained_existing_text"
+        }
+      ],
       "status": "ok"
     },
     {
