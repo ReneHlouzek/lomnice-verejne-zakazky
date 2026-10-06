@@ -9,6 +9,19 @@ sys.path.insert(0, str(ROOT / "scripts"))
 import resolve_projects as resolver
 
 
+def unique_evidence(values):
+    seen = set()
+    result = []
+    for value in values:
+        text = str(value or "").strip()
+        key = resolver.norm(text)
+        if not text or key in seen:
+            continue
+        seen.add(key)
+        result.append(text)
+    return result
+
+
 def build_links(projects):
     links, candidates = [], []
     for i, left in enumerate(projects):
@@ -39,9 +52,9 @@ def build_links(projects):
                         ] + [
                             x for x in refs_b if resolver.contract_number_matches(x, na)
                         ]
-                        evidence = sorted(set(matching_refs))
+                        evidence = unique_evidence(sorted(matching_refs))
                         if not evidence and na and nb and resolver.contract_family_matches(na, nb):
-                            evidence = [na, nb]
+                            evidence = unique_evidence([na, nb])
                         item = {"kind": "contractual", "confidence": "explicit",
                                 "reason": "explicit_parent_contract_number",
                                 "evidence": evidence, "a": a, "b": b}
