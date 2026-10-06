@@ -29,6 +29,39 @@ def test_exact_identifier_is_strongest_match():
     assert evidence == ["ABC-123"]
 
 
+
+
+def test_addendum_links_to_base_by_related_contract_id():
+    base = {
+        "source": "registr-smluv",
+        "source_id": "15970715",
+        "title": "Poskytnutí účelové dotace z rozpočtu Libereckého kraje na projekt Karavanové stání",
+        "contract_number": "07-OLP/2373/2021",
+    }
+    addendum = {
+        "source": "registr-smluv",
+        "source_id": "20176309",
+        "title": "Dodatek č. 1 ke smlouvě o poskytnutí účelové dotace na projekt karavanová stání",
+        "contract_number": "07-OLP/2373/2022",
+        "related_contract_ids": ["15970715"],
+    }
+    score, reason, evidence = resolver.score(addendum, base)
+    assert score == 1.0
+    assert reason == "explicit_related_contract_id"
+    assert evidence == ["related_contract_id=15970715"]
+
+
+def test_versioned_contract_numbers_share_a_family():
+    assert resolver.contract_family_matches(
+        "924004797.00.001 / KRPL-68860-12/ČJ-2016-1800SU-5",
+        "924004797.00.000 / KRPL-68860-8/ČJ-2016-1800SU-5",
+    )
+    assert resolver.contract_family_matches(
+        "924004797.00.002 / KRPL-68860-32/ČJ-2016-1800SU",
+        "924004797.00.000 / KRPL-68860-8/ČJ-2016-1800SU-5",
+    )
+
+
 def test_addendum_links_to_base_by_explicit_contract_number():
     base = {
         "source": "registr-smluv",
