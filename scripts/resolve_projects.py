@@ -202,13 +202,28 @@ def contract_number_matches(reference, candidate):
 
 
 def contract_family_matches(addendum_number, base_number):
-    """Match an addendum number to its base when only the addendum marker differs."""
-    a = re.sub(r"[^a-z0-9]", "", norm(addendum_number))
-    b = re.sub(r"[^a-z0-9]", "", norm(base_number))
+    """Match a versioned addendum number to its base contract conservatively."""
+    a = str(addendum_number or "").strip()
+    b = str(base_number or "").strip()
     if not a or not b:
         return False
-    a = re.sub(r"d\d+", "", a)
-    return a == b and len(b) >= 8
+
+    def stable_prefix(value):
+        first = value.split("/", 1)[0].strip()
+        first = re.sub(r"\.\d{3,}$", "", first)
+        return re.sub(r"[^a-z0-9]", "", norm(first))
+
+    pa = stable_prefix(a)
+    pb = stable_prefix(b)
+    if pa and pb and pa == pb and len(pa) >= 8:
+        return True
+
+    aa = re.sub(r"[^a-z0-9]", "", norm(a))
+    bb = re.sub(r"[^a-z0-9]", "", norm(b))
+    if not aa or not bb:
+        return False
+    aa = re.sub(r"d\d+", "", aa)
+    return aa == bb and len(bb) >= 8
 
 
 def is_addendum(r):
@@ -264,22 +279,40 @@ def date_gap_days(a, b):
 def score(a, b):
     # An explicit reference from an addendum to the base contract outranks
     # fuzzy title/supplier similarity, but only when it identifies one side.
-    a_refs = referenced_contract_numbers(a)
-    b_refs = referenced_contract_numbers(b)
+    a_refs = referenced_contract_numbers(a) | related_contract_numbers(a)
+    b_refs = referenced_contract_numbers(b) | related_contract_numbers(b)
+    a_related_ids = related_contract_ids(a)
+    b_related_ids = related_contract_ids(b)
+    a_id = str(a.get("source_id") or a.get("version_id") or "").strip()
+    b_id = str(b.get("source_id") or b.get("version_id") or "").strip()
     a_number, b_number = contract_number(a), contract_number(b)
+
     if is_addendum(a) and not is_addendum(b) and (
-        any(contract_number_matches(x, b_number) for x in a_refs)
+        b_id in a_related_ids
+        or any(contract_number_matches(x, b_number) for x in a_refs)
         or contract_family_matches(a_number, b_number)
     ):
-        evidence = sorted(a_refs) if a_refs else [a_number, b_number]
-        reason = "explicit_parent_contract_number" if a_refs else "explicit_addendum_contract_family"
+        evidence = []
+        if b_id in a_related_ids:
+            evidence.append(f"related_contract_id={b_id}")
+        evidence.extend(sorted(x for x in a_refs if contract_number_matches(x, b_number)))
+        if not evidence and contract_family_matches(a_number, b_number):
+            evidence = [a_number, b_number]
+        reason = "explicit_related_contract_id" if b_id in a_related_ids else ("explicit_parent_contract_number" if a_refs else "explicit_addendum_contract_family")
         return 1.0, reason, evidence
+
     if is_addendum(b) and not is_addendum(a) and (
-        any(contract_number_matches(x, a_number) for x in b_refs)
+        a_id in b_related_ids
+        or any(contract_number_matches(x, a_number) for x in b_refs)
         or contract_family_matches(b_number, a_number)
     ):
-        evidence = sorted(b_refs) if b_refs else [b_number, a_number]
-        reason = "explicit_parent_contract_number" if b_refs else "explicit_addendum_contract_family"
+        evidence = []
+        if a_id in b_related_ids:
+            evidence.append(f"related_contract_id={a_id}")
+        evidence.extend(sorted(x for x in b_refs if contract_number_matches(x, a_number)))
+        if not evidence and contract_family_matches(b_number, a_number):
+            evidence = [b_number, a_number]
+        reason = "explicit_related_contract_id" if a_id in b_related_ids else ("explicit_parent_contract_number" if b_refs else "explicit_addendum_contract_family")
         return 1.0, reason, evidence
     common = key_ids(a) & key_ids(b)
     if common:
