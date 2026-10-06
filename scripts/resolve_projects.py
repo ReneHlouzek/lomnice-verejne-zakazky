@@ -233,7 +233,8 @@ def contract_family_matches(addendum_number, base_number):
             text = re.sub(r"/\d+$", "", text)
         # Or encode it as .001/.002:
         #   924004797.00.001 -> 924004797.00
-        text = re.sub(r"\.\d{3,}$", "", text.split("/", 1)[0])
+        first = text.split("/", 1)[0].strip()
+        text = re.sub(r"\.\d{3,}$", "", first)
         # D01/D1 can occur in the middle of the identifier.
         if addendum:
             text = re.sub(r"d\d+", "", text)
