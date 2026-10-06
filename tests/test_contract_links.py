@@ -43,3 +43,45 @@ def test_fuzzy_match_is_candidate_not_confirmed_link():
     links, candidates = build_links([a, b])
     assert links == []
     assert candidates
+
+
+def test_related_contract_number_is_explicit():
+    base = {
+        "id": "base", "title": "Původní smlouva",
+        "sources": [{"record": {"source": "registr-smluv", "source_id": "100",
+            "title": "Smlouva", "contract_number": "07-OLP/2373/2021"}}],
+    }
+    addendum = {
+        "id": "add", "title": "Dodatek",
+        "sources": [{"record": {"source": "registr-smluv", "source_id": "101",
+            "title": "Dodatek č. 2 ke smlouvě", "contract_number": "07-OLP/2373/2022",
+            "related_contract_numbers": ["07-OLP/2373/2021"]}}],
+    }
+    links, candidates = build_links([base, addendum])
+    assert len(links) == 1
+    assert links[0]["reason"] == "explicit_parent_contract_number"
+    assert links[0]["evidence"] == ["07-OLP/2373/2021"]
+    assert candidates == []
+
+
+def test_versioned_contract_family_is_explicit_link():
+    base = {
+        "id": "base", "title": "Nájem NP",
+        "sources": [{"record": {"source": "registr-smluv", "source_id": "774449",
+            "title": "Lomnice nad Popelkou - nájem NP pro OOP",
+            "contract_number": "924004797.00.000 / KRPL-68860-8/ČJ-2016-1800SU-5"}}],
+    }
+    addendum = {
+        "id": "add", "title": "Dodatek 1",
+        "sources": [{"record": {"source": "registr-smluv", "source_id": "2316654",
+            "title": "Dodatek 1 Lomnice n.Popelkou - nájem NP",
+            "contract_number": "924004797.00.001 / KRPL-68860-12/ČJ-2016-1800SU-5"}}],
+    }
+    links, candidates = build_links([base, addendum])
+    assert len(links) == 1
+    assert links[0]["reason"] == "explicit_parent_contract_number"
+    assert links[0]["evidence"] == [
+        "924004797.00.000 / KRPL-68860-8/ČJ-2016-1800SU-5",
+        "924004797.00.001 / KRPL-68860-12/ČJ-2016-1800SU-5",
+    ]
+    assert candidates == []
