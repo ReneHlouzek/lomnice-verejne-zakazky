@@ -173,6 +173,23 @@ def contract_number(r):
     return str(r.get("contract_number") or r.get("cislo_smlouvy") or "").strip()
 
 
+def related_contract_ids(r):
+    """Return explicit IDs of contracts referenced by this record."""
+    values = r.get("related_contract_ids") or []
+    if not isinstance(values, (list, tuple, set)):
+        values = [values]
+    return {str(x).strip() for x in values if str(x).strip()}
+
+
+def related_contract_numbers(r):
+    """Return explicit contract numbers referenced by this record."""
+    values = r.get("related_contract_numbers") or []
+    if not isinstance(values, (list, tuple, set)):
+        values = [values]
+    return {str(x).strip() for x in values if str(x).strip()}
+
+
+
 def referenced_contract_numbers(r):
     """Extract explicit parent-contract references from normalized fields and titles."""
     values = []
