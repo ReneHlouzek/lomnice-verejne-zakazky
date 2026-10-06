@@ -219,28 +219,35 @@ def contract_number_matches(reference, candidate):
 
 
 def contract_family_matches(addendum_number, base_number):
-    """Match a versioned addendum number to its base contract conservatively."""
-    a = str(addendum_number or "").strip()
-    b = str(base_number or "").strip()
+    """Match an addendum number to its base using common registry version markers."""
+    a_raw = str(addendum_number or "").strip()
+    b_raw = str(base_number or "").strip()
+    if not a_raw or not b_raw:
+        return False
+
+    def compact(value):
+        return re.sub(r"[^a-z0-9]", "", norm(value))
+
+    a = compact(a_raw)
+    b = compact(b_raw)
     if not a or not b:
         return False
 
-    def stable_prefix(value):
-        first = value.split("/", 1)[0].strip()
-        first = re.sub(r"\.\d{3,}$", "", first)
-        return re.sub(r"[^a-z0-9]", "", norm(first))
+    # D01/D1 markers may appear in the middle of the identifier.
+    a_without_d = re.sub(r"d\d+", "", a)
 
-    pa = stable_prefix(a)
-    pb = stable_prefix(b)
-    if pa and pb and pa == pb and len(pa) >= 8:
-        return True
+    # .001/.002 style versions share the same stable contract prefix.
+    a_without_version = re.sub(r"(?:00\d+|0\d{2})$", "", a)
+    b_without_version = re.sub(r"(?:00\d+|0\d{2})$", "", b)
 
-    aa = re.sub(r"[^a-z0-9]", "", norm(a))
-    bb = re.sub(r"[^a-z0-9]", "", norm(b))
-    if not aa or not bb:
-        return False
-    aa = re.sub(r"d\d+", "", aa)
-    return aa == bb and len(bb) >= 8
+    # /1, /2 ... is also used for addendum versions.
+    a_without_slash_version = re.sub(r"\d+$", "", a) if re.search(r"/\d+$", a_raw) else a
+
+    candidates_a = {a, a_without_d, a_without_version, a_without_slash_version,
+                    re.sub(r"(?:00\d+|0\d{2})$", "", a_without_d)}
+    candidates_b = {b, b_without_version}
+
+    return any(x == y and len(y) >= 8 for x in candidates_a for y in candidates_b)
 
 
 def is_addendum(r):
@@ -376,8 +383,8 @@ def score(a, b):
         return .88, "title_price_date", ["price", f"date_gap_days={gap}"]
     if same_supplier and sim >= .66 and near_price and same_year:
         return .84, "supplier_title_price_date", [ai, "price", f"date_gap_days={gap}"]
-    if addendum_pair and same_supplier and core_sim >= .68:
-        return .74, "candidate_addendum_core_title", [ai]
+    if addendum_pair and same_supplier and core_sim >= .68 and meaningful_core_overlap >= .50 and (near_price or near_date):
+        return .74, "candidate_addendum_core_title", [ai, f"meaningful_token_overlap={meaningful_core_overlap:.2f}", f"date_gap_days={gap}" if near_date else "price"]
     # Broad candidate rules previously connected many unrelated records merely
     # because the same public institution appeared as supplier/recipient.
     # Keep review candidates only when title similarity is meaningful and there
