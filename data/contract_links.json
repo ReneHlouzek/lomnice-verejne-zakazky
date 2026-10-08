@@ -119,26 +119,8 @@
       "source_id_b": "3753"
     }
   ],
-  "candidate_count": 3,
+  "candidate_count": 1,
   "candidates": [
-    {
-      "project_a": "p-dodatek-c-1-ke-smlouve-o-poskytnuti-dotace-na-poskytovani-sluzeb-v-obe-0118",
-      "title_a": "Dodatek č. 1 ke smlouvě o poskytnutí dotace na poskytování služeb v obecném hospodářském zájmu z rozpočtu Libereckého kraje z finančních prostředků Ministerstva práce a sociálních věcí, č. OLP/588/2016",
-      "project_b": "p-smlouva-o-poskytnuti-dotace-na-poskytovani-sluzeb-v-obecnem-hospodarsk-0139",
-      "title_b": "Smlouva o poskytnutí dotace na poskytování služeb v obecném hospodářském zájmu z rozpočtu Libereckého kraje č. OLP/4637/2016",
-      "kind": "contextual",
-      "confidence": "review",
-      "reason": "candidate_addendum_core_title",
-      "evidence": [
-        "70891508",
-        "meaningful_token_overlap=0.50",
-        "date_gap_days=28"
-      ],
-      "source_a": "registr-smluv",
-      "source_id_a": "426037",
-      "source_b": "registr-smluv",
-      "source_id_b": "286209"
-    },
     {
       "project_a": "p-dodatek-c-1-verejnopravni-smlouvy-o-poskytnuti-neinvesticni-dotace-z-r-0101",
       "title_a": "Dodatek č. 1 veřejnoprávní smlouvy o poskytnutí neinvestiční dotace z rozpočtu města Lomnice nad Popelkou na akci Lomnice nad Popelkou - KOšov , obnova vodovodu",
@@ -156,24 +138,6 @@
       "source_id_a": "32731945",
       "source_b": "registr-smluv",
       "source_id_b": "29417636"
-    },
-    {
-      "project_a": "p-dodatek-c-1-verejnopravni-smlouvy-o-poskytnuti-neinvesticni-dotace-z-r-0101",
-      "title_a": "Dodatek č. 1 veřejnoprávní smlouvy o poskytnutí neinvestiční dotace z rozpočtu města Lomnice nad Popelkou na akci Lomnice nad Popelkou - KOšov , obnova vodovodu",
-      "project_b": "p-verejnopravni-smlouva-o-poskytnuti-neinvesticni-dotace-z-rozpoctu-mest-0062",
-      "title_b": "Veřejnoprávní smlouva o poskytnutí neinvestiční dotace z rozpočtu města Lomnice nad Popelkou na akci Lomnice n. P. - oprava vodovodu Hrádka",
-      "kind": "contextual",
-      "confidence": "review",
-      "reason": "candidate_addendum_core_title",
-      "evidence": [
-        "49295934",
-        "meaningful_token_overlap=0.50",
-        "title_only"
-      ],
-      "source_a": "registr-smluv",
-      "source_id_a": "32731945",
-      "source_b": "registr-smluv",
-      "source_id_b": "11922952"
     }
   ]
 }
