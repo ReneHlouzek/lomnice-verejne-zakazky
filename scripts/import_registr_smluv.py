@@ -58,6 +58,22 @@ def normalize_ico(value: str) -> str:
     return re.sub(r"\D", "", value or "")
 
 
+def extract_related_contract_ids_from_html(html: str) -> list[str]:
+    plain = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", html))
+    related = re.findall(
+        r"ID\s*n[aá]vazn[eé]\s*smlouvy[^0-9]{0,120}(\d{4,})",
+        plain,
+        flags=re.IGNORECASE,
+    )
+    if not related:
+        related = re.findall(
+            r"ID\s*n[aá]vazn[eé]\s*smlouvy.{0,500}?smlouva/(\d{4,})",
+            html,
+            flags=re.IGNORECASE | re.DOTALL,
+        )
+    return sorted(set(related))
+
+
 def publisher_info(elem: ET.Element) -> tuple[set[str], str]:
     """Find the publishing subject across minor ISRS XML schema variations."""
     icos: set[str] = set()
@@ -240,17 +256,7 @@ def extract_records(path: Path, ico: str) -> Iterable[dict]:
                 # The public detail page can expose "ID návazné smlouvy"
                 # even when the monthly XML omits it. Preserve that official
                 # relationship as first-class evidence for contract linking.
-                related_from_detail = re.findall(
-                    r"ID\s*n[aá]vazn[eé]\s*smlouvy[^0-9]{0,120}(\d{4,})",
-                    re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", html)),
-                    flags=re.IGNORECASE,
-                )
-                if not related_from_detail:
-                    related_from_detail = re.findall(
-                        r"ID\s*n[aá]vazn[eé]\s*smlouvy.{0,500}?smlouva/(\d{4,})",
-                        html,
-                        flags=re.IGNORECASE | re.DOTALL,
-                    )
+                related_from_detail = extract_related_contract_ids_from_html(html)
                 related_contract_ids = sorted(set(related_contract_ids) | set(related_from_detail))
                 matches = re.findall(
                     r"https?://(?:smlouvy|isrs)\.gov\.cz/smlouva/soubor/[0-9]+/[^\s<>\x22\x27]+?\.pdf(?:\?[^\s<>\x22\x27]*)?",
@@ -498,17 +504,7 @@ def main() -> None:
                  "Lomnice-verejne-zakazky/1.0", detail],
                 check=True, capture_output=True, text=True,
             ).stdout
-            related = re.findall(
-                r"ID\s*n[aá]vazn[eé]\s*smlouvy[^0-9]{0,120}(\d{4,})",
-                re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", page)),
-                flags=re.IGNORECASE,
-            )
-            if not related:
-                related = re.findall(
-                    r"ID\s*n[aá]vazn[eé]\s*smlouvy.{0,500}?smlouva/(\d{4,})",
-                    page, flags=re.IGNORECASE | re.DOTALL,
-                )
-            related = sorted(set(related))
+            related = extract_related_contract_ids_from_html(page)
             if related:
                 record["related_contract_ids"] = related
                 relation_refresh += 1
