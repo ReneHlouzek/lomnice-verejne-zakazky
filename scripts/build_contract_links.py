@@ -1,6 +1,7 @@
 """Build an explainable register of contractual links and review candidates."""
 from __future__ import annotations
 import json
+import re
 from pathlib import Path
 import sys
 
@@ -22,6 +23,40 @@ def unique_evidence(values):
     return result
 
 
+DOC_MANIFEST = ROOT / "data" / "documents" / "registr-smluv" / "manifest.json"
+
+def document_referenced_contract_numbers():
+    if not DOC_MANIFEST.exists():
+        return {}
+    try:
+        manifest = json.loads(DOC_MANIFEST.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return {}
+    out = {}
+    for row in manifest.get("records", []):
+        sid = str(row.get("source_id") or "").strip()
+        if not sid:
+            continue
+        refs = []
+        for doc in row.get("documents", []):
+            path = doc.get("text_file")
+            if not path:
+                continue
+            file_path = ROOT / path
+            try:
+                text = file_path.read_text(encoding="utf-8", errors="replace")
+            except OSError:
+                continue
+            refs.extend(re.findall(r"\b(?:[A-Z]{1,8}[-_/]?)?\d{1,8}[-_/][A-Z0-9ČŠŽĚŘŤŤÚŮÁÉÍÓÝa-zčšžěřťúůáéíóý]{1,12}[-_/]\d{2,4}\b", text, flags=re.IGNORECASE))
+            refs.extend(re.findall(r"\b(?:OLP|KRPL|ČJ|CJ)[-_/ ]?\d{2,8}[-_/]\d{4}\b", text, flags=re.IGNORECASE))
+        if refs:
+            out[sid] = unique_evidence(refs)
+    return out
+
+
+DOCUMENT_REFS = document_referenced_contract_numbers()
+
+
 def build_links(projects):
     links, candidates = [], []
     for i, left in enumerate(projects):
@@ -32,8 +67,8 @@ def build_links(projects):
                 a = sa.get("record", {})
                 for sb in right.get("sources", []):
                     b = sb.get("record", {})
-                    refs_a = resolver.referenced_contract_numbers(a) | resolver.related_contract_numbers(a)
-                    refs_b = resolver.referenced_contract_numbers(b) | resolver.related_contract_numbers(b)
+                    refs_a = resolver.referenced_contract_numbers(a) | resolver.related_contract_numbers(a) | set(DOCUMENT_REFS.get(str(a.get("source_id") or ""), []))
+                    refs_b = resolver.referenced_contract_numbers(b) | resolver.related_contract_numbers(b) | set(DOCUMENT_REFS.get(str(b.get("source_id") or ""), []))
                     related_a = resolver.related_contract_ids(a)
                     related_b = resolver.related_contract_ids(b)
                     ida = str(a.get("source_id") or a.get("version_id") or "").strip()
