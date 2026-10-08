@@ -70,7 +70,7 @@
         "source": "registr-smluv",
         "source_id": "37367969",
         "version_id": "39741021",
-        "source_url": "https://smlouvy.gov.cz/smlouva/37367969",
+        "source_url": "https://smlouvy.gov.cz/smlouva/39741021",
         "title": "Dodatek č. 1 veřejnoprávní smlouvoy o poskytnutí neinvestiční dotace z rozpočtu města Lomnice nad Popelkou",
         "buyer_ico": "00275905",
         "supplier_ico": "49295934",
@@ -87,7 +87,7 @@
           "source": "registr-smluv",
           "source_id": "37367969",
           "version_id": "39741021",
-          "source_url": "https://smlouvy.gov.cz/smlouva/37367969",
+          "source_url": "https://smlouvy.gov.cz/smlouva/39741021",
           "title": "Dodatek č. 1 veřejnoprávní smlouvoy o poskytnutí neinvestiční dotace z rozpočtu města Lomnice nad Popelkou",
           "buyer_ico": "00275905",
           "supplier_ico": "49295934",
@@ -102,13 +102,8 @@
           "publisher": "",
           "subject": "Dodatek č. 1 veřejnoprávní smlouvoy o poskytnutí neinvestiční dotace z rozpočtu města Lomnice nad Popelkou",
           "counterparty": "Vodohospodářské sdružení Turnov",
-          "detail_url": "https://smlouvy.gov.cz/smlouva/37367969",
-          "attachments": [
-            {
-              "url": "https://smlouvy.gov.cz/smlouva/soubor/45198501/SoBSoZS_Hodon%C3%ADn_T-Mobile%20-%20uzav%C5%99en%C3%A1.pdf",
-              "name": "SoBSoZS_Hodon%C3%ADn_T-Mobile%20-%20uzav%C5%99en%C3%A1.pdf"
-            }
-          ]
+          "detail_url": "https://smlouvy.gov.cz/smlouva/39741021",
+          "attachments": []
         },
         "_source_file": "data/sources/registr-smluv/rs-000110.json"
       }

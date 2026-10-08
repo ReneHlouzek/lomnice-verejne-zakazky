@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-08T10:40:30Z",
+  "updated_at": "2026-10-08T11:03:25Z",
   "records_checked": 110,
   "attachments_declared": 2,
   "documents_discovered": 2,
@@ -687,26 +687,26 @@
       "source": "registr-smluv",
       "source_id": "36978239",
       "title": "Smlouva o poskytnutí individuální dotace Město Lomnice nad Popelkou, ul 5. května",
-      "page_url": "https://smlouvy.gov.cz/smlouva/36978239",
-      "documents": [],
+      "page_url": "https://smlouvy.gov.cz/smlouva/39335147",
+      "documents": [
+        {
+          "index": 1,
+          "name": "Smlouva_individualni_dotace_Lomnice_OLP-02908-2026_sig.pdf",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/47440583/Smlouva_individualni_dotace_Lomnice_OLP-02908-2026_sig.pdf",
+          "text_available": true,
+          "text_chars": 24954,
+          "text_file": "data/documents/registr-smluv/36978239/001.txt",
+          "status": "retained_existing_text"
+        }
+      ],
       "status": "ok"
     },
     {
       "source": "registr-smluv",
       "source_id": "37367969",
       "title": "Dodatek č. 1 veřejnoprávní smlouvoy o poskytnutí neinvestiční dotace z rozpočtu města Lomnice nad Popelkou",
-      "page_url": "https://smlouvy.gov.cz/smlouva/37367969",
-      "documents": [
-        {
-          "index": 1,
-          "name": "SoBSoZS_Hodon%C3%ADn_T-Mobile%20-%20uzav%C5%99en%C3%A1.pdf",
-          "url": "https://smlouvy.gov.cz/smlouva/soubor/45198501/SoBSoZS_Hodon%C3%ADn_T-Mobile%20-%20uzav%C5%99en%C3%A1.pdf",
-          "text_available": true,
-          "text_chars": 16817,
-          "text_file": "data/documents/registr-smluv/37367969/001.txt",
-          "status": "retained_from_previous_run"
-        }
-      ],
+      "page_url": "https://smlouvy.gov.cz/smlouva/39741021",
+      "documents": [],
       "status": "ok"
     },
     {
