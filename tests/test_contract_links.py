@@ -182,3 +182,21 @@ def test_same_source_conflicting_contract_numbers_are_not_addendum_candidates():
     links, candidates = build_links([base, addendum])
     assert links == []
     assert candidates == []
+
+
+def test_same_source_generic_project_overlap_is_not_review_candidate():
+    base = {
+        "id": "base", "title": "Oprava vodovodu Hrádka",
+        "sources": [{"record": {"source": "registr-smluv", "source_id": "base",
+            "title": "Veřejnoprávní smlouva o poskytnutí neinvestiční dotace - oprava vodovodu Hrádka",
+            "supplier_ico": "49295934", "date": "2020-05-21"}}],
+    }
+    addendum = {
+        "id": "add", "title": "Dodatek č. 1 - Košov - obnova vodovodu",
+        "sources": [{"record": {"source": "registr-smluv", "source_id": "add",
+            "title": "Dodatek č. 1 veřejnoprávní smlouvy - Košov - obnova vodovodu",
+            "supplier_ico": "49295934", "date": "2025-09-22"}}],
+    }
+    links, candidates = build_links([base, addendum])
+    assert links == []
+    assert candidates == []
