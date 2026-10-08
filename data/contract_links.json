@@ -119,26 +119,8 @@
       "source_id_b": "3753"
     }
   ],
-  "candidate_count": 4,
+  "candidate_count": 3,
   "candidates": [
-    {
-      "project_a": "p-86-olp-2721-2023-8-2-mesto-lomnice-nad-popelkou-0161",
-      "title_a": "86_OLP/2721/2023_8.2 Město Lomnice nad Popelkou",
-      "project_b": "p-dodatek-c-1-olp-3394-2023-smlouva-dflk-8-6-mesto-lomnice-nad-popelkou-0109",
-      "title_b": "Dodatek č. 1 OLP/3394/2023 - Smlouva DFLK 8.6 - Město Lomnice nad Popelkou",
-      "kind": "contextual",
-      "confidence": "review",
-      "reason": "candidate_addendum_core_title",
-      "evidence": [
-        "70891508",
-        "meaningful_token_overlap=0.67",
-        "title_only"
-      ],
-      "source_a": "registr-smluv",
-      "source_id_a": "24676351",
-      "source_b": "registr-smluv",
-      "source_id_b": "34549017"
-    },
     {
       "project_a": "p-dodatek-c-1-ke-smlouve-o-poskytnuti-dotace-na-poskytovani-sluzeb-v-obe-0118",
       "title_a": "Dodatek č. 1 ke smlouvě o poskytnutí dotace na poskytování služeb v obecném hospodářském zájmu z rozpočtu Libereckého kraje z finančních prostředků Ministerstva práce a sociálních věcí, č. OLP/588/2016",
