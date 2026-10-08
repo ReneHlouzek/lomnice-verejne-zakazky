@@ -1,5 +1,5 @@
 {
-  "count": 7,
+  "count": 8,
   "links": [
     {
       "project_a": "p-dodatek-1-lomnice-n-popelkou-najem-np-0108",
@@ -8,10 +8,9 @@
       "title_b": "Lomnice nad Popelkou - nájem NP pro OOP",
       "kind": "contractual",
       "confidence": "explicit",
-      "reason": "explicit_parent_contract_number",
+      "reason": "explicit_related_contract_id",
       "evidence": [
-        "924004797.00.001 / KRPL-68860-12/ČJ-2016-1800SU-5",
-        "924004797.00.000 / KRPL-68860-8/ČJ-2016-1800SU-5"
+        "related_contract_id=774449"
       ],
       "source_a": "registr-smluv",
       "source_id_a": "2316654",
@@ -25,10 +24,9 @@
       "title_b": "Lomnice nad Popelkou - nájem NP pro OOP",
       "kind": "contractual",
       "confidence": "explicit",
-      "reason": "explicit_parent_contract_number",
+      "reason": "explicit_related_contract_id",
       "evidence": [
-        "924004797.00.002 / KRPL-68860-32/ČJ-2016-1800SU",
-        "924004797.00.000 / KRPL-68860-8/ČJ-2016-1800SU-5"
+        "related_contract_id=774449"
       ],
       "source_a": "registr-smluv",
       "source_id_a": "19084011",
@@ -42,10 +40,9 @@
       "title_b": "Obnova rybníka Matouš v Lomnici nad Popelkou",
       "kind": "contractual",
       "confidence": "explicit",
-      "reason": "explicit_parent_contract_number",
+      "reason": "explicit_related_contract_id",
       "evidence": [
-        "OLP/3394/2023/1",
-        "OLP/3394/2023"
+        "related_contract_id=26812007"
       ],
       "source_a": "registr-smluv",
       "source_id_a": "34549017",
@@ -59,15 +56,30 @@
       "title_b": "Smlouva o poskytnutí účelové dotace Libereckému kraji z rozpočtu města Lomnice nad Popelkou",
       "kind": "contractual",
       "confidence": "explicit",
-      "reason": "explicit_parent_contract_number",
+      "reason": "explicit_related_contract_id",
       "evidence": [
-        "06_D01_OLP_2674_2016",
-        "06-OLP/2674/2016"
+        "related_contract_id=3753"
       ],
       "source_a": "registr-smluv",
       "source_id_a": "845225",
       "source_b": "registr-smluv",
       "source_id_b": "3753"
+    },
+    {
+      "project_a": "p-dodatek-c-1-ke-smlouve-o-poskytnuti-ucelove-dotace-z-dotacniho-fondu-l-0150",
+      "title_a": "Dodatek č. 1 ke smlouvě o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje na projekt karavanová stání v Lomnici nad Popelkou",
+      "project_b": "p-poskytnuti-ucelove-dotace-z-rozpoctu-libereckeho-kraje-na-projekt-kara-0159",
+      "title_b": "Poskytnutí účelové dotace z rozpočtu Libereckého kraje na projekt Karavanové stání Koupaliště, Lomnice nad Popelkou",
+      "kind": "contractual",
+      "confidence": "explicit",
+      "reason": "explicit_related_contract_id",
+      "evidence": [
+        "related_contract_id=15970715"
+      ],
+      "source_a": "registr-smluv",
+      "source_id_a": "20176309",
+      "source_b": "registr-smluv",
+      "source_id_b": "15970715"
     },
     {
       "project_a": "p-dodatek-c-2-ke-smlouve-o-poskytnuti-ucelove-dotace-z-dotacniho-fondu-l-0092",
@@ -76,9 +88,9 @@
       "title_b": "Poskytnutí účelové dotace z rozpočtu Libereckého kraje na projekt Karavanové stání Koupaliště, Lomnice nad Popelkou",
       "kind": "contractual",
       "confidence": "explicit",
-      "reason": "explicit_parent_contract_number",
+      "reason": "explicit_related_contract_id",
       "evidence": [
-        "07-OLP/2373/2021"
+        "related_contract_id=15970715"
       ],
       "source_a": "registr-smluv",
       "source_id_a": "24740963",

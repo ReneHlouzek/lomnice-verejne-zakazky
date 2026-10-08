@@ -8,7 +8,9 @@
   "supplier_ico": "72050501",
   "supplier_name": "Krajské ředitelství policie Libereckého kraje",
   "contract_number": "924004797.00.002 / KRPL-68860-32/ČJ-2016-1800SU",
-  "related_contract_ids": [],
+  "related_contract_ids": [
+    "774449"
+  ],
   "related_contract_numbers": [],
   "date": "2022-05-24",
   "signed_date": "2022-05-24",
@@ -32,6 +34,9 @@
     "publisher": "",
     "subject": "Dodatek 2 Lomnice n. Popelkou - navýšení paušálních plateb",
     "counterparty": "Krajské ředitelství policie Libereckého kraje",
-    "detail_url": "https://smlouvy.gov.cz/smlouva/19084011"
+    "detail_url": "https://smlouvy.gov.cz/smlouva/19084011",
+    "related_contract_ids": [
+      "774449"
+    ]
   }
 }

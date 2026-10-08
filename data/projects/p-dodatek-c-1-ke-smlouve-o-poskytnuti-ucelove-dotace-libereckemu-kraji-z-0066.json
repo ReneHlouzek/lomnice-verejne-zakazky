@@ -74,7 +74,10 @@
         "supplier_ico": "70891508",
         "supplier_name": "Liberecký kraj",
         "contract_number": "06_D01_OLP_2674_2016",
-        "related_contract_ids": [],
+        "related_contract_ids": [
+          "2264882",
+          "3753"
+        ],
         "related_contract_numbers": [],
         "date": "2016-12-22",
         "signed_date": "2016-12-22",
@@ -98,7 +101,11 @@
           "publisher": "",
           "subject": "Dodatek č. 1 ke smlouvě o poskytnutí účelové dotace Libereckému kraji z rozpočtu Města Lomnice nad Popelkou",
           "counterparty": "Liberecký kraj",
-          "detail_url": "https://smlouvy.gov.cz/smlouva/845225"
+          "detail_url": "https://smlouvy.gov.cz/smlouva/845225",
+          "related_contract_ids": [
+            "2264882",
+            "3753"
+          ]
         },
         "_source_file": "data/sources/registr-smluv/rs-000014.json"
       }

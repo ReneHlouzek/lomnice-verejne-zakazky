@@ -8,7 +8,9 @@
   "supplier_ico": "72050501",
   "supplier_name": "Krajské ředitelství policie Libereckého kraje",
   "contract_number": "924004797.00.001 / KRPL-68860-12/ČJ-2016-1800SU-5",
-  "related_contract_ids": [],
+  "related_contract_ids": [
+    "774449"
+  ],
   "related_contract_numbers": [],
   "date": "2017-06-29",
   "signed_date": "2017-06-29",
@@ -32,6 +34,9 @@
     "publisher": "",
     "subject": "Dodatek 1 Lomnice n.Popelkou - nájem NP",
     "counterparty": "Krajské ředitelství policie Libereckého kraje",
-    "detail_url": "https://smlouvy.gov.cz/smlouva/2316654"
+    "detail_url": "https://smlouvy.gov.cz/smlouva/2316654",
+    "related_contract_ids": [
+      "774449"
+    ]
   }
 }

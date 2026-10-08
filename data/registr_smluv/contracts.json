@@ -264,7 +264,11 @@
       "publisher": "",
       "subject": "Dodatek č. 1 ke smlouvě o poskytnutí účelové dotace Libereckému kraji z rozpočtu Města Lomnice nad Popelkou",
       "counterparty": "Liberecký kraj",
-      "detail_url": "https://smlouvy.gov.cz/smlouva/845225"
+      "detail_url": "https://smlouvy.gov.cz/smlouva/845225",
+      "related_contract_ids": [
+        "2264882",
+        "3753"
+      ]
     },
     {
       "source": "registr-smluv",
@@ -359,7 +363,10 @@
       "publisher": "",
       "subject": "Dodatek č.2 ke Smlouvě o poskytnutí účelové dotace Libereckému kraji z rozpočtu Města Lomnice nad Popelkou na stavební akci „II/286 x II/284 Lomnice nad Popelkou - havárie zdi - nezpůsobilé výdaje“",
       "counterparty": "Liberecký kraj",
-      "detail_url": "https://smlouvy.gov.cz/smlouva/2264882"
+      "detail_url": "https://smlouvy.gov.cz/smlouva/2264882",
+      "related_contract_ids": [
+        "845225"
+      ]
     },
     {
       "source": "registr-smluv",
@@ -378,7 +385,10 @@
       "publisher": "",
       "subject": "Dodatek 1 Lomnice n.Popelkou - nájem NP",
       "counterparty": "Krajské ředitelství policie Libereckého kraje",
-      "detail_url": "https://smlouvy.gov.cz/smlouva/2316654"
+      "detail_url": "https://smlouvy.gov.cz/smlouva/2316654",
+      "related_contract_ids": [
+        "774449"
+      ]
     },
     {
       "source": "registr-smluv",
@@ -1100,7 +1110,10 @@
       "publisher": "",
       "subject": "Dodatek 2 Lomnice n. Popelkou - navýšení paušálních plateb",
       "counterparty": "Krajské ředitelství policie Libereckého kraje",
-      "detail_url": "https://smlouvy.gov.cz/smlouva/19084011"
+      "detail_url": "https://smlouvy.gov.cz/smlouva/19084011",
+      "related_contract_ids": [
+        "774449"
+      ]
     },
     {
       "source": "registr-smluv",
@@ -1195,7 +1208,10 @@
       "publisher": "",
       "subject": "Dodatek č. 1 ke smlouvě o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje na projekt karavanová stání v Lomnici nad Popelkou",
       "counterparty": "Liberecký kraj",
-      "detail_url": "https://smlouvy.gov.cz/smlouva/20176309"
+      "detail_url": "https://smlouvy.gov.cz/smlouva/20176309",
+      "related_contract_ids": [
+        "15970715"
+      ]
     },
     {
       "source": "registr-smluv",
@@ -1366,7 +1382,10 @@
       "publisher": "",
       "subject": "Dodatek č. 2 ke smlouvě o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje na projekt karavanová stání Lomnice nad Popelkou",
       "counterparty": "Liberecký kraj",
-      "detail_url": "https://smlouvy.gov.cz/smlouva/24740963"
+      "detail_url": "https://smlouvy.gov.cz/smlouva/24740963",
+      "related_contract_ids": [
+        "15970715"
+      ]
     },
     {
       "source": "registr-smluv",
@@ -1879,7 +1898,10 @@
       "publisher": "",
       "subject": "Dodatek č. 1 OLP/3394/2023 - Smlouva DFLK 8.6 - Město Lomnice nad Popelkou",
       "counterparty": "Liberecký kraj",
-      "detail_url": "https://smlouvy.gov.cz/smlouva/34549017"
+      "detail_url": "https://smlouvy.gov.cz/smlouva/34549017",
+      "related_contract_ids": [
+        "26812007"
+      ]
     },
     {
       "source": "registr-smluv",
