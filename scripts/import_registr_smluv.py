@@ -213,7 +213,7 @@ def extract_records(path: Path, ico: str) -> Iterable[dict]:
                     supplier = picos[0] if picos else ""
                     counterparty = pname
 
-        detail = "https://smlouvy.gov.cz/smlouva/" + contract_id if contract_id else ""
+        detail = "https://smlouvy.gov.cz/smlouva/" + (version_id or contract_id) if (version_id or contract_id) else ""
         attachments = []
         # Attachment URLs can occur in text nodes or XML attributes. Search the
         # complete serialized record so minor XML shape changes do not erase them.
@@ -486,6 +486,9 @@ def main() -> None:
         if record.get("related_contract_ids") or record.get("related_contract_numbers"):
             continue
         detail = str(record.get("detail_url") or "")
+        version_id = str(record.get("version_id") or "").strip()
+        if version_id:
+            detail = "https://smlouvy.gov.cz/smlouva/" + version_id
         if not detail:
             continue
         try:
