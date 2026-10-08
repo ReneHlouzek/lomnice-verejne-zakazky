@@ -235,7 +235,7 @@ def extract_records(path: Path, ico: str) -> Iterable[dict]:
         # complete serialized record so minor XML shape changes do not erase them.
         xml_fragment = ET.tostring(elem, encoding="unicode")
         matches = re.findall(
-            r"https?://(?:smlouvy|isrs)\.gov\.cz/smlouva/soubor/[0-9]+/[^\s<>\x22\x27]+?\.pdf(?:\?[^\s<>\x22\x27]*)?",
+            r"https?://(?:smlouvy|isrs)\.gov\.cz/smlouva/soubor/[0-9]+/[^\s<>\x22\x27]+?\.(?:pdf|docx?|odt)(?:\?[^\s<>\x22\x27]*)?",
             xml_fragment,
             flags=re.IGNORECASE,
         )
@@ -265,7 +265,7 @@ def extract_records(path: Path, ico: str) -> Iterable[dict]:
                 )
                 if not matches:
                     hrefs = re.findall(
-                        r"""href\s*=\s*["']([^"']+\.pdf(?:\?[^"']*)?)["']""",
+                        r"""href\s*=\s*["']([^"']+\.(?:pdf|docx?|odt)(?:\?[^"']*)?)["']""",
                         html,
                         flags=re.IGNORECASE,
                     )
