@@ -101,7 +101,8 @@ def build_links(projects):
                                 (resolver.is_addendum(a) and db and da and db <= da)
                                 or (resolver.is_addendum(b) and da and db and da <= db)
                             )
-                            if reason == "candidate_addendum_core_title" and score >= .74 and base_is_earlier:
+                            meaningful = resolver.meaningful_token_overlap(resolver.core_title(a), resolver.core_title(b))
+                            if reason == "candidate_addendum_core_title" and score >= .74 and meaningful >= .65 and base_is_earlier:
                                 item = {"kind": "contextual", "confidence": "review",
                                         "reason": reason, "evidence": evidence, "a": a, "b": b}
                                 if candidate_best is None or score > candidate_best[0]:
