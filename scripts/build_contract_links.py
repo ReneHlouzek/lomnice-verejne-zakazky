@@ -40,9 +40,10 @@ def build_links(projects):
                     idb = str(b.get("source_id") or b.get("version_id") or "").strip()
                     na, nb = resolver.contract_number(a), resolver.contract_number(b)
                     related_id_match = (
-                        resolver.is_addendum(a) and not resolver.is_addendum(b) and idb in related_a
-                    ) or (
-                        resolver.is_addendum(b) and not resolver.is_addendum(a) and ida in related_b
+                        (resolver.is_addendum(a) and not resolver.is_addendum(b) and idb in related_a)
+                        or (resolver.is_addendum(b) and not resolver.is_addendum(a) and ida in related_b)
+                        or (ida in related_b)
+                        or (idb in related_a)
                     )
                     explicit_parent = (
                         resolver.is_addendum(a) and not resolver.is_addendum(b) and (
