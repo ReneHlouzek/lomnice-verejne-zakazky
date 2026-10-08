@@ -46,7 +46,6 @@ def extract(url:str):
             out=target.with_suffix(".txt")
             return meta,(out.read_text(encoding="utf-8",errors="replace") if out.exists() else "").strip()
     try:
-    try:
         r=requests.get(url,timeout=TIMEOUT,headers={"User-Agent":UA,"Accept":"application/pdf,*/*"})
         r.raise_for_status()
         data=r.content
