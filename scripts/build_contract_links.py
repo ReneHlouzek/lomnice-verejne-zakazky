@@ -86,6 +86,14 @@ def build_links(projects):
                         # strongly. This remains a review candidate, never an
                         # automatic contractual link.
                         if resolver.is_addendum(a) != resolver.is_addendum(b):
+                            # When both same-source records expose contract numbers,
+                            # differing numbers are strong evidence against a fuzzy parent
+                            # relationship. Keep the candidate only when the numbers belong
+                            # to the same explicit family.
+                            na = resolver.contract_number(a)
+                            nb = resolver.contract_number(b)
+                            if na and nb and not resolver.contract_family_matches(na, nb):
+                                continue
                             score, reason, evidence = resolver.score(a, b)
                             da = resolver.date_value(a.get("date") or a.get("published") or a.get("signed_date") or a.get("award_date"))
                             db = resolver.date_value(b.get("date") or b.get("published") or b.get("signed_date") or b.get("award_date"))
