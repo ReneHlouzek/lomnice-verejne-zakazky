@@ -6,6 +6,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 import requests
 from pypdf import PdfReader
+from docx import Document
 
 ROOT=Path(__file__).resolve().parents[1]
 SRC=ROOT/"data"/"sources"/"registr-smluv"
@@ -17,6 +18,34 @@ WORKERS=6
 UA="Lomnice-Verejne-Zakazky/1.0 (public-data-archive)"
 
 def extract(url:str):
+    suffix=url.lower().split("?",1)[0].rsplit(".",1)[-1]
+    if suffix in ("docx", "doc", "odt"):
+        import subprocess, tempfile
+        with tempfile.TemporaryDirectory() as td:
+            target=Path(td)/("input."+suffix)
+            try:
+                rr=requests.get(url,timeout=TIMEOUT,headers={"User-Agent":UA,"Accept":"*/*"})
+                rr.raise_for_status()
+                data=rr.content
+            except requests.RequestException:
+                cp=subprocess.run(["curl","--fail","--location","--http1.1","--retry","2","--retry-delay","1","--connect-timeout","8","--max-time","25","-A",UA,url],check=True,capture_output=True)
+                data=cp.stdout
+            if len(data)>MAX_DOC_BYTES: raise ValueError(f"document too large: {len(data)} bytes")
+            meta={"url":(rr.url if "rr" in locals() else url),"sha256":hashlib.sha256(data).hexdigest(),"bytes":len(data),"content_type":(rr.headers.get("content-type","") if "rr" in locals() else "")}
+            target.write_bytes(data)
+            if suffix=="docx":
+                doc=Document(str(target))
+                parts=[p.text for p in doc.paragraphs]
+                for table in doc.tables:
+                    parts.extend(" | ".join(cell.text for cell in row.cells) for row in table.rows)
+                return meta,"\n".join(parts).strip()
+            if suffix=="doc":
+                cp=subprocess.run(["antiword",str(target)],check=True,capture_output=True,text=True)
+                return meta,cp.stdout.strip()
+            subprocess.run(["libreoffice","--headless","--convert-to","txt:Text","--outdir",td,str(target)],check=True,capture_output=True,text=True)
+            out=target.with_suffix(".txt")
+            return meta,(out.read_text(encoding="utf-8",errors="replace") if out.exists() else "").strip()
+    try:
     try:
         r=requests.get(url,timeout=TIMEOUT,headers={"User-Agent":UA,"Accept":"application/pdf,*/*"})
         r.raise_for_status()
@@ -53,7 +82,7 @@ def process(path:Path):
     for i,a in enumerate(attachments,1):
         url=a.get("url") if isinstance(a,dict) else str(a)
         name=a.get("name","") if isinstance(a,dict) else ""
-        if not url or url in seen or not url.lower().split("?",1)[0].endswith(".pdf"):
+        if not url or url in seen or url.lower().split("?",1)[0].rsplit(".",1)[-1] not in ("pdf","doc","docx","odt"):
             continue
         seen.add(url)
         clean_name=name
