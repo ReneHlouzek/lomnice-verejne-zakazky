@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-10-08T09:40:06Z",
+  "updated_at": "2026-10-08T09:54:47Z",
   "records_checked": 110,
-  "attachments_declared": 3,
-  "documents_discovered": 3,
-  "documents_downloaded": 2,
-  "documents_text_extracted": 3,
+  "attachments_declared": 2,
+  "documents_discovered": 2,
+  "documents_downloaded": 1,
+  "documents_text_extracted": 2,
   "records": [
     {
       "source": "registr-smluv",
@@ -688,20 +688,7 @@
       "source_id": "36978239",
       "title": "Smlouva o poskytnutí individuální dotace Město Lomnice nad Popelkou, ul 5. května",
       "page_url": "https://smlouvy.gov.cz/smlouva/36978239",
-      "documents": [
-        {
-          "index": 1,
-          "name": "Smlouva_individualni_dotace_Lomnice_OLP-02908-2026_sig.pdf",
-          "url": "https://smlouvy.gov.cz/smlouva/soubor/47440583/Smlouva_individualni_dotace_Lomnice_OLP-02908-2026_sig.pdf",
-          "sha256": "1caa63a23e28856d13a3989308e6cf983822cf3ed11f4379015f754927ae2901",
-          "bytes": 477425,
-          "content_type": "application/pdf",
-          "text_available": true,
-          "text_chars": 24954,
-          "text_file": "data/documents/registr-smluv/36978239/001.txt",
-          "status": "retained_from_previous_run"
-        }
-      ],
+      "documents": [],
       "status": "ok"
     },
     {

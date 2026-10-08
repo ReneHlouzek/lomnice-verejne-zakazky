@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-08T09:40:06Z",
+  "updated_at": "2026-10-08T09:54:47Z",
   "pages_checked": 35,
   "declared_documents": 90,
   "documents_discovered": 53,
@@ -365,8 +365,7 @@
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0,
-          "status": "retained_from_previous_run"
+          "text_chars": 0
         },
         {
           "index": 2,
@@ -377,8 +376,7 @@
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0,
-          "status": "retained_from_previous_run"
+          "text_chars": 0
         },
         {
           "index": 3,
@@ -389,8 +387,7 @@
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0,
-          "status": "retained_from_previous_run"
+          "text_chars": 0
         },
         {
           "index": 4,
@@ -401,8 +398,7 @@
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0,
-          "status": "retained_from_previous_run"
+          "text_chars": 0
         },
         {
           "index": 5,
@@ -413,8 +409,7 @@
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0,
-          "status": "retained_from_previous_run"
+          "text_chars": 0
         },
         {
           "index": 6,
@@ -425,8 +420,7 @@
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0,
-          "status": "retained_from_previous_run"
+          "text_chars": 0
         },
         {
           "index": 7,
@@ -437,8 +431,7 @@
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0,
-          "status": "retained_from_previous_run"
+          "text_chars": 0
         },
         {
           "index": 8,
@@ -449,8 +442,7 @@
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0,
-          "status": "retained_from_previous_run"
+          "text_chars": 0
         },
         {
           "index": 9,
@@ -461,8 +453,7 @@
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0,
-          "status": "retained_from_previous_run"
+          "text_chars": 0
         },
         {
           "index": 10,
@@ -473,8 +464,7 @@
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0,
-          "status": "retained_from_previous_run"
+          "text_chars": 0
         },
         {
           "index": 11,
@@ -485,8 +475,7 @@
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0,
-          "status": "retained_from_previous_run"
+          "text_chars": 0
         },
         {
           "index": 12,
@@ -497,8 +486,7 @@
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0,
-          "status": "retained_from_previous_run"
+          "text_chars": 0
         },
         {
           "index": 13,
@@ -509,8 +497,7 @@
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0,
-          "status": "retained_from_previous_run"
+          "text_chars": 0
         },
         {
           "index": 14,
@@ -521,8 +508,7 @@
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0,
-          "status": "retained_from_previous_run"
+          "text_chars": 0
         },
         {
           "index": 15,
@@ -533,8 +519,7 @@
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0,
-          "status": "retained_from_previous_run"
+          "text_chars": 0
         },
         {
           "index": 16,
@@ -545,8 +530,7 @@
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0,
-          "status": "retained_from_previous_run"
+          "text_chars": 0
         },
         {
           "index": 17,
@@ -557,8 +541,7 @@
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0,
-          "status": "retained_from_previous_run"
+          "text_chars": 0
         },
         {
           "index": 18,
@@ -569,8 +552,7 @@
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0,
-          "status": "retained_from_previous_run"
+          "text_chars": 0
         },
         {
           "index": 19,
@@ -581,8 +563,7 @@
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0,
-          "status": "retained_from_previous_run"
+          "text_chars": 0
         },
         {
           "index": 20,
@@ -593,8 +574,7 @@
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0,
-          "status": "retained_from_previous_run"
+          "text_chars": 0
         },
         {
           "index": 21,
@@ -605,8 +585,7 @@
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0,
-          "status": "retained_from_previous_run"
+          "text_chars": 0
         },
         {
           "index": 22,
@@ -617,8 +596,7 @@
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0,
-          "status": "retained_from_previous_run"
+          "text_chars": 0
         },
         {
           "index": 23,
@@ -629,8 +607,7 @@
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0,
-          "status": "retained_from_previous_run"
+          "text_chars": 0
         }
       ],
       "status": "ok",
@@ -771,8 +748,7 @@
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0,
-          "status": "retained_from_previous_run"
+          "text_chars": 0
         },
         {
           "index": 9,
@@ -783,8 +759,7 @@
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0,
-          "status": "retained_from_previous_run"
+          "text_chars": 0
         }
       ],
       "status": "ok",
