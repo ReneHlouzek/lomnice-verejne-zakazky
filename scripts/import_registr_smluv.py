@@ -237,6 +237,21 @@ def extract_records(path: Path, ico: str) -> Iterable[dict]:
                     ],
                     check=True, capture_output=True, text=True,
                 ).stdout
+                # The public detail page can expose "ID návazné smlouvy"
+                # even when the monthly XML omits it. Preserve that official
+                # relationship as first-class evidence for contract linking.
+                related_from_detail = re.findall(
+                    r"ID\s*n[aá]vazn[eé]\s*smlouvy[^0-9]{0,120}(\d{4,})",
+                    re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", html)),
+                    flags=re.IGNORECASE,
+                )
+                if not related_from_detail:
+                    related_from_detail = re.findall(
+                        r"ID\s*n[aá]vazn[eé]\s*smlouvy.{0,500}?smlouva/(\d{4,})",
+                        html,
+                        flags=re.IGNORECASE | re.DOTALL,
+                    )
+                related_contract_ids = sorted(set(related_contract_ids) | set(related_from_detail))
                 matches = re.findall(
                     r"https?://(?:smlouvy|isrs)\.gov\.cz/smlouva/soubor/[0-9]+/[^\s<>\x22\x27]+?\.pdf(?:\?[^\s<>\x22\x27]*)?",
                     html,
