@@ -1,5 +1,5 @@
 {
-  "count": 8,
+  "count": 9,
   "links": [
     {
       "project_a": "p-dodatek-1-lomnice-n-popelkou-najem-np-0108",
@@ -48,6 +48,22 @@
       "source_id_a": "34549017",
       "source_b": "registr-smluv",
       "source_id_b": "26812007"
+    },
+    {
+      "project_a": "p-dodatek-c-1-ke-smlouve-o-poskytnuti-ucelove-dotace-libereckemu-kraji-z-0066",
+      "title_a": "Dodatek č. 1 ke smlouvě o poskytnutí účelové dotace Libereckému kraji z rozpočtu Města Lomnice nad Popelkou",
+      "project_b": "p-dodatek-c-2-ke-smlouve-o-poskytnuti-ucelove-dotace-libereckemu-kraji-z-0149",
+      "title_b": "Dodatek č.2 ke Smlouvě o poskytnutí účelové dotace Libereckému kraji z rozpočtu Města Lomnice nad Popelkou na stavební akci „II/286 x II/284 Lomnice nad Popelkou - havárie zdi - nezpůsobilé výdaje“",
+      "kind": "contractual",
+      "confidence": "explicit",
+      "reason": "explicit_related_contract_id",
+      "evidence": [
+        "related_contract_id=2264882"
+      ],
+      "source_a": "registr-smluv",
+      "source_id_a": "845225",
+      "source_b": "registr-smluv",
+      "source_id_b": "2264882"
     },
     {
       "project_a": "p-dodatek-c-1-ke-smlouve-o-poskytnuti-ucelove-dotace-libereckemu-kraji-z-0066",
