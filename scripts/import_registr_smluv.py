@@ -225,7 +225,7 @@ def extract_records(path: Path, ico: str) -> Iterable[dict]:
         )
         # Some current exports omit attachment URLs even though the public
         # detail page exposes them. Fall back to the official detail page.
-        if not matches and detail:
+        if detail and (not matches or not related_contract_ids):
             try:
                 html = subprocess.run(
                     [
