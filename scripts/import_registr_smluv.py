@@ -499,13 +499,13 @@ def main() -> None:
                 check=True, capture_output=True, text=True,
             ).stdout
             related = re.findall(
-                r"ID\\s*n[aá]vazn[eé]\\s*smlouvy[^0-9]{0,120}(\\d{4,})",
-                re.sub(r"\\s+", " ", re.sub(r"<[^>]+>", " ", page)),
+                r"ID\s*n[aá]vazn[eé]\s*smlouvy[^0-9]{0,120}(\d{4,})",
+                re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", page)),
                 flags=re.IGNORECASE,
             )
             if not related:
                 related = re.findall(
-                    r"ID\\s*n[aá]vazn[eé]\\s*smlouvy.{0,500}?smlouva/(\\d{4,})",
+                    r"ID\s*n[aá]vazn[eé]\s*smlouvy.{0,500}?smlouva/(\d{4,})",
                     page, flags=re.IGNORECASE | re.DOTALL,
                 )
             related = sorted(set(related))
