@@ -474,6 +474,48 @@ def main() -> None:
         finally:
             target.unlink(missing_ok=True)
 
+    # Refresh historical addenda whose official detail relationship is still missing.
+    # This repairs records imported before relationship extraction was added without
+    # redownloading the complete historical archive.
+    relation_refresh = 0
+    relation_errors = 0
+    for record in records_by_id.values():
+        title = str(record.get("title") or "")
+        if "dodatek" not in title.lower():
+            continue
+        if record.get("related_contract_ids") or record.get("related_contract_numbers"):
+            continue
+        detail = str(record.get("detail_url") or "")
+        if not detail:
+            continue
+        try:
+            page = subprocess.run(
+                ["curl", "--fail", "--location", "--http1.1", "--retry", "3", "--retry-delay", "2",
+                 "--connect-timeout", "20", "--max-time", "40", "-A",
+                 "Lomnice-verejne-zakazky/1.0", detail],
+                check=True, capture_output=True, text=True,
+            ).stdout
+            related = re.findall(
+                r"ID\\s*n[aá]vazn[eé]\\s*smlouvy[^0-9]{0,120}(\\d{4,})",
+                re.sub(r"\\s+", " ", re.sub(r"<[^>]+>", " ", page)),
+                flags=re.IGNORECASE,
+            )
+            if not related:
+                related = re.findall(
+                    r"ID\\s*n[aá]vazn[eé]\\s*smlouvy.{0,500}?smlouva/(\\d{4,})",
+                    page, flags=re.IGNORECASE | re.DOTALL,
+                )
+            related = sorted(set(related))
+            if related:
+                record["related_contract_ids"] = related
+                relation_refresh += 1
+        except Exception:
+            relation_errors += 1
+    if relation_refresh or relation_errors:
+        print(
+            f"Registr smluv: doplnění návazností z detailů={relation_refresh}, chyby={relation_errors}.",
+            flush=True,
+        )
     history_complete = not [x for x in historical if needs_processing(x) and x["url"] not in processed_now]
     save_outputs(
         records_by_id,
