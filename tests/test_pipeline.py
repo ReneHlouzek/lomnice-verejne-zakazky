@@ -7,6 +7,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 
 import resolve_projects as resolver
 import analyze_projects as analyzer
+import import_registr_smluv as registr
 
 
 def test_czech_price_parsing():
@@ -212,3 +213,11 @@ def test_addendum_without_independent_evidence_is_not_strong():
     }
     score, _, _ = resolver.score(addendum, base)
     assert score < 0.82
+
+
+def test_registry_detail_relationship_extraction_handles_public_page_markup():
+    html = """
+    <div>ID návazné smlouvy:</div>
+    <a href="/smlouva/15970715">15970715</a>
+    """
+    assert registr.extract_related_contract_ids_from_html(html) == ["15970715"]
