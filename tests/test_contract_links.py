@@ -200,3 +200,23 @@ def test_same_source_generic_project_overlap_is_not_review_candidate():
     links, candidates = build_links([base, addendum])
     assert links == []
     assert candidates == []
+
+
+def test_explicit_related_addenda_are_linked():
+    addendum_one = {
+        "id": "add1", "title": "Dodatek č. 1",
+        "sources": [{"record": {"source": "registr-smluv", "source_id": "845225",
+            "title": "Dodatek č. 1 ke smlouvě", "contract_number": "06_D01_OLP_2674_2016",
+            "related_contract_ids": ["2264882", "3753"]}}],
+    }
+    addendum_two = {
+        "id": "add2", "title": "Dodatek č. 2",
+        "sources": [{"record": {"source": "registr-smluv", "source_id": "2264882",
+            "title": "Dodatek č. 2 ke smlouvě", "contract_number": "06-OLP/2674/2016",
+            "related_contract_ids": ["845225"]}}],
+    }
+    links, candidates = build_links([addendum_one, addendum_two])
+    assert len(links) == 1
+    assert links[0]["reason"] == "explicit_related_contract_id"
+    assert "related_contract_id=2264882" in links[0]["evidence"] or "related_contract_id=845225" in links[0]["evidence"]
+    assert candidates == []
