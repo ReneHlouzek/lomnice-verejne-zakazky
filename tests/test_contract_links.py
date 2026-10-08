@@ -162,3 +162,23 @@ def test_liberecky_kraj_addendum_exact_number_is_explicit():
     assert len(links) == 1
     assert links[0]["reason"] == "explicit_parent_contract_number"
     assert candidates == []
+
+
+def test_same_source_conflicting_contract_numbers_are_not_addendum_candidates():
+    base = {
+        "id": "base", "title": "Služby v obecném hospodářském zájmu",
+        "sources": [{"record": {"source": "registr-smluv", "source_id": "base",
+            "title": "Smlouva o poskytnutí dotace na poskytování služeb v obecném hospodářském zájmu, č. OLP/4637/2016",
+            "contract_number": "OLP/4637/2016", "supplier_ico": "70891508",
+            "date": "2016-09-23"}}],
+    }
+    addendum = {
+        "id": "add", "title": "Dodatek č. 1 ke smlouvě OLP/588/2016",
+        "sources": [{"record": {"source": "registr-smluv", "source_id": "add",
+            "title": "Dodatek č. 1 ke smlouvě o poskytnutí dotace na poskytování služeb v obecném hospodářském zájmu, č. OLP/588/2016",
+            "contract_number": "OLP/588/2016", "supplier_ico": "70891508",
+            "date": "2016-10-21"}}],
+    }
+    links, candidates = build_links([base, addendum])
+    assert links == []
+    assert candidates == []
