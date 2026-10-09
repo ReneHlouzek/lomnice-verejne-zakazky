@@ -8,6 +8,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 import resolve_projects as resolver
 import analyze_projects as analyzer
 import import_registr_smluv as registr
+import extract_registr_documents as doc_extractor
 
 
 def test_czech_price_parsing():
@@ -221,3 +222,12 @@ def test_registry_detail_relationship_extraction_handles_public_page_markup():
     <a href="/smlouva/15970715">15970715</a>
     """
     assert registr.extract_related_contract_ids_from_html(html) == ["15970715"]
+
+
+
+def test_attachment_filename_mismatch_is_flagged_for_review():
+    filename = "%C5%BDelechy%20-%20Dodatek%20%C4%8D.%201.docx"
+    unrelated_text = "Smlouva o služebnosti uzavřená mezi městem Hodonín a společností T-Mobile."
+    matching_text = "Dodatek č. 1 k dotaci na akci Želechy."
+    assert doc_extractor.filename_content_mismatch(filename, unrelated_text)
+    assert not doc_extractor.filename_content_mismatch(filename, matching_text)
