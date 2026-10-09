@@ -224,6 +224,33 @@ def test_registry_detail_relationship_extraction_handles_public_page_markup():
     assert registr.extract_related_contract_ids_from_html(html) == ["15970715"]
 
 
+def test_registry_detail_attachment_extraction_includes_doc_and_skips_metadata_pdf():
+    page_html = """
+    <a href="/smlouva/soubor/42395429/Dodatek%20%C4%8D.%201.doc">Dodatek</a>
+    <a href="/smlouva/34905225/pdf/registr_smluv_smlouva_34905225.pdf">Metadata</a>
+    <a href="/smlouva/soubor/999/registr_smluv_smlouva_34905225.pdf">Metadata file</a>
+    """
+    assert registr.extract_attachment_links_from_html(page_html) == [
+        {
+            "url": "https://smlouvy.gov.cz/smlouva/soubor/42395429/Dodatek%20%C4%8D.%201.doc",
+            "name": "Dodatek%20%C4%8D.%201.doc",
+        }
+    ]
+
+
+def test_registry_import_preserves_known_attachments_for_same_version_only():
+    attachment = {
+        "url": "https://smlouvy.gov.cz/smlouva/soubor/1234/contract.doc",
+        "name": "contract.doc",
+    }
+    old = {"version_id": "34905225", "attachments": [attachment]}
+    same_version = {"version_id": "34905225", "attachments": []}
+    newer_version = {"version_id": "34905226", "attachments": []}
+
+    assert registr.preserve_attachments_for_same_version(same_version, old)["attachments"] == [attachment]
+    assert "attachments" not in registr.preserve_attachments_for_same_version(newer_version, old)
+
+
 
 def test_attachment_filename_mismatch_is_flagged_for_review():
     filename = "%C5%BDelechy%20-%20Dodatek%20%C4%8D.%201.docx"

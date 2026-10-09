@@ -76,6 +76,60 @@ def extract_related_contract_ids_from_html(html: str) -> list[str]:
     return sorted(set(related))
 
 
+def extract_attachment_links_from_html(page_html: str) -> list[dict]:
+    """Extract real attachment links from an official Registry detail page."""
+    from html import unescape
+
+    hrefs = re.findall(r"""href\s*=\s*["']([^"']+)["']""", page_html, flags=re.IGNORECASE)
+    attachments = []
+    for href in hrefs:
+        href = unescape(href.strip())
+        if href.startswith("/"):
+            url = "https://smlouvy.gov.cz" + href
+        elif href.startswith("//"):
+            url = "https:" + href
+        else:
+            url = href
+        if not re.search(r"/smlouva/soubor/\d+/", url, flags=re.IGNORECASE):
+            continue
+        path = url.split("?", 1)[0]
+        name = path.rsplit("/", 1)[-1]
+        if not re.search(r"\.(?:pdf|docx?|odt)$", name, flags=re.IGNORECASE):
+            continue
+        # The Registry also links a generated metadata PDF; it is not the
+        # contract attachment and should not be treated as one.
+        if name.lower().startswith("registr_smluv_smlouva_"):
+            continue
+        item = {"url": url, "name": name}
+        if item not in attachments:
+            attachments.append(item)
+    return attachments
+
+
+def preserve_attachments_for_same_version(record: dict, previous: dict | None) -> dict:
+    """Keep verified attachment URLs when an XML refresh omits them for the same version."""
+    if not previous:
+        return record
+    version_id = str(record.get("version_id") or "")
+    if not version_id or version_id != str(previous.get("version_id") or ""):
+        return record
+    old_attachments = previous.get("attachments") or (previous.get("raw") or {}).get("attachments") or []
+    new_attachments = record.get("attachments") or []
+    merged = []
+    seen = set()
+    for attachment in [*old_attachments, *new_attachments]:
+        if not isinstance(attachment, dict):
+            continue
+        url = str(attachment.get("url") or "").strip()
+        if not url or url in seen:
+            continue
+        seen.add(url)
+        merged.append({"url": url, "name": str(attachment.get("name") or url.rsplit("/", 1)[-1].split("?", 1)[0])})
+    if merged:
+        record["attachments"] = merged
+    return record
+
+
 def publisher_info(elem: ET.Element) -> tuple[set[str], str]:
     """Find the publishing subject across minor ISRS XML schema variations."""
     icos: set[str] = set()
@@ -271,22 +325,9 @@ def extract_records(path: Path, ico: str) -> Iterable[dict]:
                 # relationship as first-class evidence for contract linking.
                 related_from_detail = extract_related_contract_ids_from_html(html)
                 related_contract_ids = sorted(set(related_contract_ids) | set(related_from_detail))
-                matches = re.findall(
-                    r"https?://(?:smlouvy|isrs)\.gov\.cz/smlouva/soubor/[0-9]+/[^\s<>\x22\x27]+?\.pdf(?:\?[^\s<>\x22\x27]*)?",
-                    html,
-                    flags=re.IGNORECASE,
+                matches.extend(
+                    item["url"] for item in extract_attachment_links_from_html(html)
                 )
-                if not matches:
-                    hrefs = re.findall(
-                        r"""href\s*=\s*["']([^"']+\.(?:pdf|docx?|odt)(?:\?[^"']*)?)["']""",
-                        html,
-                        flags=re.IGNORECASE,
-                    )
-                    matches = [
-                        ("https://smlouvy.gov.cz" + h if h.startswith("/") else h)
-                        for h in hrefs
-                        if "/smlouva/soubor/" in h
-                    ]
             except Exception:
                 matches = []
         for match in matches:
@@ -465,6 +506,7 @@ def main() -> None:
             for record in extract_records(target, ico):
                 rid = str(record.get("source_id") or record.get("version_id") or "")
                 if rid:
+                    record = preserve_attachments_for_same_version(record, records_by_id.get(rid))
                     records_by_id[rid] = record
                     found_this_dump += 1
             # Store a durable completion marker only after the dump was fully
