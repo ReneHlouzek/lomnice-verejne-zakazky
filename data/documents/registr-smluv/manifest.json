@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-08T20:18:50Z",
+  "updated_at": "2026-10-09T05:49:43Z",
   "records_checked": 110,
   "attachments_declared": 3,
   "documents_discovered": 3,
@@ -714,7 +714,7 @@
           "text_available": true,
           "text_chars": 16817,
           "text_file": "data/documents/registr-smluv/37367969/001.txt",
-          "status": "retained_existing_text"
+          "status": "retained_from_previous_run"
         }
       ],
       "status": "ok"
