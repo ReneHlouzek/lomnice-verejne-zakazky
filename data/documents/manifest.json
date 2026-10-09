@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-10-09T06:12:44Z",
+  "updated_at": "2026-10-09T07:06:23Z",
   "pages_checked": 35,
   "declared_documents": 90,
   "documents_discovered": 53,
   "documents_downloaded": 53,
-  "documents_text_extracted": 2,
+  "documents_text_extracted": 4,
   "records": [
     {
       "source": "vhodne-uverejneni",
@@ -54,7 +54,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+      "error": "VU page unavailable via direct and proxy fallbacks: 422 Client Error: Unprocessable Entity for url: https://r.jina.ai/https://www.vhodne-uverejneni.cz/zakazka/obnova-telocvicen-pri-zs-t-g-masaryka-v-lomnici-nad-popelkou"
     },
     {
       "source": "vhodne-uverejneni",
@@ -84,7 +84,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+      "error": "VU page unavailable via direct and proxy fallbacks: 422 Client Error: Unprocessable Entity for url: https://r.jina.ai/https://www.vhodne-uverejneni.cz/zakazka/vydani-obrazove-publikace-lomnice-nad-popelkou-historie-skolstvi"
     },
     {
       "source": "vhodne-uverejneni",
@@ -337,13 +337,13 @@
           "index": 7,
           "label": "Smlouva, její změny a dodatky",
           "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3895767",
-          "sha256": "1a3f00488308ec8e3a8fb4e4b468f40ca941249b20ebb5224f0488b1b2832676",
-          "bytes": 20156,
-          "content_type": "text/html; charset=UTF-8",
-          "transport": "direct",
-          "text_available": false,
-          "text_chars": 0,
-          "status": "retained_from_previous_run"
+          "sha256": "1c2ede0881d385e430c4114e82897d7fd6cce20ec155cc8a38b75aa8dc22d68f",
+          "bytes": 1726,
+          "content_type": "text/plain; charset=utf-8",
+          "transport": "jina",
+          "text_available": true,
+          "text_chars": 1679,
+          "text_file": "data/documents/P26V00001385/007.txt"
         }
       ],
       "status": "ok",
@@ -534,7 +534,8 @@
           "transport": "jina",
           "text_available": true,
           "text_chars": 1679,
-          "text_file": "data/documents/P26V00002162/015.txt"
+          "text_file": "data/documents/P26V00002162/015.txt",
+          "status": "retained_from_previous_run"
         },
         {
           "index": 16,
@@ -754,13 +755,13 @@
           "index": 7,
           "label": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění",
           "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3852461",
-          "sha256": "0e3d15298ee7ac3fc537d3d2e30fa5a1d0aad93231f98b1863c7782180cede16",
-          "bytes": 20357,
-          "content_type": "text/html; charset=UTF-8",
-          "transport": "direct",
-          "text_available": false,
-          "text_chars": 0,
-          "status": "retained_from_previous_run"
+          "sha256": "744ee701d24199de1b779dd405fa9d9bf158fda60175337bb6aac30834381b33",
+          "bytes": 1726,
+          "content_type": "text/plain; charset=utf-8",
+          "transport": "jina",
+          "text_available": true,
+          "text_chars": 1679,
+          "text_file": "data/documents/P26V00002929/007.txt"
         },
         {
           "index": 8,
@@ -938,7 +939,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: 422 Client Error: Unprocessable Entity for url: https://r.jina.ai/https://www.vhodne-uverejneni.cz/smlouvy-organizace/mesto-lomnice-nad-popelkou"
+      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
     },
     {
       "source": "vhodne-uverejneni",
@@ -982,7 +983,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: 422 Client Error: Unprocessable Entity for url: https://r.jina.ai/https://www.vhodne-uverejneni.cz/zakazka/karavanove-stani-koupaliste-lomnice-nad-popelkou"
+      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
     },
     {
       "source": "vhodne-uverejneni",

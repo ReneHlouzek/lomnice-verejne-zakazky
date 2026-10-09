@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "documents_analyzed": 5,
+  "documents_analyzed": 7,
   "method": "Pravidlová extrakce z textu PDF; nejde o právní ani ekonomické hodnocení.",
   "documents": [
     {
@@ -105,11 +105,57 @@
     },
     {
       "source": "vhodne-uverejneni",
+      "source_id": "P26V00001385",
+      "source_url": "https://www.vhodne-uverejneni.cz/zakazka/modernizace-uceben-zus-dodavky",
+      "title": "Modernizace UČEBEN ZUŠ - dodávky",
+      "document_name": "Smlouva, její změny a dodatky",
+      "text_file": "data/documents/P26V00001385/007.txt",
+      "text_chars": 1679,
+      "document_types": [
+        "contract"
+      ],
+      "signals": {
+        "contract": 1,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [],
+      "dates": [],
+      "snippets": []
+    },
+    {
+      "source": "vhodne-uverejneni",
       "source_id": "P26V00002162",
       "source_url": "https://www.vhodne-uverejneni.cz/zakazka/verejne-osvetleni-11",
       "title": "Veřejné osvětlení",
       "document_name": "Vysvětlení, doplnění, změna zadávací dokumentace",
       "text_file": "data/documents/P26V00002162/015.txt",
+      "text_chars": 1679,
+      "document_types": [],
+      "signals": {
+        "contract": 0,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [],
+      "dates": [],
+      "snippets": []
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "P26V00002929",
+      "source_url": "https://www.vhodne-uverejneni.cz/zakazka/nemocnice-nasledne-pece-lomnice-nad-popelkou-investice-a-opravy",
+      "title": "Nemocnice následné péče Lomnice nad Popelkou – investice a opravy",
+      "document_name": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění",
+      "text_file": "data/documents/P26V00002929/007.txt",
       "text_chars": 1679,
       "document_types": [],
       "signals": {
