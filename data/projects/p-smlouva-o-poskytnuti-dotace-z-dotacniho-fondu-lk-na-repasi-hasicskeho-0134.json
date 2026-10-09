@@ -70,7 +70,7 @@
         "source": "registr-smluv",
         "source_id": "20018743",
         "version_id": "21509235",
-        "source_url": "https://smlouvy.gov.cz/smlouva/20018743",
+        "source_url": "https://smlouvy.gov.cz/smlouva/21509235",
         "title": "Smlouva o poskytnutí dotace z Dotačního fondu LK na repasi hasičského vozíku",
         "buyer_ico": "00275905",
         "supplier_ico": "70891508",
@@ -87,11 +87,13 @@
           "source": "registr-smluv",
           "source_id": "20018743",
           "version_id": "21509235",
-          "source_url": "https://smlouvy.gov.cz/smlouva/20018743",
+          "source_url": "https://smlouvy.gov.cz/smlouva/21509235",
           "title": "Smlouva o poskytnutí dotace z Dotačního fondu LK na repasi hasičského vozíku",
           "buyer_ico": "00275905",
           "supplier_ico": "70891508",
           "contract_number": "01-OLP/2437/2022",
+          "related_contract_ids": [],
+          "related_contract_numbers": [],
           "date": "2022-08-12",
           "signed_date": "2022-08-12",
           "published": "",
@@ -100,7 +102,13 @@
           "publisher": "",
           "subject": "Smlouva o poskytnutí dotace z Dotačního fondu LK na repasi hasičského vozíku",
           "counterparty": "Liberecký kraj",
-          "detail_url": "https://smlouvy.gov.cz/smlouva/20018743"
+          "detail_url": "https://smlouvy.gov.cz/smlouva/21509235",
+          "attachments": [
+            {
+              "url": "https://smlouvy.gov.cz/smlouva/soubor/26815971/Lomnice_nad_Popelkou_2437.pdf",
+              "name": "Lomnice_nad_Popelkou_2437.pdf"
+            }
+          ]
         },
         "_source_file": "data/sources/registr-smluv/rs-000062.json"
       }

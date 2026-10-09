@@ -2,7 +2,7 @@
   "source": "registr-smluv",
   "source_id": "20017947",
   "version_id": "21508403",
-  "source_url": "https://smlouvy.gov.cz/smlouva/20017947",
+  "source_url": "https://smlouvy.gov.cz/smlouva/21508403",
   "title": "Smlouva o poskytnutí dotace z Dotačního fondu LK na osobní ochranné prostředky PO",
   "buyer_ico": "00275905",
   "supplier_ico": "70891508",
@@ -19,11 +19,13 @@
     "source": "registr-smluv",
     "source_id": "20017947",
     "version_id": "21508403",
-    "source_url": "https://smlouvy.gov.cz/smlouva/20017947",
+    "source_url": "https://smlouvy.gov.cz/smlouva/21508403",
     "title": "Smlouva o poskytnutí dotace z Dotačního fondu LK na osobní ochranné prostředky PO",
     "buyer_ico": "00275905",
     "supplier_ico": "70891508",
     "contract_number": "01-OLP/2436/2022",
+    "related_contract_ids": [],
+    "related_contract_numbers": [],
     "date": "2022-08-12",
     "signed_date": "2022-08-12",
     "published": "",
@@ -32,6 +34,12 @@
     "publisher": "",
     "subject": "Smlouva o poskytnutí dotace z Dotačního fondu LK na osobní ochranné prostředky PO",
     "counterparty": "Liberecký kraj",
-    "detail_url": "https://smlouvy.gov.cz/smlouva/20017947"
+    "detail_url": "https://smlouvy.gov.cz/smlouva/21508403",
+    "attachments": [
+      {
+        "url": "https://smlouvy.gov.cz/smlouva/soubor/26814983/Lomnice_nad_Popelkou_2436.pdf",
+        "name": "Lomnice_nad_Popelkou_2436.pdf"
+      }
+    ]
   }
 }

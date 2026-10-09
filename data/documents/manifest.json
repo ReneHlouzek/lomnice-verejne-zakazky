@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-10-09T10:50:35Z",
+  "updated_at": "2026-10-09T19:37:30Z",
   "pages_checked": 35,
   "declared_documents": 90,
   "documents_discovered": 53,
   "documents_downloaded": 53,
-  "documents_text_extracted": 4,
+  "documents_text_extracted": 5,
   "records": [
     {
       "source": "vhodne-uverejneni",
@@ -124,7 +124,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+      "error": "VU page unavailable via direct and proxy fallbacks: 422 Client Error: Unprocessable Entity for url: https://r.jina.ai/https://www.vhodne-uverejneni.cz/zakazka/rekonstrukce-verejneho-osvetleni-ulice-jilemnicka-a-cast-plk-truhlare-lomnice-nad-popelkou"
     },
     {
       "source": "vhodne-uverejneni",
@@ -164,7 +164,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: 422 Client Error: Unprocessable Entity for url: https://r.jina.ai/https://www.vhodne-uverejneni.cz/zakazka/revitalizace-verejneho-prostranstvi-na-hrbitove-2-etapa-lomnice-nad-popelkou"
+      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
     },
     {
       "source": "vhodne-uverejneni",
@@ -194,7 +194,7 @@
       "document_count_declared": 10,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+      "error": "VU page unavailable via direct and proxy fallbacks: 422 Client Error: Unprocessable Entity for url: https://r.jina.ai/https://www.vhodne-uverejneni.cz/index.php?a=detail&contract=101359&h=contractsregister&m=xenorders"
     },
     {
       "source": "vhodne-uverejneni",
@@ -744,13 +744,13 @@
           "index": 6,
           "label": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění",
           "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3852460",
-          "sha256": "fc9cfaeab5a24df4c16a1167d6fe5a038aeb86e4d2f47b6032d364b05b32d751",
-          "bytes": 20328,
-          "content_type": "text/html; charset=UTF-8",
-          "transport": "direct",
-          "text_available": false,
-          "text_chars": 0,
-          "status": "retained_from_previous_run"
+          "sha256": "ebac3be4c621eb6c93bf2815963ae92f2642cf345be386b2faf110ba262990bd",
+          "bytes": 1726,
+          "content_type": "text/plain; charset=utf-8",
+          "transport": "jina",
+          "text_available": true,
+          "text_chars": 1679,
+          "text_file": "data/documents/P26V00002929/006.txt"
         },
         {
           "index": 7,
@@ -941,7 +941,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+      "error": "VU page unavailable via direct and proxy fallbacks: 422 Client Error: Unprocessable Entity for url: https://r.jina.ai/https://www.vhodne-uverejneni.cz/smlouvy-organizace/mesto-lomnice-nad-popelkou"
     },
     {
       "source": "vhodne-uverejneni",
@@ -995,7 +995,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: 422 Client Error: Unprocessable Entity for url: https://r.jina.ai/https://www.vhodne-uverejneni.cz/profil/mesto-lomnice-nad-popelkou"
+      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
     },
     {
       "source": "vhodne-uverejneni",

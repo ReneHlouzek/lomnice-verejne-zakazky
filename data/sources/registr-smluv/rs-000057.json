@@ -2,7 +2,7 @@
   "source": "registr-smluv",
   "source_id": "18432479",
   "version_id": "19817843",
-  "source_url": "https://smlouvy.gov.cz/smlouva/18432479",
+  "source_url": "https://smlouvy.gov.cz/smlouva/19817843",
   "title": "07 Smlouva o poskytnutí finančního daru Městu Lomnice nad Popelkou Program regenerace 2021",
   "buyer_ico": "00275905",
   "supplier_ico": "70891508",
@@ -19,11 +19,13 @@
     "source": "registr-smluv",
     "source_id": "18432479",
     "version_id": "19817843",
-    "source_url": "https://smlouvy.gov.cz/smlouva/18432479",
+    "source_url": "https://smlouvy.gov.cz/smlouva/19817843",
     "title": "07 Smlouva o poskytnutí finančního daru Městu Lomnice nad Popelkou Program regenerace 2021",
     "buyer_ico": "00275905",
     "supplier_ico": "70891508",
     "contract_number": "",
+    "related_contract_ids": [],
+    "related_contract_numbers": [],
     "date": "2022-03-23",
     "signed_date": "2022-03-23",
     "published": "",
@@ -32,6 +34,12 @@
     "publisher": "",
     "subject": "07 Smlouva o poskytnutí finančního daru Městu Lomnice nad Popelkou Program regenerace 2021",
     "counterparty": "Liberecký kraj",
-    "detail_url": "https://smlouvy.gov.cz/smlouva/18432479"
+    "detail_url": "https://smlouvy.gov.cz/smlouva/19817843",
+    "attachments": [
+      {
+        "url": "https://smlouvy.gov.cz/smlouva/soubor/24778291/Darovaci_smlouva_Mesto_Lomnice_2022.pdf",
+        "name": "Darovaci_smlouva_Mesto_Lomnice_2022.pdf"
+      }
+    ]
   }
 }

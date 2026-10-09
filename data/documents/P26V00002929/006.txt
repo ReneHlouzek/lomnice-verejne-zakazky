@@ -1,0 +1,41 @@
+Title: Detail dokumentu, Veřejné zakázky a profily zadavatelů
+
+URL Source: https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3852460
+
+Markdown Content:
+### Elektronický nástroj nové generace
+
+Portál pro vhodné uveřejnění (dále jen PVU) je provozován na certifikovaném elektronickém nástroji X-EN, který implementuje profil zadavatele ve smyslu zákona o zadávání veřejných zakázkách.
+
+![Image 1: logo-paticka](https://www.vhodne-uverejneni.cz/index.php?m=photogallery&h=image&a=src&idv=538950&f=original)
+
+### Provozovatel portálu PVU
+
+QCM s.r.o.
+
+Heršpická 813/5, budova M-palác, 7. patro   
+ 639 00 Brno   
+ Tel.: +420 538 702 702   
+ E-mail: info@qcm.cz
+
+### Podpora pro PVU
+
+PO-PA 09-17 na čísle 538 702 705   
+ podpora@qcm.cz
+
+### Portály QCM
+
+*   [qcm.cz](https://www.qcm.cz/)
+*   [portaldodavatele.cz](https://portaldodavatele.cz/)
+*   [ezak.cz](http://www.ezak.cz/)
+*   [centralni-nakup.cz](https://centralni-nakup.cz/)
+*   [formulare-uradu.cz](https://formulare-uradu.cz/)
+*   [elektronizace-zakazek.cz](http://elektronizace-zakazek.cz/)
+*   [e-forms.cz](http://e-forms.cz/)
+*   [skoleni.qcm.cz](https://skoleni.qcm.cz/)
+
+### Stáhněte si mobilní aplikaci portálu PoDo
+
+Souhrnné informace o aktuálních veřejných zakázkách v české republice ve Vašem mobilu.
+
+[![Image 2: google-play](https://www.vhodne-uverejneni.cz/index.php?m=photogallery&h=image&a=src&idv=61727&f=original)](https://play.google.com/store/apps/details?id=cz.fen.mobileapp)[![Image 3: app-store](https://www.vhodne-uverejneni.cz/index.php?m=photogallery&h=image&a=src&idv=61728&f=original)](https://apps.apple.com/cz/app/ve%C5%99ejn%C3%A9-zak%C3%A1zky/id1478878066)

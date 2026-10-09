@@ -1556,11 +1556,13 @@
       "source": "registr-smluv",
       "source_id": "18432479",
       "version_id": "19817843",
-      "source_url": "https://smlouvy.gov.cz/smlouva/18432479",
+      "source_url": "https://smlouvy.gov.cz/smlouva/19817843",
       "title": "07 Smlouva o poskytnutí finančního daru Městu Lomnice nad Popelkou Program regenerace 2021",
       "buyer_ico": "00275905",
       "supplier_ico": "70891508",
       "contract_number": "",
+      "related_contract_ids": [],
+      "related_contract_numbers": [],
       "date": "2022-03-23",
       "signed_date": "2022-03-23",
       "published": "",
@@ -1569,17 +1571,27 @@
       "publisher": "",
       "subject": "07 Smlouva o poskytnutí finančního daru Městu Lomnice nad Popelkou Program regenerace 2021",
       "counterparty": "Liberecký kraj",
-      "detail_url": "https://smlouvy.gov.cz/smlouva/18432479"
+      "detail_url": "https://smlouvy.gov.cz/smlouva/19817843",
+      "attachments": [
+        {
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/24778291/Darovaci_smlouva_Mesto_Lomnice_2022.pdf",
+          "name": "Darovaci_smlouva_Mesto_Lomnice_2022.pdf"
+        }
+      ]
     },
     {
       "source": "registr-smluv",
       "source_id": "19084011",
       "version_id": "20500379",
-      "source_url": "https://smlouvy.gov.cz/smlouva/19084011",
+      "source_url": "https://smlouvy.gov.cz/smlouva/20500379",
       "title": "Dodatek 2 Lomnice n. Popelkou - navýšení paušálních plateb",
       "buyer_ico": "00275905",
       "supplier_ico": "72050501",
       "contract_number": "924004797.00.002 / KRPL-68860-32/ČJ-2016-1800SU",
+      "related_contract_ids": [
+        "774449"
+      ],
+      "related_contract_numbers": [],
       "date": "2022-05-24",
       "signed_date": "2022-05-24",
       "published": "",
@@ -1588,20 +1600,25 @@
       "publisher": "",
       "subject": "Dodatek 2 Lomnice n. Popelkou - navýšení paušálních plateb",
       "counterparty": "Krajské ředitelství policie Libereckého kraje",
-      "detail_url": "https://smlouvy.gov.cz/smlouva/19084011",
-      "related_contract_ids": [
-        "774449"
+      "detail_url": "https://smlouvy.gov.cz/smlouva/20500379",
+      "attachments": [
+        {
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/25581787/Dodatek%202%20Lomnice%20n.%20P._navyseni%20paus.plateb.pdf",
+          "name": "Dodatek%202%20Lomnice%20n.%20P._navyseni%20paus.plateb.pdf"
+        }
       ]
     },
     {
       "source": "registr-smluv",
       "source_id": "19382259",
       "version_id": "20834503",
-      "source_url": "https://smlouvy.gov.cz/smlouva/19382259",
+      "source_url": "https://smlouvy.gov.cz/smlouva/20834503",
       "title": "07 Smlouva o dotaci, Město Lomnice nad Popelkou, obnova soklu a schodiště budovy muzea",
       "buyer_ico": "00275905",
       "supplier_ico": "70891508",
       "contract_number": "07-OLP/2701/2022",
+      "related_contract_ids": [],
+      "related_contract_numbers": [],
       "date": "2022-06-20",
       "signed_date": "2022-06-20",
       "published": "",
@@ -1610,17 +1627,25 @@
       "publisher": "",
       "subject": "07 Smlouva o dotaci, Město Lomnice nad Popelkou, obnova soklu a schodiště budovy muzea",
       "counterparty": "Liberecký kraj",
-      "detail_url": "https://smlouvy.gov.cz/smlouva/19382259"
+      "detail_url": "https://smlouvy.gov.cz/smlouva/20834503",
+      "attachments": [
+        {
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/26011743/Smlouva_OLP_2701_2022_Mesto_Lomnice_nad_Popelkou_obnova_soklu_a_schodiste_mestskeho_muzea.pdf",
+          "name": "Smlouva_OLP_2701_2022_Mesto_Lomnice_nad_Popelkou_obnova_soklu_a_schodiste_mestskeho_muzea.pdf"
+        }
+      ]
     },
     {
       "source": "registr-smluv",
       "source_id": "19350067",
       "version_id": "20799751",
-      "source_url": "https://smlouvy.gov.cz/smlouva/19350067",
+      "source_url": "https://smlouvy.gov.cz/smlouva/20799751",
       "title": "Smlouva o smlouvě budoucí o zřízení služebnosti č.j. OLP/2194/2022 \"Rekonstrukce veřejného osvětlení - ulice Jičínská, Nádražní a Na Větrově, k.ú. Lomnice nad Popelkou\"",
       "buyer_ico": "00275905",
       "supplier_ico": "70891508",
       "contract_number": "14-OLP/2194/2022",
+      "related_contract_ids": [],
+      "related_contract_numbers": [],
       "date": "2022-06-21",
       "signed_date": "2022-06-21",
       "published": "",
@@ -1629,17 +1654,25 @@
       "publisher": "",
       "subject": "Smlouva o smlouvě budoucí o zřízení služebnosti č.j. OLP/2194/2022 \"Rekonstrukce veřejného osvětlení - ulice Jičínská, Nádražní a Na Větrově, k.ú. Lomnice nad Popelkou\"",
       "counterparty": "Liberecký kraj",
-      "detail_url": "https://smlouvy.gov.cz/smlouva/19350067"
+      "detail_url": "https://smlouvy.gov.cz/smlouva/20799751",
+      "attachments": [
+        {
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/25969091/14_OLP_2194_2022.pdf",
+          "name": "14_OLP_2194_2022.pdf"
+        }
+      ]
     },
     {
       "source": "registr-smluv",
       "source_id": "20017947",
       "version_id": "21508403",
-      "source_url": "https://smlouvy.gov.cz/smlouva/20017947",
+      "source_url": "https://smlouvy.gov.cz/smlouva/21508403",
       "title": "Smlouva o poskytnutí dotace z Dotačního fondu LK na osobní ochranné prostředky PO",
       "buyer_ico": "00275905",
       "supplier_ico": "70891508",
       "contract_number": "01-OLP/2436/2022",
+      "related_contract_ids": [],
+      "related_contract_numbers": [],
       "date": "2022-08-12",
       "signed_date": "2022-08-12",
       "published": "",
@@ -1648,17 +1681,25 @@
       "publisher": "",
       "subject": "Smlouva o poskytnutí dotace z Dotačního fondu LK na osobní ochranné prostředky PO",
       "counterparty": "Liberecký kraj",
-      "detail_url": "https://smlouvy.gov.cz/smlouva/20017947"
+      "detail_url": "https://smlouvy.gov.cz/smlouva/21508403",
+      "attachments": [
+        {
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/26814983/Lomnice_nad_Popelkou_2436.pdf",
+          "name": "Lomnice_nad_Popelkou_2436.pdf"
+        }
+      ]
     },
     {
       "source": "registr-smluv",
       "source_id": "20018743",
       "version_id": "21509235",
-      "source_url": "https://smlouvy.gov.cz/smlouva/20018743",
+      "source_url": "https://smlouvy.gov.cz/smlouva/21509235",
       "title": "Smlouva o poskytnutí dotace z Dotačního fondu LK na repasi hasičského vozíku",
       "buyer_ico": "00275905",
       "supplier_ico": "70891508",
       "contract_number": "01-OLP/2437/2022",
+      "related_contract_ids": [],
+      "related_contract_numbers": [],
       "date": "2022-08-12",
       "signed_date": "2022-08-12",
       "published": "",
@@ -1667,7 +1708,13 @@
       "publisher": "",
       "subject": "Smlouva o poskytnutí dotace z Dotačního fondu LK na repasi hasičského vozíku",
       "counterparty": "Liberecký kraj",
-      "detail_url": "https://smlouvy.gov.cz/smlouva/20018743"
+      "detail_url": "https://smlouvy.gov.cz/smlouva/21509235",
+      "attachments": [
+        {
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/26815971/Lomnice_nad_Popelkou_2437.pdf",
+          "name": "Lomnice_nad_Popelkou_2437.pdf"
+        }
+      ]
     },
     {
       "source": "registr-smluv",
@@ -2590,7 +2637,12 @@
       "subject": "Smlouva o poskytnutí individuální dotace Město Lomnice nad Popelkou, ul 5. května",
       "counterparty": "Liberecký kraj",
       "detail_url": "https://smlouvy.gov.cz/smlouva/39335147",
-      "attachments": []
+      "attachments": [
+        {
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/47440583/Smlouva_individualni_dotace_Lomnice_OLP-02908-2026_sig.pdf",
+          "name": "Smlouva_individualni_dotace_Lomnice_OLP-02908-2026_sig.pdf"
+        }
+      ]
     },
     {
       "source": "registr-smluv",

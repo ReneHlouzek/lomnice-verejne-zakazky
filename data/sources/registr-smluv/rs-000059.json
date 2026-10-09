@@ -2,7 +2,7 @@
   "source": "registr-smluv",
   "source_id": "19382259",
   "version_id": "20834503",
-  "source_url": "https://smlouvy.gov.cz/smlouva/19382259",
+  "source_url": "https://smlouvy.gov.cz/smlouva/20834503",
   "title": "07 Smlouva o dotaci, Město Lomnice nad Popelkou, obnova soklu a schodiště budovy muzea",
   "buyer_ico": "00275905",
   "supplier_ico": "70891508",
@@ -19,11 +19,13 @@
     "source": "registr-smluv",
     "source_id": "19382259",
     "version_id": "20834503",
-    "source_url": "https://smlouvy.gov.cz/smlouva/19382259",
+    "source_url": "https://smlouvy.gov.cz/smlouva/20834503",
     "title": "07 Smlouva o dotaci, Město Lomnice nad Popelkou, obnova soklu a schodiště budovy muzea",
     "buyer_ico": "00275905",
     "supplier_ico": "70891508",
     "contract_number": "07-OLP/2701/2022",
+    "related_contract_ids": [],
+    "related_contract_numbers": [],
     "date": "2022-06-20",
     "signed_date": "2022-06-20",
     "published": "",
@@ -32,6 +34,12 @@
     "publisher": "",
     "subject": "07 Smlouva o dotaci, Město Lomnice nad Popelkou, obnova soklu a schodiště budovy muzea",
     "counterparty": "Liberecký kraj",
-    "detail_url": "https://smlouvy.gov.cz/smlouva/19382259"
+    "detail_url": "https://smlouvy.gov.cz/smlouva/20834503",
+    "attachments": [
+      {
+        "url": "https://smlouvy.gov.cz/smlouva/soubor/26011743/Smlouva_OLP_2701_2022_Mesto_Lomnice_nad_Popelkou_obnova_soklu_a_schodiste_mestskeho_muzea.pdf",
+        "name": "Smlouva_OLP_2701_2022_Mesto_Lomnice_nad_Popelkou_obnova_soklu_a_schodiste_mestskeho_muzea.pdf"
+      }
+    ]
   }
 }

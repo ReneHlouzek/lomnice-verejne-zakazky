@@ -2,7 +2,7 @@
   "source": "registr-smluv",
   "source_id": "19350067",
   "version_id": "20799751",
-  "source_url": "https://smlouvy.gov.cz/smlouva/19350067",
+  "source_url": "https://smlouvy.gov.cz/smlouva/20799751",
   "title": "Smlouva o smlouvě budoucí o zřízení služebnosti č.j. OLP/2194/2022 \"Rekonstrukce veřejného osvětlení - ulice Jičínská, Nádražní a Na Větrově, k.ú. Lomnice nad Popelkou\"",
   "buyer_ico": "00275905",
   "supplier_ico": "70891508",
@@ -19,11 +19,13 @@
     "source": "registr-smluv",
     "source_id": "19350067",
     "version_id": "20799751",
-    "source_url": "https://smlouvy.gov.cz/smlouva/19350067",
+    "source_url": "https://smlouvy.gov.cz/smlouva/20799751",
     "title": "Smlouva o smlouvě budoucí o zřízení služebnosti č.j. OLP/2194/2022 \"Rekonstrukce veřejného osvětlení - ulice Jičínská, Nádražní a Na Větrově, k.ú. Lomnice nad Popelkou\"",
     "buyer_ico": "00275905",
     "supplier_ico": "70891508",
     "contract_number": "14-OLP/2194/2022",
+    "related_contract_ids": [],
+    "related_contract_numbers": [],
     "date": "2022-06-21",
     "signed_date": "2022-06-21",
     "published": "",
@@ -32,6 +34,12 @@
     "publisher": "",
     "subject": "Smlouva o smlouvě budoucí o zřízení služebnosti č.j. OLP/2194/2022 \"Rekonstrukce veřejného osvětlení - ulice Jičínská, Nádražní a Na Větrově, k.ú. Lomnice nad Popelkou\"",
     "counterparty": "Liberecký kraj",
-    "detail_url": "https://smlouvy.gov.cz/smlouva/19350067"
+    "detail_url": "https://smlouvy.gov.cz/smlouva/20799751",
+    "attachments": [
+      {
+        "url": "https://smlouvy.gov.cz/smlouva/soubor/25969091/14_OLP_2194_2022.pdf",
+        "name": "14_OLP_2194_2022.pdf"
+      }
+    ]
   }
 }

@@ -100,7 +100,13 @@
           "publisher": "",
           "subject": "Veřejnoprávní smlouva o poskytnutí neinvestiční dotace z rozpočtu města Lomnice nad Popelkou - Lomnice nad Popelkou - Košov - obnova vodovodu",
           "counterparty": "Vodohospodářské sdružení Turnov",
-          "detail_url": "https://smlouvy.gov.cz/smlouva/29417636"
+          "detail_url": "https://smlouvy.gov.cz/smlouva/29417636",
+          "attachments": [
+            {
+              "url": "https://smlouvy.gov.cz/smlouva/soubor/38388380/LOM_PD_Ve%C5%99ejnopr%C3%A1vn%C3%AD%20s.%20in.%20dotace.doc",
+              "name": "LOM_PD_Ve%C5%99ejnopr%C3%A1vn%C3%AD%20s.%20in.%20dotace.doc"
+            }
+          ]
         },
         "_source_file": "data/sources/registr-smluv/rs-000086.json"
       }
