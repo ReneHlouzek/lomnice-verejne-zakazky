@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-09T09:06:28Z",
+  "updated_at": "2026-10-09T10:50:35Z",
   "pages_checked": 35,
   "declared_documents": 90,
   "documents_discovered": 53,
@@ -14,7 +14,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "unbalanced parenthesis at position 11"
+      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
     },
     {
       "source": "vhodne-uverejneni",
@@ -24,7 +24,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "unbalanced parenthesis at position 11"
+      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
     },
     {
       "source": "vhodne-uverejneni",
@@ -34,7 +34,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "unbalanced parenthesis at position 11"
+      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
     },
     {
       "source": "vhodne-uverejneni",
@@ -44,7 +44,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "unbalanced parenthesis at position 11"
+      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
     },
     {
       "source": "vhodne-uverejneni",
@@ -54,7 +54,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "unbalanced parenthesis at position 11"
+      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
     },
     {
       "source": "vhodne-uverejneni",
@@ -64,7 +64,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "unbalanced parenthesis at position 11"
+      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
     },
     {
       "source": "vhodne-uverejneni",
@@ -74,7 +74,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "unbalanced parenthesis at position 11"
+      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
     },
     {
       "source": "vhodne-uverejneni",
@@ -84,7 +84,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "unbalanced parenthesis at position 11"
+      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
     },
     {
       "source": "vhodne-uverejneni",
@@ -94,7 +94,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "unbalanced parenthesis at position 11"
+      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
     },
     {
       "source": "vhodne-uverejneni",
@@ -104,7 +104,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "unbalanced parenthesis at position 11"
+      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
     },
     {
       "source": "vhodne-uverejneni",
@@ -114,7 +114,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "unbalanced parenthesis at position 11"
+      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
     },
     {
       "source": "vhodne-uverejneni",
@@ -124,7 +124,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "unbalanced parenthesis at position 11"
+      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
     },
     {
       "source": "vhodne-uverejneni",
@@ -134,7 +134,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "unbalanced parenthesis at position 11"
+      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
     },
     {
       "source": "vhodne-uverejneni",
@@ -144,7 +144,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "unbalanced parenthesis at position 11"
+      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
     },
     {
       "source": "vhodne-uverejneni",
@@ -154,7 +154,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "unbalanced parenthesis at position 11"
+      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
     },
     {
       "source": "vhodne-uverejneni",
@@ -164,7 +164,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "unbalanced parenthesis at position 11"
+      "error": "VU page unavailable via direct and proxy fallbacks: 422 Client Error: Unprocessable Entity for url: https://r.jina.ai/https://www.vhodne-uverejneni.cz/zakazka/revitalizace-verejneho-prostranstvi-na-hrbitove-2-etapa-lomnice-nad-popelkou"
     },
     {
       "source": "vhodne-uverejneni",
@@ -174,7 +174,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "unbalanced parenthesis at position 11"
+      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
     },
     {
       "source": "vhodne-uverejneni",
@@ -184,7 +184,7 @@
       "document_count_declared": 6,
       "documents": [],
       "status": "page_error",
-      "error": "unbalanced parenthesis at position 11"
+      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
     },
     {
       "source": "vhodne-uverejneni",
@@ -194,7 +194,7 @@
       "document_count_declared": 10,
       "documents": [],
       "status": "page_error",
-      "error": "unbalanced parenthesis at position 11"
+      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
     },
     {
       "source": "vhodne-uverejneni",
@@ -212,7 +212,8 @@
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0
+          "text_chars": 0,
+          "status": "retained_from_previous_run"
         },
         {
           "index": 2,
@@ -223,7 +224,8 @@
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0
+          "text_chars": 0,
+          "status": "retained_from_previous_run"
         }
       ],
       "status": "ok",
@@ -245,7 +247,8 @@
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0
+          "text_chars": 0,
+          "status": "retained_from_previous_run"
         }
       ],
       "status": "ok",
@@ -267,7 +270,8 @@
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0
+          "text_chars": 0,
+          "status": "retained_from_previous_run"
         },
         {
           "index": 2,
@@ -278,7 +282,8 @@
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0
+          "text_chars": 0,
+          "status": "retained_from_previous_run"
         },
         {
           "index": 3,
@@ -289,7 +294,8 @@
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0
+          "text_chars": 0,
+          "status": "retained_from_previous_run"
         },
         {
           "index": 4,
@@ -300,7 +306,8 @@
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0
+          "text_chars": 0,
+          "status": "retained_from_previous_run"
         },
         {
           "index": 5,
@@ -311,7 +318,8 @@
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0
+          "text_chars": 0,
+          "status": "retained_from_previous_run"
         },
         {
           "index": 6,
@@ -322,7 +330,8 @@
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0
+          "text_chars": 0,
+          "status": "retained_from_previous_run"
         },
         {
           "index": 7,
@@ -357,7 +366,8 @@
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0
+          "text_chars": 0,
+          "status": "retained_from_previous_run"
         },
         {
           "index": 2,
@@ -368,7 +378,8 @@
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0
+          "text_chars": 0,
+          "status": "retained_from_previous_run"
         },
         {
           "index": 3,
@@ -379,7 +390,8 @@
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0
+          "text_chars": 0,
+          "status": "retained_from_previous_run"
         },
         {
           "index": 4,
@@ -390,7 +402,8 @@
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0
+          "text_chars": 0,
+          "status": "retained_from_previous_run"
         },
         {
           "index": 5,
@@ -401,7 +414,8 @@
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0
+          "text_chars": 0,
+          "status": "retained_from_previous_run"
         },
         {
           "index": 6,
@@ -412,7 +426,8 @@
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0
+          "text_chars": 0,
+          "status": "retained_from_previous_run"
         },
         {
           "index": 7,
@@ -423,7 +438,8 @@
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0
+          "text_chars": 0,
+          "status": "retained_from_previous_run"
         },
         {
           "index": 8,
@@ -434,7 +450,8 @@
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0
+          "text_chars": 0,
+          "status": "retained_from_previous_run"
         },
         {
           "index": 9,
@@ -445,7 +462,8 @@
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0
+          "text_chars": 0,
+          "status": "retained_from_previous_run"
         },
         {
           "index": 10,
@@ -456,7 +474,8 @@
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0
+          "text_chars": 0,
+          "status": "retained_from_previous_run"
         },
         {
           "index": 11,
@@ -467,7 +486,8 @@
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0
+          "text_chars": 0,
+          "status": "retained_from_previous_run"
         },
         {
           "index": 12,
@@ -478,7 +498,8 @@
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0
+          "text_chars": 0,
+          "status": "retained_from_previous_run"
         },
         {
           "index": 13,
@@ -489,7 +510,8 @@
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0
+          "text_chars": 0,
+          "status": "retained_from_previous_run"
         },
         {
           "index": 14,
@@ -500,7 +522,8 @@
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0
+          "text_chars": 0,
+          "status": "retained_from_previous_run"
         },
         {
           "index": 15,
@@ -524,7 +547,8 @@
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0
+          "text_chars": 0,
+          "status": "retained_from_previous_run"
         },
         {
           "index": 17,
@@ -535,7 +559,8 @@
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0
+          "text_chars": 0,
+          "status": "retained_from_previous_run"
         },
         {
           "index": 18,
@@ -546,7 +571,8 @@
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0
+          "text_chars": 0,
+          "status": "retained_from_previous_run"
         },
         {
           "index": 19,
@@ -557,7 +583,8 @@
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0
+          "text_chars": 0,
+          "status": "retained_from_previous_run"
         },
         {
           "index": 20,
@@ -568,7 +595,8 @@
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0
+          "text_chars": 0,
+          "status": "retained_from_previous_run"
         },
         {
           "index": 21,
@@ -579,7 +607,8 @@
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0
+          "text_chars": 0,
+          "status": "retained_from_previous_run"
         },
         {
           "index": 22,
@@ -590,7 +619,8 @@
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0
+          "text_chars": 0,
+          "status": "retained_from_previous_run"
         },
         {
           "index": 23,
@@ -601,7 +631,8 @@
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0
+          "text_chars": 0,
+          "status": "retained_from_previous_run"
         }
       ],
       "status": "ok",
@@ -623,7 +654,8 @@
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0
+          "text_chars": 0,
+          "status": "retained_from_previous_run"
         },
         {
           "index": 2,
@@ -634,7 +666,8 @@
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0
+          "text_chars": 0,
+          "status": "retained_from_previous_run"
         }
       ],
       "status": "ok",
@@ -656,7 +689,8 @@
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0
+          "text_chars": 0,
+          "status": "retained_from_previous_run"
         },
         {
           "index": 2,
@@ -667,7 +701,8 @@
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0
+          "text_chars": 0,
+          "status": "retained_from_previous_run"
         },
         {
           "index": 3,
@@ -678,7 +713,8 @@
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0
+          "text_chars": 0,
+          "status": "retained_from_previous_run"
         },
         {
           "index": 4,
@@ -689,7 +725,8 @@
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0
+          "text_chars": 0,
+          "status": "retained_from_previous_run"
         },
         {
           "index": 5,
@@ -700,7 +737,8 @@
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0
+          "text_chars": 0,
+          "status": "retained_from_previous_run"
         },
         {
           "index": 6,
@@ -711,7 +749,8 @@
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0
+          "text_chars": 0,
+          "status": "retained_from_previous_run"
         },
         {
           "index": 7,
@@ -735,7 +774,8 @@
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0
+          "text_chars": 0,
+          "status": "retained_from_previous_run"
         },
         {
           "index": 9,
@@ -746,7 +786,8 @@
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0
+          "text_chars": 0,
+          "status": "retained_from_previous_run"
         }
       ],
       "status": "ok",
@@ -768,7 +809,8 @@
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0
+          "text_chars": 0,
+          "status": "retained_from_previous_run"
         },
         {
           "index": 2,
@@ -779,7 +821,8 @@
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0
+          "text_chars": 0,
+          "status": "retained_from_previous_run"
         },
         {
           "index": 3,
@@ -790,7 +833,8 @@
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0
+          "text_chars": 0,
+          "status": "retained_from_previous_run"
         }
       ],
       "status": "ok",
@@ -812,7 +856,8 @@
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0
+          "text_chars": 0,
+          "status": "retained_from_previous_run"
         },
         {
           "index": 2,
@@ -823,7 +868,8 @@
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0
+          "text_chars": 0,
+          "status": "retained_from_previous_run"
         }
       ],
       "status": "ok",
@@ -845,7 +891,8 @@
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0
+          "text_chars": 0,
+          "status": "retained_from_previous_run"
         }
       ],
       "status": "ok",
@@ -867,7 +914,8 @@
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0
+          "text_chars": 0,
+          "status": "retained_from_previous_run"
         },
         {
           "index": 2,
@@ -878,7 +926,8 @@
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0
+          "text_chars": 0,
+          "status": "retained_from_previous_run"
         }
       ],
       "status": "ok",
@@ -892,7 +941,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "unbalanced parenthesis at position 11"
+      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
     },
     {
       "source": "vhodne-uverejneni",
@@ -902,7 +951,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "unbalanced parenthesis at position 11"
+      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
     },
     {
       "source": "vhodne-uverejneni",
@@ -936,7 +985,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "unbalanced parenthesis at position 11"
+      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
     },
     {
       "source": "vhodne-uverejneni",
@@ -946,7 +995,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "unbalanced parenthesis at position 11"
+      "error": "VU page unavailable via direct and proxy fallbacks: 422 Client Error: Unprocessable Entity for url: https://r.jina.ai/https://www.vhodne-uverejneni.cz/profil/mesto-lomnice-nad-popelkou"
     },
     {
       "source": "vhodne-uverejneni",
@@ -956,7 +1005,7 @@
       "document_count_declared": 15,
       "documents": [],
       "status": "page_error",
-      "error": "unbalanced parenthesis at position 11"
+      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
     }
   ],
   "note": "Archives public document metadata and extracted PDF text. Original binaries are not committed; inaccessible documents are retained in the manifest as errors."

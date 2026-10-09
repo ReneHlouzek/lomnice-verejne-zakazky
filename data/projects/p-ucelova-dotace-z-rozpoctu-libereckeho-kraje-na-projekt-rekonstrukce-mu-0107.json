@@ -68,7 +68,7 @@
         "source": "registr-smluv",
         "source_id": "10601144",
         "version_id": "11409652",
-        "source_url": "https://smlouvy.gov.cz/smlouva/10601144",
+        "source_url": "https://smlouvy.gov.cz/smlouva/11409652",
         "title": "účelová dotace z rozpočtu Libereckého kraje na projekt \"Rekonstrukce multifunkčního hřiště při ZŠ T.G.Masaryka v Lomnici nad Popelkou\"",
         "buyer_ico": "00275905",
         "supplier_ico": "70891508",
@@ -85,11 +85,13 @@
           "source": "registr-smluv",
           "source_id": "10601144",
           "version_id": "11409652",
-          "source_url": "https://smlouvy.gov.cz/smlouva/10601144",
+          "source_url": "https://smlouvy.gov.cz/smlouva/11409652",
           "title": "účelová dotace z rozpočtu Libereckého kraje na projekt \"Rekonstrukce multifunkčního hřiště při ZŠ T.G.Masaryka v Lomnici nad Popelkou\"",
           "buyer_ico": "00275905",
           "supplier_ico": "70891508",
           "contract_number": "04708_OLP_5696_2019",
+          "related_contract_ids": [],
+          "related_contract_numbers": [],
           "date": "2020-01-14",
           "signed_date": "2020-01-14",
           "published": "",
@@ -98,7 +100,13 @@
           "publisher": "",
           "subject": "účelová dotace z rozpočtu Libereckého kraje na projekt \"Rekonstrukce multifunkčního hřiště při ZŠ T.G.Masaryka v Lomnici nad Popelkou\"",
           "counterparty": "Liberecký kraj",
-          "detail_url": "https://smlouvy.gov.cz/smlouva/10601144"
+          "detail_url": "https://smlouvy.gov.cz/smlouva/11409652",
+          "attachments": [
+            {
+              "url": "https://smlouvy.gov.cz/smlouva/soubor/14836892/04708_OLP_5696_2019_Mesto_Lomnice_n_P.docx.pdf",
+              "name": "04708_OLP_5696_2019_Mesto_Lomnice_n_P.docx.pdf"
+            }
+          ]
         },
         "_source_file": "data/sources/registr-smluv/rs-000043.json"
       }

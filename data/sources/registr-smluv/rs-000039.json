@@ -1,48 +1,44 @@
 {
   "source": "registr-smluv",
-  "source_id": "8497295",
-  "version_id": "9164787",
-  "source_url": "https://smlouvy.gov.cz/smlouva/9164787",
-  "title": "Obnova bývalé Svobodovy hrobky na hřbitově v Lomnici nad Popelkou - okna a vstupní dveře",
+  "source_id": "8786327",
+  "version_id": "9470195",
+  "source_url": "https://smlouvy.gov.cz/smlouva/9470195",
+  "title": "Smlouva o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje na nákup ochranných prostředků požární ochrany",
   "buyer_ico": "00275905",
   "supplier_ico": "70891508",
   "supplier_name": "Liberecký kraj",
-  "contract_number": "07-OLP/1552/2019",
-  "related_contract_ids": [
-    "8497295"
-  ],
+  "contract_number": "01-OLP/1834/2019",
+  "related_contract_ids": [],
   "related_contract_numbers": [],
-  "date": "2019-05-16",
-  "signed_date": "2019-05-16",
+  "date": "2019-06-25",
+  "signed_date": "2019-06-25",
   "published": null,
-  "price": 134666.0,
+  "price": 181591.0,
   "status": null,
   "raw": {
     "source": "registr-smluv",
-    "source_id": "8497295",
-    "version_id": "9164787",
-    "source_url": "https://smlouvy.gov.cz/smlouva/9164787",
-    "title": "Obnova bývalé Svobodovy hrobky na hřbitově v Lomnici nad Popelkou - okna a vstupní dveře",
+    "source_id": "8786327",
+    "version_id": "9470195",
+    "source_url": "https://smlouvy.gov.cz/smlouva/9470195",
+    "title": "Smlouva o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje na nákup ochranných prostředků požární ochrany",
     "buyer_ico": "00275905",
     "supplier_ico": "70891508",
-    "contract_number": "07-OLP/1552/2019",
-    "related_contract_ids": [
-      "8497295"
-    ],
+    "contract_number": "01-OLP/1834/2019",
+    "related_contract_ids": [],
     "related_contract_numbers": [],
-    "date": "2019-05-16",
-    "signed_date": "2019-05-16",
+    "date": "2019-06-25",
+    "signed_date": "2019-06-25",
     "published": "",
-    "price": "134666",
-    "value": "134666",
+    "price": "181591",
+    "value": "181591",
     "publisher": "",
-    "subject": "Obnova bývalé Svobodovy hrobky na hřbitově v Lomnici nad Popelkou - okna a vstupní dveře",
+    "subject": "Smlouva o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje na nákup ochranných prostředků požární ochrany",
     "counterparty": "Liberecký kraj",
-    "detail_url": "https://smlouvy.gov.cz/smlouva/9164787",
+    "detail_url": "https://smlouvy.gov.cz/smlouva/9470195",
     "attachments": [
       {
-        "url": "https://smlouvy.gov.cz/smlouva/soubor/12069971/58_Mesto_Lomnice_n_P_smlouva_o_poskytnuti_dotace.pdf",
-        "name": "58_Mesto_Lomnice_n_P_smlouva_o_poskytnuti_dotace.pdf"
+        "url": "https://smlouvy.gov.cz/smlouva/soubor/12444159/Lomnice_nad_Popelkou_1834.pdf",
+        "name": "Lomnice_nad_Popelkou_1834.pdf"
       }
     ]
   }

@@ -70,7 +70,7 @@
         "source": "registr-smluv",
         "source_id": "14213067",
         "version_id": "15262487",
-        "source_url": "https://smlouvy.gov.cz/smlouva/14213067",
+        "source_url": "https://smlouvy.gov.cz/smlouva/15262487",
         "title": "darovací smlouva - darování pozemků včetně vyřazeného tělesa komunikace ev.č. III/2847 na pozemcích v k.ú. Lomnice nad Popelkou",
         "buyer_ico": "00275905",
         "supplier_ico": "70891508",
@@ -87,11 +87,13 @@
           "source": "registr-smluv",
           "source_id": "14213067",
           "version_id": "15262487",
-          "source_url": "https://smlouvy.gov.cz/smlouva/14213067",
+          "source_url": "https://smlouvy.gov.cz/smlouva/15262487",
           "title": "darovací smlouva - darování pozemků včetně vyřazeného tělesa komunikace ev.č. III/2847 na pozemcích v k.ú. Lomnice nad Popelkou",
           "buyer_ico": "00275905",
           "supplier_ico": "70891508",
           "contract_number": "14-OLP/2654/2020",
+          "related_contract_ids": [],
+          "related_contract_numbers": [],
           "date": "2021-01-19",
           "signed_date": "2021-01-19",
           "published": "",
@@ -100,7 +102,13 @@
           "publisher": "",
           "subject": "darovací smlouva - darování pozemků včetně vyřazeného tělesa komunikace ev.č. III/2847 na pozemcích v k.ú. Lomnice nad Popelkou",
           "counterparty": "Liberecký kraj",
-          "detail_url": "https://smlouvy.gov.cz/smlouva/14213067"
+          "detail_url": "https://smlouvy.gov.cz/smlouva/15262487",
+          "attachments": [
+            {
+              "url": "https://smlouvy.gov.cz/smlouva/soubor/19416475/121_P04_smlouva_2654_2020.pdf",
+              "name": "121_P04_smlouva_2654_2020.pdf"
+            }
+          ]
         },
         "_source_file": "data/sources/registr-smluv/rs-000051.json"
       }

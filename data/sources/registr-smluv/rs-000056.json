@@ -2,7 +2,7 @@
   "source": "registr-smluv",
   "source_id": "16025759",
   "version_id": "17245191",
-  "source_url": "https://smlouvy.gov.cz/smlouva/16025759",
+  "source_url": "https://smlouvy.gov.cz/smlouva/17245191",
   "title": "Smlouva o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje na nákup věcných prostředků k provádění speciálních činností",
   "buyer_ico": "00275905",
   "supplier_ico": "70891508",
@@ -19,11 +19,13 @@
     "source": "registr-smluv",
     "source_id": "16025759",
     "version_id": "17245191",
-    "source_url": "https://smlouvy.gov.cz/smlouva/16025759",
+    "source_url": "https://smlouvy.gov.cz/smlouva/17245191",
     "title": "Smlouva o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje na nákup věcných prostředků k provádění speciálních činností",
     "buyer_ico": "00275905",
     "supplier_ico": "70891508",
     "contract_number": "01-OLP/2363/2021",
+    "related_contract_ids": [],
+    "related_contract_numbers": [],
     "date": "2021-07-19",
     "signed_date": "2021-07-19",
     "published": "",
@@ -32,6 +34,12 @@
     "publisher": "",
     "subject": "Smlouva o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje na nákup věcných prostředků k provádění speciálních činností",
     "counterparty": "Liberecký kraj",
-    "detail_url": "https://smlouvy.gov.cz/smlouva/16025759"
+    "detail_url": "https://smlouvy.gov.cz/smlouva/17245191",
+    "attachments": [
+      {
+        "url": "https://smlouvy.gov.cz/smlouva/soubor/21733307/Lomnice_nad_Popelkou_2363.pdf",
+        "name": "Lomnice_nad_Popelkou_2363.pdf"
+      }
+    ]
   }
 }

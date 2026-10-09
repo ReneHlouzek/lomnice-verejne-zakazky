@@ -2,7 +2,7 @@
   "source": "registr-smluv",
   "source_id": "15777827",
   "version_id": "16983035",
-  "source_url": "https://smlouvy.gov.cz/smlouva/15777827",
+  "source_url": "https://smlouvy.gov.cz/smlouva/16983035",
   "title": "Dohoda o používání výplatního stroje k úhradě cen za poštovní služby",
   "buyer_ico": "00275905",
   "supplier_ico": "47114983",
@@ -19,11 +19,13 @@
     "source": "registr-smluv",
     "source_id": "15777827",
     "version_id": "16983035",
-    "source_url": "https://smlouvy.gov.cz/smlouva/15777827",
+    "source_url": "https://smlouvy.gov.cz/smlouva/16983035",
     "title": "Dohoda o používání výplatního stroje k úhradě cen za poštovní služby",
     "buyer_ico": "00275905",
     "supplier_ico": "47114983",
     "contract_number": "2021/05045 /",
+    "related_contract_ids": [],
+    "related_contract_numbers": [],
     "date": "2015-12-07",
     "signed_date": "2015-12-07",
     "published": "",
@@ -32,6 +34,12 @@
     "publisher": "",
     "subject": "Dohoda o používání výplatního stroje k úhradě cen za poštovní služby",
     "counterparty": "Česká pošta, s.p.",
-    "detail_url": "https://smlouvy.gov.cz/smlouva/15777827"
+    "detail_url": "https://smlouvy.gov.cz/smlouva/16983035",
+    "attachments": [
+      {
+        "url": "https://smlouvy.gov.cz/smlouva/soubor/21418247/982407-0868-2015.docx",
+        "name": "982407-0868-2015.docx"
+      }
+    ]
   }
 }

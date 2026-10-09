@@ -2,7 +2,7 @@
   "source": "registr-smluv",
   "source_id": "12560592",
   "version_id": "13475256",
-  "source_url": "https://smlouvy.gov.cz/smlouva/12560592",
+  "source_url": "https://smlouvy.gov.cz/smlouva/13475256",
   "title": "Smlouva o spolupráci při realizaci stavební akce \"Snížení energetické náročnosti budovy v ulici Pivovarská 80 - Střední škola, Lomnice nad Popelkou, Antala Staška 213, p. o.\"",
   "buyer_ico": "00275905",
   "supplier_ico": "70891508",
@@ -19,11 +19,13 @@
     "source": "registr-smluv",
     "source_id": "12560592",
     "version_id": "13475256",
-    "source_url": "https://smlouvy.gov.cz/smlouva/12560592",
+    "source_url": "https://smlouvy.gov.cz/smlouva/13475256",
     "title": "Smlouva o spolupráci při realizaci stavební akce \"Snížení energetické náročnosti budovy v ulici Pivovarská 80 - Střední škola, Lomnice nad Popelkou, Antala Staška 213, p. o.\"",
     "buyer_ico": "00275905",
     "supplier_ico": "70891508",
     "contract_number": "14-OLP/13/2020",
+    "related_contract_ids": [],
+    "related_contract_numbers": [],
     "date": "2020-08-05",
     "signed_date": "2020-08-05",
     "published": "",
@@ -32,6 +34,12 @@
     "publisher": "",
     "subject": "Smlouva o spolupráci při realizaci stavební akce \"Snížení energetické náročnosti budovy v ulici Pivovarská 80 - Střední škola, Lomnice nad Popelkou, Antala Staška 213, p. o.\"",
     "counterparty": "Liberecký kraj",
-    "detail_url": "https://smlouvy.gov.cz/smlouva/12560592"
+    "detail_url": "https://smlouvy.gov.cz/smlouva/13475256",
+    "attachments": [
+      {
+        "url": "https://smlouvy.gov.cz/smlouva/soubor/17277580/14_OLP_13_2020.pdf",
+        "name": "14_OLP_13_2020.pdf"
+      }
+    ]
   }
 }

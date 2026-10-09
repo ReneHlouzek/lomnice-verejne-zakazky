@@ -2,7 +2,7 @@
   "source": "registr-smluv",
   "source_id": "12516296",
   "version_id": "13428668",
-  "source_url": "https://smlouvy.gov.cz/smlouva/12516296",
+  "source_url": "https://smlouvy.gov.cz/smlouva/13428668",
   "title": "Smlouva o poskytnutí účelové dotace z Dotačního fondu LK, programu č. 1.1, na nákup ochranných prostředků",
   "buyer_ico": "00275905",
   "supplier_ico": "70891508",
@@ -19,11 +19,13 @@
     "source": "registr-smluv",
     "source_id": "12516296",
     "version_id": "13428668",
-    "source_url": "https://smlouvy.gov.cz/smlouva/12516296",
+    "source_url": "https://smlouvy.gov.cz/smlouva/13428668",
     "title": "Smlouva o poskytnutí účelové dotace z Dotačního fondu LK, programu č. 1.1, na nákup ochranných prostředků",
     "buyer_ico": "00275905",
     "supplier_ico": "70891508",
     "contract_number": "01-OLP/1874/2020",
+    "related_contract_ids": [],
+    "related_contract_numbers": [],
     "date": "2020-07-31",
     "signed_date": "2020-07-31",
     "published": "",
@@ -32,6 +34,12 @@
     "publisher": "",
     "subject": "Smlouva o poskytnutí účelové dotace z Dotačního fondu LK, programu č. 1.1, na nákup ochranných prostředků",
     "counterparty": "Liberecký kraj",
-    "detail_url": "https://smlouvy.gov.cz/smlouva/12516296"
+    "detail_url": "https://smlouvy.gov.cz/smlouva/13428668",
+    "attachments": [
+      {
+        "url": "https://smlouvy.gov.cz/smlouva/soubor/17222172/Lomnice_nad_Popelkou_1874.pdf",
+        "name": "Lomnice_nad_Popelkou_1874.pdf"
+      }
+    ]
   }
 }

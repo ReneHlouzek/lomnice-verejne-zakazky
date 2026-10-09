@@ -108,7 +108,8 @@
       "confidence": "explicit",
       "reason": "explicit_related_contract_id",
       "evidence": [
-        "related_contract_id=15970715"
+        "related_contract_id=15970715",
+        "OLP/2373/2021"
       ],
       "source_a": "registr-smluv",
       "source_id_a": "24740963",
@@ -124,8 +125,7 @@
       "confidence": "explicit",
       "reason": "explicit_parent_contract_number",
       "evidence": [
-        "07-OLP2373/2021",
-        "07-OLP/2373/2021"
+        "OLP/2373/2021"
       ],
       "source_a": "registr-smluv",
       "source_id_a": "28204604",

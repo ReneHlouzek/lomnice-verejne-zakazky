@@ -70,7 +70,7 @@
         "source": "registr-smluv",
         "source_id": "10174036",
         "version_id": "10943396",
-        "source_url": "https://smlouvy.gov.cz/smlouva/10174036",
+        "source_url": "https://smlouvy.gov.cz/smlouva/10943396",
         "title": "Darovací smlouva č.j. OLP/3650/2019 - darování pozemku v k.ú. Želechy",
         "buyer_ico": "00275905",
         "supplier_ico": "70891508",
@@ -87,11 +87,13 @@
           "source": "registr-smluv",
           "source_id": "10174036",
           "version_id": "10943396",
-          "source_url": "https://smlouvy.gov.cz/smlouva/10174036",
+          "source_url": "https://smlouvy.gov.cz/smlouva/10943396",
           "title": "Darovací smlouva č.j. OLP/3650/2019 - darování pozemku v k.ú. Želechy",
           "buyer_ico": "00275905",
           "supplier_ico": "70891508",
           "contract_number": "14-OLP/3650/2019",
+          "related_contract_ids": [],
+          "related_contract_numbers": [],
           "date": "2019-11-27",
           "signed_date": "2019-11-27",
           "published": "",
@@ -100,7 +102,13 @@
           "publisher": "",
           "subject": "Darovací smlouva č.j. OLP/3650/2019 - darování pozemku v k.ú. Želechy",
           "counterparty": "Liberecký kraj",
-          "detail_url": "https://smlouvy.gov.cz/smlouva/10174036"
+          "detail_url": "https://smlouvy.gov.cz/smlouva/10943396",
+          "attachments": [
+            {
+              "url": "https://smlouvy.gov.cz/smlouva/soubor/14249300/14_OLP_3650_2019.pdf",
+              "name": "14_OLP_3650_2019.pdf"
+            }
+          ]
         },
         "_source_file": "data/sources/registr-smluv/rs-000041.json"
       }

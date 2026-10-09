@@ -70,7 +70,7 @@
         "source": "registr-smluv",
         "source_id": "15976779",
         "version_id": "17192819",
-        "source_url": "https://smlouvy.gov.cz/smlouva/15976779",
+        "source_url": "https://smlouvy.gov.cz/smlouva/17192819",
         "title": "budoucí darovací smlouva - budoucí darování pozemků o celkové výměře 8333 m2 v k.ú. Lomnice nad Popelkou a k.ú. želechy v četně vyřazovaného tělesa komunikace ev.č. III/28613 na pozemcích",
         "buyer_ico": "00275905",
         "supplier_ico": "70891508",
@@ -87,11 +87,13 @@
           "source": "registr-smluv",
           "source_id": "15976779",
           "version_id": "17192819",
-          "source_url": "https://smlouvy.gov.cz/smlouva/15976779",
+          "source_url": "https://smlouvy.gov.cz/smlouva/17192819",
           "title": "budoucí darovací smlouva - budoucí darování pozemků o celkové výměře 8333 m2 v k.ú. Lomnice nad Popelkou a k.ú. želechy v četně vyřazovaného tělesa komunikace ev.č. III/28613 na pozemcích",
           "buyer_ico": "00275905",
           "supplier_ico": "70891508",
           "contract_number": "14-OLP/1199/2021",
+          "related_contract_ids": [],
+          "related_contract_numbers": [],
           "date": "2021-07-14",
           "signed_date": "2021-07-14",
           "published": "",
@@ -100,7 +102,13 @@
           "publisher": "",
           "subject": "budoucí darovací smlouva - budoucí darování pozemků o celkové výměře 8333 m2 v k.ú. Lomnice nad Popelkou a k.ú. želechy v četně vyřazovaného tělesa komunikace ev.č. III/28613 na pozemcích",
           "counterparty": "Liberecký kraj",
-          "detail_url": "https://smlouvy.gov.cz/smlouva/15976779"
+          "detail_url": "https://smlouvy.gov.cz/smlouva/17192819",
+          "attachments": [
+            {
+              "url": "https://smlouvy.gov.cz/smlouva/soubor/21668779/069_P01_smlouva_1199_2021.pdf",
+              "name": "069_P01_smlouva_1199_2021.pdf"
+            }
+          ]
         },
         "_source_file": "data/sources/registr-smluv/rs-000054.json"
       }

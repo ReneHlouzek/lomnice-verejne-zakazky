@@ -70,7 +70,7 @@
         "source": "registr-smluv",
         "source_id": "13349796",
         "version_id": "16028623",
-        "source_url": "https://smlouvy.gov.cz/smlouva/13349796",
+        "source_url": "https://smlouvy.gov.cz/smlouva/16028623",
         "title": "Státní fond podpory investic - Smlouva č. 3908110142 o poskytnutí dotace na úhradu nákladů na regeneraci veřejného prostranství na sídlišti dle NV č.390/2017 Sb.",
         "buyer_ico": "00275905",
         "supplier_ico": "70856788",
@@ -87,11 +87,13 @@
           "source": "registr-smluv",
           "source_id": "13349796",
           "version_id": "16028623",
-          "source_url": "https://smlouvy.gov.cz/smlouva/13349796",
+          "source_url": "https://smlouvy.gov.cz/smlouva/16028623",
           "title": "Státní fond podpory investic - Smlouva č. 3908110142 o poskytnutí dotace na úhradu nákladů na regeneraci veřejného prostranství na sídlišti dle NV č.390/2017 Sb.",
           "buyer_ico": "00275905",
           "supplier_ico": "70856788",
           "contract_number": "3908110142",
+          "related_contract_ids": [],
+          "related_contract_numbers": [],
           "date": "2020-10-29",
           "signed_date": "2020-10-29",
           "published": "",
@@ -100,7 +102,13 @@
           "publisher": "",
           "subject": "Státní fond podpory investic - Smlouva č. 3908110142 o poskytnutí dotace na úhradu nákladů na regeneraci veřejného prostranství na sídlišti dle NV č.390/2017 Sb.",
           "counterparty": "Státní fond podpory investic",
-          "detail_url": "https://smlouvy.gov.cz/smlouva/13349796"
+          "detail_url": "https://smlouvy.gov.cz/smlouva/16028623",
+          "attachments": [
+            {
+              "url": "https://smlouvy.gov.cz/smlouva/soubor/18293400/Smlouva%20o%20dotaci%20Lomnice%20nad%20Popelkou%20do%20registru%20smluv.pdf",
+              "name": "Smlouva%20o%20dotaci%20Lomnice%20nad%20Popelkou%20do%20registru%20smluv.pdf"
+            }
+          ]
         },
         "_source_file": "data/sources/registr-smluv/rs-000049.json"
       }
