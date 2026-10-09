@@ -245,3 +245,19 @@ def test_registry_import_excludes_records_unrelated_to_city():
     publisher_icos = {"12345678"}
     all_icos = {"12345678", "87654321"}
     assert not registr.record_involves_ico(publisher_icos, all_icos, city_ico)
+
+
+def test_registry_import_reprocesses_history_when_filter_scope_changes():
+    old_manifest = {
+        "processed_dumps": {"https://data.smlouvy.gov.cz/dump_2024_01.xml": ""}
+    }
+    assert registr.processed_dumps_for_current_filter(old_manifest) == {}
+
+
+def test_registry_import_keeps_history_markers_for_current_filter():
+    processed = {"https://data.smlouvy.gov.cz/dump_2024_01.xml": ""}
+    current_manifest = {
+        "filter_version": registr.FILTER_VERSION,
+        "processed_dumps": processed,
+    }
+    assert registr.processed_dumps_for_current_filter(current_manifest) == processed
