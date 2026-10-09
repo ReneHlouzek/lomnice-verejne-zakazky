@@ -248,7 +248,9 @@ def test_registry_import_preserves_known_attachments_for_same_version_only():
     newer_version = {"version_id": "34905226", "attachments": []}
 
     assert registr.preserve_attachments_for_same_version(same_version, old)["attachments"] == [attachment]
-    assert "attachments" not in registr.preserve_attachments_for_same_version(newer_version, old)
+    refreshed = registr.preserve_attachments_for_same_version(newer_version, old)
+    assert refreshed["attachments"] == []
+    assert attachment not in refreshed["attachments"]
 
 
 
