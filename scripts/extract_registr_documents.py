@@ -187,7 +187,7 @@ def main():
         old_docs={d.get("url"):d for d in old.get("documents",[]) if d.get("url")}
         for doc in result.get("documents",[]):
             old_doc=old_docs.get(doc.get("url"))
-            if old_doc and not doc.get("sha256"):
+            if old_doc and not doc.get("sha256") and not doc.get("content_check"):
                 retained={k:v for k,v in old_doc.items() if k not in ("status","error")}
                 retained["status"]="retained_from_previous_run"
                 doc.clear()
