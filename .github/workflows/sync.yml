@@ -118,6 +118,10 @@ jobs:
           python-version: "3.12"
       - name: Install dependencies
         run: python -m pip install --upgrade pip requests beautifulsoup4 pypdf python-docx pytest
+      - name: Install legacy document converters
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y antiword libreoffice-writer
       - name: Run regression tests
         run: pytest -q tests
       - name: Extract VU document metadata and PDF text

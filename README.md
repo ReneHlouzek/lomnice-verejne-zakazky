@@ -10,7 +10,7 @@ Projekt spojuje veřejně dostupná data z profilu zadavatele na Vhodném uveře
 
 ## Aktuální stav
 
-**Stav ověřený 9. 10. 2026 v 06:15 UTC.** Projekt má funkční datovou pipeline, archiv zdrojových záznamů, projektové JSON výstupy, audity, webové rozhraní a automatizaci GitHub Actions. Aktuální index byl vygenerován **9. 10. 2026 v 06:12:59 UTC**; navazující nasazení webu skončilo úspěšně v 06:14 UTC.
+**Stav ověřený 9. 10. 2026 v 09:07 UTC.** Synchronizace `37900330296` skončila úspěšně; oba běhy regresních testů prošly (35 testů v jobu `fetch-registr` a znovu v `build`). Index byl vygenerován **9. 10. 2026 v 09:07:26 UTC** a web byl následně úspěšně nasazen. Import Registru smluv je ale po změně filtru stále v průběhu historického doplnění: zvažuje 124 měsíčních dumpů, dosud má jako zpracovaných 38 a `history_complete` je `false`.
 
 | Ukazatel | Aktuální hodnota |
 |---|---:|
@@ -24,7 +24,7 @@ Projekt spojuje veřejně dostupná data z profilu zadavatele na Vhodném uveře
 | Smlouvy se změnami / dodatky | 16 |
 | Smlouvy bez rozpoznané zakázky | 69 |
 | Ostatní záznamy | 31 |
-| Potvrzené vazby mezi smlouvami a dodatky | 9 |
+| Potvrzené vazby mezi smlouvami a dodatky | 11 |
 | Kandidátní vazby čekající na ruční ověření | 1 |
 
 Počty 109 a 110 u Registru smluv popisují různé vrstvy pipeline: přehled pokrytí organizace a počet záznamů načtených do importu. Nejde o zaměnitelné metriky. Stejně tak počet projektových celků není počtem jednotlivých smluv nebo zakázek.
@@ -33,7 +33,7 @@ Počty 109 a 110 u Registru smluv popisují různé vrstvy pipeline: přehled po
 
 Vazby se potvrzují jen při explicitním identifikátoru návazné smlouvy nebo při dostatečně konkrétním čísle smlouvy. Podobnost názvu sama o sobě není důkazem a má vytvářet nanejvýš kandidáta k ruční kontrole.
 
-Aktuálně je v `data/contract_links.json` **9 potvrzených vazeb** a **1 kandidát**:
+Aktuálně je v `data/contract_links.json` **11 potvrzených vazeb** a **1 kandidát**:
 
 - **Karavanové stání:** dodatky č. 1 a 2 jsou propojené se základní smlouvou přes explicitní ID; dodatek č. 3 přes číslo smlouvy.
 - **Nájem nebytových prostor pro OOP:** dodatky č. 1 a 2 jsou propojené se základní smlouvou přes explicitní ID.
@@ -154,3 +154,13 @@ Tento záznam doplňuje předávací plán; nejde o potvrzení dokončení celé
 - **Košov – obnova vodovodu:** oficiální záznam základní smlouvy je [ID 29417636, verze 31432352](https://smlouvy.gov.cz/smlouva/31432352), uzavřená 11. 12. 2024, zveřejněná 16. 12. 2024, hodnota 2 880 000 Kč bez DPH. Oficiální záznam dodatku je [ID 32731945, verze 34905225](https://smlouvy.gov.cz/smlouva/34905225), uzavřený 22. 9. 2025, zveřejněný 23. 9. 2025, hodnota 1 323 950,25 Kč bez DPH. Oba záznamy uvádějí Vodohospodářské sdružení Turnov jako publikující subjekt, Město Lomnice nad Popelkou jako smluvní stranu a výslovně se týkají Košova a obnovy vodovodu. To silně podporuje věcnou souvislost, ale v aktuálně uložených metadatech není u dodatku zachyceno explicitní ID návazné smlouvy a v dokumentovém manifestu nejsou přílohy pro tyto dva záznamy. Podle pravidel projektu proto vazba zůstává kandidátem, dokud nebude ověřena přímo v textu dodatku nebo jednoznačných metadatech.
 - **Další záznam `37367969` není doložen jako součást řetězce Košov.** Jeho obecný název sám nestačí a příloha vykazuje výše popsaný nesoulad. Nepoužívat jej jako důkaz pro Košov.
 - **Další krok:** nejprve ověřit poslední běh `sync.yml` a jeho testy v GitHub Actions; pak dohledat a získat oficiální přílohy pro oba záznamy Košov, ověřit text dodatku a jeho návaznost. Poté pokračovat záznamy `3861664`, `25099803`, `28586216` a `33854349`. Po změnách spustit `pytest -q tests`, ověřit výsledné JSON soubory a teprve pak aktualizovat potvrzené počty.
+
+
+## Průběžný audit – 9. 10. 2026, 09:40 UTC
+
+- **Synchronizace potvrzena:** [běh 37900330296](https://github.com/ReneHlouzek/lomnice-verejne-zakazky/actions/runs/37900330296) skončil úspěšně. Joby `fetch-vu`, `fetch-registr` i `build` mají `success`. Regresní testy prošly: 35 testů v importním jobu a následně znovu v build jobu.
+- **Historický import není kompletní:** `data/registr_smluv/manifest.json` uvádí `filter_version=city-party-v2`, 110 záznamů, 38 zpracovaných dumpů z 124 a `history_complete=false`. V tomto běhu se zpracovalo 36 historických měsíců od 2016-07 do 2019-06 a obnovily se 2026-09 a 2026-10. Zbývající historie se musí doplnit dalšími běhy; úspěch workflow neznamená dokončenou historii.
+- **Propojování smluv:** `data/contract_links.json` nyní obsahuje 11 potvrzených vazeb a 1 kandidáta. Košov zůstává kandidátem `32731945 → 29417636`; vazbu nepovyšovat pouze na základě podobnosti názvů.
+- **Audit příloh:** manifest obsahuje 44 deklarovaných a objevených příloh, 40 stažených souborů a 38 extrahovaných textů. U záznamu `37367969` je příloha s názvem Želechy stále označená `content_mismatch_review`; archivovaný text se týká Hodonína a T-Mobile. Není přípustné použít tento text jako důkaz pro smlouvu v Lomnici.
+- **Oprava extrakce starých Word dokumentů:** u záznamu `3861664` selhala extrakce souboru `.doc`, protože v runneru nebyl nainstalovaný `antiword`. Doplnil jsem fallback na LibreOffice a instalaci obou převodníků do build jobu. Regresní test ověřuje fallback při chybějícím `antiword`; jeho výsledek bude potvrzen následujícím během workflow.
+- **Další kroky:** ověřit novou synchronizaci a extrakci dokumentů po této opravě; zkontrolovat, zda se text pro `3861664` podařilo získat; pak dohledat primární dokumenty pro Košov (`29417636`, `32731945`) a pokračovat dalšími nepropojenými dodatky (`25099803`, `28586216`, `33854349`). Po každém běhu aktualizovat počty jen podle aktuálních dat.

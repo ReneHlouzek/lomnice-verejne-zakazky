@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Download and text-extract attachments exposed by the official Contract Register."""
 from __future__ import annotations
-import hashlib, io, json, time, re, unicodedata
+import hashlib, io, json, time, re, unicodedata, subprocess
 from urllib.parse import unquote
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
@@ -17,6 +17,21 @@ TIMEOUT=20
 MAX_DOC_BYTES=25*1024*1024
 WORKERS=6
 UA="Lomnice-Verejne-Zakazky/1.0 (public-data-archive)"
+
+def extract_legacy_doc(target: Path, temp_dir: str) -> str:
+    """Extract a legacy .doc file, falling back to LibreOffice when antiword is absent."""
+    import subprocess
+    try:
+        cp = subprocess.run(["antiword", str(target)], check=True, capture_output=True, text=True)
+        return cp.stdout.strip()
+    except FileNotFoundError:
+        subprocess.run(
+            ["libreoffice", "--headless", "--convert-to", "txt:Text", "--outdir", temp_dir, str(target)],
+            check=True, capture_output=True, text=True,
+        )
+        out = target.with_suffix(".txt")
+        return out.read_text(encoding="utf-8", errors="replace").strip() if out.exists() else ""
+
 
 def extract(url:str):
     suffix=url.lower().split("?",1)[0].rsplit(".",1)[-1]
@@ -41,8 +56,7 @@ def extract(url:str):
                     parts.extend(" | ".join(cell.text for cell in row.cells) for row in table.rows)
                 return meta,"\n".join(parts).strip()
             if suffix=="doc":
-                cp=subprocess.run(["antiword",str(target)],check=True,capture_output=True,text=True)
-                return meta,cp.stdout.strip()
+                return meta,extract_legacy_doc(target,td)
             subprocess.run(["libreoffice","--headless","--convert-to","txt:Text","--outdir",td,str(target)],check=True,capture_output=True,text=True)
             out=target.with_suffix(".txt")
             return meta,(out.read_text(encoding="utf-8",errors="replace") if out.exists() else "").strip()

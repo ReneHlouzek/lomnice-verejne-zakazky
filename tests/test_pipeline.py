@@ -233,6 +233,23 @@ def test_attachment_filename_mismatch_is_flagged_for_review():
     assert not doc_extractor.filename_content_mismatch(filename, matching_text)
 
 
+def test_legacy_doc_extraction_falls_back_to_libreoffice_when_antiword_is_missing(tmp_path):
+    from unittest.mock import patch
+
+    target = tmp_path / "input.doc"
+    target.write_bytes(b"legacy doc fixture")
+
+    def fake_run(command, **kwargs):
+        if command[0] == "antiword":
+            raise FileNotFoundError("antiword")
+        assert command[0] == "libreoffice"
+        target.with_suffix(".txt").write_text("Extracted legacy Word text", encoding="utf-8")
+        return type("Result", (), {"stdout": "", "stderr": ""})()
+
+    with patch("extract_registr_documents.subprocess.run", side_effect=fake_run):
+        assert doc_extractor.extract_legacy_doc(target, str(tmp_path)) == "Extracted legacy Word text"
+
+
 def test_registry_import_includes_city_as_counterparty_when_other_body_publishes():
     city_ico = "00275905"
     publisher_icos = {"12345678"}
