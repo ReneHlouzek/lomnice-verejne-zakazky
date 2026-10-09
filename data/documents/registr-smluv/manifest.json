@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-10-09T05:49:43Z",
+  "updated_at": "2026-10-09T06:12:44Z",
   "records_checked": 110,
   "attachments_declared": 3,
   "documents_discovered": 3,
-  "documents_downloaded": 1,
+  "documents_downloaded": 0,
   "documents_text_extracted": 3,
   "records": [
     {
@@ -672,13 +672,11 @@
           "index": 1,
           "name": "Smlouva_Lomnice_n.Popelkou%20komplet.pdf",
           "url": "https://smlouvy.gov.cz/smlouva/soubor/47248726/Smlouva_Lomnice_n.Popelkou%20komplet.pdf",
-          "sha256": "909ff2416a6784b8f0eecdb2fa84a28c0650ef128c0ac8de310136757c40537c",
-          "bytes": 2082603,
-          "content_type": "application/pdf",
           "text_available": true,
           "text_chars": 8853,
           "text_file": "data/documents/registr-smluv/36813062/001.txt",
-          "status": "retained_from_previous_run"
+          "status": "retained_existing_text",
+          "content_check": "no_filename_mismatch_detected"
         }
       ],
       "status": "ok"
@@ -696,7 +694,8 @@
           "text_available": true,
           "text_chars": 24954,
           "text_file": "data/documents/registr-smluv/36978239/001.txt",
-          "status": "retained_from_previous_run"
+          "status": "retained_existing_text",
+          "content_check": "no_filename_mismatch_detected"
         }
       ],
       "status": "ok"
@@ -714,7 +713,8 @@
           "text_available": true,
           "text_chars": 16817,
           "text_file": "data/documents/registr-smluv/37367969/001.txt",
-          "status": "retained_from_previous_run"
+          "status": "content_mismatch_review",
+          "content_check": "distinctive_filename_terms_absent_from_text"
         }
       ],
       "status": "ok"
