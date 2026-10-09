@@ -231,3 +231,17 @@ def test_attachment_filename_mismatch_is_flagged_for_review():
     matching_text = "Dodatek č. 1 k dotaci na akci Želechy."
     assert doc_extractor.filename_content_mismatch(filename, unrelated_text)
     assert not doc_extractor.filename_content_mismatch(filename, matching_text)
+
+
+def test_registry_import_includes_city_as_counterparty_when_other_body_publishes():
+    city_ico = "00275905"
+    publisher_icos = {"12345678"}
+    all_icos = {"12345678", city_ico}
+    assert registr.record_involves_ico(publisher_icos, all_icos, city_ico)
+
+
+def test_registry_import_excludes_records_unrelated_to_city():
+    city_ico = "00275905"
+    publisher_icos = {"12345678"}
+    all_icos = {"12345678", "87654321"}
+    assert not registr.record_involves_ico(publisher_icos, all_icos, city_ico)
