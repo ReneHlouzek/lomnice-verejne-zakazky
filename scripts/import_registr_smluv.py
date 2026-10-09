@@ -160,6 +160,11 @@ def parse_dumps(root: ET.Element) -> list[dict]:
     return sorted(unique.values(), key=lambda d: (d["year"], d["month"]))
 
 
+def record_involves_ico(publisher_icos: set[str], all_icos: set[str], ico: str) -> bool:
+    """Return whether the city is the publisher or any party to a registry record."""
+    return ico in publisher_icos or ico in all_icos
+
+
 def extract_records(path: Path, ico: str) -> Iterable[dict]:
     for _, elem in ET.iterparse(path, events=("end",)):
         if local(elem.tag) != "zaznam":
@@ -177,15 +182,13 @@ def extract_records(path: Path, ico: str) -> Iterable[dict]:
             for key in ("ico", "ic", "icopublikujiciho", "icoPublikujiciho", "icoosoby")
             for x in m.get(key, [])
         }
-        # The city's contract-register view should contain contracts published
-        # by the city, not every contract in which the city merely appears as
-        # another contracting party. Prefer the explicit publisher ICO when the
-        # export provides it; keep the broader fallback for older dump schemas.
-        if publisher_icos:
-            if ico not in publisher_icos:
-                elem.clear()
-                continue
-        elif ico not in all_icos:
+        # Include every record in which the city is involved, not only records
+        # published by the city. Contracts can be published by another public
+        # body (for example, a regional association) while the city is still a
+        # contracting party. The full record's ICO set includes both publisher
+        # and contracting parties; publisher_icos remains separately retained
+        # as metadata and must not be used as an exclusive inclusion filter.
+        if not record_involves_ico(publisher_icos, all_icos, ico):
             elem.clear()
             continue
 
