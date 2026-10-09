@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Download and text-extract attachments exposed by the official Contract Register."""
 from __future__ import annotations
-import hashlib, io, json, time
+import hashlib, io, json, time, re, unicodedata
+from urllib.parse import unquote
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 import requests
@@ -69,6 +70,30 @@ def extract(url:str):
         except Exception: parts.append("")
     return meta,"\n\n".join(parts).strip()
 
+def normalized_words(value:str)->set[str]:
+    value=unicodedata.normalize("NFKD", unquote(value or ""))
+    value="".join(ch for ch in value if not unicodedata.combining(ch)).lower()
+    return set(re.findall(r"[a-z]{4,}", value))
+
+def filename_content_mismatch(name:str, text:str|None)->bool:
+    """Flag likely wrong attachment payloads when a distinctive filename name is absent from extracted text."""
+    decoded=unquote(name or "")
+    stem=decoded.rsplit("/",1)[-1].rsplit(".",1)[0]
+    words=normalized_words(stem)
+    generic={
+        "dodatek","smlouva","smlouvy","priloha","prilohy","dokument","scan",
+        "final","verze","navrh","podpis","podepsano","signed","document",
+        "contract","agreement","attachment","copy","kopie","strana","strany",
+        "cislo","castka","rozpocet","projekt","mesto","obec","kraj"
+    }
+    distinctive=words-generic
+    if not distinctive or not text:
+        return False
+    body_words=normalized_words(text)
+    # A single meaningful filename token is enough to establish overlap. If
+    # none appears in the extracted body, retain the text but require review.
+    return not bool(distinctive & body_words)
+
 def process(path:Path):
     obj=json.loads(path.read_text(encoding="utf-8"))
     rec=obj.get("record",obj)
@@ -95,7 +120,12 @@ def process(path:Path):
             item["text_available"]=bool(text)
             item["text_chars"]=len(text)
             item["text_file"]=f"data/documents/registr-smluv/{sid}/{i:03d}.txt"
-            item["status"]="retained_existing_text"
+            if filename_content_mismatch(clean_name, text):
+                item["status"]="content_mismatch_review"
+                item["content_check"]="distinctive_filename_terms_absent_from_text"
+            else:
+                item["status"]="retained_existing_text"
+                item["content_check"]="no_filename_mismatch_detected"
             result["documents"].append(item)
             continue
         try:
@@ -103,6 +133,11 @@ def process(path:Path):
             item.update(meta)
             item["text_available"]=bool(text)
             item["text_chars"]=len(text or "")
+            if filename_content_mismatch(clean_name, text):
+                item["status"]="content_mismatch_review"
+                item["content_check"]="distinctive_filename_terms_absent_from_text"
+            elif text:
+                item["content_check"]="no_filename_mismatch_detected"
             if text:
                 outdir=OUT/sid
                 outdir.mkdir(parents=True,exist_ok=True)
