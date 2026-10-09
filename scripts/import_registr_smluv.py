@@ -27,6 +27,8 @@ CONTRACTS = OUT_DIR / "contracts.json"
 MANIFEST = OUT_DIR / "manifest.json"
 NS_RE = re.compile(r"\{[^}]+\}")
 
+FILTER_VERSION = "city-party-v2"
+
 
 def text(el: ET.Element | None) -> str:
     return "" if el is None else " ".join("".join(el.itertext()).split())
@@ -101,6 +103,14 @@ def publisher_info(elem: ET.Element) -> tuple[set[str], str]:
     # Some exports use a publishing-subject container without an ICO-specific
     # tag. In that case inspect its descendants and recover the ICO/name.
     return icos, (names[0] if names else "")
+
+
+def processed_dumps_for_current_filter(manifest: dict) -> dict[str, str]:
+    """Invalidate historical completion markers when the import scope changes."""
+    if manifest.get("filter_version") != FILTER_VERSION:
+        return {}
+    processed = manifest.get("processed_dumps", {})
+    return processed if isinstance(processed, dict) else {}
 
 
 def period_key(d: dict) -> str:
@@ -337,6 +347,7 @@ def save_outputs(
             {
                 "updated_at": datetime.now(timezone.utc).isoformat(),
                 "publisher_ico": normalize_ico(settings.get("publisher_ico", "00275905")),
+                "filter_version": FILTER_VERSION,
                 "history_from": settings.get("history_from", "2016-07"),
                 "recent_months": int(settings.get("recent_months", 2)),
                 "batch_size": int(settings.get("batch_size", 12)),
@@ -401,7 +412,7 @@ def main() -> None:
     historical = dumps[:-recent_months] if len(dumps) > recent_months else []
 
     old_manifest = json.loads(MANIFEST.read_text(encoding="utf-8")) if MANIFEST.exists() else {}
-    processed = old_manifest.get("processed_dumps", {})
+    processed = processed_dumps_for_current_filter(old_manifest)
     records_by_id: dict[str, dict] = {}
     old_contracts = json.loads(CONTRACTS.read_text(encoding="utf-8")) if CONTRACTS.exists() else {}
     for r in old_contracts.get("records", []):
