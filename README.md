@@ -143,3 +143,14 @@ Hlavní kroky datového sestavení odpovídají pořadí ve workflow `sync.yml`.
 ## Zásada transparentnosti
 
 Každý významný údaj a analytický signál má být dohledatelný ke zdrojovému záznamu, dokumentu nebo reprodukovatelnému výpočtu. Cílem je srozumitelný a kontrolovatelný archiv veřejných informací, nikoli automatické vynášení závěrů o jednotlivých smlouvách či osobách.
+
+
+## Průběžný audit při navázání práce – 9. 10. 2026, 06:23 UTC
+
+Tento záznam doplňuje předávací plán; nejde o potvrzení dokončení celé synchronizace ani všech navazujících úkolů.
+
+- **Stav synchronizace:** poslední nalezený datový commit je `be0cf221325a0532373715187faaf2e2c93c7cb5` z 9. 10. 2026 v 06:13:01 UTC. Následný commit s předáním práce je `f5a501eab455d784ddbae5b8f4b1b97cb26c5509` z 06:22:07 UTC. Samotné commity nepotvrzují výsledek všech jobů workflow `sync.yml`; stav běhu je třeba ještě ověřit v GitHub Actions.
+- **Dokument `37367969`: potvrzený nesoulad obsahu a názvu přílohy.** Manifest `data/documents/registr-smluv/manifest.json` označuje přílohu `Želechy - Dodatek č. 1.docx` jako `content_mismatch_review`. Archivovaný text `data/documents/registr-smluv/37367969/001.txt` začíná smlouvou T-Mobile a Města Hodonín a uvádí katastrální území Hodonín. To není důkaz, že dokument patří k záznamu v Lomnici; text se nesmí používat jako důkaz pro propojení lomnických smluv. Zatím je zachována auditní stopa a příznak kontroly, nikoli potvrzení správnosti přílohy. Oficiální záznam: https://smlouvy.gov.cz/smlouva/39741021
+- **Košov – obnova vodovodu:** oficiální záznam základní smlouvy je [ID 29417636, verze 31432352](https://smlouvy.gov.cz/smlouva/31432352), uzavřená 11. 12. 2024, zveřejněná 16. 12. 2024, hodnota 2 880 000 Kč bez DPH. Oficiální záznam dodatku je [ID 32731945, verze 34905225](https://smlouvy.gov.cz/smlouva/34905225), uzavřený 22. 9. 2025, zveřejněný 23. 9. 2025, hodnota 1 323 950,25 Kč bez DPH. Oba záznamy uvádějí Vodohospodářské sdružení Turnov jako publikující subjekt, Město Lomnice nad Popelkou jako smluvní stranu a výslovně se týkají Košova a obnovy vodovodu. To silně podporuje věcnou souvislost, ale v aktuálně uložených metadatech není u dodatku zachyceno explicitní ID návazné smlouvy a v dokumentovém manifestu nejsou přílohy pro tyto dva záznamy. Podle pravidel projektu proto vazba zůstává kandidátem, dokud nebude ověřena přímo v textu dodatku nebo jednoznačných metadatech.
+- **Další záznam `37367969` není doložen jako součást řetězce Košov.** Jeho obecný název sám nestačí a příloha vykazuje výše popsaný nesoulad. Nepoužívat jej jako důkaz pro Košov.
+- **Další krok:** nejprve ověřit poslední běh `sync.yml` a jeho testy v GitHub Actions; pak dohledat a získat oficiální přílohy pro oba záznamy Košov, ověřit text dodatku a jeho návaznost. Poté pokračovat záznamy `3861664`, `25099803`, `28586216` a `33854349`. Po změnách spustit `pytest -q tests`, ověřit výsledné JSON soubory a teprve pak aktualizovat potvrzené počty.
