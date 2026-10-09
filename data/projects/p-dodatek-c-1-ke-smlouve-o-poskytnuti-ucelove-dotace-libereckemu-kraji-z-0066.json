@@ -68,7 +68,7 @@
         "source": "registr-smluv",
         "source_id": "845225",
         "version_id": "899853",
-        "source_url": "https://smlouvy.gov.cz/smlouva/845225",
+        "source_url": "https://smlouvy.gov.cz/smlouva/899853",
         "title": "Dodatek č. 1 ke smlouvě o poskytnutí účelové dotace Libereckému kraji z rozpočtu Města Lomnice nad Popelkou",
         "buyer_ico": "00275905",
         "supplier_ico": "70891508",
@@ -88,11 +88,16 @@
           "source": "registr-smluv",
           "source_id": "845225",
           "version_id": "899853",
-          "source_url": "https://smlouvy.gov.cz/smlouva/845225",
+          "source_url": "https://smlouvy.gov.cz/smlouva/899853",
           "title": "Dodatek č. 1 ke smlouvě o poskytnutí účelové dotace Libereckému kraji z rozpočtu Města Lomnice nad Popelkou",
           "buyer_ico": "00275905",
           "supplier_ico": "70891508",
           "contract_number": "06_D01_OLP_2674_2016",
+          "related_contract_ids": [
+            "2264882",
+            "3753"
+          ],
+          "related_contract_numbers": [],
           "date": "2016-12-22",
           "signed_date": "2016-12-22",
           "published": "",
@@ -101,10 +106,16 @@
           "publisher": "",
           "subject": "Dodatek č. 1 ke smlouvě o poskytnutí účelové dotace Libereckému kraji z rozpočtu Města Lomnice nad Popelkou",
           "counterparty": "Liberecký kraj",
-          "detail_url": "https://smlouvy.gov.cz/smlouva/845225",
-          "related_contract_ids": [
-            "2264882",
-            "3753"
+          "detail_url": "https://smlouvy.gov.cz/smlouva/899853",
+          "attachments": [
+            {
+              "url": "https://smlouvy.gov.cz/smlouva/soubor/1308845/D01_OLP_2674_2016.pdf",
+              "name": "D01_OLP_2674_2016.pdf"
+            },
+            {
+              "url": "https://smlouvy.gov.cz/smlouva/soubor/1308849/OLP_2674_2016.pdf",
+              "name": "OLP_2674_2016.pdf"
+            }
           ]
         },
         "_source_file": "data/sources/registr-smluv/rs-000014.json"

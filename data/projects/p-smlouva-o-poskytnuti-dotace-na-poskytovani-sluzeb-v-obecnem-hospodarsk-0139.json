@@ -70,7 +70,7 @@
         "source": "registr-smluv",
         "source_id": "286209",
         "version_id": "305769",
-        "source_url": "https://smlouvy.gov.cz/smlouva/286209",
+        "source_url": "https://smlouvy.gov.cz/smlouva/305769",
         "title": "Smlouva o poskytnutí dotace na poskytování služeb v obecném hospodářském zájmu z rozpočtu Libereckého kraje č. OLP/4637/2016",
         "buyer_ico": "00275905",
         "supplier_ico": "70891508",
@@ -87,11 +87,13 @@
           "source": "registr-smluv",
           "source_id": "286209",
           "version_id": "305769",
-          "source_url": "https://smlouvy.gov.cz/smlouva/286209",
+          "source_url": "https://smlouvy.gov.cz/smlouva/305769",
           "title": "Smlouva o poskytnutí dotace na poskytování služeb v obecném hospodářském zájmu z rozpočtu Libereckého kraje č. OLP/4637/2016",
           "buyer_ico": "00275905",
           "supplier_ico": "70891508",
           "contract_number": "",
+          "related_contract_ids": [],
+          "related_contract_numbers": [],
           "date": "2016-09-23",
           "signed_date": "2016-09-23",
           "published": "",
@@ -100,7 +102,13 @@
           "publisher": "",
           "subject": "Smlouva o poskytnutí dotace na poskytování služeb v obecném hospodářském zájmu z rozpočtu Libereckého kraje č. OLP/4637/2016",
           "counterparty": "Liberecký kraj",
-          "detail_url": "https://smlouvy.gov.cz/smlouva/286209"
+          "detail_url": "https://smlouvy.gov.cz/smlouva/305769",
+          "attachments": [
+            {
+              "url": "https://smlouvy.gov.cz/smlouva/soubor/421793/Mesto_Lomnice_nad_Popelkou.pdf",
+              "name": "Mesto_Lomnice_nad_Popelkou.pdf"
+            }
+          ]
         },
         "_source_file": "data/sources/registr-smluv/rs-000007.json"
       }

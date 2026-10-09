@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-10-09T07:06:24Z",
+  "updated_at": "2026-10-09T09:07:11Z",
   "records_checked": 110,
-  "attachments_declared": 3,
-  "documents_discovered": 3,
-  "documents_downloaded": 0,
-  "documents_text_extracted": 3,
+  "attachments_declared": 44,
+  "documents_discovered": 44,
+  "documents_downloaded": 40,
+  "documents_text_extracted": 38,
   "records": [
     {
       "source": "registr-smluv",
@@ -34,8 +34,34 @@
       "source": "registr-smluv",
       "source_id": "1078317",
       "title": "Darovací smlouva - zabezpečení mateřských škol",
-      "page_url": "https://smlouvy.gov.cz/smlouva/1078317",
-      "documents": [],
+      "page_url": "https://smlouvy.gov.cz/smlouva/1147897",
+      "documents": [
+        {
+          "index": 1,
+          "name": "darovaci%20smlouva%20Lomnice.pdf",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/1679453/darovaci%20smlouva%20Lomnice.pdf",
+          "sha256": "356bdd55232483b7aab497b6408f348dda62ef15a1bc4e8918fa4e6d279f35b7",
+          "bytes": 510750,
+          "content_type": "application/pdf",
+          "text_available": true,
+          "text_chars": 3236,
+          "content_check": "no_filename_mismatch_detected",
+          "text_file": "data/documents/registr-smluv/1078317/001.txt"
+        },
+        {
+          "index": 2,
+          "name": "Priloha%20Lomnice.pdf",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/1679457/Priloha%20Lomnice.pdf",
+          "sha256": "f2de746014ccf641bf9149bf9d270caf3f03abef040a221125250962ca43bb78",
+          "bytes": 415372,
+          "content_type": "application/pdf",
+          "text_available": true,
+          "text_chars": 2774,
+          "status": "content_mismatch_review",
+          "content_check": "distinctive_filename_terms_absent_from_text",
+          "text_file": "data/documents/registr-smluv/1078317/002.txt"
+        }
+      ],
       "status": "ok"
     },
     {
@@ -82,8 +108,21 @@
       "source": "registr-smluv",
       "source_id": "1287978",
       "title": "Financování registrovaných sociálních služeb dle zákona č. 108/2006 Sb., o sociálních službách, ve znění pozdějších předpisů.",
-      "page_url": "https://smlouvy.gov.cz/smlouva/1287978",
-      "documents": [],
+      "page_url": "https://smlouvy.gov.cz/smlouva/1380934",
+      "documents": [
+        {
+          "index": 1,
+          "name": "017Mesto_Lomnice_nad_Pop_SenovSmlouva_dotace_2017_%282167636%29.pdf",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/2008802/017Mesto_Lomnice_nad_Pop_SenovSmlouva_dotace_2017_%282167636%29.pdf",
+          "sha256": "06401acde3a5ba3b95cd02b24dc4879f425f30cc9312c045c1bb0d7896e2ef12",
+          "bytes": 1144279,
+          "content_type": "application/pdf",
+          "text_available": true,
+          "text_chars": 37726,
+          "content_check": "no_filename_mismatch_detected",
+          "text_file": "data/documents/registr-smluv/1287978/001.txt"
+        }
+      ],
       "status": "ok"
     },
     {
@@ -114,8 +153,19 @@
       "source": "registr-smluv",
       "source_id": "1426690",
       "title": "Veřejnoprávní smlouva o poskytnutí neinvestiční dotace z rozpočtu města Lomnice nad Popelkou",
-      "page_url": "https://smlouvy.gov.cz/smlouva/1426690",
-      "documents": [],
+      "page_url": "https://smlouvy.gov.cz/smlouva/1541114",
+      "documents": [
+        {
+          "index": 1,
+          "name": "Lomnice%20n.%20P..pdf",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/2223278/Lomnice%20n.%20P..pdf",
+          "sha256": "7bf3c2c54f5e8d3e9cf5238b575146326b090c274da36ae906f3a4d7dc5ecbdc",
+          "bytes": 1315828,
+          "content_type": "application/pdf",
+          "text_available": false,
+          "text_chars": 0
+        }
+      ],
       "status": "ok"
     },
     {
@@ -234,24 +284,63 @@
       "source": "registr-smluv",
       "source_id": "2125466",
       "title": "Smlouva o poskytnutí dotace z dotačního fondu LK v oblasti podpory Požární ochrany na ochranné prostředky",
-      "page_url": "https://smlouvy.gov.cz/smlouva/2125466",
-      "documents": [],
+      "page_url": "https://smlouvy.gov.cz/smlouva/2291178",
+      "documents": [
+        {
+          "index": 1,
+          "name": "Lomnice_nad_Popelkou1220.pdf",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/3231166/Lomnice_nad_Popelkou1220.pdf",
+          "sha256": "85e26a2f5e3b886fc12bb60967a7111c355e9db405baa5bbab5a7181111444d6",
+          "bytes": 238989,
+          "content_type": "application/pdf",
+          "text_available": true,
+          "text_chars": 24701,
+          "content_check": "no_filename_mismatch_detected",
+          "text_file": "data/documents/registr-smluv/2125466/001.txt"
+        }
+      ],
       "status": "ok"
     },
     {
       "source": "registr-smluv",
       "source_id": "2233702",
       "title": "Smlouva o poskytnutí dotace na SHP Rohanského zámečku v Lomnici nad Popelkou",
-      "page_url": "https://smlouvy.gov.cz/smlouva/2233702",
-      "documents": [],
+      "page_url": "https://smlouvy.gov.cz/smlouva/2408406",
+      "documents": [
+        {
+          "index": 1,
+          "name": "07_Smlouva_SHP_Mesto_Lomnice_nad_Popelkou.pdf",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/3398846/07_Smlouva_SHP_Mesto_Lomnice_nad_Popelkou.pdf",
+          "sha256": "b0c01286b9c15a2b1cb8abeb3f3965485a6a4af6a8ab5ce42e416e79a7f65ea2",
+          "bytes": 132315,
+          "content_type": "application/pdf",
+          "text_available": true,
+          "text_chars": 26079,
+          "content_check": "no_filename_mismatch_detected",
+          "text_file": "data/documents/registr-smluv/2233702/001.txt"
+        }
+      ],
       "status": "ok"
     },
     {
       "source": "registr-smluv",
       "source_id": "2264882",
       "title": "Dodatek č.2 ke Smlouvě o poskytnutí účelové dotace Libereckému kraji z rozpočtu Města Lomnice nad Popelkou na stavební akci „II/286 x II/284 Lomnice nad Popelkou - havárie zdi - nezpůsobilé výdaje“",
-      "page_url": "https://smlouvy.gov.cz/smlouva/2264882",
-      "documents": [],
+      "page_url": "https://smlouvy.gov.cz/smlouva/2442642",
+      "documents": [
+        {
+          "index": 1,
+          "name": "Dodatek_c_2_OLP_2674_2016.pdf",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/3449118/Dodatek_c_2_OLP_2674_2016.pdf",
+          "sha256": "6453b66df0f66ffc7208bc685fe15fff2372045e0d9868d94c479381fc1a2655",
+          "bytes": 149211,
+          "content_type": "application/pdf",
+          "text_available": true,
+          "text_chars": 4881,
+          "content_check": "no_filename_mismatch_detected",
+          "text_file": "data/documents/registr-smluv/2264882/001.txt"
+        }
+      ],
       "status": "ok"
     },
     {
@@ -266,8 +355,22 @@
       "source": "registr-smluv",
       "source_id": "2316654",
       "title": "Dodatek 1 Lomnice n.Popelkou - nájem NP",
-      "page_url": "https://smlouvy.gov.cz/smlouva/2316654",
-      "documents": [],
+      "page_url": "https://smlouvy.gov.cz/smlouva/2497810",
+      "documents": [
+        {
+          "index": 1,
+          "name": "8860-12-Lomnicen.P.%2CKUrnov%C3%A9muh%C3%A1ji118-Dodatek%C4%8D.1kNS.pdf",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/3525250/8860-12-Lomnicen.P.%2CKUrnov%C3%A9muh%C3%A1ji118-Dodatek%C4%8D.1kNS.pdf",
+          "sha256": "c46e38fc288782ca57e63307e3115991c1e89dbf1d7d15d8338fda4367af8d99",
+          "bytes": 584164,
+          "content_type": "application/pdf",
+          "text_available": true,
+          "text_chars": 2920,
+          "status": "content_mismatch_review",
+          "content_check": "distinctive_filename_terms_absent_from_text",
+          "text_file": "data/documents/registr-smluv/2316654/001.txt"
+        }
+      ],
       "status": "ok"
     },
     {
@@ -370,7 +473,7 @@
       "source": "registr-smluv",
       "source_id": "2642022",
       "title": "Smlouva o organizování veřejné služby",
-      "page_url": "https://smlouvy.gov.cz/smlouva/2642022",
+      "page_url": "https://smlouvy.gov.cz/smlouva/2843326",
       "documents": [],
       "status": "ok"
     },
@@ -394,8 +497,21 @@
       "source": "registr-smluv",
       "source_id": "2704422",
       "title": "Smlouva : \" Lomnice nad Popelkou a Nowogrodziec-společná cesta časem \"",
-      "page_url": "https://smlouvy.gov.cz/smlouva/2704422",
-      "documents": [],
+      "page_url": "https://smlouvy.gov.cz/smlouva/2910678",
+      "documents": [
+        {
+          "index": 1,
+          "name": "P_2017_05_10%20-%201029.pdf",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/4069630/P_2017_05_10%20-%201029.pdf",
+          "sha256": "948e21b0f2eb9cab994a1b58a3b67b7c6bd58a47b74a19d0912aac348d55d88f",
+          "bytes": 500839,
+          "content_type": "application/pdf",
+          "text_available": true,
+          "text_chars": 36828,
+          "content_check": "no_filename_mismatch_detected",
+          "text_file": "data/documents/registr-smluv/2704422/001.txt"
+        }
+      ],
       "status": "ok"
     },
     {
@@ -450,8 +566,21 @@
       "source": "registr-smluv",
       "source_id": "286209",
       "title": "Smlouva o poskytnutí dotace na poskytování služeb v obecném hospodářském zájmu z rozpočtu Libereckého kraje č. OLP/4637/2016",
-      "page_url": "https://smlouvy.gov.cz/smlouva/286209",
-      "documents": [],
+      "page_url": "https://smlouvy.gov.cz/smlouva/305769",
+      "documents": [
+        {
+          "index": 1,
+          "name": "Mesto_Lomnice_nad_Popelkou.pdf",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/421793/Mesto_Lomnice_nad_Popelkou.pdf",
+          "sha256": "2b22c379ee1b91c296d14fd42894f82027de568e4af1a201ca62a3aa1e1c1e8e",
+          "bytes": 281235,
+          "content_type": "application/pdf",
+          "text_available": true,
+          "text_chars": 19685,
+          "content_check": "no_filename_mismatch_detected",
+          "text_file": "data/documents/registr-smluv/286209/001.txt"
+        }
+      ],
       "status": "ok"
     },
     {
@@ -466,8 +595,21 @@
       "source": "registr-smluv",
       "source_id": "301745",
       "title": "poskytnutí účelové neinvestiční dotace na vypracování plánu ochrany pro památkovou zónu města Lomnice nad Popelkou - 2. a 3. etapa",
-      "page_url": "https://smlouvy.gov.cz/smlouva/301745",
-      "documents": [],
+      "page_url": "https://smlouvy.gov.cz/smlouva/322201",
+      "documents": [
+        {
+          "index": 1,
+          "name": "OLP_3833_2016_plany_ochrany_Lomnice_n_Popelkou.pdf",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/446857/OLP_3833_2016_plany_ochrany_Lomnice_n_Popelkou.pdf",
+          "sha256": "c8ed54c5bf6308077238415ac351ab2e375b3003bc1dcd5e90a4ad66ec7e0f5f",
+          "bytes": 186235,
+          "content_type": "application/pdf",
+          "text_available": true,
+          "text_chars": 25740,
+          "content_check": "no_filename_mismatch_detected",
+          "text_file": "data/documents/registr-smluv/301745/001.txt"
+        }
+      ],
       "status": "ok"
     },
     {
@@ -490,16 +632,42 @@
       "source": "registr-smluv",
       "source_id": "3124922",
       "title": "Smlouva o bezúplatném převodu privatizovaného majetku do vlastnictví obce - Města Lomnice nad Popelkou - nemovitost v k.ú. Rváčov (účetní hodnota převáděného majetku činí 3000,-Kč) (AVISme 2017000988)",
-      "page_url": "https://smlouvy.gov.cz/smlouva/3124922",
-      "documents": [],
+      "page_url": "https://smlouvy.gov.cz/smlouva/3367966",
+      "documents": [
+        {
+          "index": 1,
+          "name": "zz_Dokument%201%20k%20_Smlouva%20-%20%C4%8D.%20170450275_.pdf",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/4694590/zz_Dokument%201%20k%20_Smlouva%20-%20%C4%8D.%20170450275_.pdf",
+          "sha256": "45db63c3308fd9adbeff79cc391ef0366c68b88a4bd09ce3723764f789769f1e",
+          "bytes": 161308,
+          "content_type": "application/pdf",
+          "text_available": true,
+          "text_chars": 8396,
+          "content_check": "no_filename_mismatch_detected",
+          "text_file": "data/documents/registr-smluv/3124922/001.txt"
+        }
+      ],
       "status": "ok"
     },
     {
       "source": "registr-smluv",
       "source_id": "3132722",
       "title": "Změna výše celkové neinvestiční alokace výhradně na použití na provoz základních činností organizace, tj. na úhradu nákladů souvisejících s poskytováním základních činností veřejné služby.",
-      "page_url": "https://smlouvy.gov.cz/smlouva/3132722",
-      "documents": [],
+      "page_url": "https://smlouvy.gov.cz/smlouva/3376474",
+      "documents": [
+        {
+          "index": 1,
+          "name": "Dodatekc_1Mesto_Lomnice_nad_Popelkou.pdf",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/4706654/Dodatekc_1Mesto_Lomnice_nad_Popelkou.pdf",
+          "sha256": "725fccb46756d36a0eda4954d14c5001dc4b5109478b56c8350c421ba70e44bf",
+          "bytes": 260489,
+          "content_type": "application/pdf",
+          "text_available": true,
+          "text_chars": 4986,
+          "content_check": "no_filename_mismatch_detected",
+          "text_file": "data/documents/registr-smluv/3132722/001.txt"
+        }
+      ],
       "status": "ok"
     },
     {
@@ -538,8 +706,21 @@
       "source": "registr-smluv",
       "source_id": "3312200",
       "title": "Darovací smlouva - RDS Lomnice n. Popel.",
-      "page_url": "https://smlouvy.gov.cz/smlouva/3312200",
-      "documents": [],
+      "page_url": "https://smlouvy.gov.cz/smlouva/3572296",
+      "documents": [
+        {
+          "index": 1,
+          "name": "%23DS_Lomnice_nad_Popelkou.pdf",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/4968060/%23DS_Lomnice_nad_Popelkou.pdf",
+          "sha256": "a1a863e429103aa2f9774db9ad9672d22bcaaa8e54293cd128acb0aeccd2b2c4",
+          "bytes": 167665,
+          "content_type": "application/pdf",
+          "text_available": true,
+          "text_chars": 4391,
+          "content_check": "no_filename_mismatch_detected",
+          "text_file": "data/documents/registr-smluv/3312200/001.txt"
+        }
+      ],
       "status": "ok"
     },
     {
@@ -686,18 +867,7 @@
       "source_id": "36978239",
       "title": "Smlouva o poskytnutí individuální dotace Město Lomnice nad Popelkou, ul 5. května",
       "page_url": "https://smlouvy.gov.cz/smlouva/39335147",
-      "documents": [
-        {
-          "index": 1,
-          "name": "Smlouva_individualni_dotace_Lomnice_OLP-02908-2026_sig.pdf",
-          "url": "https://smlouvy.gov.cz/smlouva/soubor/47440583/Smlouva_individualni_dotace_Lomnice_OLP-02908-2026_sig.pdf",
-          "text_available": true,
-          "text_chars": 24954,
-          "text_file": "data/documents/registr-smluv/36978239/001.txt",
-          "status": "retained_existing_text",
-          "content_check": "no_filename_mismatch_detected"
-        }
-      ],
+      "documents": [],
       "status": "ok"
     },
     {
@@ -723,200 +893,546 @@
       "source": "registr-smluv",
       "source_id": "3753",
       "title": "Smlouva o poskytnutí účelové dotace Libereckému kraji z rozpočtu města Lomnice nad Popelkou",
-      "page_url": "https://smlouvy.gov.cz/smlouva/3753",
-      "documents": [],
+      "page_url": "https://smlouvy.gov.cz/smlouva/3869",
+      "documents": [
+        {
+          "index": 1,
+          "name": "OLP_2674_2016.pdf",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/4657/OLP_2674_2016.pdf",
+          "sha256": "96bdd62cccb276738140b7885a093114db3b5921c3f94e43b0d5794186d0bf99",
+          "bytes": 91273,
+          "content_type": "application/pdf",
+          "text_available": true,
+          "text_chars": 11610,
+          "content_check": "no_filename_mismatch_detected",
+          "text_file": "data/documents/registr-smluv/3753/001.txt"
+        }
+      ],
       "status": "ok"
     },
     {
       "source": "registr-smluv",
       "source_id": "3861664",
       "title": "Dodatek č. 1 k veřejnoprávní smlouvě o poskynutí neinvestiční dotace",
-      "page_url": "https://smlouvy.gov.cz/smlouva/3861664",
-      "documents": [],
+      "page_url": "https://smlouvy.gov.cz/smlouva/4164556",
+      "documents": [
+        {
+          "index": 1,
+          "name": "LOM_KARL_Ve%C5%99ejnopr%C3%A1vn%C3%AD%20sml.%20dodatek.doc",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/5756872/LOM_KARL_Ve%C5%99ejnopr%C3%A1vn%C3%AD%20sml.%20dodatek.doc",
+          "status": "download_error",
+          "error": "[Errno 2] No such file or directory: 'antiword'"
+        }
+      ],
       "status": "ok"
     },
     {
       "source": "registr-smluv",
       "source_id": "40425",
       "title": "Smlouva o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje, Tělovýchova a sport - Sportovní akce",
-      "page_url": "https://smlouvy.gov.cz/smlouva/40425",
-      "documents": [],
+      "page_url": "https://smlouvy.gov.cz/smlouva/41973",
+      "documents": [
+        {
+          "index": 1,
+          "name": "04708_OLP_2514_2016.pdf",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/54685/04708_OLP_2514_2016.pdf",
+          "sha256": "4a8cc3a8bada0bf3b1a95a4fef30c5bbe73c6cda5e075c41bd86bd040d65659d",
+          "bytes": 134141,
+          "content_type": "application/pdf",
+          "text_available": true,
+          "text_chars": 23997,
+          "content_check": "no_filename_mismatch_detected",
+          "text_file": "data/documents/registr-smluv/40425/001.txt"
+        }
+      ],
       "status": "ok"
     },
     {
       "source": "registr-smluv",
       "source_id": "4098080",
       "title": "o převodu z majetku ČR s právem hospodařit pro LČR",
-      "page_url": "https://smlouvy.gov.cz/smlouva/4098080",
-      "documents": [],
+      "page_url": "https://smlouvy.gov.cz/smlouva/4414800",
+      "documents": [
+        {
+          "index": 1,
+          "name": "SML-00131-2017-170.pdf",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/6093576/SML-00131-2017-170.pdf",
+          "sha256": "00c69fb935b23cfe312d78be8fccfb8dd0f27eb1e9d4e9f9609a82feb14ff308",
+          "bytes": 176771,
+          "content_type": "application/pdf",
+          "text_available": true,
+          "text_chars": 11379,
+          "content_check": "no_filename_mismatch_detected",
+          "text_file": "data/documents/registr-smluv/4098080/001.txt"
+        }
+      ],
       "status": "ok"
     },
     {
       "source": "registr-smluv",
       "source_id": "426037",
       "title": "Dodatek č. 1 ke smlouvě o poskytnutí dotace na poskytování služeb v obecném hospodářském zájmu z rozpočtu Libereckého kraje z finančních prostředků Ministerstva práce a sociálních věcí, č. OLP/588/2016",
-      "page_url": "https://smlouvy.gov.cz/smlouva/426037",
-      "documents": [],
+      "page_url": "https://smlouvy.gov.cz/smlouva/453713",
+      "documents": [
+        {
+          "index": 1,
+          "name": "Mesto_Lomnice_nad_Popelkou_Dodatek_1_ke_Smlouve_DOTACE.pdf",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/645573/Mesto_Lomnice_nad_Popelkou_Dodatek_1_ke_Smlouve_DOTACE.pdf",
+          "sha256": "c04306bf18568d5abeab5a7f97013fdda3154af287628500b2e8af1c2c03f066",
+          "bytes": 245879,
+          "content_type": "application/pdf",
+          "text_available": true,
+          "text_chars": 3170,
+          "content_check": "no_filename_mismatch_detected",
+          "text_file": "data/documents/registr-smluv/426037/001.txt"
+        },
+        {
+          "index": 2,
+          "name": "Smlouva_dotace_2016_Mesto_Lomnice_nad_Popelkou.pdf",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/645577/Smlouva_dotace_2016_Mesto_Lomnice_nad_Popelkou.pdf",
+          "sha256": "7266e526a29b0f38273680d7c0b415d74347cd04580400002a11d224ab725128",
+          "bytes": 784383,
+          "content_type": "application/pdf",
+          "text_available": true,
+          "text_chars": 36841,
+          "content_check": "no_filename_mismatch_detected",
+          "text_file": "data/documents/registr-smluv/426037/002.txt"
+        }
+      ],
       "status": "ok"
     },
     {
       "source": "registr-smluv",
       "source_id": "4286240",
       "title": "Kamerový systém Lomnice nad Popelkou",
-      "page_url": "https://smlouvy.gov.cz/smlouva/4286240",
-      "documents": [],
+      "page_url": "https://smlouvy.gov.cz/smlouva/4618568",
+      "documents": [
+        {
+          "index": 1,
+          "name": "Kamerov%C3%BD%20syst%C3%A9m%20Lomnice%20nad%20Popelkou.pdf",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/6368200/Kamerov%C3%BD%20syst%C3%A9m%20Lomnice%20nad%20Popelkou.pdf",
+          "sha256": "ee75f1da8581ecf846fed916156efefa414f2852eaf16121793860509773abbc",
+          "bytes": 453702,
+          "content_type": "application/pdf",
+          "text_available": true,
+          "text_chars": 5473,
+          "content_check": "no_filename_mismatch_detected",
+          "text_file": "data/documents/registr-smluv/4286240/001.txt"
+        }
+      ],
       "status": "ok"
     },
     {
       "source": "registr-smluv",
       "source_id": "4618624",
       "title": "Poskytnutí účelové neinvestiční dotace na závazek veřejné služby z rozpočtu Libereckého kraje z finančních prostředků MPSV.",
-      "page_url": "https://smlouvy.gov.cz/smlouva/4618624",
-      "documents": [],
+      "page_url": "https://smlouvy.gov.cz/smlouva/4981564",
+      "documents": [
+        {
+          "index": 1,
+          "name": "Mesto_Lomnice_nad_Pop_Smlouva_dotace_2018.pdf",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/6848076/Mesto_Lomnice_nad_Pop_Smlouva_dotace_2018.pdf",
+          "sha256": "16d330d685b2796b8c4a5c80d8b552ea942b61a69805cef9f70dd76a7622c346",
+          "bytes": 658777,
+          "content_type": "application/pdf",
+          "text_available": true,
+          "text_chars": 37896,
+          "content_check": "no_filename_mismatch_detected",
+          "text_file": "data/documents/registr-smluv/4618624/001.txt"
+        }
+      ],
       "status": "ok"
     },
     {
       "source": "registr-smluv",
       "source_id": "496285",
       "title": "Veřejnoprávní smlouva o poskytnutí investiční dotace - Lomnice nad Popelkou - bytová zóna BM3 a BK2",
-      "page_url": "https://smlouvy.gov.cz/smlouva/496285",
-      "documents": [],
+      "page_url": "https://smlouvy.gov.cz/smlouva/528433",
+      "documents": [
+        {
+          "index": 1,
+          "name": "Ve%C5%99ejnopr%C3%A1vn%C3%AD%20smlouva%20o%20poskytnut%C3%AD%20dotace.pdf",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/757681/Ve%C5%99ejnopr%C3%A1vn%C3%AD%20smlouva%20o%20poskytnut%C3%AD%20dotace.pdf",
+          "sha256": "176055dce4377311f43ecf642656578bb98181303e75c0fe9512b8de6ccfa807",
+          "bytes": 1216639,
+          "content_type": "application/pdf",
+          "text_available": false,
+          "text_chars": 0
+        }
+      ],
       "status": "ok"
     },
     {
       "source": "registr-smluv",
       "source_id": "5136459",
       "title": "Veřejnoprávní smlouva o poskytnutí neinvestiční dotace z rozpočtu města Lomnice nad Popelkou na realizaci oprav Lomnice nad Popelkou - oprava VH sítí v ul. Za školou a Lomnice nad Popelkou - rekonstrukce VH sítí v ul. Karla Čapka",
-      "page_url": "https://smlouvy.gov.cz/smlouva/5136459",
-      "documents": [],
+      "page_url": "https://smlouvy.gov.cz/smlouva/5534295",
+      "documents": [
+        {
+          "index": 1,
+          "name": "Ve%C5%99ejnopr%C3%A1vn%C3%AD%20smlouva%20investi%C4%8Dn%C3%AD%20dotace%20Za%20%C5%A0kolou%20Karla%20%C4%8Capka.doc",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/7563127/Ve%C5%99ejnopr%C3%A1vn%C3%AD%20smlouva%20investi%C4%8Dn%C3%AD%20dotace%20Za%20%C5%A0kolou%20Karla%20%C4%8Capka.doc",
+          "status": "download_error",
+          "error": "[Errno 2] No such file or directory: 'antiword'"
+        }
+      ],
       "status": "ok"
     },
     {
       "source": "registr-smluv",
       "source_id": "5195191",
       "title": "Smlouva o poskytnutí účelové dotace na stavebníě historický průzkum Křížovy vily v Lomnici nad Popelkou",
-      "page_url": "https://smlouvy.gov.cz/smlouva/5195191",
-      "documents": [],
+      "page_url": "https://smlouvy.gov.cz/smlouva/5596175",
+      "documents": [
+        {
+          "index": 1,
+          "name": "OLP_2462_2018_Dotace_Lomnice_SHP.pdf",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/7641087/OLP_2462_2018_Dotace_Lomnice_SHP.pdf",
+          "sha256": "7e8291a9b79e2f17bf5ec4d0d1d5c43b2e09d1e3500ebdf5f7b9fddc0fa03f58",
+          "bytes": 143573,
+          "content_type": "application/pdf",
+          "text_available": true,
+          "text_chars": 25160,
+          "content_check": "no_filename_mismatch_detected",
+          "text_file": "data/documents/registr-smluv/5195191/001.txt"
+        }
+      ],
       "status": "ok"
     },
     {
       "source": "registr-smluv",
       "source_id": "5853423",
       "title": "Smlouva o poskytnutí účelové dotace - program 1.1.",
-      "page_url": "https://smlouvy.gov.cz/smlouva/5853423",
-      "documents": [],
+      "page_url": "https://smlouvy.gov.cz/smlouva/6307111",
+      "documents": [
+        {
+          "index": 1,
+          "name": "Lomnice_n_P_3174.pdf",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/8541719/Lomnice_n_P_3174.pdf",
+          "sha256": "3a820dca507250843e2a7c1d928e2e99dd7a0e17028ecd6b26f1d2457ecf64f8",
+          "bytes": 344397,
+          "content_type": "application/pdf",
+          "text_available": true,
+          "text_chars": 24439,
+          "content_check": "no_filename_mismatch_detected",
+          "text_file": "data/documents/registr-smluv/5853423/001.txt"
+        }
+      ],
       "status": "ok"
     },
     {
       "source": "registr-smluv",
       "source_id": "5857111",
       "title": "Poskytnutí dotace z Dotačního fondu Libereckého kraje program č.1.1 Podpora jednotek požární ochrany obcí Libereckého kraje",
-      "page_url": "https://smlouvy.gov.cz/smlouva/5857111",
-      "documents": [],
+      "page_url": "https://smlouvy.gov.cz/smlouva/6310991",
+      "documents": [
+        {
+          "index": 1,
+          "name": "Lomnice_n_P_3177.pdf",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/8546519/Lomnice_n_P_3177.pdf",
+          "sha256": "1704148e241035d5bdf12ea85231d47806457b4058276e831d423b4e33ba5d5f",
+          "bytes": 346787,
+          "content_type": "application/pdf",
+          "text_available": true,
+          "text_chars": 24733,
+          "content_check": "no_filename_mismatch_detected",
+          "text_file": "data/documents/registr-smluv/5857111/001.txt"
+        }
+      ],
       "status": "ok"
     },
     {
       "source": "registr-smluv",
       "source_id": "6375151",
       "title": "Smlouva o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje, programu 8.5 Podpora předcházení vzniku odpadů, jejich opětovného použití a podpora sběru a využití bioodpadu",
-      "page_url": "https://smlouvy.gov.cz/smlouva/6375151",
-      "documents": [],
+      "page_url": "https://smlouvy.gov.cz/smlouva/6880303",
+      "documents": [
+        {
+          "index": 1,
+          "name": "Lomnice_nad_Pop_sml_8.3_2018.pdf",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/9265435/Lomnice_nad_Pop_sml_8.3_2018.pdf",
+          "sha256": "84b32b3e4135fdee5ed7e69eeedbb2f0d9b3c790f49beb4a680d3af28e655fbc",
+          "bytes": 133654,
+          "content_type": "application/pdf",
+          "text_available": true,
+          "text_chars": 26745,
+          "content_check": "no_filename_mismatch_detected",
+          "text_file": "data/documents/registr-smluv/6375151/001.txt"
+        }
+      ],
       "status": "ok"
     },
     {
       "source": "registr-smluv",
       "source_id": "6414639",
       "title": "Dohoda o změně podmínek poskytnutí dotace na základě Smlouvy č. 9270370988,dle NV č. 146/2003 Sb.",
-      "page_url": "https://smlouvy.gov.cz/smlouva/6414639",
-      "documents": [],
+      "page_url": "https://smlouvy.gov.cz/smlouva/6923307",
+      "documents": [
+        {
+          "index": 1,
+          "name": "Smlouva%209270370988_zve%C5%99ejn%C4%9Bn%C3%AD.pdf",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/9319219/Smlouva%209270370988_zve%C5%99ejn%C4%9Bn%C3%AD.pdf",
+          "sha256": "bc5666d03fc4081afee6b7fe5997c13bc8af9a4bd051353aa69043e0b758e355",
+          "bytes": 1842884,
+          "content_type": "application/pdf",
+          "text_available": false,
+          "text_chars": 0
+        },
+        {
+          "index": 2,
+          "name": "Dohoda%20o%20zm%C4%9Bn%C4%9B%20podm%C3%ADnek%20poskytnut%C3%AD%20dotace%20na%20z%C3%A1klad%C4%9B%20Smlouvy%20%C4%8D.%209270370988_zve%C5%99ejn%C4%9Bn%C3%AD.pdf",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/9319215/Dohoda%20o%20zm%C4%9Bn%C4%9B%20podm%C3%ADnek%20poskytnut%C3%AD%20dotace%20na%20z%C3%A1klad%C4%9B%20Smlouvy%20%C4%8D.%209270370988_zve%C5%99ejn%C4%9Bn%C3%AD.pdf",
+          "sha256": "8ba3829188c04087140672bc3a1c4fa3ff133869cd1b7f9965692c11e3631072",
+          "bytes": 637293,
+          "content_type": "application/pdf",
+          "text_available": true,
+          "text_chars": 3761,
+          "content_check": "no_filename_mismatch_detected",
+          "text_file": "data/documents/registr-smluv/6414639/002.txt"
+        }
+      ],
       "status": "ok"
     },
     {
       "source": "registr-smluv",
       "source_id": "6439647",
       "title": "Změna výše celkové neinvestiční alokace, kterou lze použít výhradně na provoz základních činností organizace, tj. na úhradu nákladů souvisejících s poskytováním základních činností veřejné služby.",
-      "page_url": "https://smlouvy.gov.cz/smlouva/6439647",
-      "documents": [],
+      "page_url": "https://smlouvy.gov.cz/smlouva/6950807",
+      "documents": [
+        {
+          "index": 1,
+          "name": "Dodatek_c_1_Mesto_Lomnice_n_Popelkou.pdf",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/9353559/Dodatek_c_1_Mesto_Lomnice_n_Popelkou.pdf",
+          "sha256": "087650d1bb33a59c5e2617ad1692be698b9c72aa54d318dece4ba3f71bab7a33",
+          "bytes": 510982,
+          "content_type": "application/pdf",
+          "text_available": true,
+          "text_chars": 5562,
+          "content_check": "no_filename_mismatch_detected",
+          "text_file": "data/documents/registr-smluv/6439647/001.txt"
+        }
+      ],
       "status": "ok"
     },
     {
       "source": "registr-smluv",
       "source_id": "711165",
       "title": "Smlouva o spolupráci při zajištění dopravní obslužnosti Libereckého kraje na období od roku 2017 do roku 2019",
-      "page_url": "https://smlouvy.gov.cz/smlouva/711165",
-      "documents": [],
+      "page_url": "https://smlouvy.gov.cz/smlouva/755617",
+      "documents": [
+        {
+          "index": 1,
+          "name": "Smlouva_Lomnice_nad_Popelkou.pdf",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/1087369/Smlouva_Lomnice_nad_Popelkou.pdf",
+          "sha256": "9ff69055ade4af9fba760eeb543bf4c9d2765fd4fe2dd40ab6e615cb32d66745",
+          "bytes": 163762,
+          "content_type": "application/pdf",
+          "text_available": true,
+          "text_chars": 7229,
+          "content_check": "no_filename_mismatch_detected",
+          "text_file": "data/documents/registr-smluv/711165/001.txt"
+        }
+      ],
       "status": "ok"
     },
     {
       "source": "registr-smluv",
       "source_id": "7189",
       "title": "Smlouva o poskytnutí dotace z Dotačního fondu LK - Podpora jednotek požární ochrany obcí LK",
-      "page_url": "https://smlouvy.gov.cz/smlouva/7189",
-      "documents": [],
+      "page_url": "https://smlouvy.gov.cz/smlouva/7381",
+      "documents": [
+        {
+          "index": 1,
+          "name": "Lomnice_n_Popelkou1175.pdf",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/8609/Lomnice_n_Popelkou1175.pdf",
+          "sha256": "1c2f97e518bc5be8a6662fd5519b70dd9bfdac83503a4a85a1655e8f086401a3",
+          "bytes": 241581,
+          "content_type": "application/pdf",
+          "text_available": true,
+          "text_chars": 24514,
+          "content_check": "no_filename_mismatch_detected",
+          "text_file": "data/documents/registr-smluv/7189/001.txt"
+        }
+      ],
       "status": "ok"
     },
     {
       "source": "registr-smluv",
       "source_id": "761909",
       "title": "Veřejnoprávní smlouva o poskytnutí investiční dotace z rozpočtu města Lomnice n. P.",
-      "page_url": "https://smlouvy.gov.cz/smlouva/761909",
-      "documents": [],
+      "page_url": "https://smlouvy.gov.cz/smlouva/810513",
+      "documents": [
+        {
+          "index": 1,
+          "name": "ve%C5%99ejnopr%C3%A1vn%C3%AD%20smlouva%20Lomnice%20n.%20P..pdf",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/1174529/ve%C5%99ejnopr%C3%A1vn%C3%AD%20smlouva%20Lomnice%20n.%20P..pdf",
+          "sha256": "541fbfd284668b590a117ea77556b3d3eef447816d34e61673e412fc2c2a0386",
+          "bytes": 1332836,
+          "content_type": "application/pdf",
+          "text_available": false,
+          "text_chars": 0
+        }
+      ],
       "status": "ok"
     },
     {
       "source": "registr-smluv",
       "source_id": "7649691",
       "title": "Dohoda o poskytnutí dotace z Programu rozvoje venkova ČR - 18/003/19210/451/173/002129",
-      "page_url": "https://smlouvy.gov.cz/smlouva/7649691",
-      "documents": [],
+      "page_url": "https://smlouvy.gov.cz/smlouva/8257679",
+      "documents": [
+        {
+          "index": 1,
+          "name": "PRV_PRINT_OUTPUT_A.pdf",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/10964327/PRV_PRINT_OUTPUT_A.pdf",
+          "sha256": "fbef8f1cf197271f50f4d290687aa417941c48e75cce8cf458e1864c3c6c4181",
+          "bytes": 260090,
+          "content_type": "application/pdf",
+          "text_available": true,
+          "text_chars": 17910,
+          "status": "content_mismatch_review",
+          "content_check": "distinctive_filename_terms_absent_from_text",
+          "text_file": "data/documents/registr-smluv/7649691/001.txt"
+        }
+      ],
       "status": "ok"
     },
     {
       "source": "registr-smluv",
       "source_id": "774449",
       "title": "Lomnice nad Popelkou - nájem NP pro OOP",
-      "page_url": "https://smlouvy.gov.cz/smlouva/774449",
-      "documents": [],
+      "page_url": "https://smlouvy.gov.cz/smlouva/823945",
+      "documents": [
+        {
+          "index": 1,
+          "name": "%23924004797.pdf",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/1194573/%23924004797.pdf",
+          "sha256": "d7a0cb8e668ba3fa95226e15d316f39caa0ebf70619bb9d6e2765ca73cbec6da",
+          "bytes": 1527650,
+          "content_type": "application/pdf",
+          "text_available": true,
+          "text_chars": 14438,
+          "content_check": "no_filename_mismatch_detected",
+          "text_file": "data/documents/registr-smluv/774449/001.txt"
+        }
+      ],
       "status": "ok"
     },
     {
       "source": "registr-smluv",
       "source_id": "8074447",
       "title": "Podskytnutí dotace na poskytování služeb v obecném hospodářském zájmu z rozpočtu LK z finančních prostředků MPSV.",
-      "page_url": "https://smlouvy.gov.cz/smlouva/8074447",
-      "documents": [],
+      "page_url": "https://smlouvy.gov.cz/smlouva/8717079",
+      "documents": [
+        {
+          "index": 1,
+          "name": "Mesto_Lomnice_Smlouva_MPSV_2019.pdf",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/11520491/Mesto_Lomnice_Smlouva_MPSV_2019.pdf",
+          "sha256": "d30a6deb05cc852a2d76732931a2fb59a48f7e5449e564bdc542d2275e825d4a",
+          "bytes": 407044,
+          "content_type": "application/pdf",
+          "text_available": true,
+          "text_chars": 34842,
+          "content_check": "no_filename_mismatch_detected",
+          "text_file": "data/documents/registr-smluv/8074447/001.txt"
+        }
+      ],
       "status": "ok"
     },
     {
       "source": "registr-smluv",
       "source_id": "845225",
       "title": "Dodatek č. 1 ke smlouvě o poskytnutí účelové dotace Libereckému kraji z rozpočtu Města Lomnice nad Popelkou",
-      "page_url": "https://smlouvy.gov.cz/smlouva/845225",
-      "documents": [],
+      "page_url": "https://smlouvy.gov.cz/smlouva/899853",
+      "documents": [
+        {
+          "index": 1,
+          "name": "D01_OLP_2674_2016.pdf",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/1308845/D01_OLP_2674_2016.pdf",
+          "sha256": "4d6f5d665ed8d76bd25666d3878a1c1282c48f966feeab2640d6efbc0ee7c04c",
+          "bytes": 68876,
+          "content_type": "application/pdf",
+          "text_available": true,
+          "text_chars": 4598,
+          "content_check": "no_filename_mismatch_detected",
+          "text_file": "data/documents/registr-smluv/845225/001.txt"
+        },
+        {
+          "index": 2,
+          "name": "OLP_2674_2016.pdf",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/1308849/OLP_2674_2016.pdf",
+          "sha256": "fd772affcf4b182686ffd8cc4136fb3dc0df0615fe22cffababcb93cf597d90f",
+          "bytes": 94357,
+          "content_type": "application/pdf",
+          "text_available": true,
+          "text_chars": 11610,
+          "content_check": "no_filename_mismatch_detected",
+          "text_file": "data/documents/registr-smluv/845225/002.txt"
+        }
+      ],
       "status": "ok"
     },
     {
       "source": "registr-smluv",
       "source_id": "8497295",
       "title": "Obnova bývalé Svobodovy hrobky na hřbitově v Lomnici nad Popelkou - okna a vstupní dveře",
-      "page_url": "https://smlouvy.gov.cz/smlouva/8497295",
-      "documents": [],
+      "page_url": "https://smlouvy.gov.cz/smlouva/9164787",
+      "documents": [
+        {
+          "index": 1,
+          "name": "58_Mesto_Lomnice_n_P_smlouva_o_poskytnuti_dotace.pdf",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/12069971/58_Mesto_Lomnice_n_P_smlouva_o_poskytnuti_dotace.pdf",
+          "sha256": "6784ac5cfa71d2697644b2b7a39497fca3a67c688b7126f2683ff46623de49a4",
+          "bytes": 448728,
+          "content_type": "application/pdf",
+          "text_available": true,
+          "text_chars": 29099,
+          "content_check": "no_filename_mismatch_detected",
+          "text_file": "data/documents/registr-smluv/8497295/001.txt"
+        }
+      ],
       "status": "ok"
     },
     {
       "source": "registr-smluv",
       "source_id": "8513",
       "title": "Smlouva o poskytnutí dotace z Dotačního fondu LK - Podpora jednotek požární ochrany obcí LK",
-      "page_url": "https://smlouvy.gov.cz/smlouva/8513",
-      "documents": [],
+      "page_url": "https://smlouvy.gov.cz/smlouva/8741",
+      "documents": [
+        {
+          "index": 1,
+          "name": "Lomnice_n_Popelkou1171.pdf",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/10053/Lomnice_n_Popelkou1171.pdf",
+          "sha256": "7be57a8b61a7a976319a4420d2a9d1979aadb2a9db381e7dd8305d84efc9b013",
+          "bytes": 241439,
+          "content_type": "application/pdf",
+          "text_available": true,
+          "text_chars": 24448,
+          "content_check": "no_filename_mismatch_detected",
+          "text_file": "data/documents/registr-smluv/8513/001.txt"
+        }
+      ],
       "status": "ok"
     },
     {
       "source": "registr-smluv",
       "source_id": "8786327",
       "title": "Smlouva o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje na nákup ochranných prostředků požární ochrany",
-      "page_url": "https://smlouvy.gov.cz/smlouva/8786327",
-      "documents": [],
+      "page_url": "https://smlouvy.gov.cz/smlouva/9470195",
+      "documents": [
+        {
+          "index": 1,
+          "name": "Lomnice_nad_Popelkou_1834.pdf",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/12444159/Lomnice_nad_Popelkou_1834.pdf",
+          "sha256": "e8c089827dd24b050d0f1295f29ff99c24ddf753b657cc90906b56927269b8b6",
+          "bytes": 137407,
+          "content_type": "application/pdf",
+          "text_available": true,
+          "text_chars": 24906,
+          "content_check": "no_filename_mismatch_detected",
+          "text_file": "data/documents/registr-smluv/8786327/001.txt"
+        }
+      ],
       "status": "ok"
     }
   ],

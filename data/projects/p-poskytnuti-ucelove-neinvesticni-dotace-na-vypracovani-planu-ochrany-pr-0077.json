@@ -68,7 +68,7 @@
         "source": "registr-smluv",
         "source_id": "301745",
         "version_id": "322201",
-        "source_url": "https://smlouvy.gov.cz/smlouva/301745",
+        "source_url": "https://smlouvy.gov.cz/smlouva/322201",
         "title": "poskytnutí účelové neinvestiční dotace na vypracování plánu ochrany pro památkovou zónu města Lomnice nad Popelkou - 2. a 3. etapa",
         "buyer_ico": "00275905",
         "supplier_ico": "70891508",
@@ -85,11 +85,13 @@
           "source": "registr-smluv",
           "source_id": "301745",
           "version_id": "322201",
-          "source_url": "https://smlouvy.gov.cz/smlouva/301745",
+          "source_url": "https://smlouvy.gov.cz/smlouva/322201",
           "title": "poskytnutí účelové neinvestiční dotace na vypracování plánu ochrany pro památkovou zónu města Lomnice nad Popelkou - 2. a 3. etapa",
           "buyer_ico": "00275905",
           "supplier_ico": "70891508",
           "contract_number": "07-OLP/3833/2016",
+          "related_contract_ids": [],
+          "related_contract_numbers": [],
           "date": "2016-09-21",
           "signed_date": "2016-09-21",
           "published": "",
@@ -98,7 +100,13 @@
           "publisher": "",
           "subject": "poskytnutí účelové neinvestiční dotace na vypracování plánu ochrany pro památkovou zónu města Lomnice nad Popelkou - 2. a 3. etapa",
           "counterparty": "Liberecký kraj",
-          "detail_url": "https://smlouvy.gov.cz/smlouva/301745"
+          "detail_url": "https://smlouvy.gov.cz/smlouva/322201",
+          "attachments": [
+            {
+              "url": "https://smlouvy.gov.cz/smlouva/soubor/446857/OLP_3833_2016_plany_ochrany_Lomnice_n_Popelkou.pdf",
+              "name": "OLP_3833_2016_plany_ochrany_Lomnice_n_Popelkou.pdf"
+            }
+          ]
         },
         "_source_file": "data/sources/registr-smluv/rs-000006.json"
       }

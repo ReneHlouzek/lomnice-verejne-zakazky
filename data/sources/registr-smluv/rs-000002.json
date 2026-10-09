@@ -2,13 +2,15 @@
   "source": "registr-smluv",
   "source_id": "3753",
   "version_id": "3869",
-  "source_url": "https://smlouvy.gov.cz/smlouva/3753",
+  "source_url": "https://smlouvy.gov.cz/smlouva/3869",
   "title": "Smlouva o poskytnutí účelové dotace Libereckému kraji z rozpočtu města Lomnice nad Popelkou",
   "buyer_ico": "00275905",
   "supplier_ico": "70891508",
   "supplier_name": "Liberecký kraj",
   "contract_number": "06-OLP/2674/2016",
-  "related_contract_ids": [],
+  "related_contract_ids": [
+    "845225"
+  ],
   "related_contract_numbers": [],
   "date": "2016-07-07",
   "signed_date": "2016-07-07",
@@ -19,11 +21,15 @@
     "source": "registr-smluv",
     "source_id": "3753",
     "version_id": "3869",
-    "source_url": "https://smlouvy.gov.cz/smlouva/3753",
+    "source_url": "https://smlouvy.gov.cz/smlouva/3869",
     "title": "Smlouva o poskytnutí účelové dotace Libereckému kraji z rozpočtu města Lomnice nad Popelkou",
     "buyer_ico": "00275905",
     "supplier_ico": "70891508",
     "contract_number": "06-OLP/2674/2016",
+    "related_contract_ids": [
+      "845225"
+    ],
+    "related_contract_numbers": [],
     "date": "2016-07-07",
     "signed_date": "2016-07-07",
     "published": "",
@@ -32,6 +38,12 @@
     "publisher": "",
     "subject": "Smlouva o poskytnutí účelové dotace Libereckému kraji z rozpočtu města Lomnice nad Popelkou",
     "counterparty": "Liberecký kraj",
-    "detail_url": "https://smlouvy.gov.cz/smlouva/3753"
+    "detail_url": "https://smlouvy.gov.cz/smlouva/3869",
+    "attachments": [
+      {
+        "url": "https://smlouvy.gov.cz/smlouva/soubor/4657/OLP_2674_2016.pdf",
+        "name": "OLP_2674_2016.pdf"
+      }
+    ]
   }
 }

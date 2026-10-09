@@ -1,0 +1,73 @@
+Příloha č. 1 Darovací smlouvy
+Mateřská škola Dášenka
+KAMEROVÝ VIDEOSYSTÉM CCTV
+prvek množství
+DVR - 4 kanálový TurboHD videorekordér 1 ks
+HDD – pevný disk DVR-1TB určený pro DVR 1 ks
+venkovní kamera TurboHD; ICR + IR + objektiv 3,6mm 3 ks
+DOME kamera TurboHD; ICR + IR + objektiv 2,8mm 1 ks
+napájecí zdroj 12V 4 ks
+Turbo HD PASIVNÍ vysílač /přijímač video signálu 8 ks
+UPS 400VA pro ochranu proti výkyvům sítě 230V 1 ks
+monitor LCD 19",VGA 1 ks
+el. instalační lišta LV40x40 pro páteřní kabelovou trasu 40 m
+kabel UTP pro videosignál 140 m
+kabel CYKY pro napájení 135 m
+INSTALAČNÍ MATERIÁL, PŘÍLUŠENSTVÍ
+el. instalační lišta LV18x15 k jednotlivým kamerám 70 m
+konektory, instalační krabice, svorkovnice, vruty, hmoždinky 1 kpl
+VIDEOTELEFON
+vstupní nerez tablo 1tl. vč.kamery a čtečky RFID čipů 1 ks
+barevný videotelefon se sluchátkem a s pamětí 3 ks
+pamět obrázků "zvonících" návštěvníků 1 ks
+systémový síťový zdroj 1 ks
+rozbočovač vedení 1 ks
+sběrnicový injektor 1 ks
+el. instalační lišta LV18x15 30 m
+kabel UTP pro audio a  videosignál 90 m
+kabel CYKY pro napájení 44 m
+skříň pro injektor, rozbočovač a zdroj 1 ks
+konektory, svorkovnice, vruty, hmoždinky 1 kpl
+Kamerový systém + videotelefon (doprava, montáž, nastavení, instalace, oživení,…     1 kpl
+KABELOVÉ ROZVODY
+KABELOVÉ ROZVODY
+ISNTALAČNÍ MATERIÁL, PŘÍSLUŠENSTVÍ
+
+Mateřská škola Lvíček
+prvek množství
+Megapixelová venkovní IP kamera s IR přísvitem - IR do 30 metrů - 2 Mpix,2,8mm/90°-12mm/23°
+ H.264 / MJPEG, PoE, 1920 x 1080, včetně varifocal, podpora ONVIG standard
+záznamové zařízení NVR IP, min. 8 kamer 2MPix/25sn. 1 ks
+PoE injektor 10/100/1000MB 1 ks
+harddisk SATA 3TB pro NVR 1 ks
+instalační materiál 1 kpl
+switch PSE 8G 1 ks
+led TV 80" 1 ks
+kabel prodlužovací k myši 10 m
+kabel HDMI 10 m
+držák monitoru 1 ks
+doprava, montáž, nastavení, instalace 1 kpl
+Základní umělecká škola
+ELEKTRONICKÝ SYSTÉM PŘÍSTUPU DO BUDOVY
+prvek množství
+Software P3 pro řízení min. 10 terminálů 1 ks
+Licence na P3 na rok 2016 1 ks
+terminál pro otvírání dveří TCP/IP komunikace 1 ks
+tlačítkové telefonní tablo - klávesnice 1 ks
+čtečka čipů k PC 1 ks
+RFID přívěsek na klíče 200 ks
+napájecí zdroj, router s napájením (PoE) 1 ks
+dveřní zámek – elektrický otvírač nízkoodběrový 12V/220mA 1 ks
+megapixelová venkovní IP kamera s IR přísvitem - IR do 30 metrů - 2 Mpix,2,8mm/90°-12mm/23° 2 ks
+telefonní ústředna minimálně 16 poboček 1 ks
+PC – RAM 4GB DDR3L, HD grafika, HDD 500GB 7200 otáček - 24/7, DVD, USB 3.0, čtečka karet, Windows 7, 8, 8.1, 101 ks
+monitor LCD 19",VGA 1 ks
+klávesnice - standardní, CZ/SK, USB konektor 1 ks
+KAMEROVÝ SYSTÉM IP
+4 ks
+
+myš, bezdrátová, nano USB přijímač 1 ks
+programování ústředny 1 ks
+kabeláž instalace terminály 1 kpl
+kování na dveře klika/koule 1 ks
+Doprava, montáž, nastavení, instalace,…       1 kpl

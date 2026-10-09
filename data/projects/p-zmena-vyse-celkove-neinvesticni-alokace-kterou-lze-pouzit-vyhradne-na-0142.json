@@ -68,13 +68,15 @@
         "source": "registr-smluv",
         "source_id": "6439647",
         "version_id": "6950807",
-        "source_url": "https://smlouvy.gov.cz/smlouva/6439647",
+        "source_url": "https://smlouvy.gov.cz/smlouva/6950807",
         "title": "Změna výše celkové neinvestiční alokace, kterou lze použít výhradně na provoz základních činností organizace, tj. na úhradu nákladů souvisejících s poskytováním základních činností veřejné služby.",
         "buyer_ico": "00275905",
         "supplier_ico": "70891508",
         "supplier_name": "Liberecký kraj",
         "contract_number": "55_OLP/1640/2018",
-        "related_contract_ids": [],
+        "related_contract_ids": [
+          "4618624"
+        ],
         "related_contract_numbers": [],
         "date": "2018-10-05",
         "signed_date": "2018-10-05",
@@ -85,11 +87,15 @@
           "source": "registr-smluv",
           "source_id": "6439647",
           "version_id": "6950807",
-          "source_url": "https://smlouvy.gov.cz/smlouva/6439647",
+          "source_url": "https://smlouvy.gov.cz/smlouva/6950807",
           "title": "Změna výše celkové neinvestiční alokace, kterou lze použít výhradně na provoz základních činností organizace, tj. na úhradu nákladů souvisejících s poskytováním základních činností veřejné služby.",
           "buyer_ico": "00275905",
           "supplier_ico": "70891508",
           "contract_number": "55_OLP/1640/2018",
+          "related_contract_ids": [
+            "4618624"
+          ],
+          "related_contract_numbers": [],
           "date": "2018-10-05",
           "signed_date": "2018-10-05",
           "published": "",
@@ -98,7 +104,13 @@
           "publisher": "",
           "subject": "Změna výše celkové neinvestiční alokace, kterou lze použít výhradně na provoz základních činností organizace, tj. na úhradu nákladů souvisejících s poskytováním základních činností veřejné služby.",
           "counterparty": "Liberecký kraj",
-          "detail_url": "https://smlouvy.gov.cz/smlouva/6439647"
+          "detail_url": "https://smlouvy.gov.cz/smlouva/6950807",
+          "attachments": [
+            {
+              "url": "https://smlouvy.gov.cz/smlouva/soubor/9353559/Dodatek_c_1_Mesto_Lomnice_n_Popelkou.pdf",
+              "name": "Dodatek_c_1_Mesto_Lomnice_n_Popelkou.pdf"
+            }
+          ]
         },
         "_source_file": "data/sources/registr-smluv/rs-000035.json"
       }

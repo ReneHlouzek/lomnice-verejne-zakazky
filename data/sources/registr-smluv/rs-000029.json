@@ -2,13 +2,15 @@
   "source": "registr-smluv",
   "source_id": "4618624",
   "version_id": "4981564",
-  "source_url": "https://smlouvy.gov.cz/smlouva/4618624",
+  "source_url": "https://smlouvy.gov.cz/smlouva/4981564",
   "title": "Poskytnutí účelové neinvestiční dotace na závazek veřejné služby z rozpočtu Libereckého kraje z finančních prostředků MPSV.",
   "buyer_ico": "00275905",
   "supplier_ico": "70891508",
   "supplier_name": "Liberecký kraj",
   "contract_number": "55_OLP/1640/2018",
-  "related_contract_ids": [],
+  "related_contract_ids": [
+    "6439647"
+  ],
   "related_contract_numbers": [],
   "date": "2018-03-30",
   "signed_date": "2018-03-30",
@@ -19,11 +21,15 @@
     "source": "registr-smluv",
     "source_id": "4618624",
     "version_id": "4981564",
-    "source_url": "https://smlouvy.gov.cz/smlouva/4618624",
+    "source_url": "https://smlouvy.gov.cz/smlouva/4981564",
     "title": "Poskytnutí účelové neinvestiční dotace na závazek veřejné služby z rozpočtu Libereckého kraje z finančních prostředků MPSV.",
     "buyer_ico": "00275905",
     "supplier_ico": "70891508",
     "contract_number": "55_OLP/1640/2018",
+    "related_contract_ids": [
+      "6439647"
+    ],
+    "related_contract_numbers": [],
     "date": "2018-03-30",
     "signed_date": "2018-03-30",
     "published": "",
@@ -32,6 +38,12 @@
     "publisher": "",
     "subject": "Poskytnutí účelové neinvestiční dotace na závazek veřejné služby z rozpočtu Libereckého kraje z finančních prostředků MPSV.",
     "counterparty": "Liberecký kraj",
-    "detail_url": "https://smlouvy.gov.cz/smlouva/4618624"
+    "detail_url": "https://smlouvy.gov.cz/smlouva/4981564",
+    "attachments": [
+      {
+        "url": "https://smlouvy.gov.cz/smlouva/soubor/6848076/Mesto_Lomnice_nad_Pop_Smlouva_dotace_2018.pdf",
+        "name": "Mesto_Lomnice_nad_Pop_Smlouva_dotace_2018.pdf"
+      }
+    ]
   }
 }

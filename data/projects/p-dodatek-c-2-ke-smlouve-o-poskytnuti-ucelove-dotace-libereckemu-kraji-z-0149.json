@@ -68,7 +68,7 @@
         "source": "registr-smluv",
         "source_id": "2264882",
         "version_id": "2442642",
-        "source_url": "https://smlouvy.gov.cz/smlouva/2264882",
+        "source_url": "https://smlouvy.gov.cz/smlouva/2442642",
         "title": "Dodatek č.2 ke Smlouvě o poskytnutí účelové dotace Libereckému kraji z rozpočtu Města Lomnice nad Popelkou na stavební akci „II/286 x II/284 Lomnice nad Popelkou - havárie zdi - nezpůsobilé výdaje“",
         "buyer_ico": "00275905",
         "supplier_ico": "70891508",
@@ -87,11 +87,15 @@
           "source": "registr-smluv",
           "source_id": "2264882",
           "version_id": "2442642",
-          "source_url": "https://smlouvy.gov.cz/smlouva/2264882",
+          "source_url": "https://smlouvy.gov.cz/smlouva/2442642",
           "title": "Dodatek č.2 ke Smlouvě o poskytnutí účelové dotace Libereckému kraji z rozpočtu Města Lomnice nad Popelkou na stavební akci „II/286 x II/284 Lomnice nad Popelkou - havárie zdi - nezpůsobilé výdaje“",
           "buyer_ico": "00275905",
           "supplier_ico": "70891508",
           "contract_number": "06-OLP/2674/2016",
+          "related_contract_ids": [
+            "845225"
+          ],
+          "related_contract_numbers": [],
           "date": "2017-06-29",
           "signed_date": "2017-06-29",
           "published": "",
@@ -100,9 +104,12 @@
           "publisher": "",
           "subject": "Dodatek č.2 ke Smlouvě o poskytnutí účelové dotace Libereckému kraji z rozpočtu Města Lomnice nad Popelkou na stavební akci „II/286 x II/284 Lomnice nad Popelkou - havárie zdi - nezpůsobilé výdaje“",
           "counterparty": "Liberecký kraj",
-          "detail_url": "https://smlouvy.gov.cz/smlouva/2264882",
-          "related_contract_ids": [
-            "845225"
+          "detail_url": "https://smlouvy.gov.cz/smlouva/2442642",
+          "attachments": [
+            {
+              "url": "https://smlouvy.gov.cz/smlouva/soubor/3449118/Dodatek_c_2_OLP_2674_2016.pdf",
+              "name": "Dodatek_c_2_OLP_2674_2016.pdf"
+            }
           ]
         },
         "_source_file": "data/sources/registr-smluv/rs-000019.json"

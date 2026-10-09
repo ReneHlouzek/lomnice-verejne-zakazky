@@ -68,7 +68,7 @@
         "source": "registr-smluv",
         "source_id": "4098080",
         "version_id": "4414800",
-        "source_url": "https://smlouvy.gov.cz/smlouva/4098080",
+        "source_url": "https://smlouvy.gov.cz/smlouva/4414800",
         "title": "o převodu z majetku ČR s právem hospodařit pro LČR",
         "buyer_ico": "00275905",
         "supplier_ico": "42196451",
@@ -85,11 +85,13 @@
           "source": "registr-smluv",
           "source_id": "4098080",
           "version_id": "4414800",
-          "source_url": "https://smlouvy.gov.cz/smlouva/4098080",
+          "source_url": "https://smlouvy.gov.cz/smlouva/4414800",
           "title": "o převodu z majetku ČR s právem hospodařit pro LČR",
           "buyer_ico": "00275905",
           "supplier_ico": "42196451",
           "contract_number": "SML-00131-2017-170",
+          "related_contract_ids": [],
+          "related_contract_numbers": [],
           "date": "2017-12-18",
           "signed_date": "2017-12-18",
           "published": "",
@@ -98,7 +100,13 @@
           "publisher": "",
           "subject": "o převodu z majetku ČR s právem hospodařit pro LČR",
           "counterparty": "Lesy České republiky, s.p.",
-          "detail_url": "https://smlouvy.gov.cz/smlouva/4098080"
+          "detail_url": "https://smlouvy.gov.cz/smlouva/4414800",
+          "attachments": [
+            {
+              "url": "https://smlouvy.gov.cz/smlouva/soubor/6093576/SML-00131-2017-170.pdf",
+              "name": "SML-00131-2017-170.pdf"
+            }
+          ]
         },
         "_source_file": "data/sources/registr-smluv/rs-000027.json"
       }

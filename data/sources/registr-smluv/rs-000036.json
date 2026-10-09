@@ -2,7 +2,7 @@
   "source": "registr-smluv",
   "source_id": "6414639",
   "version_id": "6923307",
-  "source_url": "https://smlouvy.gov.cz/smlouva/6414639",
+  "source_url": "https://smlouvy.gov.cz/smlouva/6923307",
   "title": "Dohoda o změně podmínek poskytnutí dotace na základě Smlouvy č. 9270370988,dle NV č. 146/2003 Sb.",
   "buyer_ico": "00275905",
   "supplier_ico": "70856788",
@@ -19,11 +19,13 @@
     "source": "registr-smluv",
     "source_id": "6414639",
     "version_id": "6923307",
-    "source_url": "https://smlouvy.gov.cz/smlouva/6414639",
+    "source_url": "https://smlouvy.gov.cz/smlouva/6923307",
     "title": "Dohoda o změně podmínek poskytnutí dotace na základě Smlouvy č. 9270370988,dle NV č. 146/2003 Sb.",
     "buyer_ico": "00275905",
     "supplier_ico": "70856788",
     "contract_number": "9270370988",
+    "related_contract_ids": [],
+    "related_contract_numbers": [],
     "date": "2018-10-08",
     "signed_date": "2018-10-08",
     "published": "",
@@ -32,6 +34,16 @@
     "publisher": "",
     "subject": "Dohoda o změně podmínek poskytnutí dotace na základě Smlouvy č. 9270370988,dle NV č. 146/2003 Sb.",
     "counterparty": "Státní fond rozvoje bydlení",
-    "detail_url": "https://smlouvy.gov.cz/smlouva/6414639"
+    "detail_url": "https://smlouvy.gov.cz/smlouva/6923307",
+    "attachments": [
+      {
+        "url": "https://smlouvy.gov.cz/smlouva/soubor/9319219/Smlouva%209270370988_zve%C5%99ejn%C4%9Bn%C3%AD.pdf",
+        "name": "Smlouva%209270370988_zve%C5%99ejn%C4%9Bn%C3%AD.pdf"
+      },
+      {
+        "url": "https://smlouvy.gov.cz/smlouva/soubor/9319215/Dohoda%20o%20zm%C4%9Bn%C4%9B%20podm%C3%ADnek%20poskytnut%C3%AD%20dotace%20na%20z%C3%A1klad%C4%9B%20Smlouvy%20%C4%8D.%209270370988_zve%C5%99ejn%C4%9Bn%C3%AD.pdf",
+        "name": "Dohoda%20o%20zm%C4%9Bn%C4%9B%20podm%C3%ADnek%20poskytnut%C3%AD%20dotace%20na%20z%C3%A1klad%C4%9B%20Smlouvy%20%C4%8D.%209270370988_zve%C5%99ejn%C4%9Bn%C3%AD.pdf"
+      }
+    ]
   }
 }

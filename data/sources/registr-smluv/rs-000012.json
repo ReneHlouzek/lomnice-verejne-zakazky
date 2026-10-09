@@ -2,13 +2,16 @@
   "source": "registr-smluv",
   "source_id": "774449",
   "version_id": "823945",
-  "source_url": "https://smlouvy.gov.cz/smlouva/774449",
+  "source_url": "https://smlouvy.gov.cz/smlouva/823945",
   "title": "Lomnice nad Popelkou - nájem NP pro OOP",
   "buyer_ico": "00275905",
   "supplier_ico": "72050501",
   "supplier_name": "Krajské ředitelství policie Libereckého kraje",
   "contract_number": "924004797.00.000 / KRPL-68860-8/ČJ-2016-1800SU-5",
-  "related_contract_ids": [],
+  "related_contract_ids": [
+    "19084011",
+    "2316654"
+  ],
   "related_contract_numbers": [],
   "date": "2016-11-29",
   "signed_date": "2016-11-29",
@@ -19,11 +22,16 @@
     "source": "registr-smluv",
     "source_id": "774449",
     "version_id": "823945",
-    "source_url": "https://smlouvy.gov.cz/smlouva/774449",
+    "source_url": "https://smlouvy.gov.cz/smlouva/823945",
     "title": "Lomnice nad Popelkou - nájem NP pro OOP",
     "buyer_ico": "00275905",
     "supplier_ico": "72050501",
     "contract_number": "924004797.00.000 / KRPL-68860-8/ČJ-2016-1800SU-5",
+    "related_contract_ids": [
+      "19084011",
+      "2316654"
+    ],
+    "related_contract_numbers": [],
     "date": "2016-11-29",
     "signed_date": "2016-11-29",
     "published": "",
@@ -32,6 +40,12 @@
     "publisher": "",
     "subject": "Lomnice nad Popelkou - nájem NP pro OOP",
     "counterparty": "Krajské ředitelství policie Libereckého kraje",
-    "detail_url": "https://smlouvy.gov.cz/smlouva/774449"
+    "detail_url": "https://smlouvy.gov.cz/smlouva/823945",
+    "attachments": [
+      {
+        "url": "https://smlouvy.gov.cz/smlouva/soubor/1194573/%23924004797.pdf",
+        "name": "%23924004797.pdf"
+      }
+    ]
   }
 }

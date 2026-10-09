@@ -2,7 +2,7 @@
   "source": "registr-smluv",
   "source_id": "761909",
   "version_id": "810513",
-  "source_url": "https://smlouvy.gov.cz/smlouva/761909",
+  "source_url": "https://smlouvy.gov.cz/smlouva/810513",
   "title": "Veřejnoprávní smlouva o poskytnutí investiční dotace z rozpočtu města Lomnice n. P.",
   "buyer_ico": "00275905",
   "supplier_ico": "49295934",
@@ -19,11 +19,13 @@
     "source": "registr-smluv",
     "source_id": "761909",
     "version_id": "810513",
-    "source_url": "https://smlouvy.gov.cz/smlouva/761909",
+    "source_url": "https://smlouvy.gov.cz/smlouva/810513",
     "title": "Veřejnoprávní smlouva o poskytnutí investiční dotace z rozpočtu města Lomnice n. P.",
     "buyer_ico": "00275905",
     "supplier_ico": "49295934",
     "contract_number": "",
+    "related_contract_ids": [],
+    "related_contract_numbers": [],
     "date": "2016-12-05",
     "signed_date": "2016-12-05",
     "published": "",
@@ -32,6 +34,12 @@
     "publisher": "",
     "subject": "Veřejnoprávní smlouva o poskytnutí investiční dotace z rozpočtu města Lomnice n. P.",
     "counterparty": "Vodohospodářské sdružení Turnov",
-    "detail_url": "https://smlouvy.gov.cz/smlouva/761909"
+    "detail_url": "https://smlouvy.gov.cz/smlouva/810513",
+    "attachments": [
+      {
+        "url": "https://smlouvy.gov.cz/smlouva/soubor/1174529/ve%C5%99ejnopr%C3%A1vn%C3%AD%20smlouva%20Lomnice%20n.%20P..pdf",
+        "name": "ve%C5%99ejnopr%C3%A1vn%C3%AD%20smlouva%20Lomnice%20n.%20P..pdf"
+      }
+    ]
   }
 }

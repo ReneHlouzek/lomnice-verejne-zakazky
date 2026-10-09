@@ -1,5 +1,5 @@
 {
-  "id": "p-smlouva-o-poskytnuti-ucelove-dotace-z-dotacniho-fondu-libereckeho-kraj-0075",
+  "id": "p-smlouva-o-poskytnuti-ucelove-dotace-z-dotacniho-fondu-libereckeho-kraj-0082",
   "title": "Smlouva o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje na nákup ochranných prostředků požární ochrany",
   "buyer_ico": "00275905",
   "status": "unclassified",
@@ -64,13 +64,13 @@
   },
   "sources": [
     {
-      "source_file": "data/sources/registr-smluv/rs-000039.json",
+      "source_file": "data/sources/registr-smluv/rs-000040.json",
       "source_id": "8786327",
       "record": {
         "source": "registr-smluv",
         "source_id": "8786327",
         "version_id": "9470195",
-        "source_url": "https://smlouvy.gov.cz/smlouva/8786327",
+        "source_url": "https://smlouvy.gov.cz/smlouva/9470195",
         "title": "Smlouva o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje na nákup ochranných prostředků požární ochrany",
         "buyer_ico": "00275905",
         "supplier_ico": "70891508",
@@ -87,11 +87,13 @@
           "source": "registr-smluv",
           "source_id": "8786327",
           "version_id": "9470195",
-          "source_url": "https://smlouvy.gov.cz/smlouva/8786327",
+          "source_url": "https://smlouvy.gov.cz/smlouva/9470195",
           "title": "Smlouva o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje na nákup ochranných prostředků požární ochrany",
           "buyer_ico": "00275905",
           "supplier_ico": "70891508",
           "contract_number": "01-OLP/1834/2019",
+          "related_contract_ids": [],
+          "related_contract_numbers": [],
           "date": "2019-06-25",
           "signed_date": "2019-06-25",
           "published": "",
@@ -100,15 +102,21 @@
           "publisher": "",
           "subject": "Smlouva o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje na nákup ochranných prostředků požární ochrany",
           "counterparty": "Liberecký kraj",
-          "detail_url": "https://smlouvy.gov.cz/smlouva/8786327"
+          "detail_url": "https://smlouvy.gov.cz/smlouva/9470195",
+          "attachments": [
+            {
+              "url": "https://smlouvy.gov.cz/smlouva/soubor/12444159/Lomnice_nad_Popelkou_1834.pdf",
+              "name": "Lomnice_nad_Popelkou_1834.pdf"
+            }
+          ]
         },
-        "_source_file": "data/sources/registr-smluv/rs-000039.json"
+        "_source_file": "data/sources/registr-smluv/rs-000040.json"
       }
     }
   ],
   "analysis": {
     "schema_version": 4,
-    "project_id": "p-smlouva-o-poskytnuti-ucelove-dotace-z-dotacniho-fondu-libereckeho-kraj-0075",
+    "project_id": "p-smlouva-o-poskytnuti-ucelove-dotace-z-dotacniho-fondu-libereckeho-kraj-0082",
     "signal_count": 1,
     "signals": [
       {

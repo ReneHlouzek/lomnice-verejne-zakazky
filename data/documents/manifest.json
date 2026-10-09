@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-09T07:06:23Z",
+  "updated_at": "2026-10-09T09:06:28Z",
   "pages_checked": 35,
   "declared_documents": 90,
   "documents_discovered": 53,
@@ -14,7 +14,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+      "error": "unbalanced parenthesis at position 11"
     },
     {
       "source": "vhodne-uverejneni",
@@ -24,7 +24,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+      "error": "unbalanced parenthesis at position 11"
     },
     {
       "source": "vhodne-uverejneni",
@@ -34,7 +34,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+      "error": "unbalanced parenthesis at position 11"
     },
     {
       "source": "vhodne-uverejneni",
@@ -44,7 +44,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+      "error": "unbalanced parenthesis at position 11"
     },
     {
       "source": "vhodne-uverejneni",
@@ -54,7 +54,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: 422 Client Error: Unprocessable Entity for url: https://r.jina.ai/https://www.vhodne-uverejneni.cz/zakazka/obnova-telocvicen-pri-zs-t-g-masaryka-v-lomnici-nad-popelkou"
+      "error": "unbalanced parenthesis at position 11"
     },
     {
       "source": "vhodne-uverejneni",
@@ -64,7 +64,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+      "error": "unbalanced parenthesis at position 11"
     },
     {
       "source": "vhodne-uverejneni",
@@ -74,7 +74,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+      "error": "unbalanced parenthesis at position 11"
     },
     {
       "source": "vhodne-uverejneni",
@@ -84,7 +84,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: 422 Client Error: Unprocessable Entity for url: https://r.jina.ai/https://www.vhodne-uverejneni.cz/zakazka/vydani-obrazove-publikace-lomnice-nad-popelkou-historie-skolstvi"
+      "error": "unbalanced parenthesis at position 11"
     },
     {
       "source": "vhodne-uverejneni",
@@ -94,7 +94,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+      "error": "unbalanced parenthesis at position 11"
     },
     {
       "source": "vhodne-uverejneni",
@@ -104,7 +104,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+      "error": "unbalanced parenthesis at position 11"
     },
     {
       "source": "vhodne-uverejneni",
@@ -114,7 +114,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+      "error": "unbalanced parenthesis at position 11"
     },
     {
       "source": "vhodne-uverejneni",
@@ -124,7 +124,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+      "error": "unbalanced parenthesis at position 11"
     },
     {
       "source": "vhodne-uverejneni",
@@ -134,7 +134,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+      "error": "unbalanced parenthesis at position 11"
     },
     {
       "source": "vhodne-uverejneni",
@@ -144,7 +144,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+      "error": "unbalanced parenthesis at position 11"
     },
     {
       "source": "vhodne-uverejneni",
@@ -154,7 +154,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+      "error": "unbalanced parenthesis at position 11"
     },
     {
       "source": "vhodne-uverejneni",
@@ -164,7 +164,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+      "error": "unbalanced parenthesis at position 11"
     },
     {
       "source": "vhodne-uverejneni",
@@ -174,7 +174,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+      "error": "unbalanced parenthesis at position 11"
     },
     {
       "source": "vhodne-uverejneni",
@@ -184,7 +184,7 @@
       "document_count_declared": 6,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+      "error": "unbalanced parenthesis at position 11"
     },
     {
       "source": "vhodne-uverejneni",
@@ -194,7 +194,7 @@
       "document_count_declared": 10,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+      "error": "unbalanced parenthesis at position 11"
     },
     {
       "source": "vhodne-uverejneni",
@@ -207,25 +207,23 @@
           "index": 1,
           "label": "Výzva",
           "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3906771",
-          "sha256": "50b383fe482a66e4628cfd14d3a33a599c47a080a719874f52bbd5073b67563e",
+          "sha256": "42b4f7a1b7c39a981ed54c2b7252af70a9ff0763d3aaeb183164b3f22d7706fd",
           "bytes": 20245,
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0,
-          "status": "retained_from_previous_run"
+          "text_chars": 0
         },
         {
           "index": 2,
           "label": "Smlouva, její změny a dodatky",
           "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3906772",
-          "sha256": "2cee46d1eec3639716bd072657c7ac397fd58b8edcaa4d2781c85dacf5145ebe",
+          "sha256": "d3635132b15faca7f2140317c3ae077ecac7af73095d9e44b8fe34caa833b657",
           "bytes": 20269,
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0,
-          "status": "retained_from_previous_run"
+          "text_chars": 0
         }
       ],
       "status": "ok",
@@ -242,13 +240,12 @@
           "index": 1,
           "label": "Smlouva, její změny a dodatky",
           "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3768270",
-          "sha256": "355df179ca6a8358f7b8d27ac9822676b82ea6bd17138713e7e85c3e126a82d6",
+          "sha256": "518bd2c4623a7d3a3c0801ad8ced6a55d77423340ac32bc9772b7cd9fbed0c63",
           "bytes": 20264,
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0,
-          "status": "retained_from_previous_run"
+          "text_chars": 0
         }
       ],
       "status": "ok",
@@ -265,73 +262,67 @@
           "index": 1,
           "label": "Smlouva, její změny a dodatky",
           "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3895761",
-          "sha256": "510a742c49ea9a533fa1d5bb326ea7650ccd886566dae7a736695ed3336c3627",
+          "sha256": "4e4e5c930e8f7efca64293e84721a24b9224e0d6ccc2e60a7238a5548f944811",
           "bytes": 22769,
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0,
-          "status": "retained_from_previous_run"
+          "text_chars": 0
         },
         {
           "index": 2,
           "label": "Smlouva, její změny a dodatky",
           "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3895762",
-          "sha256": "fe909dcc0268d3152e0472181e79548aa40c4eed95e727f469a4d719c6b16125",
+          "sha256": "b5f1d0b00d2320febccdf8c0dece2e3f374c7efee28676404b805d501a2dc82f",
           "bytes": 22159,
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0,
-          "status": "retained_from_previous_run"
+          "text_chars": 0
         },
         {
           "index": 3,
           "label": "Smlouva, její změny a dodatky",
           "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3895763",
-          "sha256": "823ab5c36fc199cc9e03816a3d7e2e08d2c648927bae9e1149c7693bb46b18db",
+          "sha256": "6d7740da8e8cc9f729848bdd9d7b7b0ae30b67f4d9e281a780c4778513bf586b",
           "bytes": 20172,
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0,
-          "status": "retained_from_previous_run"
+          "text_chars": 0
         },
         {
           "index": 4,
           "label": "Smlouva, její změny a dodatky",
           "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3895764",
-          "sha256": "f9d302e0f8cbfe09ffced8851aea59905451e4c1a2cf0983995ea145bfd732a9",
+          "sha256": "9492fd4139ca9af15c48219bb1ba5f982362d0af68a0f54793aa1055028425a2",
           "bytes": 20171,
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0,
-          "status": "retained_from_previous_run"
+          "text_chars": 0
         },
         {
           "index": 5,
           "label": "Smlouva, její změny a dodatky",
           "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3895765",
-          "sha256": "69358810c2d7410e1c6f040ba15b9aa58ccdc2b96231d5b3f547a03215fc7191",
+          "sha256": "d6b709fb7283c59ed45f59bad3c50781a759907473d2510eafe2c0cb05d6bfb0",
           "bytes": 20174,
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0,
-          "status": "retained_from_previous_run"
+          "text_chars": 0
         },
         {
           "index": 6,
           "label": "Smlouva, její změny a dodatky",
           "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3895766",
-          "sha256": "4dbc7f6d476e5ca310cf0b55eb814de0b11987c83bf58c466215fda5fa8f9c24",
+          "sha256": "57aba6da9d0fd8ca690314a114c0e58a046dc7ac097dfb833a245479c6f2ea23",
           "bytes": 20156,
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0,
-          "status": "retained_from_previous_run"
+          "text_chars": 0
         },
         {
           "index": 7,
@@ -343,7 +334,8 @@
           "transport": "jina",
           "text_available": true,
           "text_chars": 1679,
-          "text_file": "data/documents/P26V00001385/007.txt"
+          "text_file": "data/documents/P26V00001385/007.txt",
+          "status": "retained_from_previous_run"
         }
       ],
       "status": "ok",
@@ -360,169 +352,155 @@
           "index": 1,
           "label": "Písemná zpráva zadavatele",
           "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868297",
-          "sha256": "5603a6b67c660a99494b75dcd6c52b02366f2bb1f67dc64dbb503c38aef9a003",
+          "sha256": "4afa4bf44a6fda965607f161bace25f36ad5b20e3ff4ef9d3c9429f47c3e2655",
           "bytes": 20127,
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0,
-          "status": "retained_from_previous_run"
+          "text_chars": 0
         },
         {
           "index": 2,
           "label": "Smlouva, její změny a dodatky",
           "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868298",
-          "sha256": "cbcf29804aea9e226ca2f252262fce179422bf8a9a45a4a441b9aeaab8e8a97e",
+          "sha256": "4e9b391a1f5b376cfdb34cfb1e5c72105ae19c891a4cb4664708417560a12fb1",
           "bytes": 20109,
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0,
-          "status": "retained_from_previous_run"
+          "text_chars": 0
         },
         {
           "index": 3,
           "label": "Smlouva, její změny a dodatky",
           "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868299",
-          "sha256": "35c7bbb94c877d51e00cf6aa329a93049c2413ff5f39c7b6f67d6e6eb90a1505",
+          "sha256": "70827662c9e9342c4ff3dea6eb992d5326a464d05f87905be745891f2c6e3797",
           "bytes": 20133,
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0,
-          "status": "retained_from_previous_run"
+          "text_chars": 0
         },
         {
           "index": 4,
           "label": "Oznámení o výběru nejvhodnější nabídky",
           "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868300",
-          "sha256": "17f63e03009c78edac7953fe8b344277ecfc56e07e99499741b1ba496cd718cc",
+          "sha256": "0d5360db039e71380fb49e1e9454b7da807d523ee1c3c6fae94687c477f1a2c4",
           "bytes": 20160,
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0,
-          "status": "retained_from_previous_run"
+          "text_chars": 0
         },
         {
           "index": 5,
           "label": "Oznámení o výběru nejvhodnější nabídky",
           "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868301",
-          "sha256": "25ff7a1ed5752e7265b5b188ab67b01f37968f34d105f136bc233953f40df032",
+          "sha256": "43f6eb1e2ec696736c27ce34fab689c199671d86681a347014b3f81b9e3f272b",
           "bytes": 20166,
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0,
-          "status": "retained_from_previous_run"
+          "text_chars": 0
         },
         {
           "index": 6,
           "label": "Vysvětlení, doplnění, změna zadávací dokumentace",
           "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868302",
-          "sha256": "da05d580baeb070f75f71f0dbd179d61f5eaa406533e7454512ba331122b2d1b",
+          "sha256": "7ea2fd5df145b31bb684d0aa9c57904f11ee3c53a189151f461a11c9e62f6dc4",
           "bytes": 20159,
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0,
-          "status": "retained_from_previous_run"
+          "text_chars": 0
         },
         {
           "index": 7,
           "label": "Vysvětlení, doplnění, změna zadávací dokumentace",
           "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868303",
-          "sha256": "87646a437f1a40915c64baaff3045f8f39d3e60302796eaeac1ba75859c3a545",
+          "sha256": "6cc7d21f41bba787633c936ae14955bbec963508f5171d1cbff358d010be28fc",
           "bytes": 20148,
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0,
-          "status": "retained_from_previous_run"
+          "text_chars": 0
         },
         {
           "index": 8,
           "label": "Vysvětlení, doplnění, změna zadávací dokumentace",
           "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868304",
-          "sha256": "f486c9985f693b4e870feffab32d78ab6c027e3d83e802a1ed8b0942de4d9d3b",
+          "sha256": "e540fc2a0e6ab72a0525e83242ca48581f8ba9fb9a502d09ece146d1d1751dca",
           "bytes": 20174,
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0,
-          "status": "retained_from_previous_run"
+          "text_chars": 0
         },
         {
           "index": 9,
           "label": "Vysvětlení, doplnění, změna zadávací dokumentace",
           "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868305",
-          "sha256": "13c8c1f1e63151bcb607b7ed4c40b8f8746fd79043139f1942ea6d1c37786399",
+          "sha256": "e8260eeb96f1849da571a6dc5794e673a3377ea5549c59f6534181e90be6f7f7",
           "bytes": 20168,
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0,
-          "status": "retained_from_previous_run"
+          "text_chars": 0
         },
         {
           "index": 10,
           "label": "Vysvětlení, doplnění, změna zadávací dokumentace",
           "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868306",
-          "sha256": "eaea67d4db4433c17761f26df8335e9bbb04912254d14663c76d80554defb333",
+          "sha256": "a4836e580cc02c4561571780f0e3041cf0827fb10a8e8783488096419bcced2b",
           "bytes": 20180,
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0,
-          "status": "retained_from_previous_run"
+          "text_chars": 0
         },
         {
           "index": 11,
           "label": "Vysvětlení, doplnění, změna zadávací dokumentace",
           "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868307",
-          "sha256": "66a832952b3b451c9700a9067a88c6c5857b6cef020a8e4662ad18d08fff01ea",
+          "sha256": "e63d1651f1a42bd958d3634bbf03d9a7f44215246e0627c1dc37c26544cd7d29",
           "bytes": 20194,
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0,
-          "status": "retained_from_previous_run"
+          "text_chars": 0
         },
         {
           "index": 12,
           "label": "Vysvětlení, doplnění, změna zadávací dokumentace",
           "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868308",
-          "sha256": "8561b8d285cd3f8ff12ddae80e7264453c299fcc26dac2831ef922898a1907ea",
+          "sha256": "f1640cc204442dcff186c423d724ab88f040df1da6e2448118376b6a1148faeb",
           "bytes": 20148,
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0,
-          "status": "retained_from_previous_run"
+          "text_chars": 0
         },
         {
           "index": 13,
           "label": "Vysvětlení, doplnění, změna zadávací dokumentace",
           "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868309",
-          "sha256": "e3920f1793b2c937f337aaff1f43e81dbb90320861e6c5f4d9b772e8b96bfa15",
+          "sha256": "48f9036385b5ca733c513ee9bb67a6685c3a2d2abbb4a9021c0e51abb4150a37",
           "bytes": 20174,
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0,
-          "status": "retained_from_previous_run"
+          "text_chars": 0
         },
         {
           "index": 14,
           "label": "Vysvětlení, doplnění, změna zadávací dokumentace",
           "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868310",
-          "sha256": "0cfb00e4a806a5834a6b0a71fcabe09394ee6006ab3144f7eb6c34937ccef4ad",
+          "sha256": "946b0fa28e4c9e898d5ce577895a1d64cda4b2022c3a7abfe9b0eac78e73515b",
           "bytes": 20170,
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0,
-          "status": "retained_from_previous_run"
+          "text_chars": 0
         },
         {
           "index": 15,
@@ -541,97 +519,89 @@
           "index": 16,
           "label": "Výzva",
           "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868312",
-          "sha256": "58458a2829a864904bc6231249c0f1a98d52c984677fa1d55c292bfa1df9b74a",
+          "sha256": "0518d38c2f1bc1472871b5653a31fe6fc7ff4aa2bf5e93da017c5a47e427cc56",
           "bytes": 20103,
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0,
-          "status": "retained_from_previous_run"
+          "text_chars": 0
         },
         {
           "index": 17,
           "label": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění",
           "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868313",
-          "sha256": "c5b679e03844e7d92a857b0093b0b7ddc2e9dd8b0c82ec4adbcee4bba44dbc4f",
+          "sha256": "ace447a79c4e98f1ff21db258907cc4e7239a2e261ebde4a0f10628b65a5d768",
           "bytes": 20161,
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0,
-          "status": "retained_from_previous_run"
+          "text_chars": 0
         },
         {
           "index": 18,
           "label": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění",
           "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868314",
-          "sha256": "07e96de00f3859286b4cfea7c6838cf807b6db6a9682d519d0c062b68b23b5ac",
+          "sha256": "e34096e2027b6fe81eb7ff1bcacdb12020a4d6cb2bde209bb37618cac8283195",
           "bytes": 20175,
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0,
-          "status": "retained_from_previous_run"
+          "text_chars": 0
         },
         {
           "index": 19,
           "label": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění",
           "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868315",
-          "sha256": "c80ee0a709eb1de6ec1db22f4e63603046232f04d51a67e33e934af0d9bbf566",
+          "sha256": "586f240ba432b1105684858ff96275767c3d39a8a42a037ffae63e3e941ad4de",
           "bytes": 20171,
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0,
-          "status": "retained_from_previous_run"
+          "text_chars": 0
         },
         {
           "index": 20,
           "label": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění",
           "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868316",
-          "sha256": "b7424fd575a52f760528badd32a0041e0bc3073c8b97b11b76345c21dece4153",
+          "sha256": "e63aa11e8739bb902a6908086277339bdb82dc21d5054b95dd1928c8b7f6e298",
           "bytes": 20207,
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0,
-          "status": "retained_from_previous_run"
+          "text_chars": 0
         },
         {
           "index": 21,
           "label": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění",
           "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868317",
-          "sha256": "e68710a291dda50d8a137ea71befeaf4c95958c601ac58d5a294741269c97675",
+          "sha256": "94b8440b0ae9646a205d059ddf6cb422b28133047fa88e405d793e7296118cd7",
           "bytes": 20186,
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0,
-          "status": "retained_from_previous_run"
+          "text_chars": 0
         },
         {
           "index": 22,
           "label": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění",
           "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868318",
-          "sha256": "ca480649a60429c2143dc03480b296b72c3ca657a3eb86c8538946bce73e8e7b",
+          "sha256": "d3f7145d232fc0ee4ac0109f441c0d676f6ba98a7305ac525043f0d2ce44aea6",
           "bytes": 20164,
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0,
-          "status": "retained_from_previous_run"
+          "text_chars": 0
         },
         {
           "index": 23,
           "label": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění",
           "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3868319",
-          "sha256": "13ffc32d03d2cd2cbc3a62ba5df4a169008ddc73e721a4122943ac6312608cb9",
+          "sha256": "db314708eec9842efd706e38aa436ff5ed3cad5cff27c160f7e8e032bcc211aa",
           "bytes": 20148,
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0,
-          "status": "retained_from_previous_run"
+          "text_chars": 0
         }
       ],
       "status": "ok",
@@ -648,25 +618,23 @@
           "index": 1,
           "label": "Smlouva, její změny a dodatky",
           "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3811452",
-          "sha256": "28f31e51fbeb64e27cd10297546a7d393a99d5f30c83b9b6ae1e7cdc8cdafe59",
+          "sha256": "658846b357ac3fa003b1e08352c9f66494b03319af2c3721c2271be8d9baf9cf",
           "bytes": 20280,
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0,
-          "status": "retained_from_previous_run"
+          "text_chars": 0
         },
         {
           "index": 2,
           "label": "Smlouva, její změny a dodatky",
           "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3811453",
-          "sha256": "ce3b79e5643e3ffa985dbc4f3cc9fc72bf1ad7eafb6c278a3557ae1593a3d898",
+          "sha256": "64b47a95b0adad10badf327fb983765ef722b70a61d624c525a5bd898530d42b",
           "bytes": 20293,
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0,
-          "status": "retained_from_previous_run"
+          "text_chars": 0
         }
       ],
       "status": "ok",
@@ -683,73 +651,67 @@
           "index": 1,
           "label": "Písemná zpráva zadavatele",
           "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3852455",
-          "sha256": "7d6ff3b923350aad411f162360539391f64a125bc46bfef817a9665214808ca0",
+          "sha256": "c1b74c291c57c2abe28c2d8c6608b75f608a39bb8f1141324992ce75dece12f1",
           "bytes": 20267,
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0,
-          "status": "retained_from_previous_run"
+          "text_chars": 0
         },
         {
           "index": 2,
           "label": "Ostatní",
           "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3852456",
-          "sha256": "7dd9126c6eaf01e521ac3ad18849ab7bd03ee82e4fd670306e6c6241b70425f2",
+          "sha256": "5136a2120a4309ce099a9de7aee5da974873d680ce192e3633e475ee54f16b8c",
           "bytes": 20296,
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0,
-          "status": "retained_from_previous_run"
+          "text_chars": 0
         },
         {
           "index": 3,
           "label": "Výzva",
           "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3852457",
-          "sha256": "d1111ad09a723169ce262d42b31d8f077fd2d4bb5ebeef5141b2293fb31f1bba",
+          "sha256": "273d3847369c56c3e78e785bb4230b16c4d05f3708d98410cc68f211d637e826",
           "bytes": 20244,
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0,
-          "status": "retained_from_previous_run"
+          "text_chars": 0
         },
         {
           "index": 4,
           "label": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění",
           "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3852458",
-          "sha256": "896069c8cf8297d6fc53312ce73732cb58ffb47125971752ef36cf003a57f7e5",
+          "sha256": "74063bb08e3b05ee89aeb1b9717b4e506e74c8b60a33caec0eeda42fe8f0289d",
           "bytes": 20301,
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0,
-          "status": "retained_from_previous_run"
+          "text_chars": 0
         },
         {
           "index": 5,
           "label": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění",
           "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3852459",
-          "sha256": "5e4dad9aac7c27254075081c6754cacf812064192c5e29a947d7d3834073ba6f",
+          "sha256": "1b09d174644c2a72b1e36a66193db25343889ba6adbaaccdf20e9a5dade9e0ce",
           "bytes": 20312,
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0,
-          "status": "retained_from_previous_run"
+          "text_chars": 0
         },
         {
           "index": 6,
           "label": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění",
           "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3852460",
-          "sha256": "dcb8757dfbafa35324b74136bb7d7801d2f2ed6fdbaee8ac311de69911efebcb",
+          "sha256": "fc9cfaeab5a24df4c16a1167d6fe5a038aeb86e4d2f47b6032d364b05b32d751",
           "bytes": 20328,
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0,
-          "status": "retained_from_previous_run"
+          "text_chars": 0
         },
         {
           "index": 7,
@@ -761,31 +723,30 @@
           "transport": "jina",
           "text_available": true,
           "text_chars": 1679,
-          "text_file": "data/documents/P26V00002929/007.txt"
+          "text_file": "data/documents/P26V00002929/007.txt",
+          "status": "retained_from_previous_run"
         },
         {
           "index": 8,
           "label": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění",
           "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3852462",
-          "sha256": "965f1d388d07cc68e2701753c6ed0e8648975246f90516c299d3c23f340150e2",
+          "sha256": "82408a4fe819a403a282ea255002241305e9b2b9c95023af1260e796b5227aec",
           "bytes": 20317,
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0,
-          "status": "retained_from_previous_run"
+          "text_chars": 0
         },
         {
           "index": 9,
           "label": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění",
           "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3852463",
-          "sha256": "a5093ad3e683f3d2ee4ffbd50215e2bc8dea91882c795d15fa3057aec0f31e8f",
+          "sha256": "b4f2541fbe60fd9a276b802898758f7dc42164dee5cbaefe6d3f924f72046d4f",
           "bytes": 20305,
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0,
-          "status": "retained_from_previous_run"
+          "text_chars": 0
         }
       ],
       "status": "ok",
@@ -802,37 +763,34 @@
           "index": 1,
           "label": "Výše skutečně uhrazené ceny za plnění VZ",
           "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3884804",
-          "sha256": "8457de11a6ad84a24d919eca496445c3fbcb8a78d75ceabbddcb5091b02e31f4",
+          "sha256": "2d1364fbc884ae27870eb01bb9cc9bf8326209f29bfaa078e30f7d87822b2efe",
           "bytes": 20272,
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0,
-          "status": "retained_from_previous_run"
+          "text_chars": 0
         },
         {
           "index": 2,
           "label": "Smlouva, její změny a dodatky",
           "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3884805",
-          "sha256": "fe834e0f8bbf2b1821c6e5cffaf27913dd6be2721ff2ebcbafead80e37b4e6ba",
+          "sha256": "d48025ba49b6264303196cf0e6d403d9578662355ad6e16e7e21757689afe828",
           "bytes": 20239,
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0,
-          "status": "retained_from_previous_run"
+          "text_chars": 0
         },
         {
           "index": 3,
           "label": "Výzva",
           "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3884806",
-          "sha256": "43613c26910afa418956bb4ed6ef87a9e4c9729467c7a69ff93c3660e9259a13",
+          "sha256": "ee44ee6c2a26661b46e669c6b76a42ccc7729bb760b111bf9d4ff48e1f5a41f3",
           "bytes": 20254,
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0,
-          "status": "retained_from_previous_run"
+          "text_chars": 0
         }
       ],
       "status": "ok",
@@ -849,25 +807,23 @@
           "index": 1,
           "label": "Výše skutečně uhrazené ceny za plnění VZ",
           "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3907700",
-          "sha256": "dd68776c23bc10e589939eb1bc8f39a108e1acc1971fc2551b1572d7eae8aaef",
+          "sha256": "bac84e6de948d25536e257874064c3f897f130c678bed9942fee8367d49fcb95",
           "bytes": 20302,
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0,
-          "status": "retained_from_previous_run"
+          "text_chars": 0
         },
         {
           "index": 2,
           "label": "Smlouva, její změny a dodatky",
           "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3907712",
-          "sha256": "cf2168215c031e17985fab217951764ac08126695deec24c67773b38da6aa917",
+          "sha256": "529499a11f72852ca09dd194be9fa4e263dd373e8443c623d4c0c0abdbfb35ae",
           "bytes": 20233,
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0,
-          "status": "retained_from_previous_run"
+          "text_chars": 0
         }
       ],
       "status": "ok",
@@ -884,13 +840,12 @@
           "index": 1,
           "label": "Smlouva, její změny a dodatky",
           "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3865358",
-          "sha256": "aed91b5f25360d5660cf52501743945b32c066ed557db100cbb6f29095883b4e",
+          "sha256": "360a2073f50c53c04903083d8ee3eace075bc84336f0adb363fd19c3d952c4d0",
           "bytes": 20386,
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0,
-          "status": "retained_from_previous_run"
+          "text_chars": 0
         }
       ],
       "status": "ok",
@@ -907,25 +862,23 @@
           "index": 1,
           "label": "Smlouva, její změny a dodatky",
           "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3869219",
-          "sha256": "35aadbfe6800baac189e926916544804aeb6987e735f508f5c613bdad6e1a8f6",
+          "sha256": "cf298a84e1b7265e95e2c88df6033d536d1fc94dd9bebd1e2079549b4a5690b1",
           "bytes": 20229,
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0,
-          "status": "retained_from_previous_run"
+          "text_chars": 0
         },
         {
           "index": 2,
           "label": "Smlouva, její změny a dodatky",
           "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3869220",
-          "sha256": "95d647ee8c596066b2a1658d8b03f17055d2e52bf941bf812eaaf4529ef904df",
+          "sha256": "f4ad8848c8260debbdc04c9d26c80171bea859576396f3c72ec7501d7a0b6c96",
           "bytes": 20254,
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
           "text_available": false,
-          "text_chars": 0,
-          "status": "retained_from_previous_run"
+          "text_chars": 0
         }
       ],
       "status": "ok",
@@ -939,7 +892,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+      "error": "unbalanced parenthesis at position 11"
     },
     {
       "source": "vhodne-uverejneni",
@@ -949,7 +902,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+      "error": "unbalanced parenthesis at position 11"
     },
     {
       "source": "vhodne-uverejneni",
@@ -983,7 +936,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+      "error": "unbalanced parenthesis at position 11"
     },
     {
       "source": "vhodne-uverejneni",
@@ -993,7 +946,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+      "error": "unbalanced parenthesis at position 11"
     },
     {
       "source": "vhodne-uverejneni",
@@ -1003,7 +956,7 @@
       "document_count_declared": 15,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+      "error": "unbalanced parenthesis at position 11"
     }
   ],
   "note": "Archives public document metadata and extracted PDF text. Original binaries are not committed; inaccessible documents are retained in the manifest as errors."

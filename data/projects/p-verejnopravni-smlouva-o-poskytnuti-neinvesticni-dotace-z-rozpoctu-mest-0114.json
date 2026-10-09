@@ -70,7 +70,7 @@
         "source": "registr-smluv",
         "source_id": "5136459",
         "version_id": "5534295",
-        "source_url": "https://smlouvy.gov.cz/smlouva/5136459",
+        "source_url": "https://smlouvy.gov.cz/smlouva/5534295",
         "title": "Veřejnoprávní smlouva o poskytnutí neinvestiční dotace z rozpočtu města Lomnice nad Popelkou na realizaci oprav Lomnice nad Popelkou - oprava VH sítí v ul. Za školou a Lomnice nad Popelkou - rekonstrukce VH sítí v ul. Karla Čapka",
         "buyer_ico": "00275905",
         "supplier_ico": "49295934",
@@ -87,11 +87,13 @@
           "source": "registr-smluv",
           "source_id": "5136459",
           "version_id": "5534295",
-          "source_url": "https://smlouvy.gov.cz/smlouva/5136459",
+          "source_url": "https://smlouvy.gov.cz/smlouva/5534295",
           "title": "Veřejnoprávní smlouva o poskytnutí neinvestiční dotace z rozpočtu města Lomnice nad Popelkou na realizaci oprav Lomnice nad Popelkou - oprava VH sítí v ul. Za školou a Lomnice nad Popelkou - rekonstrukce VH sítí v ul. Karla Čapka",
           "buyer_ico": "00275905",
           "supplier_ico": "49295934",
           "contract_number": "",
+          "related_contract_ids": [],
+          "related_contract_numbers": [],
           "date": "2018-05-14",
           "signed_date": "2018-05-14",
           "published": "",
@@ -100,7 +102,13 @@
           "publisher": "",
           "subject": "Veřejnoprávní smlouva o poskytnutí neinvestiční dotace z rozpočtu města Lomnice nad Popelkou na realizaci oprav Lomnice nad Popelkou - oprava VH sítí v ul. Za školou a Lomnice nad Popelkou - rekonstrukce VH sítí v ul. Karla Čapka",
           "counterparty": "Vodohospodářské sdružení Turnov",
-          "detail_url": "https://smlouvy.gov.cz/smlouva/5136459"
+          "detail_url": "https://smlouvy.gov.cz/smlouva/5534295",
+          "attachments": [
+            {
+              "url": "https://smlouvy.gov.cz/smlouva/soubor/7563127/Ve%C5%99ejnopr%C3%A1vn%C3%AD%20smlouva%20investi%C4%8Dn%C3%AD%20dotace%20Za%20%C5%A0kolou%20Karla%20%C4%8Capka.doc",
+              "name": "Ve%C5%99ejnopr%C3%A1vn%C3%AD%20smlouva%20investi%C4%8Dn%C3%AD%20dotace%20Za%20%C5%A0kolou%20Karla%20%C4%8Capka.doc"
+            }
+          ]
         },
         "_source_file": "data/sources/registr-smluv/rs-000030.json"
       }

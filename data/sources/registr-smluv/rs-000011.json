@@ -2,7 +2,7 @@
   "source": "registr-smluv",
   "source_id": "711165",
   "version_id": "755617",
-  "source_url": "https://smlouvy.gov.cz/smlouva/711165",
+  "source_url": "https://smlouvy.gov.cz/smlouva/755617",
   "title": "Smlouva o spolupráci při zajištění dopravní obslužnosti Libereckého kraje na období od roku 2017 do roku 2019",
   "buyer_ico": "00275905",
   "supplier_ico": "70891508",
@@ -19,11 +19,13 @@
     "source": "registr-smluv",
     "source_id": "711165",
     "version_id": "755617",
-    "source_url": "https://smlouvy.gov.cz/smlouva/711165",
+    "source_url": "https://smlouvy.gov.cz/smlouva/755617",
     "title": "Smlouva o spolupráci při zajištění dopravní obslužnosti Libereckého kraje na období od roku 2017 do roku 2019",
     "buyer_ico": "00275905",
     "supplier_ico": "70891508",
     "contract_number": "06-OLP/4065/2016",
+    "related_contract_ids": [],
+    "related_contract_numbers": [],
     "date": "2016-11-28",
     "signed_date": "2016-11-28",
     "published": "",
@@ -32,6 +34,12 @@
     "publisher": "",
     "subject": "Smlouva o spolupráci při zajištění dopravní obslužnosti Libereckého kraje na období od roku 2017 do roku 2019",
     "counterparty": "Liberecký kraj",
-    "detail_url": "https://smlouvy.gov.cz/smlouva/711165"
+    "detail_url": "https://smlouvy.gov.cz/smlouva/755617",
+    "attachments": [
+      {
+        "url": "https://smlouvy.gov.cz/smlouva/soubor/1087369/Smlouva_Lomnice_nad_Popelkou.pdf",
+        "name": "Smlouva_Lomnice_nad_Popelkou.pdf"
+      }
+    ]
   }
 }

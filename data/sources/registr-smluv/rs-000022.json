@@ -2,7 +2,7 @@
   "source": "registr-smluv",
   "source_id": "2704422",
   "version_id": "2910678",
-  "source_url": "https://smlouvy.gov.cz/smlouva/2704422",
+  "source_url": "https://smlouvy.gov.cz/smlouva/2910678",
   "title": "Smlouva : \" Lomnice nad Popelkou a Nowogrodziec-společná cesta časem \"",
   "buyer_ico": "00275905",
   "supplier_ico": "00832227",
@@ -19,11 +19,13 @@
     "source": "registr-smluv",
     "source_id": "2704422",
     "version_id": "2910678",
-    "source_url": "https://smlouvy.gov.cz/smlouva/2704422",
+    "source_url": "https://smlouvy.gov.cz/smlouva/2910678",
     "title": "Smlouva : \" Lomnice nad Popelkou a Nowogrodziec-společná cesta časem \"",
     "buyer_ico": "00275905",
     "supplier_ico": "00832227",
     "contract_number": "P/2017/05/10",
+    "related_contract_ids": [],
+    "related_contract_numbers": [],
     "date": "2017-08-16",
     "signed_date": "2017-08-16",
     "published": "",
@@ -32,6 +34,12 @@
     "publisher": "",
     "subject": "Smlouva : \" Lomnice nad Popelkou a Nowogrodziec-společná cesta časem \"",
     "counterparty": "Euroregion Nisa",
-    "detail_url": "https://smlouvy.gov.cz/smlouva/2704422"
+    "detail_url": "https://smlouvy.gov.cz/smlouva/2910678",
+    "attachments": [
+      {
+        "url": "https://smlouvy.gov.cz/smlouva/soubor/4069630/P_2017_05_10%20-%201029.pdf",
+        "name": "P_2017_05_10%20-%201029.pdf"
+      }
+    ]
   }
 }

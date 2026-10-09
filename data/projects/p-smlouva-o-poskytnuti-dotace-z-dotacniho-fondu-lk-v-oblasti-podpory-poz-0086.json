@@ -70,7 +70,7 @@
         "source": "registr-smluv",
         "source_id": "2125466",
         "version_id": "2291178",
-        "source_url": "https://smlouvy.gov.cz/smlouva/2125466",
+        "source_url": "https://smlouvy.gov.cz/smlouva/2291178",
         "title": "Smlouva o poskytnutí dotace z dotačního fondu LK v oblasti podpory Požární ochrany na ochranné prostředky",
         "buyer_ico": "00275905",
         "supplier_ico": "70891508",
@@ -87,11 +87,13 @@
           "source": "registr-smluv",
           "source_id": "2125466",
           "version_id": "2291178",
-          "source_url": "https://smlouvy.gov.cz/smlouva/2125466",
+          "source_url": "https://smlouvy.gov.cz/smlouva/2291178",
           "title": "Smlouva o poskytnutí dotace z dotačního fondu LK v oblasti podpory Požární ochrany na ochranné prostředky",
           "buyer_ico": "00275905",
           "supplier_ico": "70891508",
           "contract_number": "01-OLP/1220/2017",
+          "related_contract_ids": [],
+          "related_contract_numbers": [],
           "date": "2017-06-20",
           "signed_date": "2017-06-20",
           "published": "",
@@ -100,7 +102,13 @@
           "publisher": "",
           "subject": "Smlouva o poskytnutí dotace z dotačního fondu LK v oblasti podpory Požární ochrany na ochranné prostředky",
           "counterparty": "Liberecký kraj",
-          "detail_url": "https://smlouvy.gov.cz/smlouva/2125466"
+          "detail_url": "https://smlouvy.gov.cz/smlouva/2291178",
+          "attachments": [
+            {
+              "url": "https://smlouvy.gov.cz/smlouva/soubor/3231166/Lomnice_nad_Popelkou1220.pdf",
+              "name": "Lomnice_nad_Popelkou1220.pdf"
+            }
+          ]
         },
         "_source_file": "data/sources/registr-smluv/rs-000017.json"
       }

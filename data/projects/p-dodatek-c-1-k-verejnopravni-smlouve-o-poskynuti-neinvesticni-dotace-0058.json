@@ -70,7 +70,7 @@
         "source": "registr-smluv",
         "source_id": "3861664",
         "version_id": "4164556",
-        "source_url": "https://smlouvy.gov.cz/smlouva/3861664",
+        "source_url": "https://smlouvy.gov.cz/smlouva/4164556",
         "title": "Dodatek č. 1 k veřejnoprávní smlouvě o poskynutí neinvestiční dotace",
         "buyer_ico": "00275905",
         "supplier_ico": "49295934",
@@ -87,11 +87,13 @@
           "source": "registr-smluv",
           "source_id": "3861664",
           "version_id": "4164556",
-          "source_url": "https://smlouvy.gov.cz/smlouva/3861664",
+          "source_url": "https://smlouvy.gov.cz/smlouva/4164556",
           "title": "Dodatek č. 1 k veřejnoprávní smlouvě o poskynutí neinvestiční dotace",
           "buyer_ico": "00275905",
           "supplier_ico": "49295934",
           "contract_number": "",
+          "related_contract_ids": [],
+          "related_contract_numbers": [],
           "date": "2017-12-12",
           "signed_date": "2017-12-12",
           "published": "",
@@ -100,7 +102,13 @@
           "publisher": "",
           "subject": "Dodatek č. 1 k veřejnoprávní smlouvě o poskynutí neinvestiční dotace",
           "counterparty": "Vodohospodářské sdružení Turnov",
-          "detail_url": "https://smlouvy.gov.cz/smlouva/3861664"
+          "detail_url": "https://smlouvy.gov.cz/smlouva/4164556",
+          "attachments": [
+            {
+              "url": "https://smlouvy.gov.cz/smlouva/soubor/5756872/LOM_KARL_Ve%C5%99ejnopr%C3%A1vn%C3%AD%20sml.%20dodatek.doc",
+              "name": "LOM_KARL_Ve%C5%99ejnopr%C3%A1vn%C3%AD%20sml.%20dodatek.doc"
+            }
+          ]
         },
         "_source_file": "data/sources/registr-smluv/rs-000026.json"
       }

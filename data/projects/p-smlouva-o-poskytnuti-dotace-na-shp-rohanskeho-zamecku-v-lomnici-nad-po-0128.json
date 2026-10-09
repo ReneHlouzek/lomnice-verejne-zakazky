@@ -70,7 +70,7 @@
         "source": "registr-smluv",
         "source_id": "2233702",
         "version_id": "2408406",
-        "source_url": "https://smlouvy.gov.cz/smlouva/2233702",
+        "source_url": "https://smlouvy.gov.cz/smlouva/2408406",
         "title": "Smlouva o poskytnutí dotace na SHP Rohanského zámečku v Lomnici nad Popelkou",
         "buyer_ico": "00275905",
         "supplier_ico": "70891508",
@@ -87,11 +87,13 @@
           "source": "registr-smluv",
           "source_id": "2233702",
           "version_id": "2408406",
-          "source_url": "https://smlouvy.gov.cz/smlouva/2233702",
+          "source_url": "https://smlouvy.gov.cz/smlouva/2408406",
           "title": "Smlouva o poskytnutí dotace na SHP Rohanského zámečku v Lomnici nad Popelkou",
           "buyer_ico": "00275905",
           "supplier_ico": "70891508",
           "contract_number": "07-OLP/2210/2017",
+          "related_contract_ids": [],
+          "related_contract_numbers": [],
           "date": "2017-06-27",
           "signed_date": "2017-06-27",
           "published": "",
@@ -100,7 +102,13 @@
           "publisher": "",
           "subject": "Smlouva o poskytnutí dotace na SHP Rohanského zámečku v Lomnici nad Popelkou",
           "counterparty": "Liberecký kraj",
-          "detail_url": "https://smlouvy.gov.cz/smlouva/2233702"
+          "detail_url": "https://smlouvy.gov.cz/smlouva/2408406",
+          "attachments": [
+            {
+              "url": "https://smlouvy.gov.cz/smlouva/soubor/3398846/07_Smlouva_SHP_Mesto_Lomnice_nad_Popelkou.pdf",
+              "name": "07_Smlouva_SHP_Mesto_Lomnice_nad_Popelkou.pdf"
+            }
+          ]
         },
         "_source_file": "data/sources/registr-smluv/rs-000018.json"
       }

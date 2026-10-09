@@ -68,7 +68,7 @@
         "source": "registr-smluv",
         "source_id": "8074447",
         "version_id": "8717079",
-        "source_url": "https://smlouvy.gov.cz/smlouva/8074447",
+        "source_url": "https://smlouvy.gov.cz/smlouva/8717079",
         "title": "Podskytnutí dotace na poskytování služeb v obecném hospodářském zájmu z rozpočtu LK z finančních prostředků MPSV.",
         "buyer_ico": "00275905",
         "supplier_ico": "70891508",
@@ -85,11 +85,13 @@
           "source": "registr-smluv",
           "source_id": "8074447",
           "version_id": "8717079",
-          "source_url": "https://smlouvy.gov.cz/smlouva/8074447",
+          "source_url": "https://smlouvy.gov.cz/smlouva/8717079",
           "title": "Podskytnutí dotace na poskytování služeb v obecném hospodářském zájmu z rozpočtu LK z finančních prostředků MPSV.",
           "buyer_ico": "00275905",
           "supplier_ico": "70891508",
           "contract_number": "55_OLP/840/2019",
+          "related_contract_ids": [],
+          "related_contract_numbers": [],
           "date": "2019-04-04",
           "signed_date": "2019-04-04",
           "published": "",
@@ -98,7 +100,13 @@
           "publisher": "",
           "subject": "Podskytnutí dotace na poskytování služeb v obecném hospodářském zájmu z rozpočtu LK z finančních prostředků MPSV.",
           "counterparty": "Liberecký kraj",
-          "detail_url": "https://smlouvy.gov.cz/smlouva/8074447"
+          "detail_url": "https://smlouvy.gov.cz/smlouva/8717079",
+          "attachments": [
+            {
+              "url": "https://smlouvy.gov.cz/smlouva/soubor/11520491/Mesto_Lomnice_Smlouva_MPSV_2019.pdf",
+              "name": "Mesto_Lomnice_Smlouva_MPSV_2019.pdf"
+            }
+          ]
         },
         "_source_file": "data/sources/registr-smluv/rs-000038.json"
       }

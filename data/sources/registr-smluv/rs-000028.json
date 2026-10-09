@@ -2,7 +2,7 @@
   "source": "registr-smluv",
   "source_id": "4286240",
   "version_id": "4618568",
-  "source_url": "https://smlouvy.gov.cz/smlouva/4286240",
+  "source_url": "https://smlouvy.gov.cz/smlouva/4618568",
   "title": "Kamerový systém Lomnice nad Popelkou",
   "buyer_ico": "00275905",
   "supplier_ico": "72050501",
@@ -19,11 +19,13 @@
     "source": "registr-smluv",
     "source_id": "4286240",
     "version_id": "4618568",
-    "source_url": "https://smlouvy.gov.cz/smlouva/4286240",
+    "source_url": "https://smlouvy.gov.cz/smlouva/4618568",
     "title": "Kamerový systém Lomnice nad Popelkou",
     "buyer_ico": "00275905",
     "supplier_ico": "72050501",
     "contract_number": "925003585.00.000 / KRPL-119398/ČJ-2015-1800IT",
+    "related_contract_ids": [],
+    "related_contract_numbers": [],
     "date": "2018-01-19",
     "signed_date": "2018-01-19",
     "published": "",
@@ -32,6 +34,12 @@
     "publisher": "",
     "subject": "Kamerový systém Lomnice nad Popelkou",
     "counterparty": "Krajské ředitelství policie Libereckého kraje",
-    "detail_url": "https://smlouvy.gov.cz/smlouva/4286240"
+    "detail_url": "https://smlouvy.gov.cz/smlouva/4618568",
+    "attachments": [
+      {
+        "url": "https://smlouvy.gov.cz/smlouva/soubor/6368200/Kamerov%C3%BD%20syst%C3%A9m%20Lomnice%20nad%20Popelkou.pdf",
+        "name": "Kamerov%C3%BD%20syst%C3%A9m%20Lomnice%20nad%20Popelkou.pdf"
+      }
+    ]
   }
 }

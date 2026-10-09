@@ -2,7 +2,7 @@
   "source": "registr-smluv",
   "source_id": "1078317",
   "version_id": "1147897",
-  "source_url": "https://smlouvy.gov.cz/smlouva/1078317",
+  "source_url": "https://smlouvy.gov.cz/smlouva/1147897",
   "title": "Darovací smlouva - zabezpečení mateřských škol",
   "buyer_ico": "00275905",
   "supplier_ico": "70801304",
@@ -19,11 +19,13 @@
     "source": "registr-smluv",
     "source_id": "1078317",
     "version_id": "1147897",
-    "source_url": "https://smlouvy.gov.cz/smlouva/1078317",
+    "source_url": "https://smlouvy.gov.cz/smlouva/1147897",
     "title": "Darovací smlouva - zabezpečení mateřských škol",
     "buyer_ico": "00275905",
     "supplier_ico": "70801304",
     "contract_number": "",
+    "related_contract_ids": [],
+    "related_contract_numbers": [],
     "date": "2016-11-22",
     "signed_date": "2016-11-22",
     "published": "",
@@ -32,6 +34,16 @@
     "publisher": "",
     "subject": "Darovací smlouva - zabezpečení mateřských škol",
     "counterparty": "\"MIKROREGION TÁBOR\"",
-    "detail_url": "https://smlouvy.gov.cz/smlouva/1078317"
+    "detail_url": "https://smlouvy.gov.cz/smlouva/1147897",
+    "attachments": [
+      {
+        "url": "https://smlouvy.gov.cz/smlouva/soubor/1679453/darovaci%20smlouva%20Lomnice.pdf",
+        "name": "darovaci%20smlouva%20Lomnice.pdf"
+      },
+      {
+        "url": "https://smlouvy.gov.cz/smlouva/soubor/1679457/Priloha%20Lomnice.pdf",
+        "name": "Priloha%20Lomnice.pdf"
+      }
+    ]
   }
 }

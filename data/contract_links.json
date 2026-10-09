@@ -1,5 +1,5 @@
 {
-  "count": 9,
+  "count": 11,
   "links": [
     {
       "project_a": "p-dodatek-1-lomnice-n-popelkou-najem-np-0108",
@@ -58,7 +58,8 @@
       "confidence": "explicit",
       "reason": "explicit_related_contract_id",
       "evidence": [
-        "related_contract_id=2264882"
+        "related_contract_id=2264882",
+        "OLP/2674/2016"
       ],
       "source_a": "registr-smluv",
       "source_id_a": "845225",
@@ -74,7 +75,8 @@
       "confidence": "explicit",
       "reason": "explicit_related_contract_id",
       "evidence": [
-        "related_contract_id=3753"
+        "related_contract_id=3753",
+        "OLP/2674/2016"
       ],
       "source_a": "registr-smluv",
       "source_id_a": "845225",
@@ -139,12 +141,46 @@
       "confidence": "explicit",
       "reason": "explicit_parent_contract_number",
       "evidence": [
-        "06-OLP/2674/2016"
+        "OLP/2674/2016"
       ],
       "source_a": "registr-smluv",
       "source_id_a": "2264882",
       "source_b": "registr-smluv",
       "source_id_b": "3753"
+    },
+    {
+      "project_a": "p-financovani-registrovanych-socialnich-sluzeb-dle-zakona-c-108-2006-sb-0145",
+      "title_a": "Financování registrovaných sociálních služeb dle zákona č. 108/2006 Sb., o sociálních službách, ve znění pozdějších předpisů.",
+      "project_b": "p-zmena-vyse-celkove-neinvesticni-alokace-vyhradne-na-pouziti-na-provoz-0074",
+      "title_b": "Změna výše celkové neinvestiční alokace výhradně na použití na provoz základních činností organizace, tj. na úhradu nákladů souvisejících s poskytováním základních činností veřejné služby.",
+      "kind": "contractual",
+      "confidence": "explicit",
+      "reason": "explicit_related_contract_id",
+      "evidence": [
+        "related_contract_id=3132722",
+        "OLP/618/2017"
+      ],
+      "source_a": "registr-smluv",
+      "source_id_a": "1287978",
+      "source_b": "registr-smluv",
+      "source_id_b": "3132722"
+    },
+    {
+      "project_a": "p-poskytnuti-ucelove-neinvesticni-dotace-na-zavazek-verejne-sluzby-z-roz-0060",
+      "title_a": "Poskytnutí účelové neinvestiční dotace na závazek veřejné služby z rozpočtu Libereckého kraje z finančních prostředků MPSV.",
+      "project_b": "p-zmena-vyse-celkove-neinvesticni-alokace-kterou-lze-pouzit-vyhradne-na-0142",
+      "title_b": "Změna výše celkové neinvestiční alokace, kterou lze použít výhradně na provoz základních činností organizace, tj. na úhradu nákladů souvisejících s poskytováním základních činností veřejné služby.",
+      "kind": "contractual",
+      "confidence": "explicit",
+      "reason": "explicit_related_contract_id",
+      "evidence": [
+        "related_contract_id=6439647",
+        "OLP/1640/2018"
+      ],
+      "source_a": "registr-smluv",
+      "source_id_a": "4618624",
+      "source_b": "registr-smluv",
+      "source_id_b": "6439647"
     }
   ],
   "candidate_count": 1,

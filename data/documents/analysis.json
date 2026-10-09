@@ -1,8 +1,470 @@
 {
   "version": 2,
-  "documents_analyzed": 7,
+  "documents_analyzed": 43,
   "method": "Pravidlová extrakce z textu PDF; nejde o právní ani ekonomické hodnocení.",
   "documents": [
+    {
+      "source": "registr-smluv",
+      "source_id": "1078317",
+      "source_url": "https://smlouvy.gov.cz/smlouva/1147897",
+      "title": "Darovací smlouva - zabezpečení mateřských škol",
+      "document_name": "darovaci%20smlouva%20Lomnice.pdf",
+      "text_file": "data/documents/registr-smluv/1078317/001.txt",
+      "text_chars": 3236,
+      "document_types": [
+        "contract"
+      ],
+      "signals": {
+        "contract": 1,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [],
+      "dates": [
+        "1.1.2017",
+        "14.11.2016",
+        "22.11.2016",
+        "31.12.2016"
+      ],
+      "snippets": [
+        "ek bude převeden v pořizovací ceně včetně oprávek a se zůstatkovou hodnotou nerozpuštěné dotace. Hodnoty v přesné výši budou uvedeny v předávacím protokolu. Obdarovaný si majetek převezme k 1.1.2017. 3. Smluvní strany prohlašují, že si tuto smlouvu před podpisem přečetly, že s jejím obsahem souhlasí a na důkaz toho připojují své podpisy. 4. Sm"
+      ]
+    },
+    {
+      "source": "registr-smluv",
+      "source_id": "1078317",
+      "source_url": "https://smlouvy.gov.cz/smlouva/1147897",
+      "title": "Darovací smlouva - zabezpečení mateřských škol",
+      "document_name": "Priloha%20Lomnice.pdf",
+      "text_file": "data/documents/registr-smluv/1078317/002.txt",
+      "text_chars": 2774,
+      "document_types": [],
+      "signals": {
+        "contract": 0,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [],
+      "dates": [],
+      "snippets": []
+    },
+    {
+      "source": "registr-smluv",
+      "source_id": "1287978",
+      "source_url": "https://smlouvy.gov.cz/smlouva/1380934",
+      "title": "Financování registrovaných sociálních služeb dle zákona č. 108/2006 Sb., o sociálních službách, ve znění pozdějších předpisů.",
+      "document_name": "017Mesto_Lomnice_nad_Pop_SenovSmlouva_dotace_2017_%282167636%29.pdf",
+      "text_file": "data/documents/registr-smluv/1287978/001.txt",
+      "text_chars": 37726,
+      "document_types": [
+        "contract",
+        "budget"
+      ],
+      "signals": {
+        "contract": 1,
+        "addendum": 0,
+        "budget": 1,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [
+        50000.0
+      ],
+      "dates": [
+        "1. 1. \n2017",
+        "15. 4. 2017",
+        "15. 7. 2017",
+        "20. 12. 2011",
+        "30. 6. 2017",
+        "31. 01. 2017",
+        "31. 12. \n2017",
+        "31. 12. 2017",
+        "5. 2. 2018"
+      ],
+      "snippets": [
+        "auditorů České republiky. Náklady na provedení povinného auditu jsou uznatelným výdajem. Cena za provedení auditu musí být cenou obvyklou v daném regionu a v daném čase. 14. Jestliže organizace obdrží dotaci, která převyšuje maximální výši vyrovnávací platby, která je stanovena v Pověření k poskytování služeb v obecném hospodářském zájmu",
+        "ích službách, č. 108/2006 Sb., ve znění pozdějších předpisů. Článek III. Dotace, rozpočet, zpráva o činnosti 1. Dotace poskytnutá na základě této Smlouvy je součástí vyrovnávací platby určené na sociální službu, která je součástí Základní sítě Libereckého kraje. Dotac e poskytnu ta z rozpočtu poskytovatele je určena na podporu kofinanc",
+        "strana 1 (celkem 21) S M L O U V A O POSKYTNUTÍ DOTACE NA POSKYTOVÁNÍ SLUŽEB V OBECNÉM HOSPODÁŘSKÉM ZÁJMU Z ROZPOČTU LIBERECKÉHO KRAJE Z FINANČNÍCH PROSTŘEDKŮ MINISTERSTVA PRÁCE A SOCIÁLNÍCH VĚCÍ č. OLP/618/2017 schválená Zastupitelstvem Libereckého kraje dne 31. 01. 2017, usnesením č. 17/17/ZK Sml"
+      ]
+    },
+    {
+      "source": "registr-smluv",
+      "source_id": "2125466",
+      "source_url": "https://smlouvy.gov.cz/smlouva/2291178",
+      "title": "Smlouva o poskytnutí dotace z dotačního fondu LK v oblasti podpory Požární ochrany na ochranné prostředky",
+      "document_name": "Lomnice_nad_Popelkou1220.pdf",
+      "text_file": "data/documents/registr-smluv/2125466/001.txt",
+      "text_chars": 24701,
+      "document_types": [
+        "grant",
+        "deadline"
+      ],
+      "signals": {
+        "contract": 0,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 1,
+        "tender": 0,
+        "deadline": 2
+      },
+      "amounts_czk": [
+        50000.0,
+        88000.0,
+        100000.0
+      ],
+      "dates": [
+        "1. 1. 2017",
+        "30. 5. 2017",
+        "31. 12. 2017"
+      ],
+      "snippets": [
+        ". Průběžnou zprávu také nemusí předkládat příjemce, kterému je celková výše dotace proplacena až po závěrečném vyúčtování projektu (tzv. ex-post). 9. K závěrečnému vyúčtování předloží příjemce dotace kopie účetních resp. prvotních daňových dokladů nebo zjednodušených daňových dokladů (např. faktury, účtenky, paragony, výdajové pokladní doklad",
+        "daňový doklad musí obsahovat a) obchodní firmu nebo jméno a příjmení, případně název, dodatek jména a příjmení nebo názvu, sídlo nebo místo podnikání, popřípadě trvalý pobyt nebo místo podnikání plátce, který uskutečňuje zdanitelné plnění, b) daňové identifikační číslo plátce, který uskutečňuje zdanitelné plnění, c) obchodní firmu nebo jm",
+        "1 Lomnice nad Popelkou1220 S m l o u v a o p o s k y t n u t í účelové dotace z Dotačního fondu Libereckého kraje oblast podpory: Požární ochrana program č.: 1.1 Podpora jednotek požární ochrany obcí Libereckého kraje č. OLP/1220/2017 schválená Zastupitelstvem Libereckého kraje dne 30. 5. 2017 usnesením č. 185/17/ZK Smluvn",
+        "alkohol a tabák a výrobky z nich. 4. Termín zahájení realizace projektu je 1. 1. 201 7 a termín ukončení realizace projektu je nejpozději 31. 12. 2017. 5. Ukončením realizace projektu se rozumí dokončení veškerých aktivit na projektu a zároveň protokolární převzetí projektu mezi příjemcem a zhotovitelem projektu (především datum zaplacení p"
+      ]
+    },
+    {
+      "source": "registr-smluv",
+      "source_id": "2233702",
+      "source_url": "https://smlouvy.gov.cz/smlouva/2408406",
+      "title": "Smlouva o poskytnutí dotace na SHP Rohanského zámečku v Lomnici nad Popelkou",
+      "document_name": "07_Smlouva_SHP_Mesto_Lomnice_nad_Popelkou.pdf",
+      "text_file": "data/documents/registr-smluv/2233702/001.txt",
+      "text_chars": 26079,
+      "document_types": [
+        "contract",
+        "grant",
+        "deadline"
+      ],
+      "signals": {
+        "contract": 1,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 1,
+        "tender": 0,
+        "deadline": 2
+      },
+      "amounts_czk": [
+        29190.0,
+        50000.0,
+        58380.0
+      ],
+      "dates": [
+        "1. 12. 2017",
+        "1. 4. 2017",
+        "13. 11. 2017",
+        "30. 5. 2017",
+        "6. 3. 2017"
+      ],
+      "snippets": [
+        ". Průběžnou zprávu také nemusí předkládat příjemce, kterému je celková výše dotace proplacena až po závěrečném vyúčtování projektu (tzv. ex-post). 9. K závěrečnému vyúčtování předloží příjemce dotace kopie účetních resp. prvotních daňových dokladů nebo zjednodušených daňových dokladů (např. faktury, účtenky, paragony, výdajové pokladní doklady)",
+        "žný daňový doklad musí obsahovat a) obchodní firmu nebo jméno a příjmení, případně název, dodatek jména a příjmení nebo názvu, sídlo nebo místo podnikání, popřípadě trvalý pobyt nebo místo podnikání plátce, který uskutečňuje zdanitelné plnění, b) daňové identifikační číslo plátce, který uskutečňuje zdanitelné plnění, c) obchodní firmu nebo jméno",
+        "Strana 1 (celkem 8) S m l o u v a o p o s k y t n u t í účelové dotace z Dotačního fondu Libereckého kraje oblast podpory: 7. Kultura, památková péče a cestovní ruch program č.: 7.3 Stavebně historický průzkum č. OLP/2210/2017 schválená Zastupitelstvem Libereckého kraje dne 30. 5. 2017 usnesením č. 203/17/ZK Smluvní strany",
+        "a alkohol a tabák a výrobky z nich. 4. Termín zahájení realizace projektu je 1. 4. 2017 a termín ukončení realizace projektu je nejpozději 13. 11. 2017. 5. Ukončením realizace projektu se rozumí dokončení veškerých aktivit na projektu a zároveň protokolární převzetí projektu mezi příjemcem a zhotovitelem projektu. Aktivitou projektu není úhrada"
+      ]
+    },
+    {
+      "source": "registr-smluv",
+      "source_id": "2264882",
+      "source_url": "https://smlouvy.gov.cz/smlouva/2442642",
+      "title": "Dodatek č.2 ke Smlouvě o poskytnutí účelové dotace Libereckému kraji z rozpočtu Města Lomnice nad Popelkou na stavební akci „II/286 x II/284 Lomnice nad Popelkou - havárie zdi - nezpůsobilé výdaje“",
+      "document_name": "Dodatek_c_2_OLP_2674_2016.pdf",
+      "text_file": "data/documents/registr-smluv/2264882/001.txt",
+      "text_chars": 4881,
+      "document_types": [
+        "contract",
+        "addendum"
+      ],
+      "signals": {
+        "contract": 1,
+        "addendum": 1,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [
+        50000.0
+      ],
+      "dates": [
+        "0. 11. 2017",
+        "0. 6. 2017",
+        "21.6.2017",
+        "22.12.2016",
+        "26.6.2017",
+        "29.6.2017",
+        "30. 11. 2017",
+        "30. 6. 2017",
+        "7.7.2016"
+      ],
+      "snippets": [
+        "1 Dodatek č. 2 ke Smlouvě o poskytnutí účelové dotace Libereckému kraji z rozpočtu Města Lomnice nad Popelkou na stavební akci „II/286 x II/284 Lomnice nad Popelkou - havárie zdi - nezpůsobilé výdaje“ číslo smlouvy příjemce č. OLP/2674/2016 číslo smlouvy p",
+        "1 Dodatek č. 2 ke Smlouvě o poskytnutí účelové dotace Libereckému kraji z rozpočtu Města Lomnice nad Popelkou na stavební akci „II/286 x II/284 Lomnice nad Popelkou - havárie zdi - nezpůsobilé výdaje“ číslo smlouvy příjemce č. OLP/2674/2016 číslo smlouvy poskytovatele č. 308/2016 uzavřený mezi těmi"
+      ]
+    },
+    {
+      "source": "registr-smluv",
+      "source_id": "2316654",
+      "source_url": "https://smlouvy.gov.cz/smlouva/2497810",
+      "title": "Dodatek 1 Lomnice n.Popelkou - nájem NP",
+      "document_name": "8860-12-Lomnicen.P.%2CKUrnov%C3%A9muh%C3%A1ji118-Dodatek%C4%8D.1kNS.pdf",
+      "text_file": "data/documents/registr-smluv/2316654/001.txt",
+      "text_chars": 2920,
+      "document_types": [
+        "addendum"
+      ],
+      "signals": {
+        "contract": 0,
+        "addendum": 1,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [
+        300.0,
+        1200.0,
+        5235.0,
+        12215.0,
+        62820.0,
+        146580.0
+      ],
+      "dates": [
+        "1. 7. 2017",
+        "5. 6. 2017"
+      ],
+      "snippets": [
+        "Dodatek č. 1 ke Smlouvě o nájmu nebytových prostor l. Smluvní strany 1. Město Lomnice nad Popelkou zastoupené: Mgr, Josefem Šimkem, starostou se sídlem: Husovo nám. 6, 512 51 Lomnice nad Popelkou IČO: 002 75 905 Bankovní spojení: Komerční banka, a.s. Číslo účt"
+      ]
+    },
+    {
+      "source": "registr-smluv",
+      "source_id": "2704422",
+      "source_url": "https://smlouvy.gov.cz/smlouva/2910678",
+      "title": "Smlouva : \" Lomnice nad Popelkou a Nowogrodziec-společná cesta časem \"",
+      "document_name": "P_2017_05_10%20-%201029.pdf",
+      "text_file": "data/documents/registr-smluv/2704422/001.txt",
+      "text_chars": 36828,
+      "document_types": [
+        "contract"
+      ],
+      "signals": {
+        "contract": 1,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [],
+      "dates": [
+        "01. 07. 2017",
+        "04. 04. 2017",
+        "05. 04. 2017",
+        "1.  1. 2014",
+        "1.  7. 2017",
+        "1. 7. 2017",
+        "10. 8. 2017",
+        "16. 8. 2017",
+        "19. 12. 2013",
+        "26. 06. 2017",
+        "30. 06. 2018",
+        "31. 12. 2027"
+      ],
+      "snippets": [
+        "Stejně bude postupováno i u dodatků Smlouvy. 5. Přehled zdrojů financování a podrobný rozpočet je součástí Žádosti o podporu. Žádost o podporu je v plném rozsahu pro Konečného uživatele závazná. 6. Veškerou korespondenci týkající se této Smlouvy bude konečný uživatel zasílat na adresu: Euroregion Nisa 1. máje 858/26, 460 07, Liberec 3 Tel.",
+        "lausitz-Niederschlesien, Zittau číslo účtu: 3100035711/85050100 (dále jen „Poskytovatel dotace“ / „Správce Fondu“) na straně jedné a Město Lomnice nad Popelkou se sídlem: Husovo náměstí 6, 512 51 Lomnice nad Popelkou zastoupený: Mgr. Josef Šimek, starosta IČ: 00275905 pro projekt Neplátce DPH bankovní spojení: Komerční banka, a.s. číslo"
+      ]
+    },
+    {
+      "source": "registr-smluv",
+      "source_id": "286209",
+      "source_url": "https://smlouvy.gov.cz/smlouva/305769",
+      "title": "Smlouva o poskytnutí dotace na poskytování služeb v obecném hospodářském zájmu z rozpočtu Libereckého kraje č. OLP/4637/2016",
+      "document_name": "Mesto_Lomnice_nad_Popelkou.pdf",
+      "text_file": "data/documents/registr-smluv/286209/001.txt",
+      "text_chars": 19685,
+      "document_types": [],
+      "signals": {
+        "contract": 0,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [
+        49000.0
+      ],
+      "dates": [
+        "1. 1. 2017",
+        "10. 2. 2015",
+        "20. 12. 2011",
+        "30. 4. 2017",
+        "31.  5.  2017",
+        "31. 12. 2017",
+        "5. 4. 2016"
+      ],
+      "snippets": [
+        "bereckého kraje na rok 2017. 7. Celková výše f inanční podpor y tj. 49 000 Kč, bude vyplacena ve výši 100% a bude převedena na účet příjemce (u příspěvkové organizace obce na účet zřizovatele , uvedený v této smlouvě) do 30 kalendářních dnů po uzavření této smlouvy. Článek IV. Povinnosti příjemce a podmínky čerpání finanční podpory 1. Dot",
+        "strana 1 (celkem 9) S M L O U V A O POSKYTNUTÍ DOTACE NA POSKYTOVÁNÍ SLUŽEB V OBECNÉM HOSPODÁŘSKÉM ZÁJMU Z ROZPOČTU LIBERECKÉHO KRAJE č. OLP /4637/2016 schválená Radou Libereckého kraje dne 5. 4. 2016, usnesením č. 490/16/RK Smluvní strany: Liberecký kraj se sídlem : U Jezu 642/2a, 461 80 Liber"
+      ]
+    },
+    {
+      "source": "registr-smluv",
+      "source_id": "301745",
+      "source_url": "https://smlouvy.gov.cz/smlouva/322201",
+      "title": "poskytnutí účelové neinvestiční dotace na vypracování plánu ochrany pro památkovou zónu města Lomnice nad Popelkou - 2. a 3. etapa",
+      "document_name": "OLP_3833_2016_plany_ochrany_Lomnice_n_Popelkou.pdf",
+      "text_file": "data/documents/registr-smluv/301745/001.txt",
+      "text_chars": 25740,
+      "document_types": [
+        "grant",
+        "deadline"
+      ],
+      "signals": {
+        "contract": 0,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 1,
+        "tender": 0,
+        "deadline": 2
+      },
+      "amounts_czk": [
+        50000.0,
+        100000.0
+      ],
+      "dates": [
+        "1. 9. 2016",
+        "19. 8. 2017",
+        "30. 6. 2017",
+        "30. 8. 2016",
+        "4. 7. 2016"
+      ],
+      "snippets": [
+        ". Průběžnou zprávu také nemusí předkládat příjemce, kterému je celková výše dotace proplacena až po závěrečném vyúčtování projektu (tzv. ex-post). 9. K závěrečnému vyúčtování předloží příjemce dotace kopie účetních resp. prvotních daňových dokladů nebo zjednodušených daňových dokladů (např. faktury, účtenky, paragony, výdajové pokladní doklady)",
+        "žný daňový doklad musí obsahovat a) obchodní firmu nebo jméno a příjmení, případně název, dodatek jména a příjmení nebo názvu, sídlo nebo místo podnikání, popřípadě t rvalý p obyt nebo místo podnikání plátce, který uskutečňuje zdanitelné plnění, b) daňové identifikační číslo plátce, který uskutečňuje zdanitelné plnění, c) obchodní firmu nebo jm",
+        "Strana 1 (celkem 12) S m l o u v a o p o s k y t n u t í účelové dotace z rozpočtu Libereckého kraje č. OLP/3833/2016 schválená Zastupitelstvem Libereckého kraje dne 30. 8. 2016 usnesením č. 443/16/ZK Smluvní strany: Liberecký kraj se sídlem: U Jezu 642/2a, 461 80 Liberec 2 zastoupený: Martinem Půtou, hejtmanem IČ: 70891508",
+        "a alkohol a tabák a výrobky z nich. 4. Termín zahájení realizace projektu je 1. 9. 2016 a termín ukončení realizace projektu je nejpozději 30. 6. 2017. 5. Ukončením realizace projektu se rozumí dokončení veškerých aktivit na projektu. 6. Finanční prostředky poskytovatele na projekt dle Článku I. jsou poskytnuty k využití do termínu pro předložení"
+      ]
+    },
+    {
+      "source": "registr-smluv",
+      "source_id": "3124922",
+      "source_url": "https://smlouvy.gov.cz/smlouva/3367966",
+      "title": "Smlouva o bezúplatném převodu privatizovaného majetku do vlastnictví obce - Města Lomnice nad Popelkou - nemovitost v k.ú. Rváčov (účetní hodnota převáděného majetku činí 3000,-Kč) (AVISme 2017000988)",
+      "document_name": "zz_Dokument%201%20k%20_Smlouva%20-%20%C4%8D.%20170450275_.pdf",
+      "text_file": "data/documents/registr-smluv/3124922/001.txt",
+      "text_chars": 8396,
+      "document_types": [
+        "contract"
+      ],
+      "signals": {
+        "contract": 1,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [],
+      "dates": [
+        "13.10.2016",
+        "2.9.2016",
+        "20.9.2017",
+        "24.9.2009",
+        "3.1.2006",
+        "6.10.2017",
+        "7.7.2015"
+      ],
+      "snippets": []
+    },
+    {
+      "source": "registr-smluv",
+      "source_id": "3132722",
+      "source_url": "https://smlouvy.gov.cz/smlouva/3376474",
+      "title": "Změna výše celkové neinvestiční alokace výhradně na použití na provoz základních činností organizace, tj. na úhradu nákladů souvisejících s poskytováním základních činností veřejné služby.",
+      "document_name": "Dodatekc_1Mesto_Lomnice_nad_Popelkou.pdf",
+      "text_file": "data/documents/registr-smluv/3132722/001.txt",
+      "text_chars": 4986,
+      "document_types": [],
+      "signals": {
+        "contract": 0,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [
+        50000.0,
+        896000.0,
+        1087000.0
+      ],
+      "dates": [
+        "15.  4. 2017",
+        "15. 4. 2017",
+        "15. 7. 2017",
+        "27. 02. 2017",
+        "29. 08. 2017",
+        "31. 01. 2017",
+        "31. 10. 2017"
+      ],
+      "snippets": [
+        "vení 1. Ostatní ustanovení smlouvy tímto dodatkem nedotčená zůstávají v platnosti. 2. Dodatek je sepsán ve třech stejnopisech, z nichž dvě vyhotovení si ponechá poskytovatel a jedno vyhotovení obdržení příjemce. 3. Příjemce bere na vědomí, že smlouvy s hodnotou předmětu převyšující 50.000 Kč bez DPH, včetně dohod, na základě kterých se tyt",
+        "strana 1 (celkem 3) D O D A T E K Č . 1 KE SMLOUVĚ O POSKYTNUTÍ DOTACE NA POSKYTOVÁNÍ SLUŽEB V OBECNÉM HOSPODÁŘSKÉM ZÁJMU Z ROZPOČTU LIBERECKÉHO KRAJE Z FINANČNÍCH PROSTŘEDKŮ MINISTERSTVA PRÁCE A SOCIÁLNÍCH VĚCÍ č. OLP/618/2017 schválená Zastupitelstvem Libereckého kraje dne 31. 01. 2017, usnesením č. 17/17/ZK"
+      ]
+    },
+    {
+      "source": "registr-smluv",
+      "source_id": "3312200",
+      "source_url": "https://smlouvy.gov.cz/smlouva/3572296",
+      "title": "Darovací smlouva - RDS Lomnice n. Popel.",
+      "document_name": "%23DS_Lomnice_nad_Popelkou.pdf",
+      "text_file": "data/documents/registr-smluv/3312200/001.txt",
+      "text_chars": 4391,
+      "document_types": [
+        "contract"
+      ],
+      "signals": {
+        "contract": 1,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [
+        55.0
+      ],
+      "dates": [
+        "12. 9. 2017"
+      ],
+      "snippets": [
+        "Rok výroby: 2004 Nomenklatura: 061700203000 Evidenční číslo majetku: 10600224 Pořizovací cena: 60428,55 Kč č.j. HSL1-2037-40/KŘ-EKO-P-130-2017 Radiostanice vozidlová BER-B RADIO LB UL DP4_2 Rok výroby: 2004 Nomenklatura: 061700203000 Evidenční číslo majetku: 10600238 Pořizovací cena: 60428,55 Kč (dále také jen majetek). l) Dárce touto smlouvou p"
+      ]
+    },
     {
       "source": "registr-smluv",
       "source_id": "36813062",
@@ -36,45 +498,6 @@
     },
     {
       "source": "registr-smluv",
-      "source_id": "36978239",
-      "source_url": "https://smlouvy.gov.cz/smlouva/39335147",
-      "title": "Smlouva o poskytnutí individuální dotace Město Lomnice nad Popelkou, ul 5. května",
-      "document_name": "Smlouva_individualni_dotace_Lomnice_OLP-02908-2026_sig.pdf",
-      "text_file": "data/documents/registr-smluv/36978239/001.txt",
-      "text_chars": 24954,
-      "document_types": [
-        "contract",
-        "grant",
-        "deadline"
-      ],
-      "signals": {
-        "contract": 1,
-        "addendum": 0,
-        "budget": 0,
-        "change_sheet": 0,
-        "grant": 2,
-        "tender": 0,
-        "deadline": 2
-      },
-      "amounts_czk": [
-        50000.0,
-        1584824.0
-      ],
-      "dates": [
-        "19.02.2027",
-        "2.11.2023",
-        "25.8.2026",
-        "31.12.2026"
-      ],
-      "snippets": [
-        "věrečném vyúčtování projektu nižší než celková výše poskytnuté dotace, bude dotace proplacena ve výši doložených dokladů. 3. V případě, že způsobilé výdaje projektu budou vyšší než výše poskytnuté dotace, hradí toto navýšení výdajů příjemce z vlastních zdrojů. 4. Příjemci může být poskytnuta záloha max. do výše 100 % z celkové přiznané dotace",
-        "práci konané mimo pracovní poměr musí být předmět a cena prací a termín realizace), e) dodatek ke smlouvě o dílo nebo novou objednávku v případě navýšení prací nad rámec smlouvy o dílo nebo objednávky. 10. Nevyčerpané, resp. neproinvestované finanční prostředky poskytnuté v souladu s touto smlouvou je příjemce povinen vrátit nejpozději do",
-        "Stránka 1 z 12 *KULBX00YOAZO* Smlouva o poskytnutí účelové dotace z rozpočtu Libereckého kraje INDIVIDUÁLNÍ DOTACE OLP/02908/2026 schválená Zastupitelstvem Libereckého kraje dne 25.8.2026 usnesením č. 413/26/ZK Smluvní strany: Liberecký kraj se sídlem U Jezu 642/2a, 460 01 Liberec IV - Perštýn korespondenč",
-        "a alkohol a tabák a výrobky z nich. 4. Termín zahájení realizace projektu je 2.11.2023 a termín ukončení realizace projektu je nejpozději 31.12.2026. 5. Ukončením realizace projektu se rozumí dokončení veškerých aktivit na projektu. 6. Projekt musí být vyúčtován do 50 kalendářních dnů po ukončení realizace projektu, nejpozději do 19.02.2027."
-      ]
-    },
-    {
-      "source": "registr-smluv",
       "source_id": "37367969",
       "source_url": "https://smlouvy.gov.cz/smlouva/39741021",
       "title": "Dodatek č. 1 veřejnoprávní smlouvoy o poskytnutí neinvestiční dotace z rozpočtu města Lomnice nad Popelkou",
@@ -102,6 +525,881 @@
         "10. 3. 2026"
       ],
       "snippets": []
+    },
+    {
+      "source": "registr-smluv",
+      "source_id": "3753",
+      "source_url": "https://smlouvy.gov.cz/smlouva/3869",
+      "title": "Smlouva o poskytnutí účelové dotace Libereckému kraji z rozpočtu města Lomnice nad Popelkou",
+      "document_name": "OLP_2674_2016.pdf",
+      "text_file": "data/documents/registr-smluv/3753/001.txt",
+      "text_chars": 11610,
+      "document_types": [
+        "contract",
+        "grant"
+      ],
+      "signals": {
+        "contract": 1,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 2,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [
+        1636876.14,
+        1980620.13
+      ],
+      "dates": [
+        "1.11.2016",
+        "22.6.2016",
+        "31. 1. 2017",
+        "7.6.2016"
+      ],
+      "snippets": [
+        "Strana 1 (celkem 6) S m l o u v a o p o s k y t n u t í účelové dotace Libereckému kraji z rozpočtu Města Lomnice nad Popelkou na stavební akci „II/286 x II/284 Lomnice nad Popelkou - havárie zdi - nezpůsobilé výdaje“ číslo smlouvy poskytovatele: 165/16 schválená Zastupitelstvem Města Lomnice nad Popelkou dne 22.6.2016 us"
+      ]
+    },
+    {
+      "source": "registr-smluv",
+      "source_id": "40425",
+      "source_url": "https://smlouvy.gov.cz/smlouva/41973",
+      "title": "Smlouva o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje, Tělovýchova a sport - Sportovní akce",
+      "document_name": "04708_OLP_2514_2016.pdf",
+      "text_file": "data/documents/registr-smluv/40425/001.txt",
+      "text_chars": 23997,
+      "document_types": [
+        "grant",
+        "deadline"
+      ],
+      "signals": {
+        "contract": 0,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 1,
+        "tender": 0,
+        "deadline": 2
+      },
+      "amounts_czk": [
+        56000.0
+      ],
+      "dates": [
+        "1.1.2016",
+        "19.2.2017",
+        "31. 5. 2016",
+        "31.12.2016"
+      ],
+      "snippets": [
+        "řípadě proplácení dotace ex-post bude za pochybení uvedená v čl. III. odst. 18 dotace krácena ve výši sazeb snížených odvodů uvedených v čl. IV. odst. 3. 6. Veškeré platby j ako důsledky p orušení závazků provede příjemce formou bezhotovostního převodu na účet poskytovatele č 19-7964250217/0100 s variabilním symbolem č. 4230094. Článek V. Závěre",
+        "žný daňový doklad musí obsahovat a) obchodní firmu nebo jméno a příjmení, případně název, dodatek jména a příjmení nebo názvu, sídlo nebo místo podnikání, popřípadě t rvalý p obyt nebo místo podnikání plátce, který uskutečňuje zdanitelné plnění, b) daňové identifikační číslo plátce, který uskutečňuje zdanitelné plnění, c) obchodní firmu nebo jm",
+        "Strana 1 (celkem 8) S m l o u v a o p o s k y t n u t í účelové dotace z Dotačního fondu Libereckého kraje oblast podpory: Tělovýchova a sport 4.23 Sportovní akce č. OLP/2514/2016 schválená Zastupitelstvem Libereckého kraje dne 31. 5. 2016 usnesením č. 297/16/ZK Smluvní strany: Liberecký kraj se sídlem : U Jezu 642/2a, 461",
+        "za alkohol a tabák a výrobky z nich. 4. Termín zahájení realizace projektu je 1.1.2016 a termín ukončení realizace projektu je nejpozději 31.12.2016. 5. Ukončením realizace projektu se rozumí dokončení veškerých aktivit na projektu. 6. Finanční prostředky poskytovatele na projekt dle Článku I. jsou poskytnuty k využití do termínu pro předložení"
+      ]
+    },
+    {
+      "source": "registr-smluv",
+      "source_id": "4098080",
+      "source_url": "https://smlouvy.gov.cz/smlouva/4414800",
+      "title": "o převodu z majetku ČR s právem hospodařit pro LČR",
+      "document_name": "SML-00131-2017-170.pdf",
+      "text_file": "data/documents/registr-smluv/4098080/001.txt",
+      "text_chars": 11379,
+      "document_types": [
+        "contract"
+      ],
+      "signals": {
+        "contract": 2,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [],
+      "dates": [
+        "11. 1. 2017",
+        "13. 11. 2017",
+        "2.8.2017",
+        "20. 9. 2017",
+        "23.11.2017",
+        "4. 1. 2016"
+      ],
+      "snippets": [
+        "V č. 5, pro obec Lomnice nad Popelkou, k. ú. Rváčov (dále jen „předmět koupě\"). II. Kupní cena 1. Prodávající na základě této smlouvy prodává kupujícímu předmět koupě uvedený v čl. I. této smlouvy se všemi jeho součástmi a příslušenstvím za dohodnutou kupní cenu ve výši 11.000,- Kč (slovy: Jedenácttisíckorunčeských). Kupní cena byla stanovena na",
+        "/2015 Sb. Z tohoto důvodu je vyloučeno přijetí nabídky s dodatkem nebo odchylkou, i když dodatek nebo odchylka podstatně nemění podmínky nabídky (§ 1740 odst. 3 OZ). 3. Kupující prohlašuje, že jsou splněny veškeré podmínky stanovené v § 41 zákona č. 128/2000 Sb., o obcích, ve znění pozdějších předpisů, zejména že rada města, jako oprávněná rozho"
+      ]
+    },
+    {
+      "source": "registr-smluv",
+      "source_id": "426037",
+      "source_url": "https://smlouvy.gov.cz/smlouva/453713",
+      "title": "Dodatek č. 1 ke smlouvě o poskytnutí dotace na poskytování služeb v obecném hospodářském zájmu z rozpočtu Libereckého kraje z finančních prostředků Ministerstva práce a sociálních věcí, č. OLP/588/2016",
+      "document_name": "Mesto_Lomnice_nad_Popelkou_Dodatek_1_ke_Smlouve_DOTACE.pdf",
+      "text_file": "data/documents/registr-smluv/426037/001.txt",
+      "text_chars": 3170,
+      "document_types": [
+        "addendum"
+      ],
+      "signals": {
+        "contract": 0,
+        "addendum": 2,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [],
+      "dates": [
+        "15.  4. 2016",
+        "15. 11. 2016",
+        "15. 7. 2016",
+        "26. 1. 2016",
+        "30. 3. 2016"
+      ],
+      "snippets": [
+        "nání smlouvy se nemění a zůstávají v platnosti. II. Závěrečná ustanovení 1. Tento dodatek č. 1 nabývá platnosti a účinnosti dnem podpisu obou smluvních stran. Dodatek ke smlouvě musí být nejprve podepsán příjemcem a následně poskytovatelem. 2. Dodatek je sepsán ve třech stejnopisech, z nichž dvě vyhotovení si ponechá poskytovatel a je",
+        "strana 1 (celkem 2) D O D A T E K Č . 1 KE SMLOUVĚ O POSKYTNUTÍ DOTACE NA POSKYTOVÁNÍ SLUŽEB V OBECNÉM HOSPODÁŘSKÉM ZÁJMU Z ROZPOČTU LIBERECKÉHO KRAJE Z FINANČNÍCH PROSTŘEDKŮ MINISTERSTVA PRÁCE A SOCIÁLNÍCH VĚCÍ č. OLP /588/2016 schválená Zastupitelstvem Libereckého kraje dne 26. 1. 2016, usnesením č. 21/16/ZK"
+      ]
+    },
+    {
+      "source": "registr-smluv",
+      "source_id": "426037",
+      "source_url": "https://smlouvy.gov.cz/smlouva/453713",
+      "title": "Dodatek č. 1 ke smlouvě o poskytnutí dotace na poskytování služeb v obecném hospodářském zájmu z rozpočtu Libereckého kraje z finančních prostředků Ministerstva práce a sociálních věcí, č. OLP/588/2016",
+      "document_name": "Smlouva_dotace_2016_Mesto_Lomnice_nad_Popelkou.pdf",
+      "text_file": "data/documents/registr-smluv/426037/002.txt",
+      "text_chars": 36841,
+      "document_types": [
+        "contract",
+        "budget"
+      ],
+      "signals": {
+        "contract": 1,
+        "addendum": 0,
+        "budget": 1,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [
+        815000.0
+      ],
+      "dates": [
+        "1. 1. \n2016",
+        "1. 1. 2016",
+        "15. 1. 2017",
+        "15. 4. 2016",
+        "15. 7. 2016",
+        "20. 12. 2011",
+        "26. 01. 2016",
+        "30. 6. 2016",
+        "31. 12. \n2016",
+        "31. 12. 2016",
+        "5. 2. 2017"
+      ],
+      "snippets": [
+        "ud itorů České republiky. Náklady na provedení povinného auditu jsou uznatelným výdajem. Cena za provedení auditu musí být cenou obvyklou v daném regionu a v daném čase. 14. Jestliže organizace obdrží dotaci, která převyšuje maximální výši vyrovnávací platby, která je stanovena v Pověření k poskytování služeb v obecném hospodářském zájmu",
+        "lužbách, č. 108/2006 Sb., ve znění pozdějších předpisů. Článek III. Dotace, rozpočet, zpráva o činnosti 1. Dotace poskytnutá na základě této Smlouvy je součástí vyrovnávací platby určené na sociální službu, která je součástí Základní sítě Libereckého kraje. Dotace poskytnu ta z rozpočtu poskytovatele je určena na podporu financová",
+        "strana 1 (celkem 21) S M L O U V A O POSKYTNUTÍ DOTACE NA POSKYTOVÁNÍ SLUŽEB V OBECNÉM HOSPODÁŘSKÉM ZÁJMU Z ROZPOČTU LIBERECKÉHO KRAJE Z FINANČNÍCH PROSTŘEDKŮ MINISTERSTVA PRÁCE A SOCIÁLNÍCH VĚCÍ č. OLP/588/2016 schválená Zastupitelstvem Libereckého kraje dne 26. 01. 2016, usnesením č. 21/16/ZK Sml"
+      ]
+    },
+    {
+      "source": "registr-smluv",
+      "source_id": "4286240",
+      "source_url": "https://smlouvy.gov.cz/smlouva/4618568",
+      "title": "Kamerový systém Lomnice nad Popelkou",
+      "document_name": "Kamerov%C3%BD%20syst%C3%A9m%20Lomnice%20nad%20Popelkou.pdf",
+      "text_file": "data/documents/registr-smluv/4286240/001.txt",
+      "text_chars": 5473,
+      "document_types": [
+        "contract"
+      ],
+      "signals": {
+        "contract": 1,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [
+        350.0,
+        3800.0,
+        5670.0,
+        12800.0,
+        15793.0,
+        17617.0,
+        19770.0,
+        29000.0,
+        37370.0
+      ],
+      "dates": [
+        "12.12.2016"
+      ],
+      "snippets": [
+        "a Č. l ke smlouvě o výpůjčce SPECIFIKACE PŘEDMĚTU VÝPŮJČKY 'iné číslo uvedené na Hodnota (cena dle účetních dokladů vC. DPH) Zarueni Typ Počet (ks) Vyrobni ČíS1° (\":::ítení) Pracovní stanice Složené z komponent 1 01152761804231 29 000 KČ Ovládání zařízení DS-1100KI l 544075358 12 800 KČ Monitor NEC V423 1 53025782NB 19 770 KČ Monitor NEC V423 l 530"
+      ]
+    },
+    {
+      "source": "registr-smluv",
+      "source_id": "4618624",
+      "source_url": "https://smlouvy.gov.cz/smlouva/4981564",
+      "title": "Poskytnutí účelové neinvestiční dotace na závazek veřejné služby z rozpočtu Libereckého kraje z finančních prostředků MPSV.",
+      "document_name": "Mesto_Lomnice_nad_Pop_Smlouva_dotace_2018.pdf",
+      "text_file": "data/documents/registr-smluv/4618624/001.txt",
+      "text_chars": 37896,
+      "document_types": [
+        "contract",
+        "budget"
+      ],
+      "signals": {
+        "contract": 1,
+        "addendum": 0,
+        "budget": 1,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [
+        50000.0
+      ],
+      "dates": [
+        "01. 01. 2018",
+        "1. 1. 2018",
+        "1.1.2018",
+        "15. 7. 2018",
+        "20. 12. 2011",
+        "27. 6. 2017",
+        "30. 01. \n2018",
+        "30. 01. 2018",
+        "30. 06. 2018",
+        "30. 1. 2018",
+        "30. 4. 2018",
+        "31. 12. \n2018",
+        "31. 12. 2018",
+        "31.12.2018",
+        "31.12.2020",
+        "5. 2. 2019"
+      ],
+      "snippets": [
+        "auditorů České republiky. Náklady na provedení povinného auditu jsou uznatelným výdajem. Cena za provedení auditu musí být cenou obvyklou v daném regionu a v daném čase. a) Zprávu auditora v originál e je příjemce povinen poskytovateli předložit nejpozději do srpna 2019. b) Zpráva auditora musí být v rozsahu daném touto smlouvou: i. Ověření",
+        "iálních službách, č. 108/2006 Sb., ve znění pozdějších předpisů. Článek III. Dotace, rozpočet, indikátory, zpráva o činnosti 1. Dotace poskytnutá na základě této Smlouvy je součástí vyrovnávací platby určené na sociální službu, která je součástí ZSSS LK. a) Dotace poskytnuta z rozpočtu poskytovatele je určena na podporu kofinancování",
+        "strana 1 (celkem 17) Smlouva O POSKYTNUTÍ DOTACE NA POSKYTOVÁNÍ SLUŽEB V OBECNÉM HOSPODÁŘSKÉM ZÁJMU Z ROZPOČTU LIBERECKÉHO KRAJE Z FINANČNÍCH PROSTŘEDKŮ MINISTERSTVA PRÁCE A SOCIÁLNÍCH VĚCÍ č. OLP/1640/2018 schválená Zastupitelstvem Libereckého kraje dne 30. 1. 2018, usnesením č. 38/18/ZK Sml"
+      ]
+    },
+    {
+      "source": "registr-smluv",
+      "source_id": "5195191",
+      "source_url": "https://smlouvy.gov.cz/smlouva/5596175",
+      "title": "Smlouva o poskytnutí účelové dotace na stavebníě historický průzkum Křížovy vily v Lomnici nad Popelkou",
+      "document_name": "OLP_2462_2018_Dotace_Lomnice_SHP.pdf",
+      "text_file": "data/documents/registr-smluv/5195191/001.txt",
+      "text_chars": 25160,
+      "document_types": [
+        "contract",
+        "grant",
+        "deadline"
+      ],
+      "signals": {
+        "contract": 1,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 1,
+        "tender": 0,
+        "deadline": 2
+      },
+      "amounts_czk": [
+        50000.0
+      ],
+      "dates": [
+        "1. 6. \n2018",
+        "1. 6. 2018",
+        "24. 4.\n2018",
+        "24. 4. 2018",
+        "3. 12. 2018",
+        "31. 10. 2018"
+      ],
+      "snippets": [
+        ". Průběžnou zprávu také nemusí předkládat příjemce, kterému je celková výše dotace proplacena až po závěrečném vyúčtování projektu (tzv. ex-post). 9. K závěrečnému vyúčtování předloží příjemce dotace kopie účetních resp. prvotních daňových dokladů nebo zjednodušených daňových dokladů (např. faktury, účtenky, paragony, výdajové pokladní d oklady",
+        "Stránka 1 z 10 Smlouva o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje oblast podpory: 7. Kultura, památková péče a cestovní ruch program č.: 7.3 Stavebně historický průzkum č. OLP/2462/2018 schválená Zastupitelstvem Libereckého kraje dne 24. 4. 2018 usnesením č. 138/18/ZK Smluvní strany",
+        "a alkohol a tabák a výrobky z nich. 4. Termín zahájení realizace projektu je 1. 6. 2018 a termín ukončení realizace projektu je nejpozději 31. 10. 2018. 5. Ukončením realizace projektu se rozumí dokončení veškerých aktivit na projektu a zároveň protokolární převzetí projektu mezi příjemcem a zhotovitelem projektu. Aktivitou projektu není úhrada"
+      ]
+    },
+    {
+      "source": "registr-smluv",
+      "source_id": "5853423",
+      "source_url": "https://smlouvy.gov.cz/smlouva/6307111",
+      "title": "Smlouva o poskytnutí účelové dotace - program 1.1.",
+      "document_name": "Lomnice_n_P_3174.pdf",
+      "text_file": "data/documents/registr-smluv/5853423/001.txt",
+      "text_chars": 24439,
+      "document_types": [
+        "contract",
+        "grant",
+        "deadline"
+      ],
+      "signals": {
+        "contract": 1,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 1,
+        "tender": 0,
+        "deadline": 2
+      },
+      "amounts_czk": [
+        0.0,
+        50000.0,
+        300000.0
+      ],
+      "dates": [
+        "1. 1. 2018",
+        "19. \n2. 2019",
+        "19. 2. 2020",
+        "29. 5. 2018",
+        "31. 12. 2018",
+        "31. 12. 2019"
+      ],
+      "snippets": [
+        ". Průběžnou zprávu také nemusí předkládat příjemce, kterému je celková výše dotace proplacena až po závěrečném vyúčtování projektu (tzv. ex-post). 8. K závěrečnému vyúčtování předloží příjemce dotace kopie účetních resp. prvotních daňových dokladů nebo zjednodušených daňových dokladů (např. faktury, účtenky, paragony, výdajové pokladní doklady)",
+        "Stránka 1 z 12 Lomnice nad Popelkou_3174 Smlouva o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje oblast podpory: Požární ochrana program č.:1.1 Podpora jednotek požární ochrany obcí Libereckého kraje č. OLP/3174/2018 schválená Zastupitelstvem Libereckého kraje dne 29. 5. 2018 usnesením č. 165/18/ZK Smlu",
+        "alkohol a tabák a výrobky z nich. 4. Termín zahájení realizace projektu je 1. 1. 2018 a termín ukončení realizace projektu je nejpozději 31. 12. 2018. V případě realizace projektu dle účelu č. U1), U6) – f) vyhlášeného programu, je termín ukončení realizace projektu nejpozději 31. 12. 2019. Ukončením realizace projektu se rozumí dokončení v"
+      ]
+    },
+    {
+      "source": "registr-smluv",
+      "source_id": "5857111",
+      "source_url": "https://smlouvy.gov.cz/smlouva/6310991",
+      "title": "Poskytnutí dotace z Dotačního fondu Libereckého kraje program č.1.1 Podpora jednotek požární ochrany obcí Libereckého kraje",
+      "document_name": "Lomnice_n_P_3177.pdf",
+      "text_file": "data/documents/registr-smluv/5857111/001.txt",
+      "text_chars": 24733,
+      "document_types": [
+        "contract",
+        "grant",
+        "deadline"
+      ],
+      "signals": {
+        "contract": 1,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 1,
+        "tender": 0,
+        "deadline": 2
+      },
+      "amounts_czk": [
+        0.0,
+        50000.0,
+        142965.25
+      ],
+      "dates": [
+        "1. 1. 2018",
+        "19. \n2. 2019",
+        "19. 2. 2020",
+        "29. 5. 2018",
+        "31. 12. 2018",
+        "31. 12. 2019"
+      ],
+      "snippets": [
+        ". Průběžnou zprávu také nemusí předkládat příjemce, kterému je celková výše dotace proplacena až po závěrečném vyúčtování projektu (tzv. ex-post). 8. K závěrečnému vyúčtování předloží příjemce dotace kopie účetních resp. prvotních daňových dokladů nebo zjednodušených daňových dokladů (např. faktury, účtenky, paragony, výdajové pokladní doklady)",
+        "Stránka 1 z 12 Lomnice nad Popelkou_3177 Smlouva o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje oblast podpory: Požární ochrana program č.:1.1 Podpora jednotek požární ochrany obcí Libereckého kraje č. OLP/3177/2018 schválená Zastupitelstvem Libereckého kraje dne 29. 5. 2018 usnesením č. 165/18/ZK Smlu",
+        "alkohol a tabák a výrobky z nich. 4. Termín zahájení realizace projektu je 1. 1. 2018 a termín ukončení realizace projektu je nejpozději 31. 12. 2018. V případě realizace projektu dle účelu č. U1), U6) – f) vyhlášeného programu, je termín ukončení realizace projektu nejpozději 31. 12. 2019. Ukončením realizace projektu se rozumí dokončení v"
+      ]
+    },
+    {
+      "source": "registr-smluv",
+      "source_id": "6375151",
+      "source_url": "https://smlouvy.gov.cz/smlouva/6880303",
+      "title": "Smlouva o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje, programu 8.5 Podpora předcházení vzniku odpadů, jejich opětovného použití a podpora sběru a využití bioodpadu",
+      "document_name": "Lomnice_nad_Pop_sml_8.3_2018.pdf",
+      "text_file": "data/documents/registr-smluv/6375151/001.txt",
+      "text_chars": 26745,
+      "document_types": [
+        "contract",
+        "grant",
+        "deadline"
+      ],
+      "signals": {
+        "contract": 1,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 1,
+        "tender": 0,
+        "deadline": 2
+      },
+      "amounts_czk": [
+        50000.0
+      ],
+      "dates": [
+        "1. 1. 2018",
+        "28. 8. 2018",
+        "30. 9. 2019"
+      ],
+      "snippets": [
+        ". Průběžnou zprávu také nemusí předkládat příjemce, kterému je celková výše dotace proplacena až po závěrečném vyúčtování projektu (tzv. ex-post). 9. K závěrečnému vyúčtování předloží příjemce dotace kopie účetních resp. prvotních daňových dokladů nebo zjednodušených daňových dokladů (např. faktury, účtenky, paragony, výdajové pokladní doklady)",
+        "Stránka 1 z 10 Smlouva o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje oblast podpory č. 8 Životní prostředí a zemědělství program č. 8.5 Podpora předcházení vzniku odpadů, jejich opětovného použití a podpora sběru a využití bioodpadů č. OLP/4830/2018 schválená Zastupitelstvem Liberecké",
+        "a alkohol a tabák a výrobky z nich. 4. Termín zahájení realizace projektu je 1. 1. 2018 a termín ukončení realizace projektu je nejpozději 30. 9. 2019. 5. Ukončením realizace projektu se rozumí dokončení veškerých aktivit na projektu a zároveň protokolární převzetí projektu mezi příjemcem a zhotovitelem projektu a dále podle druhu stavby: a) ozn"
+      ]
+    },
+    {
+      "source": "registr-smluv",
+      "source_id": "6414639",
+      "source_url": "https://smlouvy.gov.cz/smlouva/6923307",
+      "title": "Dohoda o změně podmínek poskytnutí dotace na základě Smlouvy č. 9270370988,dle NV č. 146/2003 Sb.",
+      "document_name": "Dohoda%20o%20zm%C4%9Bn%C4%9B%20podm%C3%ADnek%20poskytnut%C3%AD%20dotace%20na%20z%C3%A1klad%C4%9B%20Smlouvy%20%C4%8D.%209270370988_zve%C5%99ejn%C4%9Bn%C3%AD.pdf",
+      "text_file": "data/documents/registr-smluv/6414639/002.txt",
+      "text_chars": 3761,
+      "document_types": [
+        "contract"
+      ],
+      "signals": {
+        "contract": 1,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [],
+      "dates": [
+        "01.10.2018",
+        "08.10.2018",
+        "18. 06. 2038",
+        "20. 12. 2007",
+        "23. 08. 2018"
+      ],
+      "snippets": [
+        "Dohoda o změně podmínek poskytnutí dotace na základě Smlouvy č. 9270370988 (dále jen „Dohoda“) Státní fond rozvoje bydlení IČO: 708 56 788 se sídlem: Vinohradská 1896/46, Vinohrady, 120 00 Praha zastoupený: xxxxxxxxxxxx, ředitelka Státního fondu rozvoje bydlení (dále také jen „Fon"
+      ]
+    },
+    {
+      "source": "registr-smluv",
+      "source_id": "6439647",
+      "source_url": "https://smlouvy.gov.cz/smlouva/6950807",
+      "title": "Změna výše celkové neinvestiční alokace, kterou lze použít výhradně na provoz základních činností organizace, tj. na úhradu nákladů souvisejících s poskytováním základních činností veřejné služby.",
+      "document_name": "Dodatek_c_1_Mesto_Lomnice_n_Popelkou.pdf",
+      "text_file": "data/documents/registr-smluv/6439647/001.txt",
+      "text_chars": 5562,
+      "document_types": [
+        "contract"
+      ],
+      "signals": {
+        "contract": 1,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [
+        50000.0
+      ],
+      "dates": [
+        "13.03.2018",
+        "28.08.2018",
+        "30. 1. 2018",
+        "31. 7. 2018"
+      ],
+      "snippets": [
+        "strana 4 (celkem 4) 5. Finanční podpora v rámci dofinancování bude vyplacena příjemci ve výši 100% a bude převedena na účet příjemce do 30 kalendářních dnů po nabytí účinnosti tohoto dodatku. II. Závěrečná ustanovení 1. Ostatní ustanovení smlouvy tímto dodatkem nedotčená zůstávají v platnosti. 2. Dodatek je sepsán ve tře",
+        "vení 1. Ostatní ustanovení smlouvy tímto dodatkem nedotčená zůstávají v platnosti. 2. Dodatek je sepsán ve třech stejnopisech, z nichž dvě vyhotovení si ponechá poskytovatel a jedno vyhotovení obdržení příjemce. 3. Příjemce bere na vědomí, že smlouvy s hodnotou předmětu převyšující 50.000 Kč bez DPH, včetně dohod, na zák ladě kterých se ty",
+        "strana 1 (celkem 4) D O D A T E K Č . 1 KE SMLOUVĚ O POSKYTNUTÍ DOTACE NA POSKYTOVÁNÍ SLUŽEB V OBECNÉM HOSPODÁŘSKÉM ZÁJMU Z ROZPOČTU LIBERECKÉHO KRAJE Z FINANČNÍCH PROSTŘEDKŮ MINISTERSTVA PRÁCE A SOCIÁLNÍCH VĚCÍ č. OLP/1640/2018 schválené Zastupitelstvem Libereckého kraje dne 30. 1. 2018, usnesením č. 38/18/ZK"
+      ]
+    },
+    {
+      "source": "registr-smluv",
+      "source_id": "711165",
+      "source_url": "https://smlouvy.gov.cz/smlouva/755617",
+      "title": "Smlouva o spolupráci při zajištění dopravní obslužnosti Libereckého kraje na období od roku 2017 do roku 2019",
+      "document_name": "Smlouva_Lomnice_nad_Popelkou.pdf",
+      "text_file": "data/documents/registr-smluv/711165/001.txt",
+      "text_chars": 7229,
+      "document_types": [
+        "contract"
+      ],
+      "signals": {
+        "contract": 1,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [
+        50000.0
+      ],
+      "dates": [
+        "1.  1. 2017",
+        "1. 1. 2016",
+        "18. 10. 2016",
+        "27. 5. 2008",
+        "28. 11. 2016",
+        "31.  12. 2016",
+        "31. 12. 2016",
+        "31. 12. 2019"
+      ],
+      "snippets": []
+    },
+    {
+      "source": "registr-smluv",
+      "source_id": "7189",
+      "source_url": "https://smlouvy.gov.cz/smlouva/7381",
+      "title": "Smlouva o poskytnutí dotace z Dotačního fondu LK - Podpora jednotek požární ochrany obcí LK",
+      "document_name": "Lomnice_n_Popelkou1175.pdf",
+      "text_file": "data/documents/registr-smluv/7189/001.txt",
+      "text_chars": 24514,
+      "document_types": [
+        "grant",
+        "deadline"
+      ],
+      "signals": {
+        "contract": 0,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 1,
+        "tender": 0,
+        "deadline": 2
+      },
+      "amounts_czk": [
+        0.0,
+        100000.0
+      ],
+      "dates": [
+        "1. 1. 2016",
+        "19. 2. 2017",
+        "31. 12. 2016",
+        "31. 5. 2016"
+      ],
+      "snippets": [
+        ". Průběžnou zprávu také nemusí předkládat příjemce, kterému je celková výše dotace proplacena až po závěrečném vyúčtování projektu (tzv. ex-post). 9. K závěrečnému vyúčtování předloží příjemce dotace kopie účetních resp. prvotních daňových dokladů nebo zjednodušených daňových dokladů (např. faktury, účtenky, paragony, výdajové pokladní dokla",
+        "daňový doklad musí obsahovat a) obchodní firmu nebo jméno a příjmení, případně název, dodatek jména a příjmení nebo názvu, sídlo nebo místo podnikání, popřípadě trvalý pobyt nebo místo podnikání plátce, který uskutečňuje zdanitelné plnění, b) daňové identifikační číslo plátce, který uskutečňuje zdanitelné plnění, c) obchodní firmu nebo jmé",
+        "1 Lomnice nad Popelkou1175 S m l o u v a o p o s k y t n u t í účelové dotace z Dotačního fondu Libereckého kraje oblast podpory: Požární ochrana program č.: 1.1 Podpora jednotek požární ochrany obcí Libereckého kraje č. OLP/1175/2016 schválená Zastupitelstvem Libereckého kraje dne 31. 5. 2016 usnesením č. 243/16/ZK Smluvn",
+        "alkohol a tabák a výrobky z nich. 4. Termín zahájení realizace projektu je 1. 1. 2016 a termín ukončení realizace projektu je nejpozději 31. 12. 2016. 5. Ukončením realizace projektu se rozumí dokončení veškerých aktivit na projektu a zároveň protokolární převzetí projektu mezi příjemcem a zhotovitelem projektu (především datum zaplacení p"
+      ]
+    },
+    {
+      "source": "registr-smluv",
+      "source_id": "7649691",
+      "source_url": "https://smlouvy.gov.cz/smlouva/8257679",
+      "title": "Dohoda o poskytnutí dotace z Programu rozvoje venkova ČR - 18/003/19210/451/173/002129",
+      "document_name": "PRV_PRINT_OUTPUT_A.pdf",
+      "text_file": "data/documents/registr-smluv/7649691/001.txt",
+      "text_chars": 17910,
+      "document_types": [
+        "deadline"
+      ],
+      "signals": {
+        "contract": 0,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 1
+      },
+      "amounts_czk": [
+        272918.0,
+        485187.0,
+        758105.0,
+        1118105.0
+      ],
+      "dates": [
+        "30.09.2019"
+      ],
+      "snippets": [
+        "du s čl. 6 nařízení Komise (EU) č. 702/2014 ze dne 25. června 2014. 5. Dotace nebude vyplacena ve prospěch příjemce dotace, vůči němuž je vystaven inkasní příkaz v návaznosti na rozhodnutí Evropské komise o protiprávní podpoře a její neslučitelnosti s vnitřním trhem, který dosud nebyl splacen. 6. Dotaci nelze poskytnout na: stezky širší než 2 metry",
+        "příjemce dotace povinen zaznamenat na formuláři Žádosti o platbu, není nutné vyhotovovat Dodatek k této Dohodě. 4. V případě, že poskytovatel dotace navrhne změnit Dohodu písemně formou Dodatku, pokud dojde ke změně příslušných zákonů, daného programu anebo Pravidel tak, aby mohla být tato Dohoda uvedena do souladu s těmito dokumenty, zavazuje se",
+        "Dohoda Dohoda o poskytnutí dotace z Programu rozvoje venkova ČR (dále jen \"Dohoda\") I. Smluvní strany 1. Název: Státní zemědělský intervenční fond (dále jen \"SZIF\") Sídlo: Ve Smečkách 801/33 110 00 Hlavní město Praha - Nové Město Identifikační číslo: 48 133 981 Regionální odbor SZIF:"
+      ]
+    },
+    {
+      "source": "registr-smluv",
+      "source_id": "774449",
+      "source_url": "https://smlouvy.gov.cz/smlouva/823945",
+      "title": "Lomnice nad Popelkou - nájem NP pro OOP",
+      "document_name": "%23924004797.pdf",
+      "text_file": "data/documents/registr-smluv/774449/001.txt",
+      "text_chars": 14438,
+      "document_types": [
+        "contract"
+      ],
+      "signals": {
+        "contract": 1,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [
+        300.0,
+        700.0,
+        1200.0,
+        4000.0,
+        5235.0,
+        12215.0,
+        62820.0
+      ],
+      "dates": [
+        "01. 12. 2016"
+      ],
+      "snippets": []
+    },
+    {
+      "source": "registr-smluv",
+      "source_id": "8074447",
+      "source_url": "https://smlouvy.gov.cz/smlouva/8717079",
+      "title": "Podskytnutí dotace na poskytování služeb v obecném hospodářském zájmu z rozpočtu LK z finančních prostředků MPSV.",
+      "document_name": "Mesto_Lomnice_Smlouva_MPSV_2019.pdf",
+      "text_file": "data/documents/registr-smluv/8074447/001.txt",
+      "text_chars": 34842,
+      "document_types": [
+        "contract",
+        "budget"
+      ],
+      "signals": {
+        "contract": 1,
+        "addendum": 0,
+        "budget": 1,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [
+        50000.0
+      ],
+      "dates": [
+        "01.01.2018",
+        "01.01.2019",
+        "06.02. \n2020",
+        "06.02.2020",
+        "1. 1. 2019",
+        "1.1.2019",
+        "15.07.2019",
+        "20.12.2011",
+        "26.02.2019",
+        "27.06.2017",
+        "27.11.2018",
+        "30. 04.2019",
+        "30.06.2019",
+        "31.12.2019",
+        "31.12.2020"
+      ],
+      "snippets": [
+        "atným Akčním plánem pro příslušný rok a rozsahem ZSSS LK, 6. Finanční podpora bude vyplacena krajem ve dvou splátkách, na č. bankovního účtu uvedeného v žádosti o dotaci, první splátka ve výši 60 % v termínu do 30. 04.2019, druhá ve výši 40 % do 15.07.2019. 7. Poskytovatel si vyhrazuje právo změnit výši a lhůty výplaty jednotlivých splátek",
+        "iálních službách, č. 108/2006 Sb., ve znění pozdějších předpisů. Článek III. Dotace, rozpočet, indikátory, zpráva o činnosti 1. Dotace poskytnutá na základě této Smlouvy je součástí vyrovnávací platby určené na sociální službu, která je součástí ZSSS LK. a) Dotace poskytnutá z rozpočtu poskytovatele je určena na podporu kofinancování zá",
+        "strana 1 (celkem 15) Smlouva O POSKYTNUTÍ DOTACE NA POSKYTOVÁNÍ SLUŽEB V OBECNÉM HOSPODÁŘSKÉM ZÁJMU Z ROZPOČTU LIBERECKÉHO KRAJE Z FINANČNÍCH PROSTŘEDKŮ MINISTERSTVA PRÁCE A SOCIÁLNÍCH VĚCÍ NA ROK 2019 č. OLP/840/2019 schválená Zastupitelstvem Libereckého kraje dne 26.02.2019, usnesením č. 58/19/"
+      ]
+    },
+    {
+      "source": "registr-smluv",
+      "source_id": "845225",
+      "source_url": "https://smlouvy.gov.cz/smlouva/899853",
+      "title": "Dodatek č. 1 ke smlouvě o poskytnutí účelové dotace Libereckému kraji z rozpočtu Města Lomnice nad Popelkou",
+      "document_name": "D01_OLP_2674_2016.pdf",
+      "text_file": "data/documents/registr-smluv/845225/001.txt",
+      "text_chars": 4598,
+      "document_types": [
+        "contract",
+        "addendum"
+      ],
+      "signals": {
+        "contract": 1,
+        "addendum": 1,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [
+        50000.0
+      ],
+      "dates": [
+        "22.12.2016",
+        "30. 6. 2017",
+        "30.11.2016",
+        "31. 1. 2017",
+        "6.12.2016",
+        "7.7.2016"
+      ],
+      "snippets": [
+        "1 Dodatek č. 1 ke Smlouvě o poskytnutí účelové dotace Libereckému kraji z rozpočtu Města Lomnice nad Popelkou na stavební akci „II/286 x II/284 Lomnice nad Popelkou - havárie zdi - nezpůsobilé výdaje“ číslo smlouvy příjemce č. OLP/2674/2016 číslo smlouvy poskyt",
+        "1 Dodatek č. 1 ke Smlouvě o poskytnutí účelové dotace Libereckému kraji z rozpočtu Města Lomnice nad Popelkou na stavební akci „II/286 x II/284 Lomnice nad Popelkou - havárie zdi - nezpůsobilé výdaje“ číslo smlouvy příjemce č. OLP/2674/2016 číslo smlouvy poskytovatele č. 308/2016 uzavřený mezi těmito smlu"
+      ]
+    },
+    {
+      "source": "registr-smluv",
+      "source_id": "845225",
+      "source_url": "https://smlouvy.gov.cz/smlouva/899853",
+      "title": "Dodatek č. 1 ke smlouvě o poskytnutí účelové dotace Libereckému kraji z rozpočtu Města Lomnice nad Popelkou",
+      "document_name": "OLP_2674_2016.pdf",
+      "text_file": "data/documents/registr-smluv/845225/002.txt",
+      "text_chars": 11610,
+      "document_types": [
+        "contract",
+        "grant"
+      ],
+      "signals": {
+        "contract": 1,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 2,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [
+        1636876.14,
+        1980620.13
+      ],
+      "dates": [
+        "1.11.2016",
+        "22.6.2016",
+        "31. 1. 2017",
+        "7.6.2016"
+      ],
+      "snippets": [
+        "Strana 1 (celkem 6) S m l o u v a o p o s k y t n u t í účelové dotace Libereckému kraji z rozpočtu Města Lomnice nad Popelkou na stavební akci „II/286 x II/284 Lomnice nad Popelkou - havárie zdi - nezpůsobilé výdaje“ číslo smlouvy poskytovatele: 165/16 schválená Zastupitelstvem Města Lomnice nad Popelkou dne 22.6.2016 us"
+      ]
+    },
+    {
+      "source": "registr-smluv",
+      "source_id": "8497295",
+      "source_url": "https://smlouvy.gov.cz/smlouva/9164787",
+      "title": "Obnova bývalé Svobodovy hrobky na hřbitově v Lomnici nad Popelkou - okna a vstupní dveře",
+      "document_name": "58_Mesto_Lomnice_n_P_smlouva_o_poskytnuti_dotace.pdf",
+      "text_file": "data/documents/registr-smluv/8497295/001.txt",
+      "text_chars": 29099,
+      "document_types": [
+        "contract",
+        "grant",
+        "deadline"
+      ],
+      "signals": {
+        "contract": 1,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 1,
+        "tender": 0,
+        "deadline": 2
+      },
+      "amounts_czk": [
+        50000.0,
+        134666.0
+      ],
+      "dates": [
+        "01.03.2019",
+        "1. 2. 2019",
+        "15.11.2019",
+        "2. 12. 2019",
+        "26. 3. \n2019",
+        "26. 3. 2019",
+        "31. \n12. 2019",
+        "31. 12. 2019"
+      ],
+      "snippets": [
+        ". Průběžnou zprávu také nemusí předkládat příjemce, kterému je celková výše dotace proplacena až po závěrečném vyúčtování projektu (tzv. ex - post). 9. K závěrečnému vyúčtování předloží příjemce do tace kopie účetních dokladů, daňových dokladů nebo zjednodušených daňových dokladů (např. faktury, účtenky, paragony, výdajové pokladní doklady) týk",
+        "rojektu, ve kterém budou uvedeny parametry, které byly v rámci projektu zhotoveny, c) dodatek ke smlouvě o dílo nebo novou objednávku v případě navýšení prací nad rámec smlouvy o dílo nebo objednávky, d) fotodokumentaci realizované obnovy, e) čestné prohlášení o čerpání dalších dotačních prostředků na realizaci projektu, f) v případě rest",
+        "Stránka 1 z 16 Smlouva o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje oblast podpory: 7. Kultura, památková péče a cestovní ruch program č.: 7.2 Záchrana a obnova památek v Libereckém kraji č. OLP/15522019 schválená Zastupitelstvem Libereckého kraje dne 26. 3. 2019 usnesením č. 118",
+        "alkohol a tabák a výrobky z nich. 4. Termín zahájení realizace projektu je 01.03.2019 a termín ukončení realizace projektu je nejpozději 15.11.2019. 5. Ukončením realizace projektu se rozumí dokončení veškerých aktivit na projektu a zároveň protokolární převzetí projektu mezi příjemcem a zhotovitelem projektu. 6. Finanční prostředky poskytov"
+      ]
+    },
+    {
+      "source": "registr-smluv",
+      "source_id": "8513",
+      "source_url": "https://smlouvy.gov.cz/smlouva/8741",
+      "title": "Smlouva o poskytnutí dotace z Dotačního fondu LK - Podpora jednotek požární ochrany obcí LK",
+      "document_name": "Lomnice_n_Popelkou1171.pdf",
+      "text_file": "data/documents/registr-smluv/8513/001.txt",
+      "text_chars": 24448,
+      "document_types": [
+        "grant",
+        "deadline"
+      ],
+      "signals": {
+        "contract": 0,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 1,
+        "tender": 0,
+        "deadline": 2
+      },
+      "amounts_czk": [
+        100000.0
+      ],
+      "dates": [
+        "1. 1. 2016",
+        "19. 2. 2017",
+        "31. 12. 2016",
+        "31. 5. 2016"
+      ],
+      "snippets": [
+        ". Průběžnou zprávu také nemusí předkládat příjemce, kterému je celková výše dotace proplacena až po závěrečném vyúčtování projektu (tzv. ex-post). 9. K závěrečnému vyúčtování předloží příjemce dotace kopie účetních resp. prvotních daňových dokladů nebo zjedn odušených daňových dokladů (např. faktury, účtenky, paragony, výdajové pokladní dokl",
+        "daňový doklad musí obsahovat a) obchodní firmu nebo jméno a příjmení, případně název, dodatek jména a příjmení nebo názvu, sídlo nebo místo podnikání, popřípadě trvalý pobyt nebo místo podnikání plátce, který uskutečňuje zdanitelné plnění, b) daňové identifikační číslo plátce, který uskutečňuje zdanitelné plnění, c) obchodní firmu nebo jmé",
+        "1 Lomnice nad Popelkou1171 S m l o u v a o p o s k y t n u t í účelové dotace z Dotačního fondu Libereckého kraje oblast podpory: Požární ochrana program č.: 1.1 Podpora jednotek požární ochrany obcí Libereckého kraje č. OLP/1171/2016 schválená Zastupitelstvem Libereckého kraje dne 31. 5. 2016 usnesením č. 243/16/ZK Smluvn",
+        "alkohol a tabák a výrobky z nich. 4. Termín zahájení realizace projektu je 1. 1. 2016 a termín ukončení realizace projektu je nejpozději 31. 12. 2016. 5. Ukončením realizace projektu se rozumí dokončení veškerých aktivit na projektu a zároveň protokolární převzetí projektu mezi příjemcem a zhotovitelem projektu (především datum zaplacení p"
+      ]
+    },
+    {
+      "source": "registr-smluv",
+      "source_id": "8786327",
+      "source_url": "https://smlouvy.gov.cz/smlouva/9470195",
+      "title": "Smlouva o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje na nákup ochranných prostředků požární ochrany",
+      "document_name": "Lomnice_nad_Popelkou_1834.pdf",
+      "text_file": "data/documents/registr-smluv/8786327/001.txt",
+      "text_chars": 24906,
+      "document_types": [
+        "contract",
+        "grant",
+        "deadline"
+      ],
+      "signals": {
+        "contract": 1,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 1,
+        "tender": 0,
+        "deadline": 2
+      },
+      "amounts_czk": [
+        50000.0,
+        181591.0,
+        300000.0
+      ],
+      "dates": [
+        "1. 1. 2019",
+        "19. 2. 2020",
+        "19. 2. 2021",
+        "28. 5. \n2019",
+        "28. 5. 2019",
+        "31. 12. 2019",
+        "31. 12. 2020"
+      ],
+      "snippets": [
+        ". Průběžnou zprávu také nemusí předkládat příjemce, kterému je celková výše dotace proplacena až po závěrečném vyúčtování projektu (tzv. ex-post). 9. K závěrečnému vyúčtování předloží příjemce dotace kopie účetních dokladů, daňových dokladů nebo zjednodušených daňových dokladů (např. faktury, účtenky, paragony, výdajové pokladní doklady) týkají",
+        "Stránka 1 z 13 Smlouva o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje oblast podpory: Požární ochrana program č. 1.1: Podpora jednotek požární ochrany obcí Libereckého kraje č. OLP/1834/2019 schválená Zastupitelstvem Libereckého kraje dne 28. 5. 2019 usnesením č. 246/19/ZK Smluvní stran",
+        "a alkohol a tabák a výrobky z nich 4. Termín zahájení realizace projektu je 1. 1. 2019 a termín ukončení r ealizace projektu je nejpozději 31. 12. 2019. V případě realizace projektu dle účelu č. U1), U6) f) vyhlášeného programu, je termín ukončení realizace projektu nejpozději 31. 12. 2020. 5. Ukončením realizace projektu se rozumí dokončení ve"
+      ]
     },
     {
       "source": "vhodne-uverejneni",
@@ -205,6 +1503,45 @@
       "snippets": [
         "_________v příloze č. 2 ZD - identifikační údaje zhotovitele (smluvní strany smlouvy) - cena díla (v čl. III smlouvy, bod 3.1.) - kontakty zhotovitele pro vady díla ( v čl. VIII smlouvy, bod 8.6.) - jméno autorizovaného stavbyvedoucího (v čl. XI smlouvy, bod 11.1. b) - datum a jméno oprávněné osoby jednat jménem či za dodavatele",
         "ílohu zadávací dokumentace č. 4 soupis stavebn ích prací, dodávek a služeb ( položkový rozpočet) vypracoval: Ing. Martin Rambousek, ČKAIT 1004379, společnost APC SILNICE s.r.o., Jana Babáka 11, 612 00 Brno, IČ: 60705981 Přílohu zadávací dokumentace č. 5 projektovou dokumentaci vypracoval: Ing. Martin Rambousek, ČKAIT 1004379, společnos"
+      ]
+    },
+    {
+      "source": "registr-smluv",
+      "source_id": "36978239",
+      "source_url": null,
+      "title": null,
+      "document_name": "001.txt",
+      "text_file": "data/documents/registr-smluv/36978239/001.txt",
+      "text_chars": 24954,
+      "document_types": [
+        "contract",
+        "grant",
+        "deadline"
+      ],
+      "signals": {
+        "contract": 1,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 2,
+        "tender": 0,
+        "deadline": 2
+      },
+      "amounts_czk": [
+        50000.0,
+        1584824.0
+      ],
+      "dates": [
+        "19.02.2027",
+        "2.11.2023",
+        "25.8.2026",
+        "31.12.2026"
+      ],
+      "snippets": [
+        "věrečném vyúčtování projektu nižší než celková výše poskytnuté dotace, bude dotace proplacena ve výši doložených dokladů. 3. V případě, že způsobilé výdaje projektu budou vyšší než výše poskytnuté dotace, hradí toto navýšení výdajů příjemce z vlastních zdrojů. 4. Příjemci může být poskytnuta záloha max. do výše 100 % z celkové přiznané dotace",
+        "práci konané mimo pracovní poměr musí být předmět a cena prací a termín realizace), e) dodatek ke smlouvě o dílo nebo novou objednávku v případě navýšení prací nad rámec smlouvy o dílo nebo objednávky. 10. Nevyčerpané, resp. neproinvestované finanční prostředky poskytnuté v souladu s touto smlouvou je příjemce povinen vrátit nejpozději do",
+        "Stránka 1 z 12 *KULBX00YOAZO* Smlouva o poskytnutí účelové dotace z rozpočtu Libereckého kraje INDIVIDUÁLNÍ DOTACE OLP/02908/2026 schválená Zastupitelstvem Libereckého kraje dne 25.8.2026 usnesením č. 413/26/ZK Smluvní strany: Liberecký kraj se sídlem U Jezu 642/2a, 460 01 Liberec IV - Perštýn korespondenč",
+        "a alkohol a tabák a výrobky z nich. 4. Termín zahájení realizace projektu je 2.11.2023 a termín ukončení realizace projektu je nejpozději 31.12.2026. 5. Ukončením realizace projektu se rozumí dokončení veškerých aktivit na projektu. 6. Projekt musí být vyúčtován do 50 kalendářních dnů po ukončení realizace projektu, nejpozději do 19.02.2027."
       ]
     }
   ]

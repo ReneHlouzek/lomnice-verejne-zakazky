@@ -2,13 +2,15 @@
   "source": "registr-smluv",
   "source_id": "3132722",
   "version_id": "3376474",
-  "source_url": "https://smlouvy.gov.cz/smlouva/3132722",
+  "source_url": "https://smlouvy.gov.cz/smlouva/3376474",
   "title": "Změna výše celkové neinvestiční alokace výhradně na použití na provoz základních činností organizace, tj. na úhradu nákladů souvisejících s poskytováním základních činností veřejné služby.",
   "buyer_ico": "00275905",
   "supplier_ico": "70891508",
   "supplier_name": "Liberecký kraj",
   "contract_number": "55-OLP/618/2017",
-  "related_contract_ids": [],
+  "related_contract_ids": [
+    "1287978"
+  ],
   "related_contract_numbers": [],
   "date": "2017-09-26",
   "signed_date": "2017-09-26",
@@ -19,11 +21,15 @@
     "source": "registr-smluv",
     "source_id": "3132722",
     "version_id": "3376474",
-    "source_url": "https://smlouvy.gov.cz/smlouva/3132722",
+    "source_url": "https://smlouvy.gov.cz/smlouva/3376474",
     "title": "Změna výše celkové neinvestiční alokace výhradně na použití na provoz základních činností organizace, tj. na úhradu nákladů souvisejících s poskytováním základních činností veřejné služby.",
     "buyer_ico": "00275905",
     "supplier_ico": "70891508",
     "contract_number": "55-OLP/618/2017",
+    "related_contract_ids": [
+      "1287978"
+    ],
+    "related_contract_numbers": [],
     "date": "2017-09-26",
     "signed_date": "2017-09-26",
     "published": "",
@@ -32,6 +38,12 @@
     "publisher": "",
     "subject": "Změna výše celkové neinvestiční alokace výhradně na použití na provoz základních činností organizace, tj. na úhradu nákladů souvisejících s poskytováním základních činností veřejné služby.",
     "counterparty": "Liberecký kraj",
-    "detail_url": "https://smlouvy.gov.cz/smlouva/3132722"
+    "detail_url": "https://smlouvy.gov.cz/smlouva/3376474",
+    "attachments": [
+      {
+        "url": "https://smlouvy.gov.cz/smlouva/soubor/4706654/Dodatekc_1Mesto_Lomnice_nad_Popelkou.pdf",
+        "name": "Dodatekc_1Mesto_Lomnice_nad_Popelkou.pdf"
+      }
+    ]
   }
 }

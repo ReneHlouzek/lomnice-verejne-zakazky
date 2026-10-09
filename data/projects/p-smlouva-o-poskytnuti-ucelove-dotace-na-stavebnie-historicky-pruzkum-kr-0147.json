@@ -70,7 +70,7 @@
         "source": "registr-smluv",
         "source_id": "5195191",
         "version_id": "5596175",
-        "source_url": "https://smlouvy.gov.cz/smlouva/5195191",
+        "source_url": "https://smlouvy.gov.cz/smlouva/5596175",
         "title": "Smlouva o poskytnutí účelové dotace na stavebníě historický průzkum Křížovy vily v Lomnici nad Popelkou",
         "buyer_ico": "00275905",
         "supplier_ico": "70891508",
@@ -87,11 +87,13 @@
           "source": "registr-smluv",
           "source_id": "5195191",
           "version_id": "5596175",
-          "source_url": "https://smlouvy.gov.cz/smlouva/5195191",
+          "source_url": "https://smlouvy.gov.cz/smlouva/5596175",
           "title": "Smlouva o poskytnutí účelové dotace na stavebníě historický průzkum Křížovy vily v Lomnici nad Popelkou",
           "buyer_ico": "00275905",
           "supplier_ico": "70891508",
           "contract_number": "07-OLP/2462/2018",
+          "related_contract_ids": [],
+          "related_contract_numbers": [],
           "date": "2018-05-17",
           "signed_date": "2018-05-17",
           "published": "",
@@ -100,7 +102,13 @@
           "publisher": "",
           "subject": "Smlouva o poskytnutí účelové dotace na stavebníě historický průzkum Křížovy vily v Lomnici nad Popelkou",
           "counterparty": "Liberecký kraj",
-          "detail_url": "https://smlouvy.gov.cz/smlouva/5195191"
+          "detail_url": "https://smlouvy.gov.cz/smlouva/5596175",
+          "attachments": [
+            {
+              "url": "https://smlouvy.gov.cz/smlouva/soubor/7641087/OLP_2462_2018_Dotace_Lomnice_SHP.pdf",
+              "name": "OLP_2462_2018_Dotace_Lomnice_SHP.pdf"
+            }
+          ]
         },
         "_source_file": "data/sources/registr-smluv/rs-000031.json"
       }

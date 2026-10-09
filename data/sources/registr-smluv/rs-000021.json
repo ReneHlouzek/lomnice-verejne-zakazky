@@ -2,7 +2,7 @@
   "source": "registr-smluv",
   "source_id": "2642022",
   "version_id": "2843326",
-  "source_url": "https://smlouvy.gov.cz/smlouva/2642022",
+  "source_url": "https://smlouvy.gov.cz/smlouva/2843326",
   "title": "Smlouva o organizování veřejné služby",
   "buyer_ico": "00275905",
   "supplier_ico": "72496991",
@@ -19,11 +19,13 @@
     "source": "registr-smluv",
     "source_id": "2642022",
     "version_id": "2843326",
-    "source_url": "https://smlouvy.gov.cz/smlouva/2642022",
+    "source_url": "https://smlouvy.gov.cz/smlouva/2843326",
     "title": "Smlouva o organizování veřejné služby",
     "buyer_ico": "00275905",
     "supplier_ico": "72496991",
     "contract_number": "5972-17-SM",
+    "related_contract_ids": [],
+    "related_contract_numbers": [],
     "date": "2017-08-10",
     "signed_date": "2017-08-10",
     "published": "",
@@ -32,6 +34,7 @@
     "publisher": "",
     "subject": "Smlouva o organizování veřejné služby",
     "counterparty": "Úřad práce ČR - krajská pobočka v Liberci - kontaktní pracoviště Semily (Úřad práce České republiky)",
-    "detail_url": "https://smlouvy.gov.cz/smlouva/2642022"
+    "detail_url": "https://smlouvy.gov.cz/smlouva/2843326",
+    "attachments": []
   }
 }
