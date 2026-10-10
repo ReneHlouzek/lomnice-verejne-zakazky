@@ -2,7 +2,7 @@
   "source": "registr-smluv",
   "source_id": "20176309",
   "version_id": "21675749",
-  "source_url": "https://smlouvy.gov.cz/smlouva/20176309",
+  "source_url": "https://smlouvy.gov.cz/smlouva/21675749",
   "title": "Dodatek č. 1 ke smlouvě o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje na projekt karavanová stání v Lomnici nad Popelkou",
   "buyer_ico": "00275905",
   "supplier_ico": "70891508",
@@ -21,11 +21,15 @@
     "source": "registr-smluv",
     "source_id": "20176309",
     "version_id": "21675749",
-    "source_url": "https://smlouvy.gov.cz/smlouva/20176309",
+    "source_url": "https://smlouvy.gov.cz/smlouva/21675749",
     "title": "Dodatek č. 1 ke smlouvě o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje na projekt karavanová stání v Lomnici nad Popelkou",
     "buyer_ico": "00275905",
     "supplier_ico": "70891508",
     "contract_number": "07-OLP/2373/2022",
+    "related_contract_ids": [
+      "15970715"
+    ],
+    "related_contract_numbers": [],
     "date": "2022-09-14",
     "signed_date": "2022-09-14",
     "published": "",
@@ -34,9 +38,12 @@
     "publisher": "",
     "subject": "Dodatek č. 1 ke smlouvě o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje na projekt karavanová stání v Lomnici nad Popelkou",
     "counterparty": "Liberecký kraj",
-    "detail_url": "https://smlouvy.gov.cz/smlouva/20176309",
-    "related_contract_ids": [
-      "15970715"
+    "detail_url": "https://smlouvy.gov.cz/smlouva/21675749",
+    "attachments": [
+      {
+        "url": "https://smlouvy.gov.cz/smlouva/soubor/27014213/Dodatek_1_Lomnice_nad_Popelkou.pdf",
+        "name": "Dodatek_1_Lomnice_nad_Popelkou.pdf"
+      }
     ]
   }
 }

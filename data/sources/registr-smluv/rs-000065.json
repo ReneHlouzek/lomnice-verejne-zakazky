@@ -2,7 +2,7 @@
   "source": "registr-smluv",
   "source_id": "23137771",
   "version_id": "24796819",
-  "source_url": "https://smlouvy.gov.cz/smlouva/23137771",
+  "source_url": "https://smlouvy.gov.cz/smlouva/24796819",
   "title": "07 Smlouva o poskytnutí dotace na Oprava střešního pláště domu č.p. 886",
   "buyer_ico": "00275905",
   "supplier_ico": "70891508",
@@ -19,11 +19,13 @@
     "source": "registr-smluv",
     "source_id": "23137771",
     "version_id": "24796819",
-    "source_url": "https://smlouvy.gov.cz/smlouva/23137771",
+    "source_url": "https://smlouvy.gov.cz/smlouva/24796819",
     "title": "07 Smlouva o poskytnutí dotace na Oprava střešního pláště domu č.p. 886",
     "buyer_ico": "00275905",
     "supplier_ico": "70891508",
     "contract_number": "07-OLP/1167/2023",
+    "related_contract_ids": [],
+    "related_contract_numbers": [],
     "date": "2023-06-07",
     "signed_date": "2023-06-07",
     "published": "",
@@ -32,6 +34,12 @@
     "publisher": "",
     "subject": "07 Smlouva o poskytnutí dotace na Oprava střešního pláště domu č.p. 886",
     "counterparty": "Liberecký kraj",
-    "detail_url": "https://smlouvy.gov.cz/smlouva/23137771"
+    "detail_url": "https://smlouvy.gov.cz/smlouva/24796819",
+    "attachments": [
+      {
+        "url": "https://smlouvy.gov.cz/smlouva/soubor/30679315/04_Smlouva_o_poskytnuti_dotace_Mesto_Lomnice.pdf",
+        "name": "04_Smlouva_o_poskytnuti_dotace_Mesto_Lomnice.pdf"
+      }
+    ]
   }
 }

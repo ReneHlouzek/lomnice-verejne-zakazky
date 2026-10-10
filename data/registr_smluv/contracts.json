@@ -1720,11 +1720,15 @@
       "source": "registr-smluv",
       "source_id": "20176309",
       "version_id": "21675749",
-      "source_url": "https://smlouvy.gov.cz/smlouva/20176309",
+      "source_url": "https://smlouvy.gov.cz/smlouva/21675749",
       "title": "Dodatek č. 1 ke smlouvě o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje na projekt karavanová stání v Lomnici nad Popelkou",
       "buyer_ico": "00275905",
       "supplier_ico": "70891508",
       "contract_number": "07-OLP/2373/2022",
+      "related_contract_ids": [
+        "15970715"
+      ],
+      "related_contract_numbers": [],
       "date": "2022-09-14",
       "signed_date": "2022-09-14",
       "published": "",
@@ -1733,20 +1737,25 @@
       "publisher": "",
       "subject": "Dodatek č. 1 ke smlouvě o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje na projekt karavanová stání v Lomnici nad Popelkou",
       "counterparty": "Liberecký kraj",
-      "detail_url": "https://smlouvy.gov.cz/smlouva/20176309",
-      "related_contract_ids": [
-        "15970715"
+      "detail_url": "https://smlouvy.gov.cz/smlouva/21675749",
+      "attachments": [
+        {
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/27014213/Dodatek_1_Lomnice_nad_Popelkou.pdf",
+          "name": "Dodatek_1_Lomnice_nad_Popelkou.pdf"
+        }
       ]
     },
     {
       "source": "registr-smluv",
       "source_id": "20244341",
       "version_id": "21747561",
-      "source_url": "https://smlouvy.gov.cz/smlouva/20244341",
+      "source_url": "https://smlouvy.gov.cz/smlouva/21747561",
       "title": "Veřejnoprávní smlouva o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou - Lomnice nad popekou - obnva vodovdou a kanalizace Jilemnická ulice",
       "buyer_ico": "00275905",
       "supplier_ico": "49295934",
       "contract_number": "",
+      "related_contract_ids": [],
+      "related_contract_numbers": [],
       "date": "2022-09-22",
       "signed_date": "2022-09-22",
       "published": "",
@@ -1755,17 +1764,25 @@
       "publisher": "",
       "subject": "Veřejnoprávní smlouva o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou - Lomnice nad popekou - obnva vodovdou a kanalizace Jilemnická ulice",
       "counterparty": "Vodohospodářské sdružení Turnov",
-      "detail_url": "https://smlouvy.gov.cz/smlouva/20244341"
+      "detail_url": "https://smlouvy.gov.cz/smlouva/21747561",
+      "attachments": [
+        {
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/27098041/LOM_PD_Ve%C5%99ejnopr%C3%A1vn%C3%AD%20s.%20in.%20dotace.doc",
+          "name": "LOM_PD_Ve%C5%99ejnopr%C3%A1vn%C3%AD%20s.%20in.%20dotace.doc"
+        }
+      ]
     },
     {
       "source": "registr-smluv",
       "source_id": "23137771",
       "version_id": "24796819",
-      "source_url": "https://smlouvy.gov.cz/smlouva/23137771",
+      "source_url": "https://smlouvy.gov.cz/smlouva/24796819",
       "title": "07 Smlouva o poskytnutí dotace na Oprava střešního pláště domu č.p. 886",
       "buyer_ico": "00275905",
       "supplier_ico": "70891508",
       "contract_number": "07-OLP/1167/2023",
+      "related_contract_ids": [],
+      "related_contract_numbers": [],
       "date": "2023-06-07",
       "signed_date": "2023-06-07",
       "published": "",
@@ -1774,7 +1791,13 @@
       "publisher": "",
       "subject": "07 Smlouva o poskytnutí dotace na Oprava střešního pláště domu č.p. 886",
       "counterparty": "Liberecký kraj",
-      "detail_url": "https://smlouvy.gov.cz/smlouva/23137771"
+      "detail_url": "https://smlouvy.gov.cz/smlouva/24796819",
+      "attachments": [
+        {
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/30679315/04_Smlouva_o_poskytnuti_dotace_Mesto_Lomnice.pdf",
+          "name": "04_Smlouva_o_poskytnuti_dotace_Mesto_Lomnice.pdf"
+        }
+      ]
     },
     {
       "source": "registr-smluv",

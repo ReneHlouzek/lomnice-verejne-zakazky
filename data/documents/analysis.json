@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "documents_analyzed": 71,
+  "documents_analyzed": 74,
   "method": "Pravidlová extrakce z textu PDF; nejde o právní ani ekonomické hodnocení.",
   "documents": [
     {
@@ -908,6 +908,82 @@
     },
     {
       "source": "registr-smluv",
+      "source_id": "20176309",
+      "source_url": "https://smlouvy.gov.cz/smlouva/21675749",
+      "title": "Dodatek č. 1 ke smlouvě o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje na projekt karavanová stání v Lomnici nad Popelkou",
+      "document_name": "Dodatek_1_Lomnice_nad_Popelkou.pdf",
+      "text_file": "data/documents/registr-smluv/20176309/001.txt",
+      "text_chars": 6073,
+      "document_types": [
+        "addendum",
+        "deadline"
+      ],
+      "signals": {
+        "contract": 0,
+        "addendum": 1,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 2
+      },
+      "amounts_czk": [
+        50000.0
+      ],
+      "dates": [
+        "1. 6. 2021",
+        "14. 07. 2021",
+        "19. \n03. 2023",
+        "19. \n2. 2023",
+        "19. 03. \n2024",
+        "19. 03. 2023",
+        "19. 03. 2024",
+        "30. 8. 2022",
+        "31. 12. 2022",
+        "31. 12. 2023"
+      ],
+      "snippets": [
+        "1 Dodatek č. 1 ke Smlouvě o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje oblast podpory: Kultura, památková péče a cestvní ruch Program č.: 7.10 Rozvoj doprovodné turistické infrastruktury - karavanování stání č. OLP/2373/2021",
+        "1 Dodatek č. 1 ke Smlouvě o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje oblast podpory: Kultura, památková péče a cestvní ruch Program č.: 7.10 Rozvoj doprovodné turistické infrastruktury - karavanování stání č. OLP/2373/2021 uzavřený mezi těmito smluvními stranami: Li",
+        "ek III. odst. 4 smlouvy ve znění: \"Termín zahájení realizace projektu je 1. 6. 2021 a termín ukončení projektu je nejpozději 31. 12. 2022.\" se ruší a nahrazuje tímto novým zněním: \"Termín zahájení realizace projektu je 1. 6. 2021 a termín ukončení realizace projektu je nejpozději 31. 12. 2023.\" 3. Článek III. odst. 7 ve znění: \"Pr"
+      ]
+    },
+    {
+      "source": "registr-smluv",
+      "source_id": "20244341",
+      "source_url": "https://smlouvy.gov.cz/smlouva/21747561",
+      "title": "Veřejnoprávní smlouva o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou - Lomnice nad popekou - obnva vodovdou a kanalizace Jilemnická ulice",
+      "document_name": "LOM_PD_Ve%C5%99ejnopr%C3%A1vn%C3%AD%20s.%20in.%20dotace.doc",
+      "text_file": "data/documents/registr-smluv/20244341/001.txt",
+      "text_chars": 6081,
+      "document_types": [
+        "contract",
+        "grant"
+      ],
+      "signals": {
+        "contract": 1,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 1,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [],
+      "dates": [
+        "20. 9.\n2022",
+        "22. 9. 2022",
+        "30.  11.\n2022",
+        "31. 12. 2024",
+        "7.9.2022"
+      ],
+      "snippets": [
+        "díla upřesněn podíl města Lomnice nad Popelkou na tomto projektu a bude sepsán dodatek k této veřejnoprávní smlouvě, kterým se aktualizuje výše dotačních prostředků podle ceny stavebních prací. Termín realizace projektu je stanoven pro období 2023 – 2024. Článek II.",
+        "Veřejnoprávní smlouva o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou (dále jen smlouva) Smluvní strany: Město Lomnice nad Popelkou, zastoupená Mgr. Josefem Šimkem – starostou města Husovo náměstí 6, 512 51 Lomnice nad Popelkou"
+      ]
+    },
+    {
+      "source": "registr-smluv",
       "source_id": "2125466",
       "source_url": "https://smlouvy.gov.cz/smlouva/2291178",
       "title": "Smlouva o poskytnutí dotace z dotačního fondu LK v oblasti podpory Požární ochrany na ochranné prostředky",
@@ -1023,6 +1099,47 @@
       "snippets": [
         "1 Dodatek č. 2 ke Smlouvě o poskytnutí účelové dotace Libereckému kraji z rozpočtu Města Lomnice nad Popelkou na stavební akci „II/286 x II/284 Lomnice nad Popelkou - havárie zdi - nezpůsobilé výdaje“ číslo smlouvy příjemce č. OLP/2674/2016 číslo smlouvy p",
         "1 Dodatek č. 2 ke Smlouvě o poskytnutí účelové dotace Libereckému kraji z rozpočtu Města Lomnice nad Popelkou na stavební akci „II/286 x II/284 Lomnice nad Popelkou - havárie zdi - nezpůsobilé výdaje“ číslo smlouvy příjemce č. OLP/2674/2016 číslo smlouvy poskytovatele č. 308/2016 uzavřený mezi těmi"
+      ]
+    },
+    {
+      "source": "registr-smluv",
+      "source_id": "23137771",
+      "source_url": "https://smlouvy.gov.cz/smlouva/24796819",
+      "title": "07 Smlouva o poskytnutí dotace na Oprava střešního pláště domu č.p. 886",
+      "document_name": "04_Smlouva_o_poskytnuti_dotace_Mesto_Lomnice.pdf",
+      "text_file": "data/documents/registr-smluv/23137771/001.txt",
+      "text_chars": 32282,
+      "document_types": [
+        "contract",
+        "addendum",
+        "grant",
+        "deadline"
+      ],
+      "signals": {
+        "contract": 1,
+        "addendum": 1,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 1,
+        "tender": 0,
+        "deadline": 2
+      },
+      "amounts_czk": [
+        50000.0
+      ],
+      "dates": [
+        "01. 02. 2023",
+        "1.2.2023",
+        "10. 05. 2023",
+        "19.02.2024",
+        "24. 12. 2013",
+        "31.12.2023"
+      ],
+      "snippets": [
+        ". Průběžnou zprávu také nemusí předkládat příjemce, kterému je celková výše dotace proplacena až po závěrečném vyúčtování projektu (tzv. ex-post). 9. K závěrečnému vyúčtování předloží příjemce dotace kopie účetních dokladů, daňových dokladů nebo zjednodušených daňových dokladů (např. faktury, účtenky, paragony, výdajové pokladní doklady) týka",
+        "i totožný detail. Fotografie budou dodány v elektronické případně i fyzické podobě. d) dodatek ke smlouvě o dílo nebo novou objednávku v případě navýšení prací nad rámec smlouvy o dílo nebo objednávky. e) čestné prohlášení o čerpání dalších dotačních prostředků na realizaci projektu. f) v případě restaurování 1 paré restaurátorské zprávy (ta",
+        "Stránka 1 z 16 Smlouva o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje 7 Kultura, památková péče a cestovní ruch program č.: 7. 2 Záchrana a obnova památek v Libereckém kraji č. OLP/1167/2023 schválená Zastupitelstvem Libereckého kraje dne 25. dubna 2023 usnesením č. 148/23/ZK Sm",
+        "za alkohol a tabák a výrobky z nich. 4. Termín zahájení realizace projektu je 1.2.2023 a termín ukončení realizace projektu je nejpozději 31.12.2023. Stránka 4 z 16 5. Ukončením realizace projektu se rozumí dokončení veškerých aktivit na projektu a zároveň protokolární převzetí projektu mezi příjemcem a zhotovitelem projektu. 6. Finanční"
       ]
     },
     {
