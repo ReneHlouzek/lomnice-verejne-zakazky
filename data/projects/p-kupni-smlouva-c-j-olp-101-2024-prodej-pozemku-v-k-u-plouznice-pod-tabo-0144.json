@@ -70,7 +70,7 @@
         "source": "registr-smluv",
         "source_id": "26892268",
         "version_id": "28766984",
-        "source_url": "https://smlouvy.gov.cz/smlouva/26892268",
+        "source_url": "https://smlouvy.gov.cz/smlouva/28766984",
         "title": "Kupní smlouva č.j.OLP/101/2024, prodej pozemku v k.ú. Ploužnice pod Táborem",
         "buyer_ico": "00275905",
         "supplier_ico": "70891508",
@@ -87,11 +87,13 @@
           "source": "registr-smluv",
           "source_id": "26892268",
           "version_id": "28766984",
-          "source_url": "https://smlouvy.gov.cz/smlouva/26892268",
+          "source_url": "https://smlouvy.gov.cz/smlouva/28766984",
           "title": "Kupní smlouva č.j.OLP/101/2024, prodej pozemku v k.ú. Ploužnice pod Táborem",
           "buyer_ico": "00275905",
           "supplier_ico": "70891508",
           "contract_number": "14-OLP/101/2024",
+          "related_contract_ids": [],
+          "related_contract_numbers": [],
           "date": "2024-05-15",
           "signed_date": "2024-05-15",
           "published": "",
@@ -100,7 +102,13 @@
           "publisher": "",
           "subject": "Kupní smlouva č.j.OLP/101/2024, prodej pozemku v k.ú. Ploužnice pod Táborem",
           "counterparty": "Liberecký kraj",
-          "detail_url": "https://smlouvy.gov.cz/smlouva/26892268"
+          "detail_url": "https://smlouvy.gov.cz/smlouva/28766984",
+          "attachments": [
+            {
+              "url": "https://smlouvy.gov.cz/smlouva/soubor/35308068/14_OLP_101_2024.pdf",
+              "name": "14_OLP_101_2024.pdf"
+            }
+          ]
         },
         "_source_file": "data/sources/registr-smluv/rs-000079.json"
       }

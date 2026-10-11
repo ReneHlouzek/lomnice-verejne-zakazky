@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-10-10T10:45:13Z",
+  "updated_at": "2026-10-11T10:54:41Z",
   "records_checked": 110,
-  "attachments_declared": 74,
-  "documents_discovered": 74,
-  "documents_downloaded": 8,
-  "documents_text_extracted": 69,
+  "attachments_declared": 92,
+  "documents_discovered": 92,
+  "documents_downloaded": 23,
+  "documents_text_extracted": 87,
   "records": [
     {
       "source": "registr-smluv",
@@ -520,13 +520,11 @@
           "index": 1,
           "name": "Dodatek_1_Lomnice_nad_Popelkou.pdf",
           "url": "https://smlouvy.gov.cz/smlouva/soubor/27014213/Dodatek_1_Lomnice_nad_Popelkou.pdf",
-          "sha256": "6e6559665509af1fb73743a63756514148cfb39c9f47e86eb664c15cbf3023af",
-          "bytes": 188077,
-          "content_type": "application/pdf",
           "text_available": true,
           "text_chars": 6073,
-          "content_check": "no_filename_mismatch_detected",
-          "text_file": "data/documents/registr-smluv/20176309/001.txt"
+          "text_file": "data/documents/registr-smluv/20176309/001.txt",
+          "status": "retained_existing_text",
+          "content_check": "no_filename_mismatch_detected"
         }
       ],
       "status": "ok"
@@ -541,13 +539,11 @@
           "index": 1,
           "name": "LOM_PD_Ve%C5%99ejnopr%C3%A1vn%C3%AD%20s.%20in.%20dotace.doc",
           "url": "https://smlouvy.gov.cz/smlouva/soubor/27098041/LOM_PD_Ve%C5%99ejnopr%C3%A1vn%C3%AD%20s.%20in.%20dotace.doc",
-          "sha256": "160c927f8abf9fe58083f91b44b46942fb6454e303f7317882e286a7b1530fa4",
-          "bytes": 47104,
-          "content_type": "",
           "text_available": true,
           "text_chars": 6081,
-          "content_check": "no_filename_mismatch_detected",
-          "text_file": "data/documents/registr-smluv/20244341/001.txt"
+          "text_file": "data/documents/registr-smluv/20244341/001.txt",
+          "status": "retained_existing_text",
+          "content_check": "no_filename_mismatch_detected"
         }
       ],
       "status": "ok"
@@ -619,13 +615,11 @@
           "index": 1,
           "name": "04_Smlouva_o_poskytnuti_dotace_Mesto_Lomnice.pdf",
           "url": "https://smlouvy.gov.cz/smlouva/soubor/30679315/04_Smlouva_o_poskytnuti_dotace_Mesto_Lomnice.pdf",
-          "sha256": "843680eb5e622b044e146a8abbd9dc1adb600409ddc26bea418321f1422b8cd3",
-          "bytes": 559765,
-          "content_type": "application/pdf",
           "text_available": true,
           "text_chars": 32282,
-          "content_check": "no_filename_mismatch_detected",
-          "text_file": "data/documents/registr-smluv/23137771/001.txt"
+          "text_file": "data/documents/registr-smluv/23137771/001.txt",
+          "status": "retained_existing_text",
+          "content_check": "no_filename_mismatch_detected"
         }
       ],
       "status": "ok"
@@ -653,23 +647,49 @@
       "source": "registr-smluv",
       "source_id": "24191791",
       "title": "Smlouva o poskytnutí dotace z Dotačního fondu LK na osobní ochranné prostředky PO",
-      "page_url": "https://smlouvy.gov.cz/smlouva/24191791",
-      "documents": [],
+      "page_url": "https://smlouvy.gov.cz/smlouva/25906167",
+      "documents": [
+        {
+          "index": 1,
+          "name": "Lomnice_nad_Popelkou_1932.pdf",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/31984371/Lomnice_nad_Popelkou_1932.pdf",
+          "sha256": "507b6091cb89fb90afac6da738e162a5d84d77da1ddc9264907c2ea8ff6613fe",
+          "bytes": 328880,
+          "content_type": "application/pdf",
+          "text_available": true,
+          "text_chars": 26568,
+          "content_check": "no_filename_mismatch_detected",
+          "text_file": "data/documents/registr-smluv/24191791/001.txt"
+        }
+      ],
       "status": "ok"
     },
     {
       "source": "registr-smluv",
       "source_id": "24191795",
       "title": "Smlouva o poskytnutí dotace z Dotačního fondu LK na čtyřkolky pro JSDHO",
-      "page_url": "https://smlouvy.gov.cz/smlouva/24191795",
-      "documents": [],
+      "page_url": "https://smlouvy.gov.cz/smlouva/25906171",
+      "documents": [
+        {
+          "index": 1,
+          "name": "Lomnice_nad_Popelkou_2153.pdf",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/31984375/Lomnice_nad_Popelkou_2153.pdf",
+          "sha256": "81f7dbf17b626effcb0f57e9d37e9498ca9866d6e349be198ef00e420a375794",
+          "bytes": 328635,
+          "content_type": "application/pdf",
+          "text_available": true,
+          "text_chars": 26435,
+          "content_check": "no_filename_mismatch_detected",
+          "text_file": "data/documents/registr-smluv/24191795/001.txt"
+        }
+      ],
       "status": "ok"
     },
     {
       "source": "registr-smluv",
       "source_id": "24200939",
       "title": "Smlouva o bezúplatném převodu a o sjednání jiných věcných práv, pozemky p.č.2340/15 a p.č.2340/19 vzniklé dle GP č.2112-1453/2021 v k.ú.Lomnice nad Popelkou, včetně jejich součástí a příslušenství",
-      "page_url": "https://smlouvy.gov.cz/smlouva/24200939",
+      "page_url": "https://smlouvy.gov.cz/smlouva/25915639",
       "documents": [],
       "status": "ok"
     },
@@ -677,72 +697,213 @@
       "source": "registr-smluv",
       "source_id": "24676351",
       "title": "86_OLP/2721/2023_8.2 Město Lomnice nad Popelkou",
-      "page_url": "https://smlouvy.gov.cz/smlouva/24676351",
-      "documents": [],
+      "page_url": "https://smlouvy.gov.cz/smlouva/26414311",
+      "documents": [
+        {
+          "index": 1,
+          "name": "OLP_2721_2023_8_2_Mesto_Lomnice_nad_P.pdf",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/32575283/OLP_2721_2023_8_2_Mesto_Lomnice_nad_P.pdf",
+          "sha256": "1355bf2665367b8b7af3e239578e561bae37a4d185fd85466104e6c0addbc291",
+          "bytes": 244909,
+          "content_type": "application/pdf",
+          "text_available": true,
+          "text_chars": 28286,
+          "content_check": "no_filename_mismatch_detected",
+          "text_file": "data/documents/registr-smluv/24676351/001.txt"
+        }
+      ],
       "status": "ok"
     },
     {
       "source": "registr-smluv",
       "source_id": "24735923",
       "title": "Smlouva o smlouvě budoucí o zřízení služebnosti č.j. OLP/3553/2023 - rekonstrukce veřejného osvětlení ul. Jilemnická a část plk.Truhláře, k.ú. Lomnice nad Popelkou",
-      "page_url": "https://smlouvy.gov.cz/smlouva/24735923",
-      "documents": [],
+      "page_url": "https://smlouvy.gov.cz/smlouva/26477119",
+      "documents": [
+        {
+          "index": 1,
+          "name": "14_OLP_3553_2023.pdf",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/32650063/14_OLP_3553_2023.pdf",
+          "sha256": "aec466adebfead6d90c944975d8b851eeea2bdd32b5d43be8f87f43b79db88d6",
+          "bytes": 1786825,
+          "content_type": "application/pdf",
+          "text_available": true,
+          "text_chars": 21734,
+          "content_check": "no_filename_mismatch_detected",
+          "text_file": "data/documents/registr-smluv/24735923/001.txt"
+        }
+      ],
       "status": "ok"
     },
     {
       "source": "registr-smluv",
       "source_id": "24740963",
       "title": "Dodatek č. 2 ke smlouvě o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje na projekt karavanová stání Lomnice nad Popelkou",
-      "page_url": "https://smlouvy.gov.cz/smlouva/24740963",
-      "documents": [],
+      "page_url": "https://smlouvy.gov.cz/smlouva/26482543",
+      "documents": [
+        {
+          "index": 1,
+          "name": "Dodatek_2_Lomnice_nad_Popelkou.pdf",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/32656551/Dodatek_2_Lomnice_nad_Popelkou.pdf",
+          "sha256": "2e10570c8f1426438f52fe169e964d9ea50b29c31ff8228b06ea1a9e1129e946",
+          "bytes": 216641,
+          "content_type": "application/pdf",
+          "text_available": true,
+          "text_chars": 6117,
+          "content_check": "no_filename_mismatch_detected",
+          "text_file": "data/documents/registr-smluv/24740963/001.txt"
+        }
+      ],
       "status": "ok"
     },
     {
       "source": "registr-smluv",
       "source_id": "24787731",
       "title": "Veřejnoprávní smlouva o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou",
-      "page_url": "https://smlouvy.gov.cz/smlouva/24787731",
-      "documents": [],
+      "page_url": "https://smlouvy.gov.cz/smlouva/26531819",
+      "documents": [
+        {
+          "index": 1,
+          "name": "Ve%C5%99ejnopr%C3%A1vn%C3%AD%20smlouva%20-%20Lomnice%20n.%20P..pdf",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/32712747/Ve%C5%99ejnopr%C3%A1vn%C3%AD%20smlouva%20-%20Lomnice%20n.%20P..pdf",
+          "sha256": "f836c86f232f3549e186b2036d3125b5356fc148c6691ab93691d2f8ff1c19af",
+          "bytes": 341949,
+          "content_type": "application/pdf",
+          "text_available": true,
+          "text_chars": 4858,
+          "content_check": "no_filename_mismatch_detected",
+          "text_file": "data/documents/registr-smluv/24787731/001.txt"
+        }
+      ],
       "status": "ok"
     },
     {
       "source": "registr-smluv",
       "source_id": "24928323",
       "title": "účelová dotace z rozpočtu Libereckého kraje, dotačního programu Podpora sportovní infrastruktury v Libereckém kraji na projekt \"Osvětlení sportovní haly u ZŠ v Lomnici nad Popelkou\"",
-      "page_url": "https://smlouvy.gov.cz/smlouva/24928323",
-      "documents": [],
+      "page_url": "https://smlouvy.gov.cz/smlouva/26682111",
+      "documents": [
+        {
+          "index": 1,
+          "name": "04708_OLP_3823_2023_Lomnice_nad_Popelkou.pdf",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/32885387/04708_OLP_3823_2023_Lomnice_nad_Popelkou.pdf",
+          "sha256": "006e476d32d1812f94cc7007f18b1a639bbbae189c327d0deba4940008fd2bd0",
+          "bytes": 1227663,
+          "content_type": "application/pdf",
+          "text_available": true,
+          "text_chars": 38631,
+          "content_check": "no_filename_mismatch_detected",
+          "text_file": "data/documents/registr-smluv/24928323/001.txt"
+        }
+      ],
       "status": "ok"
     },
     {
       "source": "registr-smluv",
       "source_id": "24993819",
       "title": "Smlouva o spolupráci při zajištění dopravní obslužnosti Libereckého kraje na období od roku 2024 do roku 2028",
-      "page_url": "https://smlouvy.gov.cz/smlouva/24993819",
-      "documents": [],
+      "page_url": "https://smlouvy.gov.cz/smlouva/26750391",
+      "documents": [
+        {
+          "index": 1,
+          "name": "Smlouva_Lomnice_nad_Popelkou_2024-2028.pdf",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/32964743/Smlouva_Lomnice_nad_Popelkou_2024-2028.pdf",
+          "sha256": "c2778b3313680776a8eae3e9eea7905553b1411058fd35f8a88458e60b6201dd",
+          "bytes": 194568,
+          "content_type": "application/pdf",
+          "text_available": true,
+          "text_chars": 6850,
+          "content_check": "no_filename_mismatch_detected",
+          "text_file": "data/documents/registr-smluv/24993819/001.txt"
+        }
+      ],
       "status": "ok"
     },
     {
       "source": "registr-smluv",
       "source_id": "25099803",
       "title": "Dodatek č. 1 veřejnoprávní smlouvy o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou",
-      "page_url": "https://smlouvy.gov.cz/smlouva/25099803",
-      "documents": [],
+      "page_url": "https://smlouvy.gov.cz/smlouva/26873839",
+      "documents": [
+        {
+          "index": 1,
+          "name": "Dodatek%20ve%C5%99ejnopr%C3%A1vn%C3%AD%20smlouva.pdf",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/33120591/Dodatek%20ve%C5%99ejnopr%C3%A1vn%C3%AD%20smlouva.pdf",
+          "sha256": "cb73ea48595b51c5bc9ba4d43c8e400b814eb63f412c08cc1aaa8c6f85479668",
+          "bytes": 202691,
+          "content_type": "application/pdf",
+          "text_available": true,
+          "text_chars": 2902,
+          "content_check": "no_filename_mismatch_detected",
+          "text_file": "data/documents/registr-smluv/25099803/001.txt"
+        }
+      ],
       "status": "ok"
     },
     {
       "source": "registr-smluv",
       "source_id": "25122007",
       "title": "Smlouva o poskytnutí dotace dle NV č. 2/2023 Sb.",
-      "page_url": "https://smlouvy.gov.cz/smlouva/25122007",
-      "documents": [],
+      "page_url": "https://smlouvy.gov.cz/smlouva/26900403",
+      "documents": [
+        {
+          "index": 1,
+          "name": "Smluvn%C3%AD%20dokumentace%20k%20dotaci%20-%20anonymizovan%C3%A1.pdf",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/33154203/Smluvn%C3%AD%20dokumentace%20k%20dotaci%20-%20anonymizovan%C3%A1.pdf",
+          "sha256": "1fe68bba077a4bbc6ff55a59ab4e06fde5a9fad9a26fbb6c75b94be794be815e",
+          "bytes": 202736,
+          "content_type": "application/pdf",
+          "text_available": true,
+          "text_chars": 30773,
+          "content_check": "no_filename_mismatch_detected",
+          "text_file": "data/documents/registr-smluv/25122007/001.txt"
+        }
+      ],
       "status": "ok"
     },
     {
       "source": "registr-smluv",
       "source_id": "25788491",
       "title": "Smlouva o vybudování skiagrafického pracoviště a zajištění jeho provozu + příloha č.1 a příloha č.2",
-      "page_url": "https://smlouvy.gov.cz/smlouva/25788491",
-      "documents": [],
+      "page_url": "https://smlouvy.gov.cz/smlouva/27610543",
+      "documents": [
+        {
+          "index": 1,
+          "name": "Smlouva%20o%20vybudov%C3%A1n%C3%AD%20skiagrafick%C3%A9ho%20pracovi%C5%A1t%C4%9B%20a%20zaji%C5%A1t%C4%9Bn%C3%AD%20jeho%20provozu%20ANON..docx",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/33978483/Smlouva%20o%20vybudov%C3%A1n%C3%AD%20skiagrafick%C3%A9ho%20pracovi%C5%A1t%C4%9B%20a%20zaji%C5%A1t%C4%9Bn%C3%AD%20jeho%20provozu%20ANON..docx",
+          "sha256": "c9d188a464a4dca32c1cf3e9753e95aa0c6117cd202637311fcdba7326f8a1cf",
+          "bytes": 33589,
+          "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "text_available": true,
+          "text_chars": 8889,
+          "content_check": "no_filename_mismatch_detected",
+          "text_file": "data/documents/registr-smluv/25788491/001.txt"
+        },
+        {
+          "index": 2,
+          "name": "P%C5%99%C3%ADloha%20%C4%8D.%201%20-%20Specifikace%20nebytov%C3%BDch%20prostor%20-%20skiagrafick%C3%A9%20pracovi%C5%A1t%C4%9B%20ANON..docx",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/33978487/P%C5%99%C3%ADloha%20%C4%8D.%201%20-%20Specifikace%20nebytov%C3%BDch%20prostor%20-%20skiagrafick%C3%A9%20pracovi%C5%A1t%C4%9B%20ANON..docx",
+          "sha256": "badd83f01bc2ec7f7c343f200a1a46ad0f46149faf838a956f36da4fdb5eb6bd",
+          "bytes": 12857,
+          "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "text_available": true,
+          "text_chars": 79,
+          "content_check": "no_filename_mismatch_detected",
+          "text_file": "data/documents/registr-smluv/25788491/002.txt"
+        },
+        {
+          "index": 3,
+          "name": "P%C5%99%C3%ADloha%20%C4%8D.%202%20-%20Mechanismus%20ostatn%C3%ADch%20plateb%20n%C3%A1jemn%C3%AD%20smlouvy%20ANON..docx",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/33978491/P%C5%99%C3%ADloha%20%C4%8D.%202%20-%20Mechanismus%20ostatn%C3%ADch%20plateb%20n%C3%A1jemn%C3%AD%20smlouvy%20ANON..docx",
+          "sha256": "995ea3d0fdab2884c749bc189f43836d6d4c10c6db39766ef9c506d467fa5bb6",
+          "bytes": 12781,
+          "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "text_available": true,
+          "text_chars": 2069,
+          "content_check": "no_filename_mismatch_detected",
+          "text_file": "data/documents/registr-smluv/25788491/003.txt"
+        }
+      ],
       "status": "ok"
     },
     {
@@ -757,16 +918,42 @@
       "source": "registr-smluv",
       "source_id": "26812007",
       "title": "Obnova rybníka Matouš v Lomnici nad Popelkou",
-      "page_url": "https://smlouvy.gov.cz/smlouva/26812007",
-      "documents": [],
+      "page_url": "https://smlouvy.gov.cz/smlouva/28683387",
+      "documents": [
+        {
+          "index": 1,
+          "name": "OLP_3394_2023_Smlouva_Lomnice_nP.pdf",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/35209919/OLP_3394_2023_Smlouva_Lomnice_nP.pdf",
+          "sha256": "f8dcf0b09dd59118369ba70cf9179f97a22c0c426bfaa1fdc98ed17a15397670",
+          "bytes": 243566,
+          "content_type": "application/pdf",
+          "text_available": true,
+          "text_chars": 30930,
+          "content_check": "no_filename_mismatch_detected",
+          "text_file": "data/documents/registr-smluv/26812007/001.txt"
+        }
+      ],
       "status": "ok"
     },
     {
       "source": "registr-smluv",
       "source_id": "26892268",
       "title": "Kupní smlouva č.j.OLP/101/2024, prodej pozemku v k.ú. Ploužnice pod Táborem",
-      "page_url": "https://smlouvy.gov.cz/smlouva/26892268",
-      "documents": [],
+      "page_url": "https://smlouvy.gov.cz/smlouva/28766984",
+      "documents": [
+        {
+          "index": 1,
+          "name": "14_OLP_101_2024.pdf",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/35308068/14_OLP_101_2024.pdf",
+          "sha256": "98b28057230a7d8cdf53f7bfa233bac133ec971dadb497b658039cb6ddbe4f8d",
+          "bytes": 212507,
+          "content_type": "application/pdf",
+          "text_available": true,
+          "text_chars": 9195,
+          "content_check": "no_filename_mismatch_detected",
+          "text_file": "data/documents/registr-smluv/26892268/001.txt"
+        }
+      ],
       "status": "ok"
     },
     {
@@ -792,24 +979,63 @@
       "source": "registr-smluv",
       "source_id": "27256880",
       "title": "Poskytnutí účelové dotace z dotačního fondu Libereckého kraje na projekt Infrastruktura pro cyklisty v Lomnici nad Popelkou",
-      "page_url": "https://smlouvy.gov.cz/smlouva/27256880",
-      "documents": [],
+      "page_url": "https://smlouvy.gov.cz/smlouva/29146736",
+      "documents": [
+        {
+          "index": 1,
+          "name": "Smlouva_OLP_2580_2024.pdf",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/35746932/Smlouva_OLP_2580_2024.pdf",
+          "sha256": "37fb26df93f18e6d8a0b8182bf69cb25ebdf36e95e1b4bec49921b94eeb72ce4",
+          "bytes": 360399,
+          "content_type": "application/pdf",
+          "text_available": true,
+          "text_chars": 35978,
+          "content_check": "no_filename_mismatch_detected",
+          "text_file": "data/documents/registr-smluv/27256880/001.txt"
+        }
+      ],
       "status": "ok"
     },
     {
       "source": "registr-smluv",
       "source_id": "27585960",
       "title": "Smlouva o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje - oblast podpory DOPRAVA program 6.1 - Podpora výstavby komunikací pro cyklisty",
-      "page_url": "https://smlouvy.gov.cz/smlouva/27585960",
-      "documents": [],
+      "page_url": "https://smlouvy.gov.cz/smlouva/29489948",
+      "documents": [
+        {
+          "index": 1,
+          "name": "06_OLP-2550-2024.pdf",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/36138716/06_OLP-2550-2024.pdf",
+          "sha256": "32a709fb7239dd6c28166c30aeeaf783d09a9c820107fda74d93ca6a00e1d042",
+          "bytes": 4668879,
+          "content_type": "application/pdf",
+          "text_available": true,
+          "text_chars": 28197,
+          "content_check": "no_filename_mismatch_detected",
+          "text_file": "data/documents/registr-smluv/27585960/001.txt"
+        }
+      ],
       "status": "ok"
     },
     {
       "source": "registr-smluv",
       "source_id": "27785608",
       "title": "Smlouva o poskytnutí dotace z DF LK - Nákup ochranných prostředků PO 2024",
-      "page_url": "https://smlouvy.gov.cz/smlouva/27785608",
-      "documents": [],
+      "page_url": "https://smlouvy.gov.cz/smlouva/29700208",
+      "documents": [
+        {
+          "index": 1,
+          "name": "Lomnice_1919.pdf",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/36382792/Lomnice_1919.pdf",
+          "sha256": "4df758dcca1e5da67de4daa173d50ff8e162c25510693054dcf4b100523d37ac",
+          "bytes": 240497,
+          "content_type": "application/pdf",
+          "text_available": true,
+          "text_chars": 26513,
+          "content_check": "no_filename_mismatch_detected",
+          "text_file": "data/documents/registr-smluv/27785608/001.txt"
+        }
+      ],
       "status": "ok"
     },
     {

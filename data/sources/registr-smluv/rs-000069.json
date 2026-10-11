@@ -2,7 +2,7 @@
   "source": "registr-smluv",
   "source_id": "24676351",
   "version_id": "26414311",
-  "source_url": "https://smlouvy.gov.cz/smlouva/24676351",
+  "source_url": "https://smlouvy.gov.cz/smlouva/26414311",
   "title": "86_OLP/2721/2023_8.2 Město Lomnice nad Popelkou",
   "buyer_ico": "00275905",
   "supplier_ico": "70891508",
@@ -19,11 +19,13 @@
     "source": "registr-smluv",
     "source_id": "24676351",
     "version_id": "26414311",
-    "source_url": "https://smlouvy.gov.cz/smlouva/24676351",
+    "source_url": "https://smlouvy.gov.cz/smlouva/26414311",
     "title": "86_OLP/2721/2023_8.2 Město Lomnice nad Popelkou",
     "buyer_ico": "00275905",
     "supplier_ico": "70891508",
     "contract_number": "OLP/2721/2023",
+    "related_contract_ids": [],
+    "related_contract_numbers": [],
     "date": "2023-10-31",
     "signed_date": "2023-10-31",
     "published": "",
@@ -32,6 +34,12 @@
     "publisher": "",
     "subject": "86_OLP/2721/2023_8.2 Město Lomnice nad Popelkou",
     "counterparty": "Liberecký kraj",
-    "detail_url": "https://smlouvy.gov.cz/smlouva/24676351"
+    "detail_url": "https://smlouvy.gov.cz/smlouva/26414311",
+    "attachments": [
+      {
+        "url": "https://smlouvy.gov.cz/smlouva/soubor/32575283/OLP_2721_2023_8_2_Mesto_Lomnice_nad_P.pdf",
+        "name": "OLP_2721_2023_8_2_Mesto_Lomnice_nad_P.pdf"
+      }
+    ]
   }
 }

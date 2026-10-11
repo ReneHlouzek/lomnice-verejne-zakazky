@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "documents_analyzed": 74,
+  "documents_analyzed": 93,
   "method": "Pravidlová extrakce z textu PDF; nejde o právní ani ekonomické hodnocení.",
   "documents": [
     {
@@ -1180,6 +1180,550 @@
     },
     {
       "source": "registr-smluv",
+      "source_id": "24191791",
+      "source_url": "https://smlouvy.gov.cz/smlouva/25906167",
+      "title": "Smlouva o poskytnutí dotace z Dotačního fondu LK na osobní ochranné prostředky PO",
+      "document_name": "Lomnice_nad_Popelkou_1932.pdf",
+      "text_file": "data/documents/registr-smluv/24191791/001.txt",
+      "text_chars": 26568,
+      "document_types": [
+        "contract",
+        "grant",
+        "deadline"
+      ],
+      "signals": {
+        "contract": 1,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 1,
+        "tender": 0,
+        "deadline": 2
+      },
+      "amounts_czk": [
+        50000.0,
+        186522.0
+      ],
+      "dates": [
+        "1. 1. 2023",
+        "19. 2. 2024",
+        "30. 5. \n2023",
+        "30. 5. 2023",
+        "31. 12. 2023"
+      ],
+      "snippets": [
+        ". Průběžnou zprávu také nemusí předkládat příjemce, kterému je celková výše dotace proplacena až po závěrečném vyúčtování projektu (tzv. ex - post). 9. K závěrečnému vyúčtování předloží příjemce dotace kopie účetních dokladů, daňových dokladů nebo zjednodušených daňových dokladů (např. faktury, účtenky, paragony, výdajové pokladní doklady) týka",
+        "Stránka 1 z 14 Smlouva o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje oblast podpory: Požární ochrana a prevence kriminality program č. 1.1 Podpora jednotek požární ochrany obcí Libereckého kraje č. OLP/1932/2023 schválená Zastupitelstvem Libereckého kraje dne 30. 5. 2023 usnesením",
+        "robky z nich Stránka 4 z 14 4. Termín zahájení realizace projektu je 1. 1 . 2023 a termín ukončení realizace projektu je nejpozději 31. 12. 2023. 5. Ukončením realizace projektu se rozumí dokončení veškerých aktivit na projektu. 6. Finanční prostředky poskytovatele na projekt dle Článku I. jsou poskytnuty k využití do termínu pro předl"
+      ]
+    },
+    {
+      "source": "registr-smluv",
+      "source_id": "24191795",
+      "source_url": "https://smlouvy.gov.cz/smlouva/25906171",
+      "title": "Smlouva o poskytnutí dotace z Dotačního fondu LK na čtyřkolky pro JSDHO",
+      "document_name": "Lomnice_nad_Popelkou_2153.pdf",
+      "text_file": "data/documents/registr-smluv/24191795/001.txt",
+      "text_chars": 26435,
+      "document_types": [
+        "contract",
+        "grant",
+        "deadline"
+      ],
+      "signals": {
+        "contract": 1,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 1,
+        "tender": 0,
+        "deadline": 2
+      },
+      "amounts_czk": [
+        50000.0,
+        200000.0
+      ],
+      "dates": [
+        "1. 1. 2023",
+        "19. 2. 2024",
+        "30. 5. \n2023",
+        "30. 5. 2023",
+        "31. 12. 2023"
+      ],
+      "snippets": [
+        ". Průběžnou zprávu také nemusí předkládat příjemce, kterému je celková výše dotace proplacena až po závěrečném vyúčtování projektu (tzv. ex - post). 9. K závěrečnému vyúčtování předloží příjemce dotace kopie účetních dokladů, daňových dokladů nebo zjednodušených daňových dokladů (např. faktury, účtenky, paragony, výdajové pokladní doklady) týka",
+        "Stránka 1 z 14 Smlouva o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje oblast podpory: Požární ochrana a prevence kriminality program č. 1.1 Podpora jednotek požární ochrany obcí Libereckého kraje č. OLP/2153/2023 schválená Zastupitelstvem Libereckého kraje dne 30. 5. 2023 usnesením",
+        "robky z nich Stránka 4 z 14 4. Termín zahájení realizace projektu je 1. 1 . 2023 a termín ukončení realizace projektu je nejpozději 31. 12. 2023. 5. Ukončením realizace projektu se rozumí dokončení veškerých aktivit na projektu. 6. Finanční prostředky poskytovatele na projekt dle Článku I. jsou poskytnuty k využití do termínu pro předl"
+      ]
+    },
+    {
+      "source": "registr-smluv",
+      "source_id": "24676351",
+      "source_url": "https://smlouvy.gov.cz/smlouva/26414311",
+      "title": "86_OLP/2721/2023_8.2 Město Lomnice nad Popelkou",
+      "document_name": "OLP_2721_2023_8_2_Mesto_Lomnice_nad_P.pdf",
+      "text_file": "data/documents/registr-smluv/24676351/001.txt",
+      "text_chars": 28286,
+      "document_types": [
+        "contract",
+        "addendum",
+        "grant",
+        "deadline"
+      ],
+      "signals": {
+        "contract": 1,
+        "addendum": 1,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 1,
+        "tender": 0,
+        "deadline": 2
+      },
+      "amounts_czk": [
+        50000.0,
+        150000.0
+      ],
+      "dates": [
+        "1. 1. 2023",
+        "19. 11. 2024",
+        "30. 5. 2023",
+        "30. 9. 2024",
+        "30.5. 2023"
+      ],
+      "snippets": [
+        ". Průběžnou zprávu také nemusí předkládat příjemce, kterému je celková výše dotace proplacena až po závěrečném vyúčtování projektu (tzv. ex - post). 9. K závěrečnému vyúčtování předloží příjemce dotace kopie účetních dokladů, daňových dokladů nebo zjednodušených daňových d okladů (např. faktury, účtenky, paragony, výdajové pokladní doklady) tý",
+        "musí být předmět a cena prací a termín realizace) , pokud byly vystaveny/uzavřeny. f) dodatek ke smlouvě o dílo nebo novou objednávku v případě navýšení prací nad rámec smlouvy o dílo nebo objednávky g) Doklad prokazující splnění povinnosti uvedené v čl. III. odst. 17 (informovat veřejnost o skutečnosti, že jím realizovaný projekt byl podp",
+        "Stránka 1 z 13 Smlouva o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje oblast podpory: 8. Životní prostředí a zemědělství, 8.2 Podpora ochrany přírody a krajiny, č. OLP/2721/2023 schválená Zastupitelstvem Libereckého kraje dne 30.5. 2023 usnesením č.184/23 ZK Smluvní strany:",
+        "alkohol a tabák a výrobky z nich. 4. Termín zahájení realizace projektu je 1. 1. 2023 a termín ukončení realizace projektu je nejpozději 30. 9. 2024. 5. Ukončením realizace projektu se rozumí dokončení veškerých aktivit na projektu. 6. Finanční prostředky poskytovatele na projekt dle Článku I. jsou poskytnuty k využití do termínu pro předlož"
+      ]
+    },
+    {
+      "source": "registr-smluv",
+      "source_id": "24735923",
+      "source_url": "https://smlouvy.gov.cz/smlouva/26477119",
+      "title": "Smlouva o smlouvě budoucí o zřízení služebnosti č.j. OLP/3553/2023 - rekonstrukce veřejného osvětlení ul. Jilemnická a část plk.Truhláře, k.ú. Lomnice nad Popelkou",
+      "document_name": "14_OLP_3553_2023.pdf",
+      "text_file": "data/documents/registr-smluv/24735923/001.txt",
+      "text_chars": 21734,
+      "document_types": [
+        "contract"
+      ],
+      "signals": {
+        "contract": 1,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [
+        50.0,
+        150.0,
+        900.0,
+        98700.0,
+        99600.0,
+        120516.0
+      ],
+      "dates": [
+        "07.10.2016",
+        "10.09.2001",
+        "11.10.2023",
+        "23. 10. 2023"
+      ],
+      "snippets": [
+        ". Výše úplaty je podle Snímku vypočítána takto: Stavební úkony Výměra Jednorázová sazba Cena podélné uložení do nezpevněné krajnice 658 m 150 Kč/m 98.700 Kč protlak – prům. chráničky do 0,15 m 18 m 50 Kč/m 900 Kč Úplata činí částku 99.600 Kč (slovy: devadesát devět tisíc šest set korun českých ), (dále jen „Úplata“). (7) Liberecký kraj je p"
+      ]
+    },
+    {
+      "source": "registr-smluv",
+      "source_id": "24740963",
+      "source_url": "https://smlouvy.gov.cz/smlouva/26482543",
+      "title": "Dodatek č. 2 ke smlouvě o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje na projekt karavanová stání Lomnice nad Popelkou",
+      "document_name": "Dodatek_2_Lomnice_nad_Popelkou.pdf",
+      "text_file": "data/documents/registr-smluv/24740963/001.txt",
+      "text_chars": 6117,
+      "document_types": [
+        "contract",
+        "addendum",
+        "deadline"
+      ],
+      "signals": {
+        "contract": 1,
+        "addendum": 1,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 2
+      },
+      "amounts_czk": [
+        50000.0
+      ],
+      "dates": [
+        "1. 6. 2021",
+        "14. 07. 2021",
+        "14. 9. 2022",
+        "19. 03. 2025",
+        "19. 2. 2024",
+        "19. 2. 2025",
+        "31. 10. 2023",
+        "31. 12. 2023",
+        "31. 12. 2024"
+      ],
+      "snippets": [
+        "1 Dodatek č. 2 ke Smlouvě o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje oblast podpory: Kultura, památková péče a cestvní ruch Program č.: 7.10 Rozvoj doprovodné turistické infrastruktury - karavanování stání č. OLP/2373/2021",
+        "1 Dodatek č. 2 ke Smlouvě o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje oblast podpory: Kultura, památková péče a cestvní ruch Program č.: 7.10 Rozvoj doprovodné turistické infrastruktury - karavanování stání č. OLP/2373/2021 uzavřený mezi těmito smluvními stranami: Li",
+        "lánek III. odst. 4 smlouvy ve znění: \"Termín zahájení realizace projektu je 1. 6. 2021 a termín ukončení projektu je nejpozději 31. 12. 2023.\" se ruší a nahrazuje tímto novým zněním: \"Termín zahájení realizace projektu je 1. 6. 2021 a termín ukončení realizace projektu je nejpozději 31. 12. 2024.\" 3. Článek III. odst. 7 ve znění: \"Projekt m"
+      ]
+    },
+    {
+      "source": "registr-smluv",
+      "source_id": "24787731",
+      "source_url": "https://smlouvy.gov.cz/smlouva/26531819",
+      "title": "Veřejnoprávní smlouva o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou",
+      "document_name": "Ve%C5%99ejnopr%C3%A1vn%C3%AD%20smlouva%20-%20Lomnice%20n.%20P..pdf",
+      "text_file": "data/documents/registr-smluv/24787731/001.txt",
+      "text_chars": 4858,
+      "document_types": [
+        "contract"
+      ],
+      "signals": {
+        "contract": 1,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [],
+      "dates": [
+        "27.9.2023",
+        "31. 12. 2023"
+      ],
+      "snippets": [
+        "Veřejnoprávní smlouva o poskytnutí neinvestiční dotace z rozpočtu města Lomnice nad Popelkou (dále jen smlouva) Smluvní strany: Město Lomnice nad Popelkou, zastoupená Mgr. Josefem Šimkem - starostou města Husovo náměstí 6, 512 51 Lomnice nad Popelkou IČ0 00275905 číslo účtu dále jen"
+      ]
+    },
+    {
+      "source": "registr-smluv",
+      "source_id": "24928323",
+      "source_url": "https://smlouvy.gov.cz/smlouva/26682111",
+      "title": "účelová dotace z rozpočtu Libereckého kraje, dotačního programu Podpora sportovní infrastruktury v Libereckém kraji na projekt \"Osvětlení sportovní haly u ZŠ v Lomnici nad Popelkou\"",
+      "document_name": "04708_OLP_3823_2023_Lomnice_nad_Popelkou.pdf",
+      "text_file": "data/documents/registr-smluv/24928323/001.txt",
+      "text_chars": 38631,
+      "document_types": [
+        "contract",
+        "grant",
+        "deadline"
+      ],
+      "signals": {
+        "contract": 1,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 2,
+        "tender": 0,
+        "deadline": 2
+      },
+      "amounts_czk": [
+        4168.45,
+        13648.8,
+        16177.7,
+        27768.29,
+        40000.0,
+        50000.0,
+        60000.0,
+        63130.54,
+        84078.06,
+        86859.85,
+        380240.32,
+        591395.73,
+        887227.42,
+        971636.05
+      ],
+      "dates": [
+        "1. 5. 2023",
+        "1.5. 2023",
+        "19. 2. 2025",
+        "23.5. 2023",
+        "23.5.2023",
+        "31. 10. \n2023",
+        "31. 10. 2023",
+        "31. 12. 2024",
+        "31.12. 2024"
+      ],
+      "snippets": [
+        ". Průběžnou zprávu také nemusí předkládat příjemce, kterému je celková výše dotace proplacena až po závěrečném vyúčtování projektu (tzv. ex - post). 9. K závěrečnému vyúčtování předloží příjemce dotace kopie účetních resp. prvotních daňových dokladů nebo zjednodušených daňových dokladů (např. faktury, účtenky, paragony, výdajové pokladní dokl",
+        "zhodnocení technické zhodnocení nemovitého majetku dle § 33 zákona č. 586/1992 Sb 6. Rozpočet projektu VÝDAJE (specifikujte jednotlivé položky, v případě potřeby přidejte řádky) Zdroj financování Demontáže 86 859,85 Kč vlastní zdroje Svítidla 971 636,05 Kč 380 240,32 Kč Liberecký kraj, 591 395,73 Kč vlastní zdroje Kabely 16 177,7",
+        "Stránka 1 z 19 Smlouva o poskytnutí účelové dotace z rozpočtu Libereckého kraje, oblast podpory: 4B tělovýchova a sport program PODPORA SPORTOVNÍ INFRASTRUKTURY V LIBERECKÉM KRAJI 2023 č. OLP/3823/2023 schválená Zastupitelstvem Libereckého kraje dne 31. 10. 2023 usnesením č. 499/23/ZK. Smluvní s",
+        "tosti uvedené v čl. III odst. 9. 4. Termín zahájení realizace projektu je 1. 5. 2023 a termín ukončení realizace projektu je nejpozději 31. 12. 2024. 5. Ukončením realizace projektu se rozumí dokončení veškerých aktivit na projektu a zároveň protokolární převzetí projektu mezi příjemcem a zhotovitelem projektu. 6. Finanční prostředky poskyto"
+      ]
+    },
+    {
+      "source": "registr-smluv",
+      "source_id": "24993819",
+      "source_url": "https://smlouvy.gov.cz/smlouva/26750391",
+      "title": "Smlouva o spolupráci při zajištění dopravní obslužnosti Libereckého kraje na období od roku 2024 do roku 2028",
+      "document_name": "Smlouva_Lomnice_nad_Popelkou_2024-2028.pdf",
+      "text_file": "data/documents/registr-smluv/24993819/001.txt",
+      "text_chars": 6850,
+      "document_types": [
+        "contract"
+      ],
+      "signals": {
+        "contract": 1,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [
+        50000.0,
+        1117000.0
+      ],
+      "dates": [
+        "1. 1. 2023",
+        "1. 1. 2024",
+        "19. 09. 2023",
+        "20. 11. 2023",
+        "23. 10. 2023",
+        "27. 11. 2023",
+        "27. 5. 2008",
+        "31. 12. 2023",
+        "31. 12. 2028"
+      ],
+      "snippets": []
+    },
+    {
+      "source": "registr-smluv",
+      "source_id": "25099803",
+      "source_url": "https://smlouvy.gov.cz/smlouva/26873839",
+      "title": "Dodatek č. 1 veřejnoprávní smlouvy o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou",
+      "document_name": "Dodatek%20ve%C5%99ejnopr%C3%A1vn%C3%AD%20smlouva.pdf",
+      "text_file": "data/documents/registr-smluv/25099803/001.txt",
+      "text_chars": 2902,
+      "document_types": [
+        "contract",
+        "addendum",
+        "grant"
+      ],
+      "signals": {
+        "contract": 1,
+        "addendum": 1,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 1,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [
+        1.0
+      ],
+      "dates": [
+        "22.9.2023",
+        "31. 12. 2023",
+        "6.12.2023"
+      ],
+      "snippets": [
+        "Dodatek č. I veřejnoprávní smlouvy o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou uzavřené dne 22.9.2023 (dále jen dodatek č. 1) Smluvní strany: Město Lomnice nad Popelkou, zastoupená Mgr. Josefem Šimkem - starostou",
+        "Dodatek č. I veřejnoprávní smlouvy o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou uzavřené dne 22.9.2023 (dále jen dodatek č. 1) Smluvní strany: Město Lomnice nad Popelkou, zastoupená Mgr. Josefem Šimkem - starostou města Husovo náměstí 6, 512 51 Lomnice nad Popelkou IČO 00"
+      ]
+    },
+    {
+      "source": "registr-smluv",
+      "source_id": "25122007",
+      "source_url": "https://smlouvy.gov.cz/smlouva/26900403",
+      "title": "Smlouva o poskytnutí dotace dle NV č. 2/2023 Sb.",
+      "document_name": "Smluvn%C3%AD%20dokumentace%20k%20dotaci%20-%20anonymizovan%C3%A1.pdf",
+      "text_file": "data/documents/registr-smluv/25122007/001.txt",
+      "text_chars": 30773,
+      "document_types": [
+        "contract",
+        "budget",
+        "deadline"
+      ],
+      "signals": {
+        "contract": 1,
+        "addendum": 0,
+        "budget": 2,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 1
+      },
+      "amounts_czk": [
+        5000.0,
+        3095142.07
+      ],
+      "dates": [
+        "1. 12. 2025",
+        "1. 2. 2020",
+        "11.11.2023",
+        "21.09.2021",
+        "24.08.2021",
+        "24.10.2023",
+        "31. 12. 2025",
+        "31. 12. 2026"
+      ],
+      "snippets": [
+        "ěru popsaného v žádosti o poskytnutí dotace podané Příjemcem, jejíž součástí je položkový rozpočet a současně se jedná o náklady vzniklé v období od 1. 2. 2020 do 31. 12. 2025; b) Revitalizací úprava území se starou stavební zátěží vymezená v článku II. odst. 2 této Smlouvy za použití podpory na účel uvedený v investičním záměru, který splňuje pod",
+        "Smlouva o poskytnutí dotace č. 268000761 Smluvní strany: Státní fond podpory investic IČO: 70856788 se sídlem: Vinohradská 1896/46, Vinohrady - 120 00 Praha 2 zastoupený: xxxxxxxxxxxx, ředitel Státního fondu podpory investic datová schránka: wikaiz5 (dále jen \"Poskytovatel\") a MĚS"
+      ]
+    },
+    {
+      "source": "registr-smluv",
+      "source_id": "25788491",
+      "source_url": "https://smlouvy.gov.cz/smlouva/27610543",
+      "title": "Smlouva o vybudování skiagrafického pracoviště a zajištění jeho provozu + příloha č.1 a příloha č.2",
+      "document_name": "Smlouva%20o%20vybudov%C3%A1n%C3%AD%20skiagrafick%C3%A9ho%20pracovi%C5%A1t%C4%9B%20a%20zaji%C5%A1t%C4%9Bn%C3%AD%20jeho%20provozu%20ANON..docx",
+      "text_file": "data/documents/registr-smluv/25788491/001.txt",
+      "text_chars": 8889,
+      "document_types": [
+        "contract",
+        "deadline"
+      ],
+      "signals": {
+        "contract": 1,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 1
+      },
+      "amounts_czk": [],
+      "dates": [
+        "1. 10. 2024",
+        "30.6.2024",
+        "6.12.2023"
+      ],
+      "snippets": []
+    },
+    {
+      "source": "registr-smluv",
+      "source_id": "25788491",
+      "source_url": "https://smlouvy.gov.cz/smlouva/27610543",
+      "title": "Smlouva o vybudování skiagrafického pracoviště a zajištění jeho provozu + příloha č.1 a příloha č.2",
+      "document_name": "P%C5%99%C3%ADloha%20%C4%8D.%201%20-%20Specifikace%20nebytov%C3%BDch%20prostor%20-%20skiagrafick%C3%A9%20pracovi%C5%A1t%C4%9B%20ANON..docx",
+      "text_file": "data/documents/registr-smluv/25788491/002.txt",
+      "text_chars": 79,
+      "document_types": [],
+      "signals": {
+        "contract": 0,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [],
+      "dates": [],
+      "snippets": []
+    },
+    {
+      "source": "registr-smluv",
+      "source_id": "25788491",
+      "source_url": "https://smlouvy.gov.cz/smlouva/27610543",
+      "title": "Smlouva o vybudování skiagrafického pracoviště a zajištění jeho provozu + příloha č.1 a příloha č.2",
+      "document_name": "P%C5%99%C3%ADloha%20%C4%8D.%202%20-%20Mechanismus%20ostatn%C3%ADch%20plateb%20n%C3%A1jemn%C3%AD%20smlouvy%20ANON..docx",
+      "text_file": "data/documents/registr-smluv/25788491/003.txt",
+      "text_chars": 2069,
+      "document_types": [],
+      "signals": {
+        "contract": 0,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [],
+      "dates": [],
+      "snippets": []
+    },
+    {
+      "source": "registr-smluv",
+      "source_id": "26812007",
+      "source_url": "https://smlouvy.gov.cz/smlouva/28683387",
+      "title": "Obnova rybníka Matouš v Lomnici nad Popelkou",
+      "document_name": "OLP_3394_2023_Smlouva_Lomnice_nP.pdf",
+      "text_file": "data/documents/registr-smluv/26812007/001.txt",
+      "text_chars": 30930,
+      "document_types": [
+        "contract",
+        "grant",
+        "deadline"
+      ],
+      "signals": {
+        "contract": 1,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 1,
+        "tender": 0,
+        "deadline": 2
+      },
+      "amounts_czk": [
+        50000.0,
+        962698.0
+      ],
+      "dates": [
+        "1. 1. 2023",
+        "19. 11. 2026",
+        "29. 8. 2023",
+        "30. 9. 2026"
+      ],
+      "snippets": [
+        ". Průběžnou zprávu také nemusí předkládat příjemce, kterému je celková výše dotace proplacena až po závěrečném vyúčtování projektu (tzv. ex - post). 9. K závěrečnému vyúčtování předloží příjemce dotace kopie účetních dokladů, daňových dokladů nebo zjednodušených daňových dokladů (např. faktury, účtenky, paragony, výdajové pokladní doklady) týka",
+        "r musí být předmět a cena prací a termín realizace), pokud byly vystaveny/uzavřeny, g) dodatek ke smlouvě o dílo nebo novou objednávku v případě navýšení prací nad rámec smlouvy o dílo nebo objednávky, pokud byly uzavřen / byla vystavena, h) v případě kofinancování: i. poslední platné rozhodnutí / uzavřená smlouva (a případné dodatky) k p",
+        "Stránka 1 z 14 Smlouva o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje oblast podpory: 8. Životní prostředí a zemědělství program č.: 8.6 Podpora retence vody v krajině a adaptace sídel na změnu klimatu č. OLP/3394/2023 schválená Zastupitelstvem Libereckého kraje dne 29. 8. 2023 usn",
+        "alkohol a tabák a výrobky z nich. 4. Termín zahájení realizace projektu je 1. 1. 2023 a termín ukončení realizace projektu je nejpozději 30. 9. 2026. 5. Ukončením realizace projektu se rozumí dokončení veškerých aktivit na projektu a zároveň protokolární převzetí projektu mezi příjemcem a zhotovitelem projektu/ a dále podle druhu stavby: • k"
+      ]
+    },
+    {
+      "source": "registr-smluv",
+      "source_id": "26892268",
+      "source_url": "https://smlouvy.gov.cz/smlouva/28766984",
+      "title": "Kupní smlouva č.j.OLP/101/2024, prodej pozemku v k.ú. Ploužnice pod Táborem",
+      "document_name": "14_OLP_101_2024.pdf",
+      "text_file": "data/documents/registr-smluv/26892268/001.txt",
+      "text_chars": 9195,
+      "document_types": [
+        "contract"
+      ],
+      "signals": {
+        "contract": 2,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [
+        76200.0
+      ],
+      "dates": [
+        "04.01.2024",
+        "04.04.2023",
+        "04.12.2023",
+        "10. 9. 2001",
+        "17.04.2024",
+        "20.02.2024"
+      ],
+      "snippets": [
+        "23 ze dne 04.04.2023 je nedílnou součástí této smlouvy. Článek II Projev vůle a kupní cena (1) Smluvní strany se dohodly, že prodá vající prodává kupujícímu Pozem ek uvedený v čl. I odst. (2) této smlouvy a kupující t ento Pozemek za níže uvedených podmínek kupuje Kupní smlouva OLP/101/2024 2/4 za vzájemně dohodnutou kupní cenu ve výši"
+      ]
+    },
+    {
+      "source": "registr-smluv",
       "source_id": "2704422",
       "source_url": "https://smlouvy.gov.cz/smlouva/2910678",
       "title": "Smlouva : \" Lomnice nad Popelkou a Nowogrodziec-společná cesta časem \"",
@@ -1216,6 +1760,128 @@
       "snippets": [
         "Stejně bude postupováno i u dodatků Smlouvy. 5. Přehled zdrojů financování a podrobný rozpočet je součástí Žádosti o podporu. Žádost o podporu je v plném rozsahu pro Konečného uživatele závazná. 6. Veškerou korespondenci týkající se této Smlouvy bude konečný uživatel zasílat na adresu: Euroregion Nisa 1. máje 858/26, 460 07, Liberec 3 Tel.",
         "lausitz-Niederschlesien, Zittau číslo účtu: 3100035711/85050100 (dále jen „Poskytovatel dotace“ / „Správce Fondu“) na straně jedné a Město Lomnice nad Popelkou se sídlem: Husovo náměstí 6, 512 51 Lomnice nad Popelkou zastoupený: Mgr. Josef Šimek, starosta IČ: 00275905 pro projekt Neplátce DPH bankovní spojení: Komerční banka, a.s. číslo"
+      ]
+    },
+    {
+      "source": "registr-smluv",
+      "source_id": "27256880",
+      "source_url": "https://smlouvy.gov.cz/smlouva/29146736",
+      "title": "Poskytnutí účelové dotace z dotačního fondu Libereckého kraje na projekt Infrastruktura pro cyklisty v Lomnici nad Popelkou",
+      "document_name": "Smlouva_OLP_2580_2024.pdf",
+      "text_file": "data/documents/registr-smluv/27256880/001.txt",
+      "text_chars": 35978,
+      "document_types": [
+        "contract",
+        "grant",
+        "deadline"
+      ],
+      "signals": {
+        "contract": 1,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 1,
+        "tender": 0,
+        "deadline": 2
+      },
+      "amounts_czk": [
+        50000.0,
+        150000.0
+      ],
+      "dates": [
+        "01. 01. 2024",
+        "15. 12. 2023",
+        "18. 3. 2024",
+        "19. 2. 2025",
+        "19. 3. 2025",
+        "28. 5. 2024",
+        "31. 12. 2024"
+      ],
+      "snippets": [
+        ". Průběžnou zprávu také nemusí předkládat příjemce, kterému je celková výše dotace proplacena až po závěrečném vyúčtování projektu (tzv. ex - post). 9. K závěrečnému vyúčtování předloží příjemce dotace kopie účetních dokladů, daňových dokladů nebo zjednodušených daňových dokladů (např. faktury, účtenky, paragony, výdajové pokladní doklady) týk",
+        "ý daňový doklad musí obsahovat a) obchodní firmu nebo jméno a příjmení, případně název, dodatek jména a příjmení nebo názvu, sídlo nebo místo podnikání, popřípadě trvalý pobyt nebo místo podnikání plátce, který uskutečňuje zdanitelné plnění, b) daňové identifikační číslo plátce, který uskutečňuje zdanitelné plnění, c) obchodn",
+        "Stránka 1 z 17 Smlouva o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje oblast podpory: Kultura, památková péče a cestovní ruch program č.: 7.10 Infrastruktura cestovního ruchu – doprovodná cyklo infrastruktura č. OLP/2580/2024 schválená Zastupitelstvem Libereckého kraje dne 28. 5.",
+        "alkohol a tabák a výrobky z nich. 4. Termín zahájení realizace projektu je 18. 3. 2024 a termín ukončení realizace projektu je nejpozději 31. 12. 2024. 5. Ukončením realizace projektu se rozumí dokončení veškerých aktivit na projektu a zároveň protokolární převzetí projektu mezi příjemcem a zhotovitelem projektu / a dále podle druhu stavby: a"
+      ]
+    },
+    {
+      "source": "registr-smluv",
+      "source_id": "27585960",
+      "source_url": "https://smlouvy.gov.cz/smlouva/29489948",
+      "title": "Smlouva o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje - oblast podpory DOPRAVA program 6.1 - Podpora výstavby komunikací pro cyklisty",
+      "document_name": "06_OLP-2550-2024.pdf",
+      "text_file": "data/documents/registr-smluv/27585960/001.txt",
+      "text_chars": 28197,
+      "document_types": [
+        "contract",
+        "addendum",
+        "grant",
+        "deadline"
+      ],
+      "signals": {
+        "contract": 1,
+        "addendum": 1,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 1,
+        "tender": 0,
+        "deadline": 2
+      },
+      "amounts_czk": [
+        50000.0,
+        2000000.0
+      ],
+      "dates": [
+        "1.1.2024",
+        "19.2.2027",
+        "2.7.2024",
+        "24.6.2024",
+        "28.5.2024",
+        "31.12.2026"
+      ],
+      "snippets": [
+        ". Průběžnou zprávu také nemusí předkládat příjemce, kterému je celková výše dotace proplacena až po závěrečném vyúčtování projektu (tzv. ex - post). 9. K závěrečnému vyúčtování předloží příjemce dotace kopie účetních dokladů, daňových dokladů nebo zjednodušených daňových dokladů (např. faktury, účtenky, paragony, výdajové pokladní doklady) týk",
+        "r musí být předmět a cena prací a termín realizace), pokud byly vystaveny/uzavřeny; f) dodatek ke smlouvě o dílo nebo novou objednávku v případě navýšení prací nad rámec smlouvy o dílo nebo objednávky g) doklad prokazující splnění povinnosti uvedené v čl. III. odst. 17 (informovat veřejnost o skutečnosti, že jím realizovaný projekt byl podpo",
+        "Stránka 1 z 14 Smlouva o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje oblast podpory: DOPRAVA program č.: 6.1 – Podpora výstavby komunikací pro cyklisty č. OLP/2550/2024 schválená Zastupitelstvem Libereckého kraje dne 28.5.2024 usnesením č.322/24/ZK Smluvní strany: Liberecký",
+        "bky z nich. Stránka 4 z 14 4. Termín zahájení realizace projektu je 1.1.2024 a termín ukončení realizace projektu je nejpozději 31.12.2026 5. Ukončením realizace projektu se rozumí dokončení veškerých aktivit na projektu/ a zároveň protokolární převzetí projektu mezi příjemcem a zhotovitelem projektu/ a dále podle druhu stavby oznáme"
+      ]
+    },
+    {
+      "source": "registr-smluv",
+      "source_id": "27785608",
+      "source_url": "https://smlouvy.gov.cz/smlouva/29700208",
+      "title": "Smlouva o poskytnutí dotace z DF LK - Nákup ochranných prostředků PO 2024",
+      "document_name": "Lomnice_1919.pdf",
+      "text_file": "data/documents/registr-smluv/27785608/001.txt",
+      "text_chars": 26513,
+      "document_types": [
+        "contract",
+        "grant",
+        "deadline"
+      ],
+      "signals": {
+        "contract": 1,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 1,
+        "tender": 0,
+        "deadline": 2
+      },
+      "amounts_czk": [
+        50000.0,
+        138378.0
+      ],
+      "dates": [
+        "1. 1. 2024",
+        "19. 2. 2025",
+        "28.05.2024",
+        "31. 12. 2024"
+      ],
+      "snippets": [
+        ". Průběžnou zprávu také nemusí předkládat příjemce, kterému je celková výše dotace proplacena až po závěrečném vyúčtování projektu (tzv. ex - post). 9. K závěrečnému vyúčtování předloží příjemce dotace kopie účetních dokladů, daňových dokladů nebo zjednodušených daňových dokladů (např. faktury, účtenky, paragony, výdajové pokladní doklady) týka",
+        "Stránka 1 z 14 Smlouva o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje oblast podpory: Požární ochrana a prevence kriminality program č. 1.1 Podpora jednotek požární ochrany obcí Libereckého kraje č. OLP/1919/2024 schválená Zastupitelstvem Libereckého kraje dne 28.05.2024 usnesením",
+        "alkohol a tabák a výrobky z nich 4. Termín zahájení realizace projektu je 1. 1. 2024 a termín ukončení realizace projektu je nejpozději 31. 12. 2024. Stránka 4 z 14 5. Ukončením realizace projektu se rozumí dokončení veškerých aktivit na projektu. 6. Finanční prostředky poskytovatele na projekt dle Článku I. jsou poskytnuty k využití"
       ]
     },
     {
@@ -2546,6 +3212,30 @@
         "Stránka 1 z 13 Smlouva o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje oblast podpory: Požární ochrana program č. 1.1: Podpora jednotek požární ochrany obcí Libereckého kraje č. OLP/1834/2019 schválená Zastupitelstvem Libereckého kraje dne 28. 5. 2019 usnesením č. 246/19/ZK Smluvní stran",
         "a alkohol a tabák a výrobky z nich 4. Termín zahájení realizace projektu je 1. 1. 2019 a termín ukončení r ealizace projektu je nejpozději 31. 12. 2019. V případě realizace projektu dle účelu č. U1), U6) f) vyhlášeného programu, je termín ukončení realizace projektu nejpozději 31. 12. 2020. 5. Ukončením realizace projektu se rozumí dokončení ve"
       ]
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "P26V00001385",
+      "source_url": "https://www.vhodne-uverejneni.cz/zakazka/modernizace-uceben-zus-dodavky",
+      "title": "Modernizace UČEBEN ZUŠ - dodávky",
+      "document_name": "Smlouva, její změny a dodatky",
+      "text_file": "data/documents/P26V00001385/002.txt",
+      "text_chars": 136,
+      "document_types": [
+        "contract"
+      ],
+      "signals": {
+        "contract": 1,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [],
+      "dates": [],
+      "snippets": []
     },
     {
       "source": "vhodne-uverejneni",

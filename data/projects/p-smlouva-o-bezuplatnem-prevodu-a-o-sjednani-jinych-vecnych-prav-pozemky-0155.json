@@ -70,7 +70,7 @@
         "source": "registr-smluv",
         "source_id": "24200939",
         "version_id": "25915639",
-        "source_url": "https://smlouvy.gov.cz/smlouva/24200939",
+        "source_url": "https://smlouvy.gov.cz/smlouva/25915639",
         "title": "Smlouva o bezúplatném převodu a o sjednání jiných věcných práv, pozemky p.č.2340/15 a p.č.2340/19 vzniklé dle GP č.2112-1453/2021 v k.ú.Lomnice nad Popelkou, včetně jejich součástí a příslušenství",
         "buyer_ico": "00275905",
         "supplier_ico": "70994234",
@@ -87,11 +87,13 @@
           "source": "registr-smluv",
           "source_id": "24200939",
           "version_id": "25915639",
-          "source_url": "https://smlouvy.gov.cz/smlouva/24200939",
+          "source_url": "https://smlouvy.gov.cz/smlouva/25915639",
           "title": "Smlouva o bezúplatném převodu a o sjednání jiných věcných práv, pozemky p.č.2340/15 a p.č.2340/19 vzniklé dle GP č.2112-1453/2021 v k.ú.Lomnice nad Popelkou, včetně jejich součástí a příslušenství",
           "buyer_ico": "00275905",
           "supplier_ico": "70994234",
           "contract_number": "S040262/2018-O31",
+          "related_contract_ids": [],
+          "related_contract_numbers": [],
           "date": "2023-09-26",
           "signed_date": "2023-09-26",
           "published": "",
@@ -100,7 +102,8 @@
           "publisher": "",
           "subject": "Smlouva o bezúplatném převodu a o sjednání jiných věcných práv, pozemky p.č.2340/15 a p.č.2340/19 vzniklé dle GP č.2112-1453/2021 v k.ú.Lomnice nad Popelkou, včetně jejich součástí a příslušenství",
           "counterparty": "Správa železnic, státní organizace",
-          "detail_url": "https://smlouvy.gov.cz/smlouva/24200939"
+          "detail_url": "https://smlouvy.gov.cz/smlouva/25915639",
+          "attachments": []
         },
         "_source_file": "data/sources/registr-smluv/rs-000068.json"
       }

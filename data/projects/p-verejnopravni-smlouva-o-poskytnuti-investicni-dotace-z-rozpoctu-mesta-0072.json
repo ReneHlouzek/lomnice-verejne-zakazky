@@ -70,7 +70,7 @@
         "source": "registr-smluv",
         "source_id": "24787731",
         "version_id": "26531819",
-        "source_url": "https://smlouvy.gov.cz/smlouva/24787731",
+        "source_url": "https://smlouvy.gov.cz/smlouva/26531819",
         "title": "Veřejnoprávní smlouva o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou",
         "buyer_ico": "00275905",
         "supplier_ico": "49295934",
@@ -87,11 +87,13 @@
           "source": "registr-smluv",
           "source_id": "24787731",
           "version_id": "26531819",
-          "source_url": "https://smlouvy.gov.cz/smlouva/24787731",
+          "source_url": "https://smlouvy.gov.cz/smlouva/26531819",
           "title": "Veřejnoprávní smlouva o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou",
           "buyer_ico": "00275905",
           "supplier_ico": "49295934",
           "contract_number": "",
+          "related_contract_ids": [],
+          "related_contract_numbers": [],
           "date": "2023-11-06",
           "signed_date": "2023-11-06",
           "published": "",
@@ -100,7 +102,13 @@
           "publisher": "",
           "subject": "Veřejnoprávní smlouva o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou",
           "counterparty": "Vodohospodářské sdružení Turnov",
-          "detail_url": "https://smlouvy.gov.cz/smlouva/24787731"
+          "detail_url": "https://smlouvy.gov.cz/smlouva/26531819",
+          "attachments": [
+            {
+              "url": "https://smlouvy.gov.cz/smlouva/soubor/32712747/Ve%C5%99ejnopr%C3%A1vn%C3%AD%20smlouva%20-%20Lomnice%20n.%20P..pdf",
+              "name": "Ve%C5%99ejnopr%C3%A1vn%C3%AD%20smlouva%20-%20Lomnice%20n.%20P..pdf"
+            }
+          ]
         },
         "_source_file": "data/sources/registr-smluv/rs-000070.json"
       }

@@ -2,7 +2,7 @@
   "source": "registr-smluv",
   "source_id": "24993819",
   "version_id": "26750391",
-  "source_url": "https://smlouvy.gov.cz/smlouva/24993819",
+  "source_url": "https://smlouvy.gov.cz/smlouva/26750391",
   "title": "Smlouva o spolupráci při zajištění dopravní obslužnosti Libereckého kraje na období od roku 2024 do roku 2028",
   "buyer_ico": "00275905",
   "supplier_ico": "70891508",
@@ -19,11 +19,13 @@
     "source": "registr-smluv",
     "source_id": "24993819",
     "version_id": "26750391",
-    "source_url": "https://smlouvy.gov.cz/smlouva/24993819",
+    "source_url": "https://smlouvy.gov.cz/smlouva/26750391",
     "title": "Smlouva o spolupráci při zajištění dopravní obslužnosti Libereckého kraje na období od roku 2024 do roku 2028",
     "buyer_ico": "00275905",
     "supplier_ico": "70891508",
     "contract_number": "21-OLP/2889/2023",
+    "related_contract_ids": [],
+    "related_contract_numbers": [],
     "date": "2023-11-27",
     "signed_date": "2023-11-27",
     "published": "",
@@ -32,6 +34,12 @@
     "publisher": "",
     "subject": "Smlouva o spolupráci při zajištění dopravní obslužnosti Libereckého kraje na období od roku 2024 do roku 2028",
     "counterparty": "Liberecký kraj",
-    "detail_url": "https://smlouvy.gov.cz/smlouva/24993819"
+    "detail_url": "https://smlouvy.gov.cz/smlouva/26750391",
+    "attachments": [
+      {
+        "url": "https://smlouvy.gov.cz/smlouva/soubor/32964743/Smlouva_Lomnice_nad_Popelkou_2024-2028.pdf",
+        "name": "Smlouva_Lomnice_nad_Popelkou_2024-2028.pdf"
+      }
+    ]
   }
 }

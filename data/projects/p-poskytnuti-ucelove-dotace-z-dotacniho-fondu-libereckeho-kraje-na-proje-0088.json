@@ -68,7 +68,7 @@
         "source": "registr-smluv",
         "source_id": "27256880",
         "version_id": "29146736",
-        "source_url": "https://smlouvy.gov.cz/smlouva/27256880",
+        "source_url": "https://smlouvy.gov.cz/smlouva/29146736",
         "title": "Poskytnutí účelové dotace z dotačního fondu Libereckého kraje na projekt Infrastruktura pro cyklisty v Lomnici nad Popelkou",
         "buyer_ico": "00275905",
         "supplier_ico": "70891508",
@@ -85,11 +85,13 @@
           "source": "registr-smluv",
           "source_id": "27256880",
           "version_id": "29146736",
-          "source_url": "https://smlouvy.gov.cz/smlouva/27256880",
+          "source_url": "https://smlouvy.gov.cz/smlouva/29146736",
           "title": "Poskytnutí účelové dotace z dotačního fondu Libereckého kraje na projekt Infrastruktura pro cyklisty v Lomnici nad Popelkou",
           "buyer_ico": "00275905",
           "supplier_ico": "70891508",
           "contract_number": "07-OLP/2580/2024",
+          "related_contract_ids": [],
+          "related_contract_numbers": [],
           "date": "2024-06-19",
           "signed_date": "2024-06-19",
           "published": "",
@@ -98,7 +100,13 @@
           "publisher": "",
           "subject": "Poskytnutí účelové dotace z dotačního fondu Libereckého kraje na projekt Infrastruktura pro cyklisty v Lomnici nad Popelkou",
           "counterparty": "Liberecký kraj",
-          "detail_url": "https://smlouvy.gov.cz/smlouva/27256880"
+          "detail_url": "https://smlouvy.gov.cz/smlouva/29146736",
+          "attachments": [
+            {
+              "url": "https://smlouvy.gov.cz/smlouva/soubor/35746932/Smlouva_OLP_2580_2024.pdf",
+              "name": "Smlouva_OLP_2580_2024.pdf"
+            }
+          ]
         },
         "_source_file": "data/sources/registr-smluv/rs-000080.json"
       }

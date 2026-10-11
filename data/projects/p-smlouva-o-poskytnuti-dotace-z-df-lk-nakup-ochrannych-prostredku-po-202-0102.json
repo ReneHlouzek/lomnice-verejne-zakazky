@@ -70,7 +70,7 @@
         "source": "registr-smluv",
         "source_id": "27785608",
         "version_id": "29700208",
-        "source_url": "https://smlouvy.gov.cz/smlouva/27785608",
+        "source_url": "https://smlouvy.gov.cz/smlouva/29700208",
         "title": "Smlouva o poskytnutí dotace z DF LK - Nákup ochranných prostředků PO 2024",
         "buyer_ico": "00275905",
         "supplier_ico": "70891508",
@@ -87,11 +87,13 @@
           "source": "registr-smluv",
           "source_id": "27785608",
           "version_id": "29700208",
-          "source_url": "https://smlouvy.gov.cz/smlouva/27785608",
+          "source_url": "https://smlouvy.gov.cz/smlouva/29700208",
           "title": "Smlouva o poskytnutí dotace z DF LK - Nákup ochranných prostředků PO 2024",
           "buyer_ico": "00275905",
           "supplier_ico": "70891508",
           "contract_number": "01 - OLP/1919/2024",
+          "related_contract_ids": [],
+          "related_contract_numbers": [],
           "date": "2024-07-29",
           "signed_date": "2024-07-29",
           "published": "",
@@ -100,7 +102,13 @@
           "publisher": "",
           "subject": "Smlouva o poskytnutí dotace z DF LK - Nákup ochranných prostředků PO 2024",
           "counterparty": "Liberecký kraj",
-          "detail_url": "https://smlouvy.gov.cz/smlouva/27785608"
+          "detail_url": "https://smlouvy.gov.cz/smlouva/29700208",
+          "attachments": [
+            {
+              "url": "https://smlouvy.gov.cz/smlouva/soubor/36382792/Lomnice_1919.pdf",
+              "name": "Lomnice_1919.pdf"
+            }
+          ]
         },
         "_source_file": "data/sources/registr-smluv/rs-000082.json"
       }

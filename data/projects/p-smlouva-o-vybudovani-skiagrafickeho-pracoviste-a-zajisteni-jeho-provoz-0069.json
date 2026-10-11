@@ -68,7 +68,7 @@
         "source": "registr-smluv",
         "source_id": "25788491",
         "version_id": "27610543",
-        "source_url": "https://smlouvy.gov.cz/smlouva/25788491",
+        "source_url": "https://smlouvy.gov.cz/smlouva/27610543",
         "title": "Smlouva o vybudování skiagrafického pracoviště a zajištění jeho provozu + příloha č.1 a příloha č.2",
         "buyer_ico": "00275905",
         "supplier_ico": "00854875",
@@ -85,11 +85,13 @@
           "source": "registr-smluv",
           "source_id": "25788491",
           "version_id": "27610543",
-          "source_url": "https://smlouvy.gov.cz/smlouva/25788491",
+          "source_url": "https://smlouvy.gov.cz/smlouva/27610543",
           "title": "Smlouva o vybudování skiagrafického pracoviště a zajištění jeho provozu + příloha č.1 a příloha č.2",
           "buyer_ico": "00275905",
           "supplier_ico": "00854875",
           "contract_number": "10/2024",
+          "related_contract_ids": [],
+          "related_contract_numbers": [],
           "date": "2024-01-22",
           "signed_date": "2024-01-22",
           "published": "",
@@ -98,7 +100,21 @@
           "publisher": "",
           "subject": "Smlouva o vybudování skiagrafického pracoviště a zajištění jeho provozu + příloha č.1 a příloha č.2",
           "counterparty": "Nemocnice následné péče s poliklinikou Lomnice nad Popelkou, příspěvková organizace",
-          "detail_url": "https://smlouvy.gov.cz/smlouva/25788491"
+          "detail_url": "https://smlouvy.gov.cz/smlouva/27610543",
+          "attachments": [
+            {
+              "url": "https://smlouvy.gov.cz/smlouva/soubor/33978483/Smlouva%20o%20vybudov%C3%A1n%C3%AD%20skiagrafick%C3%A9ho%20pracovi%C5%A1t%C4%9B%20a%20zaji%C5%A1t%C4%9Bn%C3%AD%20jeho%20provozu%20ANON..docx",
+              "name": "Smlouva%20o%20vybudov%C3%A1n%C3%AD%20skiagrafick%C3%A9ho%20pracovi%C5%A1t%C4%9B%20a%20zaji%C5%A1t%C4%9Bn%C3%AD%20jeho%20provozu%20ANON..docx"
+            },
+            {
+              "url": "https://smlouvy.gov.cz/smlouva/soubor/33978487/P%C5%99%C3%ADloha%20%C4%8D.%201%20-%20Specifikace%20nebytov%C3%BDch%20prostor%20-%20skiagrafick%C3%A9%20pracovi%C5%A1t%C4%9B%20ANON..docx",
+              "name": "P%C5%99%C3%ADloha%20%C4%8D.%201%20-%20Specifikace%20nebytov%C3%BDch%20prostor%20-%20skiagrafick%C3%A9%20pracovi%C5%A1t%C4%9B%20ANON..docx"
+            },
+            {
+              "url": "https://smlouvy.gov.cz/smlouva/soubor/33978491/P%C5%99%C3%ADloha%20%C4%8D.%202%20-%20Mechanismus%20ostatn%C3%ADch%20plateb%20n%C3%A1jemn%C3%AD%20smlouvy%20ANON..docx",
+              "name": "P%C5%99%C3%ADloha%20%C4%8D.%202%20-%20Mechanismus%20ostatn%C3%ADch%20plateb%20n%C3%A1jemn%C3%AD%20smlouvy%20ANON..docx"
+            }
+          ]
         },
         "_source_file": "data/sources/registr-smluv/rs-000077.json"
       }

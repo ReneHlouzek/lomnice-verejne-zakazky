@@ -1,0 +1,394 @@
+Smlouva o poskytnutí dotace
+č. 268000761
+Smluvní strany:
+Státní fond podpory investic
+IČO: 70856788
+se sídlem: Vinohradská 1896/46, Vinohrady - 120 00 Praha 2
+zastoupený: xxxxxxxxxxxx, ředitel Státního fondu podpory investic
+datová schránka: wikaiz5
+(dále jen "Poskytovatel")
+a
+MĚSTO LOMNICE NAD POPELKOU
+IČO: 00275905
+se sídlem: Husovo náměstí 6, 512 51 Lomnice nad Popelkou
+zastupuje: xxxxxxxxxxxx, starosta
+datová schránka: yf8bx8q
+číslo účtu: xxxxxxxxxxxx
+(dále jen "Příjemce")
+(společně také jako "Smluvní strany")
+uzavírají ve smyslu zákona č. 211/2000 Sb., o Státním fondu podpory investic, ve znění pozdějších předpisů (dále jako
+„Zákon o Fondu“), ve smyslu nařízení vlády č. 2/2023 Sb., o podmínkách použití peněžních prostředků Státního fondu
+podpory investic na revitalizaci území se starou stavební zátěží (brownfieldů) financovanou z Nástroje pro oživení
+a odolnost, ve znění účinném ke dni uzavření této smlouvy (dále jako „Nařízení“) a ve smyslu § 1746 odst. 2 zákona
+č. 89/2012 Sb., občanský zákoník, v platném znění, tuto smlouvu o poskytnutí dotace (dále jen „Smlouva“).
+Poskytovatel se zavazuje poskytnout Příjemci peněžní prostředky do výše dotace a Příjemce se zavazuje dodržet
+podmínky použití dotace, to vše v souladu s touto Smlouvou, výše uvedenými právními předpisy a předpisy Evropské
+unie podle Nařízení. 
+Článek I.
+Výklad pojmů
+Pro účely této Smlouvy se rozumí: 
+a) Způsobilými náklady účelně vynaložené náklady zakládající nárok na čerpání dotace podle této Smlouvy
+a § 15 Nařízení, které jsou nezbytné k revitalizaci území se starou stavební zátěží vymezeném v článku
+II. odst. 2 této Smlouvy. Výše Způsobilých nákladů vyplývá z investičního záměru popsaného v žádosti
+o poskytnutí dotace podané Příjemcem, jejíž součástí je položkový rozpočet a současně se jedná o náklady vzniklé
+v období od 1. 2. 2020 do 31. 12. 2025; 
+b) Revitalizací úprava území se starou stavební zátěží vymezená v článku II. odst. 2 této Smlouvy za použití podpory
+na účel uvedený v investičním záměru, který splňuje podmínky stanovené v § 5 Nařízení; 
+c) Investičním záměrem soubor informací dle § 8 Nařízení předložený Příjemcem jako součást žádosti o poskytnutí
+dotace, případně aktualizovaný ke dni uzavření Smlouvy; 
+d) Občanským vybavením vybavení podle § 2 odst. 1 písm. b) Nařízení, které vznikne Revitalizací za splnění
+podmínek použití dotace stanovených v Nařízení a této Smlouvě, a které bude využíváno podle schválené žádosti
+o poskytnutí dotace a v souladu s Nařízením a touto Smlouvou; 
+e) Čerpáním dotace okamžik odepsání peněžních prostředků z účtu Poskytovatele za účelem připsání na účet
+Příjemce uvedený v záhlaví této Smlouvy; 
+f) Žádostí o čerpání dotace žádost předložená Příjemcem prostřednictvím klientského portálu Poskytovatele včetně
+všech náležitostí a příloh; 
+g) Klientským portálem informační systém Poskytovatele, jehož prostřednictvím podává Příjemce Žádost o čerpání
+dotace a jehož prostřednictvím jsou zasílány další písemnosti Příjemce vůči Poskytovateli a Poskytovatele vůči
+Příjemci; 
+h) Dočerpáním dotace je takové Čerpání dotace, kterým celková vyčerpaná částka dotace dosáhne maximální výše
+poskytnuté dotace podle článku II. odst. 1 této Smlouvy; 
+i) Ukončením čerpání  
+Dočerpání dotace, nebo
+Čerpání dotace, kterým nedojde k Dočerpání dotace, ale po němž bude na žádost Příjemce nebo na základě
+oprávnění Poskytovatele Čerpání dotace ukončeno; 
+j) Dokončením revitalizace okamžik převzetí díla Příjemcem bez vad bránících jeho řádnému užívání; 
+k) Dobou udržitelnosti doba, stanovená v § 16 Nařízení, po kterou je Příjemce povinen dodržovat stanovené
+podmínky použití dotace podle Nařízení a této Smlouvy; 
+Stránka 1 z 7
+
+l) Technickým dozorem stavebníka osoba vykonávající příslušné činnosti podle stavebního zákona pro Příjemce,
+která splňuje podmínky dle § 152 odst. 4 zákona č. 183/2006 Sb., stavebního zákona, ve znění pozdějších
+předpisů; 
+m) Příručkou příručka pro žadatele o dotaci na revitalizaci brownfieldů účinná ke dni uzavření této Smlouvy, tedy
+dokument konkretizující jednotlivá ustanovení Nařízení a předpisů Evropské unie podle Nařízení, který je dostupný
+na internetových stránkách Poskytovatele. Součástí Příručky je i postup v případě změnového řízení;
+n) Metodickými pokyny: 
+Metodický pokyn Poskytovatele ke způsobu výpočtu rozsahu hospodářského využití revitalizovaného území
+podle § 17 Nařízení; 
+Metodický pokyn k zásadě DNSH (Do No Significant Harm – významně nepoškozovat) k podmínkám
+enviromentálních cílů dle Nařízení a příslušných právních předpisů Evropské Unie; 
+Metodický pokyn varovných signálů „RED FLAGS“ pro Národní plán obnovy na období 2021-2026
+k podmínkám dodržování systému varovných signálů;
+Metodický pokyn pro publicitu a komunikaci pro Národní plán obnovy na období 2021-2026 k podmínkám
+jednotné publicity dle § 16 odst. 5 Nařízení a příslušných právních předpisů Evropské Unie. 
+Aktuálně platné verze těchto Metodických pokynů, které jsou pro Příjemce závazné, jsou zveřejněny
+na internetových stránkách Poskytovatele.
+o) Prohlášením dokument Příjemce o hospodářském využití revitalizovaného území podle § 17 Nařízení
+a Metodického pokynu Poskytovatele ke způsobu výpočtu rozsahu hospodářského využití revitalizovaného území
+pro hospodářské využití, které je přílohou schválené žádosti o poskytnutí dotace. Aktuálně platný vzor tohoto
+Prohlášení, který je pro Příjemce závazný, je zveřejněn na internetových stránkách Poskytovatele;
+p) Přehledy dokumenty Příjemce o hospodářském využití revitalizovaného území dle § 17 Nařízení. Aktuálně platná
+verze vzoru tohoto Přehledu, která je pro Příjemce závazná, je zveřejněna na internetových stránkách
+Poskytovatele.
+Článek II.
+Předmět Smlouvy
+1) Poskytovatel se zavazuje poskytnout Příjemci dotaci ve výši maximálně: 3 095 142,07 Kč (slovy:
+třimilionydevadesátpěttisícstočtyřicetdva korun českých sedm haléřů ),
+a to pouze na Způsobilé náklady Revitalizace území vymezeného v článku II. odst. 2 této Smlouvy, a současně
+maximálně do výše určené podle § 9 odst. 1 Nařízení. 
+2) Účel dotace
+Příjemce se zavazuje použít dotaci výhradně na Revitalizaci na pozemku parc. č. st. 187/2, jehož součástí
+je stavba Lomnice nad Popelkou, č.p. 50, obč. vyb., v katastrálním území Lomnice nad Popelkou,
+obec Lomnice nad Popelkou, zapsané na LV č. 10001 v evidenci katastru nemovitostí vedené Katastrálním
+úřadem pro Liberecký kraj, Katastrální pracoviště Semily, na kterém vznikne Občanské vybavení identifikované
+ve schválené žádosti o poskytnutí dotace, a to na základě Rozhodnutí, vydaného Městským úřadem Lomnice
+nad Popelkou, jako příslušným stavebním úřadem pod č.j.: PD 3403/2021 dne 24.08.2021, které nabylo právní
+moci dne 21.09.2021 a Rozhodnutí, vydaného Městským úřadem Lomnice nad Popelkou, jako příslušným
+stavebním úřadem pod č.j.: PD 4466/2023 ze dne 24.10.2023, které nabylo právní moci dne 11.11.2023 (dále
+také jen „Nemovitost“).
+Revitalizací území bude dosaženo stavebních úprav na území se starou stavební zátěží. 
+Článek III.
+Podmínky Čerpání dotace
+1) Čerpání dotace je možné provést pouze na základě Žádosti o čerpání dotace podané Příjemcem prostřednictvím
+Klientského portálu Poskytovatele a dokladů prokazujících účelné vynaložení peněžních prostředků podle
+§ 5 Nařízení a současně splnění účelu dotace dle článku II. odst. 2 této Smlouvy. Čerpání je jednorázové nebo
+postupné, peněžní prostředky jsou uvolňovány na prokázané Způsobilé náklady podle podmínek této Smlouvy
+a Nařízení. 
+2) Zahájení Čerpání dotace
+Příjemce se zavazuje uplatnit nárok na zahájení Čerpání dotace tak, aby mohlo být Čerpání zahájeno do 9 měsíců
+ode dne nabytí účinnosti této Smlouvy. Příjemce je povinen v termínu podle odst. 3 tohoto článku předložit
+Poskytovateli Žádost o čerpání dotace včetně dokladů uvedených v odst. 5 a odst. 6 tohoto článku. Požadovaný
+termín zahájení Čerpání dotace uvedený v Žádosti o čerpání dotace nesmí přesáhnout lhůtu 9 měsíců ode dne
+nabytí účinnosti této Smlouvy. Pokud nebude Žádost o čerpání dotace řádně vyplněna (nepřesné, neúplné, chybné
+údaje atd.) nebo bude v rozporu s touto Smlouvou, Poskytovatel není povinen zahájit Čerpání dotace. 
+3) Řádně vyplněná a úplná Žádost o čerpání dotace musí být doručena Poskytovateli vždy nejpozději 20 dní před
+požadovaným datem Čerpání dotace. Pokud by měl požadovaný termín Čerpání dotace uvedený v Žádosti
+o čerpání dotace nastat dříve, než je stanoveno v předchozí větě, vyhrazuje si Poskytovatel právo provést Čerpání
+dotace nejpozději do uplynutí 20denní lhůty od doručení Žádosti o čerpání dotace. Pokud uplynutím této 20denní
+lhůty dojde k překročení doby 9 měsíců ode dne nabytí účinnosti této Smlouvy, Poskytovatel není
+povinen zahájit Čerpání dotace. 
+Stránka 2 z 7
+
+4) Před prvním Čerpáním dotace směřujícím na uhrazení nákladů na Revitalizaci doloží Příjemce doklady podle
+§ 15 odst. 5 Nařízení a doklady stanovené v Příručce. Pokud tyto doklady nebudou doloženy, nezahájí
+Poskytovatel toto Čerpání dotace a je oprávněn další Čerpání dotace určené na ostatní náklady pozastavit. 
+5) Náležitosti Žádosti o čerpání dotace
+Přílohou Žádosti o čerpání dotace budou veškeré podklady prokazující způsobilost Čerpání dotace, a to:
+i. kopie faktur na stavební práce související s Revitalizací včetně soupisu provedených prací v návaznosti
+na položkový rozpočet uvedený ve smlouvě s dodavatelem,  
+ii. jiné účetní doklady prokazující účelné vynaložení peněžních prostředků podle § 5 Nařízení a současně splnění
+účelu dotace dle článku II. odst. 2 této Smlouvy. 
+6) V Žádosti o čerpání dotace uvede Příjemce seznam dokladů podle tohoto odstavce, které požaduje Příjemce
+za uplynulé období z dotace uhradit, se specifikací, zda se jedná o způsobilé nebo nezpůsobilé náklady.
+Předložené faktury, popřípadě jiné účetní doklady, musí být označeny jedinečným identifikátorem výzvy
+č. 8/NPOBF/2023 . Faktury předkládané k proplacení nebo soupis provedených prací, případně jiné účetní doklady
+k prokázání způsobilosti Čerpání musí obsahovat potvrzení Technického dozoru stavebníka o správnosti
+provedených prací.
+7) K dokladům podle odst. 5 tohoto článku bude Příjemcem vždy zaslán bankovní výpis prokazující uhrazení nákladů
+dle těchto dokladů. Tento bankovní výpis bude předložen po uhrazení nákladů jako příloha v pořadí následující
+Žádosti o čerpání dotace. 
+8) Pokud nebude Žádost o čerpání dotace řádně vyplněna (nepřesné, neúplné, chybné údaje atd.) nebo bude
+v rozporu s touto Smlouvou, Poskytovatel není povinen provést Čerpání dotace.
+9) Ukončení čerpání a ostatní podmínky Čerpání dotace
+Příjemce je povinen uplatnit nárok na Ukončení čerpání dotace do 1. 12. 2025, přičemž současně musí být
+dodrženy podmínky uvedené v článku III. odst. 5 až 7 této Smlouvy, jinak ztrácí nárok na Dočerpání dotace. 
+10) Poskytovatel je oprávněn neposkytnout dotaci nebo její nevyčerpanou část v případě, že Příjemce nedodržel
+podmínky této Smlouvy, Zákona o Fondu, Nařízení, příslušných předpisů České republiky a Evropské unie, Příručky
+nebo Metodických pokynů. Na poskytnutí dotace a její dočerpání do výše podle článku II. odst. 2 této Smlouvy
+není právní nárok. 
+11) Příjemce je povinen řádně evidovat a prokazatelně odlišovat zdroje a vazby zdrojů Způsobilých nákladů nebo
+jejich částí. Ve svém účetnictví, případně v detailní účetní evidenci, je Příjemce povinen Způsobilé náklady
+analyticky oddělovat.
+12) Příjemce je povinen označovat peněžní prostředky poskytnuté podle této Smlouvy v účetnictví,
+a to nezaměnitelným účelovým znakem – 92508 v případě investičních výdajů a nezaměnitelným účelovým
+znakem – 92006 v případě neinvestičních výdajů, a to za účelem kontroly poskytování dotace.  
+Článek IV.
+Povinnosti Příjemce
+1) Příjemce je povinen:
+a) v případě, že je územním samosprávným celkem nebo subjektem splňujícím podmínky zadavatele podle
+§ 4 odst. 2 zákona č. 134/2016 Sb., o zadávání veřejných zakázek, ve znění pozdějších předpisů, řídit
+se a postupovat při realizaci Revitalizace podle zákona č. 134/2016 Sb., o zadávání veřejných zakázek,
+ve znění pozdějších předpisů. Příjemce, který není územně samosprávným celkem, postupuje při plnění
+veřejné zakázky v souladu s principy účelnosti, hospodárnosti a efektivity;
+b) informovat Poskytovatele o všech změnách Revitalizace, a to podle podmínek změnového řízení, které
+je upraveno v Příručce;
+c) dodržovat podmínky stanovené v Příručce a v Metodických pokynech; 
+d) archivovat veškerou dokumentaci vztahující se k Revitalizaci a umožnit Poskytovateli kontrolu účelnosti
+vynaložených peněžních prostředků a současně účelu Revitalizace dle článku II. této Smlouvy, a to po dobu
+nejméně 10 let po uplynutí doby Udržitelnosti; 
+e) mít stavbu, která je předmětem Revitalizace, pojištěnou proti živelním pohromám, a to vždy i proti
+povodním, jsou-li dané stavby v záplavovém území, přičemž musí být toto pojištění sjednáno tak, aby
+v případě pojistné události pojistné plnění krylo vzniklou škodu nejméně ve výši poskytnuté dotace dle
+článku II. odst. 2 této Smlouvy, a to po dobu Revitalizace a následně po Dobu udržitelnosti;
+f) být do Dokončení revitalizace a po Dobu udržitelnosti jediným vlastníkem území se starou stavební zátěží
+uvedeného v článku II. odst. 2 této Smlouvy;
+g) nezatížit do Dokončení revitalizace a po Dobu udržitelnosti území se starou stavební zátěží uvedené v článku
+II. odst. 2 této Smlouvy ani část tohoto území bez souhlasu Poskytovatele zástavním právem ani jiným
+právem k věci cizí. 
+2) V případě, že na základě dokumentace závěrečného vyhodnocení investičního záměru bude zjištěno, že v rámci
+Čerpání dotace bylo ze strany Poskytovatele uhrazeno více, než kolik činí výše Způsobilých nákladů, je Příjemce
+povinen uhradit tyto neoprávněně čerpané peněžní prostředky zpět na účet Poskytovatele, a to ve lhůtě
+stanovené Poskytovatelem v zaslané výzvě.
+3) Příjemce je povinen dokončit Revitalizaci předáním a převzetím díla bez vad bránících jeho řádnému užívání
+nejpozději do 31. 12. 2025, a to v souladu s § 15 odst. 3 Nařízení.
+Stránka 3 z 7
+
+4) V případě, že Revitalizací vznikne Občanské vybavení, je Příjemce povinen:
+a) předložit Poskytovateli nejpozději do 31. 12. 2026 dokumentaci závěrečného vyhodnocení Investičního
+záměru obsahující: 
+i. řádně vyplněné Závěrečné vyhodnocení Investičního záměru, jehož formulář je k dispozici
+na internetových stránkách Poskytovatele, 
+ii. účetní sestavu obsahující analyticky členěné náklady Revitalizace, 
+iii. kolaudační rozhodnutí nebo jiný dokument opravňující jej k užívání Občanského vybavení, 
+iv. případné další doklady na vyžádání Poskytovatele.  
+b) zahájit jiné než hospodářské využití Občanského vybavení vzniklého Revitalizací nejpozději do 31. 12. 2026;
+c) předložit Poskytovateli do 30 dnů od data zahájení provozu písemné oznámení o zahájení provozu
+posledního Občanského vybavení, a to s výslovným uvedením tohoto data a uvedením provozovatele tohoto
+zařízení; 
+d) využívat Občanské vybavení hospodářsky pouze v rozsahu stanoveném v § 16 odst. 1 a § 17 Nařízení
+a dodržovat podmínky zde uvedené. Příjemce je současně povinen využívat Občanské vybavení jen
+způsobem uvedeným v Metodickém pokynu Poskytovatele ke způsobu výpočtu rozsahu hospodářského
+využití revitalizovaného území podle § 17 Nařízení;
+e) řádně evidovat využití Občanského vybavení v ročních Přehledech, a to po celou dobu trvání podmínky podle
+§ 16 odst. 1 Nařízení. Při evidenci využití je Příjemce povinen postupovat v souladu s Metodickým pokynem
+Poskytovatele ke způsobu výpočtu rozsahu hospodářského využití revitalizovaného území podle
+§ 17 Nařízení. Poskytovatel je oprávněn si při kontrole vyžádat předložení těchto Přehledů;
+f) předem písemně Poskytovateli oznámit veškeré změny v provozování Občanského vybavení, které
+by neodpovídaly údajům uvedeným v Prohlášení. Veškeré změny musí být v souladu s § 17 Nařízení
+a s Metodickým pokynem Poskytovatele ke způsobu výpočtu rozsahu hospodářského využití revitalizovaného
+území podle § 17 Nařízení a musí být zaznamenány v příslušných Přehledech;
+g) předložit Přehledy kdykoliv na vyžádání ze strany Poskytovatele.
+5) Příjemce je povinen veškeré hospodářské využití řádně evidovat v ročních Přehledech, a to po celou dobu trvání
+podmínky dle § 17 Nařízení. Při evidenci hospodářského využití bude Příjemce postupovat v souladu s Metodickým
+pokynem Poskytovatele ke způsobu výpočtu rozsahu hospodářského využití revitalizovaného území podle
+§ 17 Nařízení. Poskytovatel je oprávněn vyžádat si předložení těchto Přehledů.
+Článek V.
+Závazky a prohlášení Příjemce
+1) Příjemce se zavazuje, že Revitalizace bude probíhat v souladu se Zákonem o Fondu, v souladu s Nařízením
+a v souladu s příslušnými právními předpisy České republiky a Evropské unie podle Nařízení a současně v souladu
+s Příručkou pro žadatele a s Metodickými pokyny. 
+2) Příjemce se zavazuje poskytnutou dotaci použít výhradně na Revitalizaci podle článku II. této Smlouvy, a to zcela
+v souladu s podmínkami Zákona o Fondu, Nařízení a příslušných právních předpisů České republiky a Evropské
+unie a v souladu s podmínkami uvedenými v Příručce a v Metodických pokynech; Příjemce výslovně prohlašuje,
+že se s těmito podmínkami seznámil před podpisem Smlouvy a zavazuje se jimi řídit. 
+3) Příjemce se zavazuje dodržovat pravidla pro veřejnou podporu v souladu s Nařízením a Metodickými pokyny. 
+4) Příjemce výslovně prohlašuje, že ke dni podpisu této Smlouvy neobdržel na Revitalizaci peněžní prostředky
+poskytnuté z programu financovaného z prostředků Evropské unie.
+5) Příjemce výslovně prohlašuje, že v žádosti o poskytnutí dotace, a to v členění nákladů, uvedl zejména ve vztahu
+k souběhu veřejných podpor pravdivé údaje. V případě, že dochází k souběhu veřejných podpor, je Příjemce
+nejpozději před podáním první Žádosti o čerpání dotace povinen tuto skutečnost oznámit Poskytovateli. 
+6) Příjemce se zavazuje, že na stejné způsobilé výdaje nebo jejich části nebude čerpat jinou veřejnou podporu podle
+článku 107 odst. 1 Smlouvy o fungování Evropské unie, podporu z prostředků Unie, které centrálně spravují
+orgány, agentury, společné podniky a jiné subjekty Evropské unie a která není přímo ani nepřímo pod kontrolou
+členských států, podporu ze státního rozpočtu a dalších veřejných zdrojů a ani podporu v režimu de minimis
+ve smyslu Nařízení Komise (EU) č. 1407/2013.
+7) Příjemce, který nemá v evidenci skutečných majitelů uveden údaj o skutečném majiteli dle zákona č. 37/2021 Sb.,
+o evidenci skutečných majitelů, ve znění pozdějších předpisů, tímto výslovně prohlašuje, že je osobou, která nemá
+povinnost zápisu skutečných majitelů dle tohoto zákona.
+8) Příjemce se zavazuje informovat Poskytovatele o provádění kontroly, související s poskytnutím peněžních
+prostředků dle této Smlouvy, ze strany jiného oprávněného orgánu, a to ve lhůtě do 30 dnů od zahájení kontroly.
+9) Příjemce se zavazuje, že do Dokončení revitalizace nebude v souladu s § 3 odst. 2 písm. k) Nařízení na věci,
+na kterou má být použita dotace, váznout výhrada odděleného vlastnictví ke strojům nebo jiným upevněným
+zařízením. 
+10) Příjemce výslovně prohlašuje, že ke dni podpisu této Smlouvy:
+a) není území se starou stavební zátěží ani jeho část předmětem závazku, který by bránil v užívání Občanského
+vybavení, které má vzniknout Revitalizací;
+b) na území se starou stavební zátěží ani jeho části nevázne věcné břemeno, které by bránilo v užívání
+Občanského vybavení, které má vzniknout Revitalizací;
+Stránka 4 z 7
+
+c) není k území se starou stavební zátěží ani jeho části zřízeno právo stavby, které by bránilo v užívání
+Občanského vybavení, které má vzniknout Revitalizací;
+d) není území se starou stavební zátěží ani jeho část postiženo výkonem rozhodnutí nebo exekucí prodejem
+nemovitých věcí nebo správou nemovité věci;
+e) není vlastnické právo k území se starou stavební zátěží ani jeho části převedeno k zajištění dluhu;
+f) není území se starou stavební zátěží ani jeho část zatíženo zástavním právem bez souhlasu Poskytovatele. 
+11) Příjemce se zavazuje, že nejméně 70 % z celkové hmotnosti vzniklého stavebního a demoličního odpadu
+v souvislosti s Revitalizací bude připraveno k opětovnému použití, recyklaci nebo zasypání.
+12) Příjemce se zavazuje, že v případě stavební úpravy nebo nástavby stavby, která je součástí území se starou
+stavební zátěží podle § 5 písm. a) Nařízení bude nejméně 90 % výše dotace vynaloženo na splnění požadavku
+na energetickou náročnost budovy podle zákona č. 406/2000 Sb., o hospodaření energií, ve znění pozdějších
+předpisů. 
+13) Příjemce výslovně prohlašuje, že si je vědom skutečnosti, že v případě nedodržení podmínek Nařízení a této
+Smlouvy bude postupováno dle článku VI. a článku VII. této Smlouvy. 
+Článek VI.
+Kontrola splnění podmínek poskytnutí dotace a smluvní pokuty
+1) Příjemce je povinen umožnit příslušnému finančnímu úřadu, Poskytovateli, Ministerstvu pro místní rozvoj České
+republiky, auditnímu orgánu Ministerstva financí České republiky a ostatním oprávněným orgánům kontrolu
+dodržování podmínek dotace a plnění závazků Příjemce vyplývajících z této Smlouvy, Nařízení, příslušných
+předpisů České republiky a Evropské unie, Příručky a Metodických pokynů. 
+2) Příjemce je povinen realizovat nápravná opatření uložená kontrolním orgánem Poskytovatele na základě
+provedených kontrol. Příjemce je povinen písemně informovat kontrolní orgán Poskytovatele, který mu nápravná
+opatření uložil, o splnění uložených opatření k nápravě v termínu uvedeném v kontrolní zprávě Poskytovatele.
+3) Pro případ, že Příjemce nesplní řádně a včas nápravná opatření uložená kontrolním orgánem Poskytovatele nebo
+nesplní povinnosti stanovené Nařízením, příslušnými právními předpisy Evropské unie, Smlouvou, Příručkou
+a Metodickými pokyny, je Poskytovatel oprávněn vůči Příjemci uplatnit níže uvedené smluvní pokuty a vyžadovat
+jejich uhrazení na Poskytovatelem stanovený účet, a to:
+a) za uvedení nepřesných, neúplných nebo nepravdivých informací v žádosti nebo této Smlouvě může
+Poskytovatel požadovat zaplacení smluvní pokuty ve výši 0,1 % z celkové poskytnuté dotace za každé
+jednotlivé porušení; 
+b) za porušení § 3 odst. 2 písm. m) Nařízení může Poskytovatel požadovat zaplacení smluvní pokuty ve výši 0,5
+% z celkové poskytnuté dotace; 
+c) za porušení § 16 odst. 5 Nařízení může Poskytovatel požadovat zaplacení smluvní pokuty ve výši 0,5 %
+z celkové poskytnuté dotace. Pokud nedojde k nápravě v náhradní lhůtě, podá Poskytovatel již bez dalšího
+podnět pro porušení rozpočtové kázně příslušnému finančnímu úřadu;
+d) v případě, že Příjemce neuplatní nárok na zahájení Čerpání dotace tak, aby mohlo být Čerpání dotace
+zahájeno do 9 měsíců ode dne nabytí účinnosti této Smlouvy, může Poskytovatel požadovat smluvní pokutu
+ve výši 0,3 % z částky uvedené v čl. II. odst. 1 této Smlouvy;
+e) za první krátkodobé porušení omezení hospodářského využití ve smyslu § 17 Nařízení může Poskytovatel
+požadovat zaplacení smluvní pokuty ve výši 0,1 % z celkové poskytnuté dotace; takové porušení nebude
+v součtu zasahovat do více než 10 dnů; 
+f) za opakované porušení omezení hospodářského využití ve smyslu § 17 Nařízení nebo za porušení trvající
+déle než dobu uvedenou v písm. e) tohoto odstavce, může Poskytovatel požadovat zaplacení smluvní pokuty
+ve výši 0,5 % z celkové poskytnuté dotace; 
+g) pokud Příjemce řádně neeviduje hospodářské využití v ročních Přehledech nebo je na žádost Poskytovatele
+nepředloží, může Poskytovatel požadovat zaplacení smluvní pokuty ve výši 5.000 Kč za každé jednotlivé
+porušení.
+4) Smluvní pokutu je Příjemce povinen uhradit na účet Poskytovatele, a to nejpozději do dne určeného
+Poskytovatelem v písemné výzvě. Rozhodným dnem, kdy je vyměřená smluvní pokuta uhrazena, je den jejího
+připsání na účet určený Poskytovatelem. 
+5) Nedodržení podmínek použití dotace je porušením rozpočtové kázně ve smyslu zákona č. 218/2000 Sb.,
+o rozpočtových pravidlech a o změně některých souvisejících zákonů, ve znění pozdějších předpisů (rozpočtová
+pravidla); v takovém případě postupuje Poskytovatel podle zákona č. 280/2009 Sb., daňový řád, ve znění
+pozdějších předpisů. 
+Článek VII.
+Ukončení smlouvy a postup podle rozpočtových pravidel
+1) Smlouva může být ukončena písemnou dohodou Smluvních stran, a to pouze nedošlo-li k zahájení Čerpání
+dotace. 
+2) Smluvní strany si sjednaly, že Poskytovatel je oprávněn Smlouvu vypovědět v případě, že Příjemce neuplatní nárok
+na zahájení Čerpání dotace ve lhůtě stanovené v článku VI. odst. 3 písm. d) Smlouvy. Výpovědní lhůta
+je Smluvními stranami sjednána patnáctidenní a začíná běžet doručením výpovědi do datové schránky Příjemce.
+Stránka 5 z 7
+
+3) Poskytovatel vyzve Příjemce, aby zjednal nápravu, a poskytne mu k nápravě přiměřenou lhůtu, pokud Příjemce
+nedodržel podmínky podle § 3 odst. 2 písm. m) Nařízení ve vztahu k požadované výši pojištění, případně
+§ 16 odst. 5 Nařízení ve vztahu k dodržování pravidel publicity.
+4) Pokud Příjemce ve stanovené lhůtě zajistil nápravu, platí, že nedošlo k porušení rozpočtové kázně. Tímto
+ustanovením ale není dotčen nárok Poskytovatele na smluvní pokutu podle článku VI. této Smlouvy. 
+5) Využitím oprávnění Poskytovatele uvedených v této Smlouvě nejsou dotčena další oprávnění a povinnosti
+Poskytovatele podle zákona č. 218/2000 Sb., o rozpočtových pravidlech, ve znění pozdějších předpisů.  
+Článek VIII.
+Součinnost Příjemce; informační povinnost a doručování
+1) Příjemce je povinen neprodleně Poskytovatele informovat o změnách v podstatných údajích o Příjemci, včetně
+např. sloučení Příjemce s jinou právnickou osobou, změn v kontaktních údajích Příjemce, a to v souladu
+s postupem při změnovém řízení uvedeným v Příručce.
+2) Příjemce souhlasí s prováděním kontroly účelného vynaložení poskytnutých peněžních prostředků a kontroly
+dodržení podmínek pro poskytnutí dotace stanovených v této Smlouvě, v Nařízení, v právních předpisech České
+republiky a Evropské unie, v Příručce a v Metodických pokynech Poskytovatelem a jím pověřenými osobami.
+Příjemce se zavazuje Poskytovateli nebo jím pověřené osobě poskytnout součinnost potřebnou k provedení
+kontroly, a to včetně bezodkladného předložení vyžádaných podkladů a podání požadovaných vysvětlení.
+3) Smluvní strany se dohodly, že veškeré písemnosti, které se doručují Smluvním stranám, je třeba doručit
+prostřednictvím Klientského portálu nebo datové schránky, přičemž o doručení písemnosti prostřednictvím
+Klientského portálu zašle Poskytovatel Příjemci informační zprávu.  
+4) Při doručování prostřednictvím datové schránky se má za to, že písemnost byla doručena řádně:  
+doručením do datové schránky Poskytovatele;  
+doručením do datové schránky Příjemce, nebo uplynutím 10 dnů ode dne dodání dokumentu do datové
+schránky Příjemce v případě, že Příjemcem je jiná právnická osoba odlišná od územního samosprávného
+celku.  
+Článek IX.
+Společná a závěrečná ustanovení
+1) Poskytovatel zpracovává osobní údaje fyzických osob zastupujících Příjemce, případně dalších fyzických osob,
+které Příjemce Poskytovateli zpřístupnil, a to zejména za účelem a v rozsahu nezbytném pro uzavření této
+Smlouvy a pro plnění úkolů ve veřejném zájmu a při výkonu veřejné moci. Poskytovatel zpracovává dané osobní
+údaje pouze po dobu nezbytně nutnou pro naplnění stanovených účelů. Při zpracovávání těchto osobních údajů
+postupuje Poskytovatel v souladu s Nařízením Evropského parlamentu a Rady (EU) 2016/679 o ochraně fyzických
+osob v souvislosti se zpracováním osobních údajů a o volném pohybu těchto údajů (dále jen „GDPR“) a v souladu
+se zák. č. 110/2019 Sb., o zpracování osobních údajů. Rozsah a další podrobnosti ohledně postupu zpracování
+osobních údajů daných fyzických osob Poskytovatelem a jejich práv v souvislosti s ochranou osobních údajů jsou
+uvedeny v Informačním memorandu o zpracování osobních údajů dle článku 13 a 14 GDPR, které jsou k dispozici
+na internetových stránkách https://sfpi.cz/zpracovani-osobnich-udaju/. 
+2) Práva a nápravné prostředky podle této Smlouvy budou uplatňovány kumulativně a nevylučují práva a nápravné
+prostředky jinak umožněné na základě obecných právních předpisů. Nevykonání nebo opožděné vykonání
+jakéhokoli práva nebo nápravného prostředku dle této Smlouvy Poskytovatelem neznamená, že se jich vzdal.
+Rovněž jednotlivý nebo částečný výkon jakéhokoli práva vyplývajícího z této Smlouvy nevylučuje jeho další či jiný
+výkon nebo výkon jakéhokoli jiného práva. 
+3) Smlouva nabývá platnosti dnem jejího podpisu oběma Smluvními stranami a účinnosti dnem uveřejnění v registru
+smluv dle zákona č. 340/2015 Sb., zákon o registru smluv, pokud je povinnost pro nabytí účinnosti této Smlouvy
+její uveřejnění v registru smluv; jinak nabývá Smlouva účinnosti dnem jejího podpisu oběma Smluvními stranami.
+Plnění z této Smlouvy před její účinností se považuje za plnění podle této Smlouvy a práva a povinnosti vzniklé
+z takového plnění se řídí touto Smlouvou. Uveřejnění této Smlouvy v registru smluv – v případě splnění podmínky
+dle první věty tohoto odstavce – zajistí Poskytovatel nejpozději do 15 dnů ode dne uzavření této Smlouvy.
+Příjemce bere v takovém případě na vědomí, že tato Smlouva včetně případných dodatků bude uveřejněna
+v elektronické podobě v registru smluv.
+4) Smluvní strany se dohodly, že Poskytovatel je oprávněn po Dokončení revitalizace uveřejnit název, identifikační
+číslo a sídlo Příjemce, název obce, ve které proběhla Revitalizace, a dále výši dotace a další informace o použití
+poskytnutých prostředků na webových stránkách Poskytovatele. Pro tyto účely je Poskytovatel oprávněn pořizovat
+fotodokumentaci a tuto uveřejnit, a to případně spolu s fotodokumentací poskytnutou Příjemcem. 
+5) Příjemce si je vědom, že nepravdivost jakéhokoliv jím uvedeného údaje v žádosti o poskytnutí dotace, v Žádosti
+o čerpání dotace nebo v této Smlouvě může vést k zahájení trestního stíhání.  
+6) Smluvní vztahy touto Smlouvou neupravené se řídí Zákonem o Fondu, Nařízením, právním řádem ČR a právními
+předpisy Evropské unie podle Nařízení. 
+7) Příjemce výslovně prohlašuje, že prodlužuje promlčecí lhůtu všech pohledávek vzniklých Poskytovateli na základě
+této Smlouvy, včetně pohledávek vzniklých z jejího porušení, a to na 15 let od doby, kdy promlčecí lhůta začne
+běžet poprvé.  
+Stránka 6 z 7
+
+8) Smlouva je sepsána ve dvou vyhotoveních s platností originálu, z nichž každá ze stran obdrží po jednom. Pokud
+je tato Smlouva uzavírána v elektronické podobě, je elektronicky podepsána v rámci jednoho elektronického
+vyhotovení. 
+9) Aktuální verze Příručky pro žadatele o dotaci podle Nařízení je uveřejněna na internetových stránkách
+Poskytovatele. 
+10) Podmínkou platnosti této Smlouvy je v souladu s § 41 zákona č. 128/2000 Sb., o obcích (obecní zřízení), ve znění
+pozdějších předpisů, schválení uzavření této Smlouvy usnesením Rady/Zastupitelstva obce.  
+V Praze dne 
+Za Poskytovatele:
+Státní fond podpory investic
+xxxxxxxxxxxx
+ředitel Fondu
+V  dne 
+Za Příjemce:
+MĚSTO LOMNICE NAD POPELKOU
+xxxxxxxxxxxx
+starosta
+Stránka 7 z 7

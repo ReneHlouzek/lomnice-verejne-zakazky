@@ -68,13 +68,15 @@
         "source": "registr-smluv",
         "source_id": "26812007",
         "version_id": "28683387",
-        "source_url": "https://smlouvy.gov.cz/smlouva/26812007",
+        "source_url": "https://smlouvy.gov.cz/smlouva/28683387",
         "title": "Obnova rybníka Matouš v Lomnici nad Popelkou",
         "buyer_ico": "00275905",
         "supplier_ico": "70891508",
         "supplier_name": "Liberecký kraj",
         "contract_number": "OLP/3394/2023",
-        "related_contract_ids": [],
+        "related_contract_ids": [
+          "34549017"
+        ],
         "related_contract_numbers": [],
         "date": "2024-04-23",
         "signed_date": "2024-04-23",
@@ -85,11 +87,15 @@
           "source": "registr-smluv",
           "source_id": "26812007",
           "version_id": "28683387",
-          "source_url": "https://smlouvy.gov.cz/smlouva/26812007",
+          "source_url": "https://smlouvy.gov.cz/smlouva/28683387",
           "title": "Obnova rybníka Matouš v Lomnici nad Popelkou",
           "buyer_ico": "00275905",
           "supplier_ico": "70891508",
           "contract_number": "OLP/3394/2023",
+          "related_contract_ids": [
+            "34549017"
+          ],
+          "related_contract_numbers": [],
           "date": "2024-04-23",
           "signed_date": "2024-04-23",
           "published": "",
@@ -98,7 +104,13 @@
           "publisher": "",
           "subject": "Obnova rybníka Matouš v Lomnici nad Popelkou",
           "counterparty": "Liberecký kraj",
-          "detail_url": "https://smlouvy.gov.cz/smlouva/26812007"
+          "detail_url": "https://smlouvy.gov.cz/smlouva/28683387",
+          "attachments": [
+            {
+              "url": "https://smlouvy.gov.cz/smlouva/soubor/35209919/OLP_3394_2023_Smlouva_Lomnice_nP.pdf",
+              "name": "OLP_3394_2023_Smlouva_Lomnice_nP.pdf"
+            }
+          ]
         },
         "_source_file": "data/sources/registr-smluv/rs-000078.json"
       }

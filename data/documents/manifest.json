@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-10-10T10:43:51Z",
+  "updated_at": "2026-10-11T10:54:21Z",
   "pages_checked": 35,
   "declared_documents": 90,
   "documents_discovered": 53,
   "documents_downloaded": 53,
-  "documents_text_extracted": 5,
+  "documents_text_extracted": 6,
   "records": [
     {
       "source": "vhodne-uverejneni",
@@ -277,13 +277,13 @@
           "index": 2,
           "label": "Smlouva, její změny a dodatky",
           "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3895762",
-          "sha256": "b5f1d0b00d2320febccdf8c0dece2e3f374c7efee28676404b805d501a2dc82f",
-          "bytes": 22159,
-          "content_type": "text/html; charset=UTF-8",
-          "transport": "direct",
-          "text_available": false,
-          "text_chars": 0,
-          "status": "retained_from_previous_run"
+          "sha256": "45b9b8d50c3413cca1b7dcaabb0a29f8c65606fbcc576c999c6de63960dc037a",
+          "bytes": 136,
+          "content_type": "text/plain; charset=utf-8",
+          "transport": "jina",
+          "text_available": true,
+          "text_chars": 136,
+          "text_file": "data/documents/P26V00001385/002.txt"
         },
         {
           "index": 3,
