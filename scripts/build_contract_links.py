@@ -67,7 +67,7 @@ def document_referenced_contract_dates():
         return {}
     out = {}
     pattern = re.compile(
-        r"\b(?:smlouvy|smlouva)\b.{0,260}?\b(?:uzavřen[áéou]*|ze dne)\s*(?:dne\s*)?"
+        r"\b(?:smlouvy|smlouva|smlouvě|smlouvou)\b.{0,260}?\b(?:uzavřen[áéou]*|ze dne)\s*(?:dne\s*)?"
         r"(\d{1,2}\.\s*\d{1,2}\.\s*\d{4})",
         flags=re.IGNORECASE | re.DOTALL,
     )
