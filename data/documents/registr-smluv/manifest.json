@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-10-11T10:54:41Z",
+  "updated_at": "2026-10-12T08:53:18Z",
   "records_checked": 110,
   "attachments_declared": 92,
   "documents_discovered": 92,
-  "documents_downloaded": 23,
+  "documents_downloaded": 5,
   "documents_text_extracted": 87,
   "records": [
     {
@@ -277,7 +277,8 @@
           "bytes": 1315828,
           "content_type": "application/pdf",
           "text_available": false,
-          "text_chars": 0
+          "text_chars": 0,
+          "status": "retained_from_previous_run"
         }
       ],
       "status": "ok"
@@ -408,7 +409,7 @@
           "url": "https://smlouvy.gov.cz/smlouva/soubor/24778291/Darovaci_smlouva_Mesto_Lomnice_2022.pdf",
           "sha256": "2503c0460db0cbd50808e25850aa7ab58038aa144253914290bee6a56320aa7a",
           "bytes": 159764,
-          "content_type": "application/pdf",
+          "content_type": "",
           "text_available": false,
           "text_chars": 0
         }
@@ -653,13 +654,11 @@
           "index": 1,
           "name": "Lomnice_nad_Popelkou_1932.pdf",
           "url": "https://smlouvy.gov.cz/smlouva/soubor/31984371/Lomnice_nad_Popelkou_1932.pdf",
-          "sha256": "507b6091cb89fb90afac6da738e162a5d84d77da1ddc9264907c2ea8ff6613fe",
-          "bytes": 328880,
-          "content_type": "application/pdf",
           "text_available": true,
           "text_chars": 26568,
-          "content_check": "no_filename_mismatch_detected",
-          "text_file": "data/documents/registr-smluv/24191791/001.txt"
+          "text_file": "data/documents/registr-smluv/24191791/001.txt",
+          "status": "retained_existing_text",
+          "content_check": "no_filename_mismatch_detected"
         }
       ],
       "status": "ok"
@@ -674,13 +673,11 @@
           "index": 1,
           "name": "Lomnice_nad_Popelkou_2153.pdf",
           "url": "https://smlouvy.gov.cz/smlouva/soubor/31984375/Lomnice_nad_Popelkou_2153.pdf",
-          "sha256": "81f7dbf17b626effcb0f57e9d37e9498ca9866d6e349be198ef00e420a375794",
-          "bytes": 328635,
-          "content_type": "application/pdf",
           "text_available": true,
           "text_chars": 26435,
-          "content_check": "no_filename_mismatch_detected",
-          "text_file": "data/documents/registr-smluv/24191795/001.txt"
+          "text_file": "data/documents/registr-smluv/24191795/001.txt",
+          "status": "retained_existing_text",
+          "content_check": "no_filename_mismatch_detected"
         }
       ],
       "status": "ok"
@@ -703,13 +700,11 @@
           "index": 1,
           "name": "OLP_2721_2023_8_2_Mesto_Lomnice_nad_P.pdf",
           "url": "https://smlouvy.gov.cz/smlouva/soubor/32575283/OLP_2721_2023_8_2_Mesto_Lomnice_nad_P.pdf",
-          "sha256": "1355bf2665367b8b7af3e239578e561bae37a4d185fd85466104e6c0addbc291",
-          "bytes": 244909,
-          "content_type": "application/pdf",
           "text_available": true,
           "text_chars": 28286,
-          "content_check": "no_filename_mismatch_detected",
-          "text_file": "data/documents/registr-smluv/24676351/001.txt"
+          "text_file": "data/documents/registr-smluv/24676351/001.txt",
+          "status": "retained_existing_text",
+          "content_check": "no_filename_mismatch_detected"
         }
       ],
       "status": "ok"
@@ -724,13 +719,11 @@
           "index": 1,
           "name": "14_OLP_3553_2023.pdf",
           "url": "https://smlouvy.gov.cz/smlouva/soubor/32650063/14_OLP_3553_2023.pdf",
-          "sha256": "aec466adebfead6d90c944975d8b851eeea2bdd32b5d43be8f87f43b79db88d6",
-          "bytes": 1786825,
-          "content_type": "application/pdf",
           "text_available": true,
           "text_chars": 21734,
-          "content_check": "no_filename_mismatch_detected",
-          "text_file": "data/documents/registr-smluv/24735923/001.txt"
+          "text_file": "data/documents/registr-smluv/24735923/001.txt",
+          "status": "retained_existing_text",
+          "content_check": "no_filename_mismatch_detected"
         }
       ],
       "status": "ok"
@@ -745,13 +738,11 @@
           "index": 1,
           "name": "Dodatek_2_Lomnice_nad_Popelkou.pdf",
           "url": "https://smlouvy.gov.cz/smlouva/soubor/32656551/Dodatek_2_Lomnice_nad_Popelkou.pdf",
-          "sha256": "2e10570c8f1426438f52fe169e964d9ea50b29c31ff8228b06ea1a9e1129e946",
-          "bytes": 216641,
-          "content_type": "application/pdf",
           "text_available": true,
           "text_chars": 6117,
-          "content_check": "no_filename_mismatch_detected",
-          "text_file": "data/documents/registr-smluv/24740963/001.txt"
+          "text_file": "data/documents/registr-smluv/24740963/001.txt",
+          "status": "retained_existing_text",
+          "content_check": "no_filename_mismatch_detected"
         }
       ],
       "status": "ok"
@@ -766,13 +757,11 @@
           "index": 1,
           "name": "Ve%C5%99ejnopr%C3%A1vn%C3%AD%20smlouva%20-%20Lomnice%20n.%20P..pdf",
           "url": "https://smlouvy.gov.cz/smlouva/soubor/32712747/Ve%C5%99ejnopr%C3%A1vn%C3%AD%20smlouva%20-%20Lomnice%20n.%20P..pdf",
-          "sha256": "f836c86f232f3549e186b2036d3125b5356fc148c6691ab93691d2f8ff1c19af",
-          "bytes": 341949,
-          "content_type": "application/pdf",
           "text_available": true,
           "text_chars": 4858,
-          "content_check": "no_filename_mismatch_detected",
-          "text_file": "data/documents/registr-smluv/24787731/001.txt"
+          "text_file": "data/documents/registr-smluv/24787731/001.txt",
+          "status": "retained_existing_text",
+          "content_check": "no_filename_mismatch_detected"
         }
       ],
       "status": "ok"
@@ -787,13 +776,11 @@
           "index": 1,
           "name": "04708_OLP_3823_2023_Lomnice_nad_Popelkou.pdf",
           "url": "https://smlouvy.gov.cz/smlouva/soubor/32885387/04708_OLP_3823_2023_Lomnice_nad_Popelkou.pdf",
-          "sha256": "006e476d32d1812f94cc7007f18b1a639bbbae189c327d0deba4940008fd2bd0",
-          "bytes": 1227663,
-          "content_type": "application/pdf",
           "text_available": true,
           "text_chars": 38631,
-          "content_check": "no_filename_mismatch_detected",
-          "text_file": "data/documents/registr-smluv/24928323/001.txt"
+          "text_file": "data/documents/registr-smluv/24928323/001.txt",
+          "status": "retained_existing_text",
+          "content_check": "no_filename_mismatch_detected"
         }
       ],
       "status": "ok"
@@ -808,13 +795,11 @@
           "index": 1,
           "name": "Smlouva_Lomnice_nad_Popelkou_2024-2028.pdf",
           "url": "https://smlouvy.gov.cz/smlouva/soubor/32964743/Smlouva_Lomnice_nad_Popelkou_2024-2028.pdf",
-          "sha256": "c2778b3313680776a8eae3e9eea7905553b1411058fd35f8a88458e60b6201dd",
-          "bytes": 194568,
-          "content_type": "application/pdf",
           "text_available": true,
           "text_chars": 6850,
-          "content_check": "no_filename_mismatch_detected",
-          "text_file": "data/documents/registr-smluv/24993819/001.txt"
+          "text_file": "data/documents/registr-smluv/24993819/001.txt",
+          "status": "retained_existing_text",
+          "content_check": "no_filename_mismatch_detected"
         }
       ],
       "status": "ok"
@@ -829,13 +814,11 @@
           "index": 1,
           "name": "Dodatek%20ve%C5%99ejnopr%C3%A1vn%C3%AD%20smlouva.pdf",
           "url": "https://smlouvy.gov.cz/smlouva/soubor/33120591/Dodatek%20ve%C5%99ejnopr%C3%A1vn%C3%AD%20smlouva.pdf",
-          "sha256": "cb73ea48595b51c5bc9ba4d43c8e400b814eb63f412c08cc1aaa8c6f85479668",
-          "bytes": 202691,
-          "content_type": "application/pdf",
           "text_available": true,
           "text_chars": 2902,
-          "content_check": "no_filename_mismatch_detected",
-          "text_file": "data/documents/registr-smluv/25099803/001.txt"
+          "text_file": "data/documents/registr-smluv/25099803/001.txt",
+          "status": "retained_existing_text",
+          "content_check": "no_filename_mismatch_detected"
         }
       ],
       "status": "ok"
@@ -850,13 +833,11 @@
           "index": 1,
           "name": "Smluvn%C3%AD%20dokumentace%20k%20dotaci%20-%20anonymizovan%C3%A1.pdf",
           "url": "https://smlouvy.gov.cz/smlouva/soubor/33154203/Smluvn%C3%AD%20dokumentace%20k%20dotaci%20-%20anonymizovan%C3%A1.pdf",
-          "sha256": "1fe68bba077a4bbc6ff55a59ab4e06fde5a9fad9a26fbb6c75b94be794be815e",
-          "bytes": 202736,
-          "content_type": "application/pdf",
           "text_available": true,
           "text_chars": 30773,
-          "content_check": "no_filename_mismatch_detected",
-          "text_file": "data/documents/registr-smluv/25122007/001.txt"
+          "text_file": "data/documents/registr-smluv/25122007/001.txt",
+          "status": "retained_existing_text",
+          "content_check": "no_filename_mismatch_detected"
         }
       ],
       "status": "ok"
@@ -871,37 +852,31 @@
           "index": 1,
           "name": "Smlouva%20o%20vybudov%C3%A1n%C3%AD%20skiagrafick%C3%A9ho%20pracovi%C5%A1t%C4%9B%20a%20zaji%C5%A1t%C4%9Bn%C3%AD%20jeho%20provozu%20ANON..docx",
           "url": "https://smlouvy.gov.cz/smlouva/soubor/33978483/Smlouva%20o%20vybudov%C3%A1n%C3%AD%20skiagrafick%C3%A9ho%20pracovi%C5%A1t%C4%9B%20a%20zaji%C5%A1t%C4%9Bn%C3%AD%20jeho%20provozu%20ANON..docx",
-          "sha256": "c9d188a464a4dca32c1cf3e9753e95aa0c6117cd202637311fcdba7326f8a1cf",
-          "bytes": 33589,
-          "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
           "text_available": true,
           "text_chars": 8889,
-          "content_check": "no_filename_mismatch_detected",
-          "text_file": "data/documents/registr-smluv/25788491/001.txt"
+          "text_file": "data/documents/registr-smluv/25788491/001.txt",
+          "status": "retained_existing_text",
+          "content_check": "no_filename_mismatch_detected"
         },
         {
           "index": 2,
           "name": "P%C5%99%C3%ADloha%20%C4%8D.%201%20-%20Specifikace%20nebytov%C3%BDch%20prostor%20-%20skiagrafick%C3%A9%20pracovi%C5%A1t%C4%9B%20ANON..docx",
           "url": "https://smlouvy.gov.cz/smlouva/soubor/33978487/P%C5%99%C3%ADloha%20%C4%8D.%201%20-%20Specifikace%20nebytov%C3%BDch%20prostor%20-%20skiagrafick%C3%A9%20pracovi%C5%A1t%C4%9B%20ANON..docx",
-          "sha256": "badd83f01bc2ec7f7c343f200a1a46ad0f46149faf838a956f36da4fdb5eb6bd",
-          "bytes": 12857,
-          "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
           "text_available": true,
           "text_chars": 79,
-          "content_check": "no_filename_mismatch_detected",
-          "text_file": "data/documents/registr-smluv/25788491/002.txt"
+          "text_file": "data/documents/registr-smluv/25788491/002.txt",
+          "status": "retained_existing_text",
+          "content_check": "no_filename_mismatch_detected"
         },
         {
           "index": 3,
           "name": "P%C5%99%C3%ADloha%20%C4%8D.%202%20-%20Mechanismus%20ostatn%C3%ADch%20plateb%20n%C3%A1jemn%C3%AD%20smlouvy%20ANON..docx",
           "url": "https://smlouvy.gov.cz/smlouva/soubor/33978491/P%C5%99%C3%ADloha%20%C4%8D.%202%20-%20Mechanismus%20ostatn%C3%ADch%20plateb%20n%C3%A1jemn%C3%AD%20smlouvy%20ANON..docx",
-          "sha256": "995ea3d0fdab2884c749bc189f43836d6d4c10c6db39766ef9c506d467fa5bb6",
-          "bytes": 12781,
-          "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
           "text_available": true,
           "text_chars": 2069,
-          "content_check": "no_filename_mismatch_detected",
-          "text_file": "data/documents/registr-smluv/25788491/003.txt"
+          "text_file": "data/documents/registr-smluv/25788491/003.txt",
+          "status": "retained_existing_text",
+          "content_check": "no_filename_mismatch_detected"
         }
       ],
       "status": "ok"
@@ -924,13 +899,11 @@
           "index": 1,
           "name": "OLP_3394_2023_Smlouva_Lomnice_nP.pdf",
           "url": "https://smlouvy.gov.cz/smlouva/soubor/35209919/OLP_3394_2023_Smlouva_Lomnice_nP.pdf",
-          "sha256": "f8dcf0b09dd59118369ba70cf9179f97a22c0c426bfaa1fdc98ed17a15397670",
-          "bytes": 243566,
-          "content_type": "application/pdf",
           "text_available": true,
           "text_chars": 30930,
-          "content_check": "no_filename_mismatch_detected",
-          "text_file": "data/documents/registr-smluv/26812007/001.txt"
+          "text_file": "data/documents/registr-smluv/26812007/001.txt",
+          "status": "retained_existing_text",
+          "content_check": "no_filename_mismatch_detected"
         }
       ],
       "status": "ok"
@@ -945,13 +918,11 @@
           "index": 1,
           "name": "14_OLP_101_2024.pdf",
           "url": "https://smlouvy.gov.cz/smlouva/soubor/35308068/14_OLP_101_2024.pdf",
-          "sha256": "98b28057230a7d8cdf53f7bfa233bac133ec971dadb497b658039cb6ddbe4f8d",
-          "bytes": 212507,
-          "content_type": "application/pdf",
           "text_available": true,
           "text_chars": 9195,
-          "content_check": "no_filename_mismatch_detected",
-          "text_file": "data/documents/registr-smluv/26892268/001.txt"
+          "text_file": "data/documents/registr-smluv/26892268/001.txt",
+          "status": "retained_existing_text",
+          "content_check": "no_filename_mismatch_detected"
         }
       ],
       "status": "ok"
@@ -985,13 +956,11 @@
           "index": 1,
           "name": "Smlouva_OLP_2580_2024.pdf",
           "url": "https://smlouvy.gov.cz/smlouva/soubor/35746932/Smlouva_OLP_2580_2024.pdf",
-          "sha256": "37fb26df93f18e6d8a0b8182bf69cb25ebdf36e95e1b4bec49921b94eeb72ce4",
-          "bytes": 360399,
-          "content_type": "application/pdf",
           "text_available": true,
           "text_chars": 35978,
-          "content_check": "no_filename_mismatch_detected",
-          "text_file": "data/documents/registr-smluv/27256880/001.txt"
+          "text_file": "data/documents/registr-smluv/27256880/001.txt",
+          "status": "retained_existing_text",
+          "content_check": "no_filename_mismatch_detected"
         }
       ],
       "status": "ok"
@@ -1006,13 +975,11 @@
           "index": 1,
           "name": "06_OLP-2550-2024.pdf",
           "url": "https://smlouvy.gov.cz/smlouva/soubor/36138716/06_OLP-2550-2024.pdf",
-          "sha256": "32a709fb7239dd6c28166c30aeeaf783d09a9c820107fda74d93ca6a00e1d042",
-          "bytes": 4668879,
-          "content_type": "application/pdf",
           "text_available": true,
           "text_chars": 28197,
-          "content_check": "no_filename_mismatch_detected",
-          "text_file": "data/documents/registr-smluv/27585960/001.txt"
+          "text_file": "data/documents/registr-smluv/27585960/001.txt",
+          "status": "retained_existing_text",
+          "content_check": "no_filename_mismatch_detected"
         }
       ],
       "status": "ok"
@@ -1027,13 +994,11 @@
           "index": 1,
           "name": "Lomnice_1919.pdf",
           "url": "https://smlouvy.gov.cz/smlouva/soubor/36382792/Lomnice_1919.pdf",
-          "sha256": "4df758dcca1e5da67de4daa173d50ff8e162c25510693054dcf4b100523d37ac",
-          "bytes": 240497,
-          "content_type": "application/pdf",
           "text_available": true,
           "text_chars": 26513,
-          "content_check": "no_filename_mismatch_detected",
-          "text_file": "data/documents/registr-smluv/27785608/001.txt"
+          "text_file": "data/documents/registr-smluv/27785608/001.txt",
+          "status": "retained_existing_text",
+          "content_check": "no_filename_mismatch_detected"
         }
       ],
       "status": "ok"
@@ -1569,7 +1534,8 @@
           "bytes": 1216639,
           "content_type": "application/pdf",
           "text_available": false,
-          "text_chars": 0
+          "text_chars": 0,
+          "status": "retained_from_previous_run"
         }
       ],
       "status": "ok"
@@ -1683,7 +1649,8 @@
           "bytes": 1842884,
           "content_type": "application/pdf",
           "text_available": false,
-          "text_chars": 0
+          "text_chars": 0,
+          "status": "retained_from_previous_run"
         },
         {
           "index": 2,
@@ -1769,7 +1736,8 @@
           "bytes": 1332836,
           "content_type": "application/pdf",
           "text_available": false,
-          "text_chars": 0
+          "text_chars": 0,
+          "status": "retained_from_previous_run"
         }
       ],
       "status": "ok"
