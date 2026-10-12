@@ -57,6 +57,58 @@ def document_referenced_contract_numbers():
 DOCUMENT_REFS = document_referenced_contract_numbers()
 
 
+def document_referenced_contract_dates():
+    """Return dates explicitly attached to a referenced original agreement in document text."""
+    if not DOC_MANIFEST.exists():
+        return {}
+    try:
+        manifest = json.loads(DOC_MANIFEST.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return {}
+    out = {}
+    pattern = re.compile(
+        r"\\b(?:smlouvy|smlouva)\\b.{0,260}?\\b(?:uzavřen[áéou]*|ze dne)\\s*(?:dne\\s*)?"
+        r"(\\d{1,2}\\.\\s*\\d{1,2}\\.\\s*\\d{4})",
+        flags=re.IGNORECASE | re.DOTALL,
+    )
+    for row in manifest.get("records", []):
+        sid = str(row.get("source_id") or "").strip()
+        if not sid:
+            continue
+        dates = []
+        for doc in row.get("documents", []):
+            path = doc.get("text_file")
+            if not path:
+                continue
+            try:
+                body = (ROOT / path).read_text(encoding="utf-8", errors="replace")
+            except OSError:
+                continue
+            for match in pattern.finditer(body):
+                raw = re.sub(r"\\s+", "", match.group(1))
+                try:
+                    from datetime import datetime
+                    dates.append(datetime.strptime(raw, "%d.%m.%Y").date().isoformat())
+                except ValueError:
+                    continue
+        if dates:
+            out[sid] = sorted(set(dates))
+    return out
+
+
+DOCUMENT_PARENT_DATES = document_referenced_contract_dates()
+
+
+def shared_party_identity(a, b):
+    """Require at least one shared, non-empty official party identifier."""
+    keys = ("buyer_ico", "supplier_ico", "publisher_ico")
+    left = {re.sub(r"\\D", "", str(a.get(key) or "")) for key in keys}
+    right = {re.sub(r"\\D", "", str(b.get(key) or "")) for key in keys}
+    left = {value for value in left if len(value) == 8}
+    right = {value for value in right if len(value) == 8}
+    return bool(left & right)
+
+
 def build_links(projects):
     links, candidates = [], []
     for i, left in enumerate(projects):
@@ -91,7 +143,34 @@ def build_links(projects):
                             or resolver.contract_family_matches(nb, na)
                         )
                     )
-                    explicit = related_id_match or explicit_parent
+                    # A primary document can identify its original agreement by
+                    # the original signing date rather than a Registry ID/number.
+                    # Require matching project wording and an official shared party
+                    # identifier so a common date alone cannot create a link.
+                    document_parent_match = False
+                    document_parent_evidence = []
+                    if resolver.is_addendum(a) and not resolver.is_addendum(b):
+                        addendum, base, add_id = a, b, ida
+                    elif resolver.is_addendum(b) and not resolver.is_addendum(a):
+                        addendum, base, add_id = b, a, idb
+                    else:
+                        addendum = base = None
+                        add_id = ""
+                    if addendum and base:
+                        base_date = resolver.date_value(
+                            base.get("signed_date") or base.get("date") or base.get("published")
+                        )
+                        overlap = resolver.meaningful_token_overlap(
+                            resolver.core_title(addendum), resolver.core_title(base)
+                        )
+                        if (base_date and base_date in DOCUMENT_PARENT_DATES.get(add_id, [])
+                                and overlap >= .65 and shared_party_identity(addendum, base)):
+                            document_parent_match = True
+                            document_parent_evidence = [
+                                f"document_original_contract_date={base_date}",
+                                f"document_project_title_overlap={overlap:.2f}",
+                            ]
+                    explicit = related_id_match or explicit_parent or document_parent_match
                     if explicit:
                         matching_refs = [
                             x for x in refs_a if resolver.contract_number_matches(x, nb)
@@ -102,9 +181,16 @@ def build_links(projects):
                         if related_id_match:
                             related_id = idb if idb in related_a else ida
                             evidence = unique_evidence([f"related_contract_id={related_id}"] + evidence)
+                        if document_parent_match:
+                            evidence = unique_evidence(document_parent_evidence + evidence)
                         if not evidence and na and nb and resolver.contract_family_matches(na, nb):
                             evidence = unique_evidence([na, nb])
-                        reason = "explicit_related_contract_id" if related_id_match else "explicit_parent_contract_number"
+                        if related_id_match:
+                            reason = "explicit_related_contract_id"
+                        elif explicit_parent:
+                            reason = "explicit_parent_contract_number"
+                        else:
+                            reason = "explicit_parent_contract_date_and_project"
                         item = {"kind": "contractual", "confidence": "explicit",
                                 "reason": reason,
                                 "evidence": evidence, "a": a, "b": b}
