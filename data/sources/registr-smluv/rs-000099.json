@@ -2,7 +2,7 @@
   "source": "registr-smluv",
   "source_id": "34549017",
   "version_id": "36806561",
-  "source_url": "https://smlouvy.gov.cz/smlouva/34549017",
+  "source_url": "https://smlouvy.gov.cz/smlouva/36806561",
   "title": "Dodatek č. 1 OLP/3394/2023 - Smlouva DFLK 8.6 - Město Lomnice nad Popelkou",
   "buyer_ico": "00275905",
   "supplier_ico": "70891508",
@@ -21,11 +21,15 @@
     "source": "registr-smluv",
     "source_id": "34549017",
     "version_id": "36806561",
-    "source_url": "https://smlouvy.gov.cz/smlouva/34549017",
+    "source_url": "https://smlouvy.gov.cz/smlouva/36806561",
     "title": "Dodatek č. 1 OLP/3394/2023 - Smlouva DFLK 8.6 - Město Lomnice nad Popelkou",
     "buyer_ico": "00275905",
     "supplier_ico": "70891508",
     "contract_number": "OLP/3394/2023/1",
+    "related_contract_ids": [
+      "26812007"
+    ],
+    "related_contract_numbers": [],
     "date": "2026-02-09",
     "signed_date": "2026-02-09",
     "published": "",
@@ -34,9 +38,12 @@
     "publisher": "",
     "subject": "Dodatek č. 1 OLP/3394/2023 - Smlouva DFLK 8.6 - Město Lomnice nad Popelkou",
     "counterparty": "Liberecký kraj",
-    "detail_url": "https://smlouvy.gov.cz/smlouva/34549017",
-    "related_contract_ids": [
-      "26812007"
+    "detail_url": "https://smlouvy.gov.cz/smlouva/36806561",
+    "attachments": [
+      {
+        "url": "https://smlouvy.gov.cz/smlouva/soubor/44565769/Dodatek_1_OLP_3394_2023_Lomnice_n_Popelkou.pdf",
+        "name": "Dodatek_1_OLP_3394_2023_Lomnice_n_Popelkou.pdf"
+      }
     ]
   }
 }

@@ -70,7 +70,7 @@
         "source": "registr-smluv",
         "source_id": "33854349",
         "version_id": "36079245",
-        "source_url": "https://smlouvy.gov.cz/smlouva/33854349",
+        "source_url": "https://smlouvy.gov.cz/smlouva/36079245",
         "title": "Dodatek č. 1 k veřejnoprávní smlouvě o poskytnutí dotace z rozpčtu města Lomnice nad Popelkou",
         "buyer_ico": "00275905",
         "supplier_ico": "49295934",
@@ -87,11 +87,13 @@
           "source": "registr-smluv",
           "source_id": "33854349",
           "version_id": "36079245",
-          "source_url": "https://smlouvy.gov.cz/smlouva/33854349",
+          "source_url": "https://smlouvy.gov.cz/smlouva/36079245",
           "title": "Dodatek č. 1 k veřejnoprávní smlouvě o poskytnutí dotace z rozpčtu města Lomnice nad Popelkou",
           "buyer_ico": "00275905",
           "supplier_ico": "49295934",
           "contract_number": "",
+          "related_contract_ids": [],
+          "related_contract_numbers": [],
           "date": "2025-12-15",
           "signed_date": "2025-12-15",
           "published": "",
@@ -100,7 +102,13 @@
           "publisher": "",
           "subject": "Dodatek č. 1 k veřejnoprávní smlouvě o poskytnutí dotace z rozpčtu města Lomnice nad Popelkou",
           "counterparty": "Vodohospodářské sdružení Turnov",
-          "detail_url": "https://smlouvy.gov.cz/smlouva/33854349"
+          "detail_url": "https://smlouvy.gov.cz/smlouva/36079245",
+          "attachments": [
+            {
+              "url": "https://smlouvy.gov.cz/smlouva/soubor/43749589/Dodatek%20%C4%8D.%201%20k%20ve%C5%99ejnopr%C3%A1vn%C3%AD%20smlouv%C4%9B1.docx",
+              "name": "Dodatek%20%C4%8D.%201%20k%20ve%C5%99ejnopr%C3%A1vn%C3%AD%20smlouv%C4%9B1.docx"
+            }
+          ]
         },
         "_source_file": "data/sources/registr-smluv/rs-000096.json"
       }

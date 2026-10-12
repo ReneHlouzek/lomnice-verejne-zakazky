@@ -68,7 +68,7 @@
         "source": "registr-smluv",
         "source_id": "33251089",
         "version_id": "35447545",
-        "source_url": "https://smlouvy.gov.cz/smlouva/33251089",
+        "source_url": "https://smlouvy.gov.cz/smlouva/35447545",
         "title": "Smlouva o poskytnutí dotace z DFLK program 1.1 – Podpora jednotek požární ochrany obcí Libereckého kraje",
         "buyer_ico": "00275905",
         "supplier_ico": "70891508",
@@ -85,11 +85,13 @@
           "source": "registr-smluv",
           "source_id": "33251089",
           "version_id": "35447545",
-          "source_url": "https://smlouvy.gov.cz/smlouva/33251089",
+          "source_url": "https://smlouvy.gov.cz/smlouva/35447545",
           "title": "Smlouva o poskytnutí dotace z DFLK program 1.1 – Podpora jednotek požární ochrany obcí Libereckého kraje",
           "buyer_ico": "00275905",
           "supplier_ico": "70891508",
           "contract_number": "OLP/01916/2025",
+          "related_contract_ids": [],
+          "related_contract_numbers": [],
           "date": "2025-10-17",
           "signed_date": "2025-10-17",
           "published": "",
@@ -98,7 +100,13 @@
           "publisher": "",
           "subject": "Smlouva o poskytnutí dotace z DFLK program 1.1 – Podpora jednotek požární ochrany obcí Libereckého kraje",
           "counterparty": "Liberecký kraj",
-          "detail_url": "https://smlouvy.gov.cz/smlouva/33251089"
+          "detail_url": "https://smlouvy.gov.cz/smlouva/35447545",
+          "attachments": [
+            {
+              "url": "https://smlouvy.gov.cz/smlouva/soubor/43024125/Lomnice_01916.pdf",
+              "name": "Lomnice_01916.pdf"
+            }
+          ]
         },
         "_source_file": "data/sources/registr-smluv/rs-000094.json"
       }

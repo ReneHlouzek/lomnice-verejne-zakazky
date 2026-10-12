@@ -2,7 +2,7 @@
   "source": "registr-smluv",
   "source_id": "34496525",
   "version_id": "36751473",
-  "source_url": "https://smlouvy.gov.cz/smlouva/34496525",
+  "source_url": "https://smlouvy.gov.cz/smlouva/36751473",
   "title": "Smlouva o bezúplatném převodu vlastnického práva se sjednáním jiných věcných práv - k. ú. Lomnice nad Popelkou, p. p. č. 2402/4",
   "buyer_ico": "00275905",
   "supplier_ico": "70994234",
@@ -19,11 +19,13 @@
     "source": "registr-smluv",
     "source_id": "34496525",
     "version_id": "36751473",
-    "source_url": "https://smlouvy.gov.cz/smlouva/34496525",
+    "source_url": "https://smlouvy.gov.cz/smlouva/36751473",
     "title": "Smlouva o bezúplatném převodu vlastnického práva se sjednáním jiných věcných práv - k. ú. Lomnice nad Popelkou, p. p. č. 2402/4",
     "buyer_ico": "00275905",
     "supplier_ico": "70994234",
     "contract_number": "S080663/2022-O31-STY",
+    "related_contract_ids": [],
+    "related_contract_numbers": [],
     "date": "2026-02-10",
     "signed_date": "2026-02-10",
     "published": "",
@@ -32,6 +34,12 @@
     "publisher": "",
     "subject": "Smlouva o bezúplatném převodu vlastnického práva se sjednáním jiných věcných práv - k. ú. Lomnice nad Popelkou, p. p. č. 2402/4",
     "counterparty": "Správa železnic, státní organizace",
-    "detail_url": "https://smlouvy.gov.cz/smlouva/34496525"
+    "detail_url": "https://smlouvy.gov.cz/smlouva/36751473",
+    "attachments": [
+      {
+        "url": "https://smlouvy.gov.cz/smlouva/soubor/44504153/S080663-2022%20k.%C3%BA.%20Lomnice%20nad%20Popelkou%2C%20M%C4%9Bsto%20Lomnice%20nad%20popelkou_anonym.pdf",
+        "name": "S080663-2022%20k.%C3%BA.%20Lomnice%20nad%20Popelkou%2C%20M%C4%9Bsto%20Lomnice%20nad%20popelkou_anonym.pdf"
+      }
+    ]
   }
 }

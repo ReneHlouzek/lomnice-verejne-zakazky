@@ -68,7 +68,7 @@
         "source": "registr-smluv",
         "source_id": "34464673",
         "version_id": "36718821",
-        "source_url": "https://smlouvy.gov.cz/smlouva/34464673",
+        "source_url": "https://smlouvy.gov.cz/smlouva/36718821",
         "title": "Memorandum o vzájemné spolupráci v rámci akce „Rekonstrukce silnice II/284, Lomnice nad Popelkou“",
         "buyer_ico": "00275905",
         "supplier_ico": "49295934",
@@ -85,11 +85,13 @@
           "source": "registr-smluv",
           "source_id": "34464673",
           "version_id": "36718821",
-          "source_url": "https://smlouvy.gov.cz/smlouva/34464673",
+          "source_url": "https://smlouvy.gov.cz/smlouva/36718821",
           "title": "Memorandum o vzájemné spolupráci v rámci akce „Rekonstrukce silnice II/284, Lomnice nad Popelkou“",
           "buyer_ico": "00275905",
           "supplier_ico": "49295934",
           "contract_number": "OLP/03327/2025",
+          "related_contract_ids": [],
+          "related_contract_numbers": [],
           "date": "2026-02-06",
           "signed_date": "2026-02-06",
           "published": "",
@@ -98,7 +100,13 @@
           "publisher": "",
           "subject": "Memorandum o vzájemné spolupráci v rámci akce „Rekonstrukce silnice II/284, Lomnice nad Popelkou“",
           "counterparty": "Vodohospodářské sdružení Turnov",
-          "detail_url": "https://smlouvy.gov.cz/smlouva/34464673"
+          "detail_url": "https://smlouvy.gov.cz/smlouva/36718821",
+          "attachments": [
+            {
+              "url": "https://smlouvy.gov.cz/smlouva/soubor/44468777/memorandum_Lomnice_VHS_sig.pdf",
+              "name": "memorandum_Lomnice_VHS_sig.pdf"
+            }
+          ]
         },
         "_source_file": "data/sources/registr-smluv/rs-000098.json"
       }

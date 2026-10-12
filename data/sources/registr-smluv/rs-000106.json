@@ -2,7 +2,7 @@
   "source": "registr-smluv",
   "source_id": "36217164",
   "version_id": "38543780",
-  "source_url": "https://smlouvy.gov.cz/smlouva/36217164",
+  "source_url": "https://smlouvy.gov.cz/smlouva/38543780",
   "title": "Smlouva o poskytnutí dotace z DFLK program 1.1 – 2026",
   "buyer_ico": "00275905",
   "supplier_ico": "70891508",
@@ -19,11 +19,13 @@
     "source": "registr-smluv",
     "source_id": "36217164",
     "version_id": "38543780",
-    "source_url": "https://smlouvy.gov.cz/smlouva/36217164",
+    "source_url": "https://smlouvy.gov.cz/smlouva/38543780",
     "title": "Smlouva o poskytnutí dotace z DFLK program 1.1 – 2026",
     "buyer_ico": "00275905",
     "supplier_ico": "70891508",
     "contract_number": "OLP/01876/2026",
+    "related_contract_ids": [],
+    "related_contract_numbers": [],
     "date": "2026-06-26",
     "signed_date": "2026-06-26",
     "published": "",
@@ -32,6 +34,12 @@
     "publisher": "",
     "subject": "Smlouva o poskytnutí dotace z DFLK program 1.1 – 2026",
     "counterparty": "Liberecký kraj",
-    "detail_url": "https://smlouvy.gov.cz/smlouva/36217164"
+    "detail_url": "https://smlouvy.gov.cz/smlouva/38543780",
+    "attachments": [
+      {
+        "url": "https://smlouvy.gov.cz/smlouva/soubor/46542908/Lomnice_OLP_01876_2026.pdf",
+        "name": "Lomnice_OLP_01876_2026.pdf"
+      }
+    ]
   }
 }

@@ -70,7 +70,7 @@
         "source": "registr-smluv",
         "source_id": "36197230",
         "version_id": "38523058",
-        "source_url": "https://smlouvy.gov.cz/smlouva/36197230",
+        "source_url": "https://smlouvy.gov.cz/smlouva/38523058",
         "title": "Veřejnoprávní smlouva o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou - rekonstrukce vodohospodářských sítí a následná obnova ulice 5. května",
         "buyer_ico": "00275905",
         "supplier_ico": "49295934",
@@ -87,11 +87,13 @@
           "source": "registr-smluv",
           "source_id": "36197230",
           "version_id": "38523058",
-          "source_url": "https://smlouvy.gov.cz/smlouva/36197230",
+          "source_url": "https://smlouvy.gov.cz/smlouva/38523058",
           "title": "Veřejnoprávní smlouva o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou - rekonstrukce vodohospodářských sítí a následná obnova ulice 5. května",
           "buyer_ico": "00275905",
           "supplier_ico": "49295934",
           "contract_number": "",
+          "related_contract_ids": [],
+          "related_contract_numbers": [],
           "date": "2026-06-25",
           "signed_date": "2026-06-25",
           "published": "",
@@ -100,7 +102,13 @@
           "publisher": "",
           "subject": "Veřejnoprávní smlouva o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou - rekonstrukce vodohospodářských sítí a následná obnova ulice 5. května",
           "counterparty": "Vodohospodářské sdružení Turnov",
-          "detail_url": "https://smlouvy.gov.cz/smlouva/36197230"
+          "detail_url": "https://smlouvy.gov.cz/smlouva/38523058",
+          "attachments": [
+            {
+              "url": "https://smlouvy.gov.cz/smlouva/soubor/46518266/5.%20kv%C4%9Btna%20-%20ve%C5%99ejnopr.%20sml.docx",
+              "name": "5.%20kv%C4%9Btna%20-%20ve%C5%99ejnopr.%20sml.docx"
+            }
+          ]
         },
         "_source_file": "data/sources/registr-smluv/rs-000102.json"
       }

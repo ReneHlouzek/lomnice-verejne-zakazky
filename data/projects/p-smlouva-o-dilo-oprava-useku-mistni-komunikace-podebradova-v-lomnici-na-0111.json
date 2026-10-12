@@ -70,7 +70,7 @@
         "source": "registr-smluv",
         "source_id": "35224121",
         "version_id": "37510257",
-        "source_url": "https://smlouvy.gov.cz/smlouva/35224121",
+        "source_url": "https://smlouvy.gov.cz/smlouva/37510257",
         "title": "Smlouva o dílo - Oprava úseku místní komunikace Poděbradova v Lomnici nad Popelkou",
         "buyer_ico": "00275905",
         "supplier_ico": "28746503",
@@ -87,11 +87,13 @@
           "source": "registr-smluv",
           "source_id": "35224121",
           "version_id": "37510257",
-          "source_url": "https://smlouvy.gov.cz/smlouva/35224121",
+          "source_url": "https://smlouvy.gov.cz/smlouva/37510257",
           "title": "Smlouva o dílo - Oprava úseku místní komunikace Poděbradova v Lomnici nad Popelkou",
           "buyer_ico": "00275905",
           "supplier_ico": "28746503",
           "contract_number": "2026022",
+          "related_contract_ids": [],
+          "related_contract_numbers": [],
           "date": "2026-04-10",
           "signed_date": "2026-04-10",
           "published": "",
@@ -100,7 +102,13 @@
           "publisher": "",
           "subject": "Smlouva o dílo - Oprava úseku místní komunikace Poděbradova v Lomnici nad Popelkou",
           "counterparty": "Silnice LK a.s.",
-          "detail_url": "https://smlouvy.gov.cz/smlouva/35224121"
+          "detail_url": "https://smlouvy.gov.cz/smlouva/37510257",
+          "attachments": [
+            {
+              "url": "https://smlouvy.gov.cz/smlouva/soubor/45362221/2026022_Redigov%C3%A1no.pdf",
+              "name": "2026022_Redigov%C3%A1no.pdf"
+            }
+          ]
         },
         "_source_file": "data/sources/registr-smluv/rs-000101.json"
       }
