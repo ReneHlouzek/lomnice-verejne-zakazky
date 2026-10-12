@@ -2,7 +2,7 @@
   "source": "registr-smluv",
   "source_id": "31062824",
   "version_id": "33157928",
-  "source_url": "https://smlouvy.gov.cz/smlouva/31062824",
+  "source_url": "https://smlouvy.gov.cz/smlouva/33157928",
   "title": "Veřejnoprávnmí smlouva o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou - Prodloužení sítí technické infrastruktury pro budoucí rozvojovou lokalitu BM8",
   "buyer_ico": "00275905",
   "supplier_ico": "49295934",
@@ -19,11 +19,13 @@
     "source": "registr-smluv",
     "source_id": "31062824",
     "version_id": "33157928",
-    "source_url": "https://smlouvy.gov.cz/smlouva/31062824",
+    "source_url": "https://smlouvy.gov.cz/smlouva/33157928",
     "title": "Veřejnoprávnmí smlouva o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou - Prodloužení sítí technické infrastruktury pro budoucí rozvojovou lokalitu BM8",
     "buyer_ico": "00275905",
     "supplier_ico": "49295934",
     "contract_number": "",
+    "related_contract_ids": [],
+    "related_contract_numbers": [],
     "date": "2025-05-05",
     "signed_date": "2025-05-05",
     "published": "",
@@ -32,6 +34,12 @@
     "publisher": "",
     "subject": "Veřejnoprávnmí smlouva o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou - Prodloužení sítí technické infrastruktury pro budoucí rozvojovou lokalitu BM8",
     "counterparty": "Vodohospodářské sdružení Turnov",
-    "detail_url": "https://smlouvy.gov.cz/smlouva/31062824"
+    "detail_url": "https://smlouvy.gov.cz/smlouva/33157928",
+    "attachments": [
+      {
+        "url": "https://smlouvy.gov.cz/smlouva/soubor/40374820/ve%C5%99ejnopr.%20sml..doc",
+        "name": "ve%C5%99ejnopr.%20sml..doc"
+      }
+    ]
   }
 }

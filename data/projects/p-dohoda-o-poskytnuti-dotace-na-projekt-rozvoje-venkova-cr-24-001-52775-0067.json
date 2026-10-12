@@ -68,7 +68,7 @@
         "source": "registr-smluv",
         "source_id": "30665684",
         "version_id": "32742648",
-        "source_url": "https://smlouvy.gov.cz/smlouva/30665684",
+        "source_url": "https://smlouvy.gov.cz/smlouva/32742648",
         "title": "Dohoda o poskytnutí dotace na projekt rozvoje venkova ČR - 24/001/52775/433/000057",
         "buyer_ico": "00275905",
         "supplier_ico": "48133981",
@@ -85,11 +85,13 @@
           "source": "registr-smluv",
           "source_id": "30665684",
           "version_id": "32742648",
-          "source_url": "https://smlouvy.gov.cz/smlouva/30665684",
+          "source_url": "https://smlouvy.gov.cz/smlouva/32742648",
           "title": "Dohoda o poskytnutí dotace na projekt rozvoje venkova ČR - 24/001/52775/433/000057",
           "buyer_ico": "00275905",
           "supplier_ico": "48133981",
           "contract_number": "SZIF/2025/0216890",
+          "related_contract_ids": [],
+          "related_contract_numbers": [],
           "date": "2025-04-01",
           "signed_date": "2025-04-01",
           "published": "",
@@ -98,7 +100,13 @@
           "publisher": "",
           "subject": "Dohoda o poskytnutí dotace na projekt rozvoje venkova ČR - 24/001/52775/433/000057",
           "counterparty": "Státní zemědělský intervenční fond",
-          "detail_url": "https://smlouvy.gov.cz/smlouva/30665684"
+          "detail_url": "https://smlouvy.gov.cz/smlouva/32742648",
+          "attachments": [
+            {
+              "url": "https://smlouvy.gov.cz/smlouva/soubor/39896200/PRV_PRINT_OUTPUT_A.pdf",
+              "name": "PRV_PRINT_OUTPUT_A.pdf"
+            }
+          ]
         },
         "_source_file": "data/sources/registr-smluv/rs-000087.json"
       }

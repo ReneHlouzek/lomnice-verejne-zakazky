@@ -68,7 +68,7 @@
         "source": "registr-smluv",
         "source_id": "31612737",
         "version_id": "33733789",
-        "source_url": "https://smlouvy.gov.cz/smlouva/31612737",
+        "source_url": "https://smlouvy.gov.cz/smlouva/33733789",
         "title": "Smlouva o poskytnutí účelové dotace z rozpočtu Libereckého kraje - 7.10 Infrastruktura cestovního ruchu - město Lomnice nad Popelkou",
         "buyer_ico": "00275905",
         "supplier_ico": "70891508",
@@ -85,11 +85,13 @@
           "source": "registr-smluv",
           "source_id": "31612737",
           "version_id": "33733789",
-          "source_url": "https://smlouvy.gov.cz/smlouva/31612737",
+          "source_url": "https://smlouvy.gov.cz/smlouva/33733789",
           "title": "Smlouva o poskytnutí účelové dotace z rozpočtu Libereckého kraje - 7.10 Infrastruktura cestovního ruchu - město Lomnice nad Popelkou",
           "buyer_ico": "00275905",
           "supplier_ico": "70891508",
           "contract_number": "OLP/02645/2025",
+          "related_contract_ids": [],
+          "related_contract_numbers": [],
           "date": "2025-06-18",
           "signed_date": "2025-06-18",
           "published": "",
@@ -98,7 +100,13 @@
           "publisher": "",
           "subject": "Smlouva o poskytnutí účelové dotace z rozpočtu Libereckého kraje - 7.10 Infrastruktura cestovního ruchu - město Lomnice nad Popelkou",
           "counterparty": "Liberecký kraj",
-          "detail_url": "https://smlouvy.gov.cz/smlouva/31612737"
+          "detail_url": "https://smlouvy.gov.cz/smlouva/33733789",
+          "attachments": [
+            {
+              "url": "https://smlouvy.gov.cz/smlouva/soubor/41039621/Smlouva_OLP_02645_2025.pdf",
+              "name": "Smlouva_OLP_02645_2025.pdf"
+            }
+          ]
         },
         "_source_file": "data/sources/registr-smluv/rs-000089.json"
       }

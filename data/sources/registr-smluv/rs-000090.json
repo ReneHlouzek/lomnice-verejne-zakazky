@@ -2,7 +2,7 @@
   "source": "registr-smluv",
   "source_id": "31807981",
   "version_id": "33938409",
-  "source_url": "https://smlouvy.gov.cz/smlouva/31807981",
+  "source_url": "https://smlouvy.gov.cz/smlouva/33938409",
   "title": "07 Smlouva o poskytnutí dotace z programu 7.2",
   "buyer_ico": "00275905",
   "supplier_ico": "70891508",
@@ -19,11 +19,13 @@
     "source": "registr-smluv",
     "source_id": "31807981",
     "version_id": "33938409",
-    "source_url": "https://smlouvy.gov.cz/smlouva/31807981",
+    "source_url": "https://smlouvy.gov.cz/smlouva/33938409",
     "title": "07 Smlouva o poskytnutí dotace z programu 7.2",
     "buyer_ico": "00275905",
     "supplier_ico": "70891508",
     "contract_number": "OLP/02341/2025",
+    "related_contract_ids": [],
+    "related_contract_numbers": [],
     "date": "2025-06-30",
     "signed_date": "2025-06-30",
     "published": "",
@@ -32,6 +34,12 @@
     "publisher": "",
     "subject": "07 Smlouva o poskytnutí dotace z programu 7.2",
     "counterparty": "Liberecký kraj",
-    "detail_url": "https://smlouvy.gov.cz/smlouva/31807981"
+    "detail_url": "https://smlouvy.gov.cz/smlouva/33938409",
+    "attachments": [
+      {
+        "url": "https://smlouvy.gov.cz/smlouva/soubor/41276457/11_Mesto_Lomnice_n_P_smlouva_o_dotaci_sig.pdf",
+        "name": "11_Mesto_Lomnice_n_P_smlouva_o_dotaci_sig.pdf"
+      }
+    ]
   }
 }

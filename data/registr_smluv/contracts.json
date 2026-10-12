@@ -2269,11 +2269,13 @@
       "source": "registr-smluv",
       "source_id": "28119324",
       "version_id": "30051624",
-      "source_url": "https://smlouvy.gov.cz/smlouva/28119324",
+      "source_url": "https://smlouvy.gov.cz/smlouva/30051624",
       "title": "Účelová dotace na projekt \"Pořízení domácích kompostérů\"",
       "buyer_ico": "00275905",
       "supplier_ico": "70891508",
       "contract_number": "",
+      "related_contract_ids": [],
+      "related_contract_numbers": [],
       "date": "2024-08-27",
       "signed_date": "2024-08-27",
       "published": "",
@@ -2282,17 +2284,33 @@
       "publisher": "",
       "subject": "Účelová dotace na projekt \"Pořízení domácích kompostérů\"",
       "counterparty": "Liberecký kraj",
-      "detail_url": "https://smlouvy.gov.cz/smlouva/28119324"
+      "detail_url": "https://smlouvy.gov.cz/smlouva/30051624",
+      "attachments": [
+        {
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/36792532/OLP_2984_2024_Smlouva_o_poskytnuti_ucelove_dotace_Mesto_Lomnice_nad_Popelkou.pdf",
+          "name": "OLP_2984_2024_Smlouva_o_poskytnuti_ucelove_dotace_Mesto_Lomnice_nad_Popelkou.pdf"
+        },
+        {
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/36792536/Priloha_c_1.pdf",
+          "name": "Priloha_c_1.pdf"
+        },
+        {
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/36792540/Priloha_c_2.pdf",
+          "name": "Priloha_c_2.pdf"
+        }
+      ]
     },
     {
       "source": "registr-smluv",
       "source_id": "28204604",
       "version_id": "30140792",
-      "source_url": "https://smlouvy.gov.cz/smlouva/28204604",
+      "source_url": "https://smlouvy.gov.cz/smlouva/30140792",
       "title": "Dodatek č. 3 ke smlouvě o poskytnutí účelové dotace na projekt Karavanové stání - Lomnice nad Popelkou",
       "buyer_ico": "00275905",
       "supplier_ico": "70891508",
       "contract_number": "07-OLP2373/2021",
+      "related_contract_ids": [],
+      "related_contract_numbers": [],
       "date": "2024-09-09",
       "signed_date": "2024-09-09",
       "published": "",
@@ -2301,17 +2319,25 @@
       "publisher": "",
       "subject": "Dodatek č. 3 ke smlouvě o poskytnutí účelové dotace na projekt Karavanové stání - Lomnice nad Popelkou",
       "counterparty": "Liberecký kraj",
-      "detail_url": "https://smlouvy.gov.cz/smlouva/28204604"
+      "detail_url": "https://smlouvy.gov.cz/smlouva/30140792",
+      "attachments": [
+        {
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/36896344/Dodatek_3_Lomnice_nad_Popelkou.pdf",
+          "name": "Dodatek_3_Lomnice_nad_Popelkou.pdf"
+        }
+      ]
     },
     {
       "source": "registr-smluv",
       "source_id": "28586216",
       "version_id": "30551200",
-      "source_url": "https://smlouvy.gov.cz/smlouva/28586216",
+      "source_url": "https://smlouvy.gov.cz/smlouva/30551200",
       "title": "Dodatek č. 1 k veřejnoprávní smlouvě o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou",
       "buyer_ico": "00275905",
       "supplier_ico": "49295934",
       "contract_number": "",
+      "related_contract_ids": [],
+      "related_contract_numbers": [],
       "date": "2024-10-14",
       "signed_date": "2024-10-14",
       "published": "",
@@ -2320,17 +2346,25 @@
       "publisher": "",
       "subject": "Dodatek č. 1 k veřejnoprávní smlouvě o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou",
       "counterparty": "Vodohospodářské sdružení Turnov",
-      "detail_url": "https://smlouvy.gov.cz/smlouva/28586216"
+      "detail_url": "https://smlouvy.gov.cz/smlouva/30551200",
+      "attachments": [
+        {
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/37367760/Dodatek%20%C4%8D.%202%20ke%20smlouv%C4%9B.pdf",
+          "name": "Dodatek%20%C4%8D.%202%20ke%20smlouv%C4%9B.pdf"
+        }
+      ]
     },
     {
       "source": "registr-smluv",
       "source_id": "29417636",
       "version_id": "31432352",
-      "source_url": "https://smlouvy.gov.cz/smlouva/29417636",
+      "source_url": "https://smlouvy.gov.cz/smlouva/31432352",
       "title": "Veřejnoprávní smlouva o poskytnutí neinvestiční dotace z rozpočtu města Lomnice nad Popelkou - Lomnice nad Popelkou - Košov - obnova vodovodu",
       "buyer_ico": "00275905",
       "supplier_ico": "49295934",
       "contract_number": "",
+      "related_contract_ids": [],
+      "related_contract_numbers": [],
       "date": "2024-12-11",
       "signed_date": "2024-12-11",
       "published": "",
@@ -2339,7 +2373,7 @@
       "publisher": "",
       "subject": "Veřejnoprávní smlouva o poskytnutí neinvestiční dotace z rozpočtu města Lomnice nad Popelkou - Lomnice nad Popelkou - Košov - obnova vodovodu",
       "counterparty": "Vodohospodářské sdružení Turnov",
-      "detail_url": "https://smlouvy.gov.cz/smlouva/29417636",
+      "detail_url": "https://smlouvy.gov.cz/smlouva/31432352",
       "attachments": [
         {
           "url": "https://smlouvy.gov.cz/smlouva/soubor/38388380/LOM_PD_Ve%C5%99ejnopr%C3%A1vn%C3%AD%20s.%20in.%20dotace.doc",
@@ -2351,11 +2385,13 @@
       "source": "registr-smluv",
       "source_id": "30665684",
       "version_id": "32742648",
-      "source_url": "https://smlouvy.gov.cz/smlouva/30665684",
+      "source_url": "https://smlouvy.gov.cz/smlouva/32742648",
       "title": "Dohoda o poskytnutí dotace na projekt rozvoje venkova ČR - 24/001/52775/433/000057",
       "buyer_ico": "00275905",
       "supplier_ico": "48133981",
       "contract_number": "SZIF/2025/0216890",
+      "related_contract_ids": [],
+      "related_contract_numbers": [],
       "date": "2025-04-01",
       "signed_date": "2025-04-01",
       "published": "",
@@ -2364,17 +2400,25 @@
       "publisher": "",
       "subject": "Dohoda o poskytnutí dotace na projekt rozvoje venkova ČR - 24/001/52775/433/000057",
       "counterparty": "Státní zemědělský intervenční fond",
-      "detail_url": "https://smlouvy.gov.cz/smlouva/30665684"
+      "detail_url": "https://smlouvy.gov.cz/smlouva/32742648",
+      "attachments": [
+        {
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/39896200/PRV_PRINT_OUTPUT_A.pdf",
+          "name": "PRV_PRINT_OUTPUT_A.pdf"
+        }
+      ]
     },
     {
       "source": "registr-smluv",
       "source_id": "31062824",
       "version_id": "33157928",
-      "source_url": "https://smlouvy.gov.cz/smlouva/31062824",
+      "source_url": "https://smlouvy.gov.cz/smlouva/33157928",
       "title": "Veřejnoprávnmí smlouva o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou - Prodloužení sítí technické infrastruktury pro budoucí rozvojovou lokalitu BM8",
       "buyer_ico": "00275905",
       "supplier_ico": "49295934",
       "contract_number": "",
+      "related_contract_ids": [],
+      "related_contract_numbers": [],
       "date": "2025-05-05",
       "signed_date": "2025-05-05",
       "published": "",
@@ -2383,17 +2427,25 @@
       "publisher": "",
       "subject": "Veřejnoprávnmí smlouva o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou - Prodloužení sítí technické infrastruktury pro budoucí rozvojovou lokalitu BM8",
       "counterparty": "Vodohospodářské sdružení Turnov",
-      "detail_url": "https://smlouvy.gov.cz/smlouva/31062824"
+      "detail_url": "https://smlouvy.gov.cz/smlouva/33157928",
+      "attachments": [
+        {
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/40374820/ve%C5%99ejnopr.%20sml..doc",
+          "name": "ve%C5%99ejnopr.%20sml..doc"
+        }
+      ]
     },
     {
       "source": "registr-smluv",
       "source_id": "31612737",
       "version_id": "33733789",
-      "source_url": "https://smlouvy.gov.cz/smlouva/31612737",
+      "source_url": "https://smlouvy.gov.cz/smlouva/33733789",
       "title": "Smlouva o poskytnutí účelové dotace z rozpočtu Libereckého kraje - 7.10 Infrastruktura cestovního ruchu - město Lomnice nad Popelkou",
       "buyer_ico": "00275905",
       "supplier_ico": "70891508",
       "contract_number": "OLP/02645/2025",
+      "related_contract_ids": [],
+      "related_contract_numbers": [],
       "date": "2025-06-18",
       "signed_date": "2025-06-18",
       "published": "",
@@ -2402,17 +2454,25 @@
       "publisher": "",
       "subject": "Smlouva o poskytnutí účelové dotace z rozpočtu Libereckého kraje - 7.10 Infrastruktura cestovního ruchu - město Lomnice nad Popelkou",
       "counterparty": "Liberecký kraj",
-      "detail_url": "https://smlouvy.gov.cz/smlouva/31612737"
+      "detail_url": "https://smlouvy.gov.cz/smlouva/33733789",
+      "attachments": [
+        {
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/41039621/Smlouva_OLP_02645_2025.pdf",
+          "name": "Smlouva_OLP_02645_2025.pdf"
+        }
+      ]
     },
     {
       "source": "registr-smluv",
       "source_id": "31807981",
       "version_id": "33938409",
-      "source_url": "https://smlouvy.gov.cz/smlouva/31807981",
+      "source_url": "https://smlouvy.gov.cz/smlouva/33938409",
       "title": "07 Smlouva o poskytnutí dotace z programu 7.2",
       "buyer_ico": "00275905",
       "supplier_ico": "70891508",
       "contract_number": "OLP/02341/2025",
+      "related_contract_ids": [],
+      "related_contract_numbers": [],
       "date": "2025-06-30",
       "signed_date": "2025-06-30",
       "published": "",
@@ -2421,17 +2481,25 @@
       "publisher": "",
       "subject": "07 Smlouva o poskytnutí dotace z programu 7.2",
       "counterparty": "Liberecký kraj",
-      "detail_url": "https://smlouvy.gov.cz/smlouva/31807981"
+      "detail_url": "https://smlouvy.gov.cz/smlouva/33938409",
+      "attachments": [
+        {
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/41276457/11_Mesto_Lomnice_n_P_smlouva_o_dotaci_sig.pdf",
+          "name": "11_Mesto_Lomnice_n_P_smlouva_o_dotaci_sig.pdf"
+        }
+      ]
     },
     {
       "source": "registr-smluv",
       "source_id": "32292445",
       "version_id": "34446145",
-      "source_url": "https://smlouvy.gov.cz/smlouva/32292445",
+      "source_url": "https://smlouvy.gov.cz/smlouva/34446145",
       "title": "Dohoda o poskytnutí dotace na projekt rozvoje venkova ČR - 24/002/52775/433/013276",
       "buyer_ico": "00275905",
       "supplier_ico": "48133981",
       "contract_number": "SZIF/2025/0497142",
+      "related_contract_ids": [],
+      "related_contract_numbers": [],
       "date": "2025-08-14",
       "signed_date": "2025-08-14",
       "published": "",
@@ -2440,7 +2508,13 @@
       "publisher": "",
       "subject": "Dohoda o poskytnutí dotace na projekt rozvoje venkova ČR - 24/002/52775/433/013276",
       "counterparty": "Státní zemědělský intervenční fond",
-      "detail_url": "https://smlouvy.gov.cz/smlouva/32292445"
+      "detail_url": "https://smlouvy.gov.cz/smlouva/34446145",
+      "attachments": [
+        {
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/41861277/PRV_PRINT_OUTPUT_A.pdf",
+          "name": "PRV_PRINT_OUTPUT_A.pdf"
+        }
+      ]
     },
     {
       "source": "registr-smluv",

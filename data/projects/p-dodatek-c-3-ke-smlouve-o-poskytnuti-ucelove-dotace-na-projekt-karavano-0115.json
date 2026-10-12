@@ -68,7 +68,7 @@
         "source": "registr-smluv",
         "source_id": "28204604",
         "version_id": "30140792",
-        "source_url": "https://smlouvy.gov.cz/smlouva/28204604",
+        "source_url": "https://smlouvy.gov.cz/smlouva/30140792",
         "title": "Dodatek č. 3 ke smlouvě o poskytnutí účelové dotace na projekt Karavanové stání - Lomnice nad Popelkou",
         "buyer_ico": "00275905",
         "supplier_ico": "70891508",
@@ -85,11 +85,13 @@
           "source": "registr-smluv",
           "source_id": "28204604",
           "version_id": "30140792",
-          "source_url": "https://smlouvy.gov.cz/smlouva/28204604",
+          "source_url": "https://smlouvy.gov.cz/smlouva/30140792",
           "title": "Dodatek č. 3 ke smlouvě o poskytnutí účelové dotace na projekt Karavanové stání - Lomnice nad Popelkou",
           "buyer_ico": "00275905",
           "supplier_ico": "70891508",
           "contract_number": "07-OLP2373/2021",
+          "related_contract_ids": [],
+          "related_contract_numbers": [],
           "date": "2024-09-09",
           "signed_date": "2024-09-09",
           "published": "",
@@ -98,7 +100,13 @@
           "publisher": "",
           "subject": "Dodatek č. 3 ke smlouvě o poskytnutí účelové dotace na projekt Karavanové stání - Lomnice nad Popelkou",
           "counterparty": "Liberecký kraj",
-          "detail_url": "https://smlouvy.gov.cz/smlouva/28204604"
+          "detail_url": "https://smlouvy.gov.cz/smlouva/30140792",
+          "attachments": [
+            {
+              "url": "https://smlouvy.gov.cz/smlouva/soubor/36896344/Dodatek_3_Lomnice_nad_Popelkou.pdf",
+              "name": "Dodatek_3_Lomnice_nad_Popelkou.pdf"
+            }
+          ]
         },
         "_source_file": "data/sources/registr-smluv/rs-000084.json"
       }
