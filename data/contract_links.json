@@ -1,5 +1,5 @@
 {
-  "count": 11,
+  "count": 12,
   "links": [
     {
       "project_a": "p-dodatek-1-lomnice-n-popelkou-najem-np-0108",
@@ -102,6 +102,23 @@
       "source_id_b": "15970715"
     },
     {
+      "project_a": "p-dodatek-c-1-verejnopravni-smlouvy-o-poskytnuti-neinvesticni-dotace-z-r-0101",
+      "title_a": "Dodatek č. 1 veřejnoprávní smlouvy o poskytnutí neinvestiční dotace z rozpočtu města Lomnice nad Popelkou na akci Lomnice nad Popelkou - KOšov , obnova vodovodu",
+      "project_b": "p-verejnopravni-smlouva-o-poskytnuti-neinvesticni-dotace-z-rozpoctu-mest-0133",
+      "title_b": "Veřejnoprávní smlouva o poskytnutí neinvestiční dotace z rozpočtu města Lomnice nad Popelkou - Lomnice nad Popelkou - Košov - obnova vodovodu",
+      "kind": "contractual",
+      "confidence": "explicit",
+      "reason": "explicit_parent_contract_date_and_project",
+      "evidence": [
+        "document_original_contract_date=2024-12-11",
+        "document_project_title_overlap=0.75"
+      ],
+      "source_a": "registr-smluv",
+      "source_id_a": "32731945",
+      "source_b": "registr-smluv",
+      "source_id_b": "29417636"
+    },
+    {
       "project_a": "p-dodatek-c-2-ke-smlouve-o-poskytnuti-ucelove-dotace-z-dotacniho-fondu-l-0092",
       "title_a": "Dodatek č. 2 ke smlouvě o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje na projekt karavanová stání Lomnice nad Popelkou",
       "project_b": "p-poskytnuti-ucelove-dotace-z-rozpoctu-libereckeho-kraje-na-projekt-kara-0159",
@@ -185,25 +202,6 @@
       "source_id_b": "6439647"
     }
   ],
-  "candidate_count": 1,
-  "candidates": [
-    {
-      "project_a": "p-dodatek-c-1-verejnopravni-smlouvy-o-poskytnuti-neinvesticni-dotace-z-r-0101",
-      "title_a": "Dodatek č. 1 veřejnoprávní smlouvy o poskytnutí neinvestiční dotace z rozpočtu města Lomnice nad Popelkou na akci Lomnice nad Popelkou - KOšov , obnova vodovodu",
-      "project_b": "p-verejnopravni-smlouva-o-poskytnuti-neinvesticni-dotace-z-rozpoctu-mest-0133",
-      "title_b": "Veřejnoprávní smlouva o poskytnutí neinvestiční dotace z rozpočtu města Lomnice nad Popelkou - Lomnice nad Popelkou - Košov - obnova vodovodu",
-      "kind": "contextual",
-      "confidence": "review",
-      "reason": "candidate_addendum_core_title",
-      "evidence": [
-        "49295934",
-        "meaningful_token_overlap=0.75",
-        "title_only"
-      ],
-      "source_a": "registr-smluv",
-      "source_id_a": "32731945",
-      "source_b": "registr-smluv",
-      "source_id_b": "29417636"
-    }
-  ]
+  "candidate_count": 0,
+  "candidates": []
 }
