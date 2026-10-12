@@ -10,7 +10,7 @@ Projekt spojuje veřejně dostupná data z profilu zadavatele na Vhodném uveře
 
 ## Aktuální stav
 
-**Stav ověřený 9. 10. 2026 v 11:10 UTC.** Oprava extrakce starých dokumentů Word je v commitu `282ac53`; regresní testy v navazujícím běhu prošly a u záznamu `3861664` už je extrahovaný text (6 034 znaků). Nejnovější uložený manifest Registru smluv eviduje 64 zpracovaných dumpů a `history_complete=false`; historický import pokračuje po menších dávkách. Aktuální synchronizace může být při nasazení nové opravy nahrazena novým během.
+**Stav ověřený 12. 10. 2026.** Poslední ověřený běh synchronizace je [#308](https://github.com/ReneHlouzek/lomnice-verejne-zakazky/actions/runs/38130332993), úspěšně dokončen 11. 10. 2026. Import Registru smluv eviduje 100 zpracovaných dumpů z 124 a `history_complete=false`; zbývající historické měsíce se doplňují postupně. Manifest příloh k 11. 10. uvádí 92 objevených příloh, 23 stažených souborů a 87 extrahovaných textů. U záznamu `3861664` je text přílohy úspěšně extrahován (6 034 znaků). Dne 12. 10. byla doplněna logika a regresní testy pro potvrzení návaznosti podle data původní smlouvy výslovně uvedeného v primárním dokumentu; výsledek nového běhu je nutné ověřit po doběhnutí workflow.
 
 | Ukazatel | Aktuální hodnota |
 |---|---:|
@@ -27,7 +27,7 @@ Projekt spojuje veřejně dostupná data z profilu zadavatele na Vhodném uveře
 | Potvrzené vazby mezi smlouvami a dodatky | 11 |
 | Kandidátní vazby čekající na ruční ověření | 1 |
 
-Počty 109 a 110 u Registru smluv popisují různé vrstvy pipeline: přehled pokrytí organizace a počet záznamů načtených do importu. Nejde o zaměnitelné metriky. Stejně tak počet projektových celků není počtem jednotlivých smluv nebo zakázek.
+Počty 109 a 110 u Registru smluv popisují různé vrstvy pipeline: přehled pokrytí organizace a počet záznamů načtených do importu. Nejde o zaměnitelné metriky. Stejně tak počet projektových celků není počtem jednotlivých smluv nebo zakázek. Údaje v tabulce jsou poslední vygenerovaný datový stav; nová logika se do výsledných počtů promítne až po dokončení synchronizace.
 
 ### Stav propojování smluv a dodatků
 
@@ -39,7 +39,7 @@ Aktuálně je v `data/contract_links.json` **11 potvrzených vazeb** a **1 kandi
 - **Nájem nebytových prostor pro OOP:** dodatky č. 1 a 2 jsou propojené se základní smlouvou přes explicitní ID.
 - **Obnova rybníka Matouš:** dodatek č. 1 je propojený přes explicitní ID.
 - **Účelová dotace Libereckému kraji – havárie zdi:** dodatek č. 1 a dodatek č. 2 jsou propojené se základní smlouvou; mezi dodatky je rovněž zaznamenána explicitní návaznost.
-- **Košov – obnova vodovodu:** záznam dodatku č. 1 (ID Registru smluv `32731945`) je pouze kandidátem vůči základní smlouvě `29417636`. Shoduje se název projektu, ale důkaz zatím stojí jen na názvu; vazbu **nepovyšovat na potvrzenou bez kontroly primárního dokumentu nebo metadat Registru smluv**.
+- **Košov – obnova vodovodu:** v primárním textu dodatku `32731945` je výslovně uvedeno, že původní smlouva byla uzavřena 11. 12. 2024; tento den odpovídá datu podpisu základní smlouvy `29417636`. Oba dokumenty uvádějí stejný projekt i smluvní strany. Do `scripts/build_contract_links.py` byla doplněna konzervativní kontrola této kombinace (datum z primárního dokumentu + shoda projektu + společné IČO strany) a regresní testy. Vygenerovaný `data/contract_links.json` zatím stále odráží předchozí běh; po synchronizaci ověřit, že se vazba zapíše s důkazem `explicit_parent_contract_date_and_project`.
 
 Relevantní implementace:
 - `scripts/import_registr_smluv.py` – import metadat Registru smluv a získávání informací o návazných smlouvách.
@@ -173,3 +173,16 @@ Tento záznam doplňuje předávací plán; nejde o potvrzení dokončení celé
 - **Opatrnost při propojování:** metadata dodatku stále nemají vyplněné „ID návazné smlouvy“. Vazba Košov zůstává kandidátem, dokud nebude prohlédnut extrahovaný text dodatku; pouhá shoda názvu nestačí.
 - **Historický import:** dávku jsem snížil z 36 na 12 měsíců, protože dlouhý běh se blížil limitu jobu. Poslední uložený stav je 64 zpracovaných dumpů z 124 a `history_complete=false`. Další synchronizace má pokračovat od nejstaršího nezpracovaného měsíce.
 - **Kontrola příloh:** záznam `37367969` zůstává `content_mismatch_review`; nesoulad názvu Želechy a obsahu je nevyřešený a nesmí být považován za důkaz pro tento projekt.
+
+## Předání práce – 12. 10. 2026
+
+- **Poslední ověřená synchronizace:** běh [#308](https://github.com/ReneHlouzek/lomnice-verejne-zakazky/actions/runs/38130332993) skončil úspěšně 11. 10. 2026. Historický import ale není kompletní: 100/124 dumpů, `history_complete=false`.
+- **Přílohy:** manifest aktualizovaný 11. 10. 2026 uvádí 110 záznamů zkontrolovaných, 92 příloh deklarovaných/objevených, 23 souborů stažených a 87 textů extrahovaných. Extrahovaný text `3861664` je k dispozici.
+- **Nová oprava pro vazby:** u dodatku Košov `32731945` obsah primárního dokumentu odkazuje na původní smlouvu uzavřenou 11. 12. 2024, což odpovídá základní smlouvě `29417636`. Doplněna kontrola, která vyžaduje současně shodu data původní smlouvy, významného překryvu názvu projektu a alespoň jednoho společného oficiálního IČO. Doplňující regresní testy pokrývají pozitivní i negativní případ.
+- **Co udělat dál, v tomto pořadí:**
+  1. Ověřit výsledek nového běhu `sync.yml` spuštěného změnou kódu: oba joby s testy musí projít; zkontrolovat, že Košov `32731945` → `29417636` přibyl mezi potvrzené vazby a v `evidence` má `document_original_contract_date=2024-12-11`.
+  2. Zkontrolovat, zda se do `data/documents/registr-smluv/manifest.json` dostaly nové či chybějící přílohy. Zejména `28586216` a `33854349` zatím nemají v aktuálním manifestu extrahovaný text; `25099803` text má, ale jeho rodičovská smlouva ještě není doložena.
+  3. Projít texty `25099803`, `28586216` a `33854349` a potvrzovat vztahy jen z explicitního ID, čísla smlouvy nebo jednoznačné identifikace původní smlouvy v dokumentu. Obecný název „dodatek k veřejnoprávní smlouvě“ nestačí.
+  4. Zachovat `37367969` jako případ s `content_mismatch_review`; archivovaný text přílohy se týká Hodonína/T-Mobile a nesmí být použit jako důkaz pro lomnický projekt, dokud se nezíská správná příloha.
+  5. Pokračovat v historickém importu Registru smluv, dokud manifest nepotvrdí všech 124 dumpů; po každém běhu zaznamenat skutečný počet a stav, ne odvozovat dokončení pouze z úspěšného workflow.
+  6. Po ověření výstupů aktualizovat tabulku aktuálního stavu a tento předávací blok. Nezaměňovat úspěšné nasazení webu za úspěšnou synchronizaci dat.
