@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-12T20:49:06Z",
+  "updated_at": "2026-10-12T21:13:44Z",
   "pages_checked": 35,
   "declared_documents": 90,
   "documents_discovered": 53,
@@ -134,7 +134,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+      "error": "VU page unavailable via direct and proxy fallbacks: 422 Client Error: Unprocessable Entity for url: https://r.jina.ai/https://www.vhodne-uverejneni.cz/zakazka/oprava-strechy-domu-c-p-32-ul-antala-staska-v-lomnici-nad-popelkou"
     },
     {
       "source": "vhodne-uverejneni",
@@ -987,7 +987,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+      "error": "VU page unavailable via direct and proxy fallbacks: 422 Client Error: Unprocessable Entity for url: https://r.jina.ai/https://www.vhodne-uverejneni.cz/zakazka/karavanove-stani-koupaliste-lomnice-nad-popelkou"
     },
     {
       "source": "vhodne-uverejneni",
