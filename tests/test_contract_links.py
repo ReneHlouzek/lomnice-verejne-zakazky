@@ -273,3 +273,32 @@ def test_document_date_without_shared_party_or_project_does_not_confirm(monkeypa
     links, candidates = build_links([base, addendum])
     assert links == []
     assert candidates == []
+
+
+def test_document_original_contract_date_is_extracted_from_text(tmp_path, monkeypatch):
+    text_file = tmp_path / "addendum.txt"
+    text_file.write_text(
+        "Dodatek ke smlouvě o dotaci uzavřené dne 11. 12. 2024.\n"
+        "Původní smlouva byla uzavřena dne 11. 12. 2024.",
+        encoding="utf-8",
+    )
+    manifest = tmp_path / "manifest.json"
+    manifest.write_text(
+        __import__("json").dumps({
+            "records": [{
+                "source_id": "add",
+                "documents": [{"text_file": str(text_file)}],
+            }]
+        }),
+        encoding="utf-8",
+    )
+    monkeypatch.setattr(link_builder, "DOC_MANIFEST", manifest)
+    assert link_builder.document_referenced_contract_dates() == {
+        "add": ["2024-12-11"]
+    }
+
+
+def test_shared_party_identity_normalizes_ico_digits():
+    a = {"buyer_ico": "00275905", "supplier_ico": "49295934"}
+    b = {"publisher_ico": "IČO: 00275905", "supplier_ico": None}
+    assert link_builder.shared_party_identity(a, b)
