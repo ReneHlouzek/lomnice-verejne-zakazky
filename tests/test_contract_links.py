@@ -3,6 +3,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
+import build_contract_links as link_builder
 from build_contract_links import build_links
 
 
@@ -219,4 +220,56 @@ def test_explicit_related_addenda_are_linked():
     assert len(links) == 1
     assert links[0]["reason"] == "explicit_related_contract_id"
     assert "related_contract_id=2264882" in links[0]["evidence"] or "related_contract_id=845225" in links[0]["evidence"]
+    assert candidates == []
+
+
+def test_primary_document_original_signing_date_confirms_addendum(monkeypatch):
+    monkeypatch.setattr(link_builder, "DOCUMENT_PARENT_DATES", {"add": ["2024-12-11"]})
+    base = {
+        "id": "base", "title": "Košov - obnova vodovodu",
+        "sources": [{"record": {
+            "source": "registr-smluv", "source_id": "base",
+            "title": "Veřejnoprávní smlouva o poskytnutí neinvestiční dotace - Košov, obnova vodovodu",
+            "buyer_ico": "00275905", "supplier_ico": "49295934",
+            "signed_date": "2024-12-11",
+        }}],
+    }
+    addendum = {
+        "id": "add", "title": "Dodatek č. 1 - Košov - obnova vodovodu",
+        "sources": [{"record": {
+            "source": "registr-smluv", "source_id": "add",
+            "title": "Dodatek č. 1 veřejnoprávní smlouvy o poskytnutí neinvestiční dotace - Košov, obnova vodovodu",
+            "buyer_ico": "00275905", "supplier_ico": "49295934",
+            "signed_date": "2025-09-22",
+        }}],
+    }
+    links, candidates = build_links([base, addendum])
+    assert len(links) == 1
+    assert links[0]["reason"] == "explicit_parent_contract_date_and_project"
+    assert "document_original_contract_date=2024-12-11" in links[0]["evidence"]
+    assert candidates == []
+
+
+def test_document_date_without_shared_party_or_project_does_not_confirm(monkeypatch):
+    monkeypatch.setattr(link_builder, "DOCUMENT_PARENT_DATES", {"add": ["2024-12-11"]})
+    base = {
+        "id": "base", "title": "Oprava vodovodu Hrádka",
+        "sources": [{"record": {
+            "source": "registr-smluv", "source_id": "base",
+            "title": "Veřejnoprávní smlouva - oprava vodovodu Hrádka",
+            "buyer_ico": "00275905", "supplier_ico": "11111111",
+            "signed_date": "2024-12-11",
+        }}],
+    }
+    addendum = {
+        "id": "add", "title": "Dodatek č. 1 - Košov - obnova vodovodu",
+        "sources": [{"record": {
+            "source": "registr-smluv", "source_id": "add",
+            "title": "Dodatek č. 1 veřejnoprávní smlouvy - Košov, obnova vodovodu",
+            "buyer_ico": "00275905", "supplier_ico": "49295934",
+            "signed_date": "2025-09-22",
+        }}],
+    }
+    links, candidates = build_links([base, addendum])
+    assert links == []
     assert candidates == []
