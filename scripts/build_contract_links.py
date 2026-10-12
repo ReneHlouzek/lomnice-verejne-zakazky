@@ -67,8 +67,8 @@ def document_referenced_contract_dates():
         return {}
     out = {}
     pattern = re.compile(
-        r"\\b(?:smlouvy|smlouva)\\b.{0,260}?\\b(?:uzavřen[áéou]*|ze dne)\\s*(?:dne\\s*)?"
-        r"(\\d{1,2}\\.\\s*\\d{1,2}\\.\\s*\\d{4})",
+        r"\b(?:smlouvy|smlouva)\b.{0,260}?\b(?:uzavřen[áéou]*|ze dne)\s*(?:dne\s*)?"
+        r"(\d{1,2}\.\s*\d{1,2}\.\s*\d{4})",
         flags=re.IGNORECASE | re.DOTALL,
     )
     for row in manifest.get("records", []):
@@ -85,7 +85,7 @@ def document_referenced_contract_dates():
             except OSError:
                 continue
             for match in pattern.finditer(body):
-                raw = re.sub(r"\\s+", "", match.group(1))
+                raw = re.sub(r"\s+", "", match.group(1))
                 try:
                     from datetime import datetime
                     dates.append(datetime.strptime(raw, "%d.%m.%Y").date().isoformat())
@@ -102,8 +102,8 @@ DOCUMENT_PARENT_DATES = document_referenced_contract_dates()
 def shared_party_identity(a, b):
     """Require at least one shared, non-empty official party identifier."""
     keys = ("buyer_ico", "supplier_ico", "publisher_ico")
-    left = {re.sub(r"\\D", "", str(a.get(key) or "")) for key in keys}
-    right = {re.sub(r"\\D", "", str(b.get(key) or "")) for key in keys}
+    left = {re.sub(r"\D", "", str(a.get(key) or "")) for key in keys}
+    right = {re.sub(r"\D", "", str(b.get(key) or "")) for key in keys}
     left = {value for value in left if len(value) == 8}
     right = {value for value in right if len(value) == 8}
     return bool(left & right)
