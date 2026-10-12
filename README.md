@@ -10,7 +10,7 @@ Projekt spojuje veřejně dostupná data z profilu zadavatele na Vhodném uveře
 
 ## Aktuální stav
 
-**Stav ověřený 12. 10. 2026.** Poslední ověřený běh synchronizace je [#308](https://github.com/ReneHlouzek/lomnice-verejne-zakazky/actions/runs/38130332993), úspěšně dokončen 11. 10. 2026. Import Registru smluv eviduje 100 zpracovaných dumpů z 124 a `history_complete=false`; zbývající historické měsíce se doplňují postupně. Manifest příloh k 11. 10. uvádí 92 objevených příloh, 23 stažených souborů a 87 extrahovaných textů. U záznamu `3861664` je text přílohy úspěšně extrahován (6 034 znaků). Dne 12. 10. byla doplněna logika a regresní testy pro potvrzení návaznosti podle data původní smlouvy výslovně uvedeného v primárním dokumentu; výsledek nového běhu je nutné ověřit po doběhnutí workflow.
+**Stav ověřený 12. 10. 2026, 20:30 UTC.** Nejnovější běh synchronizace [#38297227184](https://github.com/ReneHlouzek/lomnice-verejne-zakazky/actions/runs/38297227184) skončil chybou v regresním testu `test_document_original_contract_date_is_extracted_from_text`; 41 testů prošlo a 1 selhal. Příčina: extrakční regulární výraz nepokrýval český tvar „smlouvě“. Oprava byla zapsána do `scripts/build_contract_links.py` v commitu `3c373849a6f6c1070b0018bace1d6e026ad2c403`; čeká se na výsledek nového běhu. Poslední úspěšný běh synchronizace je [#38238628126](https://github.com/ReneHlouzek/lomnice-verejne-zakazky/actions/runs/38238628126), dokončený 12. 10. 2026 v 11:53 UTC. Aktuální `data/registr_smluv/manifest.json` uvádí 110 záznamů a `history_complete=true`. Manifest dokumentů aktualizovaný 12. 10. v 19:42 UTC uvádí 117 objevených příloh a 112 textů dostupných v archivu; 5 souborů je evidováno jako nově stažených v posledním běhu. Výstup `data/contract_links.json` obsahuje 12 potvrzených vazeb a 0 kandidátů, ale nově změněná logika musí projít testy a následnou synchronizací, než bude její výstup považován za ověřený.
 
 | Ukazatel | Aktuální hodnota |
 |---|---:|
@@ -24,8 +24,8 @@ Projekt spojuje veřejně dostupná data z profilu zadavatele na Vhodném uveře
 | Smlouvy se změnami / dodatky | 16 |
 | Smlouvy bez rozpoznané zakázky | 69 |
 | Ostatní záznamy | 31 |
-| Potvrzené vazby mezi smlouvami a dodatky | 11 |
-| Kandidátní vazby čekající na ruční ověření | 1 |
+| Potvrzené vazby mezi smlouvami a dodatky | 12 |
+| Kandidátní vazby čekající na ruční ověření | 0 |
 
 Počty 109 a 110 u Registru smluv popisují různé vrstvy pipeline: přehled pokrytí organizace a počet záznamů načtených do importu. Nejde o zaměnitelné metriky. Stejně tak počet projektových celků není počtem jednotlivých smluv nebo zakázek. Údaje v tabulce jsou poslední vygenerovaný datový stav; nová logika se do výsledných počtů promítne až po dokončení synchronizace.
 
@@ -33,7 +33,7 @@ Počty 109 a 110 u Registru smluv popisují různé vrstvy pipeline: přehled po
 
 Vazby se potvrzují jen při explicitním identifikátoru návazné smlouvy nebo při dostatečně konkrétním čísle smlouvy. Podobnost názvu sama o sobě není důkazem a má vytvářet nanejvýš kandidáta k ruční kontrole.
 
-Aktuálně je v `data/contract_links.json` **11 potvrzených vazeb** a **1 kandidát**:
+V posledním vygenerovaném `data/contract_links.json` je **12 potvrzených vazeb** a **0 kandidátů**; po opravě testu je potřeba znovu ověřit nový běh synchronizace:
 
 - **Karavanové stání:** dodatky č. 1 a 2 jsou propojené se základní smlouvou přes explicitní ID; dodatek č. 3 přes číslo smlouvy.
 - **Nájem nebytových prostor pro OOP:** dodatky č. 1 a 2 jsou propojené se základní smlouvou přes explicitní ID.
@@ -105,7 +105,7 @@ Kontrolní signál sám o sobě **není důkazem pochybení, nehospodárnosti an
 
 Aktuální data a kontrola kódu ukazují zejména na tyto oblasti, které je potřeba dále rozvíjet:
 
-- **Vazby dodatků:** implementace už propojuje explicitní návazná ID a konkrétní čísla smluv a zvlášť eviduje kandidáty k ručnímu ověření. Přesto je potvrzeno jen 9 vazeb; řada dodatků zůstává nepropojena, protože zdrojová metadata neobsahují jednoznačný odkaz na základní smlouvu.
+- **Vazby dodatků:** implementace už propojuje explicitní návazná ID a konkrétní čísla smluv a zvlášť eviduje kandidáty k ručnímu ověření. V posledním vygenerovaném výstupu je potvrzeno 12 vazeb; další dodatky mohou zůstávat nepropojené, protože zdrojová metadata neobsahují jednoznačný odkaz na základní smlouvu.
 - **Úplnost finanční historie:** pokud dodatek není propojen nebo u něj není dostupná cena, časová osa ani výpočet změny nemusí zachycovat úplný vývoj smluvní ceny.
 - **Dokumenty:** počet dokumentů deklarovaný zdrojem nemusí odpovídat počtu stažených nebo textově zpracovaných dokumentů. Dostupnost souboru a úspěšná extrakce textu jsou odlišné skutečnosti.
 - **Klasifikace:** smlouva z Registru smluv nemusí být veřejnou zakázkou. Typ záznamu, stav zakázky a signál možné souvislosti se zakázkou je proto nutné interpretovat odděleně.
@@ -116,7 +116,7 @@ Prioritou dalšího vývoje je spolehlivé hierarchické propojení základních
 
 ## Předání práce pro nový chat – aktuální úkoly
 
-Následující seznam je pracovní plán navázaný na stav k 9. 10. 2026. Za hotový úkol považuj pouze to, co je potvrzené v datech, primárním dokumentu nebo úspěšném běhu příslušného workflow.
+Následující seznam je průběžně aktualizovaný pracovní plán; starší záznamy níže zachovávají auditní historii. Za hotový úkol považuj pouze to, co je potvrzené v datech, primárním dokumentu nebo úspěšném běhu příslušného workflow.
 
 1. **Ověřit nejnovější běh synchronizace.** V GitHub Actions otevřít workflow `.github/workflows/sync.yml`, zkontrolovat poslední běh, jednotlivé joby a testy. Nezaměňovat workflow publikace webu `pages.yml` za synchronizaci zdrojů.
 2. **Prověřit archiv textů dokumentů.** Zkontrolovat `data/documents/registr-smluv/`, manifesty a vazbu každého textu na ID zdrojového záznamu. V dosud nalezeném archivu je soubor `data/documents/registr-smluv/37367969/001.txt`; jeho obsah se podle rychlé kontroly týká smlouvy T-Mobile v Hodoníně, nikoli zjevně případu v Lomnici. Ověřit proto, zda jde o správně přiřazenou přílohu, a zkontrolovat filtr i párování dokumentů se zdrojovými ID.
@@ -127,7 +127,7 @@ Následující seznam je pracovní plán navázaný na stav k 9. 10. 2026. Za ho
 7. **Doplnit regresní testy a ověřit výstupy.** Pro každou změnu přidat test konkrétního případu i test proti falešnému propojení. Spustit `pytest -q tests`, zkontrolovat `data/contract_links.json`, návazné projektové JSON soubory a zobrazení v detailu webu. Poté ověřit výsledek běhu `sync.yml` a následné publikace.
 8. **Po dokončení aktualizovat tento README.** Uvést nové počty, konkrétní potvrzené vazby, otevřené kandidáty, výsledek testů a identifikátor/čas běhu workflow. Neuvádět jako hotové kroky, které byly pouze navrženy.
 
-**Výchozí bod pro pokračování:** `data/contract_links.json` má 9 potvrzených vazeb a 1 kandidáta (`32731945` → `29417636`). Další prioritou není bezhlavě zvyšovat počet vazeb, ale ověřit dostupnost a správné přiřazení dokumentů a dohledat důkaz pro jednotlivé dosud nepropojené dodatky.
+**Výchozí bod pro pokračování k 12. 10. 2026:** poslední vygenerovaný `data/contract_links.json` má 12 potvrzených vazeb a 0 kandidátů; vazba Košov `32731945` → `29417636` je doložena primárním textem datem původní smlouvy, názvem projektu a společnými IČO. Aktuální blokátor je oprava testu data smlouvy, kterou je nutné ověřit úspěšným během `sync.yml`. Poté zkontrolovat nově extrahované dokumenty a projít nepropojené dodatky.
 
 ## Testy a lokální spuštění
 
@@ -186,3 +186,12 @@ Tento záznam doplňuje předávací plán; nejde o potvrzení dokončení celé
   4. Zachovat `37367969` jako případ s `content_mismatch_review`; archivovaný text přílohy se týká Hodonína/T-Mobile a nesmí být použit jako důkaz pro lomnický projekt, dokud se nezíská správná příloha.
   5. Pokračovat v historickém importu Registru smluv, dokud manifest nepotvrdí všech 124 dumpů; po každém běhu zaznamenat skutečný počet a stav, ne odvozovat dokončení pouze z úspěšného workflow.
   6. Po ověření výstupů aktualizovat tabulku aktuálního stavu a tento předávací blok. Nezaměňovat úspěšné nasazení webu za úspěšnou synchronizaci dat.
+
+
+## Průběžný audit – 12. 10. 2026, 20:30 UTC
+
+- **Zjištěná chyba workflow:** běh [#38297227184](https://github.com/ReneHlouzek/lomnice-verejne-zakazky/actions/runs/38297227184) selhal v obou testovacích jobech na testu `test_document_original_contract_date_is_extracted_from_text` (41 passed, 1 failed). Test odhalil, že regulární výraz nepokrýval tvar „smlouvě“. Oprava v `scripts/build_contract_links.py` je v commitu `3c373849a6f6c1070b0018bace1d6e026ad2c403`; po pushi ověřit nový běh a nepovažovat chybu za vyřešenou, dokud testy neprojdou.
+- **Poslední úspěšná synchronizace:** [#38238628126](https://github.com/ReneHlouzek/lomnice-verejne-zakazky/actions/runs/38238628126), úspěch 12. 10. 2026 v 11:53 UTC. Manifest Registru smluv hlásí 110 záznamů a `history_complete=true`.
+- **Vazby:** aktuálně uložený `data/contract_links.json` má 12 potvrzených vazeb a 0 kandidátů. Vazba Košov `32731945` → `29417636` má důkazy `document_original_contract_date=2024-12-11` a `document_project_title_overlap=0.75`; sdílená identita smluvní strany se ověřuje z oficiálních IČO. Výstup bude znovu přepočítán až v úspěšném běhu po opravě.
+- **Dokumenty:** manifest `data/documents/registr-smluv/manifest.json` uvádí 117 objevených příloh a 112 dostupných textů. Dokumenty `25099803` a `28586216` výslovně uvádějí původní investiční dotační smlouvu uzavřenou 22. 9. 2023 a projekt „Obnova vodovodu a kanalizace Jilemnická ulice“; záznam `33854349` odkazuje na smlouvu uzavřenou 5. 5. 2025 pro projekt BM 8. Následná synchronizace má ověřit, zda jsou příslušné základní smlouvy dostupné a zda je propojí důkaz data + projektu + IČO.
+- **Další kroky:** (1) ověřit nový běh `sync.yml` a testy; (2) zkontrolovat nové `data/contract_links.json` a projekty; (3) ověřit vztahy dodatků `25099803`, `28586216` a `33854349` k odpovídajícím základním smlouvám; (4) zachovat `37367969` jako `content_mismatch_review`, protože jeho archivovaný text se týká Hodonína/T-Mobile; (5) až po úspěšném běhu aktualizovat čísla a datum stavu v tomto README.
