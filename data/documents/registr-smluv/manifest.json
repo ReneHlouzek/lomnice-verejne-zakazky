@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-13T11:00:18Z",
+  "updated_at": "2026-10-14T09:07:01Z",
   "records_checked": 110,
   "attachments_declared": 117,
   "documents_discovered": 117,
@@ -277,7 +277,8 @@
           "bytes": 1315828,
           "content_type": "application/pdf",
           "text_available": false,
-          "text_chars": 0
+          "text_chars": 0,
+          "status": "retained_from_previous_run"
         }
       ],
       "status": "ok"
@@ -410,7 +411,8 @@
           "bytes": 159764,
           "content_type": "application/pdf",
           "text_available": false,
-          "text_chars": 0
+          "text_chars": 0,
+          "status": "retained_from_previous_run"
         }
       ],
       "status": "ok"
@@ -1806,7 +1808,8 @@
           "bytes": 1216639,
           "content_type": "application/pdf",
           "text_available": false,
-          "text_chars": 0
+          "text_chars": 0,
+          "status": "retained_from_previous_run"
         }
       ],
       "status": "ok"
@@ -1920,7 +1923,8 @@
           "bytes": 1842884,
           "content_type": "application/pdf",
           "text_available": false,
-          "text_chars": 0
+          "text_chars": 0,
+          "status": "retained_from_previous_run"
         },
         {
           "index": 2,
@@ -2006,7 +2010,8 @@
           "bytes": 1332836,
           "content_type": "application/pdf",
           "text_available": false,
-          "text_chars": 0
+          "text_chars": 0,
+          "status": "retained_from_previous_run"
         }
       ],
       "status": "ok"
