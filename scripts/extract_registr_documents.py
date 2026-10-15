@@ -95,7 +95,8 @@ def filename_content_mismatch(name:str, text:str|None)->bool:
     stem=decoded.rsplit("/",1)[-1].rsplit(".",1)[0]
     words=normalized_words(stem)
     generic={
-        "dodatek","smlouva","smlouvy","priloha","prilohy","dokument","scan",
+        "dodatek","smlouva","smlouvy","smlouve","smlouvou","smluvy","smluvni",
+        "priloha","prilohy","dokument","scan",
         "final","verze","navrh","podpis","podepsano","signed","document",
         "contract","agreement","attachment","copy","kopie","strana","strany",
         "cislo","castka","rozpocet","projekt","mesto","obec","kraj"
