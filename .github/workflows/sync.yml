@@ -14,7 +14,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: sync-verejne-zakazky
+  group: sync-verejne-zakazky-v2
   # Keep a running full sync alive when several code commits arrive in quick succession.
   cancel-in-progress: false
 
