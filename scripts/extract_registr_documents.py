@@ -109,7 +109,7 @@ def filename_content_mismatch(name:str, text:str|None)->bool:
     # none appears in the extracted body, retain the text but require review.
     return not bool(distinctive & body_words)
 
-def process(path:Path):
+def process(path:Path, previous_record=None):
     obj=json.loads(path.read_text(encoding="utf-8"))
     rec=obj.get("record",obj)
     sid=str(rec.get("source_id") or path.stem)
@@ -130,18 +130,36 @@ def process(path:Path):
         clean_name=clean_name.strip()
         item={"index":i,"name":clean_name,"url":url}
         existing=OUT/sid/f"{i:03d}.txt"
+        relative_text_path=f"data/documents/registr-smluv/{sid}/{i:03d}.txt"
+        cached_docs = {
+            int(doc.get("index") or 0): doc
+            for doc in (previous_record or {}).get("documents", [])
+            if isinstance(doc, dict)
+        }
+        cached_doc=cached_docs.get(i, {})
+        cache_url_matches=(cached_doc.get("url") == url)
+        cache_is_trusted=(
+            cache_url_matches
+            and cached_doc.get("text_file") == relative_text_path
+            and cached_doc.get("status") not in ("content_mismatch_review", "download_error")
+            and not cached_doc.get("refresh_error")
+        )
         if existing.exists():
             text=existing.read_text(encoding="utf-8",errors="replace")
-            item["text_available"]=bool(text)
-            item["text_chars"]=len(text)
-            item["text_file"]=f"data/documents/registr-smluv/{sid}/{i:03d}.txt"
-            if filename_content_mismatch(clean_name, text):
+            mismatch=filename_content_mismatch(clean_name, text)
+            if mismatch:
                 # Re-fetch flagged files instead of keeping stale or wrongly
                 # associated text forever. A fresh extraction below replaces
                 # the cached text and is checked again before being trusted.
                 item["status"]="content_mismatch_review"
                 item["content_check"]="distinctive_filename_terms_absent_from_text"
-            else:
+                item["text_available"]=bool(text)
+                item["text_chars"]=len(text)
+                item["text_file"]=relative_text_path
+            elif cache_is_trusted:
+                item["text_available"]=bool(text)
+                item["text_chars"]=len(text)
+                item["text_file"]=relative_text_path
                 item["status"]="retained_existing_text"
                 item["content_check"]="no_filename_mismatch_detected"
                 result["documents"].append(item)
@@ -201,7 +219,10 @@ def main():
     files=list(by_id.values())
     results=[]
     with ThreadPoolExecutor(max_workers=WORKERS) as pool:
-        futures={pool.submit(process,p):p for p in files}
+        futures={
+            pool.submit(process,p,previous.get(sid)):p
+            for sid,p in by_id.items()
+        }
         for fut in as_completed(futures):
             p=futures[fut]
             try: results.append(fut.result())
