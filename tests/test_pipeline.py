@@ -307,3 +307,11 @@ def test_registry_import_keeps_history_markers_for_current_filter():
         "processed_dumps": processed,
     }
     assert registr.processed_dumps_for_current_filter(current_manifest) == processed
+
+
+def test_generic_inflected_contract_words_do_not_trigger_filename_mismatch():
+    assert not doc_extractor.filename_content_mismatch(
+        "Dodatek%20%C4%8D.%202%20ke%20smlouv%C4%9B.pdf",
+        "Dodatek č. 2 veřejnoprávní smlouvy o poskytnutí dotace",
+    )
+
