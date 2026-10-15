@@ -39,6 +39,10 @@ def document_referenced_contract_numbers():
             continue
         refs = []
         for doc in row.get("documents", []):
+            # A known filename/content mismatch is not reliable evidence for
+            # contractual links, even when an extracted text file exists.
+            if doc.get("status") == "content_mismatch_review":
+                continue
             path = doc.get("text_file")
             if not path:
                 continue
@@ -77,6 +81,10 @@ def document_referenced_contract_dates():
             continue
         dates = []
         for doc in row.get("documents", []):
+            # Never infer parent contract identifiers/dates from a flagged
+            # attachment whose content does not match its declared filename.
+            if doc.get("status") == "content_mismatch_review":
+                continue
             path = doc.get("text_file")
             if not path:
                 continue
