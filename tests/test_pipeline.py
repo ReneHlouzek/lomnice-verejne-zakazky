@@ -393,3 +393,44 @@ def test_failed_refresh_keeps_mismatched_attachment_quarantined(tmp_path, monkey
     assert document["status"] == "content_mismatch_review"
     assert document["refresh_error"] == "temporary download failure"
 
+def test_changed_attachment_url_invalidates_cached_text(tmp_path, monkeypatch):
+    import json
+
+    documents_root = tmp_path / "documents"
+    cached_dir = documents_root / "123"
+    cached_dir.mkdir(parents=True)
+    cached_file = cached_dir / "001.txt"
+    cached_file.write_text("Old generic contract text.", encoding="utf-8")
+    source = tmp_path / "source.json"
+    current_url = "https://smlouvy.gov.cz/smlouva/soubor/2/ve%C5%99ejnopr.%20sml..doc"
+    source.write_text(json.dumps({
+        "record": {
+            "source_id": "123",
+            "title": "Veřejnoprávní smlouva",
+            "attachments": [{"url": current_url, "name": "ve%C5%99ejnopr.%20sml..doc"}],
+        }
+    }), encoding="utf-8")
+    monkeypatch.setattr(doc_extractor, "OUT", documents_root)
+    calls = []
+
+    def fake_extract(url):
+        calls.append(url)
+        return ({"url": url, "sha256": "new-hash", "bytes": 25}, "Fresh attachment text.")
+
+    monkeypatch.setattr(doc_extractor, "extract", fake_extract)
+    previous_record = {
+        "documents": [{
+            "index": 1,
+            "url": "https://smlouvy.gov.cz/smlouva/soubor/1/ve%C5%99ejnopr.%20sml..doc",
+            "text_file": "data/documents/registr-smluv/123/001.txt",
+            "status": "retained_existing_text",
+            "content_check": "no_filename_mismatch_detected",
+        }]
+    }
+
+    result = doc_extractor.process(source, previous_record)
+    document = result["documents"][0]
+    assert calls == [current_url]
+    assert document["sha256"] == "new-hash"
+    assert cached_file.read_text(encoding="utf-8") == "Fresh attachment text."
+
