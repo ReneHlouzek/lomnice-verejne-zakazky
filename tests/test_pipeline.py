@@ -322,3 +322,41 @@ def test_abbreviated_generic_contract_filename_does_not_trigger_mismatch():
         "Veřejnoprávní smlouva o poskytnutí investiční dotace z rozpočtu města",
     )
 
+def test_flagged_attachment_is_refetched_and_replaces_stale_text(tmp_path, monkeypatch):
+    import json
+
+    documents_root = tmp_path / "documents"
+    cached_dir = documents_root / "37367969"
+    cached_dir.mkdir(parents=True)
+    cached_file = cached_dir / "001.txt"
+    cached_file.write_text(
+        "T-Mobile Czech Republic, Hodonín, smlouva o služebnosti.",
+        encoding="utf-8",
+    )
+    source = tmp_path / "source.json"
+    source.write_text(json.dumps({
+        "record": {
+            "source_id": "37367969",
+            "title": "Dodatek pro Želechy",
+            "source_url": "https://smlouvy.gov.cz/smlouva/39741021",
+            "attachments": [{
+                "url": "https://smlouvy.gov.cz/smlouva/soubor/47902105/Zelechy%20Dodatek.docx",
+                "name": "Zelechy Dodatek.docx",
+            }],
+        }
+    }), encoding="utf-8")
+    monkeypatch.setattr(doc_extractor, "OUT", documents_root)
+
+    def fake_extract(url):
+        return ({"url": url, "sha256": "fresh-hash", "bytes": 42}, "Dodatek č. 1 pro Želechy.")
+
+    monkeypatch.setattr(doc_extractor, "extract", fake_extract)
+    result = doc_extractor.process(source)
+
+    document = result["documents"][0]
+    assert document["sha256"] == "fresh-hash"
+    assert document["content_check"] == "no_filename_mismatch_detected"
+    assert document.get("status") != "content_mismatch_review"
+    assert "Želechy" in cached_file.read_text(encoding="utf-8")
+    assert "T-Mobile" not in cached_file.read_text(encoding="utf-8")
+
