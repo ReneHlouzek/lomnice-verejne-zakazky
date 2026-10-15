@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-10-15T19:04:36Z",
+  "updated_at": "2026-10-15T19:20:22Z",
   "records_checked": 110,
   "attachments_declared": 117,
   "documents_discovered": 117,
-  "documents_downloaded": 5,
+  "documents_downloaded": 14,
   "documents_text_extracted": 112,
   "records": [
     {
@@ -87,7 +87,10 @@
           "text_chars": 2774,
           "text_file": "data/documents/registr-smluv/1078317/002.txt",
           "status": "content_mismatch_review",
-          "content_check": "distinctive_filename_terms_absent_from_text"
+          "content_check": "distinctive_filename_terms_absent_from_text",
+          "sha256": "f2de746014ccf641bf9149bf9d270caf3f03abef040a221125250962ca43bb78",
+          "bytes": 415372,
+          "content_type": "application/pdf"
         }
       ],
       "status": "ok"
@@ -293,10 +296,13 @@
           "name": "PRV_PRINT_OUTPUT_A.pdf",
           "url": "https://smlouvy.gov.cz/smlouva/soubor/19715331/PRV_PRINT_OUTPUT_A.pdf",
           "text_available": true,
-          "text_chars": 17254,
+          "text_chars": 17260,
           "text_file": "data/documents/registr-smluv/14454471/001.txt",
           "status": "content_mismatch_review",
-          "content_check": "distinctive_filename_terms_absent_from_text"
+          "content_check": "distinctive_filename_terms_absent_from_text",
+          "sha256": "4924a16781b79174a77a05bea1e2969fd4f14aae5848216f8e9a0bb0bb35d311",
+          "bytes": 352258,
+          "content_type": "application/pdf"
         }
       ],
       "status": "ok"
@@ -638,7 +644,10 @@
           "text_chars": 2920,
           "text_file": "data/documents/registr-smluv/2316654/001.txt",
           "status": "content_mismatch_review",
-          "content_check": "distinctive_filename_terms_absent_from_text"
+          "content_check": "distinctive_filename_terms_absent_from_text",
+          "sha256": "c46e38fc288782ca57e63307e3115991c1e89dbf1d7d15d8338fda4367af8d99",
+          "bytes": 584164,
+          "content_type": "application/pdf"
         }
       ],
       "status": "ok"
@@ -1073,8 +1082,8 @@
           "text_available": true,
           "text_chars": 3060,
           "text_file": "data/documents/registr-smluv/28586216/001.txt",
-          "status": "content_mismatch_review",
-          "content_check": "distinctive_filename_terms_absent_from_text"
+          "status": "retained_existing_text",
+          "content_check": "no_filename_mismatch_detected"
         }
       ],
       "status": "ok"
@@ -1150,7 +1159,10 @@
           "text_chars": 10782,
           "text_file": "data/documents/registr-smluv/30665684/001.txt",
           "status": "content_mismatch_review",
-          "content_check": "distinctive_filename_terms_absent_from_text"
+          "content_check": "distinctive_filename_terms_absent_from_text",
+          "sha256": "a82fd2a22ba4bf7c85edb758ee73b1829227a40c8317b75fd596f0b88d4da62b",
+          "bytes": 363432,
+          "content_type": "application/pdf"
         }
       ],
       "status": "ok"
@@ -1168,8 +1180,8 @@
           "text_available": true,
           "text_chars": 6286,
           "text_file": "data/documents/registr-smluv/31062824/001.txt",
-          "status": "content_mismatch_review",
-          "content_check": "distinctive_filename_terms_absent_from_text"
+          "status": "retained_existing_text",
+          "content_check": "no_filename_mismatch_detected"
         }
       ],
       "status": "ok"
@@ -1264,7 +1276,10 @@
           "text_chars": 10529,
           "text_file": "data/documents/registr-smluv/32292445/001.txt",
           "status": "content_mismatch_review",
-          "content_check": "distinctive_filename_terms_absent_from_text"
+          "content_check": "distinctive_filename_terms_absent_from_text",
+          "sha256": "a0f05859cc471dbfef27242e601f396bf064ceae7463ac3f9e1fd24c4833ab77",
+          "bytes": 343097,
+          "content_type": "application/pdf"
         }
       ],
       "status": "ok"
@@ -1358,8 +1373,8 @@
           "text_available": true,
           "text_chars": 5381,
           "text_file": "data/documents/registr-smluv/33854281/001.txt",
-          "status": "content_mismatch_review",
-          "content_check": "distinctive_filename_terms_absent_from_text"
+          "status": "retained_existing_text",
+          "content_check": "no_filename_mismatch_detected"
         }
       ],
       "status": "ok"
@@ -1397,7 +1412,10 @@
           "text_chars": 10640,
           "text_file": "data/documents/registr-smluv/34390649/001.txt",
           "status": "content_mismatch_review",
-          "content_check": "distinctive_filename_terms_absent_from_text"
+          "content_check": "distinctive_filename_terms_absent_from_text",
+          "sha256": "0bfd14b45434095451803263bb47e4898a16ce5337cd4658081be04571d1121f",
+          "bytes": 321573,
+          "content_type": "application/pdf"
         }
       ],
       "status": "ok"
@@ -1473,7 +1491,10 @@
           "text_chars": 23350,
           "text_file": "data/documents/registr-smluv/35224121/001.txt",
           "status": "content_mismatch_review",
-          "content_check": "distinctive_filename_terms_absent_from_text"
+          "content_check": "distinctive_filename_terms_absent_from_text",
+          "sha256": "73be134a6c4356c6c101ce5244f5e6d2070b3cbbcb408010c3a3ee27023fc4c2",
+          "bytes": 374545,
+          "content_type": "application/pdf"
         }
       ],
       "status": "ok"
@@ -1641,10 +1662,13 @@
           "name": "%C5%BDelechy%20-%20%20Dodatek%20%C4%8D.%201.docx",
           "url": "https://smlouvy.gov.cz/smlouva/soubor/47902105/%C5%BDelechy%20-%20%20Dodatek%20%C4%8D.%201.docx",
           "text_available": true,
-          "text_chars": 16817,
+          "text_chars": 2986,
           "text_file": "data/documents/registr-smluv/37367969/001.txt",
           "status": "content_mismatch_review",
-          "content_check": "distinctive_filename_terms_absent_from_text"
+          "content_check": "distinctive_filename_terms_absent_from_text",
+          "sha256": "5c9b7ad239c7781fb00e267c8ee05737f2ca1276dc2efb19af9d6b5dbc12ee8c",
+          "bytes": 32781,
+          "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
         }
       ],
       "status": "ok"
@@ -2022,10 +2046,13 @@
           "name": "PRV_PRINT_OUTPUT_A.pdf",
           "url": "https://smlouvy.gov.cz/smlouva/soubor/10964327/PRV_PRINT_OUTPUT_A.pdf",
           "text_available": true,
-          "text_chars": 17910,
+          "text_chars": 17916,
           "text_file": "data/documents/registr-smluv/7649691/001.txt",
           "status": "content_mismatch_review",
-          "content_check": "distinctive_filename_terms_absent_from_text"
+          "content_check": "distinctive_filename_terms_absent_from_text",
+          "sha256": "fbef8f1cf197271f50f4d290687aa417941c48e75cce8cf458e1864c3c6c4181",
+          "bytes": 260090,
+          "content_type": "application/pdf"
         }
       ],
       "status": "ok"
