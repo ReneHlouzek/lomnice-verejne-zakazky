@@ -165,8 +165,14 @@ def process(path:Path):
                 item["text_file"]=f"data/documents/registr-smluv/{sid}/{i:03d}.txt"
                 (outdir/f"{i:03d}.txt").write_text(text,encoding="utf-8")
         except Exception as exc:
-            item["status"]="download_error"
-            item["error"]=str(exc)
+            # If cached text was already known to mismatch the declared
+            # filename, a failed refresh must not clear that safety flag.
+            if item.get("content_check") == "distinctive_filename_terms_absent_from_text":
+                item["status"]="content_mismatch_review"
+                item["refresh_error"]=str(exc)
+            else:
+                item["status"]="download_error"
+                item["error"]=str(exc)
         result["documents"].append(item)
     return result
 
