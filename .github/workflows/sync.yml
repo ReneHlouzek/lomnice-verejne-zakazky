@@ -15,7 +15,8 @@ permissions:
 
 concurrency:
   group: sync-verejne-zakazky
-  cancel-in-progress: true
+  # Keep a running full sync alive when several code commits arrive in quick succession.
+  cancel-in-progress: false
 
 jobs:
   fetch-vu:
