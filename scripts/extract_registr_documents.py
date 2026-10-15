@@ -136,13 +136,16 @@ def process(path:Path):
             item["text_chars"]=len(text)
             item["text_file"]=f"data/documents/registr-smluv/{sid}/{i:03d}.txt"
             if filename_content_mismatch(clean_name, text):
+                # Re-fetch flagged files instead of keeping stale or wrongly
+                # associated text forever. A fresh extraction below replaces
+                # the cached text and is checked again before being trusted.
                 item["status"]="content_mismatch_review"
                 item["content_check"]="distinctive_filename_terms_absent_from_text"
             else:
                 item["status"]="retained_existing_text"
                 item["content_check"]="no_filename_mismatch_detected"
-            result["documents"].append(item)
-            continue
+                result["documents"].append(item)
+                continue
         try:
             meta,text=extract(url)
             item.update(meta)
