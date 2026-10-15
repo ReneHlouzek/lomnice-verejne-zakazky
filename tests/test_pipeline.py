@@ -315,3 +315,10 @@ def test_generic_inflected_contract_words_do_not_trigger_filename_mismatch():
         "Dodatek č. 2 veřejnoprávní smlouvy o poskytnutí dotace",
     )
 
+
+def test_abbreviated_generic_contract_filename_does_not_trigger_mismatch():
+    assert not doc_extractor.filename_content_mismatch(
+        "ve%C5%99ejnopr.%20sml..doc",
+        "Veřejnoprávní smlouva o poskytnutí investiční dotace z rozpočtu města",
+    )
+
