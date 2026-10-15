@@ -360,3 +360,36 @@ def test_flagged_attachment_is_refetched_and_replaces_stale_text(tmp_path, monke
     assert "Želechy" in cached_file.read_text(encoding="utf-8")
     assert "T-Mobile" not in cached_file.read_text(encoding="utf-8")
 
+def test_failed_refresh_keeps_mismatched_attachment_quarantined(tmp_path, monkeypatch):
+    import json
+
+    documents_root = tmp_path / "documents"
+    cached_dir = documents_root / "37367969"
+    cached_dir.mkdir(parents=True)
+    (cached_dir / "001.txt").write_text(
+        "T-Mobile Czech Republic, Hodonín.",
+        encoding="utf-8",
+    )
+    source = tmp_path / "source.json"
+    source.write_text(json.dumps({
+        "record": {
+            "source_id": "37367969",
+            "title": "Dodatek pro Želechy",
+            "attachments": [{
+                "url": "https://smlouvy.gov.cz/smlouva/soubor/47902105/Zelechy%20Dodatek.docx",
+                "name": "Zelechy Dodatek.docx",
+            }],
+        }
+    }), encoding="utf-8")
+    monkeypatch.setattr(doc_extractor, "OUT", documents_root)
+
+    def failed_extract(url):
+        raise RuntimeError("temporary download failure")
+
+    monkeypatch.setattr(doc_extractor, "extract", failed_extract)
+    result = doc_extractor.process(source)
+
+    document = result["documents"][0]
+    assert document["status"] == "content_mismatch_review"
+    assert document["refresh_error"] == "temporary download failure"
+
