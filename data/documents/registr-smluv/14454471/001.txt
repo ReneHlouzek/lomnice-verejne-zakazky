@@ -14,7 +14,7 @@ Regionální odbor SZIF:
 (dále jen "RO SZIF")
 RO Hradec Králové
 Adresa: Ulrichovo nám. 810, 500 02 Hradec Králové
-Oprávněný jednat ve věcech této Dohody:Ing. Aleš Sobel
+Oprávněný jednat ve věcech této Dohody: Ing. Aleš Sobel
 ředitel RO SZIF
 Dále jen "poskytovatel dotace".
 2. 
@@ -48,7 +48,7 @@ Strana 1
 Dohoda
 3.
 Dotace se poskytuje na následující Žádost o podporu z PRV:
-Opatření / podopatření / operace / záměr:Podpora provádění operací v rámci komunitně vedeného
+Opatření / podopatření / operace / záměr: Podpora provádění operací v rámci komunitně vedeného
 místního rozvoje
 Registrační číslo žádosti: 20/007/19210/451/173/001124
 Název projektu: Revitalizace veřejného prostranství na hřbitově
@@ -61,11 +61,11 @@ poskytnuta dotace (Kč)
 Výdaje, ze kterých je stanovena dotace
 (Kč)
 499.996,00  Kč
-Celková výše přiznané dotace (Kč, %)399.996,00  Kč
+Celková výše přiznané dotace (Kč, %) 399.996,00  Kč
 80,0  %
-Příspěvek společenství (EU)(Kč, %)255.997,00  Kč
+Příspěvek společenství (EU)(Kč, %) 255.997,00  Kč
 64,0  %
-Příspěvek z národních zdrojů (Kč, %)143.999,00  Kč
+Příspěvek z národních zdrojů (Kč, %) 143.999,00  Kč
 36,0  %
 Dále jen "žádost".
 III.
@@ -99,7 +99,7 @@ V.
 Termíny
 1.
 Příjemce dotace se zavazuje dodržet dohodnutý termín předložení Žádosti o platbu.
-Termín předložení Žádosti o platbu:31.07.2021
+Termín předložení Žádosti o platbu: 31.07.2021
 2. 
 V případě prodlení s předložením Žádosti o platbu bude poskytovatelem uplatněna sankce dle Pravidel.
 VI.
