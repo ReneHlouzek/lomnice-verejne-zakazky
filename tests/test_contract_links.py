@@ -302,3 +302,30 @@ def test_shared_party_identity_normalizes_ico_digits():
     a = {"buyer_ico": "00275905", "supplier_ico": "49295934"}
     b = {"publisher_ico": "IČO: 00275905", "supplier_ico": None}
     assert link_builder.shared_party_identity(a, b)
+
+
+def test_mismatched_attachment_text_is_ignored_for_contract_evidence(tmp_path, monkeypatch):
+    text_file = tmp_path / "mismatched.txt"
+    text_file.write_text(
+        "Smlouva OLP/1234/2024 uzavřená dne 11. 12. 2024.",
+        encoding="utf-8",
+    )
+    manifest = tmp_path / "manifest.json"
+    manifest.write_text(
+        __import__("json").dumps({
+            "records": [{
+                "source_id": "add",
+                "documents": [{
+                    "text_file": "mismatched.txt",
+                    "status": "content_mismatch_review",
+                }],
+            }]
+        }),
+        encoding="utf-8",
+    )
+    monkeypatch.setattr(link_builder, "ROOT", tmp_path)
+    monkeypatch.setattr(link_builder, "DOC_MANIFEST", manifest)
+
+    assert link_builder.document_referenced_contract_numbers() == {}
+    assert link_builder.document_referenced_contract_dates() == {}
+
