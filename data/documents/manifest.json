@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T09:06:52Z",
+  "updated_at": "2026-10-15T08:44:39Z",
   "pages_checked": 35,
   "declared_documents": 90,
   "documents_discovered": 53,
@@ -84,7 +84,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: 422 Client Error: Unprocessable Entity for url: https://r.jina.ai/https://www.vhodne-uverejneni.cz/zakazka/vydani-obrazove-publikace-lomnice-nad-popelkou-historie-skolstvi"
+      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
     },
     {
       "source": "vhodne-uverejneni",
@@ -114,7 +114,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: 422 Client Error: Unprocessable Entity for url: https://r.jina.ai/https://www.vhodne-uverejneni.cz/zakazka/obnova-mvn-technolen-lomnice-nad-popelkou"
+      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
     },
     {
       "source": "vhodne-uverejneni",
@@ -1008,7 +1008,7 @@
       "document_count_declared": 15,
       "documents": [],
       "status": "page_error",
-      "error": "unbalanced parenthesis at position 11"
+      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
     }
   ],
   "note": "Archives public document metadata and extracted PDF text. Original binaries are not committed; inaccessible documents are retained in the manifest as errors."
