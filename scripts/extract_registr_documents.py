@@ -96,7 +96,7 @@ def filename_content_mismatch(name:str, text:str|None)->bool:
     words=normalized_words(stem)
     generic={
         "dodatek","smlouva","smlouvy","smlouve","smlouvou","smluvy","smluvni",
-        "priloha","prilohy","dokument","scan",
+        "verejnopr","sml","priloha","prilohy","dokument","scan",
         "final","verze","navrh","podpis","podepsano","signed","document",
         "contract","agreement","attachment","copy","kopie","strana","strany",
         "cislo","castka","rozpocet","projekt","mesto","obec","kraj"
