@@ -155,6 +155,9 @@ def process(path:Path):
                 item["status"]="content_mismatch_review"
                 item["content_check"]="distinctive_filename_terms_absent_from_text"
             elif text:
+                # A successful fresh extraction supersedes any stale mismatch
+                # status inherited from the cached text.
+                item.pop("status", None)
                 item["content_check"]="no_filename_mismatch_detected"
             if text:
                 outdir=OUT/sid
