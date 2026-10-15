@@ -10,7 +10,7 @@ Projekt spojuje veřejně dostupná data z profilu zadavatele na Vhodném uveře
 
 ## Aktuální stav
 
-**Stav ověřený 12. 10. 2026, 20:30 UTC.** Nejnovější běh synchronizace [#38297227184](https://github.com/ReneHlouzek/lomnice-verejne-zakazky/actions/runs/38297227184) skončil chybou v regresním testu `test_document_original_contract_date_is_extracted_from_text`; 41 testů prošlo a 1 selhal. Příčina: extrakční regulární výraz nepokrýval český tvar „smlouvě“. Oprava byla zapsána do `scripts/build_contract_links.py` v commitu `3c373849a6f6c1070b0018bace1d6e026ad2c403`; čeká se na výsledek nového běhu. Poslední úspěšný běh synchronizace je [#38238628126](https://github.com/ReneHlouzek/lomnice-verejne-zakazky/actions/runs/38238628126), dokončený 12. 10. 2026 v 11:53 UTC. Aktuální `data/registr_smluv/manifest.json` uvádí 110 záznamů a `history_complete=true`. Manifest dokumentů aktualizovaný 12. 10. v 19:42 UTC uvádí 117 objevených příloh a 112 textů dostupných v archivu; 5 souborů je evidováno jako nově stažených v posledním běhu. Výstup `data/contract_links.json` obsahuje 12 potvrzených vazeb a 0 kandidátů, ale nově změněná logika musí projít testy a následnou synchronizací, než bude její výstup považován za ověřený.
+**Stav ověřený 15. 10. 2026, 17:40 UTC.** Nejnovější synchronizace [#319 / běh 38704625526](https://github.com/ReneHlouzek/lomnice-verejne-zakazky/actions/runs/38704625526) skončila 15. 10. 2026 v 08:45 UTC úspěšně; joby `fetch-registr`, `fetch-vu` a `build` mají `success`. Tím je potvrzeno, že oprava extrakce data původní smlouvy prošla navazující pipeline. Manifest Registru smluv uvádí 110 načtených záznamů a `history_complete=true`. Manifest dokumentů aktualizovaný 15. 10. v 08:44:45 UTC eviduje 117 objevených příloh a 112 dostupných textů; v posledním běhu bylo staženo 5 dokumentů. `data/contract_links.json` obsahuje 12 potvrzených vazeb a 0 kandidátů.
 
 | Ukazatel | Aktuální hodnota |
 |---|---:|
@@ -27,19 +27,19 @@ Projekt spojuje veřejně dostupná data z profilu zadavatele na Vhodném uveře
 | Potvrzené vazby mezi smlouvami a dodatky | 12 |
 | Kandidátní vazby čekající na ruční ověření | 0 |
 
-Počty 109 a 110 u Registru smluv popisují různé vrstvy pipeline: přehled pokrytí organizace a počet záznamů načtených do importu. Nejde o zaměnitelné metriky. Stejně tak počet projektových celků není počtem jednotlivých smluv nebo zakázek. Údaje v tabulce jsou poslední vygenerovaný datový stav; nová logika se do výsledných počtů promítne až po dokončení synchronizace.
+Počty 109 a 110 u Registru smluv popisují různé vrstvy pipeline: přehled pokrytí organizace a počet záznamů načtených do importu. Nejde o zaměnitelné metriky. Stejně tak počet projektových celků není počtem jednotlivých smluv nebo zakázek. Údaje v tabulce odpovídají indexu vygenerovanému 15. 10. 2026 v 08:45 UTC.
 
 ### Stav propojování smluv a dodatků
 
 Vazby se potvrzují jen při explicitním identifikátoru návazné smlouvy nebo při dostatečně konkrétním čísle smlouvy. Podobnost názvu sama o sobě není důkazem a má vytvářet nanejvýš kandidáta k ruční kontrole.
 
-V posledním vygenerovaném `data/contract_links.json` je **12 potvrzených vazeb** a **0 kandidátů**; po opravě testu je potřeba znovu ověřit nový běh synchronizace:
+V posledním vygenerovaném `data/contract_links.json` je **12 potvrzených vazeb** a **0 kandidátů**; poslední synchronizace #319 úspěšně dokončila všechny tři joby:
 
 - **Karavanové stání:** dodatky č. 1 a 2 jsou propojené se základní smlouvou přes explicitní ID; dodatek č. 3 přes číslo smlouvy.
 - **Nájem nebytových prostor pro OOP:** dodatky č. 1 a 2 jsou propojené se základní smlouvou přes explicitní ID.
 - **Obnova rybníka Matouš:** dodatek č. 1 je propojený přes explicitní ID.
 - **Účelová dotace Libereckému kraji – havárie zdi:** dodatek č. 1 a dodatek č. 2 jsou propojené se základní smlouvou; mezi dodatky je rovněž zaznamenána explicitní návaznost.
-- **Košov – obnova vodovodu:** v primárním textu dodatku `32731945` je výslovně uvedeno, že původní smlouva byla uzavřena 11. 12. 2024; tento den odpovídá datu podpisu základní smlouvy `29417636`. Oba dokumenty uvádějí stejný projekt i smluvní strany. Do `scripts/build_contract_links.py` byla doplněna konzervativní kontrola této kombinace (datum z primárního dokumentu + shoda projektu + společné IČO strany) a regresní testy. Vygenerovaný `data/contract_links.json` zatím stále odráží předchozí běh; po synchronizaci ověřit, že se vazba zapíše s důkazem `explicit_parent_contract_date_and_project`.
+- **Košov – obnova vodovodu:** v primárním textu dodatku `32731945` je výslovně uvedeno, že původní smlouva byla uzavřena 11. 12. 2024; tento den odpovídá datu podpisu základní smlouvy `29417636`. Oba dokumenty uvádějí stejný projekt i smluvní strany. Do `scripts/build_contract_links.py` byla doplněna konzervativní kontrola této kombinace (datum z primárního dokumentu + shoda projektu + společné IČO strany) a regresní testy. Vazba je nyní zapsána v `data/contract_links.json` s důkazy `document_original_contract_date=2024-12-11` a `document_project_title_overlap=0.75`; potvrzení vyžaduje také shodu oficiálního IČO smluvní strany.
 
 Relevantní implementace:
 - `scripts/import_registr_smluv.py` – import metadat Registru smluv a získávání informací o návazných smlouvách.
@@ -105,7 +105,7 @@ Kontrolní signál sám o sobě **není důkazem pochybení, nehospodárnosti an
 
 Aktuální data a kontrola kódu ukazují zejména na tyto oblasti, které je potřeba dále rozvíjet:
 
-- **Vazby dodatků:** implementace už propojuje explicitní návazná ID a konkrétní čísla smluv a zvlášť eviduje kandidáty k ručnímu ověření. V posledním vygenerovaném výstupu je potvrzeno 12 vazeb; další dodatky mohou zůstávat nepropojené, protože zdrojová metadata neobsahují jednoznačný odkaz na základní smlouvu.
+- **Vazby dodatků:** implementace už propojuje explicitní návazná ID a konkrétní čísla smluv a zvlášť eviduje kandidáty k ručnímu ověření. V posledním vygenerovaném výstupu je potvrzeno 12 vazeb a 0 kandidátů; další dodatky mohou zůstávat nepropojené, protože zdrojová metadata neobsahují jednoznačný odkaz na základní smlouvu.
 - **Úplnost finanční historie:** pokud dodatek není propojen nebo u něj není dostupná cena, časová osa ani výpočet změny nemusí zachycovat úplný vývoj smluvní ceny.
 - **Dokumenty:** počet dokumentů deklarovaný zdrojem nemusí odpovídat počtu stažených nebo textově zpracovaných dokumentů. Dostupnost souboru a úspěšná extrakce textu jsou odlišné skutečnosti.
 - **Klasifikace:** smlouva z Registru smluv nemusí být veřejnou zakázkou. Typ záznamu, stav zakázky a signál možné souvislosti se zakázkou je proto nutné interpretovat odděleně.
@@ -127,7 +127,7 @@ Následující seznam je průběžně aktualizovaný pracovní plán; starší z
 7. **Doplnit regresní testy a ověřit výstupy.** Pro každou změnu přidat test konkrétního případu i test proti falešnému propojení. Spustit `pytest -q tests`, zkontrolovat `data/contract_links.json`, návazné projektové JSON soubory a zobrazení v detailu webu. Poté ověřit výsledek běhu `sync.yml` a následné publikace.
 8. **Po dokončení aktualizovat tento README.** Uvést nové počty, konkrétní potvrzené vazby, otevřené kandidáty, výsledek testů a identifikátor/čas běhu workflow. Neuvádět jako hotové kroky, které byly pouze navrženy.
 
-**Výchozí bod pro pokračování k 12. 10. 2026:** poslední vygenerovaný `data/contract_links.json` má 12 potvrzených vazeb a 0 kandidátů; vazba Košov `32731945` → `29417636` je doložena primárním textem datem původní smlouvy, názvem projektu a společnými IČO. Aktuální blokátor je oprava testu data smlouvy, kterou je nutné ověřit úspěšným během `sync.yml`. Poté zkontrolovat nově extrahované dokumenty a projít nepropojené dodatky.
+**Výchozí bod pro pokračování k 15. 10. 2026:** poslední synchronizace #319 je úspěšná, data jsou vygenerována 15. 10. v 08:45 UTC a Košov `32731945` → `29417636` je potvrzená vazba. Následující práce se soustředí na audit nepropojených dodatků a kvalitu přiřazení příloh; historický import Registru smluv je podle manifestu dokončen (`history_complete=true`).
 
 ## Testy a lokální spuštění
 
@@ -195,3 +195,18 @@ Tento záznam doplňuje předávací plán; nejde o potvrzení dokončení celé
 - **Vazby:** aktuálně uložený `data/contract_links.json` má 12 potvrzených vazeb a 0 kandidátů. Vazba Košov `32731945` → `29417636` má důkazy `document_original_contract_date=2024-12-11` a `document_project_title_overlap=0.75`; sdílená identita smluvní strany se ověřuje z oficiálních IČO. Výstup bude znovu přepočítán až v úspěšném běhu po opravě.
 - **Dokumenty:** manifest `data/documents/registr-smluv/manifest.json` uvádí 117 objevených příloh a 112 dostupných textů. Dokumenty `25099803` a `28586216` výslovně uvádějí původní investiční dotační smlouvu uzavřenou 22. 9. 2023 a projekt „Obnova vodovodu a kanalizace Jilemnická ulice“; záznam `33854349` odkazuje na smlouvu uzavřenou 5. 5. 2025 pro projekt BM 8. Následná synchronizace má ověřit, zda jsou příslušné základní smlouvy dostupné a zda je propojí důkaz data + projektu + IČO.
 - **Další kroky:** (1) ověřit nový běh `sync.yml` a testy; (2) zkontrolovat nové `data/contract_links.json` a projekty; (3) ověřit vztahy dodatků `25099803`, `28586216` a `33854349` k odpovídajícím základním smlouvám; (4) zachovat `37367969` jako `content_mismatch_review`, protože jeho archivovaný text se týká Hodonína/T-Mobile; (5) až po úspěšném běhu aktualizovat čísla a datum stavu v tomto README.
+
+
+## Průběžný audit a předání – 15. 10. 2026, 17:40 UTC
+
+- **Synchronizace:** [běh #319 / 38704625526](https://github.com/ReneHlouzek/lomnice-verejne-zakazky/actions/runs/38704625526) dokončen 15. 10. 2026 v 08:45:06 UTC se stavem `success`. Joby `fetch-registr`, `fetch-vu` a `build` jsou úspěšné. Starší selhání testu extrakce data smlouvy z 12. 10. je překonáno úspěšným navazujícím během.
+- **Aktuální datové výstupy:** `data/index.json` byl vytvořen 15. 10. v 08:45:01 UTC; uvádí 163 projektových celků, 44 veřejných zakázek, 3 zakázky se změnami, 16 smluv se změnami, 69 smluv bez rozpoznané zakázky a 31 ostatních záznamů. Přehled pokrytí obsahuje 109 záznamů Registru smluv; import načetl 110 záznamů. Nejde o zaměnitelné počty.
+- **Registr smluv:** `data/registr_smluv/manifest.json` byl aktualizován 15. 10. v 08:27 UTC; uvádí 110 záznamů a `history_complete=true` pro 124 historických dumpů.
+- **Přílohy:** `data/documents/registr-smluv/manifest.json` byl aktualizován 15. 10. v 08:44:45 UTC: 110 záznamů zkontrolováno, 117 příloh deklarováno a objeveno, 5 dokumentů staženo v tomto běhu a 112 textů je dostupných. Záznam `37367969` a jeho nesoulad přílohy s textem je stále nutné považovat za kontrolní problém; jeho text nesmí být použit jako důkaz pro lomnickou smlouvu, dokud nebude ověřena správná příloha.
+- **Vazby smluv:** `data/contract_links.json` obsahuje 12 potvrzených vazeb a 0 kandidátů. Košov `32731945` → `29417636` je potvrzen přes datum původní smlouvy 11. 12. 2024, shodu projektu a ověření společného oficiálního IČO. Další zapsané vazby zahrnují karavanové stání (dodatky 1–3), nájem nebytových prostor pro OOP (dodatky 1–2), obnovu rybníka Matouš, dotaci Libereckému kraji na havárii zdi (smlouvu a dodatky 1–2) a další explicitní návaznosti dotačních smluv.
+- **Další postup:**
+  1. Prověřit, zda jsou všechny potvrzené vazby věcně správné a jejich důkazy dostatečně konkrétní; zejména zachovat testy proti falešnému propojení na základě podobných názvů.
+  2. Prověřit nepropojené dodatky a jejich texty v manifestu; u každého hledat explicitní ID, číslo smlouvy nebo kombinaci data původní smlouvy, názvu projektu a oficiálního IČO. Pokud důkaz chybí, nepřidávat automaticky potvrzenou vazbu.
+  3. Vyřešit přílohu `37367969` označenou jako nesoulad obsahu a názvu: dohledat správný soubor z oficiálního Registru smluv, nebo případ jasně ponechat jako neověřený.
+  4. Zkontrolovat aktuální webový detail projektu a zda se všech 12 vazeb zobrazuje srozumitelně; interní technické názvy důvodů vazby by neměly být matoucí pro běžného uživatele.
+  5. Při další změně spustit `pytest -q tests`, ověřit všechny joby `sync.yml`, porovnat nově vytvořené JSON soubory a následně aktualizovat tento README. Úspěšné nasazení `pages.yml` samo o sobě není důkazem úspěšné synchronizace.
