@@ -329,3 +329,44 @@ def test_mismatched_attachment_text_is_ignored_for_contract_evidence(tmp_path, m
     assert link_builder.document_referenced_contract_numbers() == {}
     assert link_builder.document_referenced_contract_dates() == {}
 
+
+
+
+def test_document_project_title_can_confirm_addendum_parent(monkeypatch):
+    monkeypatch.setattr(link_builder, "DOCUMENT_PARENT_DATES", {"37367969": ["2026-06-25"]})
+    monkeypatch.setattr(
+        link_builder,
+        "DOCUMENT_PROJECT_TITLES",
+        {"37367969": ["Lomnice nad Popelkou – Obnova vodovodu v Želechách"]},
+    )
+    base = {
+        "id": "zelechy-base",
+        "title": "Obnova vodovodu v Želechách",
+        "sources": [{"record": {
+            "source": "registr-smluv",
+            "source_id": "36197262",
+            "title": "Veřejnoprávní smlouva o poskytnutí investiční dotace - obnova vodovodu v Želechách",
+            "signed_date": "2026-06-25",
+            "buyer_ico": "00275905",
+            "supplier_ico": "49295934",
+        }}],
+    }
+    addendum = {
+        "id": "zelechy-addendum",
+        "title": "Dodatek č. 1 veřejnoprávní smlouvy o poskytnutí neinvestiční dotace",
+        "sources": [{"record": {
+            "source": "registr-smluv",
+            "source_id": "37367969",
+            "title": "Dodatek č. 1 veřejnoprávní smlouvy o poskytnutí neinvestiční dotace",
+            "signed_date": "2026-09-30",
+            "buyer_ico": "00275905",
+            "supplier_ico": "49295934",
+        }}],
+    }
+
+    links, candidates = build_links([base, addendum])
+    assert len(links) == 1
+    assert links[0]["source_id_a"] == "37367969" or links[0]["source_id_b"] == "37367969"
+    assert links[0]["reason"] == "explicit_parent_contract_date_and_project"
+    assert "document_original_contract_date=2026-06-25" in links[0]["evidence"]
+    assert candidates == []
