@@ -486,3 +486,44 @@ def test_quarantined_cache_is_revalidated_when_czech_inflection_matches(tmp_path
     assert document["content_check"] == "no_filename_mismatch_detected"
     assert document["text_available"] is True
     assert "Želechách" in cached_file.read_text(encoding="utf-8")
+
+
+def test_quarantined_cache_with_changed_url_is_not_revalidated_as_current(tmp_path, monkeypatch):
+    import json
+
+    documents_root = tmp_path / "documents"
+    cached_dir = documents_root / "123"
+    cached_dir.mkdir(parents=True)
+    cached_file = cached_dir / "001.txt"
+    cached_file.write_text("Dodatek k obnově vodovodu v Želechách.", encoding="utf-8")
+    source = tmp_path / "source.json"
+    old_url = "https://smlouvy.gov.cz/smlouva/soubor/1/Zelechy%20Dodatek.docx"
+    current_url = "https://smlouvy.gov.cz/smlouva/soubor/2/Zelechy%20Dodatek.docx"
+    source.write_text(json.dumps({
+        "record": {
+            "source_id": "123",
+            "title": "Dodatek pro Želechy",
+            "attachments": [{"url": current_url, "name": "Zelechy%20Dodatek.docx"}],
+        }
+    }), encoding="utf-8")
+    monkeypatch.setattr(doc_extractor, "OUT", documents_root)
+    calls = []
+
+    def fake_extract(url):
+        calls.append(url)
+        return ({"url": url, "sha256": "new-hash", "bytes": 10}, "Fresh attachment for Želechy.")
+
+    monkeypatch.setattr(doc_extractor, "extract", fake_extract)
+    previous_record = {
+        "documents": [{
+            "index": 1,
+            "url": old_url,
+            "text_file": "data/documents/registr-smluv/123/001.txt",
+            "status": "content_mismatch_review",
+            "content_check": "distinctive_filename_terms_absent_from_text",
+        }]
+    }
+
+    result = doc_extractor.process(source, previous_record)
+    assert calls == [current_url]
+    assert result["documents"][0]["sha256"] == "new-hash"
