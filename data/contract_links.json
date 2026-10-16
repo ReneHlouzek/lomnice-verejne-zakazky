@@ -1,5 +1,5 @@
 {
-  "count": 12,
+  "count": 14,
   "links": [
     {
       "project_a": "p-dodatek-1-lomnice-n-popelkou-najem-np-0108",
@@ -49,6 +49,23 @@
       "source_id_a": "34549017",
       "source_b": "registr-smluv",
       "source_id_b": "26812007"
+    },
+    {
+      "project_a": "p-dodatek-c-1-k-verejnopravni-smlouve-o-poskytnuti-dotace-z-rozpctu-mest-0110",
+      "title_a": "Dodatek č. 1 k veřejnoprávní smlouvě o poskytnutí dotace z rozpčtu města Lomnice nad Popelkou",
+      "project_b": "p-verejnopravnmi-smlouva-o-poskytnuti-investicni-dotace-z-rozpoctu-mesta-0151",
+      "title_b": "Veřejnoprávnmí smlouva o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou - Prodloužení sítí technické infrastruktury pro budoucí rozvojovou lokalitu BM8",
+      "kind": "contractual",
+      "confidence": "explicit",
+      "reason": "explicit_parent_contract_date_and_project",
+      "evidence": [
+        "document_original_contract_date=2025-05-05",
+        "document_project_title_overlap=0.88"
+      ],
+      "source_a": "registr-smluv",
+      "source_id_a": "33854349",
+      "source_b": "registr-smluv",
+      "source_id_b": "31062824"
     },
     {
       "project_a": "p-dodatek-c-1-ke-smlouve-o-poskytnuti-ucelove-dotace-libereckemu-kraji-z-0066",
@@ -102,6 +119,23 @@
       "source_id_b": "15970715"
     },
     {
+      "project_a": "p-dodatek-c-1-verejnopravni-smlouvoy-o-poskytnuti-neinvesticni-dotace-z-0097",
+      "title_a": "Dodatek č. 1 veřejnoprávní smlouvoy o poskytnutí neinvestiční dotace z rozpočtu města Lomnice nad Popelkou",
+      "project_b": "p-verejnopravni-smlouva-o-poskytnuti-investicni-dotace-z-rozpoctu-mesta-0104",
+      "title_b": "Veřejnoprávní smlouva o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou - obnova vodovodu v Želechách",
+      "kind": "contractual",
+      "confidence": "explicit",
+      "reason": "explicit_parent_contract_date_and_project",
+      "evidence": [
+        "document_original_contract_date=2026-06-25",
+        "document_project_title_overlap=1.00"
+      ],
+      "source_a": "registr-smluv",
+      "source_id_a": "37367969",
+      "source_b": "registr-smluv",
+      "source_id_b": "36197262"
+    },
+    {
       "project_a": "p-dodatek-c-1-verejnopravni-smlouvy-o-poskytnuti-neinvesticni-dotace-z-r-0101",
       "title_a": "Dodatek č. 1 veřejnoprávní smlouvy o poskytnutí neinvestiční dotace z rozpočtu města Lomnice nad Popelkou na akci Lomnice nad Popelkou - KOšov , obnova vodovodu",
       "project_b": "p-verejnopravni-smlouva-o-poskytnuti-neinvesticni-dotace-z-rozpoctu-mest-0133",
@@ -111,7 +145,7 @@
       "reason": "explicit_parent_contract_date_and_project",
       "evidence": [
         "document_original_contract_date=2024-12-11",
-        "document_project_title_overlap=0.75"
+        "document_project_title_overlap=1.00"
       ],
       "source_a": "registr-smluv",
       "source_id_a": "32731945",

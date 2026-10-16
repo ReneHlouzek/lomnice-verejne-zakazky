@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-16T06:45:27Z",
+  "updated_at": "2026-10-16T07:14:44Z",
   "records_checked": 110,
   "attachments_declared": 117,
   "documents_discovered": 117,
@@ -1404,7 +1404,7 @@
           "text_available": true,
           "text_chars": 10640,
           "text_file": "data/documents/registr-smluv/34390649/001.txt",
-          "refresh_error": "Command '['curl', '--fail', '--location', '--http1.1', '--retry', '2', '--retry-delay', '1', '--connect-timeout', '8', '--max-time', '25', '-A', 'Lomnice-Verejne-Zakazky/1.0 (public-data-archive)', '-H', 'Accept: application/pdf,*/*', 'https://smlouvy.gov.cz/smlouva/soubor/44380105/PRV_PRINT_OUTPUT_A.pdf']' returned non-zero exit status 28."
+          "refresh_error": "Command '['curl', '--fail', '--location', '--http1.1', '--retry', '2', '--retry-delay', '1', '--connect-timeout', '8', '--max-time', '25', '-A', 'Lomnice-Verejne-Zakazky/1.0 (public-data-archive)', '-H', 'Accept: application/pdf,*/*', 'https://smlouvy.gov.cz/smlouva/soubor/44380105/PRV_PRINT_OUTPUT_A.pdf']' returned non-zero exit status 35."
         }
       ],
       "status": "ok"
@@ -1481,7 +1481,7 @@
           "text_available": true,
           "text_chars": 23350,
           "text_file": "data/documents/registr-smluv/35224121/001.txt",
-          "refresh_error": "Command '['curl', '--fail', '--location', '--http1.1', '--retry', '2', '--retry-delay', '1', '--connect-timeout', '8', '--max-time', '25', '-A', 'Lomnice-Verejne-Zakazky/1.0 (public-data-archive)', '-H', 'Accept: application/pdf,*/*', 'https://smlouvy.gov.cz/smlouva/soubor/45362221/2026022_Redigov%C3%A1no.pdf']' returned non-zero exit status 28."
+          "refresh_error": "Command '['curl', '--fail', '--location', '--http1.1', '--retry', '2', '--retry-delay', '1', '--connect-timeout', '8', '--max-time', '25', '-A', 'Lomnice-Verejne-Zakazky/1.0 (public-data-archive)', '-H', 'Accept: application/pdf,*/*', 'https://smlouvy.gov.cz/smlouva/soubor/45362221/2026022_Redigov%C3%A1no.pdf']' returned non-zero exit status 35."
         }
       ],
       "status": "ok"
