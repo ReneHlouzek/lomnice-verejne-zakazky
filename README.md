@@ -10,7 +10,7 @@ Projekt spojuje veřejně dostupná data z profilu zadavatele na Vhodném uveře
 
 ## Aktuální stav
 
-**Stav ověřený 16. 10. 2026, 04:35 UTC.** Nejnovější úplná synchronizace [#335 / běh 38789033050](https://github.com/ReneHlouzek/lomnice-verejne-zakazky/actions/runs/38789033050) skončila 15. 10. 2026 v 19:48 UTC úspěšně; všechny tři joby `fetch-vu`, `fetch-registr` a `build` mají `success`. Regresní testy prošly dvakrát: **48 passed** v importním jobu a **48 passed** v build jobu. Manifest Registru smluv uvádí 110 načtených záznamů a `history_complete=true`. Manifest dokumentů aktualizovaný 15. 10. v 19:47:49 UTC eviduje 117 objevených příloh, 112 textů a 15 dokumentů stažených v tomto běhu. Datový index byl vygenerován 15. 10. v 19:47:59 UTC; `data/contract_links.json` obsahuje 12 potvrzených vazeb a 0 kandidátů. Následná publikace webu [#177](https://github.com/ReneHlouzek/lomnice-verejne-zakazky/actions/runs/38796827060) skončila úspěšně.
+**Stav ověřený 16. 10. 2026, 06:05 UTC.** Synchronizace [běh 38851400956](https://github.com/ReneHlouzek/lomnice-verejne-zakazky/actions/runs/38851400956) skončila úspěšně; joby `fetch-registr`, `fetch-vu` a `build` mají `success`. Testy v build jobu hlásily **48 passed**. Datový index byl následně vygenerován 16. 10. v 05:06:53 UTC a web byl úspěšně nasazen v [běhu 38854095657](https://github.com/ReneHlouzek/lomnice-verejne-zakazky/actions/runs/38854095657). Počty zůstaly 163 projektových celků, 44 veřejných zakázek, 12 potvrzených vazeb a 0 kandidátů. Další změny extrakce a propojování jsou nyní ve frontě GitHub Actions a jejich testy zatím nejsou potvrzené.
 
 | Ukazatel | Aktuální hodnota |
 |---|---:|
@@ -27,13 +27,13 @@ Projekt spojuje veřejně dostupná data z profilu zadavatele na Vhodném uveře
 | Potvrzené vazby mezi smlouvami a dodatky | 12 |
 | Kandidátní vazby čekající na ruční ověření | 0 |
 
-Počty 109 a 110 u Registru smluv popisují různé vrstvy pipeline: přehled pokrytí organizace a počet záznamů načtených do importu. Nejde o zaměnitelné metriky. Stejně tak počet projektových celků není počtem jednotlivých smluv nebo zakázek. Údaje v tabulce odpovídají indexu vygenerovanému 15. 10. 2026 v 19:47:59 UTC.
+Počty 109 a 110 u Registru smluv popisují různé vrstvy pipeline: přehled pokrytí organizace a počet záznamů načtených do importu. Nejde o zaměnitelné metriky. Stejně tak počet projektových celků není počtem jednotlivých smluv nebo zakázek. Údaje v tabulce odpovídají indexu vygenerovanému 16. 10. 2026 v 05:06:53 UTC.
 
 ### Stav propojování smluv a dodatků
 
 Vazby se potvrzují jen při explicitním identifikátoru návazné smlouvy nebo při dostatečně konkrétním čísle smlouvy. Podobnost názvu sama o sobě není důkazem a má vytvářet nanejvýš kandidáta k ruční kontrole.
 
-V posledním vygenerovaném `data/contract_links.json` je **12 potvrzených vazeb** a **0 kandidátů**; synchronizace #335 úspěšně dokončila všechny tři joby a oba běhy regresních testů měly 48 úspěšných testů:
+V posledním vygenerovaném `data/contract_links.json` je **12 potvrzených vazeb** a **0 kandidátů**. Tento výstup pochází z úspěšné synchronizace 16. 10. 2026 v 05:06 UTC; nové změny pro rozpoznání skloňovaných názvů a projektů v textu dodatků zatím čekají na ověření:
 
 - **Karavanové stání:** dodatky č. 1 a 2 jsou propojené se základní smlouvou přes explicitní ID; dodatek č. 3 přes číslo smlouvy.
 - **Nájem nebytových prostor pro OOP:** dodatky č. 1 a 2 jsou propojené se základní smlouvou přes explicitní ID.
@@ -119,15 +119,15 @@ Prioritou dalšího vývoje je spolehlivé hierarchické propojení základních
 Následující seznam je průběžně aktualizovaný pracovní plán; starší záznamy níže zachovávají auditní historii. Za hotový úkol považuj pouze to, co je potvrzené v datech, primárním dokumentu nebo úspěšném běhu příslušného workflow.
 
 1. **Ověřit nejnovější běh synchronizace.** V GitHub Actions otevřít workflow `.github/workflows/sync.yml`, zkontrolovat poslední běh, jednotlivé joby a testy. Nezaměňovat workflow publikace webu `pages.yml` za synchronizaci zdrojů.
-2. **Prověřit archiv textů dokumentů.** Kontrola běhu #335 potvrdila, že text v `data/documents/registr-smluv/37367969/001.txt` už není starý text smlouvy T-Mobile/Hodonín: byl nahrazen nově staženým obsahem oficiální přílohy. Nový text se týká Košova – obnovy vodovodu, ale název oficiální přílohy zůstává `Želechy - Dodatek č. 1.docx`. Proto manifest nadále správně drží `status=content_mismatch_review` a `content_check=distinctive_filename_terms_absent_from_text`. Do vyřešení rozporu tuto přílohu nepoužívat jako důkaz pro vazbu; ověřit u zdroje, zda je špatně pojmenovaná nebo připojená k nesprávnému záznamu.
-3. **Košov – ověřit hranice důkazů.** Vazba `32731945 → 29417636` je doložena primárním textem dodatku `32731945`: uvádí původní datum smlouvy 11. 12. 2024, projekt „Košov, obnova vodovodu“ a stejné smluvní strany. Záznam `37367969` zatím do tohoto řetězce nezařazovat; jeho textový obsah sice také popisuje Košov, ale název přílohy uvádí Želechy, takže zůstává v karanténě pro kontrolu.
+2. **Opravit falešně pozitivní kontrolu přílohy `37367969`.** Aktuálně uložený text už není smlouva T-Mobile/Hodonín ani dokument o Košově. Výpis přílohy obsahuje dodatek na „Obnovu vodovodu v Želechách“, původní smlouvu uzavřenou 25. 6. 2026 a navýšení dotace o 462 151 Kč; to odpovídá základní smlouvě `36197262` (2 133 990 Kč, stejné datum a smluvní strany). Kontrola názvu souboru `Želechy` proti tvaru `Želechách` však dosud hlásí falešný nesoulad. Opravu skloňování a následné propojení podle data, názvu projektu a IČO právě testuje GitHub Actions; do úspěšného běhu zůstává současná vazba nepropojená.
+3. **Košov:** vazba `32731945 → 29417636` je doložena primárním textem dodatku, který uvádí datum 11. 12. 2024, projekt obnovy vodovodu v Košově a stejné smluvní strany. Záznam `37367969` patří k jinému projektu — obnově vodovodu v Želechách — a nesmí být do košovského řetězce zařazen.
 4. **Prověřit další nepropojené dodatky.** Prioritně projít záznamy `3861664`, `25099803`, `28586216` a `33854349` a jejich možné základní smlouvy. U obecných dotačních smluv existuje více podobných kandidátů, proto automaticky nevytvářet potvrzené vazby jen podle názvu nebo data.
 5. **Zlepšit dohledávání důkazů.** Pokud metadata neobsahují návazné ID, ověřit, zda lze z oficiální detailní stránky Registru smluv spolehlivě získat přílohy a extrahovat text. Zaznamenávat zdroj důkazu tak, aby šlo u každé vazby vysvětlit, proč byla potvrzena.
 6. **Udržet bezpečné rozlišení jistoty.** Explicitní ID nebo jednoznačné číslo smlouvy může založit potvrzenou vazbu; podobnost názvu zůstává kandidátem k ručnímu ověření. Nepřidávat vazby jen proto, aby počet propojení rostl.
 7. **Doplnit regresní testy a ověřit výstupy.** Pro každou změnu přidat test konkrétního případu i test proti falešnému propojení. Spustit `pytest -q tests`, zkontrolovat `data/contract_links.json`, návazné projektové JSON soubory a zobrazení v detailu webu. Poté ověřit výsledek běhu `sync.yml` a následné publikace.
 8. **Po dokončení aktualizovat tento README.** Uvést nové počty, konkrétní potvrzené vazby, otevřené kandidáty, výsledek testů a identifikátor/čas běhu workflow. Neuvádět jako hotové kroky, které byly pouze navrženy.
 
-**Výchozí bod pro pokračování k 16. 10. 2026:** synchronizace #335 je úspěšná, 48 testů prošlo v každém ze dvou testovacích jobů, index byl vygenerován 15. 10. v 19:47:59 UTC a web byl následně úspěšně nasazen. Košov `32731945` → `29417636` je potvrzená vazba z textu dodatku `32731945`. Příloha záznamu `37367969` byla znovu stažena a starý text T-Mobile/Hodonín nahrazen, ale zůstává bezpečně označená `content_mismatch_review`, protože obsah pro Košov neodpovídá názvu souboru „Želechy“. Další práce: vyřešit tento nesoulad, poté prověřit dodatky `3861664`, `25099803`, `28586216` a `33854349`. Historický import Registru smluv je podle manifestu dokončen (`history_complete=true`).
+**Výchozí bod pro pokračování k 16. 10. 2026:** poslední ověřená synchronizace 38851400956 a nasazení 38854095657 uspěly; výstup stále obsahuje 12 potvrzených vazeb. Text přílohy `37367969` jednoznačně popisuje Želechy a odkazuje na původní smlouvu ze dne 25. 6. 2026, tedy na základní smlouvu `36197262`. Pracovní změny nyní: povolit české skloňování při kontrole názvu souboru, využít název projektu výslovně uvedený v textu dodatku a vyžadovat současně shodu data, významného překryvu projektu a oficiálního IČO. Poslední změny kódu a testů čekají na ověření GitHub Actions; po úspěšném běhu aktualizovat počty vazeb. Dále prověřit `3861664`, `25099803`, `28586216` a `33854349`.
 
 ## Testy a lokální spuštění
 
