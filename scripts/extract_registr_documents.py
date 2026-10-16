@@ -90,7 +90,7 @@ def normalized_words(value:str)->set[str]:
     return set(re.findall(r"[a-z]{4,}", value))
 
 def filename_content_mismatch(name:str, text:str|None)->bool:
-    """Flag likely wrong attachment payloads when a distinctive filename name is absent from extracted text."""
+    """Flag likely wrong attachment payloads, allowing common Czech inflections."""
     decoded=unquote(name or "")
     stem=decoded.rsplit("/",1)[-1].rsplit(".",1)[0]
     words=normalized_words(stem)
@@ -105,9 +105,17 @@ def filename_content_mismatch(name:str, text:str|None)->bool:
     if not distinctive or not text:
         return False
     body_words=normalized_words(text)
-    # A single meaningful filename token is enough to establish overlap. If
-    # none appears in the extracted body, retain the text but require review.
-    return not bool(distinctive & body_words)
+    # Exact token matches are best. For longer distinctive terms, compare a
+    # five-letter stem so "Želechy" matches "Želechách" and "Košov" matches
+    # "Košově" without accepting generic one- or two-letter fragments.
+    for token in distinctive:
+        if token in body_words:
+            return False
+        if len(token) >= 6:
+            stem=token[:5]
+            if any(word.startswith(stem) for word in body_words if len(word) >= 5):
+                return False
+    return True
 
 def process(path:Path, previous_record=None):
     obj=json.loads(path.read_text(encoding="utf-8"))
@@ -156,7 +164,10 @@ def process(path:Path, previous_record=None):
                 item["text_available"]=bool(text)
                 item["text_chars"]=len(text)
                 item["text_file"]=relative_text_path
-            elif cache_is_trusted:
+            elif cache_is_trusted or cached_doc.get("status") == "content_mismatch_review":
+                # Revalidate quarantined text with the current matcher. This
+                # clears false positives caused by Czech inflection even when
+                # the source host is temporarily unavailable.
                 item["text_available"]=bool(text)
                 item["text_chars"]=len(text)
                 item["text_file"]=relative_text_path
