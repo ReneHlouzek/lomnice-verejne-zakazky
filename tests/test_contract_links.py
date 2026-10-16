@@ -370,3 +370,32 @@ def test_document_project_title_can_confirm_addendum_parent(monkeypatch):
     assert links[0]["reason"] == "explicit_parent_contract_date_and_project"
     assert "document_original_contract_date=2026-06-25" in links[0]["evidence"]
     assert candidates == []
+
+
+
+def test_document_project_title_extraction_handles_quoted_czech_project(tmp_path, monkeypatch):
+    import json
+
+    document_path = "data/documents/registr-smluv/37367969/001.txt"
+    text_path = tmp_path / document_path
+    text_path.parent.mkdir(parents=True)
+    text_path.write_text(
+        "Smluvní strany uzavírají dodatek na realizaci projektu "
+        "„Lomnice nad Popelkou – Obnova vodovodu v Želechách“.",
+        encoding="utf-8",
+    )
+    manifest_path = tmp_path / "manifest.json"
+    manifest_path.write_text(json.dumps({
+        "records": [{
+            "source_id": "37367969",
+            "documents": [{
+                "status": "retained_existing_text",
+                "text_file": document_path,
+            }],
+        }]
+    }), encoding="utf-8")
+    monkeypatch.setattr(link_builder, "DOC_MANIFEST", manifest_path)
+    monkeypatch.setattr(link_builder, "ROOT", tmp_path)
+
+    titles = link_builder.document_referenced_project_titles()
+    assert titles["37367969"] == ["Lomnice nad Popelkou – Obnova vodovodu v Želechách"]
