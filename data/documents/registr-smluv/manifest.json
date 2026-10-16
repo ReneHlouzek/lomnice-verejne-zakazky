@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-16T05:06:36Z",
+  "updated_at": "2026-10-16T06:45:27Z",
   "records_checked": 110,
   "attachments_declared": 117,
   "documents_discovered": 117,
@@ -299,7 +299,7 @@
           "text_available": true,
           "text_chars": 17260,
           "text_file": "data/documents/registr-smluv/14454471/001.txt",
-          "refresh_error": "Command '['curl', '--fail', '--location', '--http1.1', '--retry', '2', '--retry-delay', '1', '--connect-timeout', '8', '--max-time', '25', '-A', 'Lomnice-Verejne-Zakazky/1.0 (public-data-archive)', '-H', 'Accept: application/pdf,*/*', 'https://smlouvy.gov.cz/smlouva/soubor/19715331/PRV_PRINT_OUTPUT_A.pdf']' returned non-zero exit status 28."
+          "refresh_error": "Command '['curl', '--fail', '--location', '--http1.1', '--retry', '2', '--retry-delay', '1', '--connect-timeout', '8', '--max-time', '25', '-A', 'Lomnice-Verejne-Zakazky/1.0 (public-data-archive)', '-H', 'Accept: application/pdf,*/*', 'https://smlouvy.gov.cz/smlouva/soubor/19715331/PRV_PRINT_OUTPUT_A.pdf']' returned non-zero exit status 35."
         }
       ],
       "status": "ok"
@@ -638,12 +638,11 @@
           "index": 1,
           "name": "8860-12-Lomnicen.P.%2CKUrnov%C3%A9muh%C3%A1ji118-Dodatek%C4%8D.1kNS.pdf",
           "url": "https://smlouvy.gov.cz/smlouva/soubor/3525250/8860-12-Lomnicen.P.%2CKUrnov%C3%A9muh%C3%A1ji118-Dodatek%C4%8D.1kNS.pdf",
-          "status": "content_mismatch_review",
-          "content_check": "distinctive_filename_terms_absent_from_text",
           "text_available": true,
           "text_chars": 2920,
           "text_file": "data/documents/registr-smluv/2316654/001.txt",
-          "refresh_error": "Command '['curl', '--fail', '--location', '--http1.1', '--retry', '2', '--retry-delay', '1', '--connect-timeout', '8', '--max-time', '25', '-A', 'Lomnice-Verejne-Zakazky/1.0 (public-data-archive)', '-H', 'Accept: application/pdf,*/*', 'https://smlouvy.gov.cz/smlouva/soubor/3525250/8860-12-Lomnicen.P.%2CKUrnov%C3%A9muh%C3%A1ji118-Dodatek%C4%8D.1kNS.pdf']' returned non-zero exit status 28."
+          "status": "retained_existing_text",
+          "content_check": "no_filename_mismatch_detected"
         }
       ],
       "status": "ok"
@@ -1156,7 +1155,7 @@
           "text_available": true,
           "text_chars": 10782,
           "text_file": "data/documents/registr-smluv/30665684/001.txt",
-          "refresh_error": "Command '['curl', '--fail', '--location', '--http1.1', '--retry', '2', '--retry-delay', '1', '--connect-timeout', '8', '--max-time', '25', '-A', 'Lomnice-Verejne-Zakazky/1.0 (public-data-archive)', '-H', 'Accept: application/pdf,*/*', 'https://smlouvy.gov.cz/smlouva/soubor/39896200/PRV_PRINT_OUTPUT_A.pdf']' returned non-zero exit status 28."
+          "refresh_error": "Command '['curl', '--fail', '--location', '--http1.1', '--retry', '2', '--retry-delay', '1', '--connect-timeout', '8', '--max-time', '25', '-A', 'Lomnice-Verejne-Zakazky/1.0 (public-data-archive)', '-H', 'Accept: application/pdf,*/*', 'https://smlouvy.gov.cz/smlouva/soubor/39896200/PRV_PRINT_OUTPUT_A.pdf']' returned non-zero exit status 35."
         }
       ],
       "status": "ok"
@@ -1271,7 +1270,7 @@
           "text_available": true,
           "text_chars": 10529,
           "text_file": "data/documents/registr-smluv/32292445/001.txt",
-          "refresh_error": "Command '['curl', '--fail', '--location', '--http1.1', '--retry', '2', '--retry-delay', '1', '--connect-timeout', '8', '--max-time', '25', '-A', 'Lomnice-Verejne-Zakazky/1.0 (public-data-archive)', '-H', 'Accept: application/pdf,*/*', 'https://smlouvy.gov.cz/smlouva/soubor/41861277/PRV_PRINT_OUTPUT_A.pdf']' returned non-zero exit status 28."
+          "refresh_error": "Command '['curl', '--fail', '--location', '--http1.1', '--retry', '2', '--retry-delay', '1', '--connect-timeout', '8', '--max-time', '25', '-A', 'Lomnice-Verejne-Zakazky/1.0 (public-data-archive)', '-H', 'Accept: application/pdf,*/*', 'https://smlouvy.gov.cz/smlouva/soubor/41861277/PRV_PRINT_OUTPUT_A.pdf']' returned non-zero exit status 35."
         }
       ],
       "status": "ok"
@@ -1649,12 +1648,11 @@
           "index": 1,
           "name": "%C5%BDelechy%20-%20%20Dodatek%20%C4%8D.%201.docx",
           "url": "https://smlouvy.gov.cz/smlouva/soubor/47902105/%C5%BDelechy%20-%20%20Dodatek%20%C4%8D.%201.docx",
-          "status": "content_mismatch_review",
-          "content_check": "distinctive_filename_terms_absent_from_text",
           "text_available": true,
           "text_chars": 2986,
           "text_file": "data/documents/registr-smluv/37367969/001.txt",
-          "refresh_error": "Command '['curl', '--fail', '--location', '--http1.1', '--retry', '2', '--retry-delay', '1', '--connect-timeout', '8', '--max-time', '25', '-A', 'Lomnice-Verejne-Zakazky/1.0 (public-data-archive)', 'https://smlouvy.gov.cz/smlouva/soubor/47902105/%C5%BDelechy%20-%20%20Dodatek%20%C4%8D.%201.docx']' returned non-zero exit status 28."
+          "status": "retained_existing_text",
+          "content_check": "no_filename_mismatch_detected"
         }
       ],
       "status": "ok"
