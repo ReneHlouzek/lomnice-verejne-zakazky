@@ -107,6 +107,46 @@ def document_referenced_contract_dates():
 DOCUMENT_PARENT_DATES = document_referenced_contract_dates()
 
 
+def document_referenced_project_titles():
+    """Extract project names explicitly quoted in addendum text."""
+    if not DOC_MANIFEST.exists():
+        return {}
+    try:
+        manifest = json.loads(DOC_MANIFEST.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return {}
+    pattern = re.compile(
+        r"na realizaci projektu\\s*[„“\"']{0,2}\\s*(.{8,220}?)(?:[”„“\"']{1,2})",
+        flags=re.IGNORECASE | re.DOTALL,
+    )
+    out = {}
+    for row in manifest.get("records", []):
+        sid = str(row.get("source_id") or "").strip()
+        if not sid:
+            continue
+        titles = []
+        for doc in row.get("documents", []):
+            if doc.get("status") == "content_mismatch_review":
+                continue
+            path = doc.get("text_file")
+            if not path:
+                continue
+            try:
+                body = (ROOT / path).read_text(encoding="utf-8", errors="replace")
+            except OSError:
+                continue
+            for match in pattern.finditer(body):
+                title = re.sub(r"\\s+", " ", match.group(1)).strip(" .,:;")
+                if len(title) >= 8:
+                    titles.append(title)
+        if titles:
+            out[sid] = unique_evidence(titles)
+    return out
+
+
+DOCUMENT_PROJECT_TITLES = document_referenced_project_titles()
+
+
 def shared_party_identity(a, b):
     """Require at least one shared, non-empty official party identifier."""
     keys = ("buyer_ico", "supplier_ico", "publisher_ico")
@@ -168,9 +208,16 @@ def build_links(projects):
                         base_date = resolver.date_value(
                             base.get("signed_date") or base.get("date") or base.get("published")
                         )
-                        overlap = resolver.meaningful_token_overlap(
-                            resolver.core_title(addendum), resolver.core_title(base)
-                        )
+                        document_titles = DOCUMENT_PROJECT_TITLES.get(add_id, [])
+                        if document_titles:
+                            overlap = max(
+                                resolver.meaningful_token_overlap(project_title, resolver.core_title(base))
+                                for project_title in document_titles
+                            )
+                        else:
+                            overlap = resolver.meaningful_token_overlap(
+                                resolver.core_title(addendum), resolver.core_title(base)
+                            )
                         if (base_date and base_date in DOCUMENT_PARENT_DATES.get(add_id, [])
                                 and overlap >= .65 and shared_party_identity(addendum, base)):
                             document_parent_match = True
