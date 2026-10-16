@@ -116,7 +116,7 @@ def document_referenced_project_titles():
     except (OSError, json.JSONDecodeError):
         return {}
     pattern = re.compile(
-        r"na realizaci projektu\\s*[„“\"']{0,2}\\s*(.{8,220}?)(?:[”„“\"']{1,2})",
+        r"na realizaci projektu\s*[„“\"']{0,2}\s*(.{8,220}?)(?:[”„“\"']{1,2})",
         flags=re.IGNORECASE | re.DOTALL,
     )
     out = {}
@@ -136,7 +136,7 @@ def document_referenced_project_titles():
             except OSError:
                 continue
             for match in pattern.finditer(body):
-                title = re.sub(r"\\s+", " ", match.group(1)).strip(" .,:;")
+                title = re.sub(r"\s+", " ", match.group(1)).strip(" .,:;")
                 if len(title) >= 8:
                     titles.append(title)
         if titles:
