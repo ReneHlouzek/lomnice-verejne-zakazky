@@ -164,7 +164,7 @@ def process(path:Path, previous_record=None):
                 item["text_available"]=bool(text)
                 item["text_chars"]=len(text)
                 item["text_file"]=relative_text_path
-            elif cache_is_trusted or cached_doc.get("status") == "content_mismatch_review":
+            elif cache_is_trusted or (cache_url_matches and cached_doc.get("text_file") == relative_text_path and cached_doc.get("status") == "content_mismatch_review"):
                 # Revalidate quarantined text with the current matcher. This
                 # clears false positives caused by Czech inflection even when
                 # the source host is temporarily unavailable.
