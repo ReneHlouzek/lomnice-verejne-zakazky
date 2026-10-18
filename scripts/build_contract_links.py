@@ -116,7 +116,7 @@ def document_referenced_project_titles():
     except (OSError, json.JSONDecodeError):
         return {}
     pattern = re.compile(
-        r"na realizaci\s+(?:projektu|akce)\s*:?\s*[„“\"\']{0,2}\s*(.{8,220}?)(?:[”„“\"\']{1,2})",
+        r"na\s+realizaci\s+(?:projektu|akce)\s*:?\s*[„“\"\']{0,2}\s*(.{8,220}?)(?:[”„“\"\']{1,2})",
         flags=re.IGNORECASE | re.DOTALL,
     )
     out = {}
