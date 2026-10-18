@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-18T10:25:07Z",
+  "updated_at": "2026-10-18T11:45:58Z",
   "pages_checked": 35,
   "declared_documents": 90,
   "documents_discovered": 53,
@@ -24,7 +24,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: 422 Client Error: Unprocessable Entity for url: https://r.jina.ai/https://www.vhodne-uverejneni.cz/zakazka/projektova-dokumentace-mistnich-komunikaci-lomnice-nad-popelkou"
+      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
     },
     {
       "source": "vhodne-uverejneni",
