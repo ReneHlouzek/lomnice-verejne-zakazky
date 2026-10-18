@@ -157,8 +157,43 @@ def shared_party_identity(a, b):
     return bool(left & right)
 
 
+def generic_base_title(record):
+    """Identify the one known generic municipal grant-contract title form."""
+    return resolver.norm(record.get("title")) == resolver.norm(
+        "Veřejnoprávní smlouva o poskytnutí neinvestiční dotace "
+        "z rozpočtu města Lomnice nad Popelkou"
+    )
+
+
+def unique_document_parent_bases(projects):
+    """Find unique bases supported by an attachment's date and official party IDs."""
+    candidates = {}
+    for project in projects:
+        for source in project.get("sources", []):
+            addendum = source.get("record", {})
+            if not resolver.is_addendum(addendum):
+                continue
+            add_id = str(addendum.get("source_id") or "").strip()
+            dates = set(DOCUMENT_PARENT_DATES.get(add_id, []))
+            if not add_id or not dates:
+                continue
+            for other_project in projects:
+                for other_source in other_project.get("sources", []):
+                    base = other_source.get("record", {})
+                    if resolver.is_addendum(base) or not shared_party_identity(addendum, base):
+                        continue
+                    base_date = resolver.date_value(
+                        base.get("signed_date") or base.get("date") or base.get("published")
+                    )
+                    base_id = str(base.get("source_id") or base.get("version_id") or "").strip()
+                    if base_id and base_date in dates:
+                        candidates.setdefault(add_id, set()).add(base_id)
+    return candidates
+
+
 def build_links(projects):
     links, candidates = [], []
+    unique_parent_bases = unique_document_parent_bases(projects)
     for i, left in enumerate(projects):
         for right in projects[i + 1:]:
             explicit_best = None
@@ -218,13 +253,32 @@ def build_links(projects):
                             overlap = resolver.meaningful_token_overlap(
                                 resolver.core_title(addendum), resolver.core_title(base)
                             )
-                        if (base_date and base_date in DOCUMENT_PARENT_DATES.get(add_id, [])
-                                and overlap >= .65 and shared_party_identity(addendum, base)):
+                        date_and_party_match = (
+                            base_date
+                            and base_date in DOCUMENT_PARENT_DATES.get(add_id, [])
+                            and shared_party_identity(addendum, base)
+                        )
+                        # Older municipal grant agreements may have a generic
+                        # registry title without the project name. Permit that
+                        # narrow case only when date + official party IDs identify
+                        # exactly one possible base agreement in the supplied data.
+                        candidate_base_ids = unique_parent_bases.get(add_id, set())
+                        generic_unique_match = (
+                            generic_base_title(base)
+                            and len(candidate_base_ids) == 1
+                            and str(base.get("source_id") or base.get("version_id") or "").strip()
+                                in candidate_base_ids
+                        )
+                        if date_and_party_match and (overlap >= .65 or generic_unique_match):
                             document_parent_match = True
                             document_parent_evidence = [
                                 f"document_original_contract_date={base_date}",
                                 f"document_project_title_overlap={overlap:.2f}",
                             ]
+                            if generic_unique_match and overlap < .65:
+                                document_parent_evidence.append(
+                                    "generic_base_title_unique_date_and_party_match=true"
+                                )
                     explicit = related_id_match or explicit_parent or document_parent_match
                     if explicit:
                         matching_refs = [
