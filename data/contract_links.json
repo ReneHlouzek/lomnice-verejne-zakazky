@@ -57,7 +57,7 @@
       "title_b": "Veřejnoprávní smlouva o poskytnutí neinvestiční dotace z rozpočtu města Lomnice nad Popelkou",
       "kind": "contractual",
       "confidence": "explicit",
-      "reason": "explicit_parent_contract_date_and_project",
+      "reason": "explicit_parent_contract_date_party_unique_base",
       "evidence": [
         "document_original_contract_date=2017-03-23",
         "document_project_title_overlap=0.00",
