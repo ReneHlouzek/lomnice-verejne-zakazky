@@ -497,7 +497,7 @@ def test_karlovske_namesti_addendum_links_by_date_project_and_party(monkeypatch)
 
     links, candidates = build_links([base, addendum])
     assert len(links) == 1
-    assert links[0]["reason"] == "explicit_parent_contract_date_and_project"
+    assert links[0]["reason"] == "explicit_parent_contract_date_party_unique_base"
     assert "document_original_contract_date=2017-03-23" in links[0]["evidence"]
     assert "generic_base_title_unique_date_and_party_match=true" in links[0]["evidence"]
     assert candidates == []
