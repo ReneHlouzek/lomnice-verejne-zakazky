@@ -24,14 +24,14 @@ Projekt spojuje veřejně dostupná data z profilu zadavatele na Vhodném uveře
 | Smlouvy se změnami / dodatky | 16 |
 | Smlouvy bez rozpoznané zakázky | 69 |
 | Ostatní záznamy | 31 |
-| Potvrzené vazby mezi smlouvami a dodatky | 14 |
+| Potvrzené vazby mezi smlouvami a dodatky | 15 |
 | Kandidátní vazby čekající na ruční ověření | 0 |
 
 Počty 109 a 110 u Registru smluv popisují různé vrstvy pipeline: přehled pokrytí organizace a počet záznamů načtených do importu. Nejde o zaměnitelné metriky. Stejně tak počet projektových celků není počtem jednotlivých smluv nebo zakázek. Údaje v tabulce odpovídají indexu vygenerovanému 18. 10. 2026 v 14:40:40 UTC.
 
 ### Stav propojování smluv a dodatků
 
-Vazby se potvrzují jen při explicitním identifikátoru návazné smlouvy nebo při dostatečně konkrétním čísle smlouvy. Podobnost názvu sama o sobě není důkazem a má vytvářet nanejvýš kandidáta k ruční kontrole.
+Vazby se potvrzují při explicitním identifikátoru návazné smlouvy, dostatečně konkrétním čísle smlouvy nebo při ověřené kombinaci data z primární přílohy, oficiálního IČO a jedinečnosti možné základní smlouvy. Podobnost názvu sama o sobě není důkazem a nesmí vytvořit potvrzenou vazbu.
 
 V posledním vygenerovaném `data/contract_links.json` je **15 potvrzených vazeb** a **0 kandidátů**. Výstup byl vytvořen při úspěšné synchronizaci [39131771606](https://github.com/ReneHlouzek/lomnice-verejne-zakazky/actions/runs/39131771606), v níž prošlo 56 regresních testů. Nově je propojena také smlouva `1426690` s dodatkem `3861664`: příloha dodatku výslovně uvádí původní smlouvu ze dne 23. 3. 2017, projekt obnovy VH sítí na Karlovském náměstí a smluvní strany s odpovídajícími IČO. Protože základní smlouva má obecný název bez názvu projektu, vazba byla povolena pouze po ověření, že datum a oficiální IČO identifikují právě jednu možnou základní smlouvu. Doplňující důkaz v datech je `generic_base_title_unique_date_and_party_match=true`.
 
