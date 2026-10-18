@@ -33,7 +33,7 @@ Počty 109 a 110 u Registru smluv popisují různé vrstvy pipeline: přehled po
 
 Vazby se potvrzují jen při explicitním identifikátoru návazné smlouvy nebo při dostatečně konkrétním čísle smlouvy. Podobnost názvu sama o sobě není důkazem a má vytvářet nanejvýš kandidáta k ruční kontrole.
 
-V posledním vygenerovaném `data/contract_links.json` je **14 potvrzených vazeb** a **0 kandidátů**. Tento výstup byl znovu vytvořen při úspěšné synchronizaci 18. 10. 2026; nové kontroly českého skloňování a názvů projektů v primárním textu dodatků prošly regresními testy:
+V posledním vygenerovaném `data/contract_links.json` je **14 potvrzených vazeb** a **0 kandidátů**. Tento výstup byl vytvořen při úspěšné synchronizaci 18. 10. 2026. V tomto běhu prošlo 53 regresních testů; následná úprava pro další typ formulace názvu projektu („realizaci akce“) je v novém kódu a čeká na potvrzení navazujícího běhu:
 
 - **Karavanové stání:** dodatky č. 1 a 2 jsou propojené se základní smlouvou přes explicitní ID; dodatek č. 3 přes číslo smlouvy.
 - **Nájem nebytových prostor pro OOP:** dodatky č. 1 a 2 jsou propojené se základní smlouvou přes explicitní ID.
@@ -128,7 +128,7 @@ Následující seznam je průběžně aktualizovaný pracovní plán; starší z
 7. **Doplnit regresní testy a ověřit výstupy.** Pro každou změnu přidat test konkrétního případu i test proti falešnému propojení. Spustit `pytest -q tests`, zkontrolovat `data/contract_links.json`, návazné projektové JSON soubory a zobrazení v detailu webu. Poté ověřit výsledek běhu `sync.yml` a následné publikace.
 8. **Po dokončení aktualizovat tento README.** Uvést nové počty, konkrétní potvrzené vazby, otevřené kandidáty, výsledek testů a identifikátor/čas běhu workflow. Neuvádět jako hotové kroky, které byly pouze navrženy.
 
-**Výchozí bod pro pokračování k 18. 10. 2026:** synchronizace [39109826522](https://github.com/ReneHlouzek/lomnice-verejne-zakazky/actions/runs/39109826522) a nasazení [39112503614](https://github.com/ReneHlouzek/lomnice-verejne-zakazky/actions/runs/39112503614) uspěly; 53 regresních testů prošlo. Výstup obsahuje 14 potvrzených vazeb a 0 kandidátů. Příloha `37367969` byla znovu ověřena: text odpovídá dodatku pro Želechy a propojení se základní smlouvou `36197262` je podloženo původním datem smlouvy, konkrétním názvem projektu a shodným IČO smluvní strany. Historický import Registru smluv potvrzuje všech 124 dumpů. Další prioritou je ručně prověřit záznamy `3861664`, `25099803`, `28586216` a `33854349`, zejména zda lze na základě primárních textů a jednoznačných identifikátorů doplnit další vazby bez falešných pozitiv.
+**Výchozí bod pro pokračování k 18. 10. 2026:** poslední potvrzená synchronizace [39109826522](https://github.com/ReneHlouzek/lomnice-verejne-zakazky/actions/runs/39109826522) a nasazení [39112503614](https://github.com/ReneHlouzek/lomnice-verejne-zakazky/actions/runs/39112503614) uspěly; v tomto běhu prošlo 53 regresních testů. Vygenerovaný výstup obsahuje 14 potvrzených vazeb a 0 kandidátů. Příloha `37367969` odpovídá dodatku pro Želechy a propojení se základní smlouvou `36197262` je podloženo původním datem smlouvy, konkrétním názvem projektu a shodným IČO smluvní strany. Historický import Registru smluv potvrzuje všech 124 dumpů. Následná změna extrakce názvu projektu z formulace „na realizaci akce“ a dva nové regresní testy jsou v GitHub Actions ve frontě; jejich výsledek zatím není potvrzen. Další prioritou je ověřit vazbu dodatku `3861664` k základní smlouvě `1426690` a potom ručně prověřit `25099803` a `28586216`.
 
 ## Testy a lokální spuštění
 
