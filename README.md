@@ -10,7 +10,7 @@ Projekt spojuje veřejně dostupná data z profilu zadavatele na Vhodném uveře
 
 ## Aktuální stav
 
-**Stav ověřený 16. 10. 2026, 06:05 UTC.** Synchronizace [běh 38851400956](https://github.com/ReneHlouzek/lomnice-verejne-zakazky/actions/runs/38851400956) skončila úspěšně; joby `fetch-registr`, `fetch-vu` a `build` mají `success`. Testy v build jobu hlásily **48 passed**. Datový index byl následně vygenerován 16. 10. v 05:06:53 UTC a web byl úspěšně nasazen v [běhu 38854095657](https://github.com/ReneHlouzek/lomnice-verejne-zakazky/actions/runs/38854095657). Počty zůstaly 163 projektových celků, 44 veřejných zakázek, 12 potvrzených vazeb a 0 kandidátů. Další změny extrakce a propojování jsou nyní ve frontě GitHub Actions a jejich testy zatím nejsou potvrzené.
+**Stav ověřený 18. 10. 2026, 08:43 UTC.** Nejnovější synchronizace [běh 39109826522](https://github.com/ReneHlouzek/lomnice-verejne-zakazky/actions/runs/39109826522) skončila úspěšně; joby `fetch-registr`, `fetch-vu` a `build` mají `success`. Regresní testy v build jobu: **53 passed**. Registr smluv obsahuje 110 záznamů a úplná historie všech 124 dumpů je potvrzena. Manifest dokumentů eviduje 117 příloh a 112 dostupných textů. Datový index byl vytvořen 18. 10. v 08:42:40 UTC a web byl následně úspěšně nasazen v [běhu 39112503614](https://github.com/ReneHlouzek/lomnice-verejne-zakazky/actions/runs/39112503614). Index obsahuje 163 projektových celků; `data/contract_links.json` nyní obsahuje 14 potvrzených vazeb a 0 kandidátů.
 
 | Ukazatel | Aktuální hodnota |
 |---|---:|
@@ -33,13 +33,14 @@ Počty 109 a 110 u Registru smluv popisují různé vrstvy pipeline: přehled po
 
 Vazby se potvrzují jen při explicitním identifikátoru návazné smlouvy nebo při dostatečně konkrétním čísle smlouvy. Podobnost názvu sama o sobě není důkazem a má vytvářet nanejvýš kandidáta k ruční kontrole.
 
-V posledním vygenerovaném `data/contract_links.json` je **12 potvrzených vazeb** a **0 kandidátů**. Tento výstup pochází z úspěšné synchronizace 16. 10. 2026 v 05:06 UTC; nové změny pro rozpoznání skloňovaných názvů a projektů v textu dodatků zatím čekají na ověření:
+V posledním vygenerovaném `data/contract_links.json` je **14 potvrzených vazeb** a **0 kandidátů**. Tento výstup pochází z úspěšné synchronizace 16. 10. 2026 v 05:06 UTC; nové změny pro rozpoznání skloňovaných názvů a projektů v textu dodatků zatím čekají na ověření:
 
 - **Karavanové stání:** dodatky č. 1 a 2 jsou propojené se základní smlouvou přes explicitní ID; dodatek č. 3 přes číslo smlouvy.
 - **Nájem nebytových prostor pro OOP:** dodatky č. 1 a 2 jsou propojené se základní smlouvou přes explicitní ID.
 - **Obnova rybníka Matouš:** dodatek č. 1 je propojený přes explicitní ID.
 - **Účelová dotace Libereckému kraji – havárie zdi:** dodatek č. 1 a dodatek č. 2 jsou propojené se základní smlouvou; mezi dodatky je rovněž zaznamenána explicitní návaznost.
 - **Košov – obnova vodovodu:** v primárním textu dodatku `32731945` je výslovně uvedeno, že původní smlouva byla uzavřena 11. 12. 2024; tento den odpovídá datu podpisu základní smlouvy `29417636`. Oba dokumenty uvádějí stejný projekt i smluvní strany. Do `scripts/build_contract_links.py` byla doplněna konzervativní kontrola této kombinace (datum z primárního dokumentu + shoda projektu + společné IČO strany) a regresní testy. Vazba je nyní zapsána v `data/contract_links.json` s důkazy `document_original_contract_date=2024-12-11` a `document_project_title_overlap=0.75`; potvrzení vyžaduje také shodu oficiálního IČO smluvní strany.
+- **Želechy – obnova vodovodu:** příloha dodatku `37367969` nyní obsahuje odpovídající text dodatku č. 1, který uvádí původní smlouvu uzavřenou 25. 6. 2026, projekt „Lomnice nad Popelkou – Obnova vodovodu v Želechách“ a navýšení dotace o 462 151 Kč (z 2 133 990 Kč na 2 596 141 Kč). Základní smlouva `36197262` má stejné datum podpisu, shodný projekt i IČO příjemce 49295934. Vazba je proto potvrzena důkazy `document_original_contract_date=2026-06-25` a `document_project_title_overlap=1.00`. Kontrola názvu souboru byla upravena tak, aby rozpoznala české skloňování („Želechy“ / „Želechách“), a odpovídající regresní testy prošly.
 
 Relevantní implementace:
 - `scripts/import_registr_smluv.py` – import metadat Registru smluv a získávání informací o návazných smlouvách.
@@ -192,9 +193,9 @@ Tento záznam doplňuje předávací plán; nejde o potvrzení dokončení celé
   1. Ověřit výsledek nového běhu `sync.yml` spuštěného změnou kódu: oba joby s testy musí projít; zkontrolovat, že Košov `32731945` → `29417636` přibyl mezi potvrzené vazby a v `evidence` má `document_original_contract_date=2024-12-11`.
   2. Zkontrolovat, zda se do `data/documents/registr-smluv/manifest.json` dostaly nové či chybějící přílohy. Zejména `28586216` a `33854349` zatím nemají v aktuálním manifestu extrahovaný text; `25099803` text má, ale jeho rodičovská smlouva ještě není doložena.
   3. Projít texty `25099803`, `28586216` a `33854349` a potvrzovat vztahy jen z explicitního ID, čísla smlouvy nebo jednoznačné identifikace původní smlouvy v dokumentu. Obecný název „dodatek k veřejnoprávní smlouvě“ nestačí.
-  4. Zachovat `37367969` jako případ s `content_mismatch_review`; archivovaný text přílohy se týká Hodonína/T-Mobile a nesmí být použit jako důkaz pro lomnický projekt, dokud se nezíská správná příloha.
-  5. Pokračovat v historickém importu Registru smluv, dokud manifest nepotvrdí všech 124 dumpů; po každém běhu zaznamenat skutečný počet a stav, ne odvozovat dokončení pouze z úspěšného workflow.
-  6. Po ověření výstupů aktualizovat tabulku aktuálního stavu a tento předávací blok. Nezaměňovat úspěšné nasazení webu za úspěšnou synchronizaci dat.
+  4. Případ `37367969` byl vyřešen: aktuální text přílohy odpovídá dodatku k obnově vodovodu v Želechách, kontrola skloňování již nehlásí falešný nesoulad a vazba na základní smlouvu `36197262` je podložena datem, projektem a IČO smluvní strany.
+  5. Historický import Registru smluv je kompletní: manifest potvrzuje všech 124 dumpů a `history_complete=true`.
+  6. Dále ručně prověřovat další nepropojené dodatky, ověřit srozumitelnost důkazů v detailu webu a průběžně hlídat, zda nové zdrojové přílohy nevyvolávají chybná automatická propojení.
 
 
 ## Průběžný audit – 12. 10. 2026, 20:30 UTC
