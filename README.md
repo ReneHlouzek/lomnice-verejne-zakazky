@@ -24,16 +24,16 @@ Projekt spojuje veřejně dostupná data z profilu zadavatele na Vhodném uveře
 | Smlouvy se změnami / dodatky | 16 |
 | Smlouvy bez rozpoznané zakázky | 69 |
 | Ostatní záznamy | 31 |
-| Potvrzené vazby mezi smlouvami a dodatky | 12 |
+| Potvrzené vazby mezi smlouvami a dodatky | 14 |
 | Kandidátní vazby čekající na ruční ověření | 0 |
 
-Počty 109 a 110 u Registru smluv popisují různé vrstvy pipeline: přehled pokrytí organizace a počet záznamů načtených do importu. Nejde o zaměnitelné metriky. Stejně tak počet projektových celků není počtem jednotlivých smluv nebo zakázek. Údaje v tabulce odpovídají indexu vygenerovanému 16. 10. 2026 v 05:06:53 UTC.
+Počty 109 a 110 u Registru smluv popisují různé vrstvy pipeline: přehled pokrytí organizace a počet záznamů načtených do importu. Nejde o zaměnitelné metriky. Stejně tak počet projektových celků není počtem jednotlivých smluv nebo zakázek. Údaje v tabulce odpovídají indexu vygenerovanému 18. 10. 2026 v 08:42:40 UTC.
 
 ### Stav propojování smluv a dodatků
 
 Vazby se potvrzují jen při explicitním identifikátoru návazné smlouvy nebo při dostatečně konkrétním čísle smlouvy. Podobnost názvu sama o sobě není důkazem a má vytvářet nanejvýš kandidáta k ruční kontrole.
 
-V posledním vygenerovaném `data/contract_links.json` je **14 potvrzených vazeb** a **0 kandidátů**. Tento výstup pochází z úspěšné synchronizace 16. 10. 2026 v 05:06 UTC; nové změny pro rozpoznání skloňovaných názvů a projektů v textu dodatků zatím čekají na ověření:
+V posledním vygenerovaném `data/contract_links.json` je **14 potvrzených vazeb** a **0 kandidátů**. Tento výstup byl znovu vytvořen při úspěšné synchronizaci 18. 10. 2026; nové kontroly českého skloňování a názvů projektů v primárním textu dodatků prošly regresními testy:
 
 - **Karavanové stání:** dodatky č. 1 a 2 jsou propojené se základní smlouvou přes explicitní ID; dodatek č. 3 přes číslo smlouvy.
 - **Nájem nebytových prostor pro OOP:** dodatky č. 1 a 2 jsou propojené se základní smlouvou přes explicitní ID.
@@ -128,7 +128,7 @@ Následující seznam je průběžně aktualizovaný pracovní plán; starší z
 7. **Doplnit regresní testy a ověřit výstupy.** Pro každou změnu přidat test konkrétního případu i test proti falešnému propojení. Spustit `pytest -q tests`, zkontrolovat `data/contract_links.json`, návazné projektové JSON soubory a zobrazení v detailu webu. Poté ověřit výsledek běhu `sync.yml` a následné publikace.
 8. **Po dokončení aktualizovat tento README.** Uvést nové počty, konkrétní potvrzené vazby, otevřené kandidáty, výsledek testů a identifikátor/čas běhu workflow. Neuvádět jako hotové kroky, které byly pouze navrženy.
 
-**Výchozí bod pro pokračování k 16. 10. 2026:** poslední ověřená synchronizace 38851400956 a nasazení 38854095657 uspěly; výstup stále obsahuje 12 potvrzených vazeb. Text přílohy `37367969` jednoznačně popisuje Želechy a odkazuje na původní smlouvu ze dne 25. 6. 2026, tedy na základní smlouvu `36197262`. Pracovní změny nyní: povolit české skloňování při kontrole názvu souboru, využít název projektu výslovně uvedený v textu dodatku a vyžadovat současně shodu data, významného překryvu projektu a oficiálního IČO. Poslední změny kódu a testů čekají na ověření GitHub Actions; po úspěšném běhu aktualizovat počty vazeb. Dále prověřit `3861664`, `25099803`, `28586216` a `33854349`.
+**Výchozí bod pro pokračování k 18. 10. 2026:** synchronizace [39109826522](https://github.com/ReneHlouzek/lomnice-verejne-zakazky/actions/runs/39109826522) a nasazení [39112503614](https://github.com/ReneHlouzek/lomnice-verejne-zakazky/actions/runs/39112503614) uspěly; 53 regresních testů prošlo. Výstup obsahuje 14 potvrzených vazeb a 0 kandidátů. Příloha `37367969` byla znovu ověřena: text odpovídá dodatku pro Želechy a propojení se základní smlouvou `36197262` je podloženo původním datem smlouvy, konkrétním názvem projektu a shodným IČO smluvní strany. Historický import Registru smluv potvrzuje všech 124 dumpů. Další prioritou je ručně prověřit záznamy `3861664`, `25099803`, `28586216` a `33854349`, zejména zda lze na základě primárních textů a jednoznačných identifikátorů doplnit další vazby bez falešných pozitiv.
 
 ## Testy a lokální spuštění
 
