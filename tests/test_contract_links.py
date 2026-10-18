@@ -431,6 +431,38 @@ def test_document_project_title_extraction_supports_realization_of_action(tmp_pa
     assert "Karlovském náměstí" in titles["3861664"][0]
 
 
+def test_generic_document_parent_is_not_linked_when_date_and_party_are_ambiguous(monkeypatch):
+    monkeypatch.setattr(link_builder, "DOCUMENT_PARENT_DATES", {"3861664": ["2017-03-23"]})
+    monkeypatch.setattr(
+        link_builder,
+        "DOCUMENT_PROJECT_TITLES",
+        {"3861664": ["Lomnice nad Popelkou – obnova VH sítí na Karlovském náměstí"]},
+    )
+    addendum = {
+        "id": "karlovske-addendum",
+        "title": "Dodatek č. 1 k veřejnoprávní smlouvě o poskytnutí neinvestiční dotace",
+        "sources": [{"record": {
+            "source": "registr-smluv", "source_id": "3861664",
+            "title": "Dodatek č. 1 k veřejnoprávní smlouvě o poskytnutí neinvestiční dotace",
+            "signed_date": "2017-12-12", "buyer_ico": "00275905", "supplier_ico": "49295934",
+        }}],
+    }
+    bases = []
+    for source_id in ("1426690", "1426691"):
+        bases.append({
+            "id": f"base-{source_id}",
+            "title": "Veřejnoprávní smlouva o poskytnutí neinvestiční dotace z rozpočtu města Lomnice nad Popelkou",
+            "sources": [{"record": {
+                "source": "registr-smluv", "source_id": source_id,
+                "title": "Veřejnoprávní smlouva o poskytnutí neinvestiční dotace z rozpočtu města Lomnice nad Popelkou",
+                "signed_date": "2017-03-23", "buyer_ico": "00275905", "supplier_ico": "49295934",
+            }}],
+        })
+    links, candidates = build_links(bases + [addendum])
+    assert links == []
+    assert candidates == []
+
+
 def test_karlovske_namesti_addendum_links_by_date_project_and_party(monkeypatch):
     monkeypatch.setattr(link_builder, "DOCUMENT_PARENT_DATES", {"3861664": ["2017-03-23"]})
     monkeypatch.setattr(
@@ -440,11 +472,11 @@ def test_karlovske_namesti_addendum_links_by_date_project_and_party(monkeypatch)
     )
     base = {
         "id": "karlovske-base",
-        "title": "Obnova VH sítí na Karlovském náměstí",
+        "title": "Veřejnoprávní smlouva o poskytnutí neinvestiční dotace z rozpočtu města Lomnice nad Popelkou",
         "sources": [{"record": {
             "source": "registr-smluv",
             "source_id": "1426690",
-            "title": "Veřejnoprávní smlouva o poskytnutí neinvestiční dotace - obnova VH sítí na Karlovském náměstí",
+            "title": "Veřejnoprávní smlouva o poskytnutí neinvestiční dotace z rozpočtu města Lomnice nad Popelkou",
             "signed_date": "2017-03-23",
             "buyer_ico": "00275905",
             "supplier_ico": "49295934",
@@ -467,4 +499,5 @@ def test_karlovske_namesti_addendum_links_by_date_project_and_party(monkeypatch)
     assert len(links) == 1
     assert links[0]["reason"] == "explicit_parent_contract_date_and_project"
     assert "document_original_contract_date=2017-03-23" in links[0]["evidence"]
+    assert "generic_base_title_unique_date_and_party_match=true" in links[0]["evidence"]
     assert candidates == []
