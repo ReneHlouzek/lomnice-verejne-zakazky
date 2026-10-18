@@ -399,3 +399,72 @@ def test_document_project_title_extraction_handles_quoted_czech_project(tmp_path
 
     titles = link_builder.document_referenced_project_titles()
     assert titles["37367969"] == ["Lomnice nad Popelkou – Obnova vodovodu v Želechách"]
+
+
+
+def test_document_project_title_extraction_supports_realization_of_action(tmp_path, monkeypatch):
+    import json
+
+    doc_root = tmp_path / "data" / "documents" / "registr-smluv"
+    doc_root.mkdir(parents=True)
+    text_file = doc_root / "3861664.txt"
+    text_file.write_text(
+        "Dodatek na realizaci akce: Lomnice nad Popelkou – obnova VH sítí "
+        "na Karlovském náměstí“ o částku 602 000 Kč.",
+        encoding="utf-8",
+    )
+    manifest = doc_root / "manifest.json"
+    manifest.write_text(json.dumps({
+        "records": [{
+            "source_id": "3861664",
+            "documents": [{
+                "text_file": "data/documents/registr-smluv/3861664.txt",
+                "status": "retained_existing_text",
+            }],
+        }]
+    }), encoding="utf-8")
+    monkeypatch.setattr(link_builder, "DOC_MANIFEST", manifest)
+    monkeypatch.setattr(link_builder, "ROOT", tmp_path)
+
+    titles = link_builder.document_referenced_project_titles()
+    assert titles["3861664"]
+    assert "Karlovském náměstí" in titles["3861664"][0]
+
+
+def test_karlovske_namesti_addendum_links_by_date_project_and_party(monkeypatch):
+    monkeypatch.setattr(link_builder, "DOCUMENT_PARENT_DATES", {"3861664": ["2017-03-23"]})
+    monkeypatch.setattr(
+        link_builder,
+        "DOCUMENT_PROJECT_TITLES",
+        {"3861664": ["Lomnice nad Popelkou – obnova VH sítí na Karlovském náměstí"]},
+    )
+    base = {
+        "id": "karlovske-base",
+        "title": "Obnova VH sítí na Karlovském náměstí",
+        "sources": [{"record": {
+            "source": "registr-smluv",
+            "source_id": "1426690",
+            "title": "Veřejnoprávní smlouva o poskytnutí neinvestiční dotace - obnova VH sítí na Karlovském náměstí",
+            "signed_date": "2017-03-23",
+            "buyer_ico": "00275905",
+            "supplier_ico": "49295934",
+        }}],
+    }
+    addendum = {
+        "id": "karlovske-addendum",
+        "title": "Dodatek č. 1 k veřejnoprávní smlouvě o poskytnutí neinvestiční dotace",
+        "sources": [{"record": {
+            "source": "registr-smluv",
+            "source_id": "3861664",
+            "title": "Dodatek č. 1 k veřejnoprávní smlouvě o poskynutí neinvestiční dotace",
+            "signed_date": "2017-12-12",
+            "buyer_ico": "00275905",
+            "supplier_ico": "49295934",
+        }}],
+    }
+
+    links, candidates = build_links([base, addendum])
+    assert len(links) == 1
+    assert links[0]["reason"] == "explicit_parent_contract_date_and_project"
+    assert "document_original_contract_date=2017-03-23" in links[0]["evidence"]
+    assert candidates == []
