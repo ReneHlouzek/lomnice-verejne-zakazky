@@ -1,5 +1,5 @@
 {
-  "count": 14,
+  "count": 15,
   "links": [
     {
       "project_a": "p-dodatek-1-lomnice-n-popelkou-najem-np-0108",
@@ -49,6 +49,24 @@
       "source_id_a": "34549017",
       "source_b": "registr-smluv",
       "source_id_b": "26812007"
+    },
+    {
+      "project_a": "p-dodatek-c-1-k-verejnopravni-smlouve-o-poskynuti-neinvesticni-dotace-0058",
+      "title_a": "Dodatek č. 1 k veřejnoprávní smlouvě o poskynutí neinvestiční dotace",
+      "project_b": "p-verejnopravni-smlouva-o-poskytnuti-neinvesticni-dotace-z-rozpoctu-mest-0091",
+      "title_b": "Veřejnoprávní smlouva o poskytnutí neinvestiční dotace z rozpočtu města Lomnice nad Popelkou",
+      "kind": "contractual",
+      "confidence": "explicit",
+      "reason": "explicit_parent_contract_date_and_project",
+      "evidence": [
+        "document_original_contract_date=2017-03-23",
+        "document_project_title_overlap=0.00",
+        "generic_base_title_unique_date_and_party_match=true"
+      ],
+      "source_a": "registr-smluv",
+      "source_id_a": "3861664",
+      "source_b": "registr-smluv",
+      "source_id_b": "1426690"
     },
     {
       "project_a": "p-dodatek-c-1-k-verejnopravni-smlouve-o-poskytnuti-dotace-z-rozpctu-mest-0110",
