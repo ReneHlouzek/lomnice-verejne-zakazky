@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-18T14:10:20Z",
+  "updated_at": "2026-10-18T14:40:25Z",
   "records_checked": 110,
   "attachments_declared": 117,
   "documents_discovered": 117,
@@ -2037,7 +2037,7 @@
           "text_available": true,
           "text_chars": 17916,
           "text_file": "data/documents/registr-smluv/7649691/001.txt",
-          "refresh_error": "Command '['curl', '--fail', '--location', '--http1.1', '--retry', '2', '--retry-delay', '1', '--connect-timeout', '8', '--max-time', '25', '-A', 'Lomnice-Verejne-Zakazky/1.0 (public-data-archive)', '-H', 'Accept: application/pdf,*/*', 'https://smlouvy.gov.cz/smlouva/soubor/10964327/PRV_PRINT_OUTPUT_A.pdf']' returned non-zero exit status 28."
+          "refresh_error": "Command '['curl', '--fail', '--location', '--http1.1', '--retry', '2', '--retry-delay', '1', '--connect-timeout', '8', '--max-time', '25', '-A', 'Lomnice-Verejne-Zakazky/1.0 (public-data-archive)', '-H', 'Accept: application/pdf,*/*', 'https://smlouvy.gov.cz/smlouva/soubor/10964327/PRV_PRINT_OUTPUT_A.pdf']' returned non-zero exit status 35."
         }
       ],
       "status": "ok"
