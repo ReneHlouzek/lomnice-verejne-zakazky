@@ -298,6 +298,8 @@ def build_links(projects):
                             reason = "explicit_related_contract_id"
                         elif explicit_parent:
                             reason = "explicit_parent_contract_number"
+                        elif "generic_base_title_unique_date_and_party_match=true" in evidence:
+                            reason = "explicit_parent_contract_date_party_unique_base"
                         else:
                             reason = "explicit_parent_contract_date_and_project"
                         item = {"kind": "contractual", "confidence": "explicit",
