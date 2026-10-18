@@ -409,7 +409,7 @@ def test_document_project_title_extraction_supports_realization_of_action(tmp_pa
     doc_root.mkdir(parents=True)
     text_file = doc_root / "3861664.txt"
     text_file.write_text(
-        "Dodatek na realizaci  akce: Lomnice nad Popelkou – obnova VH sítí "
+        "Dodatek na  realizaci  akce: Lomnice nad Popelkou – obnova VH sítí "
         "na Karlovském náměstí“ o částku 602 000 Kč.",
         encoding="utf-8",
     )
