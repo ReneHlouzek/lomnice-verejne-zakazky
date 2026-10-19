@@ -519,7 +519,7 @@ def test_jilemnicka_addenda_conflicting_parent_date_never_confirm_link(monkeypat
         "id": "jilemnicka-base",
         "title": "Obnova vodovodu a kanalizace Jilemnická ulice",
         "sources": [{"record": {
-            "source": "registr-smluv", "source_id": "20244341",
+            "source": "registr-smluv", "source_id": "unverified-base",
             "title": "Veřejnoprávní smlouva o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou",
             "signed_date": "2022-09-22",
             "buyer_ico": "00275905", "supplier_ico": "49295934",
@@ -529,7 +529,7 @@ def test_jilemnicka_addenda_conflicting_parent_date_never_confirm_link(monkeypat
         "id": "jilemnicka-addendum-1",
         "title": "Dodatek č. 1 – Obnova vodovodu a kanalizace Jilemnická ulice",
         "sources": [{"record": {
-            "source": "registr-smluv", "source_id": "25099803",
+            "source": "registr-smluv", "source_id": "unverified-addendum",
             "title": "Dodatek č. 1 veřejnoprávní smlouvy o poskytnutí investiční dotace – Jilemnická ulice",
             "signed_date": "2023-12-01",
             "buyer_ico": "00275905", "supplier_ico": "49295934",
@@ -538,4 +538,51 @@ def test_jilemnicka_addenda_conflicting_parent_date_never_confirm_link(monkeypat
 
     links, _candidates = build_links([base, addendum])
     assert links == []
+
+
+def test_jilemnicka_links_are_supported_by_official_council_resolutions():
+    base = {
+        "id": "jilemnicka-base",
+        "title": "Jilemnická – obnova vodovodu a kanalizace",
+        "sources": [{"record": {
+            "source": "registr-smluv", "source_id": "20244341",
+            "title": "Veřejnoprávní smlouva o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou",
+            "signed_date": "2022-09-22",
+            "buyer_ico": "00275905", "supplier_ico": "49295934",
+        }}],
+    }
+    addendum_one = {
+        "id": "jilemnicka-addendum-one",
+        "title": "Dodatek č. 1 – Jilemnická",
+        "sources": [{"record": {
+            "source": "registr-smluv", "source_id": "25099803",
+            "title": "Dodatek č. 1 veřejnoprávní smlouvy o poskytnutí investiční dotace",
+            "signed_date": "2023-12-12",
+            "buyer_ico": "00275905", "supplier_ico": "49295934",
+        }}],
+    }
+    addendum_two = {
+        "id": "jilemnicka-addendum-two",
+        "title": "Dodatek č. 2 – Jilemnická",
+        "sources": [{"record": {
+            "source": "registr-smluv", "source_id": "28586216",
+            "title": "Dodatek č. 2 veřejnoprávní smlouvy o poskytnutí investiční dotace",
+            "signed_date": "2024-10-14",
+            "buyer_ico": "00275905", "supplier_ico": "49295934",
+        }}],
+    }
+
+    links, candidates = build_links([base, addendum_one, addendum_two])
+    by_addendum = {str(row["source_id_a"]): row for row in links}
+    by_addendum.update({str(row["source_id_b"]): row for row in links})
+    assert len(links) == 2
+    for addendum_id, resolution in (("25099803", "71/23/Z"), ("28586216", "55/24/Z")):
+        row = next(
+            row for row in links
+            if addendum_id in (str(row["source_id_a"]), str(row["source_id_b"]))
+        )
+        assert row["reason"] == "explicit_parent_official_council_resolution"
+        assert f"official_council_resolution={resolution}" in row["evidence"]
+        assert any(item.startswith("official_council_resolution_url=https://") for item in row["evidence"])
+    assert candidates == []
 
