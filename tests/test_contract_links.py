@@ -501,3 +501,41 @@ def test_karlovske_namesti_addendum_links_by_date_project_and_party(monkeypatch)
     assert "document_original_contract_date=2017-03-23" in links[0]["evidence"]
     assert "generic_base_title_unique_date_and_party_match=true" in links[0]["evidence"]
     assert candidates == []
+
+
+def test_jilemnicka_addenda_conflicting_parent_date_never_confirm_link(monkeypatch):
+    # The two Jilemnická addenda say their base agreement was signed on
+    # 2023-09-22, while the only currently found base record is dated 2022-09-22.
+    # A shared project title and party IDs must not override that date conflict.
+    monkeypatch.setattr(link_builder, "DOCUMENT_PARENT_DATES", {
+        "25099803": ["2023-09-22"],
+        "28586216": ["2023-09-22"],
+    })
+    monkeypatch.setattr(link_builder, "DOCUMENT_PROJECT_TITLES", {
+        "25099803": ["Lomnice nad Popelkou – Obnova vodovodu a kanalizace Jilemnická ulice"],
+        "28586216": ["Lomnice nad Popelkou – Obnova vodovodu a kanalizace Jilemnická ulice"],
+    })
+    base = {
+        "id": "jilemnicka-base",
+        "title": "Obnova vodovodu a kanalizace Jilemnická ulice",
+        "sources": [{"record": {
+            "source": "registr-smluv", "source_id": "20244341",
+            "title": "Veřejnoprávní smlouva o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou",
+            "signed_date": "2022-09-22",
+            "buyer_ico": "00275905", "supplier_ico": "49295934",
+        }}],
+    }
+    addendum = {
+        "id": "jilemnicka-addendum-1",
+        "title": "Dodatek č. 1 – Obnova vodovodu a kanalizace Jilemnická ulice",
+        "sources": [{"record": {
+            "source": "registr-smluv", "source_id": "25099803",
+            "title": "Dodatek č. 1 veřejnoprávní smlouvy o poskytnutí investiční dotace – Jilemnická ulice",
+            "signed_date": "2023-12-01",
+            "buyer_ico": "00275905", "supplier_ico": "49295934",
+        }}],
+    }
+
+    links, _candidates = build_links([base, addendum])
+    assert links == []
+
