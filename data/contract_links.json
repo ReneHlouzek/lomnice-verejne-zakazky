@@ -1,5 +1,5 @@
 {
-  "count": 15,
+  "count": 17,
   "links": [
     {
       "project_a": "p-dodatek-1-lomnice-n-popelkou-najem-np-0108",
@@ -86,6 +86,24 @@
       "source_id_b": "31062824"
     },
     {
+      "project_a": "p-dodatek-c-1-k-verejnopravni-smlouve-o-poskytnuti-investicni-dotace-z-r-0120",
+      "title_a": "Dodatek č. 1 k veřejnoprávní smlouvě o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou",
+      "project_b": "p-verejnopravni-smlouva-o-poskytnuti-investicni-dotace-z-rozpoctu-mesta-0068",
+      "title_b": "Veřejnoprávní smlouva o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou - Lomnice nad popekou - obnva vodovdou a kanalizace Jilemnická ulice",
+      "kind": "contractual",
+      "confidence": "explicit",
+      "reason": "explicit_parent_official_council_resolution",
+      "evidence": [
+        "official_council_resolution=55/24/Z",
+        "official_council_resolution_date=2024-09-25",
+        "official_council_resolution_url=https://www.lomnicenadpopelkou.cz/assets/File.ashx?id_dokumenty=23045&id_org=8675"
+      ],
+      "source_a": "registr-smluv",
+      "source_id_a": "28586216",
+      "source_b": "registr-smluv",
+      "source_id_b": "20244341"
+    },
+    {
       "project_a": "p-dodatek-c-1-ke-smlouve-o-poskytnuti-ucelove-dotace-libereckemu-kraji-z-0066",
       "title_a": "Dodatek č. 1 ke smlouvě o poskytnutí účelové dotace Libereckému kraji z rozpočtu Města Lomnice nad Popelkou",
       "project_b": "p-dodatek-c-2-ke-smlouve-o-poskytnuti-ucelove-dotace-libereckemu-kraji-z-0149",
@@ -152,6 +170,24 @@
       "source_id_a": "37367969",
       "source_b": "registr-smluv",
       "source_id_b": "36197262"
+    },
+    {
+      "project_a": "p-dodatek-c-1-verejnopravni-smlouvy-o-poskytnuti-investicni-dotace-z-roz-0083",
+      "title_a": "Dodatek č. 1 veřejnoprávní smlouvy o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou",
+      "project_b": "p-verejnopravni-smlouva-o-poskytnuti-investicni-dotace-z-rozpoctu-mesta-0068",
+      "title_b": "Veřejnoprávní smlouva o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou - Lomnice nad popekou - obnva vodovdou a kanalizace Jilemnická ulice",
+      "kind": "contractual",
+      "confidence": "explicit",
+      "reason": "explicit_parent_official_council_resolution",
+      "evidence": [
+        "official_council_resolution=71/23/Z",
+        "official_council_resolution_date=2023-12-06",
+        "official_council_resolution_url=https://lomnicenadpopelkou.cz/assets/File.ashx?id_dokumenty=21831&id_org=8675"
+      ],
+      "source_a": "registr-smluv",
+      "source_id_a": "25099803",
+      "source_b": "registr-smluv",
+      "source_id_b": "20244341"
     },
     {
       "project_a": "p-dodatek-c-1-verejnopravni-smlouvy-o-poskytnuti-neinvesticni-dotace-z-r-0101",
