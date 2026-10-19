@@ -191,6 +191,41 @@ def unique_document_parent_bases(projects):
     return candidates
 
 
+# Manually verified links supported by official council resolutions. Keep this
+# allowlist narrow and attach the resolution identifier and official source URL
+# to the generated evidence so each exception remains auditable.
+OFFICIAL_RESOLUTION_PARENT_LINKS = {
+    frozenset(("20244341", "25099803")): {
+        "resolution": "71/23/Z",
+        "resolution_date": "2023-12-06",
+        "url": "https://lomnicenadpopelkou.cz/assets/File.ashx?id_dokumenty=21831&id_org=8675",
+    },
+    frozenset(("20244341", "28586216")): {
+        "resolution": "55/24/Z",
+        "resolution_date": "2024-09-25",
+        "url": "https://www.lomnicenadpopelkou.cz/assets/File.ashx?id_dokumenty=23045&id_org=8675",
+    },
+}
+
+
+def official_resolution_parent_evidence(addendum, base):
+    """Return auditable evidence when an official council resolution names the parent chain."""
+    if not resolver.is_addendum(addendum) or resolver.is_addendum(base):
+        return []
+    add_id = str(addendum.get("source_id") or addendum.get("version_id") or "").strip()
+    base_id = str(base.get("source_id") or base.get("version_id") or "").strip()
+    resolution = OFFICIAL_RESOLUTION_PARENT_LINKS.get(frozenset((add_id, base_id)))
+    if not resolution or add_id == base_id:
+        return []
+    if not shared_party_identity(addendum, base):
+        return []
+    return [
+        f"official_council_resolution={resolution['resolution']}",
+        f"official_council_resolution_date={resolution['resolution_date']}",
+        f"official_council_resolution_url={resolution['url']}",
+    ]
+
+
 def build_links(projects):
     links, candidates = [], []
     unique_parent_bases = unique_document_parent_bases(projects)
@@ -239,6 +274,10 @@ def build_links(projects):
                     else:
                         addendum = base = None
                         add_id = ""
+                    official_resolution_evidence = (
+                        official_resolution_parent_evidence(addendum, base)
+                        if addendum and base else []
+                    )
                     if addendum and base:
                         base_date = resolver.date_value(
                             base.get("signed_date") or base.get("date") or base.get("published")
@@ -279,7 +318,10 @@ def build_links(projects):
                                 document_parent_evidence.append(
                                     "generic_base_title_unique_date_and_party_match=true"
                                 )
-                    explicit = related_id_match or explicit_parent or document_parent_match
+                    explicit = (
+                        related_id_match or explicit_parent or document_parent_match
+                        or bool(official_resolution_evidence)
+                    )
                     if explicit:
                         matching_refs = [
                             x for x in refs_a if resolver.contract_number_matches(x, nb)
@@ -292,6 +334,8 @@ def build_links(projects):
                             evidence = unique_evidence([f"related_contract_id={related_id}"] + evidence)
                         if document_parent_match:
                             evidence = unique_evidence(document_parent_evidence + evidence)
+                        if official_resolution_evidence:
+                            evidence = unique_evidence(official_resolution_evidence + evidence)
                         if not evidence and na and nb and resolver.contract_family_matches(na, nb):
                             evidence = unique_evidence([na, nb])
                         if related_id_match:
@@ -300,6 +344,8 @@ def build_links(projects):
                             reason = "explicit_parent_contract_number"
                         elif "generic_base_title_unique_date_and_party_match=true" in evidence:
                             reason = "explicit_parent_contract_date_party_unique_base"
+                        elif official_resolution_evidence:
+                            reason = "explicit_parent_official_council_resolution"
                         else:
                             reason = "explicit_parent_contract_date_and_project"
                         item = {"kind": "contractual", "confidence": "explicit",
