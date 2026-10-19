@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-19T07:17:44Z",
+  "updated_at": "2026-10-19T09:16:15Z",
   "pages_checked": 35,
   "declared_documents": 90,
   "documents_discovered": 53,
@@ -24,7 +24,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+      "error": "VU page unavailable via direct and proxy fallbacks: 500 Server Error: Internal Server Error for url: https://r.jina.ai/https://www.vhodne-uverejneni.cz/zakazka/projektova-dokumentace-mistnich-komunikaci-lomnice-nad-popelkou"
     },
     {
       "source": "vhodne-uverejneni",
