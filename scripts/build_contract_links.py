@@ -562,7 +562,7 @@ def main():
               "document_link_count": len(document_links), "document_links": document_links}
     (ROOT / "data" / "contract_links.json").write_text(
         json.dumps(output, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(f"Built {len(links)} explicit contractual links and {len(candidates)} review candidates across {len(projects)} projects.")
+    print(f"Built {len(links)} explicit contractual links, {len(candidates)} review candidates, and {len(document_links)} bundled-document links across {len(projects)} projects.")
 
 
 if __name__ == "__main__":
