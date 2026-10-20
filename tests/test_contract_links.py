@@ -594,11 +594,13 @@ def test_same_registry_entry_attachments_have_explicit_document_links():
 
     # These records publish both the original agreement and its amendment as
     # attachments to one registry entry, so project-to-project links cannot
-    # represent the relationship.
+    # represent the relationship. Only assert records mapped to a project:
+    # source 6414639 is a standalone subsidy agreement and has no project page
+    # in data/projects, so emitting a project_id for it would create a dangling
+    # link that the UI cannot display.
     for source_id, identifier in (
         ("426037", "OLP/588/2016"),
         ("8497295", "OLP/1552/2019"),
-        ("6414639", "9270370988"),
     ):
         assert source_id in by_source
         row = by_source[source_id]
