@@ -465,6 +465,14 @@ def build_document_bundle_links():
             text, flags=re.IGNORECASE,
         ):
             found.add("OLP/{}/{}".format(match.group(1), match.group(2)))
+        # Some scanned originals omit the separator between the contract
+        # sequence and year (for example OLP/15522019). Normalize that OCR /
+        # source formatting variant to the same canonical identifier.
+        for match in re.finditer(
+            r"\bOLP\s*[/_-]?\s*(\d{1,4})(\d{4})\b",
+            text, flags=re.IGNORECASE,
+        ):
+            found.add("OLP/{}/{}".format(match.group(1), match.group(2)))
         for match in re.finditer(r"\b\d{8,12}\b", text):
             found.add(match.group(0))
         return found
