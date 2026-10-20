@@ -414,6 +414,140 @@ def build_links(projects):
     return links, candidates
 
 
+
+def build_document_bundle_links():
+    """Find explicit base/addendum pairs among attachments stored in one registry record."""
+    from urllib.parse import unquote
+
+    manifest_path = DOC_MANIFEST
+    contracts_path = ROOT / "data" / "registr_smluv" / "contracts.json"
+    if not manifest_path.exists() or not contracts_path.exists():
+        return []
+    try:
+        manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+        contract_rows = json.loads(contracts_path.read_text(encoding="utf-8")).get("records", [])
+    except (OSError, json.JSONDecodeError):
+        return []
+
+    records_by_id = {
+        str(row.get("source_id") or "").strip(): row
+        for row in contract_rows
+        if str(row.get("source_id") or "").strip()
+    }
+    project_by_source = {}
+    project_titles = {}
+    for path in sorted((ROOT / "data" / "projects").glob("*.json")):
+        try:
+            project = json.loads(path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            continue
+        pid = str(project.get("id") or "").strip()
+        if not pid:
+            continue
+        project_titles[pid] = project.get("title") or project.get("canonical", {}).get("title") or pid
+        for source in project.get("sources", []):
+            row = source.get("record") or source
+            sid = str(row.get("source_id") or source.get("source_id") or "").strip()
+            if sid:
+                project_by_source[sid] = pid
+
+    def identifier_tokens(value):
+        text = unquote(str(value or ""))
+        found = set()
+        for match in re.finditer(
+            r"\bOLP\s*[/_-]?\s*(\d{1,6})\s*[/_-]\s*(\d{4})\b",
+            text, flags=re.IGNORECASE,
+        ):
+            found.add("OLP/{}/{}".format(match.group(1), match.group(2)))
+        for match in re.finditer(r"\b\d{8,12}\b", text):
+            found.add(match.group(0))
+        return found
+
+    def read_document(doc):
+        if doc.get("status") == "content_mismatch_review":
+            return ""
+        rel = doc.get("text_file")
+        if not rel:
+            return ""
+        try:
+            return (ROOT / rel).read_text(encoding="utf-8", errors="replace")
+        except OSError:
+            return ""
+
+    def is_addendum(doc, body):
+        name = unquote(str(doc.get("name") or "")).lower()
+        compact_name = re.sub(r"[^a-z0-9]+", "", name)
+        opening = re.sub(r"\s+", " ", (body or "")[:900]).strip().lower()
+        compact_opening = re.sub(r"[^a-z0-9]+", "", opening)
+        return (
+            "dodatek" in compact_name
+            or "dohodaozmene" in compact_name
+            or bool(re.search(r"\b(?:dodatek\s*(?:č\.?\s*)?\d+|dohoda\s+o\s+změně\s+podmínek)\b", opening, re.IGNORECASE))
+            or compact_opening.startswith("dodatek")
+            or compact_opening.startswith("dohodaozmene")
+        )
+
+    relations = []
+    for record in manifest.get("records", []):
+        sid = str(record.get("source_id") or "").strip()
+        docs = record.get("documents") or []
+        if not sid or len(docs) < 2:
+            continue
+        loaded = []
+        for doc in docs:
+            body = read_document(doc)
+            name = unquote(str(doc.get("name") or ""))
+            identifiers = identifier_tokens(name + "\n" + body)
+            loaded.append({
+                "doc": doc,
+                "name": name,
+                "body": body,
+                "identifiers": identifiers,
+                "is_addendum": is_addendum(doc, body),
+            })
+        addenda = [item for item in loaded if item["is_addendum"]]
+        bases = [item for item in loaded if not item["is_addendum"]]
+        for addendum in addenda:
+            matching_bases = [
+                base for base in bases
+                if addendum["identifiers"] & base["identifiers"]
+            ]
+            if len(matching_bases) != 1:
+                continue
+            base = matching_bases[0]
+            shared = sorted(addendum["identifiers"] & base["identifiers"])
+            if not shared:
+                continue
+            pid = project_by_source.get(sid)
+            if not pid:
+                continue
+            base_doc, addendum_doc = base["doc"], addendum["doc"]
+            relations.append({
+                "project_id": pid,
+                "project_title": project_titles.get(pid, record.get("title") or sid),
+                "source_id": sid,
+                "source_title": record.get("title") or records_by_id.get(sid, {}).get("title") or sid,
+                "source_url": record.get("page_url") or records_by_id.get(sid, {}).get("detail_url") or records_by_id.get(sid, {}).get("source_url"),
+                "kind": "document_bundle",
+                "confidence": "explicit",
+                "reason": "same_registry_record_explicit_parent_reference",
+                "base_document_name": base["name"],
+                "base_document_url": base_doc.get("url"),
+                "base_document_text_available": bool(base["body"]),
+                "addendum_document_name": addendum["name"],
+                "addendum_document_url": addendum_doc.get("url"),
+                "addendum_document_text_available": bool(addendum["body"]),
+                "evidence": [
+                    "same_registry_record=true",
+                    "shared_contract_identifier={}".format(shared[0]),
+                    "base_and_addendum_are_separate_attachments=true",
+                ],
+            })
+
+    relations.sort(key=lambda row: (row["project_title"], row["addendum_document_name"]))
+    return relations
+
+
 def main():
     projects = []
     for path in sorted((ROOT / "data" / "projects").glob("*.json")):
@@ -422,8 +556,10 @@ def main():
         except (OSError, json.JSONDecodeError):
             continue
     links, candidates = build_links(projects)
+    document_links = build_document_bundle_links()
     output = {"count": len(links), "links": links,
-              "candidate_count": len(candidates), "candidates": candidates}
+              "candidate_count": len(candidates), "candidates": candidates,
+              "document_link_count": len(document_links), "document_links": document_links}
     (ROOT / "data" / "contract_links.json").write_text(
         json.dumps(output, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"Built {len(links)} explicit contractual links and {len(candidates)} review candidates across {len(projects)} projects.")
