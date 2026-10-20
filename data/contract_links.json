@@ -291,5 +291,71 @@
     }
   ],
   "candidate_count": 0,
-  "candidates": []
+  "candidates": [],
+  "document_link_count": 3,
+  "document_links": [
+    {
+      "project_id": "p-dodatek-c-1-ke-smlouve-o-poskytnuti-dotace-na-poskytovani-sluzeb-v-obe-0105",
+      "project_title": "Dodatek č. 1 ke smlouvě o poskytnutí dotace na poskytování služeb v obecném hospodářském zájmu z rozpočtu Libereckého kraje z finančních prostředků Ministerstva práce a sociálních věcí, č. OLP/588/2016",
+      "source_id": "426037",
+      "source_title": "Dodatek č. 1 ke smlouvě o poskytnutí dotace na poskytování služeb v obecném hospodářském zájmu z rozpočtu Libereckého kraje z finančních prostředků Ministerstva práce a sociálních věcí, č. OLP/588/2016",
+      "source_url": "https://smlouvy.gov.cz/smlouva/453713",
+      "kind": "document_bundle",
+      "confidence": "explicit",
+      "reason": "same_registry_record_explicit_parent_reference",
+      "base_document_name": "Smlouva_dotace_2016_Mesto_Lomnice_nad_Popelkou.pdf",
+      "base_document_url": "https://smlouvy.gov.cz/smlouva/soubor/645577/Smlouva_dotace_2016_Mesto_Lomnice_nad_Popelkou.pdf",
+      "base_document_text_available": true,
+      "addendum_document_name": "Mesto_Lomnice_nad_Popelkou_Dodatek_1_ke_Smlouve_DOTACE.pdf",
+      "addendum_document_url": "https://smlouvy.gov.cz/smlouva/soubor/645573/Mesto_Lomnice_nad_Popelkou_Dodatek_1_ke_Smlouve_DOTACE.pdf",
+      "addendum_document_text_available": true,
+      "evidence": [
+        "same_registry_record=true",
+        "shared_contract_identifier=00275905",
+        "base_and_addendum_are_separate_attachments=true"
+      ]
+    },
+    {
+      "project_id": "p-dodatek-c-1-ke-smlouve-o-poskytnuti-ucelove-dotace-libereckemu-kraji-z-0031",
+      "project_title": "Dodatek č. 1 ke smlouvě o poskytnutí účelové dotace Libereckému kraji z rozpočtu Města Lomnice nad Popelkou",
+      "source_id": "845225",
+      "source_title": "Dodatek č. 1 ke smlouvě o poskytnutí účelové dotace Libereckému kraji z rozpočtu Města Lomnice nad Popelkou",
+      "source_url": "https://smlouvy.gov.cz/smlouva/899853",
+      "kind": "document_bundle",
+      "confidence": "explicit",
+      "reason": "same_registry_record_explicit_parent_reference",
+      "base_document_name": "OLP_2674_2016.pdf",
+      "base_document_url": "https://smlouvy.gov.cz/smlouva/soubor/1308849/OLP_2674_2016.pdf",
+      "base_document_text_available": true,
+      "addendum_document_name": "D01_OLP_2674_2016.pdf",
+      "addendum_document_url": "https://smlouvy.gov.cz/smlouva/soubor/1308845/D01_OLP_2674_2016.pdf",
+      "addendum_document_text_available": true,
+      "evidence": [
+        "same_registry_record=true",
+        "shared_contract_identifier=00275905",
+        "base_and_addendum_are_separate_attachments=true"
+      ]
+    },
+    {
+      "project_id": "p-obnova-byvale-svobodovy-hrobky-na-hrbitove-v-lomnici-nad-popelkou-okna-0096",
+      "project_title": "Obnova bývalé Svobodovy hrobky na hřbitově v Lomnici nad Popelkou - okna a vstupní dveře",
+      "source_id": "8497295",
+      "source_title": "Obnova bývalé Svobodovy hrobky na hřbitově v Lomnici nad Popelkou - okna a vstupní dveře",
+      "source_url": "https://smlouvy.gov.cz/smlouva/10218374",
+      "kind": "document_bundle",
+      "confidence": "explicit",
+      "reason": "same_registry_record_explicit_parent_reference",
+      "base_document_name": "58_Mesto_Lomnice_n_P_smlouva_o_poskytnuti_dotace.pdf",
+      "base_document_url": "https://smlouvy.gov.cz/smlouva/soubor/12069971/58_Mesto_Lomnice_n_P_smlouva_o_poskytnuti_dotace.pdf",
+      "base_document_text_available": true,
+      "addendum_document_name": "58_Dodatek_c.1_ke_smlouve_Mesto_Lomnice_n_P.pdf",
+      "addendum_document_url": "https://smlouvy.gov.cz/smlouva/soubor/13363970/58_Dodatek_c.1_ke_smlouve_Mesto_Lomnice_n_P.pdf",
+      "addendum_document_text_available": true,
+      "evidence": [
+        "same_registry_record=true",
+        "shared_contract_identifier=00275905",
+        "base_and_addendum_are_separate_attachments=true"
+      ]
+    }
+  ]
 }
