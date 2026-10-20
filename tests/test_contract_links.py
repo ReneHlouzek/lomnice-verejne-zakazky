@@ -586,3 +586,25 @@ def test_jilemnicka_links_are_supported_by_official_council_resolutions():
         assert any(item.startswith("official_council_resolution_url=https://") for item in row["evidence"])
     assert candidates == []
 
+
+
+def test_same_registry_entry_attachments_have_explicit_document_links():
+    links = link_builder.build_document_bundle_links()
+    by_source = {str(row["source_id"]): row for row in links}
+
+    # These records publish both the original agreement and its amendment as
+    # attachments to one registry entry, so project-to-project links cannot
+    # represent the relationship.
+    for source_id, identifier in (
+        ("426037", "OLP/588/2016"),
+        ("8497295", "OLP/1552/2019"),
+        ("6414639", "9270370988"),
+    ):
+        assert source_id in by_source
+        row = by_source[source_id]
+        assert row["kind"] == "document_bundle"
+        assert row["confidence"] == "explicit"
+        assert "same_registry_record=true" in row["evidence"]
+        assert "shared_contract_identifier={}".format(identifier) in row["evidence"]
+        assert row["base_document_url"]
+        assert row["addendum_document_url"]
