@@ -125,19 +125,30 @@ async function run(){
 }
 
 function relationshipsSection(p,data){
-  data=data||{links:[],candidates:[]};
+  data=data||{links:[],candidates:[],document_links:[]};
   const pid=p.id;
   const confirmed=(data.links||[]).filter(x=>x.project_a===pid||x.project_b===pid);
   const candidates=(data.candidates||[]).filter(x=>x.project_a===pid||x.project_b===pid);
-  if(!confirmed.length&&!candidates.length)return '';
+  const documentLinks=(data.document_links||[]).filter(x=>x.project_id===pid);
+  if(!confirmed.length&&!candidates.length&&!documentLinks.length)return '';
   const renderRow=x=>{
     const other=x.project_a===pid?{id:x.project_b,title:x.title_b}:{id:x.project_a,title:x.title_a};
     const evidence=Array.isArray(x.evidence)&&x.evidence.length?'<p class="meta">Podklady: '+esc(x.evidence.join(', '))+'</p>':'';
     return '<article class="source"><div class="source-head"><strong>'+esc(other.title||other.id)+'</strong><span class="badge">'+esc(x.confidence||'')+'</span></div><p class="meta">'+esc(x.reason||'')+'</p>'+evidence+'<a href="./project.html?id='+encodeURIComponent(other.id)+'">Otevřít záznam →</a></article>';
   };
-  let html='<section id="relationships" class="card"><div class="section-title"><div><p class="eyebrow dark">SOUVISEJÍCÍ ZÁZNAMY</p><h2>Smlouvy, dodatky a možné vazby</h2></div><span>'+(confirmed.length+candidates.length)+' položek</span></div>';
+  const renderDocumentLink=x=>{
+    const baseLink=x.base_document_url?'<a href="'+esc(x.base_document_url)+'" target="_blank" rel="noopener">Otevřít základní smlouvu →</a>':'<span class="meta">Odkaz na základní dokument není dostupný.</span>';
+    const addendumLink=x.addendum_document_url?'<a href="'+esc(x.addendum_document_url)+'" target="_blank" rel="noopener">Otevřít dodatek →</a>':'<span class="meta">Odkaz na dodatek není dostupný.</span>';
+    const evidence=Array.isArray(x.evidence)&&x.evidence.length?'<p class="meta">Podklady: '+esc(x.evidence.join(', '))+'</p>':'';
+    const baseText=x.base_document_text_available?'text dostupný':'text není dostupný';
+    const addendumText=x.addendum_document_text_available?'text dostupný':'text není dostupný';
+    return '<article class="source"><div class="source-head"><strong>'+esc(x.addendum_document_name||'Dodatek')+'</strong><span class="badge green">explicitní vazba</span></div><p class="meta">Základní dokument: '+esc(x.base_document_name||'Neuveden')+' ('+baseText+'). Dodatek: '+addendumText+'.</p><div class="source-actions">'+baseLink+addendumLink+'</div>'+evidence+'</article>';
+  };
+  const total=confirmed.length+candidates.length+documentLinks.length;
+  let html='<section id="relationships" class="card"><div class="section-title"><div><p class="eyebrow dark">SOUVISEJÍCÍ ZÁZNAMY</p><h2>Smlouvy, dodatky a možné vazby</h2></div><span>'+total+' položek</span></div>';
   if(confirmed.length)html+='<h3>Potvrzené smluvní vazby</h3><div class="document-list">'+confirmed.map(renderRow).join('')+'</div>';
   if(candidates.length)html+='<h3>Vazby k ručnímu ověření</h3><p class="method-note">Jde pouze o kandidáty podle podobnosti údajů, nikoli o potvrzené smluvní vztahy.</p><div class="document-list">'+candidates.map(renderRow).join('')+'</div>';
+  if(documentLinks.length)html+='<h3>Vazby mezi přílohami téhož záznamu</h3><p class="method-note">Registr smluv někdy zveřejní základní smlouvu a její dodatek jako dvě přílohy jednoho záznamu. Tyto vztahy se proto evidují na úrovni dokumentů, nikoli jako vazba dvou samostatných záznamů.</p><div class="document-list">'+documentLinks.map(renderDocumentLink).join('')+'</div>';
   return html+'</section>';
 }
 function render(p,documentAnalysis={documents:[]},linkData={links:[],candidates:[]}){
