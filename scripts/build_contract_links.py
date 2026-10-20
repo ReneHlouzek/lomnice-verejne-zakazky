@@ -453,6 +453,12 @@ def build_document_bundle_links():
 
     def identifier_tokens(value):
         text = unquote(str(value or ""))
+        # IČO values are identifiers of contracting parties, not contract IDs.
+        # Remove labelled IČO occurrences before collecting long numeric tokens,
+        # otherwise the same municipality IČO can falsely look like a shared
+        # contract identifier across attachments.
+        text = re.sub(r"\bIČO\b\s*[:.]?\s*\d{8}\b", " ", text, flags=re.IGNORECASE)
+        text = re.sub(r"\bICO\b\s*[:.]?\s*\d{8}\b", " ", text, flags=re.IGNORECASE)
         found = set()
         for match in re.finditer(
             r"\bOLP\s*[/_-]?\s*(\d{1,6})\s*[/_-]\s*(\d{4})\b",
@@ -515,7 +521,10 @@ def build_document_bundle_links():
             if len(matching_bases) != 1:
                 continue
             base = matching_bases[0]
-            shared = sorted(addendum["identifiers"] & base["identifiers"])
+            shared = sorted(
+                addendum["identifiers"] & base["identifiers"],
+                key=lambda value: (not value.startswith("OLP/"), value),
+            )
             if not shared:
                 continue
             pid = project_by_source.get(sid)
