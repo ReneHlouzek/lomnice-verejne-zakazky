@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-20T06:29:28Z",
+  "updated_at": "2026-10-20T08:39:30Z",
   "pages_checked": 35,
   "declared_documents": 90,
   "documents_discovered": 53,
@@ -769,7 +769,7 @@
           "index": 1,
           "label": "Výše skutečně uhrazené ceny za plnění VZ",
           "url": "https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3884804",
-          "sha256": "3c95195348fcacb0dee076f52c5b47acdd543affcdbd2075ebb2d5779a091dfb",
+          "sha256": "62be0651a14d7e56e4bf705a350c5d14684be256527ba62e81692cdb94209d0a",
           "bytes": 20272,
           "content_type": "text/html; charset=UTF-8",
           "transport": "direct",
