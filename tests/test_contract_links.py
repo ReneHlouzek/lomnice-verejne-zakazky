@@ -631,3 +631,21 @@ def test_distinctive_filename_mismatch_is_still_flagged():
     assert document_extractor.filename_content_mismatch(
         "Obnova_rybnika_Matous.pdf", text
     )
+
+
+
+def test_generic_official_grant_pdf_filename_is_not_flagged():
+    text = (
+        "Dohoda o poskytnutí dotace z Programu rozvoje venkova ČR "
+        "č. 20/007/19210/451/173/001124"
+    )
+    assert not document_extractor.filename_content_mismatch(
+        "PRV_PRINT_OUTPUT_A.pdf", text
+    )
+
+
+def test_redaction_marker_in_filename_is_not_content_evidence():
+    text = "Smlouva o dílo na opravu úseku místní komunikace."
+    assert not document_extractor.filename_content_mismatch(
+        "2026022_Redigov%C3%A1no.pdf", text
+    )
