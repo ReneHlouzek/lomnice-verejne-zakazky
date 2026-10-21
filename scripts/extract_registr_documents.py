@@ -98,7 +98,7 @@ def filename_content_mismatch(name:str, text:str|None)->bool:
         "dodatek","smlouva","smlouvy","smlouve","smlouvou","smluvy","smluvni",
         "verejnopr","sml","priloha","prilohy","dokument","scan",
         "final","verze","navrh","podpis","podepsano","signed","document",
-        "contract","agreement","attachment","copy","kopie","strana","strany",
+        "contract","agreement","attachment","copy","kopie","strana","strany",\n        "print","output","redigovano",
         "cislo","castka","rozpocet","projekt","mesto","obec","kraj"
     }
     distinctive=words-generic
