@@ -104,6 +104,15 @@ def filename_content_mismatch(name:str, text:str|None)->bool:
     distinctive=words-generic
     if not distinctive or not text:
         return False
+    # A generic annex filename followed only by the city name is not a
+    # reliable content fingerprint. Some official attachments contain only
+    # a list/form and never repeat the city in their extracted text.
+    # Keep such files out of mismatch quarantine; the parent record/title
+    # still supplies the context, while genuinely distinctive filenames
+    # (project, street, contract number, etc.) remain checked below.
+    locality_only_annex = {"lomnice", "popelkou", "lomnicke", "lomnicka"}
+    if "priloha" in words and distinctive <= locality_only_annex:
+        return False
     body_words=normalized_words(text)
     # Exact token matches are best. For longer distinctive terms, compare a
     # five-letter stem so "Želechy" matches "Želechách" and "Košov" matches
