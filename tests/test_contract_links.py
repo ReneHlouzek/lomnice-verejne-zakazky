@@ -629,5 +629,5 @@ def test_generic_city_named_annex_is_not_flagged_as_wrong_content():
 def test_distinctive_filename_mismatch_is_still_flagged():
     text = "Příloha č. 1 Darovací smlouvy pro Mateřskou školu."
     assert document_extractor.filename_content_mismatch(
-        "OLP_2674_2016.pdf", text
+        "Obnova_rybnika_Matous.pdf", text
     )
