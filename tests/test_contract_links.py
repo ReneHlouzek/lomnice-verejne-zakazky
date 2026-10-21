@@ -4,6 +4,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 import build_contract_links as link_builder
+import extract_registr_documents as document_extractor
 from build_contract_links import build_links
 
 
@@ -610,3 +611,23 @@ def test_same_registry_entry_attachments_have_explicit_document_links():
         assert "shared_contract_identifier={}".format(identifier) in row["evidence"]
         assert row["base_document_url"]
         assert row["addendum_document_url"]
+
+
+
+def test_generic_city_named_annex_is_not_flagged_as_wrong_content():
+    text = (
+        "Příloha č. 1 Darovací smlouvy\\n"
+        "Mateřská škola Dášenka\\n"
+        "KAMEROVÝ VIDEOSYSTÉM CCTV\\n"
+        "venkovní kamera TurboHD 3 ks"
+    )
+    assert not document_extractor.filename_content_mismatch(
+        "Priloha%20Lomnice.pdf", text
+    )
+
+
+def test_distinctive_filename_mismatch_is_still_flagged():
+    text = "Příloha č. 1 Darovací smlouvy pro Mateřskou školu."
+    assert document_extractor.filename_content_mismatch(
+        "OLP_2674_2016.pdf", text
+    )
