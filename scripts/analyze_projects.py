@@ -158,9 +158,10 @@ def analyze(project):
         if x["price"] not in unique_prices:
             unique_prices.append(x["price"])
 
+    # An addendum's stated amount may be a revised cumulative value; it must
+    # not silently become the original contract baseline when the base record
+    # is missing from the available source data.
     baseline = next((x["price"] for x in priced if x["event"] in ("contract", "award")), None)
-    if baseline is None and priced:
-        baseline = priced[0]["price"]
     current = priced[-1]["price"] if priced else None
 
     signals = []
