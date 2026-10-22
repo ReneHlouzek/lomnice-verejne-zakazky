@@ -520,9 +520,21 @@ def canonical(g):
             "observed_prices": sorted(set(observed_prices)),
             "observed_vat_included_prices": sorted(set(vat_prices)),
             "expected_values": sorted(set(expected_values)),
-            "initial_contract_price": observed_prices[0] if observed_prices else None,
+            # A priced addendum is an observed amount, but it is not evidence of
+            # the original contract baseline. Leave the baseline unknown unless
+            # a contract/award event with a price is actually present.
+            "initial_contract_price": next(
+                (e["price"] for e in events if e["type"] in ("contract", "award") and e["price"] is not None),
+                None,
+            ),
             "latest_observed_price": observed_prices[-1] if observed_prices else None,
-            "expected_to_contract_ratio": (observed_prices[0] / expected_values[0]) if observed_prices and expected_values and expected_values[0] else None
+            "expected_to_contract_ratio": (
+                next((e["price"] for e in events if e["type"] in ("contract", "award") and e["price"] is not None), None)
+                / expected_values[0]
+                if expected_values and expected_values[0]
+                and next((e["price"] for e in events if e["type"] in ("contract", "award") and e["price"] is not None), None) is not None
+                else None
+            )
         },
         "procurement": {
             "procedures": procedures,
