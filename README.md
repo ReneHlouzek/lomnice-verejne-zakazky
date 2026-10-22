@@ -10,7 +10,7 @@ Projekt spojuje veřejně dostupná data z profilu zadavatele na Vhodném uveře
 
 ## Aktuální stav
 
-**Datový stav ověřený 19. 10. 2026, 12:05 UTC.** Synchronizace [běh 39247181203](https://github.com/ReneHlouzek/lomnice-verejne-zakazky/actions/runs/39247181203) skončila úspěšně; joby `fetch-registr`, `fetch-vu` a `build` mají `success`. Prošlo **58 regresních testů**. Import Registru smluv obsahuje 110 záznamů; manifest dokumentů eviduje 117 deklarovaných příloh, 117 objevených příloh a 112 dostupných textů. Datový index byl vytvořen 19. 10. v 12:05:29 UTC a web byl následně úspěšně nasazen v [běhu 39249377412](https://github.com/ReneHlouzek/lomnice-verejne-zakazky/actions/runs/39249377412). Index obsahuje 163 projektových celků; `data/contract_links.json` obsahuje **17 potvrzených vazeb a 0 kandidátů**.
+**Datový stav ověřený 22. 10. 2026, 08:50 UTC.** Synchronizace [běh 39748948936](https://github.com/ReneHlouzek/lomnice-verejne-zakazky/actions/runs/39748948936) skončila úspěšně; joby `fetch-registr`, `fetch-vu` a `build` mají `success`. Prošlo **63 regresních testů**. Import Registru smluv obsahuje 110 záznamů; manifest dokumentů eviduje 117 deklarovaných a objevených příloh a 112 dostupných textů. Datový index byl vytvořen 22. 10. v 08:50:30 UTC a web byl následně úspěšně nasazen v [běhu 39750799248](https://github.com/ReneHlouzek/lomnice-verejne-zakazky/actions/runs/39750799248). Index obsahuje 163 projektových celků; `data/contract_links.json` obsahuje **17 potvrzených vazeb, 0 kandidátů a 3 vazby na dokumenty přibalené k jiné smlouvě**.
 
 | Ukazatel | Aktuální hodnota |
 |---|---:|
@@ -27,13 +27,13 @@ Projekt spojuje veřejně dostupná data z profilu zadavatele na Vhodném uveře
 | Potvrzené vazby mezi smlouvami a dodatky | 17 |
 | Kandidátní vazby čekající na ruční ověření | 0 |
 
-Počty 109 a 110 u Registru smluv popisují různé vrstvy pipeline: přehled pokrytí organizace a počet záznamů načtených do importu. Nejde o zaměnitelné metriky. Stejně tak počet projektových celků není počtem jednotlivých smluv nebo zakázek. Údaje v tabulce odpovídají indexu vygenerovanému 19. 10. 2026 v 09:16:39 UTC.
+Počty 109 a 110 u Registru smluv popisují různé vrstvy pipeline: přehled pokrytí organizace a počet záznamů načtených do importu. Nejde o zaměnitelné metriky. Stejně tak počet projektových celků není počtem jednotlivých smluv nebo zakázek. Údaje v tabulce odpovídají indexu vygenerovanému 22. 10. 2026 v 08:50:30 UTC.
 
 ### Stav propojování smluv a dodatků
 
 Vazby se potvrzují při explicitním identifikátoru návazné smlouvy, dostatečně konkrétním čísle smlouvy nebo při ověřené kombinaci data z primární přílohy, oficiálního IČO a jedinečnosti možné základní smlouvy. Podobnost názvu sama o sobě není důkazem a nesmí vytvořit potvrzenou vazbu.
 
-V posledním vygenerovaném `data/contract_links.json` je **17 potvrzených vazeb** a **0 kandidátů**. Výstup byl vytvořen při úspěšné synchronizaci [39247181203](https://github.com/ReneHlouzek/lomnice-verejne-zakazky/actions/runs/39247181203), v níž prošlo 58 regresních testů. Vazba smlouvy `1426690` s dodatkem `3861664` zůstává potvrzena na základě data původní smlouvy 23. 3. 2017, společných oficiálních IČO a jedinečnosti možného základního záznamu. Nově jsou potvrzeny také oba dodatky k projektu **obnovy vodovodu a kanalizace v Jilemnické ulici**: záznam `25099803` je propojen se základní smlouvou `20244341` na základě usnesení zastupitelstva **71/23/Z z 6. 12. 2023** a záznam `28586216` na základě usnesení **55/24/Z z 25. 9. 2024**. Odkazy na oficiální usnesení jsou uloženy přímo v poli `evidence` příslušných vazeb. Tím se nepřepisuje ani nezamlčuje rozpor v datech uvedených v přílohách; vazby jsou potvrzeny nezávislým úředním důkazem a shodou smluvních stran.
+V posledním vygenerovaném `data/contract_links.json` je **17 potvrzených vazeb**, **0 kandidátů** a **3 vazby na dokumenty přibalené k jiné smlouvě**. Výstup byl vytvořen při úspěšné synchronizaci [39748948936](https://github.com/ReneHlouzek/lomnice-verejne-zakazky/actions/runs/39748948936), v níž prošlo 63 regresních testů. Vazba smlouvy `1426690` s dodatkem `3861664` zůstává potvrzena na základě data původní smlouvy 23. 3. 2017, společných oficiálních IČO a jedinečnosti možného základního záznamu. Nově jsou potvrzeny také oba dodatky k projektu **obnovy vodovodu a kanalizace v Jilemnické ulici**: záznam `25099803` je propojen se základní smlouvou `20244341` na základě usnesení zastupitelstva **71/23/Z z 6. 12. 2023** a záznam `28586216` na základě usnesení **55/24/Z z 25. 9. 2024**. Odkazy na oficiální usnesení jsou uloženy přímo v poli `evidence` příslušných vazeb. Tím se nepřepisuje ani nezamlčuje rozpor v datech uvedených v přílohách; vazby jsou potvrzeny nezávislým úředním důkazem a shodou smluvních stran.
 
 - **Karavanové stání:** dodatky č. 1 a 2 jsou propojené se základní smlouvou přes explicitní ID; dodatek č. 3 přes číslo smlouvy.
 - **Nájem nebytových prostor pro OOP:** dodatky č. 1 a 2 jsou propojené se základní smlouvou přes explicitní ID.
@@ -112,7 +112,11 @@ Aktuální data a kontrola kódu ukazují zejména na tyto oblasti, které je po
 - **Klasifikace:** smlouva z Registru smluv nemusí být veřejnou zakázkou. Typ záznamu, stav zakázky a signál možné souvislosti se zakázkou je proto nutné interpretovat odděleně.
 - **Ruční ověření:** kandidátní vazby a nejednoznačné případy vyžadují dohledání v původních dokumentech. Automatické skóre není potvrzením právní ani věcné vazby.
 
-Prioritou dalšího vývoje je spolehlivé hierarchické propojení základních smluv a jejich dodatků, zachování důkazů o každé vazbě, úplnější finanční časová osa a testy proti reálným případům.
+Aktuální priority po synchronizaci 22. 10. 2026:
+1. Prověřit tři vazby na dokumenty přibalené k jiné smlouvě (bundled-document links), ověřit jejich prezentaci v detailu projektu a zabránit dvojímu započítání hodnot.
+2. Pokračovat v bezpečném propojování dodatků pouze na základě explicitních identifikátorů nebo dohledatelných úředních důkazů; u Jilemnické zachovat odkazy na usnesení 71/23/Z a 55/24/Z a současně nezamlčet rozpor dat a čísla dodatku v metadatech.
+3. Aktualizovat finanční časovou osu tak, aby oddělovala základní dotaci, jednotlivá navýšení a kumulativní částku, pokud je doložena.
+4. U každé změny spustit regresní testy, ověřit `data/contract_links.json`, `data/index.json`, web a deploy; README aktualizovat až podle skutečného výsledku běhu.
 
 
 ## Předání práce pro nový chat – aktuální úkoly
@@ -127,7 +131,7 @@ Následující seznam je aktuální pracovní plán. Starší poznámky, které 
 6. **Doplnit regresní testy a ověřit výstupy.** Pro každou změnu přidat test konkrétního případu i test proti falešnému propojení. Spustit `pytest -q tests`, zkontrolovat `data/contract_links.json`, příslušné projektové JSON soubory a zobrazení v detailu webu. Poté ověřit výsledek `sync.yml` a následné publikace.
 7. **Aktualizovat README po ověření změn.** Uvést skutečné počty, konkrétní potvrzené vazby, otevřené případy, výsledek testů a identifikátor/čas běhu workflow. Neuvádět jako hotové kroky, které byly pouze navrženy.
 
-**Výchozí bod pro pokračování k 19. 10. 2026, 09:16 UTC:** synchronizace [39225814828](https://github.com/ReneHlouzek/lomnice-verejne-zakazky/actions/runs/39225814828) i následný deploy [39228854232](https://github.com/ReneHlouzek/lomnice-verejne-zakazky/actions/runs/39228854232) uspěly; v této verzi kódu prošlo 57 regresních testů. Index obsahuje 163 projektových celků, `data/contract_links.json` má 15 potvrzených vazeb a 0 kandidátů. Vazba `3861664 → 1426690` je nově potvrzena na základě data původní smlouvy 23. 3. 2017, společných oficiálních IČO a jedinečnosti možného základního záznamu. Vazby `37367969 → 36197262` (Želechy) a `32731945 → 29417636` (Košov) zůstávají potvrzené samostatně. Otevřeným bodem je zejména rozpor mezi datem uvedeným v dokumentech dodatků `25099803`/`28586216` a metadaty dříve nalezené možné základní smlouvy `20244341`.
+**Aktualizovaný výchozí bod k 22. 10. 2026, 08:50 UTC:** synchronizace [39748948936](https://github.com/ReneHlouzek/lomnice-verejne-zakazky/actions/runs/39748948936) i následný deploy [39750799248](https://github.com/ReneHlouzek/lomnice-verejne-zakazky/actions/runs/39750799248) uspěly; prošlo 63 regresních testů. Index obsahuje 163 projektových celků a `data/contract_links.json` má 17 potvrzených vazeb, 0 kandidátů a 3 vazby na přibalené dokumenty. Vazba `3861664 → 1426690` zůstává potvrzena na základě data původní smlouvy 23. 3. 2017, oficiálních IČO a jedinečnosti základní smlouvy. Dodatky `25099803` a `28586216` jsou nyní propojeny se základní smlouvou `20244341` na základě oficiálních usnesení 71/23/Z a 55/24/Z; rozpor data v přílohách je zachován jako poznámka a není považován za vyřešenou chybu dokumentů. Další prioritou je audit tří vazeb na přibalené dokumenty a bezpečné rozlišení dalších nepropojených dodatků.
 
 ## Testy a lokální spuštění
 
