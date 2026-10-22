@@ -156,6 +156,37 @@ def test_price_change_uses_contract_baseline_and_latest_observation():
     assert result["financial"]["addendum_count"] == 2
 
 
+def test_addendum_only_price_is_not_mislabelled_as_contract_baseline():
+    project = {
+        "id": "p-addendum-only",
+        "sources": [{"record": {
+            "source": "registr-smluv",
+            "source_id": "426037",
+            "title": "Dodatek č. 1 ke smlouvě OLP/588/2016",
+            "date": "2016-10-21",
+            "price": "886000",
+        }}],
+    }
+    result = analyzer.analyze(project)
+    assert result["timeline"][0]["event"] == "addendum"
+    assert result["financial"]["baseline_price"] is None
+    assert result["financial"]["current_observed_price"] == 886000.0
+    assert result["financial"]["absolute_change"] is None
+    assert result["financial"]["percent_change"] is None
+
+
+def test_canonical_addendum_only_price_is_not_original_contract_price():
+    project = resolver.canonical([{
+        "source": "registr-smluv",
+        "source_id": "426037",
+        "title": "Dodatek č. 1 ke smlouvě OLP/588/2016",
+        "date": "2016-10-21",
+        "price": "886000",
+    }])
+    assert project["financial"]["initial_contract_price"] is None
+    assert project["financial"]["latest_observed_price"] == 886000.0
+
+
 def test_analysis_is_neutral_and_provenance_preserving():
     project = {"id": "p-test", "sources": [{"record": {"source": "official", "source_id": "X", "title": "Smlouva", "date": "2026-01-01", "price": 100}}]}
     result = analyzer.analyze(project)
