@@ -601,6 +601,7 @@ def test_same_registry_entry_attachments_have_explicit_document_links():
     # link that the UI cannot display.
     for source_id, identifier in (
         ("426037", "OLP/588/2016"),
+        ("845225", "OLP/2674/2016"),
         ("8497295", "OLP/1552/2019"),
     ):
         assert source_id in by_source
