@@ -483,6 +483,10 @@ def canonical(g):
     events.sort(key=lambda x: x["date"])
     contract_events = [e for e in events if e["type"] in ("contract", "addendum") and e["price"] is not None]
     observed_prices = [e["price"] for e in contract_events]
+    initial_contract_price = next(
+        (e["price"] for e in events if e["type"] in ("contract", "award") and e["price"] is not None),
+        None,
+    )
     expected_values = [price(r.get("expected_value")) for r in g if price(r.get("expected_value")) is not None]
     vat_prices = [price(r.get("price_vat_included")) for r in g if price(r.get("price_vat_included")) is not None]
     verification_levels = sorted(set(str(r.get("verification_level")) for r in g if r.get("verification_level")))
@@ -520,19 +524,13 @@ def canonical(g):
             "observed_prices": sorted(set(observed_prices)),
             "observed_vat_included_prices": sorted(set(vat_prices)),
             "expected_values": sorted(set(expected_values)),
-            # A priced addendum is an observed amount, but it is not evidence of
-            # the original contract baseline. Leave the baseline unknown unless
-            # a contract/award event with a price is actually present.
-            "initial_contract_price": next(
-                (e["price"] for e in events if e["type"] in ("contract", "award") and e["price"] is not None),
-                None,
-            ),
+            # A priced addendum is an observed amount, but not evidence of
+            # the original contract baseline.
+            "initial_contract_price": initial_contract_price,
             "latest_observed_price": observed_prices[-1] if observed_prices else None,
             "expected_to_contract_ratio": (
-                next((e["price"] for e in events if e["type"] in ("contract", "award") and e["price"] is not None), None)
-                / expected_values[0]
-                if expected_values and expected_values[0]
-                and next((e["price"] for e in events if e["type"] in ("contract", "award") and e["price"] is not None), None) is not None
+                initial_contract_price / expected_values[0]
+                if initial_contract_price is not None and expected_values and expected_values[0]
                 else None
             )
         },
