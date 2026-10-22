@@ -148,7 +148,7 @@ function relationshipsSection(p,data){
   let html='<section id="relationships" class="card"><div class="section-title"><div><p class="eyebrow dark">SOUVISEJÍCÍ ZÁZNAMY</p><h2>Smlouvy, dodatky a možné vazby</h2></div><span>'+total+' položek</span></div>';
   if(confirmed.length)html+='<h3>Potvrzené smluvní vazby</h3><div class="document-list">'+confirmed.map(renderRow).join('')+'</div>';
   if(candidates.length)html+='<h3>Vazby k ručnímu ověření</h3><p class="method-note">Jde pouze o kandidáty podle podobnosti údajů, nikoli o potvrzené smluvní vztahy.</p><div class="document-list">'+candidates.map(renderRow).join('')+'</div>';
-  if(documentLinks.length)html+='<h3>Vazby mezi přílohami téhož záznamu</h3><p class="method-note">Registr smluv někdy zveřejní základní smlouvu a její dodatek jako dvě přílohy jednoho záznamu. Tyto vztahy se proto evidují na úrovni dokumentů, nikoli jako vazba dvou samostatných záznamů.</p><div class="document-list">'+documentLinks.map(renderDocumentLink).join('')+'</div>';
+  if(documentLinks.length)html+='<h3>Vazby mezi přílohami téhož záznamu</h3><p class="method-note">Registr smluv někdy zveřejní základní smlouvu a její dodatek jako dvě přílohy jednoho záznamu. Tyto vztahy se evidují pouze na úrovni dokumentů, nikoli jako dva samostatné záznamy. Samotná vazba nepřidává další finanční událost ani částku; finanční přehled vychází ze zdrojových záznamů a jejich cen.</p><div class="document-list">'+documentLinks.map(renderDocumentLink).join('')+'</div>';
   return html+'</section>';
 }
 function render(p,documentAnalysis={documents:[]},linkData={links:[],candidates:[]}){
