@@ -186,7 +186,7 @@ function render(p,documentAnalysis={documents:[]},linkData={links:[],candidates:
     </header>
 
     <section class="stats detail-stats">
-      <div class="stat"><strong>${money(f.initial_contract_price)}</strong><span>výchozí pozorovaná cena bez DPH</span></div>
+      <div class="stat"><strong>${money(f.initial_contract_price)}</strong><span>${f.initial_contract_price==null?'výchozí smluvní cena není doložena':'výchozí pozorovaná cena bez DPH'}</span></div>
       <div class="stat"><strong>${money(f.latest_observed_price)}</strong><span>poslední pozorovaná cena bez DPH</span></div>
       <div class="stat"><strong>${addenda||declaredAddenda.size}</strong><span>${addenda?'zachycených':'doložených'} dodatků / změnových záznamů</span></div>
       <div class="stat"><strong>${sourceCount}</strong><span>zdrojových záznamů</span></div>
@@ -334,8 +334,8 @@ function finance(f,es,change,changePct,declaredAddenda=new Set()){
     }
     return'<p class="meta">Pro finanční mapu zatím není k dispozici žádná pozorovaná cena.</p>';
   }
-  return`<div class="finance-head"><div><small>Rozdíl mezi první a poslední pozorovanou cenou</small><strong>${change==null?'—':money(change)}</strong><span>${changePct==null?'Procentní změnu nelze spolehlivě spočítat.':pct(changePct)}</span></div><div><small>DPH</small><strong>${f.observed_vat_included_prices?.length?money(f.observed_vat_included_prices[f.observed_vat_included_prices.length-1]):'—'}</strong><span>poslední pozorovaná cena vč. DPH</span></div></div>
-  <div class="finance-map">${prices.map((e,i)=>`<div class="finance-step"><span>${i===0?'Výchozí':esc(eventLabel(e.type))}</span><strong>${money(e.price)}</strong><small>${date(e.date)}</small>${i?'<em>'+changeMoney(prices[i-1].price,e.price)+'</em>':''}</div>`).join('')}</div>
+  return`<div class="finance-head"><div><small>${change==null?'Změnu ceny nelze určit':'Rozdíl mezi první a poslední pozorovanou cenou'}</small><strong>${change==null?'—':money(change)}</strong><span>${changePct==null?'Procentní změnu nelze spolehlivě spočítat.':pct(changePct)}</span></div><div><small>DPH</small><strong>${f.observed_vat_included_prices?.length?money(f.observed_vat_included_prices[f.observed_vat_included_prices.length-1]):'—'}</strong><span>poslední pozorovaná cena vč. DPH</span></div></div>
+  <div class="finance-map">${prices.map((e,i)=>`<div class="finance-step"><span>${i===0?(e.type==='addendum'?'Pozorovaná částka':'Výchozí'):esc(eventLabel(e.type))}</span><strong>${money(e.price)}</strong><small>${date(e.date)}</small>${i?'<em>'+changeMoney(prices[i-1].price,e.price)+'</em>':''}</div>`).join('')}</div>
   ${declaredAddenda.size?`<div class="evidence-note warning"><strong>Finanční dopad dodatků není v cenové řadě doložen</strong><span>Zdrojový záznam uvádí dodatky č. ${esc([...declaredAddenda].join(', '))}, ale dostupná data neobsahují samostatnou cenu těchto změn. Změnu ceny proto nevypočítáváme.</span></div>`:''}
   <p class="meta">Mapa zobrazuje pouze ceny skutečně nalezené v evidovaných zdrojích. Uvedené částky nejsou samy o sobě účetní závěrkou.</p>`;
 }
