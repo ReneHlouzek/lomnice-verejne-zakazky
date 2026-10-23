@@ -167,7 +167,7 @@
   "analysis": {
     "schema_version": 4,
     "project_id": "p-rekonstrukce-topneho-systemu-vcetne-zdroje-tepla-v-objektu-k-urnovemu-0119",
-    "signal_count": 4,
+    "signal_count": 3,
     "signals": [
       {
         "code": "participant_count",
@@ -196,21 +196,6 @@
         ]
       },
       {
-        "code": "expected_vs_contract_price",
-        "level": "info",
-        "message": "Výchozí evidovaná smluvní cena se od první nalezené předpokládané hodnoty liší o +77.6 %.",
-        "evidence": [
-          {
-            "type": "expected_vs_contract",
-            "expected_value": 1100000.0,
-            "contract_price": 1953762.88,
-            "delta": 853762.8799999999,
-            "percent": 77.61480727272726,
-            "calculation": "(contract_price-expected_value)/expected_value*100"
-          }
-        ]
-      },
-      {
         "code": "single_source",
         "level": "info",
         "message": "Projekt je zatím doložen pouze jedním zdrojovým záznamem.",
@@ -229,9 +214,9 @@
       }
     ],
     "financial": {
-      "baseline_price": 1953762.88,
+      "baseline_price": null,
       "current_observed_price": 1953762.88,
-      "absolute_change": 0.0,
+      "absolute_change": null,
       "percent_change": null,
       "observed_prices": [
         1953762.88

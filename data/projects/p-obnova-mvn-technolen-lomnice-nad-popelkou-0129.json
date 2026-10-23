@@ -149,9 +149,9 @@
       }
     ],
     "financial": {
-      "baseline_price": 871279.0,
+      "baseline_price": null,
       "current_observed_price": 871279.0,
-      "absolute_change": 0.0,
+      "absolute_change": null,
       "percent_change": null,
       "observed_prices": [
         871279.0

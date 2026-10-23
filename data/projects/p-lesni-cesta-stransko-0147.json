@@ -167,7 +167,7 @@
   "analysis": {
     "schema_version": 4,
     "project_id": "p-lesni-cesta-stransko-0147",
-    "signal_count": 4,
+    "signal_count": 3,
     "signals": [
       {
         "code": "participant_count",
@@ -196,21 +196,6 @@
         ]
       },
       {
-        "code": "expected_vs_contract_price",
-        "level": "info",
-        "message": "Výchozí evidovaná smluvní cena se od první nalezené předpokládané hodnoty liší o +21.0 %.",
-        "evidence": [
-          {
-            "type": "expected_vs_contract",
-            "expected_value": 2268984.0,
-            "contract_price": 2745470.75,
-            "delta": 476486.75,
-            "percent": 21.000004847984822,
-            "calculation": "(contract_price-expected_value)/expected_value*100"
-          }
-        ]
-      },
-      {
         "code": "single_source",
         "level": "info",
         "message": "Projekt je zatím doložen pouze jedním zdrojovým záznamem.",
@@ -229,9 +214,9 @@
       }
     ],
     "financial": {
-      "baseline_price": 2745470.75,
+      "baseline_price": null,
       "current_observed_price": 2745470.75,
-      "absolute_change": 0.0,
+      "absolute_change": null,
       "percent_change": null,
       "observed_prices": [
         2745470.75
