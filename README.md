@@ -10,7 +10,7 @@ Projekt spojuje veřejně dostupná data z profilu zadavatele na Vhodném uveře
 
 ## Aktuální stav
 
-**Datový stav ověřený 22. 10. 2026, 08:50 UTC.** Synchronizace [běh 39748948936](https://github.com/ReneHlouzek/lomnice-verejne-zakazky/actions/runs/39748948936) skončila úspěšně; joby `fetch-registr`, `fetch-vu` a `build` mají `success`. Prošlo **63 regresních testů**. Import Registru smluv obsahuje 110 záznamů; manifest dokumentů eviduje 117 deklarovaných a objevených příloh a 112 dostupných textů. Datový index byl vytvořen 22. 10. v 08:50:30 UTC a web byl následně úspěšně nasazen v [běhu 39750799248](https://github.com/ReneHlouzek/lomnice-verejne-zakazky/actions/runs/39750799248). Index obsahuje 163 projektových celků; `data/contract_links.json` obsahuje **17 potvrzených vazeb, 0 kandidátů a 3 vazby na dokumenty přibalené k jiné smlouvě**.
+**Datový stav ověřený 28. 10. 2026, 09:47 UTC.** Synchronizace [běh 40665905806](https://github.com/ReneHlouzek/lomnice-verejne-zakazky/actions/runs/40665905806) skončila úspěšně; joby `fetch-registr`, `fetch-vu` a `build` mají `success`. Prošlo **65 regresních testů**. Import Registru smluv načetl 110 záznamů; index byl vytvořen 28. 10. v 09:47:43 UTC a web byl následně úspěšně nasazen v [běhu 40667047635](https://github.com/ReneHlouzek/lomnice-verejne-zakazky/actions/runs/40667047635). Index obsahuje 163 projektových celků; `data/contract_links.json` obsahuje **17 potvrzených smluvních vazeb, 0 kandidátů a 3 vazby na dokumenty přibalené k témuž záznamu**.
 
 | Ukazatel | Aktuální hodnota |
 |---|---:|
@@ -27,7 +27,11 @@ Projekt spojuje veřejně dostupná data z profilu zadavatele na Vhodném uveře
 | Potvrzené vazby mezi smlouvami a dodatky | 17 |
 | Kandidátní vazby čekající na ruční ověření | 0 |
 
-Počty 109 a 110 u Registru smluv popisují různé vrstvy pipeline: přehled pokrytí organizace a počet záznamů načtených do importu. Nejde o zaměnitelné metriky. Stejně tak počet projektových celků není počtem jednotlivých smluv nebo zakázek. Údaje v tabulce odpovídají indexu vygenerovanému 22. 10. 2026 v 08:50:30 UTC.
+Počty 109 a 110 u Registru smluv popisují různé vrstvy pipeline: přehled pokrytí organizace a počet záznamů načtených do importu. Nejde o zaměnitelné metriky. Stejně tak počet projektových celků není počtem jednotlivých smluv nebo zakázek. Údaje v tabulce odpovídají indexu vygenerovanému 28. 10. 2026 v 09:47:43 UTC.
+
+#### Audit tří vazeb mezi přílohami a finančního započítání
+
+Kontrola zdrojových projektových JSON a výpočtu v `scripts/analyze_projects.py` potvrdila, že každá z těchto tří vazeb je pouze doplňkovým odkazem mezi přílohami jednoho záznamu Registru smluv. Základní smlouva se nevytváří jako druhý zdrojový řádek a samotná vazba nepřidává další finanční událost; UI to nyní výslovně vysvětluje. U záznamu `426037` je evidována cena 886 000 Kč na samotném záznamu dodatku, ale dostupný projektový celek neobsahuje zdrojový řádek základní smlouvy, takže výchozí cenu a změnu nelze vypočítat. U `845225` a `8497295` cena ve zdrojovém řádku není k dispozici. **Nedvojí započítání je tedy v aktuálním modelu potvrzeno; úplná finanční historie a význam částky u dodatku zůstávají omezením dat, nikoli potvrzeným kumulativním výpočtem.**
 
 ### Stav propojování smluv a dodatků
 
