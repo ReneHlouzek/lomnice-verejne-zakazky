@@ -151,9 +151,24 @@ def test_price_change_uses_contract_baseline_and_latest_observation():
     result = analyzer.analyze(project)
     assert result["financial"]["baseline_price"] == 100000.0
     assert result["financial"]["current_observed_price"] == 125000.0
+    assert result["financial"]["absolute_change"] is None
+    assert result["financial"]["percent_change"] is None
+    assert any(s["code"] == "price_comparison_uncertain" for s in result["signals"])
+    assert result["financial"]["addendum_count"] == 2
+
+
+def test_price_change_is_calculated_when_addendum_explicitly_states_revised_total():
+    project = {
+        "id": "p-explicit-total",
+        "sources": [
+            {"record": {"source": "test", "source_id": "1", "title": "Smlouva o dílo", "date": "2026-01-01", "price": "100000"}},
+            {"record": {"source": "test", "source_id": "2", "title": "Dodatek č. 1", "date": "2026-02-01", "price": "125000", "price_semantics": "cumulative_total"}},
+        ],
+    }
+    result = analyzer.analyze(project)
     assert result["financial"]["absolute_change"] == 25000.0
     assert result["financial"]["percent_change"] == 25.0
-    assert result["financial"]["addendum_count"] == 2
+    assert result["timeline"][-1]["price_semantics"] == "explicit_cumulative_total"
 
 
 def test_addendum_only_price_is_not_mislabelled_as_contract_baseline():
