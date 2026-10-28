@@ -140,6 +140,7 @@
       {
         "date": "2020-11-03",
         "event": "tender",
+        "price_semantics": "unspecified_source_amount",
         "source": "vhodne-uverejneni",
         "source_id": "P20V00009092",
         "title": "Domov pro osoby s poruchou autistického spektra",

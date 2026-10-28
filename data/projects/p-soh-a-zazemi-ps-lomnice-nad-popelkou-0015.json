@@ -187,6 +187,7 @@
       {
         "date": "2025-11-05",
         "event": "tender",
+        "price_semantics": "unspecified_source_amount",
         "source": "vhodne-uverejneni",
         "source_id": "P25V00009321",
         "title": "SOH a zázemí PS Lomnice nad Popelkou",

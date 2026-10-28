@@ -130,6 +130,7 @@
       {
         "date": "2017-08-16",
         "event": "contract",
+        "price_semantics": "contract_price_observation",
         "source": "registr-smluv",
         "source_id": "2704422",
         "title": "Smlouva : \" Lomnice nad Popelkou a Nowogrodziec-společná cesta časem \"",

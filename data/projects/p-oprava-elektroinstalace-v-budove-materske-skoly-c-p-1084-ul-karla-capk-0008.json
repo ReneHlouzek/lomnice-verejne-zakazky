@@ -138,6 +138,7 @@
       {
         "date": "2024-06-27",
         "event": "tender",
+        "price_semantics": "unspecified_source_amount",
         "source": "vhodne-uverejneni",
         "source_id": "vu-d67d36a20afb",
         "title": "Oprava elektroinstalace v budově mateřské školy č.p. 1084, ul. Karla Čapka v Lomnici nad Popelkou",

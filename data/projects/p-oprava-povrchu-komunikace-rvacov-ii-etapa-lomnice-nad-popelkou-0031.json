@@ -211,6 +211,7 @@
       {
         "date": "2026-07-02",
         "event": "source_record",
+        "price_semantics": "unspecified_source_amount",
         "source": "vhodne-uverejneni",
         "source_id": "P26V00004395",
         "title": "Oprava povrchu komunikace Rváčov - II. etapa, Lomnice nad Popelkou",

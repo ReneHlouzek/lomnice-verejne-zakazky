@@ -140,6 +140,7 @@
       {
         "date": "2024-05-13",
         "event": "tender",
+        "price_semantics": "unspecified_source_amount",
         "source": "vhodne-uverejneni",
         "source_id": "P24V00003708",
         "title": "Rekonstrukce veřejného osvětlení- ulice Jilemnická a část Plk. Truhláře, Lomnice nad Popelkou",

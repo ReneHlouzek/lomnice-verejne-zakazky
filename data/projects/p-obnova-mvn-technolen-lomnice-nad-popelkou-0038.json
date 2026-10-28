@@ -141,6 +141,7 @@
       {
         "date": "2024-02-14",
         "event": "tender",
+        "price_semantics": "unspecified_source_amount",
         "source": "vhodne-uverejneni",
         "source_id": "P24V00000978",
         "title": "Obnova MVN Technolen, Lomnice nad Popelkou",

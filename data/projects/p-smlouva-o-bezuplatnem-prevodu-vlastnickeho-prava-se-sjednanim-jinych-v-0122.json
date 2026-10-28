@@ -130,6 +130,7 @@
       {
         "date": "2026-02-10",
         "event": "contract",
+        "price_semantics": "contract_price_observation",
         "source": "registr-smluv",
         "source_id": "34496525",
         "title": "Smlouva o bezúplatném převodu vlastnického práva se sjednáním jiných věcných práv - k. ú. Lomnice nad Popelkou, p. p. č. 2402/4",

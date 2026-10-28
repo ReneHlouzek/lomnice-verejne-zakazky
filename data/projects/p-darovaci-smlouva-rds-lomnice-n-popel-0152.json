@@ -130,6 +130,7 @@
       {
         "date": "2017-10-12",
         "event": "contract",
+        "price_semantics": "contract_price_observation",
         "source": "registr-smluv",
         "source_id": "3312200",
         "title": "Darovací smlouva - RDS Lomnice n. Popel.",

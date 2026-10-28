@@ -130,6 +130,7 @@
       {
         "date": "2022-08-12",
         "event": "contract",
+        "price_semantics": "contract_price_observation",
         "source": "registr-smluv",
         "source_id": "20018743",
         "title": "Smlouva o poskytnutí dotace z Dotačního fondu LK na repasi hasičského vozíku",

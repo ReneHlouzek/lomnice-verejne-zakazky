@@ -128,6 +128,7 @@
       {
         "date": "2023-11-28",
         "event": "source_record",
+        "price_semantics": "unspecified_source_amount",
         "source": "registr-smluv",
         "source_id": "24928323",
         "title": "účelová dotace z rozpočtu Libereckého kraje, dotačního programu Podpora sportovní infrastruktury v Libereckém kraji na projekt \"Osvětlení sportovní haly u ZŠ v Lomnici nad Popelkou\"",

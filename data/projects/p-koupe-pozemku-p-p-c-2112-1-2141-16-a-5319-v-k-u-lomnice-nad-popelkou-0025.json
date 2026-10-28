@@ -144,6 +144,7 @@
       {
         "date": "2025-02-14",
         "event": "tender",
+        "price_semantics": "unspecified_source_amount",
         "source": "vhodne-uverejneni",
         "source_id": "vu-e4d756777b4b",
         "title": "Koupě pozemků p. p. č. 2112/1, 2141/16, a 5319 v k. ú. Lomnice nad Popelkou",

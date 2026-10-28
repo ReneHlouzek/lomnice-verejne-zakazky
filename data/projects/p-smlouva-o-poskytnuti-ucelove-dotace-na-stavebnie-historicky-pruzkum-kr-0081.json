@@ -130,6 +130,7 @@
       {
         "date": "2018-05-17",
         "event": "contract",
+        "price_semantics": "contract_price_observation",
         "source": "registr-smluv",
         "source_id": "5195191",
         "title": "Smlouva o poskytnutí účelové dotace na stavebníě historický průzkum Křížovy vily v Lomnici nad Popelkou",

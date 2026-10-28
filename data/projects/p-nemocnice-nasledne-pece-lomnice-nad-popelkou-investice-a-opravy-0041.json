@@ -138,6 +138,7 @@
       {
         "date": "2025-09-04",
         "event": "tender",
+        "price_semantics": "unspecified_source_amount",
         "source": "vhodne-uverejneni",
         "source_id": "P25V00007778",
         "title": "Nemocnice následné péče Lomnice nad Popelkou – investice a opravy",

@@ -128,6 +128,7 @@
       {
         "date": "2016-11-28",
         "event": "contract",
+        "price_semantics": "unspecified_source_amount",
         "source": "registr-smluv",
         "source_id": "711165",
         "title": "Smlouva o spolupráci při zajištění dopravní obslužnosti Libereckého kraje na období od roku 2017 do roku 2019",

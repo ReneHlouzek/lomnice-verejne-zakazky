@@ -130,6 +130,7 @@
       {
         "date": "2023-12-12",
         "event": "contract",
+        "price_semantics": "contract_price_observation",
         "source": "registr-smluv",
         "source_id": "25122007",
         "title": "Smlouva o poskytnutí dotace dle NV č. 2/2023 Sb.",

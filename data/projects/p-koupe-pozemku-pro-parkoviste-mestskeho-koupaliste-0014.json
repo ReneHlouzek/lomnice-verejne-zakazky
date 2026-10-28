@@ -139,6 +139,7 @@
       {
         "date": "2024-01-25",
         "event": "tender",
+        "price_semantics": "unspecified_source_amount",
         "source": "vhodne-uverejneni",
         "source_id": "vu-60d669d0c3e7",
         "title": "Koupě pozemků pro parkoviště Městského koupaliště",

@@ -153,6 +153,7 @@
       {
         "date": "2016-12-22",
         "event": "addendum",
+        "price_semantics": "unspecified_source_amount",
         "source": "registr-smluv",
         "source_id": "845225",
         "title": "Dodatek č. 1 ke smlouvě o poskytnutí účelové dotace Libereckému kraji z rozpočtu Města Lomnice nad Popelkou",

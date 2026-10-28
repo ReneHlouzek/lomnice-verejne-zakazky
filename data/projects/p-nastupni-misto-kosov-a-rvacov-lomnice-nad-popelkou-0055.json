@@ -173,6 +173,7 @@
       {
         "date": "2025-10-20",
         "event": "tender",
+        "price_semantics": "unspecified_source_amount",
         "source": "vhodne-uverejneni",
         "source_id": "P25V00008902",
         "title": "Nástupní místo Košov a Rváčov, Lomnice nad Popelkou",

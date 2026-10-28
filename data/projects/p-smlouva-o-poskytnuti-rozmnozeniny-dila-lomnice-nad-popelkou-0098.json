@@ -128,6 +128,7 @@
       {
         "date": "2026-07-27",
         "event": "contract",
+        "price_semantics": "unspecified_source_amount",
         "source": "registr-smluv",
         "source_id": "36813062",
         "title": "Smlouva o poskytnutí rozmnoženiny díla - Lomnice nad Popelkou",

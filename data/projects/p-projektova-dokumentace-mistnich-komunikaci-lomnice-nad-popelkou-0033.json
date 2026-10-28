@@ -141,6 +141,7 @@
       {
         "date": "2017-05-18",
         "event": "tender",
+        "price_semantics": "unspecified_source_amount",
         "source": "vhodne-uverejneni",
         "source_id": "P17V00003185",
         "title": "Projektová dokumentace místních komunikací, Lomnice nad Popelkou",

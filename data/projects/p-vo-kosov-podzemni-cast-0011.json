@@ -143,6 +143,7 @@
       {
         "date": "2025-05-28",
         "event": "tender",
+        "price_semantics": "unspecified_source_amount",
         "source": "vhodne-uverejneni",
         "source_id": "P25V00005123",
         "title": "VO Košov - podzemní část",

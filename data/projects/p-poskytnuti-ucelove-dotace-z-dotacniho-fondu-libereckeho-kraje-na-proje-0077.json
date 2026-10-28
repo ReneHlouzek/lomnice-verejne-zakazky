@@ -128,6 +128,7 @@
       {
         "date": "2024-06-19",
         "event": "source_record",
+        "price_semantics": "unspecified_source_amount",
         "source": "registr-smluv",
         "source_id": "27256880",
         "title": "Poskytnutí účelové dotace z dotačního fondu Libereckého kraje na projekt Infrastruktura pro cyklisty v Lomnici nad Popelkou",

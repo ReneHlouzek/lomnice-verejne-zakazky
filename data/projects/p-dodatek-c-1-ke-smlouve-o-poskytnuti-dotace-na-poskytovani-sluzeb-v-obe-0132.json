@@ -149,6 +149,7 @@
       {
         "date": "2016-10-21",
         "event": "addendum",
+        "price_semantics": "unspecified_addendum_amount",
         "source": "registr-smluv",
         "source_id": "426037",
         "title": "Dodatek č. 1 ke smlouvě o poskytnutí dotace na poskytování služeb v obecném hospodářském zájmu z rozpočtu Libereckého kraje z finančních prostředků Ministerstva práce a sociálních věcí, č. OLP/588/2016",

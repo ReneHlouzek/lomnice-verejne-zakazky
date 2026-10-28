@@ -141,6 +141,7 @@
       {
         "date": "2022-01-20",
         "event": "tender",
+        "price_semantics": "unspecified_source_amount",
         "source": "vhodne-uverejneni",
         "source_id": "P22V00000389",
         "title": "Přístavba servisního objektu, Lomnice nad Popelkou",

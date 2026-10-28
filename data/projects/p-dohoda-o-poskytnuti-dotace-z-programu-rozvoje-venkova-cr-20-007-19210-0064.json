@@ -128,6 +128,7 @@
       {
         "date": "2021-02-16",
         "event": "source_record",
+        "price_semantics": "unspecified_source_amount",
         "source": "registr-smluv",
         "source_id": "14454471",
         "title": "Dohoda o poskytnutí dotace z Programu rozvoje venkova ČR - 20/007/19210/451/173/001124",

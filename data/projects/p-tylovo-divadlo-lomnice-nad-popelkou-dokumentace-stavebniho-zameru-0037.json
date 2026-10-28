@@ -136,6 +136,7 @@
       {
         "date": "2024-09-02",
         "event": "tender",
+        "price_semantics": "unspecified_source_amount",
         "source": "vhodne-uverejneni",
         "source_id": "vu-b4ced05f5820",
         "title": "Tylovo divadlo Lomnice nad Popelkou - dokumentace stavebního záměru",

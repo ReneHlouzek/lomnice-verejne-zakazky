@@ -132,6 +132,7 @@
       {
         "date": "2018-10-08",
         "event": "source_record",
+        "price_semantics": "unspecified_source_amount",
         "source": "registr-smluv",
         "source_id": "6414639",
         "title": "Dohoda o změně podmínek poskytnutí dotace na základě Smlouvy č. 9270370988,dle NV č. 146/2003 Sb.",

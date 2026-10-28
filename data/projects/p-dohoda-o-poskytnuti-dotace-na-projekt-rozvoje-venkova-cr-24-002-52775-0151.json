@@ -128,6 +128,7 @@
       {
         "date": "2025-08-14",
         "event": "source_record",
+        "price_semantics": "unspecified_source_amount",
         "source": "registr-smluv",
         "source_id": "32292445",
         "title": "Dohoda o poskytnutí dotace na projekt rozvoje venkova ČR - 24/002/52775/433/013276",

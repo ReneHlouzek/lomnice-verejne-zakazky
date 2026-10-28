@@ -147,6 +147,7 @@
       {
         "date": "2022-09-14",
         "event": "addendum",
+        "price_semantics": "unspecified_source_amount",
         "source": "registr-smluv",
         "source_id": "20176309",
         "title": "Dodatek č. 1 ke smlouvě o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje na projekt karavanová stání v Lomnici nad Popelkou",

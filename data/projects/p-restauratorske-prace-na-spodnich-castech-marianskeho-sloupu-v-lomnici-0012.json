@@ -145,6 +145,7 @@
       {
         "date": "2025-10-20",
         "event": "tender",
+        "price_semantics": "unspecified_source_amount",
         "source": "vhodne-uverejneni",
         "source_id": "vu-6490d3752523",
         "title": "Restaurátorské práce na spodních částech mariánského sloupu v Lomnici nad Popelkou",

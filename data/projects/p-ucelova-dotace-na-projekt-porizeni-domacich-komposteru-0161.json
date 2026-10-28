@@ -136,6 +136,7 @@
       {
         "date": "2024-08-27",
         "event": "source_record",
+        "price_semantics": "unspecified_source_amount",
         "source": "registr-smluv",
         "source_id": "28119324",
         "title": "Účelová dotace na projekt \"Pořízení domácích kompostérů\"",

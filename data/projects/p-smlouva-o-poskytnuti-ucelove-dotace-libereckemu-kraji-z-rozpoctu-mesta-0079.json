@@ -132,6 +132,7 @@
       {
         "date": "2016-07-07",
         "event": "contract",
+        "price_semantics": "unspecified_source_amount",
         "source": "registr-smluv",
         "source_id": "3753",
         "title": "Smlouva o poskytnutí účelové dotace Libereckému kraji z rozpočtu města Lomnice nad Popelkou",

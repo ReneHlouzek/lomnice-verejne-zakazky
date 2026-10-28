@@ -132,6 +132,7 @@
       {
         "date": "2024-04-23",
         "event": "source_record",
+        "price_semantics": "unspecified_source_amount",
         "source": "registr-smluv",
         "source_id": "26812007",
         "title": "Obnova rybníka Matouš v Lomnici nad Popelkou",

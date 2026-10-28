@@ -206,6 +206,7 @@
       {
         "date": "2026-07-20",
         "event": "source_record",
+        "price_semantics": "unspecified_source_amount",
         "source": "vhodne-uverejneni",
         "source_id": "P26V00004559",
         "title": "Lesní cesta „Stránsko“",

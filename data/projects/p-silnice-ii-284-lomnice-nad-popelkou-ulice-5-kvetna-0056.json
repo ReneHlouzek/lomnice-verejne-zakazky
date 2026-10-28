@@ -140,6 +140,7 @@
       {
         "date": "2023-11-09",
         "event": "tender",
+        "price_semantics": "unspecified_source_amount",
         "source": "vhodne-uverejneni",
         "source_id": "P23V00007567",
         "title": "Silnice II/284 Lomnice nad Popelkou, ulice 5. května",

@@ -147,6 +147,7 @@
       {
         "date": "2025-08-27",
         "event": "contract",
+        "price_semantics": "contract_price_observation",
         "source": "vhodne-uverejneni",
         "source_id": "P25-REG-99697",
         "title": "Rekonstrukce technologie kotelny v budově radnice č.p. 6, Husovo náměstí v Lomnici nad Popelkou",

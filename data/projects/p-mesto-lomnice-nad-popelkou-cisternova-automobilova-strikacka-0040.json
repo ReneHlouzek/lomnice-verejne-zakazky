@@ -140,6 +140,7 @@
       {
         "date": "2015-04-20",
         "event": "tender",
+        "price_semantics": "unspecified_source_amount",
         "source": "vhodne-uverejneni",
         "source_id": "P15V00002212",
         "title": "Město Lomnice nad Popelkou - Cisternová automobilová stříkačka",

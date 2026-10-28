@@ -143,6 +143,7 @@
       {
         "date": "2024-07-22",
         "event": "tender",
+        "price_semantics": "unspecified_source_amount",
         "source": "vhodne-uverejneni",
         "source_id": "vu-4aaef04b2e24",
         "title": "Koupě pozemku p. p. č. 453 v k. ú. Lomnice nad Popelkou",

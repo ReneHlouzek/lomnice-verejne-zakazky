@@ -145,6 +145,7 @@
       {
         "date": "2025-12-15",
         "event": "addendum",
+        "price_semantics": "unspecified_addendum_amount",
         "source": "registr-smluv",
         "source_id": "33854349",
         "title": "Dodatek č. 1 k veřejnoprávní smlouvě o poskytnutí dotace z rozpčtu města Lomnice nad Popelkou",

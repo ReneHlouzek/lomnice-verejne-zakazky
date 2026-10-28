@@ -139,6 +139,7 @@
       {
         "date": "2024-01-15",
         "event": "tender",
+        "price_semantics": "unspecified_source_amount",
         "source": "vhodne-uverejneni",
         "source_id": "vu-9fa7201122f8",
         "title": "Obnova komunikace Lomnice nad Popelkou – Chlum, I. etapa",

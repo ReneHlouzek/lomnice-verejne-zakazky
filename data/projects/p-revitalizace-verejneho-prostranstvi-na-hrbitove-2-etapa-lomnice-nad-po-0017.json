@@ -161,6 +161,7 @@
       {
         "date": "2025-02-26",
         "event": "tender",
+        "price_semantics": "unspecified_source_amount",
         "source": "vhodne-uverejneni",
         "source_id": "P25V00001848",
         "title": "Revitalizace veřejného prostranství na hřbitově - 2. etapa, Lomnice nad Popelkou",

@@ -163,6 +163,7 @@
       {
         "date": "2024-09-02",
         "event": "tender",
+        "price_semantics": "unspecified_source_amount",
         "source": "vhodne-uverejneni",
         "source_id": "P24V00007896",
         "title": "Oprava střechy domu č.p. 32, ul. Antala Staška v Lomnici nad Popelkou",

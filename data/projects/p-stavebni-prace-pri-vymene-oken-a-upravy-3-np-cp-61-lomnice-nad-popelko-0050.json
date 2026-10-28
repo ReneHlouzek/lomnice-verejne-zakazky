@@ -213,6 +213,7 @@
       {
         "date": "2026-05-27",
         "event": "contract",
+        "price_semantics": "contract_price_observation",
         "source": "vhodne-uverejneni",
         "source_id": "P26-REG-105575",
         "title": "Stavební práce při výměně oken a úpravy 3. NP čp. 61, Lomnice nad Popelkou",

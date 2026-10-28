@@ -128,6 +128,7 @@
       {
         "date": "2026-07-07",
         "event": "contract",
+        "price_semantics": "unspecified_source_amount",
         "source": "registr-smluv",
         "source_id": "36342832",
         "title": "Smlouva o poskytnutí účelové dotace z programu 7.2 Záchranná obnova památek, MĚSTO LOMNICE NAD POPELKOU",

@@ -143,6 +143,7 @@
       {
         "date": "2024-09-09",
         "event": "addendum",
+        "price_semantics": "unspecified_source_amount",
         "source": "registr-smluv",
         "source_id": "28204604",
         "title": "Dodatek č. 3 ke smlouvě o poskytnutí účelové dotace na projekt Karavanové stání - Lomnice nad Popelkou",

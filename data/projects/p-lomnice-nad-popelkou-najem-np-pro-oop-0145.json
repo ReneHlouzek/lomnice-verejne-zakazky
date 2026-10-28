@@ -134,6 +134,7 @@
       {
         "date": "2016-11-29",
         "event": "source_record",
+        "price_semantics": "unspecified_source_amount",
         "source": "registr-smluv",
         "source_id": "774449",
         "title": "Lomnice nad Popelkou - nájem NP pro OOP",

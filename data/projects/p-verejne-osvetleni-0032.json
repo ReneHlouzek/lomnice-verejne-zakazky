@@ -390,6 +390,7 @@
       {
         "date": "2026-04-17",
         "event": "tender",
+        "price_semantics": "unspecified_source_amount",
         "source": "vhodne-uverejneni",
         "source_id": "P26V00002162",
         "title": "Veřejné osvětlení",

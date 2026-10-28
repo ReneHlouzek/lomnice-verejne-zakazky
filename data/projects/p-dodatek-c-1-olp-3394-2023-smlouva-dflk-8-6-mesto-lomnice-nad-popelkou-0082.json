@@ -147,6 +147,7 @@
       {
         "date": "2026-02-09",
         "event": "addendum",
+        "price_semantics": "unspecified_source_amount",
         "source": "registr-smluv",
         "source_id": "34549017",
         "title": "Dodatek č. 1 OLP/3394/2023 - Smlouva DFLK 8.6 - Město Lomnice nad Popelkou",

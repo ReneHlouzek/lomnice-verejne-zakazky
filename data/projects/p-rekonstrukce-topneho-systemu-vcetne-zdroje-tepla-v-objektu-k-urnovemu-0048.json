@@ -206,6 +206,7 @@
       {
         "date": "2026-07-02",
         "event": "source_record",
+        "price_semantics": "unspecified_source_amount",
         "source": "vhodne-uverejneni",
         "source_id": "P26V00004399",
         "title": "Rekonstrukce topného systému včetně zdroje tepla v objektu K Urnovému háji čp. 118, Lomnice nad Popelkou",

@@ -136,6 +136,7 @@
       {
         "date": "2024-06-27",
         "event": "tender",
+        "price_semantics": "unspecified_source_amount",
         "source": "vhodne-uverejneni",
         "source_id": "vu-c869926aafda",
         "title": "Obnova asfaltového krytu komunikace k Oborskému rybníku, Lomnice nad Popelkou",

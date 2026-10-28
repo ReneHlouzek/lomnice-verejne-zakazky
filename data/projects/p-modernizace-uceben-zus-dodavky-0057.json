@@ -309,6 +309,7 @@
       {
         "date": "2026-03-04",
         "event": "tender",
+        "price_semantics": "unspecified_source_amount",
         "source": "vhodne-uverejneni",
         "source_id": "P26V00001385",
         "title": "Modernizace UČEBEN ZUŠ - dodávky",

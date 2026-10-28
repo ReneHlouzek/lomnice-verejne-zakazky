@@ -142,6 +142,7 @@
       {
         "date": "2025-12-19",
         "event": "contract",
+        "price_semantics": "contract_price_observation",
         "source": "vhodne-uverejneni",
         "source_id": "P26-REG-102333",
         "title": "Sanace budovy čp. 61, Lomnice nad Popelkou, od zemní vlhkosti",

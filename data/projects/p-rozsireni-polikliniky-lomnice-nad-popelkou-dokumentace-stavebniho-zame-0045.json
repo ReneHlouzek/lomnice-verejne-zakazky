@@ -211,6 +211,7 @@
       {
         "date": "2026-04-15",
         "event": "tender",
+        "price_semantics": "unspecified_source_amount",
         "source": "vhodne-uverejneni",
         "source_id": "P26V00002405",
         "title": "Rozšíření polikliniky Lomnice nad Popelkou - dokumentace stavebního záměru",

@@ -138,6 +138,7 @@
       {
         "date": "2022-01-10",
         "event": "tender",
+        "price_semantics": "unspecified_source_amount",
         "source": "vhodne-uverejneni",
         "source_id": "P22V00000161",
         "title": "\"Modernizace infrastruktury ZŠ T. G. Masaryka Lomnice nad Popelkou – vybavení\" Část 1 - Nábytek",

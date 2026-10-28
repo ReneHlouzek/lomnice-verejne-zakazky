@@ -219,6 +219,7 @@
       {
         "date": "2026-06-05",
         "event": "source_record",
+        "price_semantics": "unspecified_source_amount",
         "source": "vhodne-uverejneni",
         "source_id": "P26V00003724",
         "title": "Výměna oken ZUŠ Lomnice nad Popelkou - dodávka a montáž",

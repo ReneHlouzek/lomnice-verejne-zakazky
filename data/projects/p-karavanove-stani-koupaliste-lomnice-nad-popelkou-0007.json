@@ -139,6 +139,7 @@
       {
         "date": "2024-10-23",
         "event": "tender",
+        "price_semantics": "unspecified_source_amount",
         "source": "vhodne-uverejneni",
         "source_id": "vu-aa111e3e347c",
         "title": "Karavanové stání Koupaliště, Lomnice nad Popelkou",

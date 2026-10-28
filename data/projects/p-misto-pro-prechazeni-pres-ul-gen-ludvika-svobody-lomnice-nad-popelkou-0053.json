@@ -136,6 +136,7 @@
       {
         "date": "2024-08-28",
         "event": "tender",
+        "price_semantics": "unspecified_source_amount",
         "source": "vhodne-uverejneni",
         "source_id": "vu-fa610004f0b2",
         "title": "Místo pro přecházení přes ul. Gen. Ludvíka Svobody, Lomnice nad Popelkou",

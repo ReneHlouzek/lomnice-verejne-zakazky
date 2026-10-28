@@ -134,6 +134,7 @@
       {
         "date": "2016-11-22",
         "event": "contract",
+        "price_semantics": "contract_price_observation",
         "source": "registr-smluv",
         "source_id": "1078317",
         "title": "Darovací smlouva - zabezpečení mateřských škol",

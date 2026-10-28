@@ -145,6 +145,7 @@
       {
         "date": "2024-10-14",
         "event": "addendum",
+        "price_semantics": "unspecified_addendum_amount",
         "source": "registr-smluv",
         "source_id": "28586216",
         "title": "Dodatek č. 1 k veřejnoprávní smlouvě o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou",

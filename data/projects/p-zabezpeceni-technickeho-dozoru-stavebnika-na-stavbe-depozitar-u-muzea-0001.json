@@ -150,6 +150,7 @@
       {
         "date": "2024-04-16",
         "event": "contract",
+        "price_semantics": "contract_price_observation",
         "source": "vhodne-uverejneni",
         "source_id": "P24-REG-92577",
         "title": "Zabezpečení technického dozoru stavebníka na stavbě „Depozitář u muzea v Lomnici nad Popelkou\"",

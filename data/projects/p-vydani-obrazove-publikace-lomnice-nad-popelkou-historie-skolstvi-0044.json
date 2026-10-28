@@ -141,6 +141,7 @@
       {
         "date": "2023-01-04",
         "event": "tender",
+        "price_semantics": "unspecified_source_amount",
         "source": "vhodne-uverejneni",
         "source_id": "P23V00000047",
         "title": "Vydání obrazové publikace Lomnice nad Popelkou - historie školství",

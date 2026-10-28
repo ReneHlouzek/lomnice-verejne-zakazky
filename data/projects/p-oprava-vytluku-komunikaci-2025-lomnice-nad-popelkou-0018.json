@@ -159,6 +159,7 @@
       {
         "date": "2025-08-12",
         "event": "tender",
+        "price_semantics": "unspecified_source_amount",
         "source": "vhodne-uverejneni",
         "source_id": "P25V00007263",
         "title": "Oprava výtluků komunikací 2025, Lomnice nad Popelkou",

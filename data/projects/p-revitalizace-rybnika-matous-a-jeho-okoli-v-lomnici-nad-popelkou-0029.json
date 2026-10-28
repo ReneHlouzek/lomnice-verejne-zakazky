@@ -156,6 +156,7 @@
       {
         "date": "2025-02-04",
         "event": "tender",
+        "price_semantics": "unspecified_source_amount",
         "source": "vhodne-uverejneni",
         "source_id": "P25V00001095",
         "title": "Revitalizace rybníka Matouš a jeho okolí v Lomnici nad Popelkou",

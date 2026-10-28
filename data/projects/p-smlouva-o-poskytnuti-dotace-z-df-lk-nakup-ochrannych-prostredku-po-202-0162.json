@@ -130,6 +130,7 @@
       {
         "date": "2024-07-29",
         "event": "contract",
+        "price_semantics": "contract_price_observation",
         "source": "registr-smluv",
         "source_id": "27785608",
         "title": "Smlouva o poskytnutí dotace z DF LK - Nákup ochranných prostředků PO 2024",

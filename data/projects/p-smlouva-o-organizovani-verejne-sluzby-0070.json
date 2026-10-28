@@ -123,6 +123,7 @@
       {
         "date": "2017-08-10",
         "event": "contract",
+        "price_semantics": "unspecified_source_amount",
         "source": "registr-smluv",
         "source_id": "2642022",
         "title": "Smlouva o organizování veřejné služby",

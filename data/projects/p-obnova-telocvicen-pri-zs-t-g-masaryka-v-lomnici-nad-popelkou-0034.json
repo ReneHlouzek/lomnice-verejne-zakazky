@@ -141,6 +141,7 @@
       {
         "date": "2021-07-22",
         "event": "tender",
+        "price_semantics": "unspecified_source_amount",
         "source": "vhodne-uverejneni",
         "source_id": "P21V00005590",
         "title": "Obnova tělocvičen při ZŠ T. G. Masaryka v Lomnici nad Popelkou",

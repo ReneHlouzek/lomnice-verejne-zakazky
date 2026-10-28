@@ -130,6 +130,7 @@
       {
         "date": "2020-01-02",
         "event": "contract",
+        "price_semantics": "contract_price_observation",
         "source": "registr-smluv",
         "source_id": "10520108",
         "title": "Smlouva o spolupráci při zajištění dopravní obslužnosti Libereckého kraje na období od roku 2020 do roku 2023",

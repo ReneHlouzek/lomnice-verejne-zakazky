@@ -128,6 +128,7 @@
       {
         "date": "2023-10-31",
         "event": "source_record",
+        "price_semantics": "unspecified_source_amount",
         "source": "registr-smluv",
         "source_id": "24676351",
         "title": "86_OLP/2721/2023_8.2 Město Lomnice nad Popelkou",

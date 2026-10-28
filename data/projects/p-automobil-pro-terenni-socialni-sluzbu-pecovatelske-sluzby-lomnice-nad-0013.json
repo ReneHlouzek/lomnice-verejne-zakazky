@@ -141,6 +141,7 @@
       {
         "date": "2020-12-21",
         "event": "tender",
+        "price_semantics": "unspecified_source_amount",
         "source": "vhodne-uverejneni",
         "source_id": "P20V00010161",
         "title": "Automobil pro terénní sociální službu Pečovatelské služby Lomnice nad Popelkou, příspěvkové organizace",

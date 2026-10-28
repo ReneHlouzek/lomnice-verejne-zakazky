@@ -145,6 +145,7 @@
       {
         "date": "2025-09-22",
         "event": "addendum",
+        "price_semantics": "unspecified_addendum_amount",
         "source": "registr-smluv",
         "source_id": "32731945",
         "title": "Dodatek č. 1 veřejnoprávní smlouvy o poskytnutí neinvestiční dotace z rozpočtu města Lomnice nad Popelkou na akci Lomnice nad Popelkou - KOšov , obnova vodovodu",

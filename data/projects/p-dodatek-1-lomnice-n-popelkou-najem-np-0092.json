@@ -147,6 +147,7 @@
       {
         "date": "2017-06-29",
         "event": "addendum",
+        "price_semantics": "unspecified_source_amount",
         "source": "registr-smluv",
         "source_id": "2316654",
         "title": "Dodatek 1 Lomnice n.Popelkou - nájem NP",

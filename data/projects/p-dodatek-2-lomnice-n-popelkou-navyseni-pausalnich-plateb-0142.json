@@ -147,6 +147,7 @@
       {
         "date": "2022-05-24",
         "event": "addendum",
+        "price_semantics": "unspecified_source_amount",
         "source": "registr-smluv",
         "source_id": "19084011",
         "title": "Dodatek 2 Lomnice n. Popelkou - navýšení paušálních plateb",

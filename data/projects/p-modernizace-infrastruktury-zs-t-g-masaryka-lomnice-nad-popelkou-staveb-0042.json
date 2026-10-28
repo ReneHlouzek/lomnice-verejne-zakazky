@@ -138,6 +138,7 @@
       {
         "date": "2020-02-28",
         "event": "tender",
+        "price_semantics": "unspecified_source_amount",
         "source": "vhodne-uverejneni",
         "source_id": "P20V00001448",
         "title": "Modernizace infrastruktury ZŠ T. G. Masaryka Lomnice nad Popelkou – stavební práce",

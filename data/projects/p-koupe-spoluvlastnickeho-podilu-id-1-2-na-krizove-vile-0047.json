@@ -136,6 +136,7 @@
       {
         "date": "2025-12-11",
         "event": "tender",
+        "price_semantics": "unspecified_source_amount",
         "source": "vhodne-uverejneni",
         "source_id": "vu-0b73c25f80ba",
         "title": "Koupě spoluvlastnického podílu id. 1/2 na Křížově vile",

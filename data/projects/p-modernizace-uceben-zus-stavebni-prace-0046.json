@@ -251,6 +251,7 @@
       {
         "date": "2025-01-28",
         "event": "tender",
+        "price_semantics": "unspecified_source_amount",
         "source": "vhodne-uverejneni",
         "source_id": "P25V00000799",
         "title": "Modernizace UČEBEN ZUŠ - stavební práce",
@@ -260,6 +261,7 @@
       {
         "date": "2025-04-01",
         "event": "contract",
+        "price_semantics": "contract_price_observation",
         "source": "vhodne-uverejneni",
         "source_id": "vu-f58017e9cad3",
         "title": "Modernizace UČEBEN ZUŠ - stavební práce",

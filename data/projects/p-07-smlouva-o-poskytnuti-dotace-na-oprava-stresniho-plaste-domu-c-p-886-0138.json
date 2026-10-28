@@ -130,6 +130,7 @@
       {
         "date": "2023-06-07",
         "event": "contract",
+        "price_semantics": "contract_price_observation",
         "source": "registr-smluv",
         "source_id": "23137771",
         "title": "07 Smlouva o poskytnutí dotace na Oprava střešního pláště domu č.p. 886",

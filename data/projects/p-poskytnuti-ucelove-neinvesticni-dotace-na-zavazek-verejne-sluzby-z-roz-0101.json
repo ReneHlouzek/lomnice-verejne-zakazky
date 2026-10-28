@@ -132,6 +132,7 @@
       {
         "date": "2018-03-30",
         "event": "source_record",
+        "price_semantics": "unspecified_source_amount",
         "source": "registr-smluv",
         "source_id": "4618624",
         "title": "Poskytnutí účelové neinvestiční dotace na závazek veřejné služby z rozpočtu Libereckého kraje z finančních prostředků MPSV.",
