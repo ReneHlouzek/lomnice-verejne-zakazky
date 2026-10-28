@@ -116,10 +116,10 @@ Aktuální data a kontrola kódu ukazují zejména na tyto oblasti, které je po
 - **Klasifikace:** smlouva z Registru smluv nemusí být veřejnou zakázkou. Typ záznamu, stav zakázky a signál možné souvislosti se zakázkou je proto nutné interpretovat odděleně.
 - **Ruční ověření:** kandidátní vazby a nejednoznačné případy vyžadují dohledání v původních dokumentech. Automatické skóre není potvrzením právní ani věcné vazby.
 
-Aktuální priority po synchronizaci 22. 10. 2026:
-1. Prověřit tři vazby na dokumenty přibalené k jiné smlouvě (bundled-document links), ověřit jejich prezentaci v detailu projektu a zabránit dvojímu započítání hodnot.
+Priority po synchronizaci 28. 10. 2026:
+1. Audit tří vazeb mezi přílohami je dokončen: zobrazení je oddělené a nevytváří další finanční událost. Udržet toto pravidlo testy a vysvětlením v UI.
 2. Pokračovat v bezpečném propojování dodatků pouze na základě explicitních identifikátorů nebo dohledatelných úředních důkazů; u Jilemnické zachovat odkazy na usnesení 71/23/Z a 55/24/Z a současně nezamlčet rozpor dat a čísla dodatku v metadatech.
-3. Aktualizovat finanční časovou osu tak, aby oddělovala základní dotaci, jednotlivá navýšení a kumulativní částku, pokud je doložena.
+3. Další finanční úkol: zlepšit časovou osu a metodiku tak, aby rozlišovala doloženou výchozí cenu, cenu dodatku, kumulativní hodnotu a chybějící data. Nevyvozovat kumulativní hodnotu jen z částky v dodatku.
 4. U každé změny spustit regresní testy, ověřit `data/contract_links.json`, `data/index.json`, web a deploy; README aktualizovat až podle skutečného výsledku běhu.
 
 
