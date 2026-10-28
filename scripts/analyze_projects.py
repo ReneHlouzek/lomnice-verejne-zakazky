@@ -141,9 +141,13 @@ def analyze(project):
         scope = field(r, "scope", "subject_description", "description", "scope_change")
         if scope:
             scopes.append({"value": str(scope), "source_id": r.get("source_id")})
+        kind = event_type(r)
+        raw_price_semantics = str(field(r, "price_semantics", "price_role", "amount_type") or "").strip().lower()
+        cumulative_price_semantics = raw_price_semantics in {"cumulative_total", "cumulative_contract_price", "revised_total", "new_contract_total"}
         timeline.append({
             "date": d.isoformat() if d else None,
-            "event": event_type(r),
+            "event": kind,
+            "price_semantics": ("explicit_cumulative_total" if cumulative_price_semantics else ("unspecified_addendum_amount" if kind == "addendum" and p is not None else ("contract_price_observation" if p is not None and kind in ("contract", "award") else "unspecified_source_amount"))),
             "source": r.get("source"),
             "source_id": r.get("source_id"),
             "title": r.get("title") or r.get("subject"),
@@ -170,15 +174,25 @@ def analyze(project):
         signals.append({"code": code, "level": level, "message": message, "evidence": evidence or []})
 
     price_change_pct = None
-    if baseline is not None and current is not None and baseline != 0 and len(unique_prices) >= 2:
+    addenda = [x for x in timeline if x["event"] == "addendum"]
+    latest_price_event = priced[-1] if priced else None
+    comparable_current_price = latest_price_event is not None and latest_price_event.get("price_semantics") == "explicit_cumulative_total"
+    # Addendum amounts are not assumed to be revised totals or increases without explicit source semantics.
+    can_compare_prices = not addenda or comparable_current_price
+    if baseline is not None and current is not None and baseline != 0 and len(unique_prices) >= 2 and can_compare_prices:
         price_change_pct = (current - baseline) / baseline * 100
         add("price_change", "review" if abs(price_change_pct) >= 10 else "watch",
-            f"Mezi výchozí a poslední evidovanou cenou je rozdíl {price_change_pct:+.1f} %.",
+            f"Mezi výchozí a poslední srovnatelnou evidovanou cenou je rozdíl {price_change_pct:+.1f} %.",
             [{"type": "price_change", "baseline": baseline, "current": current,
               "delta": current - baseline, "percent": price_change_pct,
               "calculation": "(current-baseline)/baseline*100"}])
-
-    addenda = [x for x in timeline if x["event"] == "addendum"]
+    elif baseline is not None and addenda and current is not None and not comparable_current_price:
+        add("price_comparison_uncertain", "info",
+            "Dodatek obsahuje částku, ale dostupná metadata neurčují, zda jde o navýšení, cenu změněné části, nebo novou celkovou cenu. Změna se proto nepočítá.",
+            [{"type": "price_semantics", "baseline_price": baseline,
+              "latest_observed_price": current,
+              "latest_price_semantics": latest_price_event.get("price_semantics") if latest_price_event else None,
+              "source_ids": [x.get("source_id") for x in priced]}])
     declared_addenda = set()
     for r in rows:
         vals = r.get("known_addenda_numbers")
@@ -277,7 +291,7 @@ def analyze(project):
         "signals": signals,
         "timeline": timeline,
         "financial": {"baseline_price": baseline, "current_observed_price": current,
-                      "absolute_change": (current - baseline) if baseline is not None and current is not None else None,
+                      "absolute_change": (current - baseline) if baseline is not None and current is not None and can_compare_prices else None,
                       "percent_change": price_change_pct, "observed_prices": unique_prices,
                       "addendum_count": addendum_count, "observed_addenda_count": observed_addenda_count,
                       "declared_addenda_count": len(declared_addenda), "declared_only_addenda_count": declared_only_count},
