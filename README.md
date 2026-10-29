@@ -10,7 +10,7 @@ Projekt spojuje veřejně dostupná data z profilu zadavatele na Vhodném uveře
 
 ## Aktuální stav
 
-**Datový stav ověřený 28. 10. 2026, 09:47 UTC.** Synchronizace [běh 40665905806](https://github.com/ReneHlouzek/lomnice-verejne-zakazky/actions/runs/40665905806) skončila úspěšně; joby `fetch-registr`, `fetch-vu` a `build` mají `success`. Prošlo **65 regresních testů**. Import Registru smluv načetl 110 záznamů; index byl vytvořen 28. 10. v 09:47:43 UTC a web byl následně úspěšně nasazen v [běhu 40667047635](https://github.com/ReneHlouzek/lomnice-verejne-zakazky/actions/runs/40667047635). Index obsahuje 163 projektových celků; `data/contract_links.json` obsahuje **17 potvrzených smluvních vazeb, 0 kandidátů a 3 vazby na dokumenty přibalené k témuž záznamu**.
+**Stav ověřený 28. 10. 2026, 18:29 UTC.** Synchronizace [běh 40743066420](https://github.com/ReneHlouzek/lomnice-verejne-zakazky/actions/runs/40743066420) skončila úspěšně; joby `fetch-registr`, `fetch-vu` a `build` mají `success` a prošlo **66 regresních testů**. Novější automatická aktualizace dat a publikace [běh 40745666553](https://github.com/ReneHlouzek/lomnice-verejne-zakazky/actions/runs/40745666553) také uspěla. Index byl vytvořen 28. 10. v 18:29:40 UTC a stále obsahuje 163 projektových celků; `data/contract_links.json` obsahuje **17 potvrzených smluvních vazeb, 0 kandidátů a 3 vazby na dokumenty přibalené k témuž záznamu**.
 
 | Ukazatel | Aktuální hodnota |
 |---|---:|
@@ -131,8 +131,9 @@ Aktuální data a kontrola kódu ukazují zejména na tyto oblasti, které je po
 Priority po synchronizaci 28. 10. 2026:
 1. Audit tří vazeb mezi přílohami je dokončen: zobrazení je oddělené a nevytváří další finanční událost. Udržet toto pravidlo testy a vysvětlením v UI.
 2. Pokračovat v bezpečném propojování dodatků pouze na základě explicitních identifikátorů nebo dohledatelných úředních důkazů; u Jilemnické zachovat odkazy na usnesení 71/23/Z a 55/24/Z a současně nezamlčet rozpor dat a čísla dodatku v metadatech.
-3. Další finanční úkol: zlepšit časovou osu a metodiku tak, aby rozlišovala doloženou výchozí cenu, cenu dodatku, kumulativní hodnotu a chybějící data. Nevyvozovat kumulativní hodnotu jen z částky v dodatku.
-4. U každé změny spustit regresní testy, ověřit `data/contract_links.json`, `data/index.json`, web a deploy; README aktualizovat až podle skutečného výsledku běhu.
+3. Finanční metodika nyní označuje cenu dodatku jako významově neurčenou, pokud zdroj výslovně nepotvrdí kumulativní celkovou cenu. Při nejednoznačnosti nevypočítává rozdíl; web nesmí tento výsledek obejít záložním výpočtem z canonical cen. Ověřit změnu na dalších případech a zachovat důkazní stopu.
+4. Další rozvoj: doplnit zdrojově podložené rozlišení navýšení, ceny změněné části a revidované celkové ceny; automatický výpočet povolit jen u srovnatelných hodnot.
+5. U každé změny spustit regresní testy, ověřit `data/contract_links.json`, `data/index.json`, web a deploy; README aktualizovat až podle skutečného výsledku běhu.
 
 
 ## Předání práce pro nový chat – aktuální úkoly
