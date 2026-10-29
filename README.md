@@ -33,6 +33,18 @@ Počty 109 a 110 u Registru smluv popisují různé vrstvy pipeline: přehled po
 
 Kontrola zdrojových projektových JSON a výpočtu v `scripts/analyze_projects.py` potvrdila, že každá z těchto tří vazeb je pouze doplňkovým odkazem mezi přílohami jednoho záznamu Registru smluv. Základní smlouva se nevytváří jako druhý zdrojový řádek a samotná vazba nepřidává další finanční událost; UI to nyní výslovně vysvětluje. U záznamu `426037` je evidována cena 886 000 Kč na samotném záznamu dodatku, ale dostupný projektový celek neobsahuje zdrojový řádek základní smlouvy, takže výchozí cenu a změnu nelze vypočítat. U `845225` a `8497295` cena ve zdrojovém řádku není k dispozici. **Nedvojí započítání je tedy v aktuálním modelu potvrzeno; úplná finanční historie a význam částky u dodatku zůstávají omezením dat, nikoli potvrzeným kumulativním výpočtem.**
 
+#### Finanční analytika – aktuální metodika a další práce
+
+Kontrola finanční analýzy z 28. 10. 2026 odhalila a opravila důležitý interpretační problém: samotná částka uvedená u dodatku nemusí být navýšením ani novou celkovou cenou. Analýza nyní označuje význam částky jako neurčený, pokud jej zdrojová metadata výslovně nepotvrzují; v takovém případě nevypočítá absolutní ani procentní změnu proti původní ceně. Srovnání se provede pouze tehdy, když je cena dodatku výslovně označena jako kumulativní / revidovaná celková cena. Časová osa i finanční mapa rozlišují „částku dodatku – význam neurčen“ a „výslovně doloženou novou celkovou cenu“.
+
+Při implementaci se nejprve objevila chyba regresního testu: starý test stále očekával automatický rozdíl 25 000 Kč, ačkoli nová metodika jej správně odmítá odvozovat. Test byl opraven a doplněn o pozitivní scénář s explicitně doloženou kumulativní cenou. Následná synchronizace [běh 40743066420](https://github.com/ReneHlouzek/lomnice-verejne-zakazky/actions/runs/40743066420) proběhla úspěšně; prošlo **66 testů** a analýza zpracovala **163 projektových celků**. Následná aktualizace dat a nasazení proběhly v [běhu 40745666553](https://github.com/ReneHlouzek/lomnice-verejne-zakazky/actions/runs/40745666553).
+
+**Další plán finanční analytiky:**
+1. Oddělit v datovém modelu a UI doloženou původní cenu, částku jednotlivého dodatku a doloženou novou celkovou cenu; každá hodnota musí mít odkaz na zdroj.
+2. Z dokumentů postupně získávat sémantiku ceny a výslovné vztahy typu „navýšeno o“, „nová celková cena“ či „cena změněné části“. Automatické rozpoznání označit jako vytěžené, nikoli ověřené, dokud nebude potvrzené textem nebo kontrolou.
+3. Doplnit pokrytí cenových údajů a seznam projektů, u nichž chybí základní smlouva nebo je význam ceny dodatku nejasný.
+4. Udržet konzervativní pravidlo: žádná automatická kumulace ani procentní změna bez srovnatelných doložených hodnot.
+
 ### Stav propojování smluv a dodatků
 
 Vazby se potvrzují při explicitním identifikátoru návazné smlouvy, dostatečně konkrétním čísle smlouvy nebo při ověřené kombinaci data z primární přílohy, oficiálního IČO a jedinečnosti možné základní smlouvy. Podobnost názvu sama o sobě není důkazem a nesmí vytvořit potvrzenou vazbu.
