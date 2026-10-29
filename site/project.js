@@ -163,8 +163,10 @@ function render(p,documentAnalysis={documents:[]},linkData={links:[],candidates:
   const addenda=events.filter(e=>e.type==='addendum').length;
   const firstDate=c.dates?.first_observed||events[0]?.date;
   const lastDate=c.dates?.last_observed||events[events.length-1]?.date;
-  const change=analysisFinancial.absolute_change ?? (f.latest_observed_price!=null&&f.initial_contract_price!=null?f.latest_observed_price-f.initial_contract_price:null);
-  const changePct=analysisFinancial.percent_change ?? (f.initial_contract_price&&change!=null?change/f.initial_contract_price*100:null);
+  // The analyzer is authoritative: null means the price comparison is not proven.
+  // Do not re-derive a delta from canonical prices, which may mix addendum amount semantics.
+  const change=analysisFinancial.absolute_change;
+  const changePct=analysisFinancial.percent_change;
   const sourceCount=c.source_count||ss.length||0;
   const verificationLevels=verification.levels||[];
   const certainty=verificationLevels.length?'Evidence ze zdrojových záznamů':'Omezené ověření';
