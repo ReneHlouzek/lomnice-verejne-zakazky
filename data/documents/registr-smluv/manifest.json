@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T11:16:19Z",
+  "updated_at": "2026-10-30T10:11:08Z",
   "records_checked": 110,
   "attachments_declared": 117,
   "documents_discovered": 117,
@@ -273,9 +273,9 @@
           "index": 1,
           "name": "Lomnice%20n.%20P..pdf",
           "url": "https://smlouvy.gov.cz/smlouva/soubor/2223278/Lomnice%20n.%20P..pdf",
-          "sha256": "508ec4547c6555ad5818e49fb84c332d891a54258c8006285a7925d904910870",
-          "bytes": 1389548,
-          "content_type": "",
+          "sha256": "7bf3c2c54f5e8d3e9cf5238b575146326b090c274da36ae906f3a4d7dc5ecbdc",
+          "bytes": 1315828,
+          "content_type": "application/pdf",
           "text_available": false,
           "text_chars": 0
         }
@@ -408,7 +408,7 @@
           "url": "https://smlouvy.gov.cz/smlouva/soubor/24778291/Darovaci_smlouva_Mesto_Lomnice_2022.pdf",
           "sha256": "2503c0460db0cbd50808e25850aa7ab58038aa144253914290bee6a56320aa7a",
           "bytes": 159764,
-          "content_type": "",
+          "content_type": "application/pdf",
           "text_available": false,
           "text_chars": 0
         }
@@ -1802,9 +1802,9 @@
           "index": 1,
           "name": "Ve%C5%99ejnopr%C3%A1vn%C3%AD%20smlouva%20o%20poskytnut%C3%AD%20dotace.pdf",
           "url": "https://smlouvy.gov.cz/smlouva/soubor/757681/Ve%C5%99ejnopr%C3%A1vn%C3%AD%20smlouva%20o%20poskytnut%C3%AD%20dotace.pdf",
-          "sha256": "0808e3a68fb5865744ff2ce3a015986e10feaa33c49cf33e7264ebdcdffcb554",
-          "bytes": 1552471,
-          "content_type": "",
+          "sha256": "176055dce4377311f43ecf642656578bb98181303e75c0fe9512b8de6ccfa807",
+          "bytes": 1216639,
+          "content_type": "application/pdf",
           "text_available": false,
           "text_chars": 0
         }
@@ -1916,9 +1916,9 @@
           "index": 1,
           "name": "Smlouva%209270370988_zve%C5%99ejn%C4%9Bn%C3%AD.pdf",
           "url": "https://smlouvy.gov.cz/smlouva/soubor/9319219/Smlouva%209270370988_zve%C5%99ejn%C4%9Bn%C3%AD.pdf",
-          "sha256": "89b2b3014d2515544e9ccf2d1ef28b41e51334acc3c4d7a209c45fab19f8bc55",
-          "bytes": 2023092,
-          "content_type": "",
+          "sha256": "bc5666d03fc4081afee6b7fe5997c13bc8af9a4bd051353aa69043e0b758e355",
+          "bytes": 1842884,
+          "content_type": "application/pdf",
           "text_available": false,
           "text_chars": 0
         },
@@ -2002,9 +2002,9 @@
           "index": 1,
           "name": "ve%C5%99ejnopr%C3%A1vn%C3%AD%20smlouva%20Lomnice%20n.%20P..pdf",
           "url": "https://smlouvy.gov.cz/smlouva/soubor/1174529/ve%C5%99ejnopr%C3%A1vn%C3%AD%20smlouva%20Lomnice%20n.%20P..pdf",
-          "sha256": "b1964f36c1b6447893a1d57ec86d53edb2b888c9e0c6c1640c12b473037017d1",
-          "bytes": 2086412,
-          "content_type": "",
+          "sha256": "541fbfd284668b590a117ea77556b3d3eef447816d34e61673e412fc2c2a0386",
+          "bytes": 1332836,
+          "content_type": "application/pdf",
           "text_available": false,
           "text_chars": 0
         }
