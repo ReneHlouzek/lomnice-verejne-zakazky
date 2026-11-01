@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-10-31T09:43:16.750231+00:00",
+  "updated_at": "2026-11-01T10:29:28.707607+00:00",
   "publisher_ico": "00275905",
   "filter_version": "city-party-v2",
   "history_from": "2016-07",
   "recent_months": 2,
   "batch_size": 12,
-  "dump_count_considered": 124,
+  "dump_count_considered": 125,
   "downloaded_this_run": 2,
   "records_total": 110,
   "history_complete": true,
   "selected_this_run": [
-    "2026-09",
-    "2026-10"
+    "2026-10",
+    "2026-11"
   ],
   "processed_dumps": {
     "https://data.smlouvy.gov.cz/dump_2016_07.xml": "",
@@ -137,6 +137,7 @@
     "https://data.smlouvy.gov.cz/dump_2026_05.xml": "",
     "https://data.smlouvy.gov.cz/dump_2026_06.xml": "",
     "https://data.smlouvy.gov.cz/dump_2026_07.xml": "",
-    "https://data.smlouvy.gov.cz/dump_2026_08.xml": ""
+    "https://data.smlouvy.gov.cz/dump_2026_08.xml": "",
+    "https://data.smlouvy.gov.cz/dump_2026_11.xml": ""
   }
 }
