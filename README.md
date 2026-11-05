@@ -10,7 +10,7 @@ Projekt spojuje veřejně dostupná data z profilu zadavatele na Vhodném uveře
 
 ## Aktuální stav
 
-**Datový snapshot vytvořen 29. 10. 2026 v 10:13:53 UTC** (`data/index.json`). Synchronizace [běh 40853667714](https://github.com/ReneHlouzek/lomnice-verejne-zakazky/actions/runs/40853667714) skončila úspěšně; všechny tři joby (`fetch-vu`, `fetch-registr`, `build`) mají výsledek `success`. Regresní testy prošly v obou zdrojových jobech i v build jobu: **66 passed**. Následné nasazení [běh 40855920905](https://github.com/ReneHlouzek/lomnice-verejne-zakazky/actions/runs/40855920905) také skončilo úspěšně. Index obsahuje 163 projektových celků a `data/contract_links.json` obsahuje 17 potvrzených smluvních vazeb, 0 kandidátů a 3 vazby na dokumenty přibalené k témuž záznamu.
+**Datový snapshot vytvořen 5. 11. 2026 v 11:18:56 UTC** (`data/index.json`). Synchronizace [běh 42014653913](https://github.com/ReneHlouzek/lomnice-verejne-zakazky/actions/runs/42014653913) skončila úspěšně; všechny tři joby (`fetch-vu`, `fetch-registr`, `build`) mají výsledek `success`. Regresní testy v build jobu: **66 passed**. Následné nasazení [běh 42018011262](https://github.com/ReneHlouzek/lomnice-verejne-zakazky/actions/runs/42018011262) také skončilo úspěšně. Index obsahuje 163 projektových celků a `data/contract_links.json` obsahuje 17 potvrzených smluvních vazeb, 0 kandidátů a 3 vazby na dokumenty přibalené k témuž záznamu.
 
 | Ukazatel | Aktuální hodnota |
 |---|---:|
@@ -19,15 +19,15 @@ Projekt spojuje veřejně dostupná data z profilu zadavatele na Vhodném uveře
 | Záznamy Registru smluv načtené do importu | 110 |
 | Záznamy Vhodného uveřejnění – seed | 79 |
 | Ověřené webové záznamy Vhodného uveřejnění | 48 |
-| Veřejné zakázky | 43 |
+| Veřejné zakázky | 44 |
 | Zakázky se změnami | 3 |
 | Smlouvy se změnami / dodatky | 16 |
 | Smlouvy bez rozpoznané zakázky | 69 |
-| Ostatní záznamy | 32 |
+| Ostatní záznamy | 31 |
 | Potvrzené vazby mezi smlouvami a dodatky | 17 |
 | Kandidátní vazby čekající na ruční ověření | 0 |
 
-Počty 109 a 110 u Registru smluv popisují různé vrstvy pipeline: přehled pokrytí organizace a počet záznamů načtených do importu. Nejde o zaměnitelné metriky. Stejně tak počet projektových celků není počtem jednotlivých smluv nebo zakázek. Typy 43 veřejných zakázek a 3 zakázek se změnami jsou v indexu oddělené kategorie; nesčítat je bez uvedení této metodiky.
+Počty 109 a 110 u Registru smluv popisují různé vrstvy pipeline: přehled pokrytí organizace a počet záznamů načtených do importu. Nejde o zaměnitelné metriky. Stejně tak počet projektových celků není počtem jednotlivých smluv nebo zakázek. Typy 44 veřejných zakázek a 3 zakázek se změnami jsou v indexu oddělené kategorie; nesčítat je bez uvedení této metodiky.
 
 #### Audit tří vazeb mezi přílohami a finančního započítání
 
