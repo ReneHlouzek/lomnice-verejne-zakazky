@@ -1,22 +1,22 @@
 {
   "id": "p-verejnopravni-smlouva-o-poskytnuti-investicni-dotace-z-rozpoctu-mesta-0101",
-  "title": "Veřejnoprávní smlouva o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou - rekonstrukce vodohospodářských sítí a následná obnova ulice 5. května",
+  "title": "Veřejnoprávní smlouva o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou - Lomnice nad popekou - obnva vodovdou a kanalizace Jilemnická ulice",
   "buyer_ico": "00275905",
   "status": "unclassified",
   "project_type": "contract",
   "canonical": {
-    "title": "Veřejnoprávní smlouva o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou - rekonstrukce vodohospodářských sítí a následná obnova ulice 5. května",
+    "title": "Veřejnoprávní smlouva o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou - Lomnice nad popekou - obnva vodovdou a kanalizace Jilemnická ulice",
     "supplier_ico": "49295934",
     "identifiers": [],
     "lifecycle": {
       "events": [
         {
-          "date": "2026-06-25",
+          "date": "2022-09-22",
           "type": "contract",
           "source": "registr-smluv",
-          "source_id": "36197230",
-          "title": "Veřejnoprávní smlouva o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou - rekonstrukce vodohospodářských sítí a následná obnova ulice 5. května",
-          "price": 38638302.0
+          "source_id": "20244341",
+          "title": "Veřejnoprávní smlouva o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou - Lomnice nad popekou - obnva vodovdou a kanalizace Jilemnická ulice",
+          "price": 500000.0
         }
       ],
       "event_count": 1,
@@ -27,22 +27,22 @@
     },
     "project_type": "contract",
     "procurement_signal": {
-      "level": "likely",
-      "label": "Pravděpodobně souvisí se zakázkou",
-      "reason": "Název/předmět odpovídá investiční dodávce, stavebním pracím nebo jiné běžné zadavatelské dodávce; způsob výběru dodavatele z tohoto záznamu sám o sobě neplyne."
+      "level": "none",
+      "label": "Bez rozpoznané vazby na zakázku",
+      "reason": "V dostupném textu nebyl nalezen dostatečný signál."
     },
     "dates": {
-      "first_observed": "2026-06-25",
-      "last_observed": "2026-06-25"
+      "first_observed": "2022-09-22",
+      "last_observed": "2022-09-22"
     },
     "financial": {
       "observed_prices": [
-        38638302.0
+        500000.0
       ],
       "observed_vat_included_prices": [],
       "expected_values": [],
-      "initial_contract_price": 38638302.0,
-      "latest_observed_price": 38638302.0,
+      "initial_contract_price": 500000.0,
+      "latest_observed_price": 500000.0,
       "expected_to_contract_ratio": null
     },
     "procurement": {
@@ -64,53 +64,53 @@
   },
   "sources": [
     {
-      "source_file": "data/sources/registr-smluv/rs-000102.json",
-      "source_id": "36197230",
+      "source_file": "data/sources/registr-smluv/rs-000064.json",
+      "source_id": "20244341",
       "record": {
         "source": "registr-smluv",
-        "source_id": "36197230",
-        "version_id": "38523058",
-        "source_url": "https://smlouvy.gov.cz/smlouva/38523058",
-        "title": "Veřejnoprávní smlouva o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou - rekonstrukce vodohospodářských sítí a následná obnova ulice 5. května",
+        "source_id": "20244341",
+        "version_id": "21747561",
+        "source_url": "https://smlouvy.gov.cz/smlouva/21747561",
+        "title": "Veřejnoprávní smlouva o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou - Lomnice nad popekou - obnva vodovdou a kanalizace Jilemnická ulice",
         "buyer_ico": "00275905",
         "supplier_ico": "49295934",
         "supplier_name": "Vodohospodářské sdružení Turnov",
         "contract_number": null,
         "related_contract_ids": [],
         "related_contract_numbers": [],
-        "date": "2026-06-25",
-        "signed_date": "2026-06-25",
+        "date": "2022-09-22",
+        "signed_date": "2022-09-22",
         "published": null,
-        "price": 38638302.0,
+        "price": 500000.0,
         "status": null,
         "raw": {
           "source": "registr-smluv",
-          "source_id": "36197230",
-          "version_id": "38523058",
-          "source_url": "https://smlouvy.gov.cz/smlouva/38523058",
-          "title": "Veřejnoprávní smlouva o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou - rekonstrukce vodohospodářských sítí a následná obnova ulice 5. května",
+          "source_id": "20244341",
+          "version_id": "21747561",
+          "source_url": "https://smlouvy.gov.cz/smlouva/21747561",
+          "title": "Veřejnoprávní smlouva o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou - Lomnice nad popekou - obnva vodovdou a kanalizace Jilemnická ulice",
           "buyer_ico": "00275905",
           "supplier_ico": "49295934",
           "contract_number": "",
           "related_contract_ids": [],
           "related_contract_numbers": [],
-          "date": "2026-06-25",
-          "signed_date": "2026-06-25",
+          "date": "2022-09-22",
+          "signed_date": "2022-09-22",
           "published": "",
-          "price": "38638302",
-          "value": "38638302",
+          "price": "500000",
+          "value": "500000",
           "publisher": "",
-          "subject": "Veřejnoprávní smlouva o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou - rekonstrukce vodohospodářských sítí a následná obnova ulice 5. května",
+          "subject": "Veřejnoprávní smlouva o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou - Lomnice nad popekou - obnva vodovdou a kanalizace Jilemnická ulice",
           "counterparty": "Vodohospodářské sdružení Turnov",
-          "detail_url": "https://smlouvy.gov.cz/smlouva/38523058",
+          "detail_url": "https://smlouvy.gov.cz/smlouva/21747561",
           "attachments": [
             {
-              "url": "https://smlouvy.gov.cz/smlouva/soubor/46518266/5.%20kv%C4%9Btna%20-%20ve%C5%99ejnopr.%20sml.docx",
-              "name": "5.%20kv%C4%9Btna%20-%20ve%C5%99ejnopr.%20sml.docx"
+              "url": "https://smlouvy.gov.cz/smlouva/soubor/27098041/LOM_PD_Ve%C5%99ejnopr%C3%A1vn%C3%AD%20s.%20in.%20dotace.doc",
+              "name": "LOM_PD_Ve%C5%99ejnopr%C3%A1vn%C3%AD%20s.%20in.%20dotace.doc"
             }
           ]
         },
-        "_source_file": "data/sources/registr-smluv/rs-000102.json"
+        "_source_file": "data/sources/registr-smluv/rs-000064.json"
       }
     }
   ],
@@ -128,23 +128,23 @@
     ],
     "timeline": [
       {
-        "date": "2026-06-25",
+        "date": "2022-09-22",
         "event": "contract",
         "price_semantics": "contract_price_observation",
         "source": "registr-smluv",
-        "source_id": "36197230",
-        "title": "Veřejnoprávní smlouva o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou - rekonstrukce vodohospodářských sítí a následná obnova ulice 5. května",
-        "price": 38638302.0,
+        "source_id": "20244341",
+        "title": "Veřejnoprávní smlouva o poskytnutí investiční dotace z rozpočtu města Lomnice nad Popelkou - Lomnice nad popekou - obnva vodovdou a kanalizace Jilemnická ulice",
+        "price": 500000.0,
         "deadline": null
       }
     ],
     "financial": {
-      "baseline_price": 38638302.0,
-      "current_observed_price": 38638302.0,
+      "baseline_price": 500000.0,
+      "current_observed_price": 500000.0,
       "absolute_change": 0.0,
       "percent_change": null,
       "observed_prices": [
-        38638302.0
+        500000.0
       ],
       "addendum_count": 0,
       "observed_addenda_count": 0,
@@ -155,12 +155,12 @@
       "source_count": 1,
       "supplier_count": 1,
       "price_values": [
-        38638302.0
+        500000.0
       ],
       "declared_document_counts": [],
       "declared_document_count": 0,
       "date_values": [
-        "2026-06-25"
+        "2022-09-22"
       ],
       "document_count": 0,
       "document_coverage_gap": 0,
