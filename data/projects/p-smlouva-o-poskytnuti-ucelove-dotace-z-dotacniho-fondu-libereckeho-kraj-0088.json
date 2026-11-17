@@ -1,22 +1,22 @@
 {
   "id": "p-smlouva-o-poskytnuti-ucelove-dotace-z-dotacniho-fondu-libereckeho-kraj-0088",
-  "title": "Smlouva o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje na nákup věcných prostředků k provádění speciálních činností",
+  "title": "Smlouva o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje, Tělovýchova a sport - Sportovní akce",
   "buyer_ico": "00275905",
   "status": "unclassified",
   "project_type": "contract",
   "canonical": {
-    "title": "Smlouva o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje na nákup věcných prostředků k provádění speciálních činností",
+    "title": "Smlouva o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje, Tělovýchova a sport - Sportovní akce",
     "supplier_ico": "70891508",
     "identifiers": [],
     "lifecycle": {
       "events": [
         {
-          "date": "2021-07-19",
+          "date": "2016-07-27",
           "type": "contract",
           "source": "registr-smluv",
-          "source_id": "16025759",
-          "title": "Smlouva o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje na nákup věcných prostředků k provádění speciálních činností",
-          "price": 53404.4
+          "source_id": "40425",
+          "title": "Smlouva o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje, Tělovýchova a sport - Sportovní akce",
+          "price": 56000.0
         }
       ],
       "event_count": 1,
@@ -32,17 +32,17 @@
       "reason": "V dostupném textu nebyl nalezen dostatečný signál."
     },
     "dates": {
-      "first_observed": "2021-07-19",
-      "last_observed": "2021-07-19"
+      "first_observed": "2016-07-27",
+      "last_observed": "2016-07-27"
     },
     "financial": {
       "observed_prices": [
-        53404.4
+        56000.0
       ],
       "observed_vat_included_prices": [],
       "expected_values": [],
-      "initial_contract_price": 53404.4,
-      "latest_observed_price": 53404.4,
+      "initial_contract_price": 56000.0,
+      "latest_observed_price": 56000.0,
       "expected_to_contract_ratio": null
     },
     "procurement": {
@@ -64,53 +64,53 @@
   },
   "sources": [
     {
-      "source_file": "data/sources/registr-smluv/rs-000056.json",
-      "source_id": "16025759",
+      "source_file": "data/sources/registr-smluv/rs-000005.json",
+      "source_id": "40425",
       "record": {
         "source": "registr-smluv",
-        "source_id": "16025759",
-        "version_id": "17245191",
-        "source_url": "https://smlouvy.gov.cz/smlouva/17245191",
-        "title": "Smlouva o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje na nákup věcných prostředků k provádění speciálních činností",
+        "source_id": "40425",
+        "version_id": "41973",
+        "source_url": "https://smlouvy.gov.cz/smlouva/41973",
+        "title": "Smlouva o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje, Tělovýchova a sport - Sportovní akce",
         "buyer_ico": "00275905",
         "supplier_ico": "70891508",
         "supplier_name": "Liberecký kraj",
-        "contract_number": "01-OLP/2363/2021",
+        "contract_number": "04708_OLP_2514_2016",
         "related_contract_ids": [],
         "related_contract_numbers": [],
-        "date": "2021-07-19",
-        "signed_date": "2021-07-19",
+        "date": "2016-07-27",
+        "signed_date": "2016-07-27",
         "published": null,
-        "price": 53404.4,
+        "price": 56000.0,
         "status": null,
         "raw": {
           "source": "registr-smluv",
-          "source_id": "16025759",
-          "version_id": "17245191",
-          "source_url": "https://smlouvy.gov.cz/smlouva/17245191",
-          "title": "Smlouva o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje na nákup věcných prostředků k provádění speciálních činností",
+          "source_id": "40425",
+          "version_id": "41973",
+          "source_url": "https://smlouvy.gov.cz/smlouva/41973",
+          "title": "Smlouva o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje, Tělovýchova a sport - Sportovní akce",
           "buyer_ico": "00275905",
           "supplier_ico": "70891508",
-          "contract_number": "01-OLP/2363/2021",
+          "contract_number": "04708_OLP_2514_2016",
           "related_contract_ids": [],
           "related_contract_numbers": [],
-          "date": "2021-07-19",
-          "signed_date": "2021-07-19",
+          "date": "2016-07-27",
+          "signed_date": "2016-07-27",
           "published": "",
-          "price": "53404.4",
-          "value": "53404.4",
+          "price": "56000",
+          "value": "56000",
           "publisher": "",
-          "subject": "Smlouva o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje na nákup věcných prostředků k provádění speciálních činností",
+          "subject": "Smlouva o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje, Tělovýchova a sport - Sportovní akce",
           "counterparty": "Liberecký kraj",
-          "detail_url": "https://smlouvy.gov.cz/smlouva/17245191",
+          "detail_url": "https://smlouvy.gov.cz/smlouva/41973",
           "attachments": [
             {
-              "url": "https://smlouvy.gov.cz/smlouva/soubor/21733307/Lomnice_nad_Popelkou_2363.pdf",
-              "name": "Lomnice_nad_Popelkou_2363.pdf"
+              "url": "https://smlouvy.gov.cz/smlouva/soubor/54685/04708_OLP_2514_2016.pdf",
+              "name": "04708_OLP_2514_2016.pdf"
             }
           ]
         },
-        "_source_file": "data/sources/registr-smluv/rs-000056.json"
+        "_source_file": "data/sources/registr-smluv/rs-000005.json"
       }
     }
   ],
@@ -128,23 +128,23 @@
     ],
     "timeline": [
       {
-        "date": "2021-07-19",
+        "date": "2016-07-27",
         "event": "contract",
         "price_semantics": "contract_price_observation",
         "source": "registr-smluv",
-        "source_id": "16025759",
-        "title": "Smlouva o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje na nákup věcných prostředků k provádění speciálních činností",
-        "price": 53404.4,
+        "source_id": "40425",
+        "title": "Smlouva o poskytnutí účelové dotace z Dotačního fondu Libereckého kraje, Tělovýchova a sport - Sportovní akce",
+        "price": 56000.0,
         "deadline": null
       }
     ],
     "financial": {
-      "baseline_price": 53404.4,
-      "current_observed_price": 53404.4,
+      "baseline_price": 56000.0,
+      "current_observed_price": 56000.0,
       "absolute_change": 0.0,
       "percent_change": null,
       "observed_prices": [
-        53404.4
+        56000.0
       ],
       "addendum_count": 0,
       "observed_addenda_count": 0,
@@ -155,12 +155,12 @@
       "source_count": 1,
       "supplier_count": 1,
       "price_values": [
-        53404.4
+        56000.0
       ],
       "declared_document_counts": [],
       "declared_document_count": 0,
       "date_values": [
-        "2021-07-19"
+        "2016-07-27"
       ],
       "document_count": 0,
       "document_coverage_gap": 0,
