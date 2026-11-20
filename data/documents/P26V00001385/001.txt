@@ -1,0 +1,125 @@
+Title: Detail dokumentu, Veřejné zakázky a profily zadavatelů
+
+URL Source: https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3895761
+
+Markdown Content:
+Portál pro vhodné uveřejnění používá k poskytování služeb a analýze návštěvnosti soubory cookie. Používáním tohoto Portálu s tím souhlasíte. Souhlasím[Další informace](https://www.vhodne-uverejneni.cz/cookies "Další informace")
+
+[![Image 4: logo Portál pro vhodné uveřejnění](https://www.vhodne-uverejneni.cz/thm/xen/html/img/logo_pvu5.4.png)](https://www.vhodne-uverejneni.cz/)
+
+[+ 420 538 702 705](tel:+420538702705)[podpora@qcm.cz](tel:+420583702705)
+
+## Kontaktní informace
+
+Telefonická podpora (Po-Pá 9-17):[+ 420 538 702 705](tel:+420538702705)
+
+E-mail adresa:[podpora@qcm.cz](mailto:podpora@qcm.cz)
+
+## CDD přihlášení
+
+[PŘIHLÁŠENÍ DODAVATELE](https://www.vhodne-uverejneni.cz/index.php?m=xenorganizations&h=user&a=cddsso&qProfilAction=login&qProfilRedir=https%3A%2F%2Fwww.vhodne-uverejneni.cz%2Findex.php%3Fm%3Dxenorders%26h%3Dorderdocument%26a%3Ddetail%26document%3D3895761 "Přihlášení prostřednictvím databáze dodavatelů qProfil")
+
+## Přihlášení
+
+[PŘIHLÁŠENÍ ZADAVATELE](https://www.vhodne-uverejneni.cz/index.php?m=users&h=user&a=login "Přihlášení zadavatele")[REGISTROVAT](https://www.vhodne-uverejneni.cz/registrace "Registrovat")
+
+## Navigace - top menu
+
+*   [DOMŮ](https://www.vhodne-uverejneni.cz/ "Domů")
+*   [O PORTÁLU](https://www.vhodne-uverejneni.cz/o-portalu "O portálu")
+*   [VEŘEJNÉ ZAKÁZKY](https://www.vhodne-uverejneni.cz/verejne-zakazky "Veřejné zakázky")
+*   [KATALOG ORGANIZACÍ](https://www.vhodne-uverejneni.cz/katalog-organizaci "Katalog organizací")
+*   [REGISTR SMLUV](https://www.vhodne-uverejneni.cz/registr-smluv "Registr smluv")
+*   [ČASTÉ DOTAZY](https://www.vhodne-uverejneni.cz/caste-dotazy "Časté dotazy")
+*   [CENÍK](https://www.vhodne-uverejneni.cz/cenik "Ceník")
+
+1.   [Domů](https://www.vhodne-uverejneni.cz/index.php)
+2.   [Veřejné zakázky](https://www.vhodne-uverejneni.cz/verejne-zakazky)
+3.   [Modernizace UČEBEN ZUŠ - dodávky](https://www.vhodne-uverejneni.cz/zakazka/modernizace-uceben-zus-dodavky)
+4.   Detail dokumentu
+
+# Detail dokumentu
+
+## Výpis systémových zpráv
+
+## Detail dokumentu
+
+### Dodatek č. 1 - ČÁST A
+
+Smlouva, její změny a dodatky
+
+| Velikost | Staženo | Zveřejněno | Změněno |
+| --- | --- | --- | --- |
+| 1.3 MB | 12x | 24.08.2026 08:29:43 | 24.08.2026 08:59:18 |
+
+[**Soubor ke stažení**Dodatek_c1.pdf](https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=download&document=3895761&r=https%3A%2F%2Fwww.vhodne-uverejneni.cz%2Findex.php%3Fm%3Dxenorders%26h%3Dorderdocument%26a%3Ddetail%26document%3D3895761)
+
+### Předchozí verze dokumentu
+
+| Název | Typ dokumentu | Velikost | Změněno | Akce |
+| --- | --- | --- | --- | --- |
+| Dodatek č. 1 - ČÁST A | Smlouva, její změny a dodatky | 1.3 MB | 24.08.2026 08:59:18 | [![Image 5: Stáhnout](https://www.vhodne-uverejneni.cz/thm/xen/html/img/icon/download.png?1465481861)Stáhnout](https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=download&document=3895761&r=https%3A%2F%2Fwww.vhodne-uverejneni.cz%2Findex.php%3Fm%3Dxenorders%26h%3Dorderdocument%26a%3Ddetail%26document%3D3895761 "Stáhnout") |
+|  |
+| Dodatek č. 1 - ČÁST A | Smlouva, její změny a dodatky | 1.25 MB | 24.08.2026 08:34:10 | [![Image 6: Stáhnout](https://www.vhodne-uverejneni.cz/thm/xen/html/img/icon/download.png?1465481861)Stáhnout](https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=download&document=3895731&r=https%3A%2F%2Fwww.vhodne-uverejneni.cz%2Findex.php%3Fm%3Dxenorders%26h%3Dorderdocument%26a%3Ddetail%26document%3D3895761 "Stáhnout") |
+|  |
+| Dodatek č. 1 | Smlouva, její změny a dodatky | 1.25 MB | 24.08.2026 08:29:43 | [![Image 7: Stáhnout](https://www.vhodne-uverejneni.cz/thm/xen/html/img/icon/download.png?1465481861)Stáhnout](https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=download&document=3895710&r=https%3A%2F%2Fwww.vhodne-uverejneni.cz%2Findex.php%3Fm%3Dxenorders%26h%3Dorderdocument%26a%3Ddetail%26document%3D3895761 "Stáhnout") |
+|  |
+
+[zpět na dokumenty](https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=order&a=detaildocumentsandimages&rwr=modernizace-uceben-zus-dodavky)
+
+## Menu patička
+
+*   [O portálu](https://www.vhodne-uverejneni.cz/o-portalu "Základní informace")
+*   [Ceník](https://www.vhodne-uverejneni.cz/cenik "Ceník")
+*   [Legislativa](https://www.vhodne-uverejneni.cz/legislativa "Legislativa")
+*   [Manuály](https://www.vhodne-uverejneni.cz/manualy "Uživatelské příručky")
+*   [Časté dotazy](https://www.vhodne-uverejneni.cz/caste-dotazy "Časté dotazy")
+*   [Obchodní podmínky](https://www.vhodne-uverejneni.cz/obchodni-podminky "Obchodní podmínky")
+*   [Novinky](https://www.vhodne-uverejneni.cz/novinky "Novinky")
+*   [Kontakt](https://www.vhodne-uverejneni.cz/kontakt "Kontakt")
+*   [RSS](https://www.vhodne-uverejneni.cz/rss/zakazky)
+
+[RSS](https://www.vhodne-uverejneni.cz/rss/zakazky)
+
+## Patička
+
+### Elektronický nástroj nové generace
+
+Portál pro vhodné uveřejnění (dále jen PVU) je provozován na certifikovaném elektronickém nástroji X-EN, který implementuje profil zadavatele ve smyslu zákona o zadávání veřejných zakázkách.
+
+![Image 8: logo-paticka](https://www.vhodne-uverejneni.cz/index.php?m=photogallery&h=image&a=src&idv=538950&f=original)
+
+### Provozovatel portálu PVU
+
+QCM s.r.o.
+
+Heršpická 813/5, budova M-palác, 7. patro   
+ 639 00 Brno   
+ Tel.: +420 538 702 702   
+ E-mail: info@qcm.cz
+
+### Podpora pro PVU
+
+PO-PA 09-17 na čísle 538 702 705   
+ podpora@qcm.cz
+
+### Portály QCM
+
+*   [qcm.cz](https://www.qcm.cz/)
+*   [portaldodavatele.cz](https://portaldodavatele.cz/)
+*   [ezak.cz](http://www.ezak.cz/)
+*   [centralni-nakup.cz](https://centralni-nakup.cz/)
+*   [formulare-uradu.cz](https://formulare-uradu.cz/)
+*   [elektronizace-zakazek.cz](http://elektronizace-zakazek.cz/)
+*   [e-forms.cz](http://e-forms.cz/)
+*   [skoleni.qcm.cz](https://skoleni.qcm.cz/)
+
+### Stáhněte si mobilní aplikaci portálu PoDo
+
+Souhrnné informace o aktuálních veřejných zakázkách v české republice ve Vašem mobilu.
+
+[![Image 9: google-play](https://www.vhodne-uverejneni.cz/index.php?m=photogallery&h=image&a=src&idv=61727&f=original)](https://play.google.com/store/apps/details?id=cz.fen.mobileapp)[![Image 10: app-store](https://www.vhodne-uverejneni.cz/index.php?m=photogallery&h=image&a=src&idv=61728&f=original)](https://apps.apple.com/cz/app/ve%C5%99ejn%C3%A9-zak%C3%A1zky/id1478878066)
+
+© 2025 vhodne-uverejneni.cz[certifikovaný nástroj X-EN verze 5](https://www.vhodne-uverejneni.cz/x-en-certifikovany-elektronicky-nastroj)[prohlášení o přístupnosti](https://www.vhodne-uverejneni.cz/prohlaseni-o-pristupnosti)[GDPR](https://www.vhodne-uverejneni.cz/gdpr)
+
+Dodavatel portálového řešení[![Image 11: Qcm paticka](https://www.vhodne-uverejneni.cz/index.php?m=photogallery&h=image&a=src&idv=61725&f=original)](https://www.qcm.cz/)

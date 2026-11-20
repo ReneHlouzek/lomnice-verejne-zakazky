@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "documents_analyzed": 119,
+  "documents_analyzed": 165,
   "method": "Pravidlová extrakce z textu PDF; nejde o právní ani ekonomické hodnocení.",
   "documents": [
     {
@@ -4124,12 +4124,207 @@
     },
     {
       "source": "vhodne-uverejneni",
+      "source_id": "P26-REG-105575",
+      "source_url": "https://www.vhodne-uverejneni.cz/index.php?a=detail&contract=105575&h=contractsregister&m=xenorders",
+      "title": "Stavební práce při výměně oken a úpravy 3. NP čp. 61, Lomnice nad Popelkou",
+      "document_name": "Výzva",
+      "text_file": "data/documents/P26-REG-105575/001.txt",
+      "text_chars": 1679,
+      "document_types": [],
+      "signals": {
+        "contract": 0,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [],
+      "dates": [],
+      "snippets": []
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "P26-REG-105575",
+      "source_url": "https://www.vhodne-uverejneni.cz/index.php?a=detail&contract=105575&h=contractsregister&m=xenorders",
+      "title": "Stavební práce při výměně oken a úpravy 3. NP čp. 61, Lomnice nad Popelkou",
+      "document_name": "Smlouva, její změny a dodatky",
+      "text_file": "data/documents/P26-REG-105575/002.txt",
+      "text_chars": 1679,
+      "document_types": [
+        "contract"
+      ],
+      "signals": {
+        "contract": 1,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [],
+      "dates": [],
+      "snippets": []
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "P26V00001118",
+      "source_url": "https://www.vhodne-uverejneni.cz/zakazka/sanace-vlhkeho-zdiva-sklepnich-prostor-cp-886-lomnice-nad-popelkou",
+      "title": "Sanace vlhkého zdiva sklepních prostor čp. 886, Lomnice nad Popelkou",
+      "document_name": "Smlouva, její změny a dodatky",
+      "text_file": "data/documents/P26V00001118/001.txt",
+      "text_chars": 1679,
+      "document_types": [
+        "contract"
+      ],
+      "signals": {
+        "contract": 1,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [],
+      "dates": [],
+      "snippets": []
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "P26V00001385",
+      "source_url": "https://www.vhodne-uverejneni.cz/zakazka/modernizace-uceben-zus-dodavky",
+      "title": "Modernizace UČEBEN ZUŠ - dodávky",
+      "document_name": "Smlouva, její změny a dodatky",
+      "text_file": "data/documents/P26V00001385/001.txt",
+      "text_chars": 6945,
+      "document_types": [
+        "contract",
+        "addendum"
+      ],
+      "signals": {
+        "contract": 1,
+        "addendum": 1,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [],
+      "dates": [
+        "24.08.2026"
+      ],
+      "snippets": [
+        "etail dokumentu # Detail dokumentu ## Výpis systémových zpráv ## Detail dokumentu ### Dodatek č. 1 - ČÁST A Smlouva, její změny a dodatky | Velikost | Staženo | Zveřejněno | Změněno | | --- | --- | --- | --- | | 1.3 MB | 12x | 24.08.2026 08:29:43 | 24.08.2026 08:59:18 | [**Soubor ke stažení**Dodatek_c1.pdf](https://www.vhodne-uverejneni.cz/i"
+      ]
+    },
+    {
+      "source": "vhodne-uverejneni",
       "source_id": "P26V00001385",
       "source_url": "https://www.vhodne-uverejneni.cz/zakazka/modernizace-uceben-zus-dodavky",
       "title": "Modernizace UČEBEN ZUŠ - dodávky",
       "document_name": "Smlouva, její změny a dodatky",
       "text_file": "data/documents/P26V00001385/002.txt",
       "text_chars": 136,
+      "document_types": [
+        "contract"
+      ],
+      "signals": {
+        "contract": 1,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [],
+      "dates": [],
+      "snippets": []
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "P26V00001385",
+      "source_url": "https://www.vhodne-uverejneni.cz/zakazka/modernizace-uceben-zus-dodavky",
+      "title": "Modernizace UČEBEN ZUŠ - dodávky",
+      "document_name": "Smlouva, její změny a dodatky",
+      "text_file": "data/documents/P26V00001385/003.txt",
+      "text_chars": 1679,
+      "document_types": [
+        "contract"
+      ],
+      "signals": {
+        "contract": 1,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [],
+      "dates": [],
+      "snippets": []
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "P26V00001385",
+      "source_url": "https://www.vhodne-uverejneni.cz/zakazka/modernizace-uceben-zus-dodavky",
+      "title": "Modernizace UČEBEN ZUŠ - dodávky",
+      "document_name": "Smlouva, její změny a dodatky",
+      "text_file": "data/documents/P26V00001385/004.txt",
+      "text_chars": 1679,
+      "document_types": [
+        "contract"
+      ],
+      "signals": {
+        "contract": 1,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [],
+      "dates": [],
+      "snippets": []
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "P26V00001385",
+      "source_url": "https://www.vhodne-uverejneni.cz/zakazka/modernizace-uceben-zus-dodavky",
+      "title": "Modernizace UČEBEN ZUŠ - dodávky",
+      "document_name": "Smlouva, její změny a dodatky",
+      "text_file": "data/documents/P26V00001385/005.txt",
+      "text_chars": 1679,
+      "document_types": [
+        "contract"
+      ],
+      "signals": {
+        "contract": 1,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [],
+      "dates": [],
+      "snippets": []
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "P26V00001385",
+      "source_url": "https://www.vhodne-uverejneni.cz/zakazka/modernizace-uceben-zus-dodavky",
+      "title": "Modernizace UČEBEN ZUŠ - dodávky",
+      "document_name": "Smlouva, její změny a dodatky",
+      "text_file": "data/documents/P26V00001385/006.txt",
+      "text_chars": 1679,
       "document_types": [
         "contract"
       ],
@@ -4159,6 +4354,296 @@
       ],
       "signals": {
         "contract": 1,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [],
+      "dates": [],
+      "snippets": []
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "P26V00002162",
+      "source_url": "https://www.vhodne-uverejneni.cz/zakazka/verejne-osvetleni-11",
+      "title": "Veřejné osvětlení",
+      "document_name": "Písemná zpráva zadavatele",
+      "text_file": "data/documents/P26V00002162/001.txt",
+      "text_chars": 1679,
+      "document_types": [],
+      "signals": {
+        "contract": 0,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [],
+      "dates": [],
+      "snippets": []
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "P26V00002162",
+      "source_url": "https://www.vhodne-uverejneni.cz/zakazka/verejne-osvetleni-11",
+      "title": "Veřejné osvětlení",
+      "document_name": "Smlouva, její změny a dodatky",
+      "text_file": "data/documents/P26V00002162/002.txt",
+      "text_chars": 1679,
+      "document_types": [
+        "contract"
+      ],
+      "signals": {
+        "contract": 1,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [],
+      "dates": [],
+      "snippets": []
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "P26V00002162",
+      "source_url": "https://www.vhodne-uverejneni.cz/zakazka/verejne-osvetleni-11",
+      "title": "Veřejné osvětlení",
+      "document_name": "Smlouva, její změny a dodatky",
+      "text_file": "data/documents/P26V00002162/003.txt",
+      "text_chars": 1679,
+      "document_types": [
+        "contract"
+      ],
+      "signals": {
+        "contract": 1,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [],
+      "dates": [],
+      "snippets": []
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "P26V00002162",
+      "source_url": "https://www.vhodne-uverejneni.cz/zakazka/verejne-osvetleni-11",
+      "title": "Veřejné osvětlení",
+      "document_name": "Oznámení o výběru nejvhodnější nabídky",
+      "text_file": "data/documents/P26V00002162/004.txt",
+      "text_chars": 1679,
+      "document_types": [],
+      "signals": {
+        "contract": 0,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [],
+      "dates": [],
+      "snippets": []
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "P26V00002162",
+      "source_url": "https://www.vhodne-uverejneni.cz/zakazka/verejne-osvetleni-11",
+      "title": "Veřejné osvětlení",
+      "document_name": "Oznámení o výběru nejvhodnější nabídky",
+      "text_file": "data/documents/P26V00002162/005.txt",
+      "text_chars": 1679,
+      "document_types": [],
+      "signals": {
+        "contract": 0,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [],
+      "dates": [],
+      "snippets": []
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "P26V00002162",
+      "source_url": "https://www.vhodne-uverejneni.cz/zakazka/verejne-osvetleni-11",
+      "title": "Veřejné osvětlení",
+      "document_name": "Vysvětlení, doplnění, změna zadávací dokumentace",
+      "text_file": "data/documents/P26V00002162/006.txt",
+      "text_chars": 1679,
+      "document_types": [],
+      "signals": {
+        "contract": 0,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [],
+      "dates": [],
+      "snippets": []
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "P26V00002162",
+      "source_url": "https://www.vhodne-uverejneni.cz/zakazka/verejne-osvetleni-11",
+      "title": "Veřejné osvětlení",
+      "document_name": "Vysvětlení, doplnění, změna zadávací dokumentace",
+      "text_file": "data/documents/P26V00002162/007.txt",
+      "text_chars": 1679,
+      "document_types": [],
+      "signals": {
+        "contract": 0,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [],
+      "dates": [],
+      "snippets": []
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "P26V00002162",
+      "source_url": "https://www.vhodne-uverejneni.cz/zakazka/verejne-osvetleni-11",
+      "title": "Veřejné osvětlení",
+      "document_name": "Vysvětlení, doplnění, změna zadávací dokumentace",
+      "text_file": "data/documents/P26V00002162/008.txt",
+      "text_chars": 1679,
+      "document_types": [],
+      "signals": {
+        "contract": 0,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [],
+      "dates": [],
+      "snippets": []
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "P26V00002162",
+      "source_url": "https://www.vhodne-uverejneni.cz/zakazka/verejne-osvetleni-11",
+      "title": "Veřejné osvětlení",
+      "document_name": "Vysvětlení, doplnění, změna zadávací dokumentace",
+      "text_file": "data/documents/P26V00002162/009.txt",
+      "text_chars": 1679,
+      "document_types": [],
+      "signals": {
+        "contract": 0,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [],
+      "dates": [],
+      "snippets": []
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "P26V00002162",
+      "source_url": "https://www.vhodne-uverejneni.cz/zakazka/verejne-osvetleni-11",
+      "title": "Veřejné osvětlení",
+      "document_name": "Vysvětlení, doplnění, změna zadávací dokumentace",
+      "text_file": "data/documents/P26V00002162/010.txt",
+      "text_chars": 1679,
+      "document_types": [],
+      "signals": {
+        "contract": 0,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [],
+      "dates": [],
+      "snippets": []
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "P26V00002162",
+      "source_url": "https://www.vhodne-uverejneni.cz/zakazka/verejne-osvetleni-11",
+      "title": "Veřejné osvětlení",
+      "document_name": "Vysvětlení, doplnění, změna zadávací dokumentace",
+      "text_file": "data/documents/P26V00002162/011.txt",
+      "text_chars": 1679,
+      "document_types": [],
+      "signals": {
+        "contract": 0,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [],
+      "dates": [],
+      "snippets": []
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "P26V00002162",
+      "source_url": "https://www.vhodne-uverejneni.cz/zakazka/verejne-osvetleni-11",
+      "title": "Veřejné osvětlení",
+      "document_name": "Vysvětlení, doplnění, změna zadávací dokumentace",
+      "text_file": "data/documents/P26V00002162/012.txt",
+      "text_chars": 1679,
+      "document_types": [],
+      "signals": {
+        "contract": 0,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [],
+      "dates": [],
+      "snippets": []
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "P26V00002162",
+      "source_url": "https://www.vhodne-uverejneni.cz/zakazka/verejne-osvetleni-11",
+      "title": "Veřejné osvětlení",
+      "document_name": "Vysvětlení, doplnění, změna zadávací dokumentace",
+      "text_file": "data/documents/P26V00002162/013.txt",
+      "text_chars": 1679,
+      "document_types": [],
+      "signals": {
+        "contract": 0,
         "addendum": 0,
         "budget": 0,
         "change_sheet": 0,
@@ -4216,6 +4701,342 @@
     },
     {
       "source": "vhodne-uverejneni",
+      "source_id": "P26V00002162",
+      "source_url": "https://www.vhodne-uverejneni.cz/zakazka/verejne-osvetleni-11",
+      "title": "Veřejné osvětlení",
+      "document_name": "Výzva",
+      "text_file": "data/documents/P26V00002162/016.txt",
+      "text_chars": 1679,
+      "document_types": [],
+      "signals": {
+        "contract": 0,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [],
+      "dates": [],
+      "snippets": []
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "P26V00002162",
+      "source_url": "https://www.vhodne-uverejneni.cz/zakazka/verejne-osvetleni-11",
+      "title": "Veřejné osvětlení",
+      "document_name": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění",
+      "text_file": "data/documents/P26V00002162/017.txt",
+      "text_chars": 1679,
+      "document_types": [],
+      "signals": {
+        "contract": 0,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [],
+      "dates": [],
+      "snippets": []
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "P26V00002162",
+      "source_url": "https://www.vhodne-uverejneni.cz/zakazka/verejne-osvetleni-11",
+      "title": "Veřejné osvětlení",
+      "document_name": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění",
+      "text_file": "data/documents/P26V00002162/018.txt",
+      "text_chars": 1679,
+      "document_types": [],
+      "signals": {
+        "contract": 0,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [],
+      "dates": [],
+      "snippets": []
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "P26V00002162",
+      "source_url": "https://www.vhodne-uverejneni.cz/zakazka/verejne-osvetleni-11",
+      "title": "Veřejné osvětlení",
+      "document_name": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění",
+      "text_file": "data/documents/P26V00002162/019.txt",
+      "text_chars": 1679,
+      "document_types": [],
+      "signals": {
+        "contract": 0,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [],
+      "dates": [],
+      "snippets": []
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "P26V00002162",
+      "source_url": "https://www.vhodne-uverejneni.cz/zakazka/verejne-osvetleni-11",
+      "title": "Veřejné osvětlení",
+      "document_name": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění",
+      "text_file": "data/documents/P26V00002162/020.txt",
+      "text_chars": 1679,
+      "document_types": [],
+      "signals": {
+        "contract": 0,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [],
+      "dates": [],
+      "snippets": []
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "P26V00002162",
+      "source_url": "https://www.vhodne-uverejneni.cz/zakazka/verejne-osvetleni-11",
+      "title": "Veřejné osvětlení",
+      "document_name": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění",
+      "text_file": "data/documents/P26V00002162/021.txt",
+      "text_chars": 1679,
+      "document_types": [],
+      "signals": {
+        "contract": 0,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [],
+      "dates": [],
+      "snippets": []
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "P26V00002162",
+      "source_url": "https://www.vhodne-uverejneni.cz/zakazka/verejne-osvetleni-11",
+      "title": "Veřejné osvětlení",
+      "document_name": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění",
+      "text_file": "data/documents/P26V00002162/022.txt",
+      "text_chars": 1679,
+      "document_types": [],
+      "signals": {
+        "contract": 0,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [],
+      "dates": [],
+      "snippets": []
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "P26V00002162",
+      "source_url": "https://www.vhodne-uverejneni.cz/zakazka/verejne-osvetleni-11",
+      "title": "Veřejné osvětlení",
+      "document_name": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění",
+      "text_file": "data/documents/P26V00002162/023.txt",
+      "text_chars": 1679,
+      "document_types": [],
+      "signals": {
+        "contract": 0,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [],
+      "dates": [],
+      "snippets": []
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "P26V00002405",
+      "source_url": "https://www.vhodne-uverejneni.cz/zakazka/rozsireni-polikliniky-lomnice-nad-popelkou-dokumentace-stavebniho-zameru",
+      "title": "Rozšíření polikliniky Lomnice nad Popelkou - dokumentace stavebního záměru",
+      "document_name": "Smlouva, její změny a dodatky",
+      "text_file": "data/documents/P26V00002405/001.txt",
+      "text_chars": 1679,
+      "document_types": [
+        "contract"
+      ],
+      "signals": {
+        "contract": 1,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [],
+      "dates": [],
+      "snippets": []
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "P26V00002405",
+      "source_url": "https://www.vhodne-uverejneni.cz/zakazka/rozsireni-polikliniky-lomnice-nad-popelkou-dokumentace-stavebniho-zameru",
+      "title": "Rozšíření polikliniky Lomnice nad Popelkou - dokumentace stavebního záměru",
+      "document_name": "Smlouva, její změny a dodatky",
+      "text_file": "data/documents/P26V00002405/002.txt",
+      "text_chars": 1679,
+      "document_types": [
+        "contract"
+      ],
+      "signals": {
+        "contract": 1,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [],
+      "dates": [],
+      "snippets": []
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "P26V00002929",
+      "source_url": "https://www.vhodne-uverejneni.cz/zakazka/nemocnice-nasledne-pece-lomnice-nad-popelkou-investice-a-opravy",
+      "title": "Nemocnice následné péče Lomnice nad Popelkou – investice a opravy",
+      "document_name": "Písemná zpráva zadavatele",
+      "text_file": "data/documents/P26V00002929/001.txt",
+      "text_chars": 1679,
+      "document_types": [],
+      "signals": {
+        "contract": 0,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [],
+      "dates": [],
+      "snippets": []
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "P26V00002929",
+      "source_url": "https://www.vhodne-uverejneni.cz/zakazka/nemocnice-nasledne-pece-lomnice-nad-popelkou-investice-a-opravy",
+      "title": "Nemocnice následné péče Lomnice nad Popelkou – investice a opravy",
+      "document_name": "Ostatní",
+      "text_file": "data/documents/P26V00002929/002.txt",
+      "text_chars": 1679,
+      "document_types": [],
+      "signals": {
+        "contract": 0,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [],
+      "dates": [],
+      "snippets": []
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "P26V00002929",
+      "source_url": "https://www.vhodne-uverejneni.cz/zakazka/nemocnice-nasledne-pece-lomnice-nad-popelkou-investice-a-opravy",
+      "title": "Nemocnice následné péče Lomnice nad Popelkou – investice a opravy",
+      "document_name": "Výzva",
+      "text_file": "data/documents/P26V00002929/003.txt",
+      "text_chars": 1679,
+      "document_types": [],
+      "signals": {
+        "contract": 0,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [],
+      "dates": [],
+      "snippets": []
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "P26V00002929",
+      "source_url": "https://www.vhodne-uverejneni.cz/zakazka/nemocnice-nasledne-pece-lomnice-nad-popelkou-investice-a-opravy",
+      "title": "Nemocnice následné péče Lomnice nad Popelkou – investice a opravy",
+      "document_name": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění",
+      "text_file": "data/documents/P26V00002929/004.txt",
+      "text_chars": 1679,
+      "document_types": [],
+      "signals": {
+        "contract": 0,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [],
+      "dates": [],
+      "snippets": []
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "P26V00002929",
+      "source_url": "https://www.vhodne-uverejneni.cz/zakazka/nemocnice-nasledne-pece-lomnice-nad-popelkou-investice-a-opravy",
+      "title": "Nemocnice následné péče Lomnice nad Popelkou – investice a opravy",
+      "document_name": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění",
+      "text_file": "data/documents/P26V00002929/005.txt",
+      "text_chars": 2744,
+      "document_types": [],
+      "signals": {
+        "contract": 0,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [],
+      "dates": [
+        "04.05.2026"
+      ],
+      "snippets": []
+    },
+    {
+      "source": "vhodne-uverejneni",
       "source_id": "P26V00002929",
       "source_url": "https://www.vhodne-uverejneni.cz/zakazka/nemocnice-nasledne-pece-lomnice-nad-popelkou-investice-a-opravy",
       "title": "Nemocnice následné péče Lomnice nad Popelkou – investice a opravy",
@@ -4247,6 +5068,238 @@
       "document_types": [],
       "signals": {
         "contract": 0,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [],
+      "dates": [],
+      "snippets": []
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "P26V00002929",
+      "source_url": "https://www.vhodne-uverejneni.cz/zakazka/nemocnice-nasledne-pece-lomnice-nad-popelkou-investice-a-opravy",
+      "title": "Nemocnice následné péče Lomnice nad Popelkou – investice a opravy",
+      "document_name": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění",
+      "text_file": "data/documents/P26V00002929/008.txt",
+      "text_chars": 1679,
+      "document_types": [],
+      "signals": {
+        "contract": 0,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [],
+      "dates": [],
+      "snippets": []
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "P26V00002929",
+      "source_url": "https://www.vhodne-uverejneni.cz/zakazka/nemocnice-nasledne-pece-lomnice-nad-popelkou-investice-a-opravy",
+      "title": "Nemocnice následné péče Lomnice nad Popelkou – investice a opravy",
+      "document_name": "Zadávací a kvalifikační dokumentace, prohlídka místa plnění",
+      "text_file": "data/documents/P26V00002929/009.txt",
+      "text_chars": 2737,
+      "document_types": [],
+      "signals": {
+        "contract": 0,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [],
+      "dates": [
+        "04.05.2026"
+      ],
+      "snippets": []
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "P26V00003724",
+      "source_url": "https://www.vhodne-uverejneni.cz/zakazka/vymena-oken-zus-lomnice-nad-popelkou-dodavka-a-montaz",
+      "title": "Výměna oken ZUŠ Lomnice nad Popelkou - dodávka a montáž",
+      "document_name": "Výše skutečně uhrazené ceny za plnění VZ",
+      "text_file": "data/documents/P26V00003724/001.txt",
+      "text_chars": 1679,
+      "document_types": [],
+      "signals": {
+        "contract": 0,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [],
+      "dates": [],
+      "snippets": []
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "P26V00003724",
+      "source_url": "https://www.vhodne-uverejneni.cz/zakazka/vymena-oken-zus-lomnice-nad-popelkou-dodavka-a-montaz",
+      "title": "Výměna oken ZUŠ Lomnice nad Popelkou - dodávka a montáž",
+      "document_name": "Smlouva, její změny a dodatky",
+      "text_file": "data/documents/P26V00003724/002.txt",
+      "text_chars": 1679,
+      "document_types": [
+        "contract"
+      ],
+      "signals": {
+        "contract": 1,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [],
+      "dates": [],
+      "snippets": []
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "P26V00003724",
+      "source_url": "https://www.vhodne-uverejneni.cz/zakazka/vymena-oken-zus-lomnice-nad-popelkou-dodavka-a-montaz",
+      "title": "Výměna oken ZUŠ Lomnice nad Popelkou - dodávka a montáž",
+      "document_name": "Výzva",
+      "text_file": "data/documents/P26V00003724/003.txt",
+      "text_chars": 1679,
+      "document_types": [],
+      "signals": {
+        "contract": 0,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [],
+      "dates": [],
+      "snippets": []
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "P26V00004395",
+      "source_url": "https://www.vhodne-uverejneni.cz/zakazka/oprava-povrchu-komunikace-rvacov-ii-etapa-lomnice-nad-popelkou",
+      "title": "Oprava povrchu komunikace Rváčov - II. etapa, Lomnice nad Popelkou",
+      "document_name": "Výše skutečně uhrazené ceny za plnění VZ",
+      "text_file": "data/documents/P26V00004395/001.txt",
+      "text_chars": 1679,
+      "document_types": [],
+      "signals": {
+        "contract": 0,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [],
+      "dates": [],
+      "snippets": []
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "P26V00004395",
+      "source_url": "https://www.vhodne-uverejneni.cz/zakazka/oprava-povrchu-komunikace-rvacov-ii-etapa-lomnice-nad-popelkou",
+      "title": "Oprava povrchu komunikace Rváčov - II. etapa, Lomnice nad Popelkou",
+      "document_name": "Smlouva, její změny a dodatky",
+      "text_file": "data/documents/P26V00004395/002.txt",
+      "text_chars": 1679,
+      "document_types": [
+        "contract"
+      ],
+      "signals": {
+        "contract": 1,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [],
+      "dates": [],
+      "snippets": []
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "P26V00004399",
+      "source_url": "https://www.vhodne-uverejneni.cz/zakazka/rekonstrukce-topneho-systemu-vcetne-zdroje-tepla-v-objektu-k-urnovemu-haji-cp-118-lomnice-nad-popelkou",
+      "title": "Rekonstrukce topného systému včetně zdroje tepla v objektu K Urnovému háji čp. 118, Lomnice nad Popelkou",
+      "document_name": "Smlouva, její změny a dodatky",
+      "text_file": "data/documents/P26V00004399/001.txt",
+      "text_chars": 1679,
+      "document_types": [
+        "contract"
+      ],
+      "signals": {
+        "contract": 1,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [],
+      "dates": [],
+      "snippets": []
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "P26V00004533",
+      "source_url": "https://www.vhodne-uverejneni.cz/zakazka/rekonstrukce-sk-dt-a-vss-v-budove-zus-lomnice-nad-popelkou",
+      "title": "Rekonstrukce SK, DT a VSS v budově ZUŠ, Lomnice nad Popelkou",
+      "document_name": "Smlouva, její změny a dodatky",
+      "text_file": "data/documents/P26V00004533/001.txt",
+      "text_chars": 1679,
+      "document_types": [
+        "contract"
+      ],
+      "signals": {
+        "contract": 1,
+        "addendum": 0,
+        "budget": 0,
+        "change_sheet": 0,
+        "grant": 0,
+        "tender": 0,
+        "deadline": 0
+      },
+      "amounts_czk": [],
+      "dates": [],
+      "snippets": []
+    },
+    {
+      "source": "vhodne-uverejneni",
+      "source_id": "P26V00004533",
+      "source_url": "https://www.vhodne-uverejneni.cz/zakazka/rekonstrukce-sk-dt-a-vss-v-budove-zus-lomnice-nad-popelkou",
+      "title": "Rekonstrukce SK, DT a VSS v budově ZUŠ, Lomnice nad Popelkou",
+      "document_name": "Smlouva, její změny a dodatky",
+      "text_file": "data/documents/P26V00004533/002.txt",
+      "text_chars": 1679,
+      "document_types": [
+        "contract"
+      ],
+      "signals": {
+        "contract": 1,
         "addendum": 0,
         "budget": 0,
         "change_sheet": 0,

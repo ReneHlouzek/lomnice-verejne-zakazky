@@ -1,0 +1,53 @@
+Title: Detail dokumentu, Veřejné zakázky a profily zadavatelů
+
+URL Source: https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=detail&document=3852459
+
+Markdown Content:
+[![Image 1: logo Portál pro vhodné uveřejnění](https://www.vhodne-uverejneni.cz/thm/xen/html/img/logo_pvu5.4.png)](https://www.vhodne-uverejneni.cz/)
+
+[+ 420 538 702 705](tel:+420538702705)[podpora@qcm.cz](tel:+420583702705)
+
+## Kontaktní informace
+
+Telefonická podpora (Po-Pá 9-17):[+ 420 538 702 705](tel:+420538702705)
+
+E-mail adresa:[podpora@qcm.cz](mailto:podpora@qcm.cz)
+
+## CDD přihlášení
+
+[PŘIHLÁŠENÍ DODAVATELE](https://www.vhodne-uverejneni.cz/index.php?m=xenorganizations&h=user&a=cddsso&qProfilAction=login&qProfilRedir=https%3A%2F%2Fwww.vhodne-uverejneni.cz%2Findex.php%3Fm%3Dxenorders%26h%3Dorderdocument%26a%3Ddetail%26document%3D3852459 "Přihlášení prostřednictvím databáze dodavatelů qProfil")
+
+## Přihlášení
+
+[PŘIHLÁŠENÍ ZADAVATELE](https://www.vhodne-uverejneni.cz/index.php?m=users&h=user&a=login "Přihlášení zadavatele")[REGISTROVAT](https://www.vhodne-uverejneni.cz/registrace "Registrovat")
+
+## Navigace - top menu
+
+*   [DOMŮ](https://www.vhodne-uverejneni.cz/ "Domů")
+*   [O PORTÁLU](https://www.vhodne-uverejneni.cz/o-portalu "O portálu")
+*   [VEŘEJNÉ ZAKÁZKY](https://www.vhodne-uverejneni.cz/verejne-zakazky "Veřejné zakázky")
+*   [KATALOG ORGANIZACÍ](https://www.vhodne-uverejneni.cz/katalog-organizaci "Katalog organizací")
+*   [REGISTR SMLUV](https://www.vhodne-uverejneni.cz/registr-smluv "Registr smluv")
+*   [ČASTÉ DOTAZY](https://www.vhodne-uverejneni.cz/caste-dotazy "Časté dotazy")
+*   [CENÍK](https://www.vhodne-uverejneni.cz/cenik "Ceník")
+
+1.   [Domů](https://www.vhodne-uverejneni.cz/index.php)
+2.   [Veřejné zakázky](https://www.vhodne-uverejneni.cz/verejne-zakazky)
+3.   [Nemocnice následné péče Lomnice nad Popelkou – investice a opravy](https://www.vhodne-uverejneni.cz/zakazka/nemocnice-nasledne-pece-lomnice-nad-popelkou-investice-a-opravy-2)
+4.   Detail dokumentu
+
+## Výpis systémových zpráv
+
+## Detail dokumentu
+
+### Příloha č. 1, 2, 3, 4a, 4b, 4c
+
+Zadávací a kvalifikační dokumentace, prohlídka místa plnění
+
+| Velikost | Staženo | Zveřejněno | Změněno |
+| --- | --- | --- | --- |
+| 638.22 KB | 58x | 04.05.2026 15:40:02 | 04.05.2026 15:39:49 |
+
+[**Soubor ke stažení**Priloha c 1,2,3,4a, 4b, 4c.zip](https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=orderdocument&a=download&document=3852459&r=https%3A%2F%2Fwww.vhodne-uverejneni.cz%2Findex.php%3Fm%3Dxenorders%26h%3Dorderdocument%26a%3Ddetail%26document%3D3852459)
+
+[zpět na dokumenty](https://www.vhodne-uverejneni.cz/index.php?m=xenorders&h=order&a=detaildocumentsandimages&rwr=nemocnice-nasledne-pece-lomnice-nad-popelkou-investice-a-opravy-2)
