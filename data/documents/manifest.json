@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-20T11:59:02Z",
+  "updated_at": "2026-11-21T11:13:34Z",
   "pages_checked": 35,
   "declared_documents": 90,
   "documents_discovered": 53,
@@ -44,7 +44,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+      "error": "unbalanced parenthesis at position 11"
     },
     {
       "source": "vhodne-uverejneni",
@@ -74,7 +74,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+      "error": "unbalanced parenthesis at position 11"
     },
     {
       "source": "vhodne-uverejneni",
@@ -164,7 +164,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+      "error": "unbalanced parenthesis at position 11"
     },
     {
       "source": "vhodne-uverejneni",
@@ -213,7 +213,8 @@
           "transport": "jina",
           "text_available": true,
           "text_chars": 1679,
-          "text_file": "data/documents/P26-REG-105575/001.txt"
+          "text_file": "data/documents/P26-REG-105575/001.txt",
+          "status": "retained_from_previous_run"
         },
         {
           "index": 2,
@@ -225,7 +226,8 @@
           "transport": "jina",
           "text_available": true,
           "text_chars": 1679,
-          "text_file": "data/documents/P26-REG-105575/002.txt"
+          "text_file": "data/documents/P26-REG-105575/002.txt",
+          "status": "retained_from_previous_run"
         }
       ],
       "status": "ok",
@@ -248,7 +250,8 @@
           "transport": "jina",
           "text_available": true,
           "text_chars": 1679,
-          "text_file": "data/documents/P26V00001118/001.txt"
+          "text_file": "data/documents/P26V00001118/001.txt",
+          "status": "retained_from_previous_run"
         }
       ],
       "status": "ok",
@@ -271,7 +274,8 @@
           "transport": "jina",
           "text_available": true,
           "text_chars": 6945,
-          "text_file": "data/documents/P26V00001385/001.txt"
+          "text_file": "data/documents/P26V00001385/001.txt",
+          "status": "retained_from_previous_run"
         },
         {
           "index": 2,
@@ -296,7 +300,8 @@
           "transport": "jina",
           "text_available": true,
           "text_chars": 1679,
-          "text_file": "data/documents/P26V00001385/003.txt"
+          "text_file": "data/documents/P26V00001385/003.txt",
+          "status": "retained_from_previous_run"
         },
         {
           "index": 4,
@@ -308,7 +313,8 @@
           "transport": "jina",
           "text_available": true,
           "text_chars": 1679,
-          "text_file": "data/documents/P26V00001385/004.txt"
+          "text_file": "data/documents/P26V00001385/004.txt",
+          "status": "retained_from_previous_run"
         },
         {
           "index": 5,
@@ -320,7 +326,8 @@
           "transport": "jina",
           "text_available": true,
           "text_chars": 1679,
-          "text_file": "data/documents/P26V00001385/005.txt"
+          "text_file": "data/documents/P26V00001385/005.txt",
+          "status": "retained_from_previous_run"
         },
         {
           "index": 6,
@@ -332,7 +339,8 @@
           "transport": "jina",
           "text_available": true,
           "text_chars": 1679,
-          "text_file": "data/documents/P26V00001385/006.txt"
+          "text_file": "data/documents/P26V00001385/006.txt",
+          "status": "retained_from_previous_run"
         },
         {
           "index": 7,
@@ -368,7 +376,8 @@
           "transport": "jina",
           "text_available": true,
           "text_chars": 1679,
-          "text_file": "data/documents/P26V00002162/001.txt"
+          "text_file": "data/documents/P26V00002162/001.txt",
+          "status": "retained_from_previous_run"
         },
         {
           "index": 2,
@@ -380,7 +389,8 @@
           "transport": "jina",
           "text_available": true,
           "text_chars": 1679,
-          "text_file": "data/documents/P26V00002162/002.txt"
+          "text_file": "data/documents/P26V00002162/002.txt",
+          "status": "retained_from_previous_run"
         },
         {
           "index": 3,
@@ -392,7 +402,8 @@
           "transport": "jina",
           "text_available": true,
           "text_chars": 1679,
-          "text_file": "data/documents/P26V00002162/003.txt"
+          "text_file": "data/documents/P26V00002162/003.txt",
+          "status": "retained_from_previous_run"
         },
         {
           "index": 4,
@@ -404,7 +415,8 @@
           "transport": "jina",
           "text_available": true,
           "text_chars": 1679,
-          "text_file": "data/documents/P26V00002162/004.txt"
+          "text_file": "data/documents/P26V00002162/004.txt",
+          "status": "retained_from_previous_run"
         },
         {
           "index": 5,
@@ -416,7 +428,8 @@
           "transport": "jina",
           "text_available": true,
           "text_chars": 1679,
-          "text_file": "data/documents/P26V00002162/005.txt"
+          "text_file": "data/documents/P26V00002162/005.txt",
+          "status": "retained_from_previous_run"
         },
         {
           "index": 6,
@@ -428,7 +441,8 @@
           "transport": "jina",
           "text_available": true,
           "text_chars": 1679,
-          "text_file": "data/documents/P26V00002162/006.txt"
+          "text_file": "data/documents/P26V00002162/006.txt",
+          "status": "retained_from_previous_run"
         },
         {
           "index": 7,
@@ -440,7 +454,8 @@
           "transport": "jina",
           "text_available": true,
           "text_chars": 1679,
-          "text_file": "data/documents/P26V00002162/007.txt"
+          "text_file": "data/documents/P26V00002162/007.txt",
+          "status": "retained_from_previous_run"
         },
         {
           "index": 8,
@@ -452,7 +467,8 @@
           "transport": "jina",
           "text_available": true,
           "text_chars": 1679,
-          "text_file": "data/documents/P26V00002162/008.txt"
+          "text_file": "data/documents/P26V00002162/008.txt",
+          "status": "retained_from_previous_run"
         },
         {
           "index": 9,
@@ -464,7 +480,8 @@
           "transport": "jina",
           "text_available": true,
           "text_chars": 1679,
-          "text_file": "data/documents/P26V00002162/009.txt"
+          "text_file": "data/documents/P26V00002162/009.txt",
+          "status": "retained_from_previous_run"
         },
         {
           "index": 10,
@@ -476,7 +493,8 @@
           "transport": "jina",
           "text_available": true,
           "text_chars": 1679,
-          "text_file": "data/documents/P26V00002162/010.txt"
+          "text_file": "data/documents/P26V00002162/010.txt",
+          "status": "retained_from_previous_run"
         },
         {
           "index": 11,
@@ -488,7 +506,8 @@
           "transport": "jina",
           "text_available": true,
           "text_chars": 1679,
-          "text_file": "data/documents/P26V00002162/011.txt"
+          "text_file": "data/documents/P26V00002162/011.txt",
+          "status": "retained_from_previous_run"
         },
         {
           "index": 12,
@@ -500,7 +519,8 @@
           "transport": "jina",
           "text_available": true,
           "text_chars": 1679,
-          "text_file": "data/documents/P26V00002162/012.txt"
+          "text_file": "data/documents/P26V00002162/012.txt",
+          "status": "retained_from_previous_run"
         },
         {
           "index": 13,
@@ -512,7 +532,8 @@
           "transport": "jina",
           "text_available": true,
           "text_chars": 1679,
-          "text_file": "data/documents/P26V00002162/013.txt"
+          "text_file": "data/documents/P26V00002162/013.txt",
+          "status": "retained_from_previous_run"
         },
         {
           "index": 14,
@@ -550,7 +571,8 @@
           "transport": "jina",
           "text_available": true,
           "text_chars": 1679,
-          "text_file": "data/documents/P26V00002162/016.txt"
+          "text_file": "data/documents/P26V00002162/016.txt",
+          "status": "retained_from_previous_run"
         },
         {
           "index": 17,
@@ -562,7 +584,8 @@
           "transport": "jina",
           "text_available": true,
           "text_chars": 1679,
-          "text_file": "data/documents/P26V00002162/017.txt"
+          "text_file": "data/documents/P26V00002162/017.txt",
+          "status": "retained_from_previous_run"
         },
         {
           "index": 18,
@@ -574,7 +597,8 @@
           "transport": "jina",
           "text_available": true,
           "text_chars": 1679,
-          "text_file": "data/documents/P26V00002162/018.txt"
+          "text_file": "data/documents/P26V00002162/018.txt",
+          "status": "retained_from_previous_run"
         },
         {
           "index": 19,
@@ -586,7 +610,8 @@
           "transport": "jina",
           "text_available": true,
           "text_chars": 1679,
-          "text_file": "data/documents/P26V00002162/019.txt"
+          "text_file": "data/documents/P26V00002162/019.txt",
+          "status": "retained_from_previous_run"
         },
         {
           "index": 20,
@@ -598,7 +623,8 @@
           "transport": "jina",
           "text_available": true,
           "text_chars": 1679,
-          "text_file": "data/documents/P26V00002162/020.txt"
+          "text_file": "data/documents/P26V00002162/020.txt",
+          "status": "retained_from_previous_run"
         },
         {
           "index": 21,
@@ -610,7 +636,8 @@
           "transport": "jina",
           "text_available": true,
           "text_chars": 1679,
-          "text_file": "data/documents/P26V00002162/021.txt"
+          "text_file": "data/documents/P26V00002162/021.txt",
+          "status": "retained_from_previous_run"
         },
         {
           "index": 22,
@@ -622,7 +649,8 @@
           "transport": "jina",
           "text_available": true,
           "text_chars": 1679,
-          "text_file": "data/documents/P26V00002162/022.txt"
+          "text_file": "data/documents/P26V00002162/022.txt",
+          "status": "retained_from_previous_run"
         },
         {
           "index": 23,
@@ -634,7 +662,8 @@
           "transport": "jina",
           "text_available": true,
           "text_chars": 1679,
-          "text_file": "data/documents/P26V00002162/023.txt"
+          "text_file": "data/documents/P26V00002162/023.txt",
+          "status": "retained_from_previous_run"
         }
       ],
       "status": "ok",
@@ -657,7 +686,8 @@
           "transport": "jina",
           "text_available": true,
           "text_chars": 1679,
-          "text_file": "data/documents/P26V00002405/001.txt"
+          "text_file": "data/documents/P26V00002405/001.txt",
+          "status": "retained_from_previous_run"
         },
         {
           "index": 2,
@@ -669,7 +699,8 @@
           "transport": "jina",
           "text_available": true,
           "text_chars": 1679,
-          "text_file": "data/documents/P26V00002405/002.txt"
+          "text_file": "data/documents/P26V00002405/002.txt",
+          "status": "retained_from_previous_run"
         }
       ],
       "status": "ok",
@@ -692,7 +723,8 @@
           "transport": "jina",
           "text_available": true,
           "text_chars": 1679,
-          "text_file": "data/documents/P26V00002929/001.txt"
+          "text_file": "data/documents/P26V00002929/001.txt",
+          "status": "retained_from_previous_run"
         },
         {
           "index": 2,
@@ -704,7 +736,8 @@
           "transport": "jina",
           "text_available": true,
           "text_chars": 1679,
-          "text_file": "data/documents/P26V00002929/002.txt"
+          "text_file": "data/documents/P26V00002929/002.txt",
+          "status": "retained_from_previous_run"
         },
         {
           "index": 3,
@@ -716,7 +749,8 @@
           "transport": "jina",
           "text_available": true,
           "text_chars": 1679,
-          "text_file": "data/documents/P26V00002929/003.txt"
+          "text_file": "data/documents/P26V00002929/003.txt",
+          "status": "retained_from_previous_run"
         },
         {
           "index": 4,
@@ -728,7 +762,8 @@
           "transport": "jina",
           "text_available": true,
           "text_chars": 1679,
-          "text_file": "data/documents/P26V00002929/004.txt"
+          "text_file": "data/documents/P26V00002929/004.txt",
+          "status": "retained_from_previous_run"
         },
         {
           "index": 5,
@@ -740,7 +775,8 @@
           "transport": "jina",
           "text_available": true,
           "text_chars": 2744,
-          "text_file": "data/documents/P26V00002929/005.txt"
+          "text_file": "data/documents/P26V00002929/005.txt",
+          "status": "retained_from_previous_run"
         },
         {
           "index": 6,
@@ -778,7 +814,8 @@
           "transport": "jina",
           "text_available": true,
           "text_chars": 1679,
-          "text_file": "data/documents/P26V00002929/008.txt"
+          "text_file": "data/documents/P26V00002929/008.txt",
+          "status": "retained_from_previous_run"
         },
         {
           "index": 9,
@@ -790,7 +827,8 @@
           "transport": "jina",
           "text_available": true,
           "text_chars": 2737,
-          "text_file": "data/documents/P26V00002929/009.txt"
+          "text_file": "data/documents/P26V00002929/009.txt",
+          "status": "retained_from_previous_run"
         }
       ],
       "status": "ok",
@@ -813,7 +851,8 @@
           "transport": "jina",
           "text_available": true,
           "text_chars": 1679,
-          "text_file": "data/documents/P26V00003724/001.txt"
+          "text_file": "data/documents/P26V00003724/001.txt",
+          "status": "retained_from_previous_run"
         },
         {
           "index": 2,
@@ -825,7 +864,8 @@
           "transport": "jina",
           "text_available": true,
           "text_chars": 1679,
-          "text_file": "data/documents/P26V00003724/002.txt"
+          "text_file": "data/documents/P26V00003724/002.txt",
+          "status": "retained_from_previous_run"
         },
         {
           "index": 3,
@@ -837,7 +877,8 @@
           "transport": "jina",
           "text_available": true,
           "text_chars": 1679,
-          "text_file": "data/documents/P26V00003724/003.txt"
+          "text_file": "data/documents/P26V00003724/003.txt",
+          "status": "retained_from_previous_run"
         }
       ],
       "status": "ok",
@@ -860,7 +901,8 @@
           "transport": "jina",
           "text_available": true,
           "text_chars": 1679,
-          "text_file": "data/documents/P26V00004395/001.txt"
+          "text_file": "data/documents/P26V00004395/001.txt",
+          "status": "retained_from_previous_run"
         },
         {
           "index": 2,
@@ -872,7 +914,8 @@
           "transport": "jina",
           "text_available": true,
           "text_chars": 1679,
-          "text_file": "data/documents/P26V00004395/002.txt"
+          "text_file": "data/documents/P26V00004395/002.txt",
+          "status": "retained_from_previous_run"
         }
       ],
       "status": "ok",
@@ -895,7 +938,8 @@
           "transport": "jina",
           "text_available": true,
           "text_chars": 1679,
-          "text_file": "data/documents/P26V00004399/001.txt"
+          "text_file": "data/documents/P26V00004399/001.txt",
+          "status": "retained_from_previous_run"
         }
       ],
       "status": "ok",
@@ -918,7 +962,8 @@
           "transport": "jina",
           "text_available": true,
           "text_chars": 1679,
-          "text_file": "data/documents/P26V00004533/001.txt"
+          "text_file": "data/documents/P26V00004533/001.txt",
+          "status": "retained_from_previous_run"
         },
         {
           "index": 2,
@@ -930,7 +975,8 @@
           "transport": "jina",
           "text_available": true,
           "text_chars": 1679,
-          "text_file": "data/documents/P26V00004533/002.txt"
+          "text_file": "data/documents/P26V00004533/002.txt",
+          "status": "retained_from_previous_run"
         }
       ],
       "status": "ok",
@@ -944,7 +990,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+      "error": "unbalanced parenthesis at position 11"
     },
     {
       "source": "vhodne-uverejneni",
@@ -988,7 +1034,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
+      "error": "unbalanced parenthesis at position 11"
     },
     {
       "source": "vhodne-uverejneni",
@@ -998,7 +1044,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "unbalanced parenthesis at position 11"
+      "error": "VU page unavailable via direct and proxy fallbacks: 429 Client Error: Too Many Requests for url: https://r.jina.ai/https://www.vhodne-uverejneni.cz/profil/mesto-lomnice-nad-popelkou"
     },
     {
       "source": "vhodne-uverejneni",
@@ -1008,7 +1054,7 @@
       "document_count_declared": 15,
       "documents": [],
       "status": "page_error",
-      "error": "unbalanced parenthesis at position 11"
+      "error": "VU page unavailable via direct and proxy fallbacks: 429 Client Error: Too Many Requests for url: https://r.jina.ai/https://www.vhodne-uverejneni.cz/index.php?a=detail&contract=95276&h=contractsregister&m=xenorders"
     }
   ],
   "note": "Archives public document metadata and extracted PDF text. Original binaries are not committed; inaccessible documents are retained in the manifest as errors."
