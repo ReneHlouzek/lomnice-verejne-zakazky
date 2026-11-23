@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-22T11:36:12Z",
+  "updated_at": "2026-11-23T12:54:23Z",
   "pages_checked": 35,
   "declared_documents": 90,
   "documents_discovered": 53,
@@ -14,7 +14,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: 401 Client Error: Unauthorized for url: https://r.jina.ai/https://www.vhodne-uverejneni.cz/zakazka/mesto-lomnice-nad-popelkou-cisternova-automobilova-strikacka"
+      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
     },
     {
       "source": "vhodne-uverejneni",
@@ -24,7 +24,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: 401 Client Error: Unauthorized for url: https://r.jina.ai/https://www.vhodne-uverejneni.cz/zakazka/projektova-dokumentace-mistnich-komunikaci-lomnice-nad-popelkou"
+      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
     },
     {
       "source": "vhodne-uverejneni",
@@ -34,7 +34,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: 401 Client Error: Unauthorized for url: https://r.jina.ai/https://www.vhodne-uverejneni.cz/zakazka/domov-pro-osoby-s-poruchou-autistickeho-spektra-1"
+      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
     },
     {
       "source": "vhodne-uverejneni",
@@ -44,7 +44,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: 401 Client Error: Unauthorized for url: https://r.jina.ai/https://www.vhodne-uverejneni.cz/zakazka/automobil-pro-terenni-socialni-sluzbu-pecovatelske-sluzby-lomnice-nad-popelkou-prispevkove-organizace"
+      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
     },
     {
       "source": "vhodne-uverejneni",
@@ -54,7 +54,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: 401 Client Error: Unauthorized for url: https://r.jina.ai/https://www.vhodne-uverejneni.cz/zakazka/obnova-telocvicen-pri-zs-t-g-masaryka-v-lomnici-nad-popelkou"
+      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
     },
     {
       "source": "vhodne-uverejneni",
@@ -64,7 +64,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: 401 Client Error: Unauthorized for url: https://r.jina.ai/https://www.vhodne-uverejneni.cz/zakazka/pristavba-servisniho-objektu-lomnice-nad-popelkou"
+      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
     },
     {
       "source": "vhodne-uverejneni",
@@ -74,7 +74,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: 401 Client Error: Unauthorized for url: https://r.jina.ai/https://www.vhodne-uverejneni.cz/zakazka/instalace-domovniho-telefonu-a-rozvodu-strukturovane-kabelaze-nnp-lomnice-nad-popelkou"
+      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
     },
     {
       "source": "vhodne-uverejneni",
@@ -84,7 +84,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: 401 Client Error: Unauthorized for url: https://r.jina.ai/https://www.vhodne-uverejneni.cz/zakazka/vydani-obrazove-publikace-lomnice-nad-popelkou-historie-skolstvi"
+      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
     },
     {
       "source": "vhodne-uverejneni",
@@ -94,7 +94,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: 401 Client Error: Unauthorized for url: https://r.jina.ai/https://www.vhodne-uverejneni.cz/zakazka/silnice-ii-284-lomnice-nad-popelkou-ulice-5-kvetna"
+      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
     },
     {
       "source": "vhodne-uverejneni",
@@ -104,7 +104,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: 401 Client Error: Unauthorized for url: https://r.jina.ai/https://www.vhodne-uverejneni.cz/index.php?a=detail&contract=92577&h=contractsregister&m=xenorders"
+      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
     },
     {
       "source": "vhodne-uverejneni",
@@ -114,7 +114,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: 401 Client Error: Unauthorized for url: https://r.jina.ai/https://www.vhodne-uverejneni.cz/zakazka/obnova-mvn-technolen-lomnice-nad-popelkou"
+      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
     },
     {
       "source": "vhodne-uverejneni",
@@ -124,7 +124,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: 401 Client Error: Unauthorized for url: https://r.jina.ai/https://www.vhodne-uverejneni.cz/zakazka/rekonstrukce-verejneho-osvetleni-ulice-jilemnicka-a-cast-plk-truhlare-lomnice-nad-popelkou"
+      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
     },
     {
       "source": "vhodne-uverejneni",
@@ -134,7 +134,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: 401 Client Error: Unauthorized for url: https://r.jina.ai/https://www.vhodne-uverejneni.cz/zakazka/oprava-strechy-domu-c-p-32-ul-antala-staska-v-lomnici-nad-popelkou"
+      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
     },
     {
       "source": "vhodne-uverejneni",
@@ -144,7 +144,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: 401 Client Error: Unauthorized for url: https://r.jina.ai/https://www.vhodne-uverejneni.cz/index.php?a=detail&contract=99697&h=contractsregister&m=xenorders"
+      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
     },
     {
       "source": "vhodne-uverejneni",
@@ -154,7 +154,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: 401 Client Error: Unauthorized for url: https://r.jina.ai/https://www.vhodne-uverejneni.cz/zakazka/revitalizace-rybnika-matous-a-jeho-okoli-v-lomnici-nad-popelkou"
+      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
     },
     {
       "source": "vhodne-uverejneni",
@@ -164,7 +164,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: 401 Client Error: Unauthorized for url: https://r.jina.ai/https://www.vhodne-uverejneni.cz/zakazka/revitalizace-verejneho-prostranstvi-na-hrbitove-2-etapa-lomnice-nad-popelkou"
+      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
     },
     {
       "source": "vhodne-uverejneni",
@@ -174,7 +174,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: 401 Client Error: Unauthorized for url: https://r.jina.ai/https://www.vhodne-uverejneni.cz/zakazka/opravy-mistnich-komunikaci-ve-meste-lomnice-nad-popelkou"
+      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
     },
     {
       "source": "vhodne-uverejneni",
@@ -184,7 +184,7 @@
       "document_count_declared": 6,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: 401 Client Error: Unauthorized for url: https://r.jina.ai/https://www.vhodne-uverejneni.cz/index.php?a=detail&contract=101051&h=contractsregister&m=xenorders"
+      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
     },
     {
       "source": "vhodne-uverejneni",
@@ -194,7 +194,7 @@
       "document_count_declared": 10,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: 401 Client Error: Unauthorized for url: https://r.jina.ai/https://www.vhodne-uverejneni.cz/index.php?a=detail&contract=101359&h=contractsregister&m=xenorders"
+      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
     },
     {
       "source": "vhodne-uverejneni",
@@ -990,7 +990,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: 401 Client Error: Unauthorized for url: https://r.jina.ai/https://www.vhodne-uverejneni.cz/smlouvy-organizace/mesto-lomnice-nad-popelkou"
+      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
     },
     {
       "source": "vhodne-uverejneni",
@@ -1000,7 +1000,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: 401 Client Error: Unauthorized for url: https://r.jina.ai/https://www.vhodne-uverejneni.cz/zakazka/restauratorske-prace-na-spodnich-castech-marianskeho-sloupu-v-lomnici-nad-popelkou"
+      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
     },
     {
       "source": "vhodne-uverejneni",
@@ -1034,7 +1034,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: 401 Client Error: Unauthorized for url: https://r.jina.ai/https://www.vhodne-uverejneni.cz/zakazka/karavanove-stani-koupaliste-lomnice-nad-popelkou"
+      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
     },
     {
       "source": "vhodne-uverejneni",
@@ -1044,7 +1044,7 @@
       "document_count_declared": null,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: 401 Client Error: Unauthorized for url: https://r.jina.ai/https://www.vhodne-uverejneni.cz/profil/mesto-lomnice-nad-popelkou"
+      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
     },
     {
       "source": "vhodne-uverejneni",
@@ -1054,7 +1054,7 @@
       "document_count_declared": 15,
       "documents": [],
       "status": "page_error",
-      "error": "VU page unavailable via direct and proxy fallbacks: 401 Client Error: Unauthorized for url: https://r.jina.ai/https://www.vhodne-uverejneni.cz/index.php?a=detail&contract=95276&h=contractsregister&m=xenorders"
+      "error": "VU page unavailable via direct and proxy fallbacks: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=8)"
     }
   ],
   "note": "Archives public document metadata and extracted PDF text. Original binaries are not committed; inaccessible documents are retained in the manifest as errors."
